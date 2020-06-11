@@ -1,0 +1,23 @@
+uuid: 1dad2efc-75bd-4ebf-ba97-0fbc9d9a3eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_color_all
+    - paragraphs.paragraphs_type.heading
+  module:
+    - options
+_core:
+  default_config_hash: VW_fDrv_WdncZkG2jBa0CKho9jFMOegoJr9KwKk_E2o
+id: paragraph.heading.field_style_color_all
+field_name: field_style_color_all
+entity_type: paragraph
+bundle: heading
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

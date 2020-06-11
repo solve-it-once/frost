@@ -1,0 +1,21 @@
+uuid: 80335de6-fa21-42d4-9752-c86f908e31d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.event
+_core:
+  default_config_hash: AEeIiRC1FFvj6ROgs3Dzij2ZWPCBxWas0Rak9iQ1xHM
+id: node.event.field_location
+field_name: field_location
+entity_type: node
+bundle: event
+label: Location
+description: 'A textual location, such as a one-line address or brief city, State string like "Detroit, MI"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

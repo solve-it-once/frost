@@ -1,0 +1,17 @@
+uuid: fb815750-15eb-4d8a-9bd1-10fb9b647651
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 6Oe4A85rVu15d-NT2UM_lwdYXTbZR-GX56PKgJfXYhQ
+name: 'Article type'
+vid: article_type
+description: ''
+weight: 0

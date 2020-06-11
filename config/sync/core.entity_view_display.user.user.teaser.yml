@@ -1,0 +1,83 @@
+uuid: a84dfefe-6157-4770-a1c6-a9b2e401793d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.teaser
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_email
+    - field.field.user.user.field_image
+    - field.field.user.user.field_jobtitle
+    - field.field.user.user.field_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_text_location
+  module:
+    - field_formatter_class
+    - telephone
+    - user
+_core:
+  default_config_hash: at6FvHGyRr9uREIh7GB_G1ccwyzr7Xz7GW76wbNyWvA
+id: user.user.teaser
+targetEntityType: user
+bundle: user
+mode: teaser
+content:
+  field_email:
+    type: email_mailto
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'child-links--as-buttons button-color--inverted child-links-background-color--main'
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: square_small
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: image--circle-150px
+    region: content
+  field_jobtitle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    type: telephone_link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings:
+      field_formatter_class:
+        class: 'child-links--as-buttons button-color--inverted child-links-background-color--main'
+  field_text_location:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_biography: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

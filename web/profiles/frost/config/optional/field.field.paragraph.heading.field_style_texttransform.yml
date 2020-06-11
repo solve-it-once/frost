@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_texttransform
+    - paragraphs.paragraphs_type.heading
+  module:
+    - options
+id: paragraph.heading.field_style_texttransform
+field_name: field_style_texttransform
+entity_type: paragraph
+bundle: heading
+label: 'Text transform'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: text-transform--none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

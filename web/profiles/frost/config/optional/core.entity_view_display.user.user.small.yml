@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.small
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_email
+    - field.field.user.user.field_image
+    - field.field.user.user.field_jobtitle
+    - field.field.user.user.field_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_text_location
+  module:
+    - field_formatter_class
+    - user
+id: user.user.small
+targetEntityType: user
+bundle: user
+mode: small
+content:
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: square_thumbnail
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_biography: true
+  field_email: true
+  field_jobtitle: true
+  field_phone: true
+  field_text_location: true
+  member_for: true
+  search_api_excerpt: true

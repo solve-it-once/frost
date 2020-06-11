@@ -1,0 +1,23 @@
+uuid: dec4d1ed-e93e-400d-99e5-c143938ffdf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+_core:
+  default_config_hash: h4kpxH8hv1oCx-mciMWvn-0xRTh79042Pqszv5ILOwQ
+id: paragraph.field_view
+field_name: field_view
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

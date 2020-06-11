@@ -1,0 +1,66 @@
+uuid: 77416b06-df38-47b9-a30f-5e315de10a26
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: Meo_p_bp8qUz6w_TJOu5EyLcLT42mCJTyC3-Gc4Qjog
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - HorizontalRule
+            - Format
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Table
+            - DrupalMediaLibrary
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - RemoveFormat
+            - PasteFromWord
+            - SpecialChar
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

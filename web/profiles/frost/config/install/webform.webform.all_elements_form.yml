@@ -1,0 +1,179 @@
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: all_elements_form
+title: 'All elements form'
+description: 'Used for stylistic QA/UAT'
+category: ''
+elements: "single_checkbox:\n  '#type': checkbox\n  '#title': 'Single checkbox'\nhidden_element:\n  '#type': hidden\n  '#title': 'Hidden element'\n  '#default_value': 'If you see either the label or this value, something is wrong.'\ntextarea:\n  '#type': textarea\n  '#title': Textarea\ntext_field:\n  '#type': textfield\n  '#title': 'Text Field'\nautocomplete:\n  '#type': webform_autocomplete\n  '#title': Autocomplete\n  '#description': 'Search a state or province name, and the autocomplete should start triggering around 2 letters'\n  '#autocomplete_items': state_province_names\n  '#autocomplete_match': 2\ncaptcha:\n  '#type': captcha\n  '#captcha_title': 'Is this a captcha?'\n  '#captcha_description': 'Yes, this is a captcha. Currently we don''t have ReCAPTCHA enabled because we''re optimists.'\ncodemirror_code_input:\n  '#type': webform_codemirror\n  '#title': 'CodeMirror code input'\n  '#description': 'This is a code input, set to accept CSS code specifically.'\n  '#mode': css\ncolor_picker:\n  '#type': color\n  '#title': 'Color picker'\nemail:\n  '#type': email\n  '#title': Email\nconfirm_email:\n  '#type': webform_email_confirm\n  '#title': 'Confirm email'\n  '#confirm__title': 'Confirm email'\nmultiple_email:\n  '#type': webform_email_multiple\n  '#title': 'Multiple email'\nmapping:\n  '#type': webform_mapping\n  '#title': Mapping\n  '#source': state_names\n  '#destination__type': textfield\nnumber:\n  '#type': number\n  '#title': Number\nrange:\n  '#type': range\n  '#title': Range\n  '#output': right\nrating:\n  '#type': webform_rating\n  '#title': Rating\nsearch:\n  '#type': search\n  '#title': Search\n  '#description': 'I don&#39;t know what this form element is supposed to accomplish.'\nsignature:\n  '#type': webform_signature\n  '#title': Signature\ntelephone:\n  '#type': tel\n  '#title': Telephone\n  '#international': true\n  '#international_initial_country': US\n  '#international_preferred_countries': {  }\nterms_of_service:\n  '#type': webform_terms_of_service\n  '#terms_title': 'Terms of service'\n  '#terms_content': 'This is an example.'\nurl:\n  '#type': url\n  '#title': URL\nvalue:\n  '#type': value\n  '#title': Value\n  '#value': 'This is the value for the field'\nbasic_address:\n  '#type': webform_address\n  '#title': 'Basic Address'\n  '#title_display': ''\nadvanced_address:\n  '#type': address\n  '#title': 'Advanced Address'\n  '#title_display': ''\ntelephone_advanced:\n  '#type': webform_telephone\n  '#title': 'Telephone Advanced'\nmessage:\n  '#type': webform_message\n  '#message_message': 'This is the message content'\n  '#message_close': true\n  '#message_close_effect': hide\n  '#message_storage': local\nfile:\n  '#type': managed_file\n  '#title': File\nbuttons:\n  '#type': webform_buttons\n  '#title': Buttons\n  '#options':\n    sdfsfsdf: sdfsfsdf\n    werwe: werwe\n    hjkhj: hjkhj\ncheckboxes:\n  '#type': checkboxes\n  '#title': Checkboxes\n  '#options':\n    sfsf: sfsf\n    sdfs: sdfs\n    rwerwe: rwerwe\nradios:\n  '#type': radios\n  '#title': Radios\n  '#options':\n    ghgf: ghgf\n    sdfs: sdfs\n    trytry: trytry\nselect:\n  '#type': select\n  '#title': Select\n  '#options': time_zones\ndate:\n  '#type': date\n  '#title': Date\n  '#datepicker': true\n  '#datepicker_button': true\n  '#date_date_format': 'l, F j, Y'\ntime:\n  '#type': webform_time\n  '#title': Time\n  '#timepicker': true\nterm_select:\n  '#type': webform_term_select\n  '#title': 'Term select'\n  '#vocabulary': solution\n  '#breadcrumb_delimiter': ''\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

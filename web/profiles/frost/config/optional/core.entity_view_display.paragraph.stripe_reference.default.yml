@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe_reference.field_stripe
+    - paragraphs.paragraphs_type.stripe_reference
+id: paragraph.stripe_reference.default
+targetEntityType: paragraph
+bundle: stripe_reference
+mode: default
+content:
+  field_stripe:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

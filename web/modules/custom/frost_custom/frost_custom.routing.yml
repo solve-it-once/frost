@@ -1,0 +1,7 @@
+frost_custom.frost_custom_submitted:
+  path: '/admin/structure/types/submitted'
+  defaults:
+    _form: 'Drupal\frost_custom\Form\FrostCustomSubmittedForm'
+    _title: 'Submitted lines'
+  requirements:
+    _permission: 'administer content types'

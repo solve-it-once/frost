@@ -1,0 +1,16 @@
+{
+  "depth": 5,
+  "check": 1000,
+  "output": ".axe-crawler",
+  "ignore": false,
+  "whitelist": false,
+  "random": 1,
+  "viewPorts": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "verbose": "info"
+}

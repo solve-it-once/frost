@@ -1,0 +1,25 @@
+uuid: fa5a5cf9-27f8-4498-81f6-03ea1522d49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_textalign
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+_core:
+  default_config_hash: hHYr4PvxyL-kCup3FSFzZSTgATUGMpu0FX85dZ_UhGw
+id: paragraph.column.field_style_textalign
+field_name: field_style_textalign
+entity_type: paragraph
+bundle: column
+label: 'Text alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: text-align--left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

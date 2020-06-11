@@ -1,0 +1,47 @@
+address:
+  country_name: US
+  legal_name: 'Solve it once, LLC'
+  street_address: '1428 Mark Ave'
+  street_address_2: ''
+  locality: 'Lincoln Park'
+  region: MI
+  postal_code: '48146'
+phone:
+  country_code: '1'
+  number: '(248) 721-0350'
+fax:
+  number: ''
+email:
+  emailaddress: ao5357@gmail.com
+social_seo:
+  site_twitter: '@ao5357'
+  site_google_plus: ''
+social:
+  table:
+    1:
+      name: Facebook
+      url: 'https://www.facebook.com/bradczerniak'
+      enable: '1'
+      weight: '-9'
+    2:
+      name: Twitter
+      url: 'https://twitter.com/ao5357'
+      enable: '1'
+      weight: '-7'
+    3:
+      name: Pinterest
+      url: 'http://pinterest.com/uofmichigan'
+      weight: '-10'
+      enable: 0
+    4:
+      name: YouTube
+      url: 'http://youtube.com/um'
+      enable: '1'
+      weight: '-8'
+    5:
+      name: Instagram
+      url: 'http://instagram.com/umichadmissions/'
+      weight: '10'
+      enable: 0
+_core:
+  default_config_hash: E1z5nbz0FlT2_RbjS6qGrrN-JqGHF-x7YMaRJHAek-U

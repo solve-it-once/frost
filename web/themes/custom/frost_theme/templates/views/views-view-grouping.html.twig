@@ -1,0 +1,8 @@
+{% if wrapped %}
+<div{{ grouping_attributes }}>
+  <div class="view-grouping-header">{{ title }}</div>
+  <div class="view-grouping-content">{{ content }}</div>
+</div>
+{% else %}
+  {{ content }}
+{% endif %}

@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Classes defined and used by Drupal core and any Frost-applicable contrib.
+ */
+
+/**
+ * Ensure editing pencils are as close to their elements as possible.
+ */
+[data-quickedit-entity-id] {
+  position: relative;
+}
+
+/**
+ * Form field and other descriptions.
+ */
+.description {
+  font-size: 1rem;
+}
+
+/**
+ * Submit button for adding more items to a form.
+*/
+.field-add-more-submit {
+  margin: 5px 0 0;
+}
+
+/**
+ * Special tables within forms.
+*/
+.field-multiple-table {
+  margin: 0;
+}
+.field-multiple-table .field-multiple-drag {
+  width: 30px;
+  padding-right: 0;
+}
+.field-multiple-table .field-multiple-drag .tabledrag-handle {
+  padding-right: 5px;
+}
+
+/**
+ * Wrappers around form fields and buttons.
+ */
+.form-actions,
+.form-item {
+  margin: 0 0 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+@media all and (min-width: 768px) {
+  .form-actions,
+  .form-item {
+    margin: 0 20px 20px 0;
+  }
+}
+
+.form-actions input.error,
+.form-actions textarea.error,
+.form-actions select.error,
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid var(--color--third);
+}
+.form-actions--error-message::before,
+.form-item--error-message::before {
+  content: '';
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  vertical-align: sub;
+  background: url('/core/misc/icons/e32700/error.svg') no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-composite > legend {
+  display: inline;
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+uuid: 4e548028-4f97-47da-9dfa-7105d03747de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_data_yaxis
+    - paragraphs.paragraphs_type.table
+_core:
+  default_config_hash: r8axJTYLJcY6Uw97ySY_SS8F3ERUwXC1h8SJbNwu7vY
+id: paragraph.table.field_data_yaxis
+field_name: field_data_yaxis
+entity_type: paragraph
+bundle: table
+label: 'Y Axis label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

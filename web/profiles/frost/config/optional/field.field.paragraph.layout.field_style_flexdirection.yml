@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_flexdirection
+    - paragraphs.paragraphs_type.layout
+id: paragraph.layout.field_style_flexdirection
+field_name: field_style_flexdirection
+entity_type: paragraph
+bundle: layout
+label: Reverse
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: flex-direction--row-reverse
+  off_label: flex-direction--row
+field_type: boolean

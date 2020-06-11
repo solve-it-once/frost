@@ -1,0 +1,12 @@
+uuid: e78fa370-5f68-4faa-b729-7267f3bc07a2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xLWpESO5c8FLhxiP_hZ7dvSDBi2qclABSb6Dvmi3xgs
+id: column
+label: Column
+icon_uuid: 08a8bcff-ef10-4796-959f-436a9a111726
+icon_default: null
+description: 'A single column within a layout'
+behavior_plugins: {  }

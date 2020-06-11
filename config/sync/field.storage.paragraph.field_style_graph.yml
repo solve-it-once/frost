@@ -1,0 +1,38 @@
+uuid: 830dd549-12e1-449a-86bb-8cf1a09039c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: UR-_CTq2PoUb_S2Sow_mwIbzWW473MzHWFSJbl3PwjU
+id: paragraph.field_style_graph
+field_name: field_style_graph
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: js-chart-vertical-bar
+      label: 'Vertical bar'
+    -
+      value: js-chart-horizontal-bar
+      label: 'Horizontal bar'
+    -
+      value: js-chart-pie
+      label: Pie
+    -
+      value: js-chart-line
+      label: Line
+    -
+      value: js-chart-stacked
+      label: Stacked
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

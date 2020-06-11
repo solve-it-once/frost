@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.user_listing.field_style_layout
+    - field.field.paragraph.user_listing.field_users
+    - field.field.paragraph.user_listing.field_viewmode
+    - paragraphs.paragraphs_type.user_listing
+  module:
+    - entity_reference_display
+    - field_formatter_class
+id: paragraph.user_listing.default
+targetEntityType: paragraph
+bundle: user_listing
+mode: default
+content:
+  field_users:
+    weight: 0
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

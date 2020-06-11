@@ -1,0 +1,60 @@
+frost-globalStyling:
+  version: 1.x
+  css:
+    base:
+      css/settings.css: {}
+      css/theme/theme--base.css: {}
+      css/utility/property--value.css: {}
+      css/utility/animate.css: {}
+      css/utility/utility--animation.css: {}
+      css/utility/utility--color.css: {}
+      css/utility/utility--classes.css: {}
+      css/utility/utility--typography.css: {}
+    layout:
+      css/utility/utility--layout.css: {}
+      css/utility/utility--spacing.css: {}
+    component:
+      css/theme/theme--drupal.css: {}
+      css/theme/theme--classes.css: {}
+      css/theme/theme--shame.css: {}
+  js:
+    js/partials/js--event--eventType.js: {}
+    js/partials/body--scroll.js: {}
+    js/partials/utility--initializer.js: {}
+    js/partials/external-links.js: {}
+    js/partials/js--animation--reveal.js: {}
+    js/partials/js--child--link.js: {}
+    js/partials/js--dismissible.js: {}
+    js/partials/child-display-mode--tab.js: {}
+    js/behavior.js: {}
+  dependencies:
+    - core/drupal
+
+frost-highcharts:
+  version: 6.1.4
+  license:
+    name: CC-BY-NC-3.0
+    gpl-compatible: false
+  css:
+    component:
+      libraries/frost-highcharts/frost-highcharts.css: {}
+  js:
+    libraries/frost-highcharts/color-scheme.min.js: {}
+    libraries/frost-highcharts/highcharts/code/highcharts.js: {}
+    libraries/frost-highcharts/highcharts/code/modules/data.js: {}
+    libraries/frost-highcharts/highcharts/code/modules/exporting.js: {}
+    libraries/frost-highcharts/highcharts/code/modules/export-data.js: {}
+    libraries/frost-highcharts/frost-highcharts.js: {}
+
+frost-iframeResizer:
+  version: 3.5.x
+  js:
+    libraries/frost-iframeResizer/iframe-resize/iframeResizer.min.js: {}
+    libraries/frost-iframeResizer/frost-iframeResizer.js: {}
+
+frost-tippyjs:
+  version: 5.0.x
+  js:
+    "https://unpkg.com/popper.js@1": { type: external, minified: true }
+    "https://unpkg.com/tippy.js@5": { type: external, minified: true }
+    libraries/frost-tippyjs/frost-tippyjs.js: {}

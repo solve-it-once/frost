@@ -1,0 +1,44 @@
+uuid: 850a80f0-93cc-40e8-859d-16ffcaef49e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: XT67rplr2Dxii3e4fw5XES8149qmsCFZEZwcOMMs0_0
+id: paragraph.field_style_justifycontent
+field_name: field_style_justifycontent
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: justify-content--flex-start
+      label: 'Start (top)'
+    -
+      value: justify-content--flex-end
+      label: 'End (bottom)'
+    -
+      value: justify-content--center
+      label: Center
+    -
+      value: justify-content--dave-matthews
+      label: 'Spaced between'
+    -
+      value: justify-content--space-around
+      label: 'Spaced around'
+    -
+      value: justify-content--space-evenly
+      label: 'Spaced evenly'
+    -
+      value: justify-content--stretch
+      label: Stretch
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

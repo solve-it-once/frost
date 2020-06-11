@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_bgcolor
+field_name: field_style_bgcolor
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background-color--transparent
+      label: Transparent
+    -
+      value: background-color--black
+      label: Black
+    -
+      value: background-color--grey-dark
+      label: 'Grey (dark)'
+    -
+      value: background-color--grey
+      label: Grey
+    -
+      value: background-color--grey-light
+      label: 'Grey (light)'
+    -
+      value: background-color--white
+      label: White
+    -
+      value: background-color--white-transparent
+      label: 'White (semi-transparent)'
+    -
+      value: background-color--main
+      label: 'Main [blue]'
+    -
+      value: background-color--main-dark
+      label: 'Main [blue] (dark)'
+    -
+      value: background-color--main-light
+      label: 'Main [blue] (light)'
+    -
+      value: background-color--second
+      label: Second
+    -
+      value: background-color--second-dark
+      label: 'Second (dark)'
+    -
+      value: background-color--second-light
+      label: 'Second (light)'
+    -
+      value: background-color--third
+      label: Third
+    -
+      value: background-color--third-dark
+      label: 'Third (dark)'
+    -
+      value: background-color--third-light
+      label: 'Third (light)'
+    -
+      value: background-color--accent
+      label: Accent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

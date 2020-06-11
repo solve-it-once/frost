@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform.field_webform
+    - paragraphs.paragraphs_type.webform
+  module:
+    - field_formatter_class
+    - webform
+id: paragraph.webform.default
+targetEntityType: paragraph
+bundle: webform
+mode: default
+content:
+  field_webform:
+    weight: 0
+    label: hidden
+    settings:
+      source_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

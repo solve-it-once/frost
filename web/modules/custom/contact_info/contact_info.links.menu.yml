@@ -1,0 +1,5 @@
+contact_info.contact_info_setup:
+  title: 'Contact Information'
+  parent: system.admin_content
+  route_name: contact_info.contact_info_setup
+  weight: 10

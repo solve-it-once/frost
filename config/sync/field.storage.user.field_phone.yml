@@ -1,0 +1,21 @@
+uuid: 32328cca-eba0-4e12-9b63-b742056dffc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+_core:
+  default_config_hash: TMKvoktd2KjGk65dkN_ca1jX9V15evBRakzGZiRNKjU
+id: user.field_phone
+field_name: field_phone
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

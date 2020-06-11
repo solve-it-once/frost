@@ -1,0 +1,111 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo
+    - node.type.article
+    - paragraphs.paragraphs_type.seo
+  module:
+    - entity_reference_revisions
+id: node.article.field_seo
+field_name: field_seo
+entity_type: node
+bundle: article
+label: SEO
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      seo: seo
+    target_bundles_drag_drop:
+      accordion:
+        weight: 29
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      blockquote:
+        weight: 31
+        enabled: false
+      card:
+        weight: 32
+        enabled: false
+      cards:
+        weight: 33
+        enabled: false
+      column:
+        weight: 34
+        enabled: false
+      content_listing:
+        weight: 35
+        enabled: false
+      dropover:
+        weight: 36
+        enabled: false
+      heading:
+        weight: 37
+        enabled: false
+      hotspot:
+        weight: 38
+        enabled: false
+      iframe:
+        weight: 39
+        enabled: false
+      layout:
+        weight: 40
+        enabled: false
+      link:
+        weight: 41
+        enabled: false
+      media:
+        weight: 42
+        enabled: false
+      message:
+        weight: 43
+        enabled: false
+      rich_text:
+        weight: 44
+        enabled: false
+      seo:
+        enabled: true
+        weight: 45
+      spacer:
+        weight: 46
+        enabled: false
+      statistic_figure:
+        weight: 47
+        enabled: false
+      statistic_percent:
+        weight: 48
+        enabled: false
+      stripe:
+        weight: 49
+        enabled: false
+      stripe_collection:
+        weight: 50
+        enabled: false
+      stripe_reference:
+        weight: 51
+        enabled: false
+      table:
+        weight: 52
+        enabled: false
+      term_listing:
+        weight: 53
+        enabled: false
+      user_listing:
+        weight: 54
+        enabled: false
+      view:
+        weight: 55
+        enabled: false
+      webform:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.stripe.field_components
+    - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_bgcolor
+    - field.field.paragraph.stripe.field_style_bghide
+    - field.field.paragraph.stripe.field_style_bgpx
+    - field.field.paragraph.stripe.field_style_bgpy
+    - field.field.paragraph.stripe.field_style_bgrepeat
+    - field.field.paragraph.stripe.field_style_bgsize
+    - field.field.paragraph.stripe.field_style_color
+    - field.field.paragraph.stripe.field_style_fullwidth
+    - field.field.paragraph.stripe.field_style_textalign
+    - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_video_background
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - field_formatter_class
+id: paragraph.stripe.preview
+targetEntityType: paragraph
+bundle: stripe
+mode: preview
+content:
+  field_image_background:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: square_thumbnail
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden:
+  field_components: true
+  field_style_bgcolor: true
+  field_style_bghide: true
+  field_style_bgpx: true
+  field_style_bgpy: true
+  field_style_bgrepeat: true
+  field_style_bgsize: true
+  field_style_color: true
+  field_style_fullwidth: true
+  field_style_textalign: true
+  field_style_unpad: true
+  field_video_background: true
+  search_api_excerpt: true

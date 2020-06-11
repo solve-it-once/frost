@@ -1,0 +1,20 @@
+uuid: b7c0aa40-2ae2-4cfd-8826-61d36d0b3e4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.from_library.field_reusable_paragraph
+    - paragraphs.paragraphs_type.from_library
+_core:
+  default_config_hash: r4TZydyh5ONZnEbmIQMgY2PeiciP9cSAwBGrDLmxvd8
+id: paragraph.from_library.settings
+targetEntityType: paragraph
+bundle: from_library
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_reusable_paragraph: true
+  status: true
+  uid: true

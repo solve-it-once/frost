@@ -1,0 +1,66 @@
+uuid: 91503ec9-bc8b-4039-87bc-3ee80eac0285
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.column.field_components
+    - field.field.paragraph.column.field_data_animation
+    - field.field.paragraph.column.field_style_animate
+    - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_color
+    - field.field.paragraph.column.field_style_flex
+    - field.field.paragraph.column.field_style_justifycontent
+    - field.field.paragraph.column.field_style_marginh
+    - field.field.paragraph.column.field_style_marginxc
+    - field.field.paragraph.column.field_style_paddingh
+    - field.field.paragraph.column.field_style_paddingxc
+    - field.field.paragraph.column.field_style_textalign
+    - paragraphs.paragraphs_type.column
+  module:
+    - paragraphs
+    - paragraphs_features
+_core:
+  default_config_hash: _1ZPJgrnaitRiqXVdG9U3VxkS-bTUZhOqy1HWTQqZsY
+id: paragraph.column.content
+targetEntityType: paragraph
+bundle: column
+mode: content
+content:
+  field_components:
+    type: paragraphs
+    weight: 0
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        split_text: false
+    region: content
+hidden:
+  created: true
+  field_data_animation: true
+  field_style_animate: true
+  field_style_bgcolor: true
+  field_style_color: true
+  field_style_flex: true
+  field_style_justifycontent: true
+  field_style_marginh: true
+  field_style_marginxc: true
+  field_style_paddingh: true
+  field_style_paddingxc: true
+  field_style_textalign: true
+  status: true

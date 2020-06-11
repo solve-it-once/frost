@@ -1,0 +1,28 @@
+uuid: 1667f77e-3798-4fc5-9954-f577a7f07b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block.field_block
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+_core:
+  default_config_hash: Quzbt7e4KzdGjr0YwOt9DyAswPaUPlJBvJSRxgbuFNE
+id: paragraph.block.default
+targetEntityType: paragraph
+bundle: block
+mode: default
+content:
+  field_block:
+    weight: 0
+    settings:
+      configuration_form: full
+      plugin_id: ''
+      settings: {  }
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,29 @@
+uuid: 2637d4a2-20c6-4639-a9f0-d7e73ec79b16
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.accordion.field_attr_open
+    - field.field.paragraph.accordion.field_text
+    - field.field.paragraph.accordion.field_title
+    - paragraphs.paragraphs_type.accordion
+_core:
+  default_config_hash: kC8jpByq7n3g4hlIDDi6Ua_PC73eyG1qHZWOqiKaVK4
+id: paragraph.accordion.settings
+targetEntityType: paragraph
+bundle: accordion
+mode: settings
+content:
+  field_attr_open:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  field_text: true
+  field_title: true
+  status: true

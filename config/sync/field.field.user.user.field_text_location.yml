@@ -1,0 +1,22 @@
+uuid: 3737eeaa-baa6-4be2-9632-bc1901ba1b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_text_location
+  module:
+    - user
+_core:
+  default_config_hash: 7DKNi-3F5DQmQXw9elWTwM0pE42bG1rc0ly1x8gPmOg
+id: user.user.field_text_location
+field_name: field_text_location
+entity_type: user
+bundle: user
+label: 'City, State, Country'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

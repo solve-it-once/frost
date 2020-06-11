@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.heading
+  module:
+    - frost_custom
+id: paragraph.heading.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: heading
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    wrapper: h2
+default_value_callback: ''
+settings: {  }
+field_type: heading_text

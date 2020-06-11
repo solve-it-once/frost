@@ -1,0 +1,19 @@
+uuid: 774a3ed1-94c0-4fbd-ab2d-b3b81fc8c9e1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DY2ei1O34_xvudZImYaldL5aZ_KrTURPmagWHmNbH4Y
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'never autoplay videos'
+  - 'use search_api_autocomplete for search'
+  - 'view media'
+  - 'view published container entities'
+  - 'view published paragraph set entities'

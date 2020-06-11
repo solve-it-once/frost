@@ -1,0 +1,23 @@
+uuid: 47820621-f759-4305-86fa-cc7c14e3e5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_fontweight
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - options
+_core:
+  default_config_hash: 5bVdS8lHCdRXCaDxW3ISVMYXJ0OWjtqVL1-xuooz7uc
+id: paragraph.rich_text.field_style_fontweight
+field_name: field_style_fontweight
+entity_type: paragraph
+bundle: rich_text
+label: 'Font weight'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: 15baf8c7-0889-440e-a5d7-06d84cafac30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.card.field_image
+    - field.field.paragraph.card.field_link
+    - field.field.paragraph.card.field_text
+    - field.field.paragraph.card.field_title
+    - paragraphs.paragraphs_type.card
+_core:
+  default_config_hash: BtBlIhgCVm493RGo4dHCdI2K9gqFNmr3YoWSsqXqY88
+id: paragraph.card.settings
+targetEntityType: paragraph
+bundle: card
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_image: true
+  field_link: true
+  field_text: true
+  field_title: true
+  status: true

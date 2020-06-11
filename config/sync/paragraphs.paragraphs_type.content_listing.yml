@@ -1,0 +1,12 @@
+uuid: 98272b06-b8da-4ba1-b6e5-c2cef22b65b6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xozLI_psm26LV2D1ttt1QpSPPO2TrbUOmoBHzTcXZMc
+id: content_listing
+label: 'Content Listing'
+icon_uuid: null
+icon_default: null
+description: 'Articles, events, pages, and other content placed into layouts so users can choose to click into their detail pages'
+behavior_plugins: {  }

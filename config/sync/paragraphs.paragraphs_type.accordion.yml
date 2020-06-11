@@ -1,0 +1,12 @@
+uuid: f7733c58-80d5-4263-b0bc-c5b45b8f29e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NgAWGWVY-2hFHRSl_EE5dioHWNtC_XgPzP37H3XROds
+id: accordion
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: 'Disclosure element, allowing to show a brief label that toggles a longer description'
+behavior_plugins: {  }

@@ -1,0 +1,65 @@
+uuid: 867c55c4-e2f7-4168-ac3b-59c7b84aa2d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 5sKbARKNfjZhLcBnD3tdVyzLrQinROm3Pvjali-vLG4
+id: paragraph.field_style_fontsize
+field_name: field_style_fontsize
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: font-size--p375em
+      label: 0.375x
+    -
+      value: font-size--p5em
+      label: 0.5x
+    -
+      value: font-size--p625em
+      label: 0.625x
+    -
+      value: font-size--p75em
+      label: 0.75x
+    -
+      value: font-size--p875em
+      label: 0.875x
+    -
+      value: font-size--1em
+      label: Standard
+    -
+      value: font-size--1-125em
+      label: 1.125x
+    -
+      value: font-size--1-25em
+      label: 1.25x
+    -
+      value: font-size--1-375em
+      label: 1.375x
+    -
+      value: font-size--1-5em
+      label: 1.5x
+    -
+      value: font-size--1-625em
+      label: 1.625x
+    -
+      value: font-size--1-75em
+      label: 1.75x
+    -
+      value: font-size--1-875em
+      label: 1.875x
+    -
+      value: font-size--2em
+      label: 2x
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

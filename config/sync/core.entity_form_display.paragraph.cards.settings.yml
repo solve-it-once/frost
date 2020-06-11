@@ -1,0 +1,26 @@
+uuid: 6f7cd9b1-a742-4419-93fc-7c0b07fb9085
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.cards.field_cards
+    - field.field.paragraph.cards.field_style_layout
+    - paragraphs.paragraphs_type.cards
+_core:
+  default_config_hash: FocLhMdSKq0tLY5UXTfH3wK0pgy45hTF4pPaMF78eUc
+id: paragraph.cards.settings
+targetEntityType: paragraph
+bundle: cards
+mode: settings
+content:
+  field_style_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_cards: true
+  status: true

@@ -1,0 +1,30 @@
+uuid: 1f161c41-4e33-4dd4-bdee-7b30e2497d4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - frost_custom
+    - paragraphs
+_core:
+  default_config_hash: LzCWMftrc4eZ5HlamlbTvG8NcD84ulIujahbHJ5VLS4
+id: paragraph.field_heading
+field_name: field_heading
+entity_type: paragraph
+type: heading_text
+settings:
+  max_length: '255'
+  allowed_wrappers:
+    h1: h1
+    h2: h2
+    h3: h3
+    h4: h4
+    h5: h5
+    h6: h6
+    span: span
+module: frost_custom
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

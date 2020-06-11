@@ -1,0 +1,114 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_seo
+    - paragraphs.paragraphs_type.seo
+    - taxonomy.vocabulary.article_type
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.article_type.field_seo
+field_name: field_seo
+entity_type: taxonomy_term
+bundle: article_type
+label: SEO
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      seo: seo
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: false
+      block:
+        weight: 31
+        enabled: false
+      blockquote:
+        weight: 32
+        enabled: false
+      card:
+        weight: 33
+        enabled: false
+      cards:
+        weight: 34
+        enabled: false
+      column:
+        weight: 35
+        enabled: false
+      content_listing:
+        weight: 36
+        enabled: false
+      dropover:
+        weight: 37
+        enabled: false
+      heading:
+        weight: 38
+        enabled: false
+      hotspot:
+        weight: 39
+        enabled: false
+      iframe:
+        weight: 40
+        enabled: false
+      layout:
+        weight: 41
+        enabled: false
+      link:
+        weight: 42
+        enabled: false
+      media:
+        weight: 43
+        enabled: false
+      message:
+        weight: 44
+        enabled: false
+      product_listing:
+        weight: 45
+        enabled: false
+      rich_text:
+        weight: 46
+        enabled: false
+      seo:
+        enabled: true
+        weight: 47
+      spacer:
+        weight: 48
+        enabled: false
+      statistic_figure:
+        weight: 49
+        enabled: false
+      statistic_percent:
+        weight: 50
+        enabled: false
+      stripe:
+        weight: 51
+        enabled: false
+      stripe_collection:
+        weight: 52
+        enabled: false
+      stripe_reference:
+        weight: 53
+        enabled: false
+      table:
+        weight: 54
+        enabled: false
+      term_listing:
+        weight: 55
+        enabled: false
+      user_listing:
+        weight: 56
+        enabled: false
+      view:
+        weight: 57
+        enabled: false
+      webform:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

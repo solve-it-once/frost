@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article type'
+vid: article_type
+description: ''
+weight: 0

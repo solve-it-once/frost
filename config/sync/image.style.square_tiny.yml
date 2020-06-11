@@ -1,0 +1,18 @@
+uuid: 6ba1a898-6916-4ea2-9b3c-6dea79e7accf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dUsBorDx8IijDmlEKtl12ZYB7M94tdoW42N8QxS_vXc
+name: square_tiny
+label: 'Square Tiny'
+effects:
+  70236778-b675-470b-82d6-8cb7a126e756:
+    uuid: 70236778-b675-470b-82d6-8cb7a126e756
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 45
+      height: 45
+      anchor: center-center
+pipeline: __default__

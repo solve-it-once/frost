@@ -1,0 +1,25 @@
+uuid: 50823f18-f704-49fa-b39f-203587ce2f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_button
+    - paragraphs.paragraphs_type.link
+_core:
+  default_config_hash: oF6jMVAmNn7lY8dbmgDVamZvxxbsTq7dTWR6ZOuCVt4
+id: paragraph.link.field_style_button
+field_name: field_style_button
+entity_type: paragraph
+bundle: link
+label: 'Show links as buttons'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: child-links--as-buttons
+  off_label: child-links--regular
+field_type: boolean

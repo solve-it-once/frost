@@ -1,0 +1,33 @@
+uuid: 447231d0-0ebc-4f9a-ad2f-4f387789ac08
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.content_listing.field_content
+    - field.field.paragraph.content_listing.field_style_layout
+    - field.field.paragraph.content_listing.field_viewmode
+    - paragraphs.paragraphs_type.content_listing
+_core:
+  default_config_hash: EtcqOS7YSk1eWBubkLVhveQmlLHWE5Yq4Eexk71VTrk
+id: paragraph.content_listing.settings
+targetEntityType: paragraph
+bundle: content_listing
+mode: settings
+content:
+  field_style_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_viewmode:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_content: true
+  status: true

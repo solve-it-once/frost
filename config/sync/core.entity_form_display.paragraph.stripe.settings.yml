@@ -1,0 +1,119 @@
+uuid: 41010f7d-86f6-4baf-bf8e-a2d0e542be97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.stripe.field_components
+    - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_bgcolor
+    - field.field.paragraph.stripe.field_style_bghide
+    - field.field.paragraph.stripe.field_style_bgpx
+    - field.field.paragraph.stripe.field_style_bgpy
+    - field.field.paragraph.stripe.field_style_bgrepeat
+    - field.field.paragraph.stripe.field_style_bgsize
+    - field.field.paragraph.stripe.field_style_color
+    - field.field.paragraph.stripe.field_style_fullwidth
+    - field.field.paragraph.stripe.field_style_textalign
+    - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_title
+    - field.field.paragraph.stripe.field_video_background
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - media_library
+_core:
+  default_config_hash: iNUBsn20UUmE0qL7rre30nGWNTGRslfy1Ud63weOQ88
+id: paragraph.stripe.settings
+targetEntityType: paragraph
+bundle: stripe
+mode: settings
+content:
+  field_image_background:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_style_bgcolor:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bghide:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_bgpx:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgpy:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgrepeat:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgsize:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_color:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fullwidth:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_textalign:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_unpad:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_title:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video_background:
+    type: media_library_widget
+    weight: 6
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_components: true
+  status: true

@@ -1,0 +1,32 @@
+uuid: 84ee2790-51ca-410a-9979-3ed0dacd7a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.user_listing.field_style_layout
+    - field.field.paragraph.user_listing.field_users
+    - field.field.paragraph.user_listing.field_viewmode
+    - paragraphs.paragraphs_type.user_listing
+_core:
+  default_config_hash: jwfYUZo9TTKrW508mKgbOn05X-7YnIljiZArcU2ti_M
+id: paragraph.user_listing.content
+targetEntityType: paragraph
+bundle: user_listing
+mode: content
+content:
+  field_users:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden:
+  created: true
+  field_style_layout: true
+  field_viewmode: true
+  status: true

@@ -1,0 +1,186 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe.field_components
+    - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_bgcolor
+    - field.field.paragraph.stripe.field_style_bghide
+    - field.field.paragraph.stripe.field_style_bgpx
+    - field.field.paragraph.stripe.field_style_bgpy
+    - field.field.paragraph.stripe.field_style_bgrepeat
+    - field.field.paragraph.stripe.field_style_bgsize
+    - field.field.paragraph.stripe.field_style_color
+    - field.field.paragraph.stripe.field_style_fullwidth
+    - field.field.paragraph.stripe.field_style_textalign
+    - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_video_background
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+    - paragraphs_features
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_components
+      parent_name: group_admin
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_bgcolor
+        - field_image_background
+        - field_style_bgpx
+        - field_style_bgpy
+        - field_style_bgoverlay
+        - field_style_bgrepeat
+        - field_style_bgsize
+        - field_video_background
+        - field_style_fullwidth
+        - field_style_bghide
+        - field_style_textalign
+        - field_style_color
+        - field_style_unpad
+      parent_name: group_admin
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+id: paragraph.stripe.default
+targetEntityType: paragraph
+bundle: stripe
+mode: default
+content:
+  field_components:
+    weight: 3
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: true
+        delete_confirmation: false
+        split_text: false
+    type: paragraphs
+    region: content
+  field_image_background:
+    type: media_library_widget
+    weight: 13
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_style_bgcolor:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bghide:
+    weight: 21
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_bgpx:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgpy:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgrepeat:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_bgsize:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_color:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fullwidth:
+    weight: 20
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_textalign:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_unpad:
+    weight: 24
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_video_background:
+    type: media_library_widget
+    weight: 19
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

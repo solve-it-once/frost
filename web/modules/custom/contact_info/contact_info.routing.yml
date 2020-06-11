@@ -1,0 +1,7 @@
+contact_info.contact_info_setup:
+  path: 'admin/content/contact-info'
+  defaults:
+    _form: 'Drupal\contact_info\Form\ContactInfoSetupForm'
+    _title: 'Contact Information'
+  requirements:
+    _permission: 'modify contact info'

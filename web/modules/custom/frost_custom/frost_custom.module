@@ -1,0 +1,277 @@
+<?php
+
+/**
+ * @file
+ * Custom module to perform misc tasks.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Xss;
+use Drupal\node\Entity\NodeType;
+use Drupal\taxonomy\Entity\Vocabulary;
+use Drupal\node\NodeInterface;
+
+/**
+ * Helper function to get options (all or available).
+ */
+function _frost_custom_get_options() {
+  return [
+    'h1' => t('Heading 1'),
+    'h2' => t('Heading 2'),
+    'h3' => t('Heading 3'),
+    'h4' => t('Heading 4'),
+    'h5' => t('Heading 5'),
+    'h6' => t('Heading 6'),
+    'span' => t('Regular text'),
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function frost_custom_page_attachments(array &$attachments) {
+  // Add an apple-touch-icon if there's one in the site root.
+  if (file_exists(DRUPAL_ROOT . '/apple-touch-icon.png')) {
+    $attachments['#attached']['html_head_link'][][] = [
+      'rel' => 'apple-touch-icon',
+      'href' => '/apple-touch-icon.png',
+    ];
+  }
+}
+
+/**
+ * This is how tokens adds new view modes during install.
+ *
+ * Implementing hook_entity_type_alter()
+ * will throw an error, so it seems the best way to implement this
+ * is during install, and when new entity types are created.
+ */
+function frost_custom_add_view_modes() {
+  $modes = ['teaser', 'small'];
+  // Create view modes for each entity type.
+  $info = \Drupal::entityTypeManager()->getDefinitions();
+  foreach ($info as $entity_type => $entity_type_info) {
+    // We're only interested in entity types with a view builder.
+    if (!$entity_type_info->getViewBuilderClass()) {
+      continue;
+    }
+    // Try to find a token view mode for that entity type.
+    $storage = \Drupal::entityTypeManager()->getStorage('entity_view_mode');
+    // Add view mode if it does not already exist.
+    foreach ($modes as $mode) {
+      if (!$storage->load("$entity_type.$mode")) {
+        $storage->create([
+          'targetEntityType' => $entity_type,
+          'id' => "$entity_type.$mode",
+          'status' => TRUE,
+          'label' => ucwords($mode),
+        ])->save();
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function frost_custom_entity_insert(EntityInterface $entity) {
+  frost_custom_add_view_modes();
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function frost_custom_entity_extra_field_info() {
+  $extra = [];
+
+  // Go through all the node types and add extra fields for display.
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->Id()] = [
+      'display' => [
+        'frost_submitted' => [
+          'label' => t('Submitted'),
+          'description' => t('Author attribution for the content.'),
+          'weight' => 0,
+        ],
+        'linked_title' => [
+          'label' => t('Title (contextually linked)'),
+          'description' => t('The title linked to the detail page.'),
+          'weight' => 0,
+        ],
+      ],
+    ];
+  }
+
+  // Go through all the taxonomy vocabularies and add extra fields for display.
+  foreach (Vocabulary::loadMultiple() as $vocab) {
+    $extra['taxonomy_term'][$vocab->Id()] = [
+      'display' => [
+        'linked_title' => [
+          'label' => t('Title (contextually linked)'),
+          'description' => t('The title linked to the detail page.'),
+          'weight' => 0,
+        ],
+        'readmore' => [
+          'label' => t('Read more link'),
+          'description' => t('A link back to the entity that says read more.'),
+          'weight' => 0,
+        ],
+      ],
+    ];
+  }
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function frost_custom_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // Submitted line.
+  if ($display->getComponent('frost_submitted')) {
+    $sub = \Drupal::config('frost_custom.frost_submitted');
+    $sub_line = 'Submitted by [node:author:name] on [node:created]';
+    if ($sub->get($entity->bundle())) {
+      $sub_line = $sub->get($entity->bundle());
+    }
+    $build['frost_submitted'] = [
+      '#prefix' => '<div class="submitted">',
+      '#markup' => \Drupal::token()
+        ->replace($sub_line, ['node' => $entity]),
+      '#suffix' => '</div>',
+    ];
+  }
+
+  // Linked title.
+  if ($display->getComponent('linked_title')) {
+    $linked_title_url = Url::fromRoute('entity.node.canonical', ['node' => $entity->id()]);
+    $attributes = [];
+    $prefix = '<h2>';
+    $suffix = '</h2>';
+
+    // Link directly to PDF if available.
+    if ($entity->bundle() === 'resource' && $entity->hasField('field_resource')) {
+      $document = $entity->get('field_resource')->referencedEntities();
+      if (isset($document[0])) {
+        $pdf_file = $document[0]->get('field_media_file')->getValue();
+        if (isset($pdf_file[0]['target_id'])) {
+          $file = \Drupal::entityTypeManager()->getStorage('file')->load($pdf_file[0]['target_id']);
+          $private_uri = $file->getFileUri();
+          $linked_title_url = file_create_url($private_uri);
+          $linked_title_url = Url::fromUri($linked_title_url);
+          $attributes['target'] = '_blank';
+        }
+      }
+    }
+
+    if (in_array($view_mode, ['default', 'full', 'hero'])) {
+      $prefix = '<h1 class="frost-custom-module--linked-title">';
+      $suffix = '</h1>';
+      $build['linked_title'] = [
+        '#prefix' => $prefix,
+        '#markup' => $entity->getTitle(),
+        '#suffix' => $suffix,
+      ];
+    }
+    else {
+      $build['linked_title'] = [
+        '#prefix' => $prefix,
+        '#type' => 'link',
+        '#url' => $linked_title_url,
+        '#title' => $entity->getTitle(),
+        '#attributes' => $attributes,
+        '#suffix' => $suffix,
+      ];
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function frost_custom_taxonomy_term_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // Linked title.
+  if ($display->getComponent('linked_title')) {
+    $linked_title_url = Url::fromRoute('entity.taxonomy_term.canonical', ['taxonomy_term' => $entity->id()]);
+    $attributes = [];
+    $prefix = '<h2>';
+    $suffix = '</h2>';
+
+    if (in_array($view_mode, ['default', 'full', 'hero'])) {
+      $prefix = '<h1 class="frost-custom-module--linked-title">';
+      $suffix = '</h1>';
+      $build['linked_title'] = [
+        '#prefix' => $prefix,
+        '#markup' => $entity->getName(),
+        '#suffix' => $suffix,
+      ];
+    }
+    else {
+      $build['linked_title'] = [
+        '#prefix' => $prefix,
+        '#type' => 'link',
+        '#url' => $linked_title_url,
+        '#title' => $entity->getName(),
+        '#attributes' => $attributes,
+        '#suffix' => $suffix,
+      ];
+    }
+  }
+
+  // Read more link.
+  if ($display->getComponent('readmore')) {
+    $link_url = Url::fromRoute('entity.taxonomy_term.canonical', ['taxonomy_term' => $entity->id()]);
+
+    $build['readmore'] = [
+      '#type' => 'link',
+      '#title' => t('Learn more<span class="visually-hidden"> about @title</span>', [
+        '@title' => $entity->getName(),
+      ]),
+      '#url' => $link_url,
+      '#language' => $entity->language(),
+      '#attributes' => [
+        'rel' => 'tag',
+        'title' => $entity->getName(),
+        'class' => [
+          'link--after-arrow',
+          'readmore-link',
+        ],
+      ],
+    ];
+  }
+}
+
+/**
+ * Implements hook_node_links_alter().
+ */
+function frost_custom_node_links_alter(array &$links, NodeInterface $entity, array &$context) {
+  $node_title_stripped = strip_tags($entity->label());
+
+  // Switch "Read more" to "Learn more" in the node links.
+  if (!isset($links['node']['#links']['node-readmore']['title'])) {
+    $links['node']['#links']['node-readmore'] = [
+      'title' => t('Learn more<span class="visually-hidden"> about @title</span>', [
+        '@title' => $node_title_stripped,
+      ]),
+      'url' => $entity->toUrl(),
+      'language' => $entity->language(),
+      'attributes' => [
+        'rel' => 'tag',
+        'title' => $node_title_stripped,
+      ],
+    ];
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function frost_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Add the SEO fields to the advanced fieldset.
+  if (isset($form['advanced']) && isset($form['field_seo'])) {
+    $form['field_seo']['#group'] = 'advanced';
+  }
+}

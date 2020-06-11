@@ -1,0 +1,31 @@
+uuid: 1d6f0f1b-f85f-4fca-a243-a47d697e3e84
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - frost_theme
+third_party_settings:
+  block_class:
+    classes: pipe-spaced
+_core:
+  default_config_hash: a2avC3PmUWyrzKW0jqUKHGOw-eObdeYDbTx0mmnfbIk
+id: footerutility
+theme: frost_theme
+region: footer_utility
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer utility'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: fce90dbc-2b22-4636-ad59-0f3ad1d07ecf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LrjQeYez9SYMbKzky3SyIYBnkoo6dN3cMoTW2pKCkYk
+id: seo
+label: SEO
+icon_uuid: 80a1a867-5b0c-4ee5-9a45-7a4611cdc71f
+icon_default: null
+description: 'Fields for setting <meta> tags and other SEO-related attributes on the page.'
+behavior_plugins: {  }

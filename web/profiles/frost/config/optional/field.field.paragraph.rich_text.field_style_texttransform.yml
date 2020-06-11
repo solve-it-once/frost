@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_texttransform
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - options
+id: paragraph.rich_text.field_style_texttransform
+field_name: field_style_texttransform
+entity_type: paragraph
+bundle: rich_text
+label: 'Text transform'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

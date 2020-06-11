@@ -1,0 +1,21 @@
+uuid: 5b3a395e-f623-4906-9ee9-a4247c1ae055
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_prefix
+    - paragraphs.paragraphs_type.statistic_percent
+_core:
+  default_config_hash: BnoXt2k8p9hXKiVQnLGBHROkrqc79e3xUzUttwuBkJE
+id: paragraph.statistic_percent.field_text_prefix
+field_name: field_text_prefix
+entity_type: paragraph
+bundle: statistic_percent
+label: Prefix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: cd688759-f750-4266-9ac8-9e14bd85e14f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XeWQBoKQFC7lZln1-PALmSpfWNHdgfxGyvKL88QDuGw
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'bypass honeypot protection'
+  - 'cancel account'
+  - 'never autoplay videos'
+  - 'opt-in or out of google analytics tracking'
+  - 'view media'
+  - 'view published container entities'
+  - 'view published paragraph set entities'

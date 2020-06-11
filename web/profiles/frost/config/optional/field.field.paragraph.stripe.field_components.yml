@@ -1,0 +1,150 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.blockquote
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.content_listing
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.iframe
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.message
+    - paragraphs.paragraphs_type.rich_text
+    - paragraphs.paragraphs_type.spacer
+    - paragraphs.paragraphs_type.stripe
+    - paragraphs.paragraphs_type.stripe_collection
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.term_listing
+    - paragraphs.paragraphs_type.user_listing
+    - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: paragraph.stripe.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: stripe
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      block: block
+      blockquote: blockquote
+      cards: cards
+      content_listing: content_listing
+      heading: heading
+      iframe: iframe
+      layout: layout
+      link: link
+      media: media
+      message: message
+      rich_text: rich_text
+      spacer: spacer
+      stripe_collection: stripe_collection
+      table: table
+      term_listing: term_listing
+      user_listing: user_listing
+      view: view
+      webform: webform
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: -59
+      block:
+        enabled: true
+        weight: -58
+      blockquote:
+        enabled: true
+        weight: -57
+      card:
+        weight: -56
+        enabled: false
+      cards:
+        enabled: true
+        weight: -55
+      column:
+        weight: -54
+        enabled: false
+      content_listing:
+        enabled: true
+        weight: -53
+      dropover:
+        enabled: true
+        weight: -52
+      heading:
+        enabled: true
+        weight: -51
+      hotspot:
+        weight: -50
+        enabled: false
+      iframe:
+        enabled: true
+        weight: -49
+      layout:
+        enabled: true
+        weight: -48
+      link:
+        enabled: true
+        weight: -47
+      media:
+        enabled: true
+        weight: -46
+      message:
+        enabled: true
+        weight: -45
+      product_listing:
+        enabled: true
+        weight: -44
+      rich_text:
+        enabled: true
+        weight: -43
+      seo:
+        weight: -42
+        enabled: false
+      spacer:
+        enabled: true
+        weight: -41
+      stripe:
+        weight: -40
+        enabled: false
+      statistic_percent:
+        weight: -39
+        enabled: false
+      statistic_figure:
+        weight: -38
+        enabled: false
+      stripe_collection:
+        enabled: true
+        weight: -37
+      stripe_reference:
+        weight: -36
+        enabled: false
+      table:
+        enabled: true
+        weight: -35
+      term_listing:
+        enabled: true
+        weight: -34
+      user_listing:
+        enabled: true
+        weight: -33
+      view:
+        enabled: true
+        weight: -32
+      webform:
+        enabled: true
+        weight: -31
+field_type: entity_reference_revisions

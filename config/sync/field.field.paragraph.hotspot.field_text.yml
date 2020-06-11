@@ -1,0 +1,23 @@
+uuid: a3eaa7f4-f046-4721-bb9a-92ecf1c88ec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.hotspot
+  module:
+    - text
+_core:
+  default_config_hash: 3-THDKFF1nTrMA-JWyoL02gJ8ZLnlYW-3ycD9mzXj5U
+id: paragraph.hotspot.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: hotspot
+label: 'Tooltip text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

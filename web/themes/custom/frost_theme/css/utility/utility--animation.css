@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Classes in a property--value style used across projects.
+ */
+
+/**
+ * Animation delay.
+ */
+.animation-delay--1s {
+  animation-delay: 1s;
+}
+
+/**
+ * Animation duration.
+ */
+.animation-duration--p3s {
+  animation-duration: .3s;
+}
+.animation-duration--1s {
+  animation-duration: 1s;
+}
+.animation-duration--2s {
+  animation-duration: 2s;
+}
+.animation-duration--3s {
+  animation-duration: 3s;
+}
+
+/**
+ * Stop animations on hover or click.
+ */
+.js--event--click--toggle[class*="animation-name--"],
+.js--event--mouseenter--toggle[class*="animation-name--"],
+.js--event--mouseover--toggle[class*="animation-name--"] {
+  animation-name: none;
+}

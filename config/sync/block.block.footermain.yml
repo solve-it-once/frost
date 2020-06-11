@@ -1,0 +1,27 @@
+uuid: 5742e944-a018-47f3-8d46-5372e4afd55c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-main
+  module:
+    - system
+  theme:
+    - frost_theme
+_core:
+  default_config_hash: v-tzcRHF1i-HqwJVY0DgfM5LX6s1lAXhza1OyqN33ZE
+id: footermain
+theme: frost_theme
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-main'
+settings:
+  id: 'system_menu_block:footer-main'
+  label: 'Footer main'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

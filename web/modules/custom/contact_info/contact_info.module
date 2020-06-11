@@ -1,0 +1,502 @@
+<?php
+
+/**
+ * @file
+ * Contact info module that provides blocks and tokens.
+ */
+
+use Drupal\Core\Config\ImmutableConfig;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function contact_info_theme($existing, $type, $theme, $path) {
+  return [
+    'contact_info_social_draggable_table' => [
+      'render element' => 'form',
+    ],
+    'address' => [
+      'variables' => [
+        'country_name' => NULL,
+        'legal_name' => NULL,
+        'street_address' => NULL,
+        'street_address_2' => NULL,
+        'locality' => NULL,
+        'region' => NULL,
+        'postal_code' => NULL,
+      ],
+      'template' => 'address',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_contextual_links_view_alter().
+ */
+function contact_info_contextual_links_view_alter(&$element, $items) {
+  // Contextual link to edit contact info.
+  if (isset($element['#element']['#block'])) {
+    switch ($element['#element']['#block']->delta) {
+      case 'address':
+      case 'phone':
+      case 'email':
+      case 'fax':
+        $element['#links']['edit-content'] = [
+          'title' => 'Edit contact info',
+          'href' => Url::fromUri('admin/content/contact-info', [
+            'absolute' => TRUE,
+            'query' => [
+              'destination' => \Drupal::service('path.current')
+                ->getPath(),
+            ],
+          ]),
+        ];
+        break;
+
+      case 'social':
+        $element['#links']['edit-content'] = [
+          'title' => 'Edit social media links',
+          'href' => Url::fromUri('admin/content/contact-info', [
+            'fragment' => 'contact-info-social-media-wrapper',
+            'absolute' => TRUE,
+            'query' => [
+              'destination' => \Drupal::service('path.current')->getPath(),
+            ],
+          ]),
+        ];
+        break;
+    }
+  }
+}
+
+/**
+ * Reusable function to return something renderable for address.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_address(ImmutableConfig $contact_info = NULL) {
+  $variables = [];
+  foreach ($contact_info->get('address') as $key => $value) {
+    if (isset($value) && strlen($value)) {
+      $variables['#' . $key] = $value;
+    }
+  }
+
+  $variables['#theme'] = 'address';
+  return $variables;
+}
+
+/**
+ * Reusable function to read the config for fax and return something renderable.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_fax(ImmutableConfig $contact_info = NULL) {
+  $fax = $contact_info->get('fax');
+  if (isset($fax['number']) && $fax['number']) {
+    return [
+      '#markup' => Link::fromTextAndUrl($fax['number'], Url::fromUri('tel:' . $fax['number'], [
+        'attributes' => [
+          'itemprop' => 'fax',
+          'class' => ['fax'],
+        ],
+      ]))->toString(),
+    ];
+  }
+  else {
+    return [];
+  }
+}
+
+/**
+ * Reusable function to read config for email and return something renderable.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_email(ImmutableConfig $contact_info = NULL) {
+  $email = $contact_info->get('email');
+  if (isset($email['emailaddress']) && $email['emailaddress']) {
+    return [
+      '#markup' => Link::fromTextAndUrl($email['emailaddress'], Url::fromUri('mailto:' . $email['emailaddress'], [
+        'attributes' => [
+          'itemprop' => 'email',
+          'class' => ['email'],
+        ],
+      ]))->toString(),
+    ];
+  }
+  else {
+    return [];
+  }
+}
+
+/**
+ * Reusable function to read the config for map and return something renderable.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ * @param array $map_settings
+ *   The config array saved from the MapBlock Form.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_map(ImmutableConfig $contact_info = NULL, $map_settings = NULL) {
+  if ($map_settings == NULL) {
+    // Try to grab a pre-configured block for the map.
+    $map_settings = \Drupal::config('block.block.map');
+    // If it doesn't exist, use our default values.
+    $map_settings = [
+      'api_key' => $map_settings->get('api_key') != NULL ? $map_settings->get('api_key') : 'AIzaSyAkkBDnKYln9G2v8PLIFUiUUmqyyiZ4uxw',
+      'width' => $map_settings->get('width') != NULL ? $map_settings->get('width') : '600',
+      'height' => $map_settings->get('height') != NULL ? $map_settings->get('height') : '450',
+    ];
+  }
+  $output = '';
+  // Check to see if an API key exists.
+  if (!isset($map_settings['api_key'])) {
+    \Drupal::messenger()->addMessage(t('Please provide a Google API key for the embedded map to work properly'), 'warning');
+    return [];
+  }
+
+  if ($contact_info->get('address') !== NULL) {
+    // Construct an address string.
+    $address = $contact_info->get('address');
+    $address_string = $address['street_address'] . ' ';
+    if (strlen($address['street_address_2'])) {
+      $address_string .= $address['street_address_2'] . ' ';
+    }
+    $address_string .= $address['locality'] . ' ';
+    $address_string .= $address['region'] . ' ';
+    $address_string .= $address['postal_code'] . ' ';
+
+    $output = '<iframe width="' . $map_settings['width'] . '" height="' . $map_settings['height'] . '" frameborder="0" ';
+    $output .= 'style="border:0" src="https://www.google.com/maps/embed/v1/place?key=';
+    $output .= $map_settings['api_key'] . '&q=' . urlencode(str_replace(' ', '+', $address_string));
+    $output .= '"></iframe>';
+  }
+
+  return [
+    '#children' => $output,
+  ];
+}
+
+/**
+ * Reusable function to return something renderable for phone.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_phone(ImmutableConfig $contact_info = NULL) {
+  $phone = $contact_info->get('phone');
+  if (isset($phone['number']) && $phone['number']) {
+    if (!isset($phone['country_code']) && !strlen($phone['country_code'])) {
+      $phone['country_code'] = '1';
+    }
+
+    $phone['machine'] = _contact_info_string_to_number($phone['number']);
+
+    // Allow to display with the country code.
+    return [
+      '#markup' => Link::fromTextAndUrl($phone['number'], Url::fromUri('tel:+' . $phone['machine'], [
+        'attributes' => [
+          'itemprop' => 'telephone',
+          'class' => ['telephone'],
+        ],
+      ]))->toString(),
+    ];
+  }
+  else {
+    return [];
+  }
+}
+
+/**
+ * Reusable function to return something renderable for the social table.
+ *
+ * @param \Drupal\Core\Config\ImmutableConfig $contact_info
+ *   The config object saved by ContactInfoSetupForm.
+ *
+ * @return array
+ *   A render array for the resulting element
+ */
+function contact_info_create_social(ImmutableConfig $contact_info = NULL) {
+  $data = [];
+  $social = $contact_info->get('social');
+
+  // Structure data for output.
+  if (!empty($social)) {
+    foreach ($social['table'] as $key => $social_site) {
+      if ($social_site && $social_site['enable']) {
+        $data[$key] = [
+          'url' => $social_site['url'],
+          'weight' => $social_site['weight'],
+          'name' => $social_site['name'],
+        ];
+      }
+    }
+  }
+
+  // Sort data array by weight.
+  uasort($data, 'contact_info_sort_weight');
+
+  $output = [];
+
+  // Build render array to output social media links.
+  if ($data) {
+    // Start building out social media stuffs.
+    $output['social'] = [
+      '#prefix' => '<div class="social">',
+      '#suffix' => '</div>',
+    ];
+
+    foreach ($data as $social_site_key => $social_site) {
+      // Do some magic for both internal and external URLs.
+      $uri = strpos($social_site['url'], '/') === 0 ? ('internal:' . $social_site['url']) : $social_site['url'];
+
+      $output['social'][$social_site_key]
+        = Link::fromTextAndUrl($social_site['name'],
+        Url::fromUri($uri,
+          [
+            'html' => TRUE,
+            'attributes' => [],
+          ]
+        ))->toRenderable();
+    }
+  }
+
+  return $output;
+}
+
+/**
+ * Helper function to sort weights.
+ *
+ * @param int $first
+ *   The first value that needs sorting.
+ * @param int $second
+ *   The second value, to compare to the first.
+ *
+ * @return int
+ *   Either returns the weight difference between the two values,
+ *   or 0 if equal or not weighted
+ */
+function contact_info_sort_weight($first, $second) {
+  if (isset($first['weight']) && isset($second['weight'])) {
+    return ($first['weight'] - $second['weight']);
+  }
+
+  return 0;
+}
+
+/**
+ * Function to convert a phone number containing letters to all numbers.
+ *
+ * @param string $string
+ *   A phone number string.
+ *
+ * @return string
+ *   A phone number string consisting of only numbers.
+ */
+function _contact_info_string_to_number($string) {
+  $array = str_split($string);
+
+  foreach ($array as $key => $letter) {
+    $array[$key] = _contact_info_letter_strip($letter);
+  }
+
+  return implode('', $array);
+}
+
+/**
+ * Function to convert a phone number letter to a number.
+ *
+ * @param string $letter
+ *   A single alphanumeric character.
+ *
+ * @return string
+ *   An integer representation of the input letter, or an empty string
+ */
+function _contact_info_letter_strip($letter) {
+  $map = [
+    'A' => 2,
+    'B' => 2,
+    'C' => 2,
+    'D' => 3,
+    'E' => 3,
+    'F' => 3,
+    'G' => 4,
+    'H' => 4,
+    'I' => 4,
+    'J' => 5,
+    'K' => 5,
+    'L' => 5,
+    'M' => 6,
+    'N' => 6,
+    'O' => 6,
+    'P' => 7,
+    'Q' => 7,
+    'R' => 7,
+    'S' => 7,
+    'T' => 8,
+    'U' => 8,
+    'V' => 8,
+    'W' => 9,
+    'X' => 9,
+    'Y' => 9,
+    'Z' => 9,
+  ];
+
+  $letter = strtoupper($letter);
+
+  if (array_key_exists($letter, $map)) {
+    return $map[$letter];
+  }
+  elseif (is_numeric($letter)) {
+    return $letter;
+  }
+  else {
+    return '';
+  }
+}
+
+/**
+ * Helper function to render a draggable social table.
+ *
+ * Determines if the add/remove buttons have been clicked for the
+ * appropriate number of rows.
+ *
+ * @param array $social_table
+ *   An array of saved values for the social table.
+ * @param array $form
+ *   An associative array containing the structure of the form.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current state of the form.
+ */
+function _contact_info_social_draggable_table($social_table, &$form, FormStateInterface &$form_state) {
+  // Check to see how many social media rows we need.
+  if (isset($form_state->getCompleteForm()['contact_info']['social_rows']['#value'])) {
+    if (isset($social_table) && !$form_state->isRebuilding()) {
+      $form_state->setValue('social_rows', $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
+        $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table));
+      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+    }
+    elseif ($form_state->isRebuilding() && $form_state->getValue('op')
+        ->render() == 'Add social media'
+    ) {
+      $form_state->setValue('social_rows', ($form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
+          $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table)) + 1);
+      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+    }
+    elseif ($form_state->isRebuilding() && $form_state->getValue('op')
+        ->render() == 'Remove social media'
+    ) {
+      $form_state->setValue('social_rows', ($form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
+          $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table)) - 1);
+      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+    }
+  }
+  else {
+    $form_state->setValue('social_rows', 1);
+    $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+  }
+
+  // Build out that header.
+  $header = [t('Name'), t('Icon'), t('URL'), t('Enable'), t('Weight')];
+
+  $form['contact_info']['social']['table'] = [
+    '#type' => 'table',
+    '#attributes' => ['id' => 'items-table'],
+    '#header' => $header,
+    '#sticky' => TRUE,
+    '#tabledrag' => [
+      [
+        'action' => 'order',
+        'relationship' => 'sibling',
+        'group' => 'social-order-weight',
+      ],
+    ],
+  ];
+
+  for ($i = 1; $i <= $form_state->getValue('social_rows'); $i++) {
+    $form['contact_info']['social']['table'][$i]['name'] = [
+      '#type' => 'textfield',
+      '#default_value' => isset($social_table[$i]['name']) ? $social_table[$i]['name'] : '',
+    ];
+
+    $form['contact_info']['social']['table'][$i]['icon'] = [
+      '#prefix' => '<span class="social">',
+      '#suffix' => '</span>',
+    ];
+
+    // Add icon if any social media rows are present.
+    if (isset($social_table[$i]['url']) && !empty($social_table[$i]['url'])) {
+      if (strpos($social_table[$i]['url'], '/') === 0) {
+        $form['contact_info']['social']['table'][$i]['icon']['link']
+          = Link::fromTextAndUrl($social_table[$i]['name'],
+          Url::fromUri('internal:' . $social_table[$i]['url']))->toRenderable();
+      }
+      else {
+        $form['contact_info']['social']['table'][$i]['icon']['link']
+          = Link::fromTextAndUrl($social_table[$i]['name'],
+          Url::fromUri($social_table[$i]['url']))->toRenderable();
+      }
+    }
+
+    $form['contact_info']['social']['table'][$i]['url'] = [
+      '#type' => 'textfield',
+      '#default_value' => isset($social_table[$i]['url']) ? $social_table[$i]['url'] : '',
+    ];
+
+    $form['contact_info']['social']['table'][$i]['enable'] = [
+      '#type' => 'checkbox',
+      '#default_value' => isset($social_table[$i]['enable']) ? $social_table[$i]['enable'] : '',
+    ];
+
+    $form['contact_info']['social']['table'][$i]['#attributes']['class'][] = 'draggable';
+    $form['contact_info']['social']['table'][$i]['weight'] = [
+      '#type' => 'weight',
+      '#default_value' => isset($social_table[$i]['weight']) ? $social_table[$i]['weight'] : 10,
+      // Classify the weight element for #tabledrag.
+      '#attributes' => ['class' => ['social-order-weight']],
+    ];
+  }
+
+  $form['contact_info']['social']['add_social_row'] = [
+    '#type' => 'button',
+    '#value' => t('Add social media'),
+    '#ajax' => [
+      'callback' => 'Drupal\contact_info\Form\ContactInfoSetupForm::socialRows',
+      'wrapper' => 'contact-info-social-media-wrapper',
+    ],
+  ];
+
+  // Show the remove button if more than one row is present.
+  if ($form_state->getValue('social_rows') > 1) {
+    $form['contact_info']['social']['remove_social_row'] = [
+      '#type' => 'button',
+      '#value' => t('Remove social media'),
+      '#ajax' => [
+        'callback' => 'Drupal\contact_info\Form\ContactInfoSetupForm::socialRows',
+        'wrapper' => 'contact-info-social-media-wrapper',
+      ],
+    ];
+  }
+}

@@ -1,0 +1,33 @@
+uuid: e2c9b613-4292-4aea-b69b-35420ccad8f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.media.field_hotspots
+    - field.field.paragraph.media.field_link
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_text
+    - paragraphs.paragraphs_type.media
+  module:
+    - media_library
+_core:
+  default_config_hash: v97Do2EIfLMBouJg8V4Dv7XHtU9ltG4tDCiZ2Cw9ylo
+id: paragraph.media.content
+targetEntityType: paragraph
+bundle: media
+mode: content
+content:
+  field_media:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_hotspots: true
+  field_link: true
+  field_text: true
+  status: true

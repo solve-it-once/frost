@@ -1,0 +1,10 @@
+uuid: 377fb949-9607-49c5-a650-7ed86cda66be
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.small
+label: Small
+targetEntityType: taxonomy_term
+cache: true

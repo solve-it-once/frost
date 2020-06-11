@@ -1,0 +1,29 @@
+uuid: d3354332-0252-42d5-ab06-fee26d30e0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blockquote.field_style_quoteclose
+    - field.field.paragraph.blockquote.field_style_quoteopen
+    - field.field.paragraph.blockquote.field_text
+    - paragraphs.paragraphs_type.blockquote
+  module:
+    - text
+_core:
+  default_config_hash: 0gjFT9-WlXjsyLhP9EQqrz24Dn-UlyDoNePK29OAVuM
+id: paragraph.blockquote.default
+targetEntityType: paragraph
+bundle: blockquote
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_style_quoteclose: true
+  field_style_quoteopen: true
+  search_api_excerpt: true

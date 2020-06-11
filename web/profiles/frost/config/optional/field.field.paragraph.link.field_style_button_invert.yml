@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_button_invert
+    - paragraphs.paragraphs_type.link
+id: paragraph.link.field_style_button_invert
+field_name: field_style_button_invert
+entity_type: paragraph
+bundle: link
+label: 'Inverted ''ghost'' buttons'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: button-color--inverted
+  off_label: button-color--regular
+field_type: boolean

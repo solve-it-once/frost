@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_justifycontent
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+id: paragraph.column.field_style_justifycontent
+field_name: field_style_justifycontent
+entity_type: paragraph
+bundle: column
+label: 'Vertical alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: justify-content--flex-start
+default_value_callback: ''
+settings: {  }
+field_type: list_string

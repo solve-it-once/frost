@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_layout
+    - paragraphs.paragraphs_type.term_listing
+  module:
+    - options
+id: paragraph.term_listing.field_style_layout
+field_name: field_style_layout
+entity_type: paragraph
+bundle: term_listing
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: layout--horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

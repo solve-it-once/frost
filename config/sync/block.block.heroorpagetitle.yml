@@ -1,0 +1,22 @@
+uuid: 053aabea-9786-4e58-91d8-bb19d6dc0d55
+langcode: en
+status: true
+dependencies:
+  module:
+    - frost_custom
+  theme:
+    - frost_theme
+_core:
+  default_config_hash: Lx0QooL6Ggjb-yDQJGOaZ4NPxye8cVe5DUjdll4wlxY
+id: heroorpagetitle
+theme: frost_theme
+region: splash
+weight: 0
+provider: null
+plugin: hero_title_block
+settings:
+  id: hero_title_block
+  label: 'Hero or Page Title'
+  provider: frost_custom
+  label_display: '0'
+visibility: {  }

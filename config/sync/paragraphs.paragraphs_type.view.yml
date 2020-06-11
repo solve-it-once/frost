@@ -1,0 +1,12 @@
+uuid: 9cb7f40a-7338-41a1-bac1-03a25a2ae2e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8_dQt7PrlbU46GXy3PeE7D2cvcHVOy_vgUNxVUIZdZU
+id: view
+label: View
+icon_uuid: null
+icon_default: null
+description: 'Show dynamically-built query listings with complex functionality right in the middle of your content'
+behavior_plugins: {  }

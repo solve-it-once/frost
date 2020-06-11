@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.statistic_percent.field_decimal
+    - field.field.paragraph.statistic_percent.field_link
+    - field.field.paragraph.statistic_percent.field_text
+    - field.field.paragraph.statistic_percent.field_text_prefix
+    - field.field.paragraph.statistic_percent.field_text_suffix
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - field_formatter_class
+    - field_group
+    - human_decimal
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_number:
+      children:
+        - field_text_prefix
+        - field_decimal
+        - field_text_suffix
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'display--flex justify-content--center align-items--center brand--brackets min-height--95px'
+      label: Number
+      region: content
+id: paragraph.statistic_percent.default
+targetEntityType: paragraph
+bundle: statistic_percent
+mode: default
+content:
+  field_decimal:
+    weight: 5
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: '2'
+      prefix_suffix: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: human_decimal
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_prefix:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_suffix:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

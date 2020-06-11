@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_viewmode
+    - paragraphs.paragraphs_type.term_listing
+  module:
+    - entity_reference_display
+id: paragraph.term_listing.field_viewmode
+field_name: field_viewmode
+entity_type: paragraph
+bundle: term_listing
+label: 'View mode'
+description: '(note: "Icon Teaser" is only available for the "Product Type" vocabulary)'
+required: true
+translatable: true
+default_value:
+  -
+    value: teaser
+default_value_callback: ''
+settings:
+  exclude:
+    decorated: decorated
+    icon_teaser: icon_teaser
+    small: small
+    teaser: teaser
+  negate: 1
+field_type: entity_reference_display

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.small
+    - field.field.node.page.body
+    - field.field.node.page.field_hero
+    - field.field.node.page.field_image
+    - field.field.node.page.field_sections
+    - field.field.node.page.field_seo
+    - field.field.node.page.field_tags
+    - node.type.page
+  module:
+    - user
+id: node.page.small
+targetEntityType: node
+bundle: page
+mode: small
+content:
+  linked_title:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  breadcrumb: true
+  frost_submitted: true
+  field_hero: true
+  field_image: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  links: true
+  search_api_excerpt: true

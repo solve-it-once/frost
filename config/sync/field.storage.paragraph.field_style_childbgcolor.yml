@@ -1,0 +1,68 @@
+uuid: ec7ba5ca-1bd7-4ec2-80a6-240141b52220
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: Ma7UKiim0LRQIcQbslxlWuZbBcsGEQG9eHzweeuFOOw
+id: paragraph.field_style_childbgcolor
+field_name: field_style_childbgcolor
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: child-links-background-color--black
+      label: Black
+    -
+      value: child-links-background-color--grey-dark
+      label: 'Grey (dark)'
+    -
+      value: child-links-background-color--grey
+      label: Grey
+    -
+      value: child-links-background-color--grey-light
+      label: 'Grey (light)'
+    -
+      value: child-links-background-color--white
+      label: White
+    -
+      value: child-links-background-color--main
+      label: 'Main [blue]'
+    -
+      value: child-links-background-color--main-dark
+      label: 'Main [blue] (dark)'
+    -
+      value: child-links-background-color--main-light
+      label: 'Main [blue] (light)'
+    -
+      value: child-links-background-color--second
+      label: Second
+    -
+      value: child-links-background-color--second-dark
+      label: 'Second (dark)'
+    -
+      value: child-links-background-color--second-light
+      label: 'Second (light)'
+    -
+      value: child-links-background-color--third
+      label: Third
+    -
+      value: child-links-background-color--third-dark
+      label: 'Third (dark)'
+    -
+      value: child-links-background-color--third-light
+      label: 'Third (light)'
+    -
+      value: child-links-background-color--accent
+      label: Accent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

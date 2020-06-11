@@ -1,0 +1,85 @@
+uuid: c685a679-4082-4590-9ba8-d797a24412a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_email
+    - field.field.user.user.field_image
+    - field.field.user.user.field_jobtitle
+    - field.field.user.user.field_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_text_location
+  module:
+    - field_formatter_class
+    - telephone
+    - text
+    - user
+_core:
+  default_config_hash: E8zjYX0JItKmFzeZsNUUyyMOUuzZ8cimYRB1xWMdmUM
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_biography:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: square_small
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_jobtitle:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 4
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_text_location:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

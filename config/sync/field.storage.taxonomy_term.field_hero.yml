@@ -1,0 +1,23 @@
+uuid: 86f052b5-7a87-488b-bb34-24955c463e51
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - taxonomy
+_core:
+  default_config_hash: t66fY4Qr1EwLXvkIsVhhKOFkbNmalNXsO1IBa5TkgpU
+id: taxonomy_term.field_hero
+field_name: field_hero
+entity_type: taxonomy_term
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

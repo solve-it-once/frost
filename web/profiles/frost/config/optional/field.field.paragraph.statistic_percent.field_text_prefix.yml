@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_prefix
+    - paragraphs.paragraphs_type.statistic_percent
+id: paragraph.statistic_percent.field_text_prefix
+field_name: field_text_prefix
+entity_type: paragraph
+bundle: statistic_percent
+label: Prefix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: f29b9101-eafb-4413-8560-48102745bd7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_textcolumns
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - options
+_core:
+  default_config_hash: OpRaVsCY3AeL_9ruEXzuyGdV57Xst8szahDphhvUYD4
+id: paragraph.rich_text.field_style_textcolumns
+field_name: field_style_textcolumns
+entity_type: paragraph
+bundle: rich_text
+label: 'Text columns'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

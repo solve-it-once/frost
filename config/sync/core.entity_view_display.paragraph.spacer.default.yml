@@ -1,0 +1,17 @@
+uuid: fa205eeb-8944-4418-bc5e-8d9d82ddc480
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.spacer.field_style_vspx
+    - paragraphs.paragraphs_type.spacer
+_core:
+  default_config_hash: D390gZGx1wEg4Z2ouvZN8L_vJa4VOQ-dgF33bzWmIfQ
+id: paragraph.spacer.default
+targetEntityType: paragraph
+bundle: spacer
+mode: default
+content: {  }
+hidden:
+  field_style_vspx: true
+  search_api_excerpt: true

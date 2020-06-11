@@ -1,0 +1,20 @@
+uuid: 6421354c-bb62-4bfb-8b2a-b25f368517d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 9aViOqaCAY8Fx0ARa58GWgYqJK7BPjFKaPkd8hgy3NI
+id: paragraph.field_style_unpad
+field_name: field_style_unpad
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

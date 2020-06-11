@@ -1,0 +1,12 @@
+uuid: 9046e8d0-0d2e-465c-ae3a-66dc98c0c41a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 4j2lrdGuyRZKn1rrcUgF42CQzfoa9GgHdW0Z0405kmo
+id: media.stripe_bg
+label: 'Stripe background'
+targetEntityType: media
+cache: true

@@ -1,0 +1,12 @@
+uuid: f4655b16-294f-4cee-b91e-54ff97d01a74
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vmMA10s0aObMC2sF2L__XWSpfiO8jTL6raLNM-DhO3Q
+id: heading
+label: Heading
+icon_uuid: null
+icon_default: null
+description: 'A bold textual element to outline a section''s content visually and in the markup (for SEO and design)'
+behavior_plugins: {  }

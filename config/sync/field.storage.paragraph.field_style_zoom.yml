@@ -1,0 +1,20 @@
+uuid: ac98c816-43c1-4b3d-b166-ec3333bbd8aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: yTFPnEiAvZSf4HlpwLXTzHh-QwRKgfvccR6Bp5lAJ6I
+id: paragraph.field_style_zoom
+field_name: field_style_zoom
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

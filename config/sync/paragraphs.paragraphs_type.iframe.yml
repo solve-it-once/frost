@@ -1,0 +1,12 @@
+uuid: b3a30eed-7e4a-4831-8455-4f8c1b504af2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O2Ti5kZQl-DprExjhhLafRNNByGe-aNGinBQQBrAxYY
+id: iframe
+label: iframe
+icon_uuid: null
+icon_default: null
+description: 'Embed pages from other sites into your page'
+behavior_plugins: {  }

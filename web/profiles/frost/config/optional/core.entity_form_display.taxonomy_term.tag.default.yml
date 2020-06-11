@@ -1,0 +1,131 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tag.field_hero
+    - field.field.taxonomy_term.tag.field_image
+    - field.field.taxonomy_term.tag.field_sections
+    - field.field.taxonomy_term.tag.field_seo
+    - taxonomy.vocabulary.tag
+  module:
+    - media_library
+    - paragraphs
+    - paragraphs_features
+    - path
+    - text
+id: taxonomy_term.tag.default
+targetEntityType: taxonomy_term
+bundle: tag
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_hero:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+        add_above: '0'
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: false
+        split_text: false
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_sections:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: false
+        split_text: false
+    region: content
+  field_seo:
+    type: paragraphs
+    weight: 6
+    settings:
+      title: SEO
+      title_plural: SEOs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: seo
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+        add_above: '0'
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: false
+        split_text: false
+    region: content
+  menu:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

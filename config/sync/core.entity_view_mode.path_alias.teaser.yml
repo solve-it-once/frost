@@ -1,0 +1,10 @@
+uuid: aa3407c9-7f15-48d5-b7b9-e82ae19e59d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+id: path_alias.teaser
+label: Teaser
+targetEntityType: path_alias
+cache: true

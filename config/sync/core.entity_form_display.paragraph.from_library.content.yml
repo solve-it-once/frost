@@ -1,0 +1,29 @@
+uuid: 541a8891-66fa-4954-bd12-602e2b8f729f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.from_library.field_reusable_paragraph
+    - paragraphs.paragraphs_type.from_library
+_core:
+  default_config_hash: r4TZydyh5ONZnEbmIQMgY2PeiciP9cSAwBGrDLmxvd8
+id: paragraph.from_library.content
+targetEntityType: paragraph
+bundle: from_library
+mode: content
+content:
+  field_reusable_paragraph:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.small
+    - field.field.node.article.body
+    - field.field.node.article.field_article_type
+    - field.field.node.article.field_components
+    - field.field.node.article.field_image
+    - field.field.node.article.field_link
+    - field.field.node.article.field_seo
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+id: node.article.small
+targetEntityType: node
+bundle: article
+mode: small
+content:
+  frost_submitted:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  linked_title:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  breadcrumb: true
+  field_article_type: true
+  field_components: true
+  field_image: true
+  field_link: true
+  field_seo: true
+  field_tags: true
+  search_api_excerpt: true

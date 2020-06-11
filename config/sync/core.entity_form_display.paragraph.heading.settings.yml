@@ -1,0 +1,57 @@
+uuid: c0624fc4-ab4f-43e3-bb99-2373c2e5eb33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.heading.field_heading
+    - field.field.paragraph.heading.field_image
+    - field.field.paragraph.heading.field_style_color_all
+    - field.field.paragraph.heading.field_style_fontweight
+    - field.field.paragraph.heading.field_style_headinglevel
+    - field.field.paragraph.heading.field_style_texttransform
+    - paragraphs.paragraphs_type.heading
+  module:
+    - media_library
+_core:
+  default_config_hash: UvKs8hOGU_fx3Yuu8HHfowWCXq_d7nz1GRPPhpAL7CA
+id: paragraph.heading.settings
+targetEntityType: paragraph
+bundle: heading
+mode: settings
+content:
+  field_image:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_style_color_all:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontweight:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_headinglevel:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_texttransform:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_heading: true
+  status: true

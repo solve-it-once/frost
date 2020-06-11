@@ -1,0 +1,72 @@
+# Generates redirects for blogs.
+
+# Migration metadata
+id: blog_redirects
+label: Blog redirects
+migration_group: node
+migration_tags:
+  - redirect
+  - blog
+  - blog-redirects
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: xml
+  urls: public://data/rss.pre-sanitized.xml
+  item_selector: /rss/channel/item
+  keys:
+    - link
+  fields:
+    -
+      name: title
+      label: Content title
+      selector: title
+    -
+      name: link
+      label: Legacy canonical URL
+      selector: link
+    -
+      name: pub_date
+      label: Published date
+      selector: pubDate
+    -
+      name: creator
+      label: Author of the post
+      selector: dc:creator
+    -
+      name: content
+      label: Body of the content
+      selector: content:encoded
+    -
+      name: post_tag
+      label: Tags assigned to the content item
+      selector: category
+  ids:
+    link:
+      type: string
+  constants:
+    redirect_prefix: 'internal:/node/'
+    uid_admin: 1
+    status_code: 301
+destination:
+  plugin: 'entity:redirect'
+process:
+  temp_nid:
+    plugin: migration_lookup
+    source: link
+    migration: blog_data
+  redirect_source: link
+  redirect_redirect:
+    plugin: concat
+    source:
+      - constants/redirect_prefix
+      - "@temp_nid"
+  uid: constants/uid_admin
+  status_code: constants/status_code
+migration_dependencies:
+  required:
+    - blog_data
+dependencies:
+  enforced:
+    module:
+      - custom_rss_migrate

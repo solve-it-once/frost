@@ -1,0 +1,59 @@
+name: Frost Theme
+type: theme
+base theme: false
+description: Frost theme
+screenshot: screenshot.png
+core_version_requirement: ^8 || ^9
+ckeditor_stylesheets:
+  - css/theme/theme--base.css
+libraries:
+  - frost_theme/frost-globalStyling
+  - frost_theme/frost-animate
+regions:
+  page_top: Page top
+  alerts: Alerts
+  header: Header
+  utility: Utility
+  nav: Nav
+  splash: Splash
+  pre_content: Pre-content
+  content_top: Content top
+  content: Content
+  content_bottom: Content bottom
+  post_content: Post-content
+  footer: Footer
+  footer_menu: Footer menu
+  footer_cta: Footer social
+  footer_utility: Copyright
+  page_bottom: Page bottom
+features:
+  - logo
+  - favicon
+settings:
+  frost_theme_disable_core_css: 0
+stylesheets-remove:
+  - 'core/assets/vendor/normalize-css/normalize.css'
+  - 'core/themes/classy/css/components/node.css'
+  - 'core/modules/system/css/components/ajax-progress.module.css'
+  - 'core/modules/system/css/components/align.module.css'
+  - 'core/modules/system/css/components/autocomplete-loading.module.css'
+  - 'core/modules/system/css/components/clearfix.module.css'
+  - 'core/modules/system/css/components/container-inline.module.css'
+  - 'core/modules/system/css/components/details.module.css'
+  - 'core/modules/system/css/components/fieldgroup.module.css'
+  - 'core/modules/system/css/components/hidden.module.css'
+  - 'core/modules/system/css/components/item-list.module.css'
+  - 'core/modules/system/css/components/js.module.css'
+  - 'core/modules/system/css/components/nowrap.module.css'
+  - 'core/modules/system/css/components/position-container.module.css'
+  - 'core/modules/system/css/components/progress.module.css'
+  - 'core/modules/system/css/components/reset-appearance.module.css'
+  - 'core/modules/system/css/components/resize.module.css'
+  - 'core/modules/system/css/components/sticky-header.module.css'
+  - 'core/modules/system/css/components/system-status-counter.css'
+  - 'core/modules/system/css/components/system-status-report-counters.css'
+  - 'core/modules/system/css/components/system-status-report-general-info.css'
+  - 'core/modules/system/css/components/tabledrag.module.css'
+  - 'core/modules/system/css/components/tablesort.module.css'
+  - 'core/modules/system/css/components/tree-child.module.css'
+  - 'modules/contrib/paragraphs/css/paragraphs.unpublished.css'

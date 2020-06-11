@@ -1,0 +1,20 @@
+uuid: e0a38203-f793-47d9-b480-c6f0f3ce0260
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: BxVXpBeArmy5uOl33hCSmPilASlg94ck6BGn8FB2uR4
+id: paragraph.field_style_table_replace
+field_name: field_style_table_replace
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

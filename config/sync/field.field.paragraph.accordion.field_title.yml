@@ -1,0 +1,21 @@
+uuid: ab0a8e3e-ac96-40d2-85d3-13ecb540aa74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.accordion
+_core:
+  default_config_hash: z287L0X2hPC2qXX_uthyVwO4CWYOGrx-gWjHoc-_vSc
+id: paragraph.accordion.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: accordion
+label: 'Label (to toggle)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

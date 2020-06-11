@@ -1,0 +1,54 @@
+uuid: 8a130003-a7a5-47e7-99d4-4508f35e3927
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.search_index
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_filesize
+    - field.field.media.audio.field_media_mimetype
+    - media.type.audio
+  module:
+    - field_formatter_class
+    - frost_custom
+_core:
+  default_config_hash: P2YHuv6_niipYINVpOzRZyw_tM-hM_wC7kVk4aDh6cU
+id: media.audio.search_index
+targetEntityType: media
+bundle: audio
+mode: search_index
+content:
+  field_media_audio_file:
+    type: frost_custom_file_link
+    weight: 2
+    label: hidden
+    settings:
+      frost_custom_link_title: ''
+      frost_custom_link_class: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_media_mimetype:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_filesize: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

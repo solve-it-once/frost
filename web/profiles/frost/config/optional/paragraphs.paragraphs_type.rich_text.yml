@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: rich_text
+label: 'Rich text'
+icon_uuid: ce1e7998-40fc-4f9c-92a6-424b8bce0813
+description: ''
+behavior_plugins: {  }

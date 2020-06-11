@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_noindex
+    - paragraphs.paragraphs_type.seo
+id: paragraph.seo.field_seo_noindex
+field_name: field_seo_noindex
+entity_type: paragraph
+bundle: seo
+label: noindex
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: noindex
+  off_label: index
+field_type: boolean

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_textcolumns
+field_name: field_style_textcolumns
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: columnar--2-column
+      label: '2 columns'
+    -
+      value: columnar--3-column
+      label: '3 columns'
+    -
+      value: columnar--4-column
+      label: '4 columns'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,60 @@
+uuid: 6b6dfa79-dd51-44e7-9d5f-fee8dcc96c13
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iJt5g1W_Y5B_QxMSJBWTBmWhzB8ISHVcXwhyYUBmGOw
+id: author
+label: Author
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'addrow tablefield'
+  - 'clone article content'
+  - 'clone page content'
+  - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create page content'
+  - 'create terms in tag'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create video_embed media'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any video media'
+  - 'edit any video_embed media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own video media'
+  - 'edit own video_embed media'
+  - 'edit terms in tag'
+  - 'import tablefield'
+  - 'rebuild tablefield'
+  - 'stripe create entities'
+  - 'stripe edit own entities'
+  - 'stripe view revisions'
+  - 'use text format filtered_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view style guides'
+  - 'view the administration theme'
+  - 'view unpublished container entities'
+  - 'view unpublished paragraph set entities'

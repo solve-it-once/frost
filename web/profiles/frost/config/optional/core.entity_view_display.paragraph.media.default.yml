@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_hotspots
+    - field.field.paragraph.media.field_link
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_text
+    - paragraphs.paragraphs_type.media
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - linked_field
+    - text
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_hotspots:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_link
+        advanced: {  }
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_link: true
+  search_api_excerpt: true

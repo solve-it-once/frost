@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_quoteclose
+    - paragraphs.paragraphs_type.blockquote
+id: paragraph.blockquote.field_style_quoteclose
+field_name: field_style_quoteclose
+entity_type: paragraph
+bundle: blockquote
+label: 'Closing quotation mark'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: blockquote--closing-include
+  off_label: blockquote--closing-exclude
+field_type: boolean

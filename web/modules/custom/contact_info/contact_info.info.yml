@@ -1,0 +1,4 @@
+name: Contact info
+description: Contact info module for Drupal 8 that provides blocks and tokens.
+core_version_requirement: ^8 || ^9
+type: module

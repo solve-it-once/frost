@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_flex
+field_name: field_style_flex
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: flex--initial
+      label: 'Initial (shrink)'
+    -
+      value: flex--auto
+      label: 'Fill (automatic)'
+    -
+      value: flex--1
+      label: 'Small (1)'
+    -
+      value: flex--2
+      label: 'Medium (2)'
+    -
+      value: flex--3
+      label: 'Large (3)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

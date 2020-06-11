@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_messageseverity
+    - paragraphs.paragraphs_type.message
+  module:
+    - options
+id: paragraph.message.field_style_messageseverity
+field_name: field_style_messageseverity
+entity_type: paragraph
+bundle: message
+label: Severity
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: messages--status
+default_value_callback: ''
+settings: {  }
+field_type: list_string

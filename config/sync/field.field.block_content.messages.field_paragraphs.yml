@@ -1,0 +1,114 @@
+uuid: 97d071bc-af52-49a1-a4ab-9abeb63e52ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.messages
+    - field.storage.block_content.field_paragraphs
+    - paragraphs.paragraphs_type.message
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Nrug25n3n3EkR4T3XVLOynBzreaaw5WyEtO-wg1L1Ko
+id: block_content.messages.field_paragraphs
+field_name: field_paragraphs
+entity_type: block_content
+bundle: messages
+label: Messages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      message: message
+    target_bundles_drag_drop:
+      accordion:
+        weight: 29
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      blockquote:
+        weight: 31
+        enabled: false
+      card:
+        weight: 32
+        enabled: false
+      cards:
+        weight: 33
+        enabled: false
+      column:
+        weight: 34
+        enabled: false
+      content_listing:
+        weight: 35
+        enabled: false
+      dropover:
+        weight: 36
+        enabled: false
+      heading:
+        weight: 37
+        enabled: false
+      hotspot:
+        weight: 38
+        enabled: false
+      iframe:
+        weight: 39
+        enabled: false
+      layout:
+        weight: 40
+        enabled: false
+      link:
+        weight: 41
+        enabled: false
+      media:
+        weight: 42
+        enabled: false
+      message:
+        enabled: true
+        weight: 43
+      rich_text:
+        weight: 44
+        enabled: false
+      seo:
+        weight: 45
+        enabled: false
+      spacer:
+        weight: 46
+        enabled: false
+      statistic_figure:
+        weight: 47
+        enabled: false
+      statistic_percent:
+        weight: 48
+        enabled: false
+      stripe:
+        weight: 49
+        enabled: false
+      stripe_collection:
+        weight: 50
+        enabled: false
+      stripe_reference:
+        weight: 51
+        enabled: false
+      table:
+        weight: 52
+        enabled: false
+      term_listing:
+        weight: 53
+        enabled: false
+      user_listing:
+        weight: 54
+        enabled: false
+      view:
+        weight: 55
+        enabled: false
+      webform:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

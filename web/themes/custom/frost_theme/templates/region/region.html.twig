@@ -1,0 +1,5 @@
+{% if content %}
+  <{{ html_tag }}{{ attributes.addClass(classes) }}><div{{ content_attributes }}>
+    {{ content }}
+  </div></{{ html_tag }}>
+{% endif %}

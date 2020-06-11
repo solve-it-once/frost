@@ -1,0 +1,12 @@
+langcode: en
+status: true
+id: node
+label: Node
+description: 'Blogs, events, etc.'
+source_type: XML
+module: null
+shared_configuration: null
+dependencies:
+  enforced:
+    module:
+      - custom_rss_migrate

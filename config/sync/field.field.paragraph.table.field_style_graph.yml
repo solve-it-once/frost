@@ -1,0 +1,23 @@
+uuid: 652056d7-14cd-498a-9801-43be7f62b5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_graph
+    - paragraphs.paragraphs_type.table
+  module:
+    - options
+_core:
+  default_config_hash: wP1WUeuQ2BCTBh08qO_hcOBevZF49BcvVKJNvbnWcdw
+id: paragraph.table.field_style_graph
+field_name: field_style_graph
+entity_type: paragraph
+bundle: table
+label: 'Chart type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

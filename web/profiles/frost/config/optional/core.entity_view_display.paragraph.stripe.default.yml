@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe.field_components
+    - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_bgcolor
+    - field.field.paragraph.stripe.field_style_bghide
+    - field.field.paragraph.stripe.field_style_bgpx
+    - field.field.paragraph.stripe.field_style_bgpy
+    - field.field.paragraph.stripe.field_style_bgrepeat
+    - field.field.paragraph.stripe.field_style_bgsize
+    - field.field.paragraph.stripe.field_style_color
+    - field.field.paragraph.stripe.field_style_fullwidth
+    - field.field.paragraph.stripe.field_style_textalign
+    - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_video_background
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+id: paragraph.stripe.default
+targetEntityType: paragraph
+bundle: stripe
+mode: default
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_image_background:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: stripe_bg
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_video_background:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: stripe_bg
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden:
+  field_style_bgcolor: true
+  field_style_bghide: true
+  field_style_bgpx: true
+  field_style_bgpy: true
+  field_style_bgrepeat: true
+  field_style_bgsize: true
+  field_style_color: true
+  field_style_fullwidth: true
+  field_style_textalign: true
+  field_style_unpad: true
+  search_api_excerpt: true

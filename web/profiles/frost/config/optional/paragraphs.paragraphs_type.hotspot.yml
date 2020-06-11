@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hotspot
+label: Hotspot
+icon_uuid: null
+description: 'A point at some percentage-based x and y coordinates over another area. The point and the content within it are configurable.'
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stripes
+    - paragraphs.paragraphs_type.stripe_collection
+    - frost_container.container_entity_type.stripe
+id: paragraph.stripe_collection.field_stripes
+field_name: field_stripes
+entity_type: paragraph
+bundle: stripe_collection
+label: Stripes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:container_entity'
+  handler_settings:
+    target_bundles:
+      stripe: stripe
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 0685e1f5-a674-4d0f-b3db-85483d983f53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_childbgcolor
+    - paragraphs.paragraphs_type.link
+  module:
+    - options
+_core:
+  default_config_hash: YilzoC-ThuWHom8CH0ZUOuNvRZZclY2H8Ee1PNgo424
+id: paragraph.link.field_style_childbgcolor
+field_name: field_style_childbgcolor
+entity_type: paragraph
+bundle: link
+label: 'Button background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

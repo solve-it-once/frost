@@ -1,0 +1,10 @@
+uuid: 708f5556-4f6c-4ecb-b6c7-cdd2cd9823fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+id: paragraphs_library_item.teaser
+label: Teaser
+targetEntityType: paragraphs_library_item
+cache: true

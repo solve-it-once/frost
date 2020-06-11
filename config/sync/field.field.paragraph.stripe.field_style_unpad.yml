@@ -1,0 +1,25 @@
+uuid: 03b5d08a-f6f5-447f-b723-ccbe8134efd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_unpad
+    - paragraphs.paragraphs_type.stripe
+_core:
+  default_config_hash: 1WhFxu0GNpkYhlt_4CFGu3B6h2KqEADj39Hl1D0Daow
+id: paragraph.stripe.field_style_unpad
+field_name: field_style_unpad
+entity_type: paragraph
+bundle: stripe
+label: Unpad
+description: 'Remove the vertical breathing room from the stripe so you can override it with spacers instead or create a "full bleed"'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: padding--0
+  off_label: padding--inherit
+field_type: boolean

@@ -1,0 +1,110 @@
+uuid: 88987c2a-1e96-4c0f-ae0e-02c3d714dca1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_heading
+    - field.field.paragraph.heading.field_image
+    - field.field.paragraph.heading.field_style_color_all
+    - field.field.paragraph.heading.field_style_fontweight
+    - field.field.paragraph.heading.field_style_headinglevel
+    - field.field.paragraph.heading.field_style_texttransform
+    - paragraphs.paragraphs_type.heading
+  module:
+    - field_group
+    - frost_custom
+    - media_library
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_heading
+      parent_name: group_admin
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_headinglevel
+        - field_style_fontweight
+        - field_image
+        - field_style_color_all
+        - field_style_texttransform
+      parent_name: group_admin
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: UvKs8hOGU_fx3Yuu8HHfowWCXq_d7nz1GRPPhpAL7CA
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_heading:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: heading_textfield
+    region: content
+  field_image:
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_style_color_all:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontweight:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_headinglevel:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_texttransform:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,41 @@
+<div class="page layout-container">
+  <header class="top-bar sticky--top">
+    {{ page.alerts }}
+    {{ page.utility }}
+    <div class="main-bar background-color--white">
+      <div class="inner display--flex position--relative appear-as-stripe">
+        {{ page.header }}
+        <div id="main-navigation" class="utility-and-nav flex--auto">
+          {{ page.nav }}
+        </div>
+      </div>
+    </div>
+  </header>
+  {{ page.splash }}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    {{ page.pre_content }}
+    <div class="content-and-sidebar">
+      {{ page.content_top }}
+      {{ page.content }}
+      {{ page.content_bottom }}
+    </div>
+    {{ page.post_content }}
+  </main>
+  <footer class="footer-wrapper">
+    <div class="appear-as-stripe layout--flex-row display--flex">
+      <div class="flex--1 padding-horizontal--4">
+        {{ page.footer }}
+      </div>
+      <div class="flex--1 padding-horizontal--4">
+        {{ page.footer_menu }}
+      </div>
+      <div class="flex--1 padding-horizontal--4">
+        {{ page.footer_cta }}
+      </div>
+    </div>
+    <div class="footer--utility-wrapper">
+      {{ page.footer_utility }}
+    </div>
+  </footer>
+</div>

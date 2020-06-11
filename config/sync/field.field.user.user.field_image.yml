@@ -1,0 +1,31 @@
+uuid: b675beb9-40f2-4a1b-b661-c60b194b2d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_image
+    - media.type.image
+  module:
+    - user
+_core:
+  default_config_hash: dY9ZrY6YM6oz0lxCzz1c5ADDloD9EIuGJqBg5erT9Fo
+id: user.user.field_image
+field_name: field_image
+entity_type: user
+bundle: user
+label: Portrait
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

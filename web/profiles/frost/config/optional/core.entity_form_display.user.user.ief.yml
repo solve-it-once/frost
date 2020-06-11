@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.ief
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_email
+    - field.field.user.user.field_image
+    - field.field.user.user.field_jobtitle
+    - field.field.user.user.field_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_text_location
+  module:
+    - media_library
+    - telephone
+    - text
+    - user
+id: user.user.ief
+targetEntityType: user
+bundle: user
+mode: ief
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_biography:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_email:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 6
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_jobtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  google_analytics:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  contact: true
+  field_text_location: true
+  language: true
+  path: true
+  timezone: true

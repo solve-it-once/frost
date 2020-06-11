@@ -1,0 +1,25 @@
+uuid: a2cf8c33-0ebf-48ea-a8b4-c9fee3153490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_decimal
+    - paragraphs.paragraphs_type.statistic_percent
+_core:
+  default_config_hash: byHuTiWLTiA3JBfON52b2h4ZWV9eWfM4SwcVosJ4w7Q
+id: paragraph.statistic_percent.field_decimal
+field_name: field_decimal
+entity_type: paragraph
+bundle: statistic_percent
+label: Number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

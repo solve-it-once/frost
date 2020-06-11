@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_keywords
+    - paragraphs.paragraphs_type.seo
+id: paragraph.seo.field_seo_keywords
+field_name: field_seo_keywords
+entity_type: paragraph
+bundle: seo
+label: 'News keywords'
+description: 'A comma-separated list of keywords about the page. This meta tag is used as an indicator in Google News.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

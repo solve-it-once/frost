@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_bgrepeat
+field_name: field_style_bgrepeat
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background-repeat--repeat-x
+      label: 'Repeat horizontally only'
+    -
+      value: background-repeat--repeat-y
+      label: 'Repeat vertically only'
+    -
+      value: background-repeat--repeat
+      label: 'Repeat in both directions'
+    -
+      value: background-repeat--space
+      label: 'Space-to-fill repeat'
+    -
+      value: background-repeat--round
+      label: 'Size-to-fill repeat'
+    -
+      value: background-repeat--no-repeat
+      label: 'No repeat'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

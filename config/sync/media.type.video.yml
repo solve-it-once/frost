@@ -1,0 +1,18 @@
+uuid: 571f333e-2911-484b-a652-c664881bcc62
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '--3N3MblP52v1oRmdagY1RAjT-sirhKQi4oGubXSK14'
+id: video
+label: Video
+description: ''
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  name: name
+  mimetype: field_media_mimetype
+  filesize: field_media_filesize

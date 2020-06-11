@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hotspots
+    - paragraphs.paragraphs_type.hotspot
+    - paragraphs.paragraphs_type.media
+  module:
+    - entity_reference_revisions
+id: paragraph.media.field_hotspots
+field_name: field_hotspots
+entity_type: paragraph
+bundle: media
+label: Hotspots
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hotspot: hotspot
+    target_bundles_drag_drop:
+      accordion:
+        weight: 20
+        enabled: false
+      block:
+        weight: 21
+        enabled: false
+      blockquote:
+        weight: 22
+        enabled: false
+      card:
+        weight: 23
+        enabled: false
+      cards:
+        weight: 24
+        enabled: false
+      column:
+        weight: 25
+        enabled: false
+      content_listing:
+        weight: 26
+        enabled: false
+      heading:
+        weight: 27
+        enabled: false
+      hotspot:
+        enabled: true
+        weight: 28
+      layout:
+        weight: 29
+        enabled: false
+      link:
+        weight: 30
+        enabled: false
+      media:
+        weight: 31
+        enabled: false
+      rich_text:
+        weight: 32
+        enabled: false
+      seo:
+        weight: 33
+        enabled: false
+      spacer:
+        weight: 34
+        enabled: false
+      stripe:
+        weight: 35
+        enabled: false
+      term_listing:
+        weight: 36
+        enabled: false
+      user_listing:
+        weight: 37
+        enabled: false
+      view:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

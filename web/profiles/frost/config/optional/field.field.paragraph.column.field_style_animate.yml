@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_animate
+    - paragraphs.paragraphs_type.column
+id: paragraph.column.field_style_animate
+field_name: field_style_animate
+entity_type: paragraph
+bundle: column
+label: Animate
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: revealOnScroll
+  off_label: doNotRevealOnScroll
+field_type: boolean

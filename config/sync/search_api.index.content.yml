@@ -1,0 +1,611 @@
+uuid: 4c2a64a3-1db1-4385-b28d-c933d7913072
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - media
+    - node
+    - taxonomy
+    - paragraphs
+    - search_api
+  config:
+    - field.storage.node.field_article_type
+    - field.storage.paragraph.field_attr_open
+    - field.storage.node.field_date
+    - field.storage.node.field_tags
+    - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_title
+    - search_api.server.solr
+    - core.entity_view_mode.media.search_index
+    - core.entity_view_mode.node.search_index
+    - core.entity_view_mode.taxonomy_term.search_index
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+_core:
+  default_config_hash: 9J-sRo5JBtBi7mpqubfYD6SjbyU3wcFBu-gQwgGvUmI
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  bundle:
+    label: 'Media type'
+    datasource_id: 'entity:media'
+    property_path: bundle
+    type: string
+    dependencies:
+      module:
+        - media
+  changed:
+    label: Changed
+    datasource_id: 'entity:media'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - media
+  changed_1:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  changed_2:
+    label: Changed
+    datasource_id: 'entity:taxonomy_term'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - taxonomy
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:media'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - media
+  created_1:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  created_4:
+    label: 'Authored on'
+    datasource_id: 'entity:paragraph'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - paragraphs
+  description:
+    label: Description
+    datasource_id: 'entity:taxonomy_term'
+    property_path: description
+    type: 'solr_text_custom:edge'
+    dependencies:
+      module:
+        - taxonomy
+  field_article_type:
+    label: 'Article type'
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
+  field_attr_open:
+    label: 'Expanded by default'
+    datasource_id: 'entity:paragraph'
+    property_path: field_attr_open
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.paragraph.field_attr_open
+  field_date:
+    label: Date
+    datasource_id: 'entity:node'
+    property_path: field_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  field_text:
+    label: Body
+    datasource_id: 'entity:paragraph'
+    property_path: field_text
+    type: 'solr_text_custom:edge'
+    dependencies:
+      config:
+        - field.storage.paragraph.field_text
+  field_title:
+    label: 'Label (to toggle)'
+    datasource_id: 'entity:paragraph'
+    property_path: field_title
+    type: 'solr_text_custom:edge'
+    dependencies:
+      config:
+        - field.storage.paragraph.field_title
+  id:
+    label: ID
+    datasource_id: 'entity:paragraph'
+    property_path: id
+    type: integer
+    dependencies:
+      module:
+        - paragraphs
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  langcode_1:
+    label: Language
+    datasource_id: 'entity:taxonomy_term'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - taxonomy
+  mid:
+    label: ID
+    datasource_id: 'entity:media'
+    property_path: mid
+    type: integer
+    dependencies:
+      module:
+        - media
+  name:
+    label: Name
+    datasource_id: 'entity:media'
+    property_path: name
+    type: string
+    dependencies:
+      module:
+        - media
+  name_1:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: 'solr_text_custom:edgestring'
+    dependencies:
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  promote:
+    label: 'Promoted to front page'
+    datasource_id: 'entity:node'
+    property_path: promote
+    type: boolean
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: 'solr_text_custom:edge'
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:media':
+          audio: search_index
+          document: search_index
+          image: search_index
+          video: search_index
+          video_embed: search_index
+        'entity:node':
+          article: search_index
+          case_study: search_index
+          company: search_index
+          event: search_index
+          location: search_index
+          page: search_index
+          resource: search_index
+        'entity:paragraph':
+          accordion: default
+        'entity:taxonomy_term':
+          article_type: search_index
+          cable: search_index
+          card_frequency: search_index
+          card_technology: search_index
+          company_type: search_index
+          connector: search_index
+          data_output: search_index
+          format: search_index
+          housing_form_factor: search_index
+          industry: search_index
+          product_type: search_index
+          region: search_index
+          resource_type: search_index
+          solution: search_index
+          tag: search_index
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  status_1:
+    label: Published
+    datasource_id: 'entity:media'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - media
+  status_2:
+    label: Published
+    datasource_id: 'entity:taxonomy_term'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - taxonomy
+  status_5:
+    label: Published
+    datasource_id: 'entity:paragraph'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - paragraphs
+  sticky:
+    label: 'Sticky at top of lists'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+    dependencies:
+      module:
+        - node
+  tid:
+    label: 'Term ID'
+    datasource_id: 'entity:taxonomy_term'
+    property_path: tid
+    type: integer
+    dependencies:
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: 'solr_text_custom:edgestring'
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  type_3:
+    label: 'Paragraph type'
+    datasource_id: 'entity:paragraph'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - paragraphs
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  uid_1:
+    label: 'Authored by'
+    datasource_id: 'entity:media'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - media
+  uid_2:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+  uuid:
+    label: UUID
+    datasource_id: 'entity:media'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - media
+  uuid_1:
+    label: UUID
+    datasource_id: 'entity:node'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - node
+  uuid_2:
+    label: UUID
+    datasource_id: 'entity:taxonomy_term'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - taxonomy
+  vid:
+    label: Vocabulary
+    datasource_id: 'entity:taxonomy_term'
+    property_path: vid
+    type: string
+    dependencies:
+      module:
+        - taxonomy
+  weight:
+    label: Weight
+    datasource_id: 'entity:taxonomy_term'
+    property_path: weight
+    type: integer
+    dependencies:
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: false
+      selected:
+        - accordion
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  tokenizer:
+    all_fields: true
+    fields:
+      - description
+      - field_text
+      - field_title
+      - name_1
+      - rendered_item
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '1'
+    weights:
+      preprocess_index: -44
+      preprocess_query: -42
+  entity_status: {  }
+  add_url: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - description
+      - field_text
+      - field_title
+      - name_1
+      - rendered_item
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: -38
+      preprocess_query: -36
+  html_filter:
+    all_fields: true
+    fields:
+      - bundle
+      - description
+      - field_text
+      - field_title
+      - langcode
+      - langcode_1
+      - name
+      - name_1
+      - rendered_item
+      - title
+      - type
+      - type_3
+      - uuid
+      - uuid_1
+      - uuid_2
+      - vid
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
+  content_access:
+    weights:
+      preprocess_query: -50
+  type_boost:
+    boosts:
+      'entity:media':
+        datasource_boost: !!float 1
+      'entity:node':
+        datasource_boost: !!float 1
+      'entity:taxonomy_term':
+        datasource_boost: !!float 1
+    weights:
+      preprocess_index: -36
+  ignorecase:
+    all_fields: true
+    fields:
+      - bundle
+      - description
+      - field_text
+      - field_title
+      - langcode
+      - langcode_1
+      - name
+      - name_1
+      - rendered_item
+      - title
+      - type
+      - type_3
+      - uuid
+      - uuid_1
+      - uuid_2
+      - vid
+    weights:
+      preprocess_index: -46
+      preprocess_query: -46
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  reverse_entity_references: {  }
+  ignore_character:
+    all_fields: true
+    fields:
+      - bundle
+      - description
+      - field_text
+      - field_title
+      - langcode
+      - langcode_1
+      - name
+      - name_1
+      - rendered_item
+      - title
+      - type
+      - type_3
+      - uuid
+      - uuid_1
+      - uuid_2
+      - vid
+    ignorable: '[''¿¡!?,.:;&]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    weights:
+      preprocess_index: -42
+      preprocess_query: -40
+  rendered_item: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr

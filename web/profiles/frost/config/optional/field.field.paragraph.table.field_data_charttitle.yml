@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_data_charttitle
+    - paragraphs.paragraphs_type.table
+id: paragraph.table.field_data_charttitle
+field_name: field_data_charttitle
+entity_type: paragraph
+bundle: table
+label: 'Chart title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

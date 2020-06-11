@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.image.field_media_filesize
+    - field.field.media.image.field_media_height
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_mimetype
+    - field.field.media.image.field_media_width
+    - image.style.teaser
+    - media.type.image
+  module:
+    - field_formatter_class
+    - image
+id: media.image.teaser
+targetEntityType: media
+bundle: image
+mode: teaser
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: teaser
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: image
+    region: content
+hidden:
+  created: true
+  field_media_filesize: true
+  field_media_height: true
+  field_media_mimetype: true
+  field_media_width: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

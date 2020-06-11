@@ -1,0 +1,99 @@
+name: Frost
+type: profile
+description: 'Drupal 9 that is atomic.'
+core_version_requirement: ^8 || ^9
+
+# Required modules.
+install:
+  - frost_custom
+  - contact_info
+dependencies:
+  - address
+  - admin_toolbar
+  - admin_toolbar_tools
+  - better_exposed_filters
+  - bg_image_formatter
+  - block
+  - block_class
+  - block_field
+  - breakpoint
+  - chosen
+  - chosen_lib
+  - ckeditor
+  - config
+  - config_filter
+  - contextual
+  - ctools
+  - datetime
+  - datetime_range
+  - dblog
+  - default_content
+  - diff
+  - dynamic_page_cache
+  - easy_breadcrumb
+  - editor
+  - entity
+  - entity_reference_display
+  - entity_reference_revisions
+  - field
+  - field_formatter_class
+  - field_group
+  - field_ui
+  - file
+  - filter
+  - hal
+  - honeypot
+  - iframe
+  - image
+  - imageapi_optimize
+  - imageapi_optimize_binaries
+  - inline_form_errors
+  - jsonapi
+  - link
+  - linked_field
+  - linkit
+  - media
+  - media_library
+  - menu_link_attributes
+  - menu_trail_by_path
+  - menu_ui
+  - metatag
+  - metatag_open_graph
+  - node
+  - options
+  - page_cache
+  - paragraphs
+  - paragraphs_features
+  - path
+  - pathauto
+  - redirect
+  - redirect_404
+  - redirect_domain
+  - rest
+  - search_api
+  - search_api_solr
+  - serialization
+  - settings_tray
+  - styleguide
+  - subpathauto
+  - system
+  - tablefield
+  - taxonomy
+  - telephone
+  - text
+  - token
+  - toolbar
+  - update
+  - user
+  - views
+  - views_block_filter_block
+  - views_ui
+  - viewsreference
+  - webform
+  - webform_ui
+
+themes:
+  - stable
+  - classy
+  - claro
+  - frost_theme

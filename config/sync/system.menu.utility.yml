@@ -1,0 +1,10 @@
+uuid: fb9bf9a7-0319-4780-a80a-c1cdc8b28a09
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: p5CtWCsRfIz2kZLRl4Ks4-KIiyZdgAVNaA004xVRlos
+id: utility
+label: Utility
+description: ''
+locked: false

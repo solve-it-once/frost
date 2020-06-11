@@ -1,0 +1,21 @@
+uuid: c3a40d39-0565-4c8a-83e2-3d1b07638d0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: jEmQSIdrRFzu3rJfVVHt4KVvkpu8uwChHT0FpL1IG94
+id: user.field_biography
+field_name: field_biography
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

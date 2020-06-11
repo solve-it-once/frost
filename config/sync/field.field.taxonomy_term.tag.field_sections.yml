@@ -1,0 +1,116 @@
+uuid: b7aede09-df58-48bc-a065-c73aac16770b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sections
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.stripe
+    - taxonomy.vocabulary.tag
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: OtbQFv-NxWUUuhU6XA-4LO5SmFhvWwTnVCI6ehBEeGs
+id: taxonomy_term.tag.field_sections
+field_name: field_sections
+entity_type: taxonomy_term
+bundle: tag
+label: Stripes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      from_library: from_library
+      stripe: stripe
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: false
+      block:
+        weight: 31
+        enabled: false
+      blockquote:
+        weight: 32
+        enabled: false
+      card:
+        weight: 33
+        enabled: false
+      cards:
+        weight: 34
+        enabled: false
+      column:
+        weight: 35
+        enabled: false
+      content_listing:
+        weight: 36
+        enabled: false
+      from_library:
+        enabled: true
+        weight: 36
+      heading:
+        weight: 38
+        enabled: false
+      hotspot:
+        weight: 39
+        enabled: false
+      iframe:
+        weight: 40
+        enabled: false
+      layout:
+        weight: 41
+        enabled: false
+      link:
+        weight: 42
+        enabled: false
+      media:
+        weight: 43
+        enabled: false
+      message:
+        weight: 44
+        enabled: false
+      rich_text:
+        weight: 46
+        enabled: false
+      seo:
+        weight: 47
+        enabled: false
+      spacer:
+        weight: 48
+        enabled: false
+      statistic_figure:
+        weight: 49
+        enabled: false
+      statistic_percent:
+        weight: 50
+        enabled: false
+      stripe:
+        enabled: true
+        weight: 51
+      stripe_collection:
+        weight: 52
+        enabled: false
+      stripe_cta:
+        enabled: true
+        weight: 51
+      table:
+        weight: 54
+        enabled: false
+      term_listing:
+        weight: 55
+        enabled: false
+      user_listing:
+        weight: 56
+        enabled: false
+      view:
+        weight: 57
+        enabled: false
+      webform:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

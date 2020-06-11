@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_figure_one
+    - paragraphs.paragraphs_type.statistic_figure
+id: paragraph.statistic_figure.field_figure_one
+field_name: field_figure_one
+entity_type: paragraph
+bundle: statistic_figure
+label: 'Figure, part one'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

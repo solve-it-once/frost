@@ -1,0 +1,12 @@
+uuid: 1db1aebe-28bc-4a00-a972-e5b0e31cd321
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: xB6dtNq7P-OjyjJbUeUEyNSzNBO7AaaXUrRgUn8RUPk
+id: paragraph.search_index
+label: 'Search index'
+targetEntityType: paragraph
+cache: true

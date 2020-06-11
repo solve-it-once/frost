@@ -1,0 +1,12 @@
+uuid: 1c20c212-1772-4fe2-9068-886fbad004a8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: g7oSrsYLQBGD2yU-sBmeCuCdZtPsaD-jVK4nk3PK0DU
+id: webform
+label: Webform
+icon_uuid: null
+icon_default: null
+description: 'Embed system-generated forms into your content, and collect necessary feedback from users.'
+behavior_plugins: {  }

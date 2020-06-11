@@ -1,0 +1,22 @@
+uuid: 7939b5dc-14fb-4322-956d-af3f9b0a5c35
+langcode: en
+status: true
+dependencies:
+  theme:
+    - frost_theme
+_core:
+  default_config_hash: XgpBrCgCNv_inJHjCFwvIth0EJpAkM2QgtO1EMt58Sk
+id: frost_theme_local_tasks
+theme: frost_theme
+region: pre_content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

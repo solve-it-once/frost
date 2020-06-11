@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+id: block.small
+label: Small
+targetEntityType: block
+cache: true

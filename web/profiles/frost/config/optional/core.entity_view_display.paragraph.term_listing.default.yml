@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.term_listing.field_style_layout
+    - field.field.paragraph.term_listing.field_terms
+    - field.field.paragraph.term_listing.field_viewmode
+    - paragraphs.paragraphs_type.term_listing
+  module:
+    - entity_reference_display
+id: paragraph.term_listing.default
+targetEntityType: paragraph
+bundle: term_listing
+mode: default
+content:
+  field_terms:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      display_field: null
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

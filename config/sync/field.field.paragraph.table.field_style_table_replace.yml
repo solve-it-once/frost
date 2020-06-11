@@ -1,0 +1,25 @@
+uuid: d85afa14-f32f-4bb8-bd06-57265ec791b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_table_replace
+    - paragraphs.paragraphs_type.table
+_core:
+  default_config_hash: z_lIW3vzgE7K8Sv3Eb7AFAxb9VujX_vL9jfxWM5DFwo
+id: paragraph.table.field_style_table_replace
+field_name: field_style_table_replace
+entity_type: paragraph
+bundle: table
+label: 'Replace table with graph'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: js-chart-replace-table
+  off_label: js-chart-no-replace-table
+field_type: boolean

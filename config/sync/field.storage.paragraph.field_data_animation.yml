@@ -1,0 +1,251 @@
+uuid: 0f8c249e-acce-4ecd-9258-bfa6c47357ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: FTzY54YQJrAg_hnyHHYVZ0aHLKrNdDvZdykd6lXZEbM
+id: paragraph.field_data_animation
+field_name: field_data_animation
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bounceInDown
+      label: bounceInDown
+    -
+      value: bounceInLeft
+      label: bounceInLeft
+    -
+      value: bounceInRight
+      label: bounceInRight
+    -
+      value: bounceInUp
+      label: bounceInUp
+    -
+      value: bounceIn
+      label: bounceIn
+    -
+      value: bounceOutDown
+      label: bounceOutDown
+    -
+      value: bounceOutLeft
+      label: bounceOutLeft
+    -
+      value: bounceOutRight
+      label: bounceOutRight
+    -
+      value: bounceOutUp
+      label: bounceOutUp
+    -
+      value: bounceOut
+      label: bounceOut
+    -
+      value: bounce
+      label: bounce
+    -
+      value: fadeInDownBig
+      label: fadeInDownBig
+    -
+      value: fadeInDown
+      label: fadeInDown
+    -
+      value: fadeInLeftBig
+      label: fadeInLeftBig
+    -
+      value: fadeInLeft
+      label: fadeInLeft
+    -
+      value: fadeInRightBig
+      label: fadeInRightBig
+    -
+      value: fadeInRight
+      label: fadeInRight
+    -
+      value: fadeInUpBig
+      label: fadeInUpBig
+    -
+      value: fadeInUp
+      label: fadeInUp
+    -
+      value: fadeIn
+      label: fadeIn
+    -
+      value: fadeOutDownBig
+      label: fadeOutDownBig
+    -
+      value: fadeOutDown
+      label: fadeOutDown
+    -
+      value: fadeOutLeftBig
+      label: fadeOutLeftBig
+    -
+      value: fadeOutLeft
+      label: fadeOutLeft
+    -
+      value: fadeOutRightBig
+      label: fadeOutRightBig
+    -
+      value: fadeOutRight
+      label: fadeOutRight
+    -
+      value: fadeOutUpBig
+      label: fadeOutUpBig
+    -
+      value: fadeOutUp
+      label: fadeOutUp
+    -
+      value: fadeOut
+      label: fadeOut
+    -
+      value: flash
+      label: flash
+    -
+      value: flipInX
+      label: flipInX
+    -
+      value: flipInY
+      label: flipInY
+    -
+      value: flipOutX
+      label: flipOutX
+    -
+      value: flipOutY
+      label: flipOutY
+    -
+      value: flip
+      label: flip
+    -
+      value: hinge
+      label: hinge
+    -
+      value: jackInTheBox
+      label: jackInTheBox
+    -
+      value: jello
+      label: jello
+    -
+      value: lightSpeedIn
+      label: lightSpeedIn
+    -
+      value: lightSpeedOut
+      label: lightSpeedOut
+    -
+      value: pulse
+      label: pulse
+    -
+      value: rollIn
+      label: rollIn
+    -
+      value: rollOut
+      label: rollOut
+    -
+      value: rotateInDownLeft
+      label: rotateInDownLeft
+    -
+      value: rotateInDownRight
+      label: rotateInDownRight
+    -
+      value: rotateInUpLeft
+      label: rotateInUpLeft
+    -
+      value: rotateInUpRight
+      label: rotateInUpRight
+    -
+      value: rotateIn
+      label: rotateIn
+    -
+      value: rotateOutDownLeft
+      label: rotateOutDownLeft
+    -
+      value: rotateOutDownRight
+      label: rotateOutDownRight
+    -
+      value: rotateOutUpLeft
+      label: rotateOutUpLeft
+    -
+      value: rotateOutUpRight
+      label: rotateOutUpRight
+    -
+      value: rotateOut
+      label: rotateOut
+    -
+      value: rubberBand
+      label: rubberBand
+    -
+      value: shake
+      label: shake
+    -
+      value: slideInDown
+      label: slideInDown
+    -
+      value: slideInLeft
+      label: slideInLeft
+    -
+      value: slideInRight
+      label: slideInRight
+    -
+      value: slideInUp
+      label: slideInUp
+    -
+      value: slideOutDown
+      label: slideOutDown
+    -
+      value: slideOutLeft
+      label: slideOutLeft
+    -
+      value: slideOutRight
+      label: slideOutRight
+    -
+      value: slideOutUp
+      label: slideOutUp
+    -
+      value: swing
+      label: swing
+    -
+      value: tada
+      label: tada
+    -
+      value: wobble
+      label: wobble
+    -
+      value: zoomInDown
+      label: zoomInDown
+    -
+      value: zoomInLeft
+      label: zoomInLeft
+    -
+      value: zoomInRight
+      label: zoomInRight
+    -
+      value: zoomInUp
+      label: zoomInUp
+    -
+      value: zoomIn
+      label: zoomIn
+    -
+      value: zoomOutDown
+      label: zoomOutDown
+    -
+      value: zoomOutLeft
+      label: zoomOutLeft
+    -
+      value: zoomOutRight
+      label: zoomOutRight
+    -
+      value: zoomOutUp
+      label: zoomOutUp
+    -
+      value: zoomOut
+      label: zoomOut
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: month_d_yyyy
+label: 'Month D, YYYY'
+locked: false
+pattern: 'F j, Y'

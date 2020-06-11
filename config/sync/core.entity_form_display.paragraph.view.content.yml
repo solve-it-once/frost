@@ -1,0 +1,26 @@
+uuid: 58f835b4-9e6d-4e65-a678-570139c7cad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.view.field_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - viewsreference
+_core:
+  default_config_hash: uzAluUWZ72Gn1Xgw7qs2GAITZPwldRW07LLWLGNPTRw
+id: paragraph.view.content
+targetEntityType: paragraph
+bundle: view
+mode: content
+content:
+  field_view:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  status: true

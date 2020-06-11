@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api
+id: search_api_task.small
+label: Small
+targetEntityType: search_api_task
+cache: true

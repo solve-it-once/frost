@@ -1,0 +1,93 @@
+uuid: e094e3aa-016d-4f93-bc9a-b7005a2f200b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_seo
+    - paragraphs.paragraphs_type.seo
+    - taxonomy.vocabulary.tag
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: dseJA2-NUx6mdOfPU8xKsIRuRaepXcwTAGi3RZd_GrQ
+id: taxonomy_term.tag.field_seo
+field_name: field_seo
+entity_type: taxonomy_term
+bundle: tag
+label: SEO
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      seo: seo
+    target_bundles_drag_drop:
+      accordion:
+        weight: 22
+        enabled: false
+      block:
+        weight: 23
+        enabled: false
+      blockquote:
+        weight: 24
+        enabled: false
+      card:
+        weight: 25
+        enabled: false
+      cards:
+        weight: 26
+        enabled: false
+      column:
+        weight: 27
+        enabled: false
+      content_listing:
+        weight: 28
+        enabled: false
+      heading:
+        weight: 29
+        enabled: false
+      hotspot:
+        weight: 30
+        enabled: false
+      layout:
+        weight: 31
+        enabled: false
+      link:
+        weight: 32
+        enabled: false
+      media:
+        weight: 33
+        enabled: false
+      rich_text:
+        weight: 34
+        enabled: false
+      seo:
+        enabled: true
+        weight: 35
+      spacer:
+        weight: 36
+        enabled: false
+      stripe:
+        weight: 37
+        enabled: false
+      table:
+        weight: 38
+        enabled: false
+      term_listing:
+        weight: 39
+        enabled: false
+      user_listing:
+        weight: 40
+        enabled: false
+      view:
+        weight: 41
+        enabled: false
+      webform:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: b6e8918c-a4a6-40e3-867f-ab3479e73f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_columns
+    - field.field.paragraph.layout.field_style_flexdirection
+    - field.field.paragraph.layout.field_style_justifycontent
+    - paragraphs.paragraphs_type.layout
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 1aovfw3b4vxtUPvyOazFBGnIAa14pea9zH98FjcIhpY
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content:
+  field_columns:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_style_flexdirection: true
+  field_style_justifycontent: true
+  search_api_excerpt: true

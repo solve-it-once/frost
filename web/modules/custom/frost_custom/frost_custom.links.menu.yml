@@ -1,0 +1,5 @@
+frost_custom.frost_custom_submitted:
+  title: 'Submitted lines'
+  parent: entity.node_type.collection
+  route_name: frost_custom.frost_custom_submitted
+  weight: 10

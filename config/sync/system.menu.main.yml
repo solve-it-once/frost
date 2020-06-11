@@ -1,0 +1,15 @@
+uuid: 42480009-8fc6-4b93-8607-1c233de7054d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: core
+_core:
+  default_config_hash: e5sOXfWbz0g2DyQycCxB2Y_BHIvChdw39rcf12s6sVY
+id: main
+label: 'Main navigation'
+description: 'Site section links'
+locked: true

@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_color_all
+field_name: field_style_color_all
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: color--black
+      label: Black
+    -
+      value: color--grey-dark
+      label: 'Grey (dark)'
+    -
+      value: color--grey
+      label: Grey
+    -
+      value: color--grey-light
+      label: 'Grey (light)'
+    -
+      value: color--white
+      label: White
+    -
+      value: color--main
+      label: 'Main [blue]'
+    -
+      value: color--main-dark
+      label: 'Main [blue] (dark)'
+    -
+      value: color--main-light
+      label: 'Main [blue] (light)'
+    -
+      value: color--second
+      label: Second
+    -
+      value: color--second-dark
+      label: 'Second (dark)'
+    -
+      value: color--second-light
+      label: 'Second (light)'
+    -
+      value: color--third
+      label: Third
+    -
+      value: color--third-dark
+      label: 'Third (dark)'
+    -
+      value: color--third-light
+      label: 'Third (light)'
+    -
+      value: color--accent
+      label: Accent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 171f908a-e1ec-488e-8a46-3fb3f78c295e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
+id: from_library
+label: 'From library'
+icon_uuid: null
+icon_default: null
+description: 'Stripes and other content that can potentially be reused across pages'
+behavior_plugins: {  }

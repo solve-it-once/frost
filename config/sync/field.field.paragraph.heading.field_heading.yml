@@ -1,0 +1,26 @@
+uuid: 0644111b-75c6-4536-949a-83e821fec586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.heading
+  module:
+    - frost_custom
+_core:
+  default_config_hash: ma5TyiyC7Dc2YOPSHdS9gejTw6cdt2qEj7u6D1KX4YI
+id: paragraph.heading.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: heading
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    wrapper: h2
+default_value_callback: ''
+settings: {  }
+field_type: heading_text

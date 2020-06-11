@@ -1,0 +1,95 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link.field_link
+    - field.field.paragraph.link.field_style_button
+    - field.field.paragraph.link.field_style_button_invert
+    - field.field.paragraph.link.field_style_childbgcolor
+    - paragraphs.paragraphs_type.link
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_link
+        - field_title
+      parent_name: group_admin
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_arrow
+        - field_style_childbgcolor
+        - field_style_button_invert
+        - field_style_button
+      parent_name: group_admin
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+id: paragraph.link.default
+targetEntityType: paragraph
+bundle: link
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_style_button:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_button_invert:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_childbgcolor:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

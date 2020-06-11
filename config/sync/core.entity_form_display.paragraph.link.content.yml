@@ -1,0 +1,32 @@
+uuid: 3e48d049-7b98-47d5-abf2-83bf84d04520
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.link.field_link
+    - field.field.paragraph.link.field_style_button
+    - field.field.paragraph.link.field_style_childbgcolor
+    - paragraphs.paragraphs_type.link
+  module:
+    - link
+_core:
+  default_config_hash: Kfxmc66rRE7gjgUAMw9B3w0-iPmNJxVsK9YMOOmsrlc
+id: paragraph.link.content
+targetEntityType: paragraph
+bundle: link
+mode: content
+content:
+  field_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  field_style_button: true
+  field_style_childbgcolor: true
+  status: true

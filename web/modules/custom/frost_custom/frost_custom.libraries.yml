@@ -1,0 +1,9 @@
+back_to_top:
+  version: 1.x
+  css:
+    component:
+      back_to_top/back_to_top.css: {}
+  js:
+    back_to_top/back_to_top.js: {}
+  dependencies:
+    - core/jquery

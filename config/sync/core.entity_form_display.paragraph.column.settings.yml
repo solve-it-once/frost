@@ -1,0 +1,99 @@
+uuid: 940ec0bb-e861-4b67-a9bc-0b0845443f2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.column.field_components
+    - field.field.paragraph.column.field_data_animation
+    - field.field.paragraph.column.field_style_animate
+    - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_color
+    - field.field.paragraph.column.field_style_flex
+    - field.field.paragraph.column.field_style_justifycontent
+    - field.field.paragraph.column.field_style_marginh
+    - field.field.paragraph.column.field_style_marginxc
+    - field.field.paragraph.column.field_style_paddingh
+    - field.field.paragraph.column.field_style_paddingxc
+    - field.field.paragraph.column.field_style_textalign
+    - paragraphs.paragraphs_type.column
+_core:
+  default_config_hash: _1ZPJgrnaitRiqXVdG9U3VxkS-bTUZhOqy1HWTQqZsY
+id: paragraph.column.settings
+targetEntityType: paragraph
+bundle: column
+mode: settings
+content:
+  field_data_animation:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_animate:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_bgcolor:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_color:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_flex:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_justifycontent:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_marginh:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_marginxc:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_paddingh:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_paddingxc:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_textalign:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_components: true
+  status: true

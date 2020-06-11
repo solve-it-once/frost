@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_fontweight
+field_name: field_style_fontweight
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: font-weight--100
+      label: Thin
+    -
+      value: font-weight--200
+      label: 'Extra Light'
+    -
+      value: font-weight--300
+      label: Light
+    -
+      value: font-weight--400
+      label: Regular
+    -
+      value: font-weight--500
+      label: Medium
+    -
+      value: font-weight--600
+      label: Semi-Bold
+    -
+      value: font-weight--700
+      label: Bold
+    -
+      value: font-weight--800
+      label: Extra-Bold
+    -
+      value: font-weight--900
+      label: Black
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

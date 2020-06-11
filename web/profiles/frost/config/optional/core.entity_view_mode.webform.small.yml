@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform.small
+label: Small
+targetEntityType: webform
+cache: true

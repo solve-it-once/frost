@@ -1,0 +1,35 @@
+uuid: cf60e79e-9505-4b65-9c7a-3d4698cb2ae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: CNxI4DfAVjS9VXLXuveX51DJyZNzSSvfl0FhWbw1WVs
+id: paragraph.field_style_texttransform
+field_name: field_style_texttransform
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: text-transform--uppercase
+      label: 'ALL CAPS'
+    -
+      value: text-transform--lowercase
+      label: 'lowercase (forced)'
+    -
+      value: text-transform--none
+      label: Regular
+    -
+      value: text-transform--capitalize
+      label: 'Title Case'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

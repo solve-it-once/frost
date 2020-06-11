@@ -1,0 +1,88 @@
+uuid: ca7ffa49-7206-4ecb-be49-52ae96555310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hotspot.field_data_xpercent
+    - field.field.paragraph.hotspot.field_data_ypercent
+    - field.field.paragraph.hotspot.field_text
+    - paragraphs.paragraphs_type.hotspot
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_text
+      parent_name: group_admin
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_data_xpercent
+        - field_data_ypercent
+      parent_name: group_admin
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: ZnK_gSvj6KnBwqp1V0PyUcKh9euQ8y9mYir9R1wQGJE
+id: paragraph.hotspot.default
+targetEntityType: paragraph
+bundle: hotspot
+mode: default
+content:
+  field_data_xpercent:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_data_ypercent:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

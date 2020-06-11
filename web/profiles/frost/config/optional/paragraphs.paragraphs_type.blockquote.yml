@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote
+label: Blockquote
+icon_uuid: 30404952-e223-4c02-850b-bf4343354430
+description: ''
+behavior_plugins: {  }

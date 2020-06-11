@@ -1,0 +1,30 @@
+uuid: d8d1ead3-6df1-42ed-89d9-979712c251dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_viewmode
+    - paragraphs.paragraphs_type.user_listing
+  module:
+    - entity_reference_display
+_core:
+  default_config_hash: TKONH3Ee8DcTWuS7wBUMLmz6mbYb-egjx7TAKtt1HGU
+id: paragraph.user_listing.field_viewmode
+field_name: field_viewmode
+entity_type: paragraph
+bundle: user_listing
+label: 'View mode'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: teaser
+default_value_callback: ''
+settings:
+  exclude:
+    decorated: decorated
+    small: small
+    teaser: teaser
+  negate: 1
+field_type: entity_reference_display

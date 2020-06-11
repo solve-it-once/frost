@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_paddingh
+field_name: field_style_paddingh
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: padding-horizontal--1
+      label: 1x
+    -
+      value: padding-horizontal--2
+      label: 2x
+    -
+      value: padding-horizontal--4
+      label: 4x
+    -
+      value: padding-horizontal--8
+      label: 8x
+    -
+      value: padding-horizontal--16
+      label: 16x
+    -
+      value: padding-horizontal--32
+      label: 32x
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

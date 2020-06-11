@@ -1,0 +1,5 @@
+<!--
+  The config generator will add more field types here automatically if
+  required by your drupal setup. Having these field types in a separate file is
+  better than modifying schema.xml.
+-->

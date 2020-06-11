@@ -1,0 +1,25 @@
+uuid: 8e8a5645-510e-4705-a19e-51e7667ab62e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_layout
+    - paragraphs.paragraphs_type.cards
+  module:
+    - options
+_core:
+  default_config_hash: VmR7aiv_ZYb77kKCoz08cALZbKthM4rS-hhqk6St1fA
+id: paragraph.cards.field_style_layout
+field_name: field_style_layout
+entity_type: paragraph
+bundle: cards
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: layout--horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

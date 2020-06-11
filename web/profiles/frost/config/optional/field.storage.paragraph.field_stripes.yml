@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - frost_container
+id: paragraph.field_stripes
+field_name: field_stripes
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: container_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

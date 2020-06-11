@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_heading
+    - field.field.paragraph.heading.field_image
+    - field.field.paragraph.heading.field_style_color_all
+    - field.field.paragraph.heading.field_style_fontweight
+    - field.field.paragraph.heading.field_style_headinglevel
+    - field.field.paragraph.heading.field_style_texttransform
+    - paragraphs.paragraphs_type.heading
+  module:
+    - frost_custom
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: heading_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_style_color_all: true
+  field_style_fontweight: true
+  field_style_headinglevel: true
+  field_style_texttransform: true
+  search_api_excerpt: true

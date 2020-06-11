@@ -1,0 +1,35 @@
+uuid: a04460c1-77c0-40a9-86ee-7ca7630d312f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_listing.field_content
+    - field.field.paragraph.content_listing.field_style_layout
+    - field.field.paragraph.content_listing.field_viewmode
+    - paragraphs.paragraphs_type.content_listing
+  module:
+    - entity_reference_display
+    - field_formatter_class
+_core:
+  default_config_hash: X4zOQv5NtLei11TF4ZVi-5vVf2hU4yfbU2XASR1IZ5Q
+id: paragraph.content_listing.default
+targetEntityType: paragraph
+bundle: content_listing
+mode: default
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

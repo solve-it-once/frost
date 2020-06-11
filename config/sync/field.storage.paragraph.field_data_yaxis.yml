@@ -1,0 +1,23 @@
+uuid: a2d7d90e-97c1-4f51-9d83-7d02c61182b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: _SbJ6aGy3Muva8nKZy32d-O_5eGlDUgQFKA0ti7xTp4
+id: paragraph.field_data_yaxis
+field_name: field_data_yaxis
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

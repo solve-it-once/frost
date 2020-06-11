@@ -1,0 +1,32 @@
+uuid: 4fd2db44-dbed-4d26-aa82-6691ef841eec
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: SmVPDpFQj8E6fooQ-zrUGCUQ6v1Jd-JpXEkaQwinrxE
+id: paragraph.field_style_bgpy
+field_name: field_style_bgpy
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background-position-y--top
+      label: Top
+    -
+      value: background-position-y--bottom
+      label: Bottom
+    -
+      value: background-position-y--center
+      label: Center
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

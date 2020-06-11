@@ -1,0 +1,21 @@
+uuid: 65f9f792-1a23-45c3-9f17-0aa03db5382c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_description
+    - paragraphs.paragraphs_type.seo
+_core:
+  default_config_hash: PYwaIT-kC05RlqGo8prFqbSZfGx6w6Bt4Qx_V0awohU
+id: paragraph.seo.field_seo_description
+field_name: field_seo_description
+entity_type: paragraph
+bundle: seo
+label: Description
+description: 'A brief and concise summary of the page''s content, preferably 150 characters or less. The description meta tag may be used by search engines to display a snippet about the page in search results.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

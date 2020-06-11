@@ -1,0 +1,41 @@
+uuid: d5be4b17-91b4-4ea1-b432-32867e31bcae
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: gsPGBTqSUvD2-ynhk1BqQlBOE2tZSGOTyzvBjpq7rzY
+id: paragraph.field_style_vspx
+field_name: field_style_vspx
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: padding-vertical--1
+      label: 1x
+    -
+      value: padding-vertical--2
+      label: 2x
+    -
+      value: padding-vertical--4
+      label: 4x
+    -
+      value: padding-vertical--8
+      label: 8x
+    -
+      value: padding-vertical--16
+      label: 16x
+    -
+      value: padding-vertical--32
+      label: 32x
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

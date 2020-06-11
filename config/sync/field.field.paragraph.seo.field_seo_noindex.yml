@@ -1,0 +1,25 @@
+uuid: 694f7bc4-f024-46fb-bfbf-6d1bb822201a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_noindex
+    - paragraphs.paragraphs_type.seo
+_core:
+  default_config_hash: QLamXVq5jz87bpE0tRh6gyOO8Q6m4chXSJdAhMJhAhs
+id: paragraph.seo.field_seo_noindex
+field_name: field_seo_noindex
+entity_type: paragraph
+bundle: seo
+label: noindex
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: noindex
+  off_label: index
+field_type: boolean

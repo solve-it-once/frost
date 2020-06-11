@@ -1,0 +1,25 @@
+uuid: 7f1f58f9-2792-4729-b3bc-1270c345d519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - link
+_core:
+  default_config_hash: 9LOqsMPYPee3FnrL7TWm2ee3UI33cfYg7rdhEwHzdw8
+id: paragraph.statistic_percent.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: statistic_percent
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

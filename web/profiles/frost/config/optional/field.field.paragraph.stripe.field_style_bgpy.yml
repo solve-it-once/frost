@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_bgpy
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - options
+id: paragraph.stripe.field_style_bgpy
+field_name: field_style_bgpy
+entity_type: paragraph
+bundle: stripe
+label: 'Background image alignment (vertical)'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: background-position-y--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

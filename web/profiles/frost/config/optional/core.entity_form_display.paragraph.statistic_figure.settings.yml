@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.statistic_figure.field_figure_one
+    - field.field.paragraph.statistic_figure.field_figure_two
+    - field.field.paragraph.statistic_figure.field_link
+    - field.field.paragraph.statistic_figure.field_text
+    - paragraphs.paragraphs_type.statistic_figure
+id: paragraph.statistic_figure.settings
+targetEntityType: paragraph
+bundle: statistic_figure
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_figure_one: true
+  field_figure_two: true
+  field_link: true
+  field_text: true
+  status: true

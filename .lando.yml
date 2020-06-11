@@ -1,0 +1,40 @@
+name: drupal-starter-kit
+recipe: drupal8
+
+config:
+  webroot: web
+  xdebug: true
+
+events:
+  post-start:
+    - appserver: cd $LANDO_MOUNT && composer install
+
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+
+  selenium:
+    type: compose
+    services:
+      image: selenium/standalone-chrome-debug
+      user: root
+      ports:
+        - "4444:4444"
+        - "5900:5900"
+      volumes:
+        - /dev/shm:/dev/shm
+      command: /opt/bin/entry_point.sh
+      links:
+        - appserver
+
+proxy:
+  mailhog:
+    - mail.lndo.site
+
+tooling:
+  behat:
+    service: appserver
+    description: Run behat tests
+    cmd: /app/vendor/bin/behat

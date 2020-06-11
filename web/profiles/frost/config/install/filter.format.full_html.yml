@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+name: 'Full HTML'
+format: full_html
+weight: 0
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang class=""> <abbr> <address> <article> <aside> <audio> <b> <blockquote cite> <br> <caption> <cite> <code> <col> <colgroup> <dd> <del> <details> <dfn> <div> <dl> <dt> <em class=""> <figcaption> <figure> <footer> <i> <img alt src class=""> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <header> <hgroup> <hr> <img src alt data-entity-type data-entity-uuid data-align data-caption> <ins> <li class=""> <mark> <nav> <ol start type class=""> <p> <picture> <pre> <q> <section> <small> <source> <strong class=""> <sub> <summary> <sup> <table> <tbody> <td> <tfoot> <th> <thead> <tr> <track> <ul type class=""> <video>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform.teaser
+label: Teaser
+targetEntityType: webform
+cache: true

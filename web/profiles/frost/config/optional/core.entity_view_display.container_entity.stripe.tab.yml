@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.container_entity.tab
+    - field.field.container_entity.stripe.field_stripe
+    - field.field.container_entity.stripe.field_text
+    - frost_container.container_entity_type.stripe
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+id: container_entity.stripe.tab
+targetEntityType: container_entity
+bundle: stripe
+mode: tab
+content:
+  field_stripe:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_text:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  name: true
+  search_api_excerpt: true
+  user_id: true

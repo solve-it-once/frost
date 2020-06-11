@@ -1,0 +1,25 @@
+uuid: 348791b7-3c94-424f-8ae3-1e293565ecaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_color
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+_core:
+  default_config_hash: kUKFM-SiK07wwoymk_cnKGjLrA-CKBYA-YykH9Ndo7c
+id: paragraph.column.field_style_color
+field_name: field_style_color
+entity_type: paragraph
+bundle: column
+label: 'Text color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: color--inherit
+default_value_callback: ''
+settings: {  }
+field_type: list_string

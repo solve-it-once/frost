@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_listing
+label: 'Content Listing'
+icon_uuid: 59c54298-70d2-40d2-82d5-02a7aa7f0c09
+description: ''
+behavior_plugins: {  }

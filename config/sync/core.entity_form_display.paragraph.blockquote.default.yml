@@ -1,0 +1,88 @@
+uuid: 7b4dc8b9-e5c6-414b-a33c-cb540d83e53e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blockquote.field_style_quoteclose
+    - field.field.paragraph.blockquote.field_style_quoteopen
+    - field.field.paragraph.blockquote.field_text
+    - paragraphs.paragraphs_type.blockquote
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 3
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_text
+      parent_name: group_admin
+      weight: 4
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_quoteclose
+        - field_style_quoteopen
+      parent_name: group_admin
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: fDlZ8IS2CfPg5jczPzjCsxPS4PhnQxx12q3s9FgU068
+id: paragraph.blockquote.default
+targetEntityType: paragraph
+bundle: blockquote
+mode: default
+content:
+  field_style_quoteclose:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_quoteopen:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

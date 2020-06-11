@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - frost_container
+id: container_entity.slide
+label: Slide
+targetEntityType: container_entity
+cache: true

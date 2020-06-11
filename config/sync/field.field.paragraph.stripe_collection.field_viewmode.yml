@@ -1,0 +1,27 @@
+uuid: f509d99b-96bc-4c05-a1ce-4712684b2007
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_viewmode
+    - paragraphs.paragraphs_type.stripe_collection
+  module:
+    - entity_reference_display
+id: paragraph.stripe_collection.field_viewmode
+field_name: field_viewmode
+entity_type: paragraph
+bundle: stripe_collection
+label: 'Show stripes as'
+description: 'Select the "display mode" of the stripes in this collection. Defaults to ''Tab'', which makes the whole collection appear as tabs. Be sure to set the tab title for each stripe within the stripe''s settings form.'
+required: false
+translatable: true
+default_value:
+  -
+    value: tab
+default_value_callback: ''
+settings:
+  exclude:
+    default: default
+    tab: tab
+  negate: 1
+field_type: entity_reference_display

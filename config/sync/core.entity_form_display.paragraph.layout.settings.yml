@@ -1,0 +1,34 @@
+uuid: 93fd8d14-4cbb-48f7-9492-25172eb47845
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.layout.field_columns
+    - field.field.paragraph.layout.field_style_flexdirection
+    - field.field.paragraph.layout.field_style_justifycontent
+    - paragraphs.paragraphs_type.layout
+_core:
+  default_config_hash: _jn-ASlb-JYmZXmsBPka0QZFflCAf9reIP-gaGsBNWE
+id: paragraph.layout.settings
+targetEntityType: paragraph
+bundle: layout
+mode: settings
+content:
+  field_style_flexdirection:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_justifycontent:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_columns: true
+  status: true

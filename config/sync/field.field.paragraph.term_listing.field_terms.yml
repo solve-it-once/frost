@@ -1,0 +1,33 @@
+uuid: 19325103-a235-43a5-bda5-577c204ae393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_terms
+    - paragraphs.paragraphs_type.term_listing
+    - taxonomy.vocabulary.article_type
+    - taxonomy.vocabulary.tag
+_core:
+  default_config_hash: YVceTVhcIozCIEU9Y-cHXPGpZkQMhd1b-Q00zih1sog
+id: paragraph.term_listing.field_terms
+field_name: field_terms
+entity_type: paragraph
+bundle: term_listing
+label: Terms
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      article_type: article_type
+      tag: tag
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: article_type
+field_type: entity_reference

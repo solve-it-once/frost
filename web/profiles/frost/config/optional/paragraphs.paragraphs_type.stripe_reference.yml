@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stripe_reference
+label: 'Stripe reference'
+icon_uuid: null
+description: 'Lets you show a stripe from another page. Its content will update in both places, though in some cases the content is dynamic and page-specific.'
+behavior_plugins: {  }

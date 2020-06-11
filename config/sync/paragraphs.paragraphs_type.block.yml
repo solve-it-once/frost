@@ -1,0 +1,12 @@
+uuid: a16fe88a-b5b5-4a65-887e-906472a50105
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kPbIEXLXkkpLfS0W3Tqxj5ChO15KBPN4wF4ZfopzpUc
+id: block
+label: Block
+icon_uuid: null
+icon_default: null
+description: 'Display a system or other block of dynamic content'
+behavior_plugins: {  }

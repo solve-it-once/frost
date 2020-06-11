@@ -1,0 +1,12 @@
+uuid: cb9e73d6-b04e-418d-863c-0aa039c8dda7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wtsmTK08j0Hsnx59vbQCiz2At4EK0ZTvnAeaSbMqqnw
+id: media
+label: Media
+icon_uuid: null
+icon_default: null
+description: 'Images, videos, video embeds, even audio and other files. Can have captions and links. Hotspots with tooltips are also included'
+behavior_plugins: {  }

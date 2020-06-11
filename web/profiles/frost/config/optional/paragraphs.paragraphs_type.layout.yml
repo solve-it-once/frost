@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout
+label: Layout
+icon_uuid: f59bce96-dcbc-49af-a034-f37d792a7d60
+description: ''
+behavior_plugins: {  }

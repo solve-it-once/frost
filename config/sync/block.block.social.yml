@@ -1,0 +1,26 @@
+uuid: 762d6082-1b6f-4f6d-a14e-f9efd2b569fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - contact_info
+  theme:
+    - frost_theme
+third_party_settings:
+  block_class:
+    classes: margin-top--40px
+_core:
+  default_config_hash: hXAz_AKzjDhoTlKGlfwyEsR3Ce19AcSqRwh6gd13QbA
+id: social
+theme: frost_theme
+region: footer_cta
+weight: -6
+provider: null
+plugin: social
+settings:
+  id: social
+  label: Social
+  provider: contact_info
+  label_display: '0'
+visibility: {  }

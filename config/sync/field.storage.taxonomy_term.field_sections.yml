@@ -1,0 +1,23 @@
+uuid: e8dca574-5024-4fab-8018-914438c32de1
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - taxonomy
+_core:
+  default_config_hash: hcLQ_J9HtUwQ4Oepq1OPNO-HKFKttF2IDNgMWbYGVA0
+id: taxonomy_term.field_sections
+field_name: field_sections
+entity_type: taxonomy_term
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

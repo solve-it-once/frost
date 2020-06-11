@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.statistic_percent.field_decimal
+    - field.field.paragraph.statistic_percent.field_link
+    - field.field.paragraph.statistic_percent.field_text
+    - field.field.paragraph.statistic_percent.field_text_prefix
+    - field.field.paragraph.statistic_percent.field_text_suffix
+    - paragraphs.paragraphs_type.statistic_percent
+id: paragraph.statistic_percent.settings
+targetEntityType: paragraph
+bundle: statistic_percent
+mode: settings
+content:
+  field_text_prefix:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_suffix:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_decimal: true
+  field_link: true
+  field_text: true
+  status: true

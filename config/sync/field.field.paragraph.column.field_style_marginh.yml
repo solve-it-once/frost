@@ -1,0 +1,23 @@
+uuid: 9f7bd2db-fa14-48ce-abc4-c1e71d5c3e6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_marginh
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+_core:
+  default_config_hash: bEtmiYJ3j25i49CSPypCeK4DrMGXMYYWjjcrwZ0onwg
+id: paragraph.column.field_style_marginh
+field_name: field_style_marginh
+entity_type: paragraph
+bundle: column
+label: 'Margin (horizontal)'
+description: 'Put space between the column and the one next to it.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

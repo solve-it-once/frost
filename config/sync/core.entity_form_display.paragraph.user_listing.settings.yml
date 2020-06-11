@@ -1,0 +1,33 @@
+uuid: e4d6bb0f-e1e2-4d2e-b680-f0749c0c7ee2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.user_listing.field_style_layout
+    - field.field.paragraph.user_listing.field_users
+    - field.field.paragraph.user_listing.field_viewmode
+    - paragraphs.paragraphs_type.user_listing
+_core:
+  default_config_hash: jwfYUZo9TTKrW508mKgbOn05X-7YnIljiZArcU2ti_M
+id: paragraph.user_listing.settings
+targetEntityType: paragraph
+bundle: user_listing
+mode: settings
+content:
+  field_style_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_viewmode:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_users: true
+  status: true

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - frost_custom
+  theme:
+    - frost_theme
+id: heroorpagetitle
+theme: frost_theme
+region: splash
+weight: 0
+provider: null
+plugin: hero_title_block
+settings:
+  id: hero_title_block
+  label: 'Hero or Page Title'
+  provider: frost_custom
+  label_display: '0'
+visibility: {  }

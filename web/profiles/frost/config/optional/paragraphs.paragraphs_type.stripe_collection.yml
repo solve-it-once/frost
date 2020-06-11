@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stripe_collection
+label: 'Stripe collection'
+icon_uuid: null
+description: 'Put multiple reusable stripes together, making slideshows, tabs, and other complex elements.'
+behavior_plugins: {  }

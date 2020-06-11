@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - iframe
+    - paragraphs
+id: paragraph.field_iframe
+field_name: field_iframe
+entity_type: paragraph
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

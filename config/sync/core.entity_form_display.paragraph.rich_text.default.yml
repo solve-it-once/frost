@@ -1,0 +1,110 @@
+uuid: 3c8446aa-b402-4ecd-86d6-c43b6fb975a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rich_text.field_style_color_all
+    - field.field.paragraph.rich_text.field_style_fontsize
+    - field.field.paragraph.rich_text.field_style_fontweight
+    - field.field.paragraph.rich_text.field_style_textcolumns
+    - field.field.paragraph.rich_text.field_style_texttransform
+    - field.field.paragraph.rich_text.field_text
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_text
+      parent_name: group_admin
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_fontsize
+        - field_style_fontweight
+        - field_style_color_all
+        - field_style_textcolumns
+        - field_style_texttransform
+      parent_name: group_admin
+      weight: 9
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: GhDjujGxy3va1koE-mAcVx57IgZyw996L5D5iuP8Q-U
+id: paragraph.rich_text.default
+targetEntityType: paragraph
+bundle: rich_text
+mode: default
+content:
+  field_style_color_all:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontsize:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontweight:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_textcolumns:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_texttransform:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,25 @@
+uuid: 56361f4b-ff01-4c2c-9926-5861da83d2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_flexdirection
+    - paragraphs.paragraphs_type.layout
+_core:
+  default_config_hash: n84P6aCFif9Lp6MNW08zmId98lCY7S9wVSHVocg9VFM
+id: paragraph.layout.field_style_flexdirection
+field_name: field_style_flexdirection
+entity_type: paragraph
+bundle: layout
+label: Reverse
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: flex-direction--row-reverse
+  off_label: flex-direction--row
+field_type: boolean

@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_binaries
+name: local_binaries
+label: 'Local Binaries'
+processors:
+  ad260c90-e845-452d-b5dd-d20d9db687fe:
+    uuid: ad260c90-e845-452d-b5dd-d20d9db687fe
+    id: advdef
+    weight: 1
+    data:
+      manual_executable_path: ''
+      recompress: false
+      mode: 3
+  0a8a85c1-2ccc-4cde-844c-97a7588f006c:
+    uuid: 0a8a85c1-2ccc-4cde-844c-97a7588f006c
+    id: advpng
+    weight: 2
+    data:
+      manual_executable_path: ''
+      recompress: false
+      mode: 3
+  2987bbcc-6a38-4c82-a9f5-86df39c67935:
+    uuid: 2987bbcc-6a38-4c82-a9f5-86df39c67935
+    id: jfifremove
+    weight: 3
+    data:
+      manual_executable_path: ''
+  2c1a727a-d7d5-4355-842a-519554d46647:
+    uuid: 2c1a727a-d7d5-4355-842a-519554d46647
+    id: jpegoptim
+    weight: 4
+    data:
+      manual_executable_path: ''
+      progressive: null
+      quality: null
+      size: null
+  74c9f4a7-e5c8-4ddd-8698-4d940f73fea9:
+    uuid: 74c9f4a7-e5c8-4ddd-8698-4d940f73fea9
+    id: jpegtran
+    weight: 5
+    data:
+      manual_executable_path: ''
+      progressive: false
+  fb380dd6-14f0-4b5f-8615-1ed40147ae17:
+    uuid: fb380dd6-14f0-4b5f-8615-1ed40147ae17
+    id: optipng
+    weight: 6
+    data:
+      manual_executable_path: ''
+      level: 5
+      interlace: null
+  f1390b39-5a83-46a5-ba88-4f671ee0e941:
+    uuid: f1390b39-5a83-46a5-ba88-4f671ee0e941
+    id: pngcrush
+    weight: 7
+    data:
+      manual_executable_path: ''
+  f8156232-0825-4655-9d53-5333120387df:
+    uuid: f8156232-0825-4655-9d53-5333120387df
+    id: pngout
+    weight: 8
+    data:
+      manual_executable_path: ''
+  7645ce49-49f7-4a53-a781-4c7929e7d11c:
+    uuid: 7645ce49-49f7-4a53-a781-4c7929e7d11c
+    id: pngquant
+    weight: 9
+    data:
+      manual_executable_path: ''

@@ -1,0 +1,25 @@
+uuid: 2fabdd55-7abb-4ec8-ab4f-22ec9dbab2af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.event
+  module:
+    - link
+_core:
+  default_config_hash: TMaPFo3qTZWw0lhtDxXDOaAFGLobJih36BURefIGHPE
+id: node.event.field_link
+field_name: field_link
+entity_type: node
+bundle: event
+label: 'External link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

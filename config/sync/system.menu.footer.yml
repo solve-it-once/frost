@@ -1,0 +1,15 @@
+uuid: 33dc96a7-3e19-43da-8160-245dee7154ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: 42V2O3CF3ZIBoQFtxHqIiWsjqdcrGCmT5qkOTbVPWPE
+id: footer
+label: 'Footer utility'
+description: 'Site information links'
+locked: true

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_info
+  theme:
+    - frost_theme
+id: address
+theme: frost_theme
+region: footer
+weight: -5
+provider: null
+plugin: address
+settings:
+  id: address
+  label: Address
+  provider: contact_info
+  label_display: '0'
+visibility: {  }

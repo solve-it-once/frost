@@ -1,0 +1,8 @@
+{% if wrapped %}
+  <{{ html_tag }}{{ attributes.addClass(classes) }}>
+{% endif %}
+{% if label and not label_hidden %}<strong{{ title_attributes.addClass(title_classes) }}>{{ label }}</strong>{% endif %}
+{% for item in items %}{{ item.content }}{% endfor %}
+{% if wrapped %}
+  </{{ html_tag }}>
+{% endif %}

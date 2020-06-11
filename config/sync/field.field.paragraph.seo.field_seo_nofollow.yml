@@ -1,0 +1,25 @@
+uuid: 77ff386b-9cb0-43d4-8c19-3e13648b184c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_nofollow
+    - paragraphs.paragraphs_type.seo
+_core:
+  default_config_hash: mkIAprpQ76uoN1DHoi72Eox-4mJtqquvVOEYqz8LvWM
+id: paragraph.seo.field_seo_nofollow
+field_name: field_seo_nofollow
+entity_type: paragraph
+bundle: seo
+label: nofollow
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: nofollow
+  off_label: follow
+field_type: boolean

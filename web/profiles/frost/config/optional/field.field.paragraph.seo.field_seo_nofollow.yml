@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_nofollow
+    - paragraphs.paragraphs_type.seo
+id: paragraph.seo.field_seo_nofollow
+field_name: field_seo_nofollow
+entity_type: paragraph
+bundle: seo
+label: nofollow
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: nofollow
+  off_label: follow
+field_type: boolean

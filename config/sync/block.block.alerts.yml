@@ -1,0 +1,25 @@
+uuid: 4293b34d-696c-4cd4-91dd-20b9017f8b0e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:messages:6f12931c-87ff-4a14-999f-854599ab183c'
+  module:
+    - block_content
+  theme:
+    - frost_theme
+id: alerts
+theme: frost_theme
+region: alerts
+weight: 0
+provider: null
+plugin: 'block_content:6f12931c-87ff-4a14-999f-854599ab183c'
+settings:
+  id: 'block_content:6f12931c-87ff-4a14-999f-854599ab183c'
+  label: Alerts
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 1443e820-30b3-4f5a-a316-3d0aa04c1ba5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+_core:
+  default_config_hash: QkYBMhvIEEIEWU8eI0tZV73xpzfoTqIWOKUGej1odX4
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.table.field_data_charttitle
+    - field.field.paragraph.table.field_data_yaxis
+    - field.field.paragraph.table.field_style_graph
+    - field.field.paragraph.table.field_style_table_replace
+    - field.field.paragraph.table.field_table
+    - paragraphs.paragraphs_type.table
+  module:
+    - field_formatter_class
+    - tablefield
+id: paragraph.table.default
+targetEntityType: paragraph
+bundle: table
+mode: default
+content:
+  field_table:
+    weight: 0
+    label: hidden
+    settings:
+      row_header: '1'
+      column_header: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: tablefield
+    region: content
+hidden:
+  field_data_charttitle: true
+  field_data_yaxis: true
+  field_style_graph: true
+  field_style_table_replace: true
+  search_api_excerpt: true

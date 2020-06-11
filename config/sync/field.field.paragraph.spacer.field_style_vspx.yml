@@ -1,0 +1,25 @@
+uuid: 0b5e7637-1522-46cb-a528-9a36d0265635
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_vspx
+    - paragraphs.paragraphs_type.spacer
+  module:
+    - options
+_core:
+  default_config_hash: HKIIpmQEtcuAVLMmPPyJHtSQWH26fOv13Dc9ULxEHyA
+id: paragraph.spacer.field_style_vspx
+field_name: field_style_vspx
+entity_type: paragraph
+bundle: spacer
+label: 'Spacing size'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: padding-vertical--4
+default_value_callback: ''
+settings: {  }
+field_type: list_string

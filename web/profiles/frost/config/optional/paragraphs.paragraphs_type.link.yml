@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: link
+label: Link
+icon_uuid: 7768de25-98ea-41bd-823a-d89780d8f788
+description: ''
+behavior_plugins: {  }

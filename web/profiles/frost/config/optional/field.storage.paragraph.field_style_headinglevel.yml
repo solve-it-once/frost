@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_headinglevel
+field_name: field_style_headinglevel
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: heading--h1
+      label: 'Heading 1'
+    -
+      value: heading--h2
+      label: 'Heading 2'
+    -
+      value: heading--h3
+      label: 'Heading 3'
+    -
+      value: heading--h4
+      label: 'Heading 4'
+    -
+      value: heading--h5
+      label: 'Heading 5'
+    -
+      value: heading--h6
+      label: 'Heading 6'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

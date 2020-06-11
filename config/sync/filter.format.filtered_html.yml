@@ -1,0 +1,32 @@
+uuid: d3f3666a-2f4a-44fd-9772-a0d5f8c13dce
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KPx_DHxds4NEK2n6BYu-Rs1eDAjOXPTti_6wgQ_aCSc
+name: 'Filtered HTML'
+format: filtered_html
+weight: 0
+filters:
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang class="" data-entity-type data-entity-uuid data-entity-substitution> <em class=""> <strong class=""> <cite> <blockquote cite> <code> <ul type class=""> <ol start type class=""> <li class=""> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <sup> <sub> <hr> <p> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: -11
+    settings:
+      title: false

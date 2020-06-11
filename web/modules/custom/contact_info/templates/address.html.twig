@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * A template for a postal address.
+ */
+#}
+<address class="contact-info-address" itemprop="address" itemscope=""
+         itemtype="http://schema.org/PostalAddress">
+    {% if legal_name %}
+        <span itemprop="legalName">{{ legal_name }}</span><br/>
+    {% endif %}
+    {% if street_address or street_address_2 %}
+        <span itemprop="streetAddress">
+    {% if street_address %}
+        {{ street_address }} <br/>
+    {% endif %}
+            {% if street_address_2 %}
+                {{ street_address_2 }} <br/>
+            {% endif %}
+  </span>
+    {% endif %}
+    {% if locality %}
+        <span itemprop="addressLocality">{{ locality }}</span>,
+    {% endif %}
+    {% if region %}
+        <span itemprop="addressRegion">{{ region }}</span>
+    {% endif %}
+    {% if postal_code %}
+        <span itemprop="postalCode">{{ postal_code }}</span>
+    {% endif %}
+    {% if country_name %}
+        <span class="element-invisible"
+              itemprop="addressCountry">{{ country_name }}</span>
+    {% endif %}
+</address>

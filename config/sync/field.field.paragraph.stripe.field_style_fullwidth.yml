@@ -1,0 +1,25 @@
+uuid: f7dfde31-97de-4470-8895-0cbd7186cb47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_fullwidth
+    - paragraphs.paragraphs_type.stripe
+_core:
+  default_config_hash: wVie04SA0Fgb9ij_4mX9sLHJ53fW5yUact1AGorvWv8
+id: paragraph.stripe.field_style_fullwidth
+field_name: field_style_fullwidth
+entity_type: paragraph
+bundle: stripe
+label: 'Full width'
+description: 'If checked, the stripe''s contents will be the full width of the browser rather than constrained to the page''s default content width. <strong>Use with caution</strong>.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: child-inner-max-width--inherit
+  off_label: child-inner-max-width--current
+field_type: boolean

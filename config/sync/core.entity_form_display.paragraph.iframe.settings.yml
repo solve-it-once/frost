@@ -1,0 +1,19 @@
+uuid: 40f4dd1b-719b-46f9-8d76-fe1877c259ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.iframe.field_iframe
+    - paragraphs.paragraphs_type.iframe
+_core:
+  default_config_hash: mSNinamiNISzFzYRc2jgkeSlt2wZs18okgu3c4FxROI
+id: paragraph.iframe.settings
+targetEntityType: paragraph
+bundle: iframe
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_iframe: true
+  status: true

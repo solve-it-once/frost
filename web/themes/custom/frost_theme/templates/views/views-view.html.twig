@@ -1,0 +1,54 @@
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if title %}
+    {{ title }}
+  {% endif %}
+  {{ title_suffix }}
+  {% if exposed %}
+    <div{{ filters_attributes }}>
+      {{ exposed }}
+    </div>
+  {% endif %}
+  {% if header %}
+    <div{{ header_attributes }}>
+      {{ header }}
+    </div>
+  {% endif %}
+  {% if attachment_before %}
+    <div{{ attachment_before_attributes }}>
+      {{ attachment_before }}
+    </div>
+  {% endif %}
+
+  {% if rows %}
+    <div{{ content_attributes }}>
+      {{ rows }}
+    </div>
+  {% elseif empty %}
+    <div{{ empty_attributes }}>
+      {{ empty }}
+    </div>
+  {% endif %}
+
+  {% if pager %}
+    {{ pager }}
+  {% endif %}
+  {% if attachment_after %}
+    <div{{ attachment_after_attributes }}>
+      {{ attachment_after }}
+    </div>
+  {% endif %}
+  {% if more %}
+    {{ more }}
+  {% endif %}
+  {% if footer %}
+    <div{{ footer_attributes }}>
+      {{ footer }}
+    </div>
+  {% endif %}
+  {% if feed_icons %}
+    <div{{ feed_icons_attributes }}>
+      {{ feed_icons }}
+    </div>
+  {% endif %}
+</div>

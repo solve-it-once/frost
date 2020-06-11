@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.small
+    - field.field.node.event.body
+    - field.field.node.event.field_components
+    - field.field.node.event.field_date
+    - field.field.node.event.field_hero
+    - field.field.node.event.field_image
+    - field.field.node.event.field_link
+    - field.field.node.event.field_location
+    - field.field.node.event.field_sections
+    - field.field.node.event.field_seo
+    - field.field.node.event.field_tags
+    - node.type.event
+  module:
+    - datetime_range
+    - field_formatter_class
+    - user
+id: node.event.small
+targetEntityType: node
+bundle: event
+mode: small
+content:
+  field_date:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mm_dd_yyyy
+      separator: '-'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: daterange_default
+    region: content
+  field_location:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  linked_title:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  breadcrumb: true
+  frost_submitted: true
+  field_components: true
+  field_hero: true
+  field_image: true
+  field_link: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  links: true
+  search_api_excerpt: true

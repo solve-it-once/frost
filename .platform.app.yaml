@@ -1,0 +1,83 @@
+# This file describes an application. You can have multiple applications
+# in the same project.
+#
+# See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
+
+name: 'app'
+type: 'php:7.4'
+disk: 2048
+build:
+  flavor: composer
+
+relationships:
+  database: 'mysqldb:mysql'
+  solr: 'solr:main'
+
+dependencies:
+  php:
+    "drush/drush": "^10.0"
+
+mounts:
+  '/web/sites/default/files': 'shared:files/files'
+  '/tmp': 'shared:files/tmp'
+  '/private': 'shared:files/private'
+  '/.drush': 'shared:files/.drush'
+  '/drush-backups': 'shared:files/drush-backups'
+  '/.console': 'shared:files/console'
+
+hooks:
+  build: |
+    curl -sS https://platform.sh/cli/installer | php
+  deploy: |
+    cd web
+    drush -y updatedb
+    drush -y config-import
+    drush -y cache-rebuild
+
+web:
+  locations:
+    '/':
+      root: 'web'
+      expires: -1
+      passthru: '/index.php'
+      allow: false
+      rules:
+        '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+          allow: true
+        '^/robots\.txt$':
+          allow: true
+        '^/sitemap\.xml$':
+          allow: true
+    '/sites/default/files':
+      allow: true
+      expires: 3M
+      passthru: '/index.php'
+      root: 'web/sites/default/files'
+      scripts: false
+      rules:
+        '^/sites/default/files/(css|js)':
+          expires: 3M
+
+crons:
+  drupal:
+    # Run cron every 20 minutes
+    spec: '*/20 * * * *'
+    cmd: 'cd web ; drush core-cron'
+  drush-cr:
+    # Clear caches twice a day
+    spec: '0 7/12 * * *'
+    cmd: 'cd web ; drush cr'
+  snapshot:
+    # Take a snapshot automatically every night at 3 am (UTC).
+    spec: '0 3 * * *'
+    cmd: |
+      if [ "$PLATFORM_BRANCH" = master ]; then
+        platform snapshot:create --yes --no-wait
+      fi
+  renewcert:
+    # Force a redeploy at 8 am (UTC) on the 14th and 28th of every month.
+    spec: '0 8 14,28 * *'
+    cmd: |
+      if [ "$PLATFORM_BRANCH" = master ]; then
+        platform redeploy --yes --no-wait
+      fi

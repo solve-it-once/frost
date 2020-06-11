@@ -1,0 +1,10 @@
+uuid: 51d894f4-e7bd-43b3-b91d-23fe5d5141c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api
+id: search_api_task.small
+label: Small
+targetEntityType: search_api_task
+cache: true

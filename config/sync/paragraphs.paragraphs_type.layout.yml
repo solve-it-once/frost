@@ -1,0 +1,12 @@
+uuid: ea9250c6-3585-4007-aedb-6cdca429a68b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kN4xBTSmWCuKQB0hBrJTbaoWrfU0YUXSaQk_ePCVO80
+id: layout
+label: Layout
+icon_uuid: null
+icon_default: null
+description: 'Set one or more columns of content side-by-side, each with its own components'
+behavior_plugins: {  }

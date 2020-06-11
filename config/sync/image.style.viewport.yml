@@ -1,0 +1,18 @@
+uuid: 2888316a-837e-407d-a129-3f2f2d3b61cf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jGuDXxJCUXHzU8kJJ7ysH5g0xyIAQItVzbilTpH5BWc
+name: viewport
+label: Viewport
+effects:
+  fcb30dec-78cb-4931-af9c-71c4c186f695:
+    uuid: fcb30dec-78cb-4931-af9c-71c4c186f695
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
+pipeline: __default__

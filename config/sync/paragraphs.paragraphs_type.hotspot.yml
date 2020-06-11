@@ -1,0 +1,12 @@
+uuid: 1eb42c22-046d-4e7e-a6f7-08be348f58ed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lDdXKZ_3JJP0qW7wZWWIkwXClfdRYf0rNifDScvhtM8
+id: hotspot
+label: Hotspot
+icon_uuid: null
+icon_default: null
+description: 'A point at some percentage-based x and y coordinates over another area. The point and the content within it are configurable.'
+behavior_plugins: {  }

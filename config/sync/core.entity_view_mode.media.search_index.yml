@@ -1,0 +1,12 @@
+uuid: a997b5b3-b43b-4969-b31d-26ca729e704a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: VCDpQ4BJcCOawDTw3OgOeEL81ZS4RDl_keFXVjgyp_s
+id: media.search_index
+label: 'Search index'
+targetEntityType: media
+cache: true

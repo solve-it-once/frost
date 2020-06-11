@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe_collection.field_stripes
+    - field.field.paragraph.stripe_collection.field_viewmode
+    - paragraphs.paragraphs_type.stripe_collection
+  module:
+    - entity_reference_display
+    - field_formatter_class
+id: paragraph.stripe_collection.default
+targetEntityType: paragraph
+bundle: stripe_collection
+mode: default
+content:
+  field_stripes:
+    weight: 0
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_viewmode: true
+  search_api_excerpt: true

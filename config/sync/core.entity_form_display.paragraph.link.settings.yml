@@ -1,0 +1,34 @@
+uuid: 00eba6b6-4d72-4da7-b799-d595f6ea4538
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.link.field_link
+    - field.field.paragraph.link.field_style_button
+    - field.field.paragraph.link.field_style_childbgcolor
+    - paragraphs.paragraphs_type.link
+_core:
+  default_config_hash: Kfxmc66rRE7gjgUAMw9B3w0-iPmNJxVsK9YMOOmsrlc
+id: paragraph.link.settings
+targetEntityType: paragraph
+bundle: link
+mode: settings
+content:
+  field_style_button:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_style_childbgcolor:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_link: true
+  status: true

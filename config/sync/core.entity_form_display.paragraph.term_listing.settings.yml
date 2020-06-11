@@ -1,0 +1,33 @@
+uuid: 4ce0cf38-a905-48ae-a2fe-2fc1af980470
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.term_listing.field_style_layout
+    - field.field.paragraph.term_listing.field_terms
+    - field.field.paragraph.term_listing.field_viewmode
+    - paragraphs.paragraphs_type.term_listing
+_core:
+  default_config_hash: x3tMvaZyrssQwVab9OQCS0WGOk3GurFbZbWKaaIXIAQ
+id: paragraph.term_listing.settings
+targetEntityType: paragraph
+bundle: term_listing
+mode: settings
+content:
+  field_style_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_viewmode:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_terms: true
+  status: true

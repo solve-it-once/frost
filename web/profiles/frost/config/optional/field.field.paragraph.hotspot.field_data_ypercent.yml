@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_data_ypercent
+    - paragraphs.paragraphs_type.hotspot
+id: paragraph.hotspot.field_data_ypercent
+field_name: field_data_ypercent
+entity_type: paragraph
+bundle: hotspot
+label: 'Vertical point (%)'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 50
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: ''
+field_type: decimal

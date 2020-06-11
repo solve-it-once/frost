@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rich_text.field_style_color_all
+    - field.field.paragraph.rich_text.field_style_fontsize
+    - field.field.paragraph.rich_text.field_style_fontweight
+    - field.field.paragraph.rich_text.field_style_textcolumns
+    - field.field.paragraph.rich_text.field_style_texttransform
+    - field.field.paragraph.rich_text.field_text
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - text
+id: paragraph.rich_text.default
+targetEntityType: paragraph
+bundle: rich_text
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_style_color_all: true
+  field_style_fontsize: true
+  field_style_fontweight: true
+  field_style_textcolumns: true
+  field_style_texttransform: true
+  search_api_excerpt: true

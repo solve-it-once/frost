@@ -1,0 +1,20 @@
+uuid: 3c1cdb67-3f7a-4f09-843f-165d82299ebb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: De3q9cK8T48of9IRgcsBQf81_mxLSIFJ1b3I7GODkNg
+id: image
+label: Image
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name
+  mimetype: field_media_mimetype
+  filesize: field_media_filesize
+  width: field_media_width
+  height: field_media_height

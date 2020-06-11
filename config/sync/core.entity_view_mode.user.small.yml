@@ -1,0 +1,10 @@
+uuid: 931257ba-5e3d-46df-9518-d8fd31b2940b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.small
+label: Small
+targetEntityType: user
+cache: true

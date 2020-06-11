@@ -1,0 +1,43 @@
+contact_info.setup:
+  type: config_object
+  label: 'Contact information'
+  mapping:
+    contact_info.address.country_name:
+      type: select
+      label: 'Country'
+    contact_info.address.legal_name:
+      type: text
+      label: 'Legal Name'
+    contact_info.address.street_address:
+      type: text
+      label: 'Street address'
+    contact_info.address.street_address_2:
+      type: text
+      label: 'Street address 2'
+    contact_info.address.locality:
+      type: text
+      label: 'Locality'
+    contact_info.address.region:
+      type: text
+      label: 'Region'
+    contact_info.address.postal_code:
+      type: text
+      label: 'Postal code'
+    contact_info.phone.country_code:
+      type: text
+      label: 'Country code'
+    contact_info.phone.number:
+      type: text
+      label: 'Number'
+    contact_info.fax.number:
+      type: text
+      label: 'Number'
+    contact_info.email.emailaddress:
+      type: text
+      label: 'Email Address'
+    contact_info.social_seo.site_twitter:
+      type: text
+      label: 'Site Twitter'
+    contact_info.social_seo.site_google_plus:
+      type: text
+      label: 'Google+ Page'

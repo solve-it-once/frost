@@ -1,0 +1,22 @@
+uuid: 777cf938-1eab-4e7d-a50b-186cfae9000a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 1HmYCgMfIs9pL9G2zEGZda08MQsJ7vWdR4so4ruRaLk
+id: paragraph.field_data_xpercent
+field_name: field_data_xpercent
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

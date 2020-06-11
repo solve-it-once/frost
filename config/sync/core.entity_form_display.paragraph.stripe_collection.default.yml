@@ -1,0 +1,95 @@
+uuid: 84283152-3566-470b-81e9-934d417cb6f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe_collection.field_section
+    - field.field.paragraph.stripe_collection.field_viewmode
+    - paragraphs.paragraphs_type.stripe_collection
+  module:
+    - field_group
+    - paragraphs
+    - paragraphs_features
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_section
+      parent_name: group_admin
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_viewmode
+      parent_name: group_admin
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: yRh9ySHUlmyP6mhR3z8EwO0hkqg-e8E-sh6alnAMEqc
+id: paragraph.stripe_collection.default
+targetEntityType: paragraph
+bundle: stripe_collection
+mode: default
+content:
+  field_section:
+    type: paragraphs
+    weight: 8
+    settings:
+      title: Stripe
+      title_plural: Stripes
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        show_drag_and_drop: true
+        split_text: false
+    region: content
+  field_viewmode:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,25 @@
+uuid: 465d97aa-129a-4908-8607-a61802ff7e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_quoteclose
+    - paragraphs.paragraphs_type.blockquote
+_core:
+  default_config_hash: ZNdv5Gf8FNWOfvq2H_fDj8mAHvAHtJYm98ilWoAF210
+id: paragraph.blockquote.field_style_quoteclose
+field_name: field_style_quoteclose
+entity_type: paragraph
+bundle: blockquote
+label: 'Closing quotation mark'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: blockquote--closing-include
+  off_label: blockquote--closing-exclude
+field_type: boolean

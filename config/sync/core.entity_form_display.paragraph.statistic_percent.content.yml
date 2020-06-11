@@ -1,0 +1,50 @@
+uuid: 110e17de-4e13-42ac-aaaf-4e20083ff02c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.statistic_percent.field_decimal
+    - field.field.paragraph.statistic_percent.field_link
+    - field.field.paragraph.statistic_percent.field_text
+    - field.field.paragraph.statistic_percent.field_text_prefix
+    - field.field.paragraph.statistic_percent.field_text_suffix
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: JsPyX_Htaweffr7JK0l_iBWuQFV3pmsL11EQ3D6gaxE
+id: paragraph.statistic_percent.content
+targetEntityType: paragraph
+bundle: statistic_percent
+mode: content
+content:
+  field_decimal:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  field_text_prefix: true
+  field_text_suffix: true
+  status: true

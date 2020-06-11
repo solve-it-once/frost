@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iframe.field_iframe
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - iframe
+id: paragraph.iframe.default
+targetEntityType: paragraph
+bundle: iframe
+mode: default
+content:
+  field_iframe:
+    weight: 0
+    settings:
+      width: '960'
+      height: '640'
+      class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+      expose_class: 0
+      url: ''
+      title: ''
+    third_party_settings: {  }
+    type: iframe_urlwidthheight
+    region: content
+hidden:
+  created: true
+  status: true

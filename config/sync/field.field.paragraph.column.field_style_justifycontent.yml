@@ -1,0 +1,25 @@
+uuid: 78e76d8a-8086-4683-b532-79d24cb42c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_justifycontent
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+_core:
+  default_config_hash: tobRgjqxJxS0o5QR8FkaezNG-TVZ_-Nrui2mpNwpVVo
+id: paragraph.column.field_style_justifycontent
+field_name: field_style_justifycontent
+entity_type: paragraph
+bundle: column
+label: 'Vertical alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: justify-content--flex-start
+default_value_callback: ''
+settings: {  }
+field_type: list_string

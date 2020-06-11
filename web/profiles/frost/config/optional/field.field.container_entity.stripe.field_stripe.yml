@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.container_entity.field_stripe
+    - paragraphs.paragraphs_type.stripe
+    - frost_container.container_entity_type.stripe
+  module:
+    - entity_reference_revisions
+id: container_entity.stripe.field_stripe
+field_name: field_stripe
+entity_type: container_entity
+bundle: stripe
+label: Stripe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stripe: stripe
+    target_bundles_drag_drop:
+      accordion:
+        weight: 24
+        enabled: false
+      block:
+        weight: 25
+        enabled: false
+      blockquote:
+        weight: 26
+        enabled: false
+      card:
+        weight: 27
+        enabled: false
+      cards:
+        weight: 28
+        enabled: false
+      column:
+        weight: 29
+        enabled: false
+      content_listing:
+        weight: 30
+        enabled: false
+      heading:
+        weight: 31
+        enabled: false
+      hotspot:
+        weight: 32
+        enabled: false
+      iframe:
+        weight: 33
+        enabled: false
+      layout:
+        weight: 34
+        enabled: false
+      link:
+        weight: 35
+        enabled: false
+      media:
+        weight: 36
+        enabled: false
+      rich_text:
+        weight: 37
+        enabled: false
+      seo:
+        weight: 38
+        enabled: false
+      spacer:
+        weight: 39
+        enabled: false
+      stripe:
+        enabled: true
+        weight: 40
+      stripe_reference:
+        weight: 41
+        enabled: false
+      table:
+        weight: 42
+        enabled: false
+      term_listing:
+        weight: 43
+        enabled: false
+      user_listing:
+        weight: 44
+        enabled: false
+      view:
+        weight: 45
+        enabled: false
+      webform:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

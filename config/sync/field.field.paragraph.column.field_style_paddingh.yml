@@ -1,0 +1,25 @@
+uuid: a5fe3a20-59ee-410c-a64a-5ee1ec229fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_paddingh
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+_core:
+  default_config_hash: YAUFX3WRVQ-XDOQqCPYU-b_ZrWbq5fJ9JOO5eDVRqnw
+id: paragraph.column.field_style_paddingh
+field_name: field_style_paddingh
+entity_type: paragraph
+bundle: column
+label: 'Padding (horizontal)'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: padding-horizontal--2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

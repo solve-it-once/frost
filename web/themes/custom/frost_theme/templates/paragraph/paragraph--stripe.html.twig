@@ -1,0 +1,3 @@
+{% spaceless %}
+  <{{ html_tag }}{{ attributes }}>{{ content.field_video_background }}<div class="inner">{{ content |without('field_video_background') }}</div></{{ html_tag }}>
+{% endspaceless %}

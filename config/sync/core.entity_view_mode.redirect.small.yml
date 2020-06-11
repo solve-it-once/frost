@@ -1,0 +1,10 @@
+uuid: 6d2159fb-23f4-4137-bfc4-264834bf0c92
+langcode: en
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.small
+label: Small
+targetEntityType: redirect
+cache: true

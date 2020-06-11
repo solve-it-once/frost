@@ -1,0 +1,87 @@
+uuid: 5957ab73-0c21-4242-8cae-caad78fc25b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_listing.field_content
+    - field.field.paragraph.content_listing.field_style_layout
+    - field.field.paragraph.content_listing.field_viewmode
+    - paragraphs.paragraphs_type.content_listing
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+      region: content
+    group_content:
+      children:
+        - field_content
+      parent_name: group_admin
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Content
+      region: content
+    group_settings:
+      children:
+        - field_style_layout
+        - field_viewmode
+      parent_name: group_admin
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Settings
+      region: content
+_core:
+  default_config_hash: EtcqOS7YSk1eWBubkLVhveQmlLHWE5Yq4Eexk71VTrk
+id: paragraph.content_listing.default
+targetEntityType: paragraph
+bundle: content_listing
+mode: default
+content:
+  field_content:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_style_layout:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_viewmode:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

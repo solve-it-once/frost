@@ -1,0 +1,22 @@
+uuid: 7773b790-00a6-4e53-b5b2-d7125ea4491f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: YnTPe0rkFYvTWyTAYir2y0UpsQeAArTXvpwjSexHx2g
+id: paragraph.field_decimal
+field_name: field_decimal
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

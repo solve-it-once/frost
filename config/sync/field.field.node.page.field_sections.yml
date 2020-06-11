@@ -1,0 +1,116 @@
+uuid: f5265724-180c-4b39-9052-a6ce049c875f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.page
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: zGXGXaMJPSQTzar9JTNE9P-ktQbntE7lru-JHHksE6M
+id: node.page.field_sections
+field_name: field_sections
+entity_type: node
+bundle: page
+label: Stripes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      from_library: from_library
+      stripe: stripe
+    target_bundles_drag_drop:
+      accordion:
+        weight: -57
+        enabled: false
+      block:
+        weight: -56
+        enabled: false
+      blockquote:
+        weight: -55
+        enabled: false
+      card:
+        weight: -54
+        enabled: false
+      cards:
+        weight: -53
+        enabled: false
+      column:
+        weight: -52
+        enabled: false
+      content_listing:
+        weight: -51
+        enabled: false
+      from_library:
+        enabled: true
+        weight: -50
+      heading:
+        weight: -49
+        enabled: false
+      hotspot:
+        weight: -48
+        enabled: false
+      iframe:
+        weight: -47
+        enabled: false
+      layout:
+        weight: -46
+        enabled: false
+      link:
+        weight: -45
+        enabled: false
+      media:
+        weight: -44
+        enabled: false
+      message:
+        weight: -43
+        enabled: false
+      rich_text:
+        weight: -41
+        enabled: false
+      seo:
+        weight: -39
+        enabled: false
+      spacer:
+        weight: -38
+        enabled: false
+      statistic_figure:
+        weight: -36
+        enabled: false
+      statistic_percent:
+        weight: -37
+        enabled: false
+      stripe:
+        enabled: true
+        weight: -42
+      stripe_collection:
+        weight: -35
+        enabled: false
+      stripe_cta:
+        enabled: true
+        weight: -40
+      table:
+        weight: -34
+        enabled: false
+      term_listing:
+        weight: -33
+        enabled: false
+      user_listing:
+        weight: -32
+        enabled: false
+      view:
+        weight: -31
+        enabled: false
+      webform:
+        weight: -30
+        enabled: false
+field_type: entity_reference_revisions

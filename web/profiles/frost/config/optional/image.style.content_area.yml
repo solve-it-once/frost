@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+name: content_area
+label: 'Content Area'
+effects:
+  a8b2662a-db2a-4dbf-952a-77fcbc4506b6:
+    uuid: a8b2662a-db2a-4dbf-952a-77fcbc4506b6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1440
+      height: null
+      upscale: false
+pipeline: __default__

@@ -1,0 +1,32 @@
+uuid: 7b669dcb-c30d-4b2a-93f0-92961b173192
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: z-1Sjh8OpbhyCX6RzEld_oyD02Xzg0-sSMQ1W7TMVLE
+id: paragraph.field_style_messageseverity
+field_name: field_style_messageseverity
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: messages--status
+      label: Status
+    -
+      value: messages--warning
+      label: Warning
+    -
+      value: messages--error
+      label: Error
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 9856a835-9076-45c6-881c-b4eee57ac6fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_headinglevel
+    - paragraphs.paragraphs_type.heading
+  module:
+    - options
+_core:
+  default_config_hash: 9G46wtmAwBiRXa40dr2okaWk2uvuWdZl_JwUH8GFPxg
+id: paragraph.heading.field_style_headinglevel
+field_name: field_style_headinglevel
+entity_type: paragraph
+bundle: heading
+label: 'Appears as heading level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

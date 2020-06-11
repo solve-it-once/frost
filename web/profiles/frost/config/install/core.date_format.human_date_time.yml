@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: human_date_time
+label: 'Human date + time'
+locked: false
+pattern: 'F j, Y g:i A'

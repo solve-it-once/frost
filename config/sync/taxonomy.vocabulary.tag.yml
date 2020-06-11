@@ -1,0 +1,17 @@
+uuid: f908c286-81d7-4530-9284-30be5209fc3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: YKcbQNLN7rOw1jhMDmhqoYNs2VdcfiFEYkUuKnQGeec
+name: Tag
+vid: tag
+description: ''
+weight: 0

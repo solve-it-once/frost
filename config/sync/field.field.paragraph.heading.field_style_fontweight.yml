@@ -1,0 +1,23 @@
+uuid: 29c99477-1504-4a8c-ab0b-4921035cab99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_fontweight
+    - paragraphs.paragraphs_type.heading
+  module:
+    - options
+_core:
+  default_config_hash: vt6rn4F343OctEAhIWyrVYtlkoDysnJyyZw_Qg2QCY8
+id: paragraph.heading.field_style_fontweight
+field_name: field_style_fontweight
+entity_type: paragraph
+bundle: heading
+label: 'Font weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,10 @@
+uuid: 91302ad6-5c62-436e-9df9-5d6de179723c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.teaser
+label: Teaser
+targetEntityType: menu_link_content
+cache: true

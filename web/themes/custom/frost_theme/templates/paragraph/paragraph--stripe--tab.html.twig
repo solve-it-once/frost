@@ -1,0 +1,8 @@
+{% spaceless %}
+  <details{{ attributes }}>
+    <summary>{{ content.field_title }}</summary>
+    <div{{ attributes }}>
+      {{ content|without('field_title') }}
+    </div>
+  </details>
+{% endspaceless %}

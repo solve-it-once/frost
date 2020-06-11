@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stripe_reference.field_stripe
+    - paragraphs.paragraphs_type.stripe_reference
+id: paragraph.stripe_reference.default
+targetEntityType: paragraph
+bundle: stripe_reference
+mode: default
+content:
+  field_stripe:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

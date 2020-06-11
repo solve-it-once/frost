@@ -1,0 +1,23 @@
+uuid: 891a6992-3383-4287-80f0-5adec785ea37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_color_all
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - options
+_core:
+  default_config_hash: H17tIvzli7pdrVWlxa4SefkIOThjciWMOpSb_vEb-78
+id: paragraph.rich_text.field_style_color_all
+field_name: field_style_color_all
+entity_type: paragraph
+bundle: rich_text
+label: 'Text color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

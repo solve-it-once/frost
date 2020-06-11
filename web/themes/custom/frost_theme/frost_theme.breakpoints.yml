@@ -1,0 +1,18 @@
+frost_theme.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+frost_theme.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 480px) and (max-width: 960px)'
+  weight: 1
+  multipliers:
+    - 1x
+frost_theme.large:
+  label: large
+  mediaQuery: 'all and (min-width: 961px)'
+  weight: 2
+  multipliers:
+    - 1x

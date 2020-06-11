@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: statistic_figure
+label: 'Statistic: Two-part figure'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: a96727d5-e82b-49e6-b3fd-a423de8e59f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_info
+  theme:
+    - frost_theme
+_core:
+  default_config_hash: RsaTIyQk_UCMBaZapuhEztO7VAD6qT2ZclgObN1YRS8
+id: address
+theme: frost_theme
+region: footer
+weight: -6
+provider: null
+plugin: address
+settings:
+  id: address
+  label: Address
+  provider: contact_info
+  label_display: '0'
+visibility: {  }

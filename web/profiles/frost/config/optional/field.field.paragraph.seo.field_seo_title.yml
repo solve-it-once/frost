@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_seo_title
+    - paragraphs.paragraphs_type.seo
+id: paragraph.seo.field_seo_title
+field_name: field_seo_title
+entity_type: paragraph
+bundle: seo
+label: 'Title tag'
+description: 'The title that appears in the browser tab for this page (before the vertical pipe and site name), as opposed to the title used to describe the page for administration.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

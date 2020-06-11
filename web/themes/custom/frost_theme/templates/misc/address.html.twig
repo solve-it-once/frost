@@ -1,0 +1,14 @@
+<address class="contact-info-address font-family--primary" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+  {% if street_address or street_address_2 %}
+    <div itemprop="streetAddress">{% if street_address %}{{ street_address }}{% endif %}{% if street_address_2 %}, {{ street_address_2 }}{% endif %}</div>
+  {% endif %}
+  {% if locality %}
+    <span itemprop="addressLocality">{{ locality }}</span>,
+  {% endif %}
+  {% if region %}
+    <span itemprop="addressRegion">{{ region }}</span>
+  {% endif %}
+  {% if postal_code %}
+    <span itemprop="postalCode">{{ postal_code }}</span>
+  {% endif %}
+</address>

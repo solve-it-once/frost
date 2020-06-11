@@ -1,0 +1,18 @@
+uuid: bc6c4f8d-8360-43f8-802b-c4af7ae1a49e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_style_paddingxc
+field_name: field_style_paddingxc
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

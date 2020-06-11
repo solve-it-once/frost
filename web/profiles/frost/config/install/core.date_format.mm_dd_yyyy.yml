@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: mm_dd_yyyy
+label: MM/DD/YYYY
+locked: false
+pattern: m/j/Y

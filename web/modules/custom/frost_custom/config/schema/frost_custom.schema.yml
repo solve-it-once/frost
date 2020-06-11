@@ -1,0 +1,23 @@
+frost_custom.form:
+  type: config_object
+  label: 'Custom settings'
+  mapping:
+    logo.heading:
+      type: boolean
+      label: 'Logo wrapped in h1'
+    logo.title:
+      type: text
+      label: 'Title text'
+    logo.url:
+      type: text
+      label: 'Link path'
+    icon_enable:
+      type: boolean
+      label: 'Include icon font and CSS on all pages'
+    icon_neg:
+      type: boolean
+      label: 'Include "negative" version'
+
+frost_custom.frost_submitted:
+  type: config_object
+  label: 'Custom Submit field settings'

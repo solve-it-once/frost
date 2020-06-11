@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_biography
+field_name: field_biography
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

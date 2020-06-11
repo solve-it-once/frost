@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stripe_bg
+    - field.field.media.image.field_media_filesize
+    - field.field.media.image.field_media_height
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_mimetype
+    - field.field.media.image.field_media_width
+    - image.style.viewport
+    - media.type.image
+  module:
+    - bg_image_formatter
+    - field_formatter_class
+id: media.image.stripe_bg
+targetEntityType: media
+bundle: image
+mode: stripe_bg
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: viewport
+      css_settings:
+        bg_image_selector: '.background--paragraph-stripe-[media:refId]'
+        bg_image_z_index: ''
+        bg_image_color: ''
+        bg_image_x: ''
+        bg_image_y: ''
+        bg_image_attachment: '0'
+        bg_image_repeat: '0'
+        bg_image_background_size: ''
+        bg_image_gradient: ''
+        bg_image_media_query: all
+        bg_image_path_format: relative
+        bg_image_background_size_ie8: 0
+        bg_image_important: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: bg_image_formatter
+    region: content
+hidden:
+  created: true
+  field_media_filesize: true
+  field_media_height: true
+  field_media_mimetype: true
+  field_media_width: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

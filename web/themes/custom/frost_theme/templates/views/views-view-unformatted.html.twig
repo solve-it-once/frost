@@ -1,0 +1,19 @@
+{% if title %}
+  <h3>{{ title }}</h3>
+  <div class="layout--carousel">
+{% endif %}
+{% for row in rows %}
+  {% if fielded %}
+    {% set row_classes = [
+      default_row_class ? 'views-row',
+    ] %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+  {% endif %}
+  {{- row.content -}}
+  {% if fielded %}
+    </div>
+  {% endif %}
+{% endfor %}
+{% if title %}
+  </div>
+{% endif %}

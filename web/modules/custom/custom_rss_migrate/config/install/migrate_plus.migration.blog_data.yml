@@ -1,0 +1,75 @@
+id: blog_data
+label: Blog nodes and associated data.
+migration_group: node
+migration_tags:
+  - node
+  - blog
+  - blog-redirects
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: xml
+  urls: public://data/rss.pre-sanitized.xml
+  item_selector: /rss/channel/item
+  keys:
+    - link
+  fields:
+    -
+      name: title
+      label: Content title
+      selector: title
+    -
+      name: link
+      label: Legacy canonical URL
+      selector: link
+    -
+      name: pub_date
+      label: Published date
+      selector: pubDate
+    -
+      name: creator
+      label: Author of the post
+      selector: dc:creator
+    -
+      name: content
+      label: Body of the content
+      selector: content:encoded
+    -
+      name: post_tag
+      label: Tags assigned to the content item
+      selector: category
+  ids:
+    link:
+      type: string
+  constants:
+    bool_0: 0
+    bool_1: 1
+    uid_root: 1
+    full_html: full_html
+destination:
+  plugin: 'entity:node'
+  default_bundle: article
+process:
+  title: title
+  status: constants/bool_1
+  sticky: constants/bool_0
+  promote: constants/bool_0
+  uid: constants/uid_root
+  created:
+    plugin: format_date
+    from_format: 'D, d M Y H:i:s O'
+    to_format: 'U'
+    source: pub_date
+  'body/value': content
+  'body/format': constants/full_html
+  field_tag:
+    plugin: entity_generate
+    entity_type: taxonomy_term
+    bundle_key: vid
+    bundle: tag
+    source: post_tag
+    value_key: name
+dependencies:
+  enforced:
+    module:
+      - custom_rss_migrate

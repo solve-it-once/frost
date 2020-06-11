@@ -1,0 +1,19 @@
+uuid: 8ed3c66e-f042-43bc-a269-526fe8850fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.block.field_block
+    - paragraphs.paragraphs_type.block
+_core:
+  default_config_hash: Quzbt7e4KzdGjr0YwOt9DyAswPaUPlJBvJSRxgbuFNE
+id: paragraph.block.settings
+targetEntityType: paragraph
+bundle: block
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_block: true
+  status: true

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - frost_container
+id: container_entity_type.token
+label: Token
+targetEntityType: container_entity_type
+cache: true

@@ -1,0 +1,111 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.field_components
+    - field.field.node.event.field_date
+    - field.field.node.event.field_hero
+    - field.field.node.event.field_image
+    - field.field.node.event.field_link
+    - field.field.node.event.field_location
+    - field.field.node.event.field_sections
+    - field.field.node.event.field_seo
+    - field.field.node.event.field_tags
+    - node.type.event
+  module:
+    - datetime_range
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_components:
+    weight: 10
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_date:
+    weight: 9
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_link:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_location:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_tags:
+    weight: 6
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  linked_title:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  breadcrumb: true
+  frost_submitted: true
+  field_image: true
+  field_seo: true
+  links: true
+  search_api_excerpt: true

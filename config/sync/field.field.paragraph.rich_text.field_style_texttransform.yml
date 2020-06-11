@@ -1,0 +1,23 @@
+uuid: 78012bef-8073-406d-8615-f0280956460a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_texttransform
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - options
+_core:
+  default_config_hash: 6tVV5aLc4ioT85MAzU-Juy_QD1h58gw6v5F_qLguDvI
+id: paragraph.rich_text.field_style_texttransform
+field_name: field_style_texttransform
+entity_type: paragraph
+bundle: rich_text
+label: 'Text transform'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

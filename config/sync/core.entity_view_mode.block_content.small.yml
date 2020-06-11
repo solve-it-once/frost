@@ -1,0 +1,10 @@
+uuid: c70e18df-643a-4bcb-9342-cf8fc6ba309b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.small
+label: Small
+targetEntityType: block_content
+cache: true

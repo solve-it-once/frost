@@ -1,0 +1,23 @@
+uuid: def28346-dd4b-433a-9a8d-22c92cd4df86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - text
+_core:
+  default_config_hash: zgtCsLqSbTrps_vH_1M7Fjar_9rVx_QmxwCiNgNhAOk
+id: paragraph.statistic_percent.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: statistic_percent
+label: 'Explanatory text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hotspot.field_data_xpercent
+    - field.field.paragraph.hotspot.field_data_ypercent
+    - field.field.paragraph.hotspot.field_text
+    - paragraphs.paragraphs_type.hotspot
+  module:
+    - text
+id: paragraph.hotspot.default
+targetEntityType: paragraph
+bundle: hotspot
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_data_xpercent: true
+  field_data_ypercent: true
+  search_api_excerpt: true

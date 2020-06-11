@@ -1,0 +1,5 @@
+{% if button %}
+  <button{{ attributes|without('value') }}>{{ attributes.value|raw }}</button>{{ children }}
+{% else %}
+  <input{{ attributes }} />{{ children }}
+{% endif %}

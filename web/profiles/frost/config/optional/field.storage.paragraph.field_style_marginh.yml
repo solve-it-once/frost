@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_marginh
+field_name: field_style_marginh
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: margin-horizontal--0
+      label: None
+    -
+      value: margin-horizontal--1
+      label: 1x
+    -
+      value: margin-horizontal--2
+      label: 2x
+    -
+      value: margin-horizontal--4
+      label: 4x
+    -
+      value: margin-horizontal--8
+      label: 8x
+    -
+      value: margin-horizontal--16
+      label: 16x
+    -
+      value: margin-horizontal--32
+      label: 32x
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

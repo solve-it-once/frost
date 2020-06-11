@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_hero
+    - field.field.node.page.field_image
+    - field.field.node.page.field_sections
+    - field.field.node.page.field_seo
+    - field.field.node.page.field_tags
+    - node.type.page
+  module:
+    - field_formatter_class
+    - text
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+  linked_title:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  breadcrumb: true
+  frost_submitted: true
+  field_hero: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  search_api_excerpt: true

@@ -1,0 +1,98 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.page
+    - paragraphs.paragraphs_type.stripe
+    - paragraphs.paragraphs_type.stripe_reference
+  module:
+    - entity_reference_revisions
+id: node.page.field_hero
+field_name: field_hero
+entity_type: node
+bundle: page
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stripe: stripe
+      stripe_reference: stripe_reference
+    target_bundles_drag_drop:
+      accordion:
+        weight: 9
+        enabled: false
+      block:
+        weight: 10
+        enabled: false
+      card:
+        weight: 11
+        enabled: false
+      column:
+        weight: 12
+        enabled: false
+      content_listing:
+        weight: 13
+        enabled: false
+      seo:
+        weight: 14
+        enabled: false
+      stripe:
+        enabled: true
+        weight: 15
+      view:
+        weight: 16
+        enabled: false
+      blockquote:
+        weight: 26
+        enabled: false
+      cards:
+        weight: 28
+        enabled: false
+      heading:
+        weight: 31
+        enabled: false
+      hotspot:
+        weight: 32
+        enabled: false
+      iframe:
+        weight: 33
+        enabled: false
+      layout:
+        weight: 34
+        enabled: false
+      link:
+        weight: 35
+        enabled: false
+      media:
+        weight: 36
+        enabled: false
+      rich_text:
+        weight: 37
+        enabled: false
+      spacer:
+        weight: 39
+        enabled: false
+      stripe_reference:
+        enabled: true
+        weight: 41
+      table:
+        weight: 42
+        enabled: false
+      term_listing:
+        weight: 43
+        enabled: false
+      user_listing:
+        weight: 44
+        enabled: false
+      webform:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

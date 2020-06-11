@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - contact_info
+  theme:
+    - frost_theme
+third_party_settings:
+  block_class:
+    classes: margin-top--40px
+id: social
+theme: frost_theme
+region: footer
+weight: -2
+provider: null
+plugin: social
+settings:
+  id: social
+  label: Social
+  provider: contact_info
+  label_display: '0'
+visibility: {  }

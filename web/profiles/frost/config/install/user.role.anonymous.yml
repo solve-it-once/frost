@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'never autoplay videos'
+  - 'use search_api_autocomplete for search'
+  - 'view media'
+  - 'view published container entities'
+  - 'view published paragraph set entities'

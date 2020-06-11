@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_quoteopen
+    - paragraphs.paragraphs_type.blockquote
+id: paragraph.blockquote.field_style_quoteopen
+field_name: field_style_quoteopen
+entity_type: paragraph
+bundle: blockquote
+label: 'Opening quotation mark'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: blockquote--opening-include
+  off_label: blockquote--opening-exclude
+field_type: boolean

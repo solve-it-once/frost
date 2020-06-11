@@ -1,0 +1,45 @@
+uuid: 8111eaef-d726-4062-bdcf-2e99d03bf9e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stripe_bg
+    - field.field.media.video.field_media_filesize
+    - field.field.media.video.field_media_mimetype
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - field_formatter_class
+    - file
+_core:
+  default_config_hash: bMWFsT7usYldqC2GenJ1Ahs7lpDuGNP1TQE2n1eULkk
+id: media.video.stripe_bg
+targetEntityType: media
+bundle: video
+mode: stripe_bg
+content:
+  field_media_video_file:
+    type: file_video
+    weight: 0
+    label: hidden
+    settings:
+      autoplay: true
+      loop: true
+      multiple_file_display_type: sources
+      muted: true
+      width: 640
+      height: 480
+      controls: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden:
+  created: true
+  field_media_filesize: true
+  field_media_mimetype: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

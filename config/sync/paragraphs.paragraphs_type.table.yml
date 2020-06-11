@@ -1,0 +1,12 @@
+uuid: 7dd76212-acfc-4451-9788-f48564d4a71c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tcF6ogRY-ygkjk3FG8l2GwbSWdawgDEHxrI8iUEWaBI
+id: table
+label: Table
+icon_uuid: null
+icon_default: null
+description: 'Put data in an organized, easy-to-skim table format. Optionally add dynamic charts based off the table data'
+behavior_plugins: {  }

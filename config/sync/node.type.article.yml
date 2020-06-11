@@ -1,0 +1,19 @@
+uuid: 775bb32a-2480-4de0-a1f9-d85edbb4317d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: BFSDSsca4BiUA0jFLGFOkTRY3eYnpqGhzIv3lt8d2fY
+name: Article
+type: article
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

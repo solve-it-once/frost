@@ -1,0 +1,54 @@
+uuid: b8f76fd9-bfd6-4b50-8d9b-1b7168781b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.rich_text.field_style_color_all
+    - field.field.paragraph.rich_text.field_style_fontsize
+    - field.field.paragraph.rich_text.field_style_fontweight
+    - field.field.paragraph.rich_text.field_style_textcolumns
+    - field.field.paragraph.rich_text.field_style_texttransform
+    - field.field.paragraph.rich_text.field_text
+    - paragraphs.paragraphs_type.rich_text
+_core:
+  default_config_hash: GhDjujGxy3va1koE-mAcVx57IgZyw996L5D5iuP8Q-U
+id: paragraph.rich_text.settings
+targetEntityType: paragraph
+bundle: rich_text
+mode: settings
+content:
+  field_style_color_all:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontsize:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontweight:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_textcolumns:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_texttransform:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  field_text: true
+  status: true

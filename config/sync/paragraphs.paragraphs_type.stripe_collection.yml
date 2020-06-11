@@ -1,0 +1,12 @@
+uuid: 3f93607a-f710-45c8-9c9e-bd0596f70763
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Cb-smus2-f5cBZd7k20gdf7LFSn9PCpjUHg-vSy14oc
+id: stripe_collection
+label: 'Stripe collection'
+icon_uuid: null
+icon_default: null
+description: 'Put multiple reusable stripes together, making tabs and other useful interfaces'
+behavior_plugins: {  }

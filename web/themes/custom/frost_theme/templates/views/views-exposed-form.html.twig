@@ -1,0 +1,9 @@
+{% if q is not empty %}
+  {{ q }}
+{% endif %}
+{% if toggleable %}
+  <button type="button" class="a-reset filter-toggle show--narrow" aria-expanded="false">{{ 'Show Filters'|trans }}</button>
+{% endif %}
+<div{{ attributes }}>
+  {{ form }}
+</div>

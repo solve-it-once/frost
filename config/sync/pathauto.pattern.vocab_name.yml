@@ -1,0 +1,16 @@
+uuid: dab668de-0243-458c-8098-46a08e5e1180
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: iNn-iZn2jQIQ_AjRDtP6yTcMZ3x1uV-1Ch9Xitl2h34
+id: vocab_name
+label: 'Vocab / Name'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary:machine-name]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

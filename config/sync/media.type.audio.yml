@@ -1,0 +1,18 @@
+uuid: 90db534e-88dd-42a8-acc9-9ca33faca8c7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8tPIlQQl_fKkc4ZIv2k3nyXthhwD-t8UInCuuaKyROY
+id: audio
+label: Audio
+description: ''
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_audio_file
+field_map:
+  name: name
+  mimetype: field_media_mimetype
+  filesize: field_media_filesize

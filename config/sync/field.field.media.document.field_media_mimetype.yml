@@ -1,0 +1,21 @@
+uuid: fa03978c-5f1c-460f-b192-f0f4bd5f2789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_mimetype
+    - media.type.document
+_core:
+  default_config_hash: 9sUClWMWQNUcC4RtwRmpDyiT3KF0uy0It9wEb_Nl48w
+id: media.document.field_media_mimetype
+field_name: field_media_mimetype
+entity_type: media
+bundle: document
+label: 'MIME Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

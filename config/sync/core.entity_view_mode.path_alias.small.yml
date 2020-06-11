@@ -1,0 +1,10 @@
+uuid: 06b31b75-11fb-484d-b43c-bdc0013fa874
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+id: path_alias.small
+label: Small
+targetEntityType: path_alias
+cache: true

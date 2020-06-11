@@ -1,0 +1,23 @@
+uuid: 529f7270-d051-4bc3-8dfd-913d35a4d4aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_biography
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 0teTq8GCX-GKhViOaxYcvRL8ZPlPC5F4Ycs_yr3lY38
+id: user.user.field_biography
+field_name: field_biography
+entity_type: user
+bundle: user
+label: Biography
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

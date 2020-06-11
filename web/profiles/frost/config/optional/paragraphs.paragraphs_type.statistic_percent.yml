@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: statistic_percent
+label: 'Statistic: Percent'
+icon_uuid: null
+description: 'A percentage in branded vertical brackets, followed by some text for context. The entire card may be linked for additional information.'
+behavior_plugins: {  }

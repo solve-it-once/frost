@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.article
+  module:
+    - link
+id: node.article.field_link
+field_name: field_link
+entity_type: node
+bundle: article
+label: 'External link'
+description: 'If this link is present, the article''s link will go directly here rather than the detail page. Used for newsletters and "in the news" posts.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

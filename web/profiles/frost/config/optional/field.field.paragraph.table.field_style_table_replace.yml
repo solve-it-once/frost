@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_table_replace
+    - paragraphs.paragraphs_type.table
+id: paragraph.table.field_style_table_replace
+field_name: field_style_table_replace
+entity_type: paragraph
+bundle: table
+label: 'Replace table with graph'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: js-chart-replace-table
+  off_label: js-chart-no-replace-table
+field_type: boolean

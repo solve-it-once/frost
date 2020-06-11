@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.article_type.field_hero
+    - field.field.taxonomy_term.article_type.field_image
+    - field.field.taxonomy_term.article_type.field_sections
+    - field.field.taxonomy_term.article_type.field_seo
+    - taxonomy.vocabulary.article_type
+  module:
+    - field_formatter_class
+id: taxonomy_term.article_type.teaser
+targetEntityType: taxonomy_term
+bundle: article_type
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+  linked_title:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  breadcrumb: true
+  description: true
+  field_hero: true
+  field_sections: true
+  field_seo: true
+  readmore: true
+  search_api_excerpt: true

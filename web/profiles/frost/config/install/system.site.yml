@@ -1,0 +1,12 @@
+name: 'University of Michigan Office of Undergraduate Admissions'
+mail: kellerch@umich.edu
+slogan: 'Oh you, eh?'
+page:
+  403: /node/5
+  404: /node/4
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''

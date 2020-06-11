@@ -1,0 +1,29 @@
+uuid: a10aeffa-d2c8-4c5f-9d7b-b8ff4fab5ee0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NkkTKqH4qZQgoSLS3zr00NOsYFfcbyE3euuJBmUwPtU
+id: '403'
+label: '403 access denied'
+tags:
+  image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
+  robots: noindex
+  description: '[node:field_seo:entity:field_seo_description]'
+  news_keywords: '[node:field_seo:entity:field_seo_news_keywords]'
+  title: '[node:field_seo:entity:field_seo_title] | [site:name]'
+  shortlink: '[site:url]'
+  canonical_url: '[site:url]'
+  og_phone_number: '[contact_info:phone]'
+  og_url: '[current-page:url:absolute]'
+  og_email: '[contact_info:email]'
+  og_postal_code: '[contact_info:address:postal_code]'
+  og_locality: '[contact_info:address:locality]'
+  og_street_address: '[contact_info:address:street_address]'
+  og_site_name: '[site:name]'
+  og_title: '[node:field_seo:entity:field_seo_title]'
+  og_region: '[contact_info:address:region]'
+  og_image: '[node:field_seo:entity:field_seo_image:entity:url]'
+  og_fax_number: '[contact_info:fax]'
+  og_country_name: '[contact_info:address:country_name]'
+  og_description: '[node:field_seo:entity:field_seo_description]'

@@ -1,0 +1,18 @@
+uuid: 7b42ff33-c931-4798-a87d-a5d9ed4b26c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rA4yL1GJS1bexdKOLVRhxcXM7YmhAakvHqtDYBKO0YA
+id: document
+label: Document
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name
+  mimetype: field_media_mimetype
+  filesize: field_media_filesize

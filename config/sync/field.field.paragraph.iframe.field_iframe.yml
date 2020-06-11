@@ -1,0 +1,32 @@
+uuid: e763f5da-981f-4563-975c-96a681859da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_iframe
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - iframe
+_core:
+  default_config_hash: k0KraOZaEUPLc09GoJwGKzxTADvKVKf_hW95jRkvYcw
+id: paragraph.iframe.field_iframe
+field_name: field_iframe
+entity_type: paragraph
+bundle: iframe
+label: iframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: auto
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+  allowfullscreen: null
+field_type: iframe

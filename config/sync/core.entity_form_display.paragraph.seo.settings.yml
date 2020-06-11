@@ -1,0 +1,41 @@
+uuid: 0e1cec24-f29e-4bf1-aae3-5f5159a43fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.seo.field_seo_description
+    - field.field.paragraph.seo.field_seo_image
+    - field.field.paragraph.seo.field_seo_keywords
+    - field.field.paragraph.seo.field_seo_nofollow
+    - field.field.paragraph.seo.field_seo_noindex
+    - field.field.paragraph.seo.field_seo_title
+    - paragraphs.paragraphs_type.seo
+_core:
+  default_config_hash: uUF0c8EUtC6okWN0Qtm3KZjs1ruxCOSlw5r2V1fqsMs
+id: paragraph.seo.settings
+targetEntityType: paragraph
+bundle: seo
+mode: settings
+content:
+  field_seo_nofollow:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_seo_noindex:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_keywords: true
+  field_seo_title: true
+  status: true

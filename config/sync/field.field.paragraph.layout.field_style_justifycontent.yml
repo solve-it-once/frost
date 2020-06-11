@@ -1,0 +1,25 @@
+uuid: d558d981-ad00-471b-85e8-6211b4a0c8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_justifycontent
+    - paragraphs.paragraphs_type.layout
+  module:
+    - options
+_core:
+  default_config_hash: WuvKxx9215IcBodTXWte5CcWOciCS3Fj2S_Ldnzv8uY
+id: paragraph.layout.field_style_justifycontent
+field_name: field_style_justifycontent
+entity_type: paragraph
+bundle: layout
+label: 'Column spacing'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: justify-content--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

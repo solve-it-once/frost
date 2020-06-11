@@ -1,0 +1,133 @@
+/**
+ * @file
+ * Color classes in a property--value style.
+ */
+
+/**
+ * Background-color classes. Add here as needed.
+ */
+.background-color--black,
+.child-links-background-color--black a {
+  background-color: var(--color--black);
+}
+.background-color--grey-dark,
+.child-links-background-color--grey-dark a {
+  background-color: var(--color--grey-dark);
+}
+.background-color--grey,
+.child-links-background-color--grey a {
+  background-color: var(--color--grey);
+}
+.background-color--grey-light,
+.child-links-background-color--grey-light a {
+  background-color: var(--color--grey-light);
+}
+.background-color--white,
+.child-links-background-color--white a {
+  background-color: var(--color--white);
+}
+.background-color--main,
+.child-links-background-color--main a {
+  background-color: var(--color--main);
+}
+.background-color--main-dark,
+.child-links-background-color--main-dark a {
+  background-color: var(--color--main-dark);
+}
+.background-color--main-light,
+.child-links-background-color--main-light a {
+  background-color: var(--color--main-light);
+}
+.background-color--second,
+.child-links-background-color--second a {
+  background-color: var(--color--second);
+}
+.background-color--second-dark,
+.child-links-background-color--second-dark a {
+  background-color: var(--color--second-dark);
+}
+.background-color--second-light,
+.child-links-background-color--second-light a {
+  background-color: var(--color--second-light);
+}
+.background-color--third,
+.child-links-background-color--third a {
+  background-color: var(--color--third);
+}
+.background-color--third-dark,
+.child-links-background-color--third-dark a {
+  background-color: var(--color--third-dark);
+}
+.background-color--third-light,
+.child-links-background-color--third-light a {
+  background-color: var(--color--third-light);
+}
+.background-color--accent,
+.child-links-background-color--accent a {
+  background-color: var(--color--accent);
+}
+
+/**
+ * Ensure all buttons are legible with their background colors.
+ *
+ * @see a11y
+ */
+.child-links-background-color--grey-light a,
+.child-links-background-color--white a,
+.child-links-background-color--main-light a,
+.child-links-background-color--second-light a,
+.child-links-background-color--third-light a {
+  color: currentColor;
+}
+
+/**
+ * Color classes for text.
+ */
+.color--black {
+  color: var(--color--black);
+}
+.color--grey-dark {
+  color: var(--color--grey-dark);
+}
+.color--grey {
+  color: var(--color--grey);
+}
+.color--grey-light {
+  color: var(--color--grey-light);
+}
+.color--white {
+  color: var(--color--white);
+}
+.color--white a {
+  color: var(--color--white);
+}
+.color--main {
+  color: var(--color--main);
+}
+.color--main-dark {
+  color: var(--color--main-dark);
+}
+.color--main-light {
+  color: var(--color--main-light);
+}
+.color--second {
+  color: var(--color--second);
+}
+.color--second-dark {
+  color: var(--color--second-dark);
+}
+.color--second-light {
+  color: var(--color--second-light);
+}
+.color--third {
+  color: var(--color--third);
+}
+.color--third-dark {
+  color: var(--color--third-dark);
+}
+.color--third-light {
+  color: var(--color--third-light);
+}
+.color--accent {
+  color: var(--color--accent);
+}

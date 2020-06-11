@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.spacer.field_style_vspx
+    - paragraphs.paragraphs_type.spacer
+id: paragraph.spacer.default
+targetEntityType: paragraph
+bundle: spacer
+mode: default
+content: {  }
+hidden:
+  field_style_vspx: true
+  search_api_excerpt: true

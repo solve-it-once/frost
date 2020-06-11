@@ -1,0 +1,22 @@
+{% if wrapped %}
+<{{ html_tag }}{{ attributes.addClass(classes) }}>
+{% endif %}
+{% if label and not label_hidden %}<strong{{ title_attributes.addClass(title_classes) }}>{{ label }}</strong>{% endif %}
+{% if label_display and label_display == 'inline' and layout_carousel %}
+  <div class="field-contents layout--horizontal">
+{% elseif label_display and label_display == 'inline' %}
+  <div class="field-contents">
+{% elseif layout_carousel %}
+  <div class="layout--carousel">
+{% endif %}
+{% for item in items %}{{ item.content }}{% endfor %}
+{% if label_display and label_display == 'inline' and layout_carousel %}
+  </div>
+{% elseif label_display and label_display == 'inline' %}
+  </div>
+{% elseif layout_carousel %}
+  </div>
+{% endif %}
+{% if wrapped %}
+</{{ html_tag }}>
+{% endif %}

@@ -1,0 +1,130 @@
+uuid: 860a8ecd-be89-429f-a035-5b1fccff4056
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.event.body
+    - field.field.node.event.field_components
+    - field.field.node.event.field_date
+    - field.field.node.event.field_hero
+    - field.field.node.event.field_image
+    - field.field.node.event.field_link
+    - field.field.node.event.field_location
+    - field.field.node.event.field_sections
+    - field.field.node.event.field_seo
+    - field.field.node.event.field_tags
+    - node.type.event
+  module:
+    - datetime_range
+    - field_formatter_class
+    - field_group
+    - linked_field
+    - user
+third_party_settings:
+  field_group:
+    group_title_area:
+      children:
+        - breadcrumb
+        - linked_title
+        - field_location
+        - field_date
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'display--flex flex-direction--column flex--1 justify-content--flex-start padding-horizontal--4 text-align--left'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Title area'
+    group_imagery:
+      children:
+        - field_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Imagery
+_core:
+  default_config_hash: szYDN6n1Z41wUYJKzxa5YKQIV2kTso5QxMOeVsKTTAM
+id: node.event.hero
+targetEntityType: node
+bundle: event
+mode: hero
+content:
+  breadcrumb:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: human_date_time
+      separator: '-'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: daterange_default
+    region: content
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_link
+        advanced: {  }
+        token: ''
+    type: entity_reference_entity_view
+    region: content
+  field_location:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  linked_title:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_components: true
+  field_hero: true
+  field_link: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  frost_submitted: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
