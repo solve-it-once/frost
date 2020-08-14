@@ -285,7 +285,7 @@
     "drupal/admin_toolbar": "^2.0",
     "drupal/advagg": "^4.0",
     "drupal/antibot": "^1.2",
-    "drupal/better_exposed_filters": "4.x-dev",
+    "drupal/better_exposed_filters": "~5.0",
     "drupal/bg_image_formatter": "^1.1",
     "drupal/block_class": "^1.0@alpha",
     "drupal/block_field": "^1.0@alpha",
