@@ -1,3 +1,4 @@
+uuid: 67fd3299-1258-4f91-b667-090208ce9d98
 langcode: en
 status: open
 dependencies:
@@ -88,6 +89,7 @@ settings:
   wizard_progress_states: false
   wizard_auto_forward: true
   wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
@@ -116,7 +118,7 @@ settings:
   confirmation_type: url_message
   confirmation_title: ''
   confirmation_message: 'Your message has been sent.'
-  confirmation_url: '/node/9?sid=[webform_submission:sid]'
+  confirmation_url: 'node/9?sid=[webform_submission:sid]'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -143,6 +145,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -194,6 +197,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -228,6 +232,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 67fd3299-1258-4f91-b667-090208ce9d98
 _core:
   default_config_hash: pBEqrEq1j62VPMbMyFsEJzXVK_tKsQ5Ur0xXRmWVKBo

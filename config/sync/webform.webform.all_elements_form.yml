@@ -1,3 +1,4 @@
+uuid: fbf99184-9458-414a-adaa-2960cb36cf97
 langcode: en
 status: open
 dependencies: {  }
@@ -85,6 +86,7 @@ settings:
   wizard_progress_states: false
   wizard_auto_forward: true
   wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
@@ -140,6 +142,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -189,6 +192,5 @@ access:
     permissions: {  }
 handlers: {  }
 variants: {  }
-uuid: fbf99184-9458-414a-adaa-2960cb36cf97
 _core:
   default_config_hash: ul_gwvqpny9lUrgkJQpzqQBclAapr3-3dlZ3G8N71pc
