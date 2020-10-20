@@ -7,5 +7,5 @@ master:
   root: /app/web
   ssh:
     options: '-o PasswordAuthentication=no -i /home/brad/.ssh/bczerniak_platformsh_rsa'
-  uri: master-7rqtwti-gcaq6yq7r6nsa.us-2.platformsh.site
-  user: gcaq6yq7r6nsa-master-7rqtwti--app
+  uri: master-7rqtwti-yobsnu66ohnxy.us-2.platformsh.site
+  user: yobsnu66ohnxy-master-7rqtwti--app
