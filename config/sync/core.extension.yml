@@ -44,6 +44,7 @@ module:
   imageapi_optimize_binaries: 0
   inline_form_errors: 0
   jquery_ui: 0
+  jquery_ui_accordion: 0
   jquery_ui_datepicker: 0
   jquery_ui_tabs: 0
   jquery_ui_tooltip: 0
