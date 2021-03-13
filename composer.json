@@ -1,5 +1,5 @@
 {
-  "name": "solve-it-once/front",
+  "name": "solve-it-once/frost",
   "description": "Composer-based atomic template for Drupal",
   "type": "project",
   "license": "GPL-2.0+",
@@ -13,6 +13,24 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "harvesthq/chosen",
+        "version": "1.8.7",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "chosen"
+        },
+        "dist": {
+          "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
     },
     {
       "type": "package",
@@ -43,6 +61,24 @@
         },
         "dist": {
           "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.11.3.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/codemirror",
+        "version": "1.17.12",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor.codemirror"
+        },
+        "dist": {
+          "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.12/CKEditor-CodeMirror-Plugin.zip",
           "type": "zip"
         },
         "require": {
@@ -265,18 +301,74 @@
           "composer/installers": "~1.0"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "simple-icons/simple-icons",
+        "version": "4.2.0",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "simple-icons"
+        },
+        "dist": {
+          "url": "https://github.com/simple-icons/simple-icons/archive/4.2.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "cferdinandi/tabby",
+        "version": "12.0.3",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "tabby"
+        },
+        "dist": {
+          "url": "https://github.com/cferdinandi/tabby/archive/v12.0.3.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "atomiks/tippyjs",
+        "version": "6.2.6",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "tippyjs/6.x"
+        },
+        "dist": {
+          "url": "https://unpkg.com/tippy.js@6.2.6/dist/tippy-bundle.umd.min.js",
+          "type": "file"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
     }
   ],
   "require": {
+    "atomiks/tippyjs": "6.2.6",
     "composer/installers": "^1.0.20",
-    "oomphinc/composer-installers-extender": "^1.1",
+    "oomphinc/composer-installers-extender": "^2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal-composer/drupal-scaffold": "^2.0.1",
-    "drupal/core": "^9.0",
+    "drupal/core-composer-scaffold": "^9.1",
+    "drupal/core": "^9",
     "drush/drush": "~10.0",
     "algolia/places": "1.16.1",
+    "cferdinandi/tabby": "12.0.3",
     "ckeditor/autogrow": "4.11.3",
-    "ckeditor/codemirror": "v1.17.7",
+    "ckeditor/codemirror": "v1.17.12",
     "ckeditor/fakeobjects": "4.11.3",
     "ckeditor/image": "4.11.3",
     "ckeditor/link": "4.11.3",
@@ -291,6 +383,10 @@
     "drupal/block_field": "^1.0@alpha",
     "drupal/captcha": "^1.0@beta",
     "drupal/chosen": "^2.5",
+    "drupal/commerce": "^2",
+    "drupal/commerce_paypal": "^1.0@RC",
+    "drupal/commerce_recurring": "1.x-dev",
+    "drupal/commerce_shipping": "^2.0@RC",
     "drupal/config_ignore": "^2.1",
     "drupal/config_split": "^1.3",
     "drupal/ctools": "^3.0",
@@ -299,29 +395,39 @@
     "drupal/easy_breadcrumb": "^1.8",
     "drupal/entity": "~1.0",
     "drupal/entity_reference_display": "1.x-dev",
+    "drupal/entity_usage": "^2.0@beta",
+    "drupal/facets": "^1.6",
     "drupal/field_formatter_class": "^1.1",
     "drupal/field_group": "3.x-dev",
     "drupal/google_analytics": "^2.2",
     "drupal/honeypot": "^2.0",
-    "drupal/human_decimal": "^1.4",
+    "drupal/human_decimal": "^3.0",
     "drupal/iframe": "^2.6",
     "drupal/imageapi_optimize": "^4.0@beta",
     "drupal/imageapi_optimize_binaries": "^1.0@alpha",
+    "drupal/jquery_ui_tabs": "^1.1",
+    "drupal/jquery_ui_tooltip": "^1.1",
     "drupal/linked_field": "^1.1",
     "drupal/linkit": "5.x-dev",
+    "drupal/mailchimp": "^1.11",
+    "drupal/media_entity_generic": "^1.1",
     "drupal/menu_link_attributes": "1.x-dev",
     "drupal/menu_trail_by_path": "^1.1",
     "drupal/metatag": "^1.4",
     "drupal/migrate_tools": "^4.5",
+    "drupal/oembed_providers": "^1.1",
     "drupal/paragraphs": "^1.9",
     "drupal/paragraphs_features": "^1.6",
+    "drupal/paragraphs_frontend_ui": "^2.0@alpha",
     "drupal/pathauto": "^1.0",
     "drupal/recaptcha": "^3.0",
     "drupal/redirect": "^1.0",
     "drupal/search_api": "^1.8",
+    "drupal/search_api_autocomplete": "^1.4",
     "drupal/search_api_solr": "^4.0",
+    "drupal/similarterms": "^1.5",
     "drupal/simple_sitemap": "^3.3",
-    "drupal/styleguide": "1.x-dev",
+    "drupal/styleguide": "2.x-dev",
     "drupal/subpathauto": "^1.0@beta",
     "drupal/tablefield": "2.x-dev",
     "drupal/taxonomy_menu_ui": "^1.1",
@@ -329,7 +435,7 @@
     "drupal/views_block_filter_block": "^1.0@beta",
     "drupal/viewsreference": "^2.0@alpha",
     "drupal/webform": "^6.0@alpha",
-    "harvesthq/chosen": "^1.8.2",
+    "harvesthq/chosen": "1.8.7",
     "jquery/inputmask": "4.0.6",
     "jquery/intl-tel-input": "15.0.1",
     "jquery/rateit": "1.1.1",
@@ -338,7 +444,13 @@
     "jquery/timepicker": "1.11.14",
     "progress-tracker/progress-tracker": "1.4.0",
     "signature_pad/signature_pad": "2.3.0",
-    "drupal/entity_usage": "^2.0@beta"
+    "simple-icons/simple-icons": "4.2.0",
+    "drupal/views_flipped_table": "^1.4",
+    "drupal/commerce_add_to_cart_link": "^2.0",
+    "drupal/imageapi_optimize_resmushit": "^2.0@beta",
+    "drupal/entity_clone": "^1.0@beta",
+    "drupal/jquery_ui_accordion": "^1.1",
+    "drupal/auditfiles": "^2.11"
   },
   "require-dev": {
     "behat/behat": "3.*",
@@ -364,7 +476,6 @@
     ]
   },
   "scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
     "pre-install-cmd": [
       "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
     ],
@@ -379,6 +490,11 @@
     ]
   },
   "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "./web"
+      }
+    },
     "installer-paths": {
       "web/core": [
         "type:drupal-core"
@@ -400,18 +516,13 @@
         "type:drupal-drush"
       ]
     },
-    "installer-types": [
-      "library"
-    ],
+    "installer-types": [],
     "patches": {
       "drupal/core": {
         "MenuLinkContentAccessControlHandler does not allow view access without admin permission, making these entities inaccessible via REST, JSON API and GraphQL https://www.drupal.org/project/drupal/issues/2915792": "https://www.drupal.org/files/issues/2019-07-19/2915792-40.patch"
       },
       "drupal/bg_image_formatter": {
         "Using the same bg image on a page causes hash collision https://www.drupal.org/project/bg_image_formatter/issues/3086642": "https://www.drupal.org/files/issues/2019-10-08/hash-collision-3086642-2.patch"
-      },
-      "drupal/iframe": {
-        "Render array sent to Markup::create in IframeOnlyFormatter.php https://www.drupal.org/project/iframe/issues/3133359": "https://www.drupal.org/files/issues/2020-05-07/3133359-2.patch"
       }
     }
   },
