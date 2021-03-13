@@ -58,6 +58,9 @@ third_party_settings:
       index_prefix: ''
       collection: ''
       timezone: ''
+    term_modifiers:
+      slop: 10000000
+      fuzzy: 2
 _core:
   default_config_hash: 9J-sRo5JBtBi7mpqubfYD6SjbyU3wcFBu-gQwgGvUmI
 id: content

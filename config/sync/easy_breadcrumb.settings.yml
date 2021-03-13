@@ -19,3 +19,9 @@ segments_separator: null
 title_segment_as_link: false
 _core:
   default_config_hash: 6R__GtwTd1Xc8Hj8X8HQcRQEPpUXjkLJ4zN2wtCimC8
+add_structured_data_json_ld: false
+capitalizator_forced_words: {  }
+capitalizator_forced_words_first_letter: false
+capitalizator_forced_words_case_sensitivity: false
+capitalizator_ignored_words: {  }
+follow_redirects: true
