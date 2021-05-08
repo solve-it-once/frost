@@ -17,13 +17,10 @@ dependencies:
     - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
     - search_api_solr.solr_field_type.text_und_7_0_0
     - search_api_solr.solr_request_dispatcher.request_dispatcher_httpcaching_default_7_0_0
-    - search_api_solr.solr_request_dispatcher.request_dispatcher_httpcachingnever_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_autocomplete_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_elevate_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_extract_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_mlt_default_7_0_0
-    - search_api_solr.solr_request_handler.request_handler_replicationmaster_default_7_0_0
-    - search_api_solr.solr_request_handler.request_handler_replicationslave_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_select_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_spell_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_suggest_default_7_0_0
@@ -62,7 +59,10 @@ backend_config:
   rows: 10
   environment: default
   disabled_caches: {  }
-  disabled_request_handlers: {  }
-  disabled_request_dispatchers: {  }
+  disabled_request_handlers:
+    - request_handler_replicationslave_default_7_0_0
+    - request_handler_replicationmaster_default_7_0_0
+  disabled_request_dispatchers:
+    - request_dispatcher_httpcachingnever_default_7_0_0
   index_single_documents_fallback_count: 10
   fallback_multiple: true
