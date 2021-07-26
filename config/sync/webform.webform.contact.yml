@@ -15,7 +15,45 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#required': true\n  '#required_error': 'No name is entered. Please enter your full name.'\n  '#default_value': '[current-user:display-name]'\ncompany:\n  '#type': textfield\n  '#title': Company\ncountry:\n  '#type': select\n  '#title': Country\n  '#options': country_names\n  '#empty_option': 'Select a Country'\n  '#required': true\n  '#required_error': 'No country is selected. Please select a country from the drop-down.'\nemail:\n  '#type': email\n  '#title': Email\n  '#placeholder': email@address.com\n  '#required': true\n  '#required_error': 'No email address is entered. Please enter an email address.'\n  '#default_value': '[current-user:mail]'\nphone_number:\n  '#type': tel\n  '#title': 'Phone number'\n  '#placeholder': xxx-xxx-xxxx\n  '#international': true\n  '#international_initial_country': US\n  '#international_preferred_countries': {  }\nmessage:\n  '#type': textarea\n  '#title': 'How can we help you?'\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: |-
+  name:
+    '#type': textfield
+    '#title': Name
+    '#required': true
+    '#required_error': 'No name is entered. Please enter your full name.'
+    '#default_value': '[current-user:display-name]'
+  company:
+    '#type': textfield
+    '#title': Company
+  country:
+    '#type': select
+    '#title': Country
+    '#options': country_names
+    '#empty_option': 'Select a Country'
+    '#required': true
+    '#required_error': 'No country is selected. Please select a country from the drop-down.'
+  email:
+    '#type': email
+    '#title': Email
+    '#placeholder': email@address.com
+    '#required': true
+    '#required_error': 'No email address is entered. Please enter an email address.'
+    '#default_value': '[current-user:mail]'
+  phone_number:
+    '#type': tel
+    '#title': 'Phone number'
+    '#placeholder': xxx-xxx-xxxx
+    '#international': true
+    '#international_initial_country': US
+    '#international_preferred_countries': {  }
+  message:
+    '#type': textarea
+    '#title': 'How can we help you?'
+    '#test': 'Please ignore this email.'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send message'
 css: ''
 javascript: ''
 settings:

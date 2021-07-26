@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: yW20VJKElb-oT85z7mW5B-hMiAUsl4B-UDLZzCZPats
+  default_config_hash: Avv97GXhdj1TB6oAYLPyQF3s2rXjYSV8nQv-bLp36Ec
 id: text_edge_und_6_0_0
 label: 'Edge NGram Text Field'
 minimum_solr_version: 6.0.0
