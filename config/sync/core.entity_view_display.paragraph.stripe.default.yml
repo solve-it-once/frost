@@ -30,16 +30,15 @@ mode: default
 content:
   field_components:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_image_background:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -47,10 +46,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 1
     region: content
   field_video_background:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -58,6 +57,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
     region: content
 hidden:
   field_style_bgcolor: true

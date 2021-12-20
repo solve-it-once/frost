@@ -17,10 +17,10 @@ bundle: article_type
 mode: small
 content:
   linked_title:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   breadcrumb: true
   description: true

@@ -2,11 +2,11 @@ uuid: 006bf6be-b94e-4079-baab-5e69727d67a0
 langcode: en
 status: true
 dependencies:
+  module:
+    - pathauto
   enforced:
     module:
       - node
-  module:
-    - pathauto
 _core:
   default_config_hash: n8BEDjeRuQlZbjeAjN_c0HeCBEH1nb4NUjJJRqH78LM
 id: pathauto_update_alias_node

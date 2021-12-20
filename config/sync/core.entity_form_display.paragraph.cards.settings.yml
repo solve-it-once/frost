@@ -15,11 +15,11 @@ bundle: cards
 mode: settings
 content:
   field_style_layout:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   field_cards: true

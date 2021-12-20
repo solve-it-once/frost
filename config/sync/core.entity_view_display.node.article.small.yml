@@ -22,20 +22,20 @@ bundle: article
 mode: small
 content:
   frost_submitted:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
-  linked_title:
     weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
   breadcrumb: true

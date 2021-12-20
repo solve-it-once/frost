@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       stripe: stripe
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 9
@@ -33,29 +33,20 @@ settings:
       block:
         weight: 10
         enabled: false
+      blockquote:
+        weight: 26
+        enabled: false
       card:
         weight: 11
+        enabled: false
+      cards:
+        weight: 28
         enabled: false
       column:
         weight: 12
         enabled: false
       content_listing:
         weight: 13
-        enabled: false
-      seo:
-        weight: 14
-        enabled: false
-      stripe:
-        enabled: true
-        weight: 15
-      view:
-        weight: 16
-        enabled: false
-      blockquote:
-        weight: 26
-        enabled: false
-      cards:
-        weight: 28
         enabled: false
       heading:
         weight: 31
@@ -78,12 +69,18 @@ settings:
       rich_text:
         weight: 37
         enabled: false
+      seo:
+        weight: 14
+        enabled: false
       spacer:
         weight: 39
         enabled: false
-      stripe_reference:
+      stripe:
+        weight: 15
         enabled: true
+      stripe_reference:
         weight: 41
+        enabled: true
       table:
         weight: 42
         enabled: false
@@ -92,6 +89,9 @@ settings:
         enabled: false
       user_listing:
         weight: 44
+        enabled: false
+      view:
+        weight: 16
         enabled: false
       webform:
         weight: 46

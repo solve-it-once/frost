@@ -24,10 +24,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       card: card
       statistic_percent: statistic_percent
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 12
@@ -39,8 +39,8 @@ settings:
         weight: 14
         enabled: false
       card:
-        enabled: true
         weight: 15
+        enabled: true
       cards:
         weight: 16
         enabled: false
@@ -81,11 +81,11 @@ settings:
         weight: 42
         enabled: false
       statistic_figure:
-        enabled: true
         weight: 44
-      statistic_percent:
         enabled: true
+      statistic_percent:
         weight: 43
+        enabled: true
       stripe:
         weight: 21
         enabled: false

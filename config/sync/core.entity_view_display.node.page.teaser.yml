@@ -23,16 +23,14 @@ bundle: page
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -40,16 +38,18 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
+    region: content
   linked_title:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   breadcrumb: true
   field_hero: true

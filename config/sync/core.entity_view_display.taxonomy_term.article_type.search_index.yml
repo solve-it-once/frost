@@ -21,38 +21,38 @@ mode: search_index
 content:
   description:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_hero:
     type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_sections:
-    weight: 3
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 3
     region: content
   linked_title:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   readmore:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   breadcrumb: true

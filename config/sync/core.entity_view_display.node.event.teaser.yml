@@ -28,26 +28,24 @@ bundle: event
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_date:
     type: daterange_default
-    weight: 2
-    region: content
     label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: medium
+      separator: '-'
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -55,24 +53,26 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
+    region: content
   field_location:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   linked_title:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   breadcrumb: true
   field_components: true

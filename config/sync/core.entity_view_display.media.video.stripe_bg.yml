@@ -20,19 +20,19 @@ mode: stripe_bg
 content:
   field_media_video_file:
     type: file_video
-    weight: 0
     label: hidden
     settings:
+      controls: false
       autoplay: true
       loop: true
       multiple_file_display_type: sources
       muted: true
       width: 640
       height: 480
-      controls: false
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
     region: content
 hidden:
   created: true

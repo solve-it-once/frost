@@ -18,7 +18,7 @@ bundle: user_listing
 mode: default
 content:
   field_users:
-    weight: 0
+    type: entity_reference_display_default
     label: hidden
     settings:
       display_field: ''
@@ -27,7 +27,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: entity_reference_display_default
+    weight: 0
     region: content
 hidden:
   field_style_layout: true

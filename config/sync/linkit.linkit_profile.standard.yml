@@ -7,35 +7,35 @@ dependencies:
     - taxonomy
 _core:
   default_config_hash: Ks4eHlu5xGj4SMEFXFoUMiuZxUktTi0GV9p3GjdXzTQ
-id: standard
 label: Standard
+id: standard
 description: 'The most common settings for most users on most sites most of the time.'
 matchers:
   a9b4c8ec-d977-4de7-a13e-05aa54002137:
-    uuid: a9b4c8ec-d977-4de7-a13e-05aa54002137
     id: 'entity:node'
-    weight: 0
+    uuid: a9b4c8ec-d977-4de7-a13e-05aa54002137
     settings:
+      metadata: '[node:title]'
       bundles: {  }
       group_by_bundle: true
+      substitution_type: canonical
       include_unpublished: true
-      substitution_type: canonical
-      metadata: '[node:title]'
+    weight: 0
   a9744f38-a9ec-448c-9bec-eb366e464ba8:
-    uuid: a9744f38-a9ec-448c-9bec-eb366e464ba8
     id: 'entity:menu_link_content'
-    weight: 0
+    uuid: a9744f38-a9ec-448c-9bec-eb366e464ba8
     settings:
-      bundles: {  }
-      group_by_bundle: false
-      substitution_type: canonical
       metadata: '[menu_link_content:title] (menu: [menu_link_content:menu_name])'
-  e7e9d0e8-7ecd-4a58-aa71-06f3936ce765:
-    uuid: e7e9d0e8-7ecd-4a58-aa71-06f3936ce765
-    id: 'entity:taxonomy_term'
-    weight: 0
-    settings:
       bundles: {  }
       group_by_bundle: false
       substitution_type: canonical
+    weight: 0
+  e7e9d0e8-7ecd-4a58-aa71-06f3936ce765:
+    id: 'entity:taxonomy_term'
+    uuid: e7e9d0e8-7ecd-4a58-aa71-06f3936ce765
+    settings:
       metadata: '[term:name]'
+      bundles: {  }
+      group_by_bundle: false
+      substitution_type: canonical
+    weight: 0

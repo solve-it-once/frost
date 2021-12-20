@@ -16,13 +16,13 @@ content:
   field_media_oembed_video:
     type: oembed
     label: hidden
-    weight: 0
     settings:
       max_width: 1280
       max_height: 720
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
     region: content
 hidden:
   created: true

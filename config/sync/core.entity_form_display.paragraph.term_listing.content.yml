@@ -16,15 +16,15 @@ bundle: term_listing
 mode: content
 content:
   field_terms:
+    type: entity_reference_autocomplete_tags
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
 hidden:
   created: true
   field_style_layout: true

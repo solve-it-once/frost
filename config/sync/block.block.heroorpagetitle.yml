@@ -17,6 +17,6 @@ plugin: hero_title_block
 settings:
   id: hero_title_block
   label: 'Hero or Page Title'
-  provider: frost_custom
   label_display: '0'
+  provider: frost_custom
 visibility: {  }

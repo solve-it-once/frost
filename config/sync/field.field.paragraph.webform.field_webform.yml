@@ -19,11 +19,11 @@ required: true
 translatable: false
 default_value:
   -
+    target_uuid: 64eda167-d30d-48b0-9a57-ec9009514c8b
     default_data: ''
     status: open
     open: ''
     close: ''
-    target_uuid: 64eda167-d30d-48b0-9a57-ec9009514c8b
 default_value_callback: ''
 settings:
   handler: 'default:webform'

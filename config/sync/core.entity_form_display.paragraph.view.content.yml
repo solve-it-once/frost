@@ -16,11 +16,11 @@ bundle: view
 mode: content
 content:
   field_view:
+    type: viewsreference_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
 hidden:
   created: true
   status: true

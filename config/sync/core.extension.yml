@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   address: 0
   admin_toolbar: 0
@@ -105,5 +107,3 @@ theme:
   claro: 0
   frost_theme: 0
 profile: frost
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -20,20 +20,20 @@ bundle: heading
 mode: default
 content:
   field_heading:
-    weight: 1
+    type: heading_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: heading_default
+    weight: 1
     region: content
   field_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden:
   field_style_color_all: true

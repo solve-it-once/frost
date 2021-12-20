@@ -29,29 +29,29 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_components
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 1
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_style_bgcolor
@@ -67,17 +67,17 @@ third_party_settings:
         - field_style_textalign
         - field_style_color
         - field_style_unpad
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 2
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: iNUBsn20UUmE0qL7rre30nGWNTGRslfy1Ud63weOQ88
 id: paragraph.stripe.default
@@ -86,7 +86,9 @@ bundle: stripe
 mode: default
 content:
   field_components:
+    type: paragraphs
     weight: 3
+    region: content
     settings:
       title: Component
       title_plural: Components
@@ -98,101 +100,99 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
         add_in_between: true
         delete_confirmation: false
         split_text: false
-    type: paragraphs
-    region: content
   field_image_background:
     type: media_library_widget
     weight: 13
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_style_bgcolor:
+    type: options_select
     weight: 12
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_bghide:
+    type: boolean_checkbox
     weight: 20
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_style_bgpx:
+    type: options_select
     weight: 14
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_bgpy:
+    type: options_select
     weight: 15
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_bgrepeat:
+    type: options_select
     weight: 16
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_bgsize:
+    type: options_select
     weight: 17
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_color:
+    type: options_select
     weight: 23
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_fullwidth:
+    type: boolean_checkbox
     weight: 19
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_style_textalign:
+    type: options_select
     weight: 22
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_unpad:
+    type: boolean_checkbox
     weight: 24
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_title:
+    type: string_textfield
     weight: 21
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_video_background:
     type: media_library_widget
     weight: 18
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   status: true

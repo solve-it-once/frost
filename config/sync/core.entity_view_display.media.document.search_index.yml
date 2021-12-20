@@ -19,31 +19,31 @@ bundle: document
 mode: search_index
 content:
   field_media_file:
-    weight: 1
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: file_default
+    weight: 1
     region: content
   field_media_mimetype:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   name:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
   field_media_filesize: true

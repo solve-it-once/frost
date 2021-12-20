@@ -25,33 +25,31 @@ bundle: article
 mode: search_index
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_article_type:
     type: entity_reference_label
-    weight: 3
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_components:
     type: entity_reference_revisions_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_link:
     type: link
-    weight: 5
-    region: content
     label: hidden
     settings:
       trim_length: 80
@@ -60,19 +58,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 5
+    region: content
   field_tags:
     type: entity_reference_label
-    weight: 4
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-  linked_title:
-    weight: 0
+    weight: 4
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   breadcrumb: true
   field_image: true

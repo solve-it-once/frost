@@ -16,17 +16,17 @@ bundle: content_listing
 mode: settings
 content:
   field_style_layout:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_viewmode:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   field_content: true

@@ -17,13 +17,13 @@ mode: default
 content:
   field_section:
     type: entity_reference_display_default
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
       display_field: null
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_viewmode: true

@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       hotspot: hotspot
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 20
@@ -52,8 +52,8 @@ settings:
         weight: 27
         enabled: false
       hotspot:
-        enabled: true
         weight: 28
+        enabled: true
       layout:
         weight: 29
         enabled: false

@@ -24,16 +24,14 @@ bundle: article
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -41,21 +39,23 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
+    region: content
   frost_submitted:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
-  linked_title:
     weight: 2
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   breadcrumb: true
   field_article_type: true

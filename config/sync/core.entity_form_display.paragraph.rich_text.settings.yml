@@ -19,35 +19,35 @@ bundle: rich_text
 mode: settings
 content:
   field_style_color_all:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_fontsize:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_fontweight:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_textcolumns:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_texttransform:
+    type: options_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   field_text: true

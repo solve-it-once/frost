@@ -22,15 +22,15 @@ bundle: image
 mode: square_thumbnail
 content:
   field_media_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: square_thumbnail
       image_link: ''
+      image_style: square_thumbnail
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: image
+    weight: 0
     region: content
 hidden:
   created: true

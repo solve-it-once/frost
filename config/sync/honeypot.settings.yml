@@ -1,10 +1,12 @@
+_core:
+  default_config_hash: 6zNuIwUhnWzIML55dpQYYd1DBXLwuyx1dMmtGgtccr0
+protect_all_forms: true
 unprotected_forms:
   - user_login_form
   - search_form
   - search_block_form
   - views_exposed_form
   - honeypot_settings_form
-protect_all_forms: true
 log: true
 element_name: plausible
 time_limit: 5
@@ -14,5 +16,3 @@ form_settings:
   user_pass: false
   contact_message_personal_form: false
   node_page_form: false
-_core:
-  default_config_hash: 6zNuIwUhnWzIML55dpQYYd1DBXLwuyx1dMmtGgtccr0

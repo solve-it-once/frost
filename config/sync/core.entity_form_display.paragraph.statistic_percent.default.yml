@@ -19,46 +19,46 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_decimal
         - field_text
         - field_link
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 8
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_text_prefix
         - field_text_suffix
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 9
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: JsPyX_Htaweffr7JK0l_iBWuQFV3pmsL11EQ3D6gaxE
 id: paragraph.statistic_percent.default
@@ -67,44 +67,44 @@ bundle: statistic_percent
 mode: default
 content:
   field_decimal:
+    type: number
     weight: 4
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_link:
+    type: link_default
     weight: 6
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_text:
+    type: text_textarea
     weight: 5
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_text_prefix:
+    type: string_textfield
     weight: 5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_text_suffix:
+    type: string_textfield
     weight: 6
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true

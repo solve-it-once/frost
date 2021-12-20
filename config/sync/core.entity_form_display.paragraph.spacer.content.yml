@@ -14,11 +14,11 @@ bundle: spacer
 mode: content
 content:
   field_style_vspx:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

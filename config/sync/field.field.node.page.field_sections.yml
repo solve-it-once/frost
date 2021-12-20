@@ -24,10 +24,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       from_library: from_library
       stripe: stripe
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: -57
@@ -51,8 +51,8 @@ settings:
         weight: -51
         enabled: false
       from_library:
-        enabled: true
         weight: -50
+        enabled: true
       heading:
         weight: -49
         enabled: false
@@ -90,14 +90,14 @@ settings:
         weight: -37
         enabled: false
       stripe:
-        enabled: true
         weight: -42
+        enabled: true
       stripe_collection:
         weight: -35
         enabled: false
       stripe_cta:
-        enabled: true
         weight: -40
+        enabled: true
       table:
         weight: -34
         enabled: false

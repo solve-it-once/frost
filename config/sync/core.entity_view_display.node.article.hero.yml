@@ -22,13 +22,14 @@ third_party_settings:
         - breadcrumb
         - frost_submitted
         - linked_title
+      label: 'Title area'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'display--flex flex-direction--column flex--1 justify-content--center padding-horizontal--4 text-align--left'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -36,17 +37,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Title area'
     group_imagery:
       children:
         - field_image
+      label: Imagery
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -54,7 +55,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Imagery
 _core:
   default_config_hash: yysB4Irfl0ilL9e-To3RVH2MR0iPbuJaOjfNHTbzNOw
 id: node.article.hero
@@ -63,29 +63,29 @@ bundle: article
 mode: hero
 content:
   breadcrumb:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_image:
     type: entity_reference_entity_view
-    weight: 2
-    region: content
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-  frost_submitted:
     weight: 2
     region: content
+  frost_submitted:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   linked_title:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
   field_article_type: true

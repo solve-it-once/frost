@@ -27,7 +27,7 @@ bundle: event
 mode: small
 content:
   field_date:
-    weight: 2
+    type: daterange_default
     label: hidden
     settings:
       timezone_override: ''
@@ -36,21 +36,21 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: daterange_default
+    weight: 2
     region: content
   field_location:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  linked_title:
-    weight: 0
+    weight: 1
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   breadcrumb: true

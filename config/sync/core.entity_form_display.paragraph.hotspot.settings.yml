@@ -16,19 +16,19 @@ bundle: hotspot
 mode: settings
 content:
   field_data_xpercent:
+    type: number
     weight: 0
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_data_ypercent:
+    type: number
     weight: 1
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
 hidden:
   created: true
   field_text: true

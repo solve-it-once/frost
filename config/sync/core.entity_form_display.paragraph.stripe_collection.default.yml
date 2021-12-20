@@ -16,43 +16,43 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_section
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 5
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_viewmode
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 6
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: yRh9ySHUlmyP6mhR3z8EwO0hkqg-e8E-sh6alnAMEqc
 id: paragraph.stripe_collection.default
@@ -63,6 +63,7 @@ content:
   field_section:
     type: paragraphs
     weight: 8
+    region: content
     settings:
       title: Stripe
       title_plural: Stripes
@@ -74,22 +75,21 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: true
-        show_drag_and_drop: true
+        delete_confirmation: true
         split_text: false
-    region: content
+        show_drag_and_drop: true
   field_viewmode:
+    type: options_select
     weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

@@ -21,11 +21,11 @@ bundle: heading
 mode: content
 content:
   field_heading:
+    type: heading_textfield
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: heading_textfield
-    region: content
 hidden:
   created: true
   field_image: true

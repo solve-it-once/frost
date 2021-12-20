@@ -17,6 +17,6 @@ plugin: address
 settings:
   id: address
   label: Address
-  provider: contact_info
   label_display: '0'
+  provider: contact_info
 visibility: {  }

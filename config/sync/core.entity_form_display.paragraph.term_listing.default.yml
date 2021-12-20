@@ -15,44 +15,44 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_terms
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 6
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_style_layout
         - field_viewmode
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 7
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: x3tMvaZyrssQwVab9OQCS0WGOk3GurFbZbWKaaIXIAQ
 id: paragraph.term_listing.default
@@ -61,27 +61,27 @@ bundle: term_listing
 mode: default
 content:
   field_style_layout:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_terms:
+    type: entity_reference_autocomplete_tags
     weight: 8
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_viewmode:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

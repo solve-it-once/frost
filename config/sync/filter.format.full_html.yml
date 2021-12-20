@@ -76,11 +76,11 @@ filters:
     weight: -41
     settings:
       default_view_mode: default
+      allowed_view_modes: {  }
       allowed_media_types:
         image: image
         video: video
         video_embed: video_embed
-      allowed_view_modes: {  }
   linkit:
     id: linkit
     provider: linkit

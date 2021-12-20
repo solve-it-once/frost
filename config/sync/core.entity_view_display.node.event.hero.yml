@@ -29,13 +29,14 @@ third_party_settings:
         - linked_title
         - field_location
         - field_date
+      label: 'Title area'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'display--flex flex-direction--column flex--1 justify-content--flex-start padding-horizontal--4 text-align--left'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -43,17 +44,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Title area'
     group_imagery:
       children:
         - field_image
+      label: Imagery
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -61,7 +62,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Imagery
 _core:
   default_config_hash: szYDN6n1Z41wUYJKzxa5YKQIV2kTso5QxMOeVsKTTAM
 id: node.event.hero
@@ -70,12 +70,12 @@ bundle: event
 mode: hero
 content:
   breadcrumb:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_date:
-    weight: 3
+    type: daterange_default
     label: inline
     settings:
       timezone_override: ''
@@ -84,10 +84,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: daterange_default
+    weight: 3
     region: content
   field_image:
-    weight: 3
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
@@ -101,21 +101,21 @@ content:
         destination: field_link
         advanced: {  }
         token: ''
-    type: entity_reference_entity_view
+    weight: 3
     region: content
   field_location:
-    weight: 2
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   linked_title:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   field_components: true

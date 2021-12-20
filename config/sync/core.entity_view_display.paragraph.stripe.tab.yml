@@ -31,16 +31,15 @@ mode: tab
 content:
   field_components:
     type: entity_reference_revisions_entity_view
-    weight: 3
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_image_background:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -48,18 +47,18 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 2
     region: content
   field_title:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_video_background:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -67,6 +66,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 1
     region: content
 hidden:
   field_style_bgcolor: true

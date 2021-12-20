@@ -15,11 +15,11 @@ content:
   field_media_oembed_video:
     type: oembed_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   langcode: true

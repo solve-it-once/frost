@@ -16,45 +16,45 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_link
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 6
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_style_childbgcolor
         - field_style_button_invert
         - field_style_button
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 7
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: Kfxmc66rRE7gjgUAMw9B3w0-iPmNJxVsK9YMOOmsrlc
 id: paragraph.link.default
@@ -63,26 +63,26 @@ bundle: link
 mode: default
 content:
   field_link:
+    type: link_default
     weight: 1
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_style_button:
+    type: boolean_checkbox
     weight: 11
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_style_childbgcolor:
+    type: options_select
     weight: 9
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

@@ -2,13 +2,6 @@ uuid: 4c2a64a3-1db1-4385-b28d-c933d7913072
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - media
-    - node
-    - taxonomy
-    - paragraphs
-    - search_api
   config:
     - field.storage.node.field_article_type
     - field.storage.paragraph.field_attr_open
@@ -20,24 +13,28 @@ dependencies:
     - core.entity_view_mode.media.search_index
     - core.entity_view_mode.node.search_index
     - core.entity_view_mode.taxonomy_term.search_index
+  module:
+    - search_api_solr
+    - media
+    - node
+    - taxonomy
+    - paragraphs
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    multilingual:
-      limit_to_content_language: false
-      include_language_independent: true
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -54,13 +51,16 @@ third_party_settings:
       maxntp: 2000
       boost: false
       interestingTerms: none
+    term_modifiers:
+      slop: 10000000
+      fuzzy: 2
     advanced:
       index_prefix: ''
       collection: ''
       timezone: ''
-    term_modifiers:
-      slop: 10000000
-      fuzzy: 2
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 _core:
   default_config_hash: 9J-sRo5JBtBi7mpqubfYD6SjbyU3wcFBu-gQwgGvUmI
 id: content
@@ -462,39 +462,26 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  tokenizer:
-    all_fields: true
-    fields:
-      - description
-      - field_text
-      - field_title
-      - name_1
-      - rendered_item
-      - title
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '1'
-    weights:
-      preprocess_index: -44
-      preprocess_query: -42
-  entity_status: {  }
   add_url: {  }
-  stemmer:
-    all_fields: true
-    fields:
-      - description
-      - field_text
-      - field_title
-      - name_1
-      - rendered_item
-      - title
-    exceptions:
-      mexican: mexic
-      texan: texa
+  aggregated_field: {  }
+  content_access:
     weights:
-      preprocess_index: -38
-      preprocess_query: -36
+      preprocess_query: -50
+  entity_status: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: true
   html_filter:
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
     all_fields: true
     fields:
       - bundle
@@ -521,56 +508,10 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-    weights:
-      preprocess_index: -48
-      preprocess_query: -48
-  content_access:
-    weights:
-      preprocess_query: -50
-  type_boost:
-    boosts:
-      'entity:media':
-        datasource_boost: !!float 1
-      'entity:node':
-        datasource_boost: !!float 1
-      'entity:taxonomy_term':
-        datasource_boost: !!float 1
-    weights:
-      preprocess_index: -36
-  ignorecase:
-    all_fields: true
-    fields:
-      - bundle
-      - description
-      - field_text
-      - field_title
-      - langcode
-      - langcode_1
-      - name
-      - name_1
-      - rendered_item
-      - title
-      - type
-      - type_3
-      - uuid
-      - uuid_1
-      - uuid_2
-      - vid
-    weights:
-      preprocess_index: -46
-      preprocess_query: -46
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
-  reverse_entity_references: {  }
   ignore_character:
+    weights:
+      preprocess_index: -42
+      preprocess_query: -40
     all_fields: true
     fields:
       - bundle
@@ -598,18 +539,77 @@ processor_settings:
       - Pi
       - Po
       - Ps
+  ignorecase:
     weights:
-      preprocess_index: -42
-      preprocess_query: -40
-  rendered_item: {  }
-  aggregated_field: {  }
+      preprocess_index: -46
+      preprocess_query: -46
+    all_fields: true
+    fields:
+      - bundle
+      - description
+      - field_text
+      - field_title
+      - langcode
+      - langcode_1
+      - name
+      - name_1
+      - rendered_item
+      - title
+      - type
+      - type_3
+      - uuid
+      - uuid_1
+      - uuid_2
+      - vid
   language_with_fallback: {  }
+  rendered_item: {  }
+  reverse_entity_references: {  }
   solr_date_range: {  }
+  stemmer:
+    weights:
+      preprocess_index: -38
+      preprocess_query: -36
+    all_fields: true
+    fields:
+      - description
+      - field_text
+      - field_title
+      - name_1
+      - rendered_item
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+  tokenizer:
+    weights:
+      preprocess_index: -44
+      preprocess_query: -42
+    all_fields: true
+    fields:
+      - description
+      - field_text
+      - field_title
+      - name_1
+      - rendered_item
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '1'
+  type_boost:
+    weights:
+      preprocess_index: -36
+    boosts:
+      'entity:media':
+        datasource_boost: !!float 1
+      'entity:node':
+        datasource_boost: !!float 1
+      'entity:taxonomy_term':
+        datasource_boost: !!float 1
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
   track_changes_in_references: true
 server: solr

@@ -26,11 +26,13 @@ content:
     weight: 1
     region: content
     settings:
-      placeholder: ''
       rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_hero:
+    type: paragraphs
     weight: 3
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -42,25 +44,25 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: false
+        delete_confirmation: true
         split_text: false
-    type: paragraphs
-    region: content
   field_image:
+    type: media_library_widget
     weight: 2
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_sections:
+    type: paragraphs
     weight: 4
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -72,18 +74,18 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: false
+        delete_confirmation: true
         split_text: false
-    type: paragraphs
-    region: content
   field_seo:
+    type: paragraphs
     weight: 5
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -95,16 +97,14 @@ content:
       form_display_mode: default
       default_paragraph_type: seo
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: false
+        delete_confirmation: true
         split_text: false
-    type: paragraphs
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -114,9 +114,9 @@ content:
     third_party_settings: {  }
   menu:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   name:
     type: string_textfield
     weight: 0
@@ -133,9 +133,9 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden: {  }

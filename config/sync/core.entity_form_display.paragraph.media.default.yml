@@ -21,45 +21,45 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_media
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 8
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_text
         - field_link
         - field_hotspots
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 9
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: v97Do2EIfLMBouJg8V4Dv7XHtU9ltG4tDCiZ2Cw9ylo
 id: paragraph.media.default
@@ -70,6 +70,7 @@ content:
   field_hotspots:
     type: paragraphs
     weight: 4
+    region: content
     settings:
       title: Hotspot
       title_plural: Hotspots
@@ -86,33 +87,32 @@ content:
         duplicate: '0'
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: false
+        delete_confirmation: true
         split_text: false
-    region: content
   field_link:
+    type: link_default
     weight: 3
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_media:
     type: media_library_widget
     weight: 1
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_text:
+    type: text_textarea
     weight: 2
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
 hidden:
   created: true
   status: true

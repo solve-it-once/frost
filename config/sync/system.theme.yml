@@ -1,4 +1,4 @@
-admin: claro
-default: frost_theme
 _core:
   default_config_hash: 5iuFOnBWoRXcFLNlf5s_Bcosjk7lIDWe8XbGS1Lv_Xk
+admin: claro
+default: frost_theme

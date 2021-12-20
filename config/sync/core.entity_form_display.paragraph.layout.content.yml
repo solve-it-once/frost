@@ -21,6 +21,7 @@ content:
   field_columns:
     type: paragraphs
     weight: 0
+    region: content
     settings:
       title: Column
       title_plural: Columns
@@ -37,10 +38,9 @@ content:
         duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: false
+        delete_confirmation: true
         split_text: false
-    region: content
 hidden:
   created: true
   field_style_flexdirection: true

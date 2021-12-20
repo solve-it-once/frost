@@ -23,16 +23,16 @@ third_party_settings:
     group_tagging:
       children:
         - field_tags
+      label: Tagging
+      region: content
       parent_name: ''
       weight: 6
       format_type: fieldset
       format_settings:
-        description: ''
-        id: ''
         classes: ''
+        id: ''
+        description: ''
         required_fields: false
-      label: Tagging
-      region: content
 _core:
   default_config_hash: sgRuCt2qyIygCaqTl3hghZjV80swr_FdFZYz2kdS6dc
 id: node.article.default
@@ -43,13 +43,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 4
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
@@ -57,14 +57,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_article_type:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_components:
     type: paragraphs
     weight: 5
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -76,33 +77,34 @@ content:
       form_display_mode: default
       default_paragraph_type: rich_text
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
-        delete_confirmation: true
         add_in_between: true
-        show_drag_and_drop: true
+        delete_confirmation: true
         split_text: false
-    region: content
+        show_drag_and_drop: true
   field_image:
     type: media_library_widget
     weight: 3
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_link:
+    type: link_default
     weight: 2
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_seo:
+    type: paragraphs
     weight: 16
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -114,21 +116,19 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
       features:
-        duplicate: duplicate
         collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
-    type: paragraphs
-    region: content
   field_tags:
+    type: entity_reference_autocomplete_tags
     weight: 20
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   frost_submitted:
     weight: 8
     region: content
@@ -149,24 +149,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 11
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 15
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 12
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -179,12 +179,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 9
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 14

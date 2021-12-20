@@ -16,21 +16,21 @@ bundle: iframe
 mode: content
 content:
   field_iframe:
+    type: iframe_urlwidthheight
     weight: 0
+    region: content
     settings:
-      width: '960'
-      height: '640'
+      url: ''
+      title: ''
       class: ''
       frameborder: '0'
       scrolling: auto
       transparency: '0'
       tokensupport: '0'
-      expose_class: 0
-      url: ''
-      title: ''
+      width: '960'
+      height: '640'
+      expose_class: false
     third_party_settings: {  }
-    type: iframe_urlwidthheight
-    region: content
 hidden:
   created: true
   status: true

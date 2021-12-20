@@ -16,19 +16,19 @@ bundle: blockquote
 mode: settings
 content:
   field_style_quoteclose:
+    type: boolean_checkbox
     weight: 0
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_style_quoteopen:
+    type: boolean_checkbox
     weight: 1
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
 hidden:
   created: true
   field_text: true

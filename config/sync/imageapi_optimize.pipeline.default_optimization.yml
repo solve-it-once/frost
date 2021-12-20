@@ -10,25 +10,25 @@ name: default_optimization
 label: 'Default optimization'
 processors:
   6d919641-5656-4c18-9606-73b8fe1cc5c4:
-    uuid: 6d919641-5656-4c18-9606-73b8fe1cc5c4
     id: jpegoptim
-    weight: 1
     data:
       manual_executable_path: ''
       progressive: 1
       quality: 80
       size: null
+    weight: 1
+    uuid: 6d919641-5656-4c18-9606-73b8fe1cc5c4
   b129ab9d-3d83-4e81-a76a-cb6336901f24:
-    uuid: b129ab9d-3d83-4e81-a76a-cb6336901f24
     id: optipng
-    weight: 2
     data:
       manual_executable_path: ''
-      level: 7
       interlace: false
+      level: 7
+    weight: 2
+    uuid: b129ab9d-3d83-4e81-a76a-cb6336901f24
   ce868c8d-8c8c-474e-b8bd-73e2e201064f:
-    uuid: ce868c8d-8c8c-474e-b8bd-73e2e201064f
     id: pngcrush
-    weight: 3
     data:
       manual_executable_path: ''
+    weight: 3
+    uuid: ce868c8d-8c8c-474e-b8bd-73e2e201064f

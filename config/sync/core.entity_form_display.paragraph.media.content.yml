@@ -21,10 +21,10 @@ content:
   field_media:
     type: media_library_widget
     weight: 0
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   field_hotspots: true

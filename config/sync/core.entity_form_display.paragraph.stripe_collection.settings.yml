@@ -15,11 +15,11 @@ bundle: stripe_collection
 mode: settings
 content:
   field_viewmode:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   field_section: true

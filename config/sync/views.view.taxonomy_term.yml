@@ -24,41 +24,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      fields: {  }
       pager:
         type: full
         options:
-          items_per_page: 30
           offset: 0
-          id: 0
+          items_per_page: 30
           total_pages: 0
+          id: 0
           tags:
-            previous: ‹‹
             next: ››
+            previous: ‹‹
             first: '« First'
             last: 'Last »'
           expose:
@@ -70,31 +46,51 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
       sorts:
         sticky:
           id: sticky
           table: taxonomy_index
           field: sticky
-          order: DESC
-          plugin_id: standard
           relationship: none
           group_type: group
           admin_label: ''
-          exposed: false
+          plugin_id: standard
+          order: DESC
           expose:
             label: ''
+            field_identifier: sticky
+          exposed: false
         created:
           id: created
           table: taxonomy_index
           field: created
-          order: DESC
-          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
-          exposed: false
+          plugin_id: date
+          order: DESC
           expose:
             label: ''
+            field_identifier: created
+          exposed: false
           granularity: second
       arguments:
         tid:
@@ -104,6 +100,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           default_action: 'not found'
           exception:
             value: ''
@@ -118,8 +115,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -129,15 +126,14 @@ display:
             type: 'entity:taxonomy_term'
             fail: 'not found'
           validate_options:
+            bundles: {  }
             access: true
             operation: view
             multiple: 0
-            bundles: {  }
           break_phrase: false
           add_table: false
           require_value: false
           reduce_duplicates: false
-          plugin_id: taxonomy_index_tid
       filters:
         langcode:
           id: langcode
@@ -146,6 +142,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
           operator: in
           value:
             '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
@@ -157,6 +156,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -164,8 +165,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -178,9 +177,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: language
-          entity_type: node
-          entity_field: langcode
         status:
           id: status
           table: taxonomy_index
@@ -188,6 +184,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -198,14 +195,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -218,7 +215,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
       style:
         type: default
         options:
@@ -230,6 +226,17 @@ display:
         type: 'entity:node'
         options:
           view_mode: teaser
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      link_display: page_1
+      link_url: ''
       header:
         entity_taxonomy_term:
           id: entity_taxonomy_term
@@ -238,27 +245,22 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: entity
           empty: true
-          tokenize: true
           target: '{{ raw_arguments.tid }}'
           view_mode: full
+          tokenize: true
           bypass_access: false
-          plugin_id: entity
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      fields: {  }
       display_extenders: {  }
-      link_url: ''
-      link_display: page_1
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   feed_1:
     id: feed_1
@@ -266,37 +268,37 @@ display:
     display_plugin: feed
     position: 2
     display_options:
-      query:
-        type: views_query
-        options: {  }
       pager:
         type: some
         options:
-          items_per_page: 10
           offset: 0
-      path: taxonomy/term/%/feed
-      displays:
-        page_1: page_1
-        default: '0'
+          items_per_page: 10
       style:
         type: rss
         options:
-          description: ''
           grouping: {  }
           uses_fields: false
+          description: ''
       row:
         type: node_rss
         options:
           relationship: none
           view_mode: default
+      query:
+        type: views_query
+        options: {  }
       display_extenders: {  }
+      path: taxonomy/term/%/feed
+      displays:
+        page_1: page_1
+        default: '0'
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   horizontal_1:
     id: horizontal_1
@@ -304,21 +306,16 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      query:
-        type: views_query
-        options: {  }
-      path: taxonomy/term/%
-      display_extenders: {  }
       pager:
         type: full
         options:
-          items_per_page: 30
           offset: 0
-          id: 0
+          items_per_page: 30
           total_pages: null
+          id: 0
           tags:
-            previous: '‹ Previous'
             next: 'Next ›'
+            previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
           expose:
@@ -330,15 +327,20 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      query:
+        type: views_query
+        options: {  }
       defaults:
-        pager: false
         css_class: true
+        pager: false
+      display_extenders: {  }
+      path: taxonomy/term/%
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }

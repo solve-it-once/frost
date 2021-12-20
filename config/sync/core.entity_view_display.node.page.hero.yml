@@ -22,11 +22,14 @@ third_party_settings:
       children:
         - linked_title
         - body
+      label: Text
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
+        classes: 'flex--1 display--flex flex-direction--column justify-content--center padding-horizontal--8 text-align--left'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -34,19 +37,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'flex--1 display--flex flex-direction--column justify-content--center padding-horizontal--8 text-align--left'
-      label: Text
     group_media:
       children:
         - field_image
+      label: Media
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: flex--2
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -54,7 +55,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Media
 _core:
   default_config_hash: BKXX95GJqz0VkANsNc8xud8op69qNHG-NBLwbttN8ls
 id: node.page.hero
@@ -64,15 +64,13 @@ mode: hero
 content:
   body:
     type: text_default
-    weight: 11
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 11
+    region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 6
-    region: content
     label: hidden
     settings:
       view_mode: default
@@ -80,11 +78,13 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-  linked_title:
-    weight: 10
+    weight: 6
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   breadcrumb: true
   field_hero: true

@@ -20,7 +20,7 @@ bundle: table
 mode: default
 content:
   field_table:
-    weight: 0
+    type: tablefield
     label: hidden
     settings:
       row_header: true
@@ -28,7 +28,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: tablefield
+    weight: 0
     region: content
 hidden:
   field_data_charttitle: true

@@ -30,7 +30,9 @@ bundle: stripe
 mode: content
 content:
   field_components:
+    type: paragraphs
     weight: 0
+    region: content
     settings:
       title: Component
       title_plural: Components
@@ -42,16 +44,14 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
         add_in_between: true
         delete_confirmation: false
         split_text: false
-    type: paragraphs
-    region: content
 hidden:
   created: true
   field_image_background: true

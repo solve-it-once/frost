@@ -15,11 +15,11 @@ bundle: iframe
 mode: default
 content:
   field_iframe:
+    type: iframe_urlwidthheight
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: iframe_urlwidthheight
-    region: content
 hidden:
   created: true
   status: true

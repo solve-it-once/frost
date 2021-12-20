@@ -1,7 +1,32 @@
 uuid: 69d82391-dd0d-404d-9789-71fb380b1fa2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tag
+  module:
+    - contextual
+    - file
+    - filter
+    - media
+    - menu_link_attributes
+    - node
+    - path
+    - quickedit
+    - styleguide
+    - system
+    - tablefield
+    - taxonomy
+    - toolbar
+    - webform
 _core:
   default_config_hash: Xn_WMbnQSN_0nT6pploWWKBHhP7_evX5ojz4ViKvgSw
 id: editor
@@ -23,20 +48,14 @@ permissions:
   - 'access webform submission user'
   - 'addrow tablefield'
   - 'administer webform element access'
-  - 'clone article content'
-  - 'clone page content'
   - 'create article content'
   - 'create audio media'
   - 'create document media'
   - 'create image media'
   - 'create page content'
-  - 'create terms in industry'
-  - 'create terms in product_category'
-  - 'create terms in solution'
   - 'create terms in tag'
   - 'create url aliases'
   - 'create video media'
-  - 'create video_embed media'
   - 'create webform'
   - 'edit any article content'
   - 'edit any audio media'
@@ -44,7 +63,6 @@ permissions:
   - 'edit any image media'
   - 'edit any page content'
   - 'edit any video media'
-  - 'edit any video_embed media'
   - 'edit any webform'
   - 'edit own article content'
   - 'edit own audio media'
@@ -52,22 +70,13 @@ permissions:
   - 'edit own image media'
   - 'edit own page content'
   - 'edit own video media'
-  - 'edit own video_embed media'
   - 'edit own webform'
-  - 'edit terms in industry'
-  - 'edit terms in product_category'
-  - 'edit terms in solution'
   - 'edit terms in tag'
   - 'import tablefield'
   - 'rebuild tablefield'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert page revisions'
-  - 'stripe create entities'
-  - 'stripe edit any entities'
-  - 'stripe edit own entities'
-  - 'stripe revert revisions'
-  - 'stripe view revisions'
   - 'use menu link attributes'
   - 'use text format filtered_html'
   - 'use text format full_html'
@@ -80,5 +89,3 @@ permissions:
   - 'view page revisions'
   - 'view style guides'
   - 'view the administration theme'
-  - 'view unpublished container entities'
-  - 'view unpublished paragraph set entities'

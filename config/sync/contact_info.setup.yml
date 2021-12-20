@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: E1z5nbz0FlT2_RbjS6qGrrN-JqGHF-x7YMaRJHAek-U
 address:
   country_name: US
   legal_name: 'Solve it once, LLC'
@@ -43,5 +45,3 @@ social:
       url: 'http://instagram.com/umichadmissions/'
       weight: '10'
       enable: 0
-_core:
-  default_config_hash: E1z5nbz0FlT2_RbjS6qGrrN-JqGHF-x7YMaRJHAek-U

@@ -1,7 +1,29 @@
 uuid: 6b6dfa79-dd51-44e7-9d5f-fee8dcc96c13
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tag
+  module:
+    - contextual
+    - file
+    - filter
+    - media
+    - node
+    - path
+    - quickedit
+    - styleguide
+    - system
+    - tablefield
+    - taxonomy
+    - toolbar
 _core:
   default_config_hash: iJt5g1W_Y5B_QxMSJBWTBmWhzB8ISHVcXwhyYUBmGOw
 id: author
@@ -18,8 +40,6 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'addrow tablefield'
-  - 'clone article content'
-  - 'clone page content'
   - 'create article content'
   - 'create audio media'
   - 'create document media'
@@ -28,25 +48,19 @@ permissions:
   - 'create terms in tag'
   - 'create url aliases'
   - 'create video media'
-  - 'create video_embed media'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any video media'
-  - 'edit any video_embed media'
   - 'edit own article content'
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own image media'
   - 'edit own page content'
   - 'edit own video media'
-  - 'edit own video_embed media'
   - 'edit terms in tag'
   - 'import tablefield'
   - 'rebuild tablefield'
-  - 'stripe create entities'
-  - 'stripe edit own entities'
-  - 'stripe view revisions'
   - 'use text format filtered_html'
   - 'view all media revisions'
   - 'view all revisions'
@@ -56,5 +70,3 @@ permissions:
   - 'view page revisions'
   - 'view style guides'
   - 'view the administration theme'
-  - 'view unpublished container entities'
-  - 'view unpublished paragraph set entities'

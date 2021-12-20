@@ -24,16 +24,15 @@ mode: teaser
 content:
   field_email:
     type: email_mailto
-    weight: 5
-    region: content
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
         class: 'child-links--as-buttons button-color--inverted child-links-background-color--main'
+    weight: 5
+    region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: square_small
@@ -41,41 +40,42 @@ content:
     third_party_settings:
       field_formatter_class:
         class: image--circle-150px
+    weight: 0
     region: content
   field_jobtitle:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_name:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_phone:
     type: telephone_link
-    weight: 4
-    region: content
     label: hidden
     settings:
       title: ''
     third_party_settings:
       field_formatter_class:
         class: 'child-links--as-buttons button-color--inverted child-links-background-color--main'
+    weight: 4
+    region: content
   field_text_location:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   field_biography: true
   langcode: true
