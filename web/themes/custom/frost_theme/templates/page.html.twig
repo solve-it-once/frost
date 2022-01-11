@@ -2,10 +2,11 @@
   <header class="top-bar sticky--top">
     {{ page.alerts }}
     {{ page.utility }}
-    <div class="main-bar background-color--white">
+    <div class="main-bar background-color--white padding-vertical--2">
       <div class="inner display--flex position--relative appear-as-stripe">
         {{ page.header }}
-        <div id="main-navigation" class="utility-and-nav flex--auto">
+        {{ menu_toggle }}{# Hamburger for the main nav to be a mobile tray. #}
+        <div id="main-navigation" class="utility-and-nav mobile--tray flex--auto display--flex align-items--center">
           {{ page.nav }}
         </div>
       </div>
@@ -22,20 +23,21 @@
     </div>
     {{ page.post_content }}
   </main>
-  <footer class="footer-wrapper">
-    <div class="appear-as-stripe layout--flex-row display--flex">
-      <div class="flex--1 padding-horizontal--4">
+  <footer class="footer-wrapper background-color--grey-dark color--white">
+    <div class="appear-as-stripe layout--flex-row display--flex padding-vertical--2">
+      <div class="flex--1 margin-vertical--4 padding-horizontal--4">
         {{ page.footer }}
       </div>
-      <div class="flex--1 padding-horizontal--4">
+      <div class="flex--1 margin-vertical--4 padding-horizontal--4">
         {{ page.footer_menu }}
       </div>
-      <div class="flex--1 padding-horizontal--4">
+      <div class="flex--1 margin-vertical--4 padding-horizontal--4">
         {{ page.footer_cta }}
       </div>
     </div>
-    <div class="footer--utility-wrapper">
+    <div class="footer--utility-wrapper background-color--black padding-vertical--2">
       {{ page.footer_utility }}
     </div>
   </footer>
 </div>
+{{ page.post_footer }}

@@ -6,8 +6,10 @@
  */
 
 use Drupal\Core\Config\ImmutableConfig;
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
+use Drupal\Core\Render\Markup;
 use Drupal\Core\Url;
 
 /**
@@ -250,6 +252,7 @@ function contact_info_create_social(ImmutableConfig $contact_info = NULL) {
           'url' => $social_site['url'],
           'weight' => $social_site['weight'],
           'name' => $social_site['name'],
+          'icon' => $social_site['icon'],
         ];
       }
     }
@@ -264,16 +267,23 @@ function contact_info_create_social(ImmutableConfig $contact_info = NULL) {
   if ($data) {
     // Start building out social media stuffs.
     $output['social'] = [
-      '#prefix' => '<div class="social">',
+      '#prefix' => '<div class="social display--flex">',
       '#suffix' => '</div>',
     ];
 
     foreach ($data as $social_site_key => $social_site) {
       // Do some magic for both internal and external URLs.
       $uri = strpos($social_site['url'], '/') === 0 ? ('internal:' . $social_site['url']) : $social_site['url'];
+      $icon = _contact_info_svg_icon($social_site['icon']);
+      $icon_str = (string) $icon;
+
+      $link_markup = Markup::create('<span class="a11y--visually-hidden">'
+        . $social_site['name'] . '</span>'
+        . $icon_str
+      );
 
       $output['social'][$social_site_key]
-        = Link::fromTextAndUrl($social_site['name'],
+        = Link::fromTextAndUrl($link_markup,
         Url::fromUri($uri,
           [
             'html' => TRUE,
@@ -284,6 +294,20 @@ function contact_info_create_social(ImmutableConfig $contact_info = NULL) {
   }
 
   return $output;
+}
+
+
+function _contact_info_svg_icon($filename) {
+  if (!isset($filename)) {
+    $filename = 'drupal.svg';
+  }
+  $icon_path = DRUPAL_ROOT . '/libraries/simple-icons/icons/' . $filename;
+
+  // Get the icon's file contents.
+  $icon = file_get_contents($icon_path);
+
+  // Return the icon as a markup object (@todo determine XSS risk)
+  return Markup::create($icon);
 }
 
 /**
@@ -378,6 +402,25 @@ function _contact_info_letter_strip($letter) {
 }
 
 /**
+ * Helper function to get a list of SVG icons available.
+ * @return array
+ */
+function _contact_info_get_svg_icons() {
+  $options = [];
+  $icons_dir = DRUPAL_ROOT . '/libraries/simple-icons/icons';
+  $icons_mask = '/^.*?\.svg$/';
+  $icons_options = ['key' => 'filename'];
+  $icons_list = \Drupal::service('file_system')->scanDirectory($icons_dir, $icons_mask, $icons_options);
+
+  foreach($icons_list as $key => $value) {
+    $options[$key] = $value->name;
+  }
+
+  ksort($options);
+  return $options;
+}
+
+/**
  * Helper function to render a draggable social table.
  *
  * Determines if the add/remove buttons have been clicked for the
@@ -391,32 +434,37 @@ function _contact_info_letter_strip($letter) {
  *   The current state of the form.
  */
 function _contact_info_social_draggable_table($social_table, &$form, FormStateInterface &$form_state) {
+  $icons = _contact_info_get_svg_icons();
+
   // Check to see how many social media rows we need.
-  if (isset($form_state->getCompleteForm()['contact_info']['social_rows']['#value'])) {
-    if (isset($social_table) && !$form_state->isRebuilding()) {
-      $form_state->setValue('social_rows', $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
-        $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table));
-      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+  if (isset($social_table) && !$form_state->isRebuilding()) {
+    $form_state->setValue('social_rows', count($social_table));
+
+    // Sort and re-index the social table for tabledrag retention.
+    uasort($social_table, 'contact_info_sort_weight');
+    array_unshift($social_table, "phoney");
+    unset($social_table[0]);
+  }
+  elseif ($form_state->isRebuilding() && $form_state->getValue('op')->render() == 'Add social media') {
+    if (!isset($social_table)) {
+      $contact_info = \Drupal::config('contact_info.setup');
+      $social_table = $contact_info->get('social.table');
     }
-    elseif ($form_state->isRebuilding() && $form_state->getValue('op')
-        ->render() == 'Add social media'
-    ) {
-      $form_state->setValue('social_rows', ($form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
-          $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table)) + 1);
-      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
+
+    $form_state->setValue('social_rows', count($social_table) + 1);
+  }
+  elseif ($form_state->isRebuilding() && $form_state->getValue('op')->render() == 'Remove social media') {
+    if (!isset($social_table)) {
+      $contact_info = \Drupal::config('contact_info.setup');
+      $social_table = $contact_info->get('social.table');
     }
-    elseif ($form_state->isRebuilding() && $form_state->getValue('op')
-        ->render() == 'Remove social media'
-    ) {
-      $form_state->setValue('social_rows', ($form_state->getCompleteForm()['contact_info']['social_rows']['#value'] ?
-          $form_state->getCompleteForm()['contact_info']['social_rows']['#value'] : count($social_table)) - 1);
-      $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
-    }
+
+    $form_state->setValue('social_rows', count($social_table) - 1);
   }
   else {
     $form_state->setValue('social_rows', 1);
-    $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
   }
+  $form['contact_info']['social_rows']['#value'] = $form_state->getValue('social_rows');
 
   // Build out that header.
   $header = [t('Name'), t('Icon'), t('URL'), t('Enable'), t('Weight')];
@@ -442,23 +490,10 @@ function _contact_info_social_draggable_table($social_table, &$form, FormStateIn
     ];
 
     $form['contact_info']['social']['table'][$i]['icon'] = [
-      '#prefix' => '<span class="social">',
-      '#suffix' => '</span>',
+      '#type' => 'select',
+      '#default_value' => isset($social_table[$i]['icon']) ? $social_table[$i]['icon'] : '',
+      '#options' => $icons,
     ];
-
-    // Add icon if any social media rows are present.
-    if (isset($social_table[$i]['url']) && !empty($social_table[$i]['url'])) {
-      if (strpos($social_table[$i]['url'], '/') === 0) {
-        $form['contact_info']['social']['table'][$i]['icon']['link']
-          = Link::fromTextAndUrl($social_table[$i]['name'],
-          Url::fromUri('internal:' . $social_table[$i]['url']))->toRenderable();
-      }
-      else {
-        $form['contact_info']['social']['table'][$i]['icon']['link']
-          = Link::fromTextAndUrl($social_table[$i]['name'],
-          Url::fromUri($social_table[$i]['url']))->toRenderable();
-      }
-    }
 
     $form['contact_info']['social']['table'][$i]['url'] = [
       '#type' => 'textfield',
@@ -472,11 +507,14 @@ function _contact_info_social_draggable_table($social_table, &$form, FormStateIn
 
     $form['contact_info']['social']['table'][$i]['#attributes']['class'][] = 'draggable';
     $form['contact_info']['social']['table'][$i]['weight'] = [
-      '#type' => 'weight',
-      '#default_value' => isset($social_table[$i]['weight']) ? $social_table[$i]['weight'] : 10,
-      // Classify the weight element for #tabledrag.
-      '#attributes' => ['class' => ['social-order-weight']],
+      '#type' => 'textfield',
+      '#title' => t('Weight for social row'),
+      '#title_display' => 'invisible',
+      '#size' => 4,
+      '#default_value' => $social_table[$i]['weight'],
+      '#attributes' => array('class' => array('social-order-weight')),
     ];
+    $form['contact_info']['social']['table'][$i]['#weight'] = $form['contact_info']['social']['table'][$i]['weight']['#default_value'];
   }
 
   $form['contact_info']['social']['add_social_row'] = [

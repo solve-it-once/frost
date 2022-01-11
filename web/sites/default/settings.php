@@ -30,7 +30,6 @@ $settings['file_scan_ignore_directories'] = [
 // Set up a config sync directory.
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
-$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 $settings['config_sync_directory']  = '../config/sync';
 
 // Automatic Platform.sh settings.

@@ -265,6 +265,9 @@ class ContactInfoSetupForm extends ConfigFormBase {
         'site_google_plus',
       ]));
 
+    // Empty the table so only the form rows appear.
+    $config->clear('social.table');
+    // Go through applicable form rows and save.
     foreach ($form_state->getValue([
       'contact_info',
       'social',

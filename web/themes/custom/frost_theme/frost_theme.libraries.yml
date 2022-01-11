@@ -15,6 +15,7 @@ frost-globalStyling:
       css/utility/utility--spacing.css: {}
     component:
       css/theme/theme--drupal.css: {}
+      css/theme/theme--menus.css: {}
       css/theme/theme--classes.css: {}
       css/theme/theme--shame.css: {}
   js:
@@ -25,7 +26,10 @@ frost-globalStyling:
     js/partials/js--animation--reveal.js: {}
     js/partials/js--child--link.js: {}
     js/partials/js--dismissible.js: {}
+    js/partials/js--toggle-below.js: {}
+    js/partials/js--share-to-native.js: {}
     js/partials/child-display-mode--tab.js: {}
+    js/partials/menus.js: {}
     js/behavior.js: {}
   dependencies:
     - core/drupal

@@ -3,6 +3,10 @@
  * Margin and padding classes.
  */
 
+.margin-bottom--auto {
+  margin-bottom: auto;
+}
+
 /**
  * Proportional, responsive margin classes.
  */
@@ -35,12 +39,20 @@
   margin-right: calc(16 * var(--spacing--single));
 }
 @media all and (max-width: 767px) {
-  .margin-horizontal--collapse {
+  .margin-horizontal--collapse,
+  .margin-horizontal--collapse > .inner {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
+.margin-left--auto {
+  margin-left: auto;
+}
+
+.margin-right--auto {
+  margin-right: auto;
+}
 
 .margin-top--auto {
   margin-top: auto;
@@ -132,7 +144,8 @@ a.button.margin-vertical--4 {
   padding-right: calc(16 * var(--spacing--single));
 }
 @media all and (max-width: 767px) {
-  .padding-horizontal--collapse {
+  .padding-horizontal--collapse,
+  .padding-horizontal--collapse > .inner {
     padding-left: 0;
     padding-right: 0;
   }

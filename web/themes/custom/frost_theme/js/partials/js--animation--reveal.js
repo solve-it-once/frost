@@ -27,6 +27,30 @@ if ('IntersectionObserver' in window) {
         if (entry.target.classList.contains('picture--lazy-load')) {
           swapPictureSrc(entry.target);
         }
+        else if (entry.target.classList.contains('field-type--decimal')) {
+          // @todo repair this to play nice with decimals.
+          var thisPrecision = 0;
+          if (entry.target.textContent.indexOf('.') !== -1) {
+            thisPrecision = entry.target.textContent.split(".")[1].length;
+          }
+          var targetNum = Number.parseFloat(entry.target.textContent);
+
+          entry.target.classList.add('js--animation--observed');
+          var current = 0;
+          if (thisPrecision >= 1) {
+            current = 0 + Number.parseFloat(entry.target.textContent.split(".")[1]).toFixed(thisPrecision);
+          }
+          entry.target.textContent = current;
+
+          var stepTime = Math.abs(Math.floor(2500 / targetNum));
+          var timer = setInterval(function() {
+            current++;
+            entry.target.textContent = current;
+            if (current >= targetNum) {
+              clearInterval(timer);
+            }
+          }, stepTime);
+        }
         else {
           entry.target.classList.add('js--animation--observed');
 
@@ -48,6 +72,7 @@ if ('IntersectionObserver' in window) {
     animationObserver.observe(this);
   };
   utilityInitializer('js--to-animate', 'animationInitializationFunction');
+  utilityInitializer('field-type--decimal', 'animationInitializationFunction');
   /* Wait until blocking resources have loaded to bring in images. */
   window.addEventListener('load', (event) => {
     utilityInitializer('picture--lazy-load', 'animationInitializationFunction');

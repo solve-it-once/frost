@@ -83,6 +83,7 @@ main {
   }
 }
 .entity-bundle-stripe > .inner,
+.view-mode--hero > .inner,
 .node--view-mode-full .node__content > .field,
 .appear-as-stripe {
   margin: 0 auto;
@@ -136,6 +137,7 @@ main {
 .layout--horizontal,
 .layout--carousel {
   display: flex;
+  justify-content: center;
 }
 .layout--horizontal {
   flex-direction: column;
@@ -165,6 +167,10 @@ main {
     margin: 0 calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single));
     max-width: 347px;
     min-width: 205px;
+  }
+
+  .layout--carousel > * {
+    min-width: 275px;
   }
 }
 
@@ -205,8 +211,7 @@ main {
   padding-left: calc(2 * var(--spacing--single));
   padding-right: calc(2 * var(--spacing--single));
 }
-.page-has--field-hero .region--splash > .inner,
-.page-has--hero-view-mode .region--splash > .inner,
+.region--splash > .inner,
 .page-has--field-sections .region--content > .inner {
   max-width: inherit;
   padding: 0;
@@ -223,24 +228,6 @@ main {
 .region--utility {}
 .region--utility > .inner {
   justify-content: flex-end;
-}
-@media all and (max-width: 1023px) {
-  .region--utility > .inner,
-  .region--nav > .inner {
-    display: block;
-    margin: 0 auto;
-    max-width: var(--layout--content-area);
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/**
- * Nav region (usually just main menu).
- */
-.region--nav {}
-.region--nav > .inner {
-  text-align: right;
 }
 
 /**

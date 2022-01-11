@@ -30,10 +30,6 @@ body,
  */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 .font-family--secondary {
   font-family: var(--font-family--secondary);
 }
@@ -123,17 +119,10 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
-/**
- * Universal dark color scheme.
- */
-@media all and (prefers-color-scheme: dark) {
+@media all and (max-width: 1023px) {
   body {
-    background-color: var(--color--grey-dark);
-    background-image: none;
-    filter: grayscale(100%) invert(100%);
-  }
-  figure {
-    filter: invert(100%);
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }
 
@@ -153,9 +142,7 @@ body {
  * depending on the font.
  */
 main,
-.region--splash {
-  font-size: 1.25em; /* 16 * 1.25 = 20px */
-}
+.region--splash {}
 
 /**
  * Links.
@@ -174,13 +161,13 @@ a:link {
   color: var(--color--main);
 }
 a:visited {
-  color:var(--color--accent);
+  color:var(--color--second);
 }
 a:hover {
-  color: var(--color--second);
+  color: var(--color--third);
 }
 a:active {
-  color: var(--color--second);
+  color: var(--color--third);
 }
 a:focus {
   outline: 0 none;
@@ -222,7 +209,7 @@ strong {
  * Base blockquotes before classing.
  */
 blockquote {
-  font-size: 1.25em;
+  font-size: 1.325em;
   font-style: italic;
   font-weight: 300;
   margin: 0;
@@ -271,7 +258,7 @@ dfn {
 details {
   background-color: rgba(240, 240, 240, 0.5);
   border-radius: var(--border-radius--default);
-  margin: calc(2 * var(--spacing--single)) auto;
+  margin: calc(2 * var(--spacing--single)) 0;
   padding: calc(.5 * var(--spacing--single)) calc(1.5 * var(--spacing--single));
 }
 details > summary {
@@ -302,7 +289,7 @@ details[open] > summary {
 details > summary::after {
   background-color: var(--color--white);
   border-radius: 50%;
-  color: var(--color--accent);
+  color: var(--color--third);
   content: '+';
   padding: calc(.5 * var(--spacing--single)) calc(1 * var(--spacing--single));
   position: absolute;
@@ -314,7 +301,7 @@ details > summary:hover::after,
 details > summary:active::after,
 details > summary:focus-within::after,
 details[open] > summary::after {
-  background-color: var(--color--accent);
+  background-color: var(--color--third);
   color: var(--color--white);
 }
 details[open] {
@@ -363,8 +350,9 @@ figcaption {
  */
 h1,
 .heading--h1 {
-  font-size: 4.5em;
-  font-weight: 500;
+  font-size: 5.5em;
+  font-weight: 350;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 0;
   overflow-wrap: break-word;
@@ -388,8 +376,9 @@ h1 > a:visited {
  */
 h2,
 .heading--h2 {
-  font-size: 3.5em;
-  font-weight: 500;
+  font-size: 3em;
+  font-weight: 350;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -414,6 +403,7 @@ h3,
 .heading--h3 {
   font-size: 2em;
   font-weight: 500;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -432,6 +422,7 @@ h4,
 .heading--h4 {
   font-size: 1.5em;
   font-weight: 400;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -450,6 +441,7 @@ h5,
 .heading--h5 {
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
 }
@@ -466,6 +458,7 @@ h6,
 .heading--h6 {
   font-size: 1em;
   font-weight: 600;
+  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
 }
@@ -522,7 +515,13 @@ picture {
 
 mark,
 .marker {
-  color: var(--color--accent);
+  background-color: var(--color--accent);
+  border-radius: var(--border-radius--default);
+  color: var(--color--white);
+  font-size: 0.75em;
+  font-weight: 700;
+  display: inline-block;
+  padding: calc(0.25 * var(--spacing--single)) calc(0.5 * var(--spacing--single));
 }
 
 p {
@@ -760,11 +759,31 @@ input[type="submit"] {
   display: inline-block;
   font-size: 1em;
   font-weight: 900;
+  line-height: 1;
   margin: 0 calc(2 * var(--spacing--single)) calc(2 * var(--spacing--single));
   padding: calc(1 * var(--spacing--single)) calc(2 * var(--spacing--single));
   text-align: center;
   text-decoration: none;
   transition: var(--transition--default);
+  vertical-align: middle;
+}
+.child-links--as-buttons a:first-child,
+.button:first-child,
+a.button:first-child,
+button:first-child,
+input[type="button"]:first-child,
+input[type="reset"]:first-child,
+input[type="submit"]:first-child {
+  margin-left: 0;
+}
+.child-links--as-buttons a:first-child,
+.button:last-child,
+a.button:last-child,
+button:last-child,
+input[type="button"]:last-child,
+input[type="reset"]:last-child,
+input[type="submit"]:last-child {
+  margin-right: 0;
 }
 .child-links--as-buttons a:hover,
 .button:hover,

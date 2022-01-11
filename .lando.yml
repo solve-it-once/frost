@@ -6,6 +6,11 @@ recipe: platformsh
 config:
   webroot: web
   xdebug: true
+  overrides:
+    app:
+      runtime:
+        extensions:
+          - xdebug
 
 tooling:
   behat:

@@ -22,26 +22,13 @@ social:
   table:
     1:
       name: Facebook
-      url: 'https://www.facebook.com/bradczerniak'
+      icon: facebook.svg
+      url: 'https://www.facebook.com/solveitonce'
       enable: '1'
       weight: '-9'
     2:
       name: Twitter
-      url: 'https://twitter.com/ao5357'
-      enable: '1'
-      weight: '-7'
-    3:
-      name: Pinterest
-      url: 'http://pinterest.com/uofmichigan'
-      weight: '-10'
-      enable: 0
-    4:
-      name: YouTube
-      url: 'http://youtube.com/um'
+      icon: twitter.svg
+      url: 'https://twitter.com/solveitoncellc'
       enable: '1'
       weight: '-8'
-    5:
-      name: Instagram
-      url: 'http://instagram.com/umichadmissions/'
-      weight: '10'
-      enable: 0

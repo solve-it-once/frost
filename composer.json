@@ -35,6 +35,24 @@
                     "composer/installers": "~1.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "simple-icons/simple-icons",
+                "version": "4.2.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "simple-icons"
+                },
+                "dist": {
+                    "url": "https://github.com/simple-icons/simple-icons/archive/4.2.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
         }
     ],
     "require": {
@@ -63,7 +81,7 @@
         "drupal/ctools": "^3.0",
         "drupal/default_content": "^1.0@alpha",
         "drupal/diff": "^1.0@RC",
-        "drupal/easy_breadcrumb": "^1.8",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity": "~1.0",
         "drupal/entity_clone": "^1.0@beta",
         "drupal/entity_reference_display": "1.x-dev",
@@ -104,7 +122,7 @@
         "drupal/styleguide": "2.x-dev",
         "drupal/subpathauto": "^1.0@beta",
         "drupal/tablefield": "2.x-dev",
-        "drupal/taxonomy_menu_ui": "^1.1",
+        "drupal/taxonomy_menu_ui": "^2.0",
         "drupal/token": "^1.1",
         "drupal/views_block_filter_block": "^1.0@beta",
         "drupal/views_flipped_table": "^1.4",
@@ -114,6 +132,7 @@
         "harvesthq/chosen": "1.8.7",
         "laminas/laminas-zendframework-bridge": "^1.4",
         "oomphinc/composer-installers-extender": "^2.0",
+        "simple-icons/simple-icons": "4.2.0",
         "wikimedia/composer-merge-plugin": "^2.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
@@ -130,8 +149,8 @@
         "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
         "justinrainbow/json-schema": "^5.2",
         "mikey179/vfsstream": "^1.2",
-        "phpspec/prophecy": "^1.7",
-        "phpunit/phpunit": "^4.8.35 || ^6.5"
+        "phpspec/prophecy": "^1.12",
+        "phpunit/phpunit": "^9.5.11"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -207,7 +226,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.4"
+            "php": "8.0"
         },
         "bin-dir": "vendor/bin/",
         "vendor-dir": "vendor"

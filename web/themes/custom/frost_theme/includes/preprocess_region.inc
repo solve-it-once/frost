@@ -13,6 +13,8 @@ use Drupal\Core\Template\Attribute;
  */
 function frost_theme_preprocess_region(&$vars) {
   $vars['html_tag'] = 'div';
+  $vars['wrapped'] = TRUE;
+  $vars['inner'] = TRUE;
   $vars['classes'] = [
     Html::cleanCssIdentifier('region'),
     Html::cleanCssIdentifier('region--' . $vars['region']),
@@ -20,12 +22,20 @@ function frost_theme_preprocess_region(&$vars) {
   $vars['content_attributes']['class'][] = Html::cleanCssIdentifier('inner');
 
   switch ($vars['region']) {
+    case 'footer_menu':
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('padding-horizontal--collapse');
+
+      break;
+
     case 'header':
       $vars['html_tag'] = 'header';
 
       break;
 
     case 'nav':
+      $vars['wrapped'] = FALSE;
+      $vars['inner'] = FALSE;
+
       break;
 
     case 'sidebar_first':

@@ -7,6 +7,7 @@
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Render\Markup;
 
 // Include the helper function for entities.
 require_once 'includes/entity_style_classes.inc';
@@ -16,6 +17,7 @@ require_once 'includes/hook_theme_suggestions_HOOK_alter.inc';
 
 // Include large preprocess functions.
 require_once  'includes/preprocess_field.inc';
+require_once  'includes/preprocess_commerce_product.inc';
 require_once  'includes/preprocess_html.inc';
 require_once  'includes/preprocess_media.inc';
 require_once  'includes/preprocess_node.inc';
@@ -24,6 +26,24 @@ require_once  'includes/preprocess_region.inc';
 require_once  'includes/preprocess_taxonomy_term.inc';
 require_once  'includes/preprocess_user.inc';
 require_once  'includes/preprocess_views.inc';
+
+/**
+ * Implements hook_preprocess_page() for PAGE document templates.
+ */
+function frost_theme_preprocess_page(&$vars) {
+  // Include the hamburger icon as a renderable.
+  $vars['menu_toggle'] = [
+    '#allowed_tags' => [
+      'button',
+      'span',
+    ],
+    '#markup' => Markup::create('<button aria-label="Menu" aria-controls="main-navigation"'
+      . 'class="hamburger hamburger--spring js--hamburger frost-hamburger-icon margin-left--auto"'
+      . 'type="button">'
+      . '<span class="hamburger-box"><span class="hamburger-inner"></span></span>'
+      . '</button>'),
+  ];
+}
 
 /**
  * Implements hook_preprocess_element().
@@ -56,6 +76,82 @@ function frost_theme_preprocess_facets_item_list(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_input().
+ */
+function frost_theme_preprocess_input(&$vars) {
+  $vars['button'] = FALSE;
+
+  if (isset($vars['attributes']['type']) && in_array($vars['attributes']['type'], [
+      'button',
+      'reset',
+      'submit',
+    ])) {
+    $vars['button'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_preprocess_TEMPLATE().
+ *
+ * @param $vars
+ */
+function frost_theme_preprocess_menu(&$vars) {
+  // Set menu name if it is unset.
+  if (!isset($vars['menu_name'])) {
+    $vars['menu_name'] = Html::cleanCssIdentifier($vars['theme_hook_original']);
+  }
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier('menu');
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier('menu--' . $vars['menu_name']);
+
+  // Classes that apply to all menus.
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier('list-style--none');
+
+  // Add classes to menu by which menu it is.
+  switch ($vars['menu_name']) {
+    case 'main':
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('flex--auto');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flex');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('layout--row');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('font-weight--500');
+
+      foreach ($vars['items'] as $i => $item) {
+        $vars['items'][$i]['attributes']->addCLass('flex--1');
+        $vars['items'][$i]['attributes']->addCLass('display--flex');
+        $vars['items'][$i]['attributes']->addCLass('flex-direction--column');
+        $vars['items'][$i]['attributes']->addCLass('justify-content--center');
+        $vars['items'][$i]['attributes']->addCLass('text-align--center');
+      }
+
+      break;
+
+    case 'footer':
+    case 'utility':
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('justify-content--center');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('font-size--p875em');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('font-weight--600');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flex');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('border-spaced');
+
+      $num_index = 0;
+      foreach ($vars['items'] as $i => $item) {
+        if ($vars['menu_name'] === 'footer' && $num_index === 0) {
+          // The first item in the footer menu is the copyright statement.
+          // It looks good as its own row on mobile.
+          $vars['items'][$i]['attributes']->addCLass('menu-item--mobile--full-row');
+        }
+        $vars['items'][$i]['attributes']->addCLass('display--flex');
+        $vars['items'][$i]['attributes']->addCLass('flex-direction--column');
+        $vars['items'][$i]['attributes']->addCLass('justify-content--center');
+        $vars['items'][$i]['attributes']->addCLass('text-align--center');
+
+        $num_index++;
+      }
+
+      break;
+  }
+}
+
+/**
  * Implements hook_preprocess_pager().
  */
 function frost_theme_preprocess_pager(&$vars) {
@@ -65,21 +161,6 @@ function frost_theme_preprocess_pager(&$vars) {
 
   if (isset($vars['items']['next']['text'])) {
     $vars['items']['next']['text'] = 'Next ›';
-  }
-}
-
-/**
- * Implements hook_preprocess_input().
- */
-function frost_theme_preprocess_input(&$vars) {
-  $vars['button'] = FALSE;
-
-  if (isset($vars['attributes']['type']) && in_array($vars['attributes']['type'], [
-    'button',
-    'reset',
-    'submit',
-  ])) {
-    $vars['button'] = TRUE;
   }
 }
 

@@ -47,9 +47,10 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
       '#attributes' => [
         'class' => [
           'entity-bundle-stripe',
-          'text-align--left',
-          'background-color--second-light',
-          'appear-as-stripe',
+          'text-align--center',
+          'background-color--main-dark',
+          'background-image--default',
+          'color--white',
         ],
       ],
       '#type' => 'page_title',
@@ -62,10 +63,19 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
     foreach ($paged_entity_types as $type) {
       if (isset($parameters[$type])) {
         $entity = $parameters[$type];
-        // Get the enabled view modes.
-        $view_displays = \Drupal::service('entity_display.repository')->getViewModeOptionsByBundle($type, $entity->bundle());
+        $bundle = 'unknown';
+        if (method_exists($entity, 'bundle')) {
+          $bundle = $entity->bundle();
+        }
+        $id = 0;
+        if (method_exists($entity, 'id')) {
+          $id = $entity->id();
+        }
 
-        if ($entity->hasField('field_hero')) {
+        // Get the enabled view modes.
+        $view_displays = \Drupal::service('entity_display.repository')->getViewModeOptionsByBundle($type, $bundle);
+
+        if (method_exists($entity, 'hasField') && $entity->hasField('field_hero')) {
           $field_hero = $entity->get('field_hero')->getValue();
         }
 
@@ -92,9 +102,7 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
               'contexts' => ['url'],
             ],
             '#attributes' => [
-              'class' => [
-                'entity-bundle-stripe',
-              ],
+              'class' => [],
             ],
             'field' => $view_builder->view($entity, 'hero'),
           ];

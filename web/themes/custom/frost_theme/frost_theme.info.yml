@@ -25,6 +25,7 @@ regions:
   footer_menu: Footer menu
   footer_cta: Footer social
   footer_utility: Copyright
+  post_footer: Post-footer
   page_bottom: Page bottom
 features:
   - logo
@@ -57,3 +58,5 @@ stylesheets-remove:
   - 'core/modules/system/css/components/tablesort.module.css'
   - 'core/modules/system/css/components/tree-child.module.css'
   - 'modules/contrib/paragraphs/css/paragraphs.unpublished.css'
+  - 'modules/contrib/commerce/modules/cart/css/commerce_cart.layout.css'
+  - 'modules/contrib/commerce/modules/cart/css/commerce_cart.theme.css'

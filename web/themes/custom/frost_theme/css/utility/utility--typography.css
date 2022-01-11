@@ -27,25 +27,25 @@
 .font-size--1rem {
   font-size: 1rem; /* Reset a container to 16px and scale text relatively from there. */
 }
-.font-size--1p125em {
+.font-size--1-125em {
   font-size: 1.125em;
 }
-.font-size--1p25em {
+.font-size--1-25em {
   font-size: 1.25em;
 }
-.font-size--1p375em {
+.font-size--1-375em {
   font-size: 1.375em;
 }
-.font-size--1p5em {
+.font-size--1-5em {
   font-size: 1.5em;
 }
-.font-size--1p625em {
+.font-size--1-625em {
   font-size: 1.625em;
 }
-.font-size--1p75em {
+.font-size--1-75em {
   font-size: 1.75em;
 }
-.font-size--1p875em {
+.font-size--1-875em {
   font-size: 1.875em;
 }
 .font-size--2em {

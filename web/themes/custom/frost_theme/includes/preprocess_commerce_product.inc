@@ -9,31 +9,28 @@ use Drupal\Component\Utility\Html;
 use Drupal\Core\Template\Attribute;
 
 /**
- * Implements hook_preprocess_taxonomy_term().
+ * Implements hook_preprocess_TEMPLATE().
  */
-function frost_theme_preprocess_taxonomy_term(&$vars) {
-  $term = $vars['term'];
-  $bundle = $term->bundle();
+function frost_theme_preprocess_commerce_product(&$vars) {
+  $entity = $vars['product_entity'];
+  $view_mode = $vars['elements']['#view_mode'];
 
   $vars['classes'] = [
-    Html::cleanCssIdentifier('taxonomy-term'),
-    Html::cleanCssIdentifier('vocabulary--' . $bundle),
-    Html::cleanCssIdentifier('taxonomy-term--view-mode--' . $vars['view_mode']),
-    Html::cleanCssIdentifier('view-mode--' . $vars['view_mode']),
+    Html::cleanCssIdentifier('product'),
+    Html::cleanCssIdentifier('product-type--' . $entity->bundle()),
+    Html::cleanCssIdentifier('product-view-mode--' . $view_mode),
+    Html::cleanCssIdentifier('view-mode--' . $view_mode),
+    Html::cleanCssIdentifier('product--' . $entity->bundle() . '-' . $view_mode),
   ];
 
-  $vars['attributes']['id'] = Html::cleanCssIdentifier('taxonomy-term-' . $term->id());
+  switch ($entity->bundle()) {
+    case 'page':
+      // Something by product type.
+      break;
+  }
 
   // Classes and other preprocess by view mode.
-  switch ($vars['view_mode']) {
-    case 'hero':
-      $vars['classes'][] = Html::cleanCssIdentifier('display--flex');
-      $vars['classes'][] = Html::cleanCssIdentifier('layout--flex-row');
-      $vars['classes'][] = Html::cleanCssIdentifier('justify-content--center');
-      $vars['classes'][] = Html::cleanCssIdentifier('appear-as-stripe');
-
-      break;
-
+  switch ($view_mode) {
     case 'teaser':
       $vars['classes'][] = Html::cleanCssIdentifier('js--child--link');
       $vars['classes'][] = Html::cleanCssIdentifier('flex--1');
@@ -50,14 +47,7 @@ function frost_theme_preprocess_taxonomy_term(&$vars) {
       break;
   }
 
-  switch ($bundle) {
-    case 'tags':
-      // Something by vocabulary.
-
-      break;
-  }
-
   // Any field_style_... fields print as CSS classes.
-  $where = &$vars['classes'];
-  _frost_theme_entity_style_classes($vars, $term, $where);
+  $where = &$vars['attributes']['class'];
+  _frost_theme_entity_style_classes($vars, $entity, $where);
 }

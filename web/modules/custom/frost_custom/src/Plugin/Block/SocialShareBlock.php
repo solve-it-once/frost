@@ -10,6 +10,7 @@ namespace Drupal\frost_custom\Plugin\Block;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Link;
+use Drupal\Core\Render\Markup;
 use Drupal\Core\Url;
 
 /**
@@ -57,15 +58,12 @@ class SocialShareBlock extends BlockBase {
         'title' => $title,
       ],
     ]);
-    $email = [
-      '#type' => 'html_tag',
-      '#tag' => 'a',
-      '#attributes' => [
-        'class' => ['icon', 'envelope'],
-        'href' => 'mailto:?subject=' . urlencode($title) . '&body=' . urlencode($current_url),
+    $email = $this->buildSocialLink('mailto:', 'gmail', [
+      'query' => [
+        'subject' => $title,
+        'body' => $current_url,
       ],
-      '#value' => t('Email'),
-    ];
+    ]);
 
     // Render array that returns button.
     return [
@@ -81,14 +79,16 @@ class SocialShareBlock extends BlockBase {
         '#attributes' => [
           'class' => ['social-share'],
         ],
-        'icon' => [
-          '#prefix' => '<span class="icon share">',
-          '#markup' => t('Share'),
-          '#suffix' => '</span>',
-        ],
         'list' => [
           '#theme' => 'item_list',
           '#list_type' => 'ul',
+          '#attributes' => [
+            'class' => [
+              'social',
+              'display--flex',
+              'list-style--none',
+            ],
+          ],
           '#items' => [
             $facebook_link,
             $twitter_link,
@@ -101,6 +101,26 @@ class SocialShareBlock extends BlockBase {
   }
 
   /**
+   * Return an SVG icon as markup based on filename.
+   *
+   * @param $filename
+   *
+   * @return \Drupal\Component\Render\MarkupInterface|string
+   */
+  public function svg_icon($filename) {
+    if (!isset($filename)) {
+      $filename = 'drupal.svg';
+    }
+    $icon_path = DRUPAL_ROOT . '/libraries/simple-icons/icons/' . $filename;
+
+    // Get the icon's file contents.
+    $icon = file_get_contents($icon_path);
+
+    // Return the icon as a markup object (@todo determine XSS risk)
+    return Markup::create($icon);
+  }
+
+    /**
    * A Helper function to create the link render array for social channels.
    *
    * @param $share_link
@@ -124,7 +144,9 @@ class SocialShareBlock extends BlockBase {
           'class' => ['icon', $class],
         ],
       ]),
-      '#title' => t('@channel', ['@channel' => $channel]),
+      '#title' => [
+        '#markup' => $this->svg_icon($class . '.svg'),
+      ],
     ];
   }
 

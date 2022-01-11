@@ -61,20 +61,10 @@ function frost_theme_preprocess_node(&$vars) {
   // Classes and other preprocess by view mode.
   switch ($vars['view_mode']) {
     case 'hero':
-      $vars['classes'][] = Html::cleanCssIdentifier('display--flex');
-      $vars['classes'][] = Html::cleanCssIdentifier('layout--flex-row');
-      $vars['classes'][] = Html::cleanCssIdentifier('justify-content--center');
-      $vars['classes'][] = Html::cleanCssIdentifier('appear-as-stripe');
-
-      break;
-
-    case 'small':
-      $vars['classes'][] = Html::cleanCssIdentifier('js--child--link');
-      $vars['classes'][] = Html::cleanCssIdentifier('flex--1');
-      $vars['classes'][] = Html::cleanCssIdentifier('text-align--left');
-      $vars['classes'][] = Html::cleanCssIdentifier('display--flex');
-      $vars['classes'][] = Html::cleanCssIdentifier('flex-direction--column');
-      $vars['classes'][] = Html::cleanCssIdentifier('justify-content--center');
+      $vars['classes'][] = Html::cleanCssIdentifier('entity-bundle-stripe');
+      $vars['classes'][] = Html::cleanCssIdentifier('background-color--main-dark');
+      $vars['classes'][] = Html::cleanCssIdentifier('color--white');
+      $vars['classes'][] = Html::cleanCssIdentifier('background-image--default');
 
       break;
 
@@ -82,11 +72,14 @@ function frost_theme_preprocess_node(&$vars) {
       $vars['classes'][] = Html::cleanCssIdentifier('js--child--link');
       $vars['classes'][] = Html::cleanCssIdentifier('flex--1');
       $vars['classes'][] = Html::cleanCssIdentifier('display--flex');
-      $vars['classes'][] = Html::cleanCssIdentifier('layout--flex-row');
-      $vars['classes'][] = Html::cleanCssIdentifier('text-align--center');
       $vars['classes'][] = Html::cleanCssIdentifier('flex-direction--column');
+      $vars['classes'][] = Html::cleanCssIdentifier('text-align--left');
       $vars['classes'][] = Html::cleanCssIdentifier('justify-content--flex-start');
-      $vars['classes'][] = Html::cleanCssIdentifier('padding--20px');
+      $vars['classes'][] = Html::cleanCssIdentifier('background-color--white');
+      $vars['classes'][] = Html::cleanCssIdentifier('border--1px-solid');
+      $vars['classes'][] = Html::cleanCssIdentifier('border-color--grey-light');
+      $vars['classes'][] = Html::cleanCssIdentifier('border-radius--default');
+      $vars['classes'][] = Html::cleanCssIdentifier('box-shadow--default');
 
       break;
   }

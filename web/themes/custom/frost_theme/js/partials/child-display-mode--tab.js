@@ -46,6 +46,10 @@ document.addEventListener('click', function (event) {
   if (event.target !== document
     && event.target.closest('.tabs a')
   ) {
+    if (!event.target.closest('#block-frost-theme-local-tasks')) {
+      event.preventDefault();
+    }
+
     let bubbled = event.target.closest('.tabs a');
     const idSelector = bubbled.getAttribute('href');
 

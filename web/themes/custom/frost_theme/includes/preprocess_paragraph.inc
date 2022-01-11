@@ -51,10 +51,9 @@ function frost_theme_preprocess_paragraph(&$vars) {
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('js--child--link');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('flex--1');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flex');
-      $vars['attributes']['class'][] = Html::cleanCssIdentifier('justify-content--flex-start');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('justify-content--center');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('flex-direction--column');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('text-align--center');
-      $vars['attributes']['class'][] = Html::cleanCssIdentifier('border--1px-solid');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('padding-horizontal--4');
 
       break;

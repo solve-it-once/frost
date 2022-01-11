@@ -64,7 +64,8 @@ function frost_theme_preprocess_field(&$vars) {
 
       case 'card':
         if ($vars['field_name'] === 'field_title') {
-          $vars['html_tag'] = 'h2';
+          $vars['html_tag'] = 'h3';
+          $vars['classes'][] = Html::cleanCssIdentifier('margin-vertical--1');
         }
 
         break;
@@ -94,6 +95,14 @@ function frost_theme_preprocess_field(&$vars) {
 
   // Fields by field machine name.
   switch ($vars['field_name']) {
+    case 'body':
+      if (isset($vars['element']['#view_mode']) && $vars['element']['#view_mode'] === 'hero') {
+        $vars['classes'][] = Html::cleanCssIdentifier('font-size--1-125em');
+        $vars['classes'][] = Html::cleanCssIdentifier('margin-vertical--2');
+      }
+
+      break;
+
     case 'field_components_cta':
       $vars['wrapped'] = TRUE;
       $vars['classes'][] = Html::cleanCssIdentifier('display--flex');

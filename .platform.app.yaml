@@ -4,7 +4,7 @@
 # See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
 
 name: 'app'
-type: 'php:7.4'
+type: 'php:8.0'
 disk: 2048
 build:
   flavor: composer
@@ -16,6 +16,10 @@ relationships:
 dependencies:
   php:
     "drush/drush": "^10.0"
+
+runtime:
+  extensions:
+    - xdebug
 
 mounts:
   '/web/sites/default/files': 'shared:files/files'

@@ -2,7 +2,10 @@
   {{ q }}
 {% endif %}
 {% if toggleable %}
-  <button type="button" class="a-reset filter-toggle show--narrow" aria-expanded="false">{{ 'Show Filters'|trans }}</button>
+  <button type="button" class="a-reset js--toggle-below filter-toggle show--narrow" aria-expanded="false">
+    {{ 'Form filters'|trans }}
+    <span class="js--toggle-below--label a11y--visually-hidden">Close below</span>
+  </button>
 {% endif %}
 <div{{ attributes }}>
   {{ form }}

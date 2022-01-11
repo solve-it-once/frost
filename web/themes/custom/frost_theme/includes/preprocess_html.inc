@@ -7,6 +7,7 @@
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Routing\CurrentRouteMatch;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -14,8 +15,20 @@ use Drupal\Core\Template\Attribute;
 function frost_theme_preprocess_html(&$vars) {
   $request = \Drupal::request();
   $route_match = \Drupal::routeMatch();
+
   $title = \Drupal::service('title_resolver')
     ->getTitle($request, $route_match->getRouteObject());
+
+  // Convert title to a string if it's a translatable.
+  if (isset($title) && is_object($title)
+    && get_class($title) === 'Drupal\Core\StringTranslation\TranslatableMarkup'
+  ) {
+    $title = $title->render();
+  }
+  // Do the array version, too, if the title is an array by here.
+  if (isset($title['#markup'])) {
+    $title = $title['#markup'];
+  }
 
   // Classes to be applied to the body, but overridden if fields present.
   $field_hero_class = Html::cleanCssIdentifier('page-lacks--field-hero');
@@ -50,11 +63,18 @@ function frost_theme_preprocess_html(&$vars) {
   foreach ($paged_entity_types as $type) {
     if (isset($parameters[$type])) {
       $entity = $parameters[$type];
-      $bundle = $entity->bundle();
+      $bundle = 'unknown';
+      if (method_exists($entity, 'bundle')) {
+        $bundle = $entity->bundle();
+      }
+      $id = 0;
+      if (method_exists($entity, 'id')) {
+        $id = $entity->id();
+      }
 
       // D7-style body classes.
-      $vars['body_classes'][] = Html::cleanCssIdentifier($type . '--' . $entity->id());
-      $vars['body_classes'][] = Html::cleanCssIdentifier($type . '-' . $bundle . '--' . $entity->id());
+      $vars['body_classes'][] = Html::cleanCssIdentifier($type . '--' . $id);
+      $vars['body_classes'][] = Html::cleanCssIdentifier($type . '-' . $bundle . '--' . $id);
       $vars['body_classes'][] = Html::cleanCssIdentifier($type . '--' . $bundle);
       $vars['body_classes'][] = Html::cleanCssIdentifier('page--' . $type);
       $vars['body_classes'][] = Html::cleanCssIdentifier('page--' . $type . '-' . $bundle);
@@ -62,7 +82,7 @@ function frost_theme_preprocess_html(&$vars) {
       // Body class for the presence of field_hero.
       $view_displays = \Drupal::service('entity_display.repository')
         ->getViewModeOptionsByBundle($type, $bundle);
-      if ($entity->hasField('field_hero')) {
+      if (method_exists($entity, 'hasField') && $entity->hasField('field_hero')) {
         $field_hero_class = Html::cleanCssIdentifier('page-has--field-hero');
       }
       elseif (array_key_exists('hero', $view_displays)) {
@@ -70,7 +90,7 @@ function frost_theme_preprocess_html(&$vars) {
       }
 
       // Body class for the presence of field_sections.
-      if ($entity->hasField('field_sections')) {
+      if (method_exists($entity, 'hasField') && $entity->hasField('field_sections')) {
         $field_sections_class = Html::cleanCssIdentifier('page-has--field-sections');
       }
     }

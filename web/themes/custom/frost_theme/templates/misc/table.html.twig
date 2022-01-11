@@ -1,0 +1,64 @@
+<div class="table--wrapper" role="region" aria-label="Data table within" tabindex="0">
+  <table{{ attributes }}>
+    {% if caption %}
+      <caption>{{ caption }}</caption>
+    {% endif %}
+
+    {% for colgroup in colgroups %}
+      {% if colgroup.cols %}
+        <colgroup{{ colgroup.attributes }}>
+          {% for col in colgroup.cols %}
+            <col{{ col.attributes }} />
+          {% endfor %}
+        </colgroup>
+      {% else %}
+        <colgroup{{ colgroup.attributes }} />
+      {% endif %}
+    {% endfor %}
+
+    {% if header %}
+      <thead>
+        <tr>
+          {% for cell in header %}
+            <{{ cell.tag }}{{ cell.attributes }}>
+              {{- cell.content -}}
+            </{{ cell.tag }}>
+          {% endfor %}
+        </tr>
+      </thead>
+    {% endif %}
+
+    {% if rows %}
+      <tbody>
+        {% for row in rows %}
+          <tr{{ row.attributes }}>
+            {% for cell in row.cells %}
+              <{{ cell.tag }}{{ cell.attributes }}>
+                {{- cell.content -}}
+              </{{ cell.tag }}>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    {% elseif empty %}
+      <tbody>
+        <tr>
+          <td colspan="{{ header_columns }}">{{ empty }}</td>
+        </tr>
+      </tbody>
+    {% endif %}
+    {% if footer %}
+      <tfoot>
+        {% for row in footer %}
+          <tr{{ row.attributes }}>
+            {% for cell in row.cells %}
+              <{{ cell.tag }}{{ cell.attributes }}>
+                {{- cell.content -}}
+              </{{ cell.tag }}>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tfoot>
+    {% endif %}
+  </table>
+</div>
