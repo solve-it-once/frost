@@ -352,7 +352,6 @@ h1,
 .heading--h1 {
   font-size: 5.5em;
   font-weight: 350;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 0;
   overflow-wrap: break-word;
@@ -378,7 +377,6 @@ h2,
 .heading--h2 {
   font-size: 3em;
   font-weight: 350;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -403,7 +401,6 @@ h3,
 .heading--h3 {
   font-size: 2em;
   font-weight: 500;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -422,7 +419,6 @@ h4,
 .heading--h4 {
   font-size: 1.5em;
   font-weight: 400;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
@@ -441,7 +437,6 @@ h5,
 .heading--h5 {
   font-size: 1.125em;
   font-weight: 500;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
 }
@@ -458,7 +453,6 @@ h6,
 .heading--h6 {
   font-size: 1em;
   font-weight: 600;
-  letter-spacing: -0.05em;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
 }

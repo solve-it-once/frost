@@ -48,9 +48,9 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
         'class' => [
           'entity-bundle-stripe',
           'text-align--center',
-          'background-color--main-dark',
+          'background-color--grey-light',
           'background-image--default',
-          'color--white',
+          'color--main-dark',
         ],
       ],
       '#type' => 'page_title',
