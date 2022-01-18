@@ -1,0 +1,33 @@
+uuid: a4040fc0-8702-433b-93e4-134047a116d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_listing.field_products
+    - field.field.paragraph.product_listing.field_style_layout
+    - field.field.paragraph.product_listing.field_viewmode
+    - paragraphs.paragraphs_type.product_listing
+  module:
+    - entity_reference_display
+    - field_formatter_class
+id: paragraph.product_listing.default
+targetEntityType: paragraph
+bundle: product_listing
+mode: default
+content:
+  field_products:
+    type: entity_reference_display_default
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

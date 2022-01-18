@@ -1,0 +1,112 @@
+uuid: ddfd380c-415f-4820-92b5-93c216f68fec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_multimedia
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.media_listing
+  module:
+    - entity_reference_revisions
+id: paragraph.media_listing.field_multimedia
+field_name: field_multimedia
+entity_type: paragraph
+bundle: media_listing
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      media: media
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 29
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      blockquote:
+        weight: 31
+        enabled: false
+      card:
+        weight: 32
+        enabled: false
+      cards:
+        weight: 33
+        enabled: false
+      column:
+        weight: 34
+        enabled: false
+      content_listing:
+        weight: 35
+        enabled: false
+      from_library:
+        weight: 36
+        enabled: false
+      heading:
+        weight: 37
+        enabled: false
+      hotspot:
+        weight: 38
+        enabled: false
+      iframe:
+        weight: 39
+        enabled: false
+      layout:
+        weight: 40
+        enabled: false
+      link:
+        weight: 41
+        enabled: false
+      media:
+        weight: 42
+        enabled: true
+      media_listing:
+        weight: 43
+        enabled: false
+      message:
+        weight: 44
+        enabled: false
+      product_listing:
+        weight: 45
+        enabled: false
+      rich_text:
+        weight: 46
+        enabled: false
+      seo:
+        weight: 47
+        enabled: false
+      spacer:
+        weight: 48
+        enabled: false
+      statistic_percent:
+        weight: 49
+        enabled: false
+      stripe:
+        weight: 50
+        enabled: false
+      stripe_collection:
+        weight: 51
+        enabled: false
+      table:
+        weight: 52
+        enabled: false
+      term_listing:
+        weight: 53
+        enabled: false
+      user_listing:
+        weight: 54
+        enabled: false
+      view:
+        weight: 55
+        enabled: false
+      webform:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

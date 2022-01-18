@@ -14,7 +14,9 @@ dependencies:
     - paragraphs.paragraphs_type.layout
     - paragraphs.paragraphs_type.link
     - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.media_listing
     - paragraphs.paragraphs_type.message
+    - paragraphs.paragraphs_type.product_listing
     - paragraphs.paragraphs_type.rich_text
     - paragraphs.paragraphs_type.spacer
     - paragraphs.paragraphs_type.stripe
@@ -53,6 +55,7 @@ settings:
       link: link
       media: media
       message: message
+      product_listing: product_listing
       rich_text: rich_text
       spacer: spacer
       stripe_collection: stripe_collection
@@ -61,6 +64,7 @@ settings:
       user_listing: user_listing
       view: view
       webform: webform
+      media_listing: media_listing
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -84,9 +88,9 @@ settings:
       content_listing:
         weight: -53
         enabled: true
-      dropover:
-        weight: -52
-        enabled: true
+      from_library:
+        weight: 36
+        enabled: false
       heading:
         weight: -51
         enabled: true
@@ -105,6 +109,9 @@ settings:
       media:
         weight: -46
         enabled: true
+      media_listing:
+        weight: 43
+        enabled: true
       message:
         weight: -45
         enabled: true
@@ -120,9 +127,6 @@ settings:
       spacer:
         weight: -41
         enabled: true
-      statistic_figure:
-        weight: -38
-        enabled: false
       statistic_percent:
         weight: -39
         enabled: false
@@ -132,9 +136,6 @@ settings:
       stripe_collection:
         weight: -37
         enabled: true
-      stripe_reference:
-        weight: -36
-        enabled: false
       table:
         weight: -35
         enabled: true

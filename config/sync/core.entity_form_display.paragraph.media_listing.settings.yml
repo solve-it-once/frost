@@ -1,0 +1,24 @@
+uuid: b90dd349-500f-4a1c-9b98-41f675f799cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.media_listing.field_multimedia
+    - field.field.paragraph.media_listing.field_style_layout
+    - paragraphs.paragraphs_type.media_listing
+id: paragraph.media_listing.settings
+targetEntityType: paragraph
+bundle: media_listing
+mode: settings
+content:
+  field_style_layout:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_multimedia: true
+  status: true

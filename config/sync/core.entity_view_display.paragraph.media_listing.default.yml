@@ -1,0 +1,27 @@
+uuid: 73bc87c6-7cbd-4560-bb78-8dbf4df58ceb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_listing.field_multimedia
+    - field.field.paragraph.media_listing.field_style_layout
+    - paragraphs.paragraphs_type.media_listing
+  module:
+    - entity_reference_revisions
+id: paragraph.media_listing.default
+targetEntityType: paragraph
+bundle: media_listing
+mode: default
+content:
+  field_multimedia:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_style_layout: true
+  search_api_excerpt: true

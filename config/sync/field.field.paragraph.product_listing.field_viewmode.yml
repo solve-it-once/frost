@@ -1,0 +1,27 @@
+uuid: e063b0f5-52fe-4745-ab31-206778bed527
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_viewmode
+    - paragraphs.paragraphs_type.product_listing
+  module:
+    - entity_reference_display
+id: paragraph.product_listing.field_viewmode
+field_name: field_viewmode
+entity_type: paragraph
+bundle: product_listing
+label: 'View mode'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: teaser
+default_value_callback: ''
+settings:
+  exclude:
+    small: small
+    teaser: teaser
+  negate: 1
+field_type: entity_reference_display

@@ -1,0 +1,15 @@
+uuid: 483b7021-6acd-4977-8abc-e2c2b80e77e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: media_listing
+label: 'Media listing'
+icon_uuid: null
+icon_default: null
+description: 'Galleries, slideshows, and other displays of collected images, videos, and other media.'
+behavior_plugins: {  }
