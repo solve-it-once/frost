@@ -1,0 +1,53 @@
+uuid: 28a46398-4a01-47a5-9c70-c0fafa6ef363
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_shipping
+_core:
+  default_config_hash: eGgj-Vay13MNDxbtb1YAjNZuUUgbp92Tr9hDQcR7ogo
+label: Shipping
+id: shipping
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: true
+  panes:
+    login:
+      step: login
+      weight: 0
+      allow_guest_checkout: true
+      allow_registration: false
+    contact_information:
+      step: order_information
+      weight: 1
+      double_entry: false
+    shipping_information:
+      step: order_information
+      weight: 2
+      auto_recalculate: true
+      require_shipping_profile: true
+    review:
+      step: review
+      weight: 3
+    completion_message:
+      step: complete
+      weight: 4
+      message:
+        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        format: plain_text
+    order_summary:
+      step: _sidebar
+      weight: 5
+      view: commerce_checkout_order_summary
+    completion_register:
+      step: complete
+      weight: 10
+    payment_information:
+      step: order_information
+      weight: 10
+    payment_process:
+      step: payment
+      weight: 10
+      capture: true

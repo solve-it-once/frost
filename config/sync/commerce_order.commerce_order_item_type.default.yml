@@ -1,0 +1,20 @@
+uuid: a1710112-dfcd-4812-b81e-dfe71a0c8456
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_tax
+  enforced:
+    module:
+      - commerce_product
+third_party_settings:
+  commerce_tax:
+    taxable_type: digital_goods
+_core:
+  default_config_hash: 6n6q97CDOCqHGs4Dun3BqVJE6e1o6TA-69qCwoUU-SY
+id: default
+label: Default
+traits: {  }
+locked: false
+purchasableEntityType: commerce_product_variation
+orderType: default

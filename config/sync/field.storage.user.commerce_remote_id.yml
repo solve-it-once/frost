@@ -1,0 +1,24 @@
+uuid: 038fcde9-3b25-4c4c-9e24-239246bc1f1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce
+    - user
+  enforced:
+    module:
+      - commerce_payment
+_core:
+  default_config_hash: YLh2hnX0ZtVtJpFWUkcjkpbgJAP85JuAamng9bLk8M8
+id: user.commerce_remote_id
+field_name: commerce_remote_id
+entity_type: user
+type: commerce_remote_id
+settings: {  }
+module: commerce
+locked: true
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

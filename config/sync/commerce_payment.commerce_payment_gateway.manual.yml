@@ -1,0 +1,19 @@
+uuid: 881c2448-682a-40f8-b873-7d3eda57a30c
+langcode: en
+status: true
+dependencies: {  }
+id: manual
+label: Manual
+weight: null
+plugin: manual
+configuration:
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: 'Contact store to tender a purchase order, check, or other means of payment'
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

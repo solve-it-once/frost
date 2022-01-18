@@ -4,27 +4,29 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_article_type
-    - field.storage.paragraph.field_attr_open
     - field.storage.node.field_date
     - field.storage.node.field_tags
     - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_attr_open
     - field.storage.paragraph.field_title
     - search_api.server.solr
     - core.entity_view_mode.media.search_index
     - core.entity_view_mode.node.search_index
+    - core.entity_view_mode.paragraph.search_index
     - core.entity_view_mode.taxonomy_term.search_index
   module:
     - search_api_solr
     - media
     - node
-    - taxonomy
     - paragraphs
+    - taxonomy
     - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
@@ -263,33 +265,41 @@ field_settings:
           audio: search_index
           document: search_index
           image: search_index
+          remote_video: search_index
           video: search_index
-          video_embed: search_index
         'entity:node':
           article: search_index
-          case_study: search_index
-          company: search_index
           event: search_index
-          location: search_index
           page: search_index
-          resource: search_index
         'entity:paragraph':
-          accordion: default
+          accordion: search_index
+          block: search_index
+          blockquote: search_index
+          card: search_index
+          cards: search_index
+          column: search_index
+          content_listing: search_index
+          from_library: search_index
+          heading: search_index
+          hotspot: search_index
+          iframe: search_index
+          layout: search_index
+          link: search_index
+          media: search_index
+          message: search_index
+          rich_text: search_index
+          seo: search_index
+          spacer: search_index
+          statistic_percent: search_index
+          stripe: search_index
+          stripe_collection: search_index
+          table: search_index
+          term_listing: search_index
+          user_listing: search_index
+          view: search_index
+          webform: search_index
         'entity:taxonomy_term':
           article_type: search_index
-          cable: search_index
-          card_frequency: search_index
-          card_technology: search_index
-          company_type: search_index
-          connector: search_index
-          data_output: search_index
-          format: search_index
-          housing_form_factor: search_index
-          industry: search_index
-          product_type: search_index
-          region: search_index
-          resource_type: search_index
-          solution: search_index
           tag: search_index
   status:
     label: status
@@ -370,8 +380,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -388,6 +396,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -448,9 +458,8 @@ datasource_settings:
       selected: {  }
   'entity:paragraph':
     bundles:
-      default: false
-      selected:
-        - accordion
+      default: true
+      selected: {  }
     languages:
       default: true
       selected: {  }
@@ -593,6 +602,7 @@ processor_settings:
       - rendered_item
       - title
     spaces: ''
+    ignored: ._-
     overlap_cjk: 1
     minimum_word_size: '1'
   type_boost:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.teaser
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_biography
     - field.field.user.user.field_email
     - field.field.user.user.field_image
@@ -77,6 +78,8 @@ content:
     weight: 3
     region: content
 hidden:
+  commerce_remote_id: true
+  customer_profiles: true
   field_biography: true
   langcode: true
   member_for: true

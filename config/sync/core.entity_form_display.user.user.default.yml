@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_biography
     - field.field.user.user.field_email
     - field.field.user.user.field_image
@@ -87,7 +88,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  commerce_remote_id: true
   contact: true
+  customer_profiles: true
   langcode: true
   language: true
   path: true

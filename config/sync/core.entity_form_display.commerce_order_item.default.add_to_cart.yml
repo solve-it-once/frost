@@ -1,0 +1,41 @@
+uuid: 0f21048a-6db4-416e-9f1f-6770a5d22192
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.default
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+  module:
+    - commerce_order
+    - commerce_product
+  enforced:
+    module:
+      - commerce_cart
+      - commerce_product
+_core:
+  default_config_hash: 8dIszGyXfy-kBaUEuUEQjWjRVtfq6f8cCI0QUHIlJdc
+id: commerce_order_item.default.add_to_cart
+targetEntityType: commerce_order_item
+bundle: default
+mode: add_to_cart
+content:
+  purchased_entity:
+    type: commerce_product_variation_attributes
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      step: '1'
+    third_party_settings: {  }
+hidden:
+  adjustments: true
+  created: true
+  status: true
+  uid: true
+  unit_price: true

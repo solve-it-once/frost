@@ -4,6 +4,9 @@ module:
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  advagg: 0
+  advagg_css_minify: 0
+  advagg_js_minify: 0
   better_exposed_filters: 0
   bg_image_formatter: 0
   block: 0
@@ -14,6 +17,19 @@ module:
   chosen: 0
   chosen_lib: 0
   ckeditor: 0
+  commerce: 0
+  commerce_add_to_cart_link: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_log: 0
+  commerce_number_pattern: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_shipping: 0
+  commerce_store: 0
+  commerce_tax: 0
   config: 0
   config_filter: 0
   contact_info: 0
@@ -40,10 +56,12 @@ module:
   frost_custom: 0
   hal: 0
   honeypot: 0
+  human_decimal: 0
   iframe: 0
   image: 0
   imageapi_optimize: 0
   imageapi_optimize_binaries: 0
+  inline_entity_form: 0
   inline_form_errors: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
@@ -64,10 +82,14 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_edit: 0
   paragraphs_features: 0
+  paragraphs_frontend_ui: 0
   paragraphs_library: 0
   path: 0
   path_alias: 0
+  physical: 0
+  profile: 0
   quickedit: 0
   redirect: 0
   redirect_404: 0
@@ -77,7 +99,9 @@ module:
   search_api_solr: 0
   serialization: 0
   settings_tray: 0
+  similarterms: 0
   simple_sitemap: 0
+  state_machine: 0
   styleguide: 0
   subpathauto: 0
   system: 0

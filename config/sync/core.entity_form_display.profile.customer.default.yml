@@ -1,0 +1,29 @@
+uuid: 49bfaaa2-1cfd-41be-89ac-dc406b6ae63b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.customer.address
+    - field.field.profile.customer.tax_number
+    - profile.type.customer
+  module:
+    - address
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: 3LyHGK7R4HxqejbxONet1S9j9ekqLJuFpwT-MNJygvo
+id: profile.customer.default
+targetEntityType: profile
+bundle: customer
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  is_default: true
+  tax_number: true

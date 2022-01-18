@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: sk1pryOoTCTzOYv4w57dULjoIfnMobFLTiqyFKD0lqU
+langcode: en
+csrf_token:
+  roles: {  }
+redirect_back: false

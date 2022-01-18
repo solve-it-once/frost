@@ -1,0 +1,87 @@
+uuid: c978be45-a27e-4f61-861c-a6ad8c7bae6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_shipping.commerce_shipment_type.default
+  module:
+    - commerce_price
+    - commerce_shipping
+    - entity_reference_revisions
+    - state_machine
+_core:
+  default_config_hash: hIwmDy-Bge0z2nIR2MUruBzjfF2IwcLl1wwY7xVdJbo
+id: commerce_shipment.default.default
+targetEntityType: commerce_shipment
+bundle: default
+mode: default
+content:
+  amount:
+    type: commerce_price_default
+    weight: 5
+    region: content
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  items:
+    type: commerce_shipment_item_table
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  package_type:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  shipping_method:
+    label: above
+    type: commerce_shipping_method
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  shipping_profile:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  state:
+    label: hidden
+    type: state_transition_form
+    weight: 7
+    region: content
+    settings:
+      require_confirmation: true
+      use_modal: true
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  tracking_code:
+    type: string
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  original_amount: true
+  search_api_excerpt: true
+  weight: true

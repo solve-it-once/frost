@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies:
   module:
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
     - honeypot
     - media
     - system
@@ -13,8 +17,12 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access content'
   - 'access user profiles'
   - 'bypass honeypot protection'
   - 'cancel account'
+  - 'manage own commerce_payment_method'
+  - 'view commerce_product'
   - 'view media'
+  - 'view own commerce_order'

@@ -1,0 +1,108 @@
+uuid: bd69c1d6-70a4-4f29-aa15-7589d1fbd86f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_hero
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - entity_reference_revisions
+id: commerce_product.default.field_hero
+field_name: field_hero
+entity_type: commerce_product
+bundle: default
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      from_library: from_library
+      stripe: stripe
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 27
+        enabled: false
+      block:
+        weight: 28
+        enabled: false
+      blockquote:
+        weight: 29
+        enabled: false
+      card:
+        weight: 30
+        enabled: false
+      cards:
+        weight: 31
+        enabled: false
+      column:
+        weight: 32
+        enabled: false
+      content_listing:
+        weight: 33
+        enabled: false
+      from_library:
+        weight: 34
+        enabled: true
+      heading:
+        weight: 35
+        enabled: false
+      hotspot:
+        weight: 36
+        enabled: false
+      iframe:
+        weight: 37
+        enabled: false
+      layout:
+        weight: 38
+        enabled: false
+      link:
+        weight: 39
+        enabled: false
+      media:
+        weight: 40
+        enabled: false
+      message:
+        weight: 41
+        enabled: false
+      rich_text:
+        weight: 42
+        enabled: false
+      seo:
+        weight: 43
+        enabled: false
+      spacer:
+        weight: 44
+        enabled: false
+      statistic_percent:
+        weight: 45
+        enabled: false
+      stripe:
+        weight: 46
+        enabled: true
+      stripe_collection:
+        weight: 47
+        enabled: false
+      table:
+        weight: 48
+        enabled: false
+      term_listing:
+        weight: 49
+        enabled: false
+      user_listing:
+        weight: 50
+        enabled: false
+      view:
+        weight: 51
+        enabled: false
+      webform:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions
