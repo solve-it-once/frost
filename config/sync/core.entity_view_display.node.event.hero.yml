@@ -29,9 +29,9 @@ third_party_settings:
         - field_location
         - field_date
       label: 'Title area'
-      parent_name: ''
+      parent_name: group_flex_wrapper
       region: content
-      weight: 0
+      weight: 1
       format_type: html_element
       format_settings:
         classes: 'display--flex flex-direction--column flex--2 justify-content--flex-start padding-horizontal--4 text-align--left'
@@ -48,12 +48,32 @@ third_party_settings:
       children:
         - field_image
       label: Imagery
-      parent_name: ''
+      parent_name: group_flex_wrapper
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_flex_wrapper:
+      children:
+        - group_title_area
+        - group_imagery
+      label: 'Flex wrapper'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'display--flex flex-direction--row layout--flex-row justify-content--center align-items--center'
+        show_empty_fields: false
         id: ''
         element: div
         show_label: false

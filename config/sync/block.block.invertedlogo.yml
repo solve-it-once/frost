@@ -11,7 +11,7 @@ _core:
 id: invertedlogo
 theme: frost_theme
 region: footer
-weight: -7
+weight: -9
 provider: null
 plugin: inverted_logo_block
 settings:

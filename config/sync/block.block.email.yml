@@ -1,4 +1,4 @@
-uuid: a96727d5-e82b-49e6-b3fd-a423de8e59f7
+uuid: c4b46a8a-7d4a-4187-bcd7-6183275c64cd
 langcode: en
 status: true
 dependencies:
@@ -9,18 +9,16 @@ dependencies:
     - frost_theme
 third_party_settings:
   block_class:
-    classes: margin-vertical--4
-_core:
-  default_config_hash: RsaTIyQk_UCMBaZapuhEztO7VAD6qT2ZclgObN1YRS8
-id: address
+    classes: margin-vertical--2
+id: email
 theme: frost_theme
 region: footer
-weight: -8
+weight: -6
 provider: null
-plugin: address
+plugin: email
 settings:
-  id: address
-  label: Address
+  id: email
+  label: Email
   label_display: '0'
   provider: contact_info
 visibility: {  }

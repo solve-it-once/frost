@@ -62,7 +62,7 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
     foreach ($paged_entity_types as $type) {
       if (isset($parameters[$type])) {
         $entity = $parameters[$type];
-        $bundle = (method_exists($entity, 'bundle')) ? $entity->bundle : 'unknown';
+        $bundle = (method_exists($entity, 'bundle')) ? $entity->bundle() : 'unknown';
 
         // Get the enabled view modes.
         $view_displays = \Drupal::service('entity_display.repository')
