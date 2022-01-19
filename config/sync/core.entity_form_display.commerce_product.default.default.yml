@@ -72,10 +72,10 @@ content:
     third_party_settings:
       paragraphs_features:
         add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: false
         split_text: false
         show_drag_and_drop: false
-        add_in_between_link_count: 3
   field_image:
     type: media_library_widget
     weight: 2
@@ -104,10 +104,10 @@ content:
     third_party_settings:
       paragraphs_features:
         add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: false
         split_text: false
         show_drag_and_drop: true
-        add_in_between_link_count: 3
   field_seo:
     type: paragraphs
     weight: 8
@@ -129,10 +129,10 @@ content:
     third_party_settings:
       paragraphs_features:
         add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: false
         split_text: false
         show_drag_and_drop: false
-        add_in_between_link_count: 3
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 7

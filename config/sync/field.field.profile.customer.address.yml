@@ -21,6 +21,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
   fields:
     administrativeArea: administrativeArea
     locality: locality
@@ -33,6 +35,4 @@ settings:
     givenName: givenName
     additionalName: additionalName
     familyName: familyName
-  langcode_override: ''
-  field_overrides: {  }
 field_type: address

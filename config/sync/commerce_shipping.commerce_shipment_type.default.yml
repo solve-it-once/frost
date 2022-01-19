@@ -6,7 +6,7 @@ _core:
   default_config_hash: q7uorX1KJg8tf7PBrSSy45-t6FB9Cqw-gsjr7Yn1ueU
 id: default
 label: Default
-profileType: customer
 traits: {  }
+profileType: customer
 sendConfirmation: null
 confirmationBcc: null
