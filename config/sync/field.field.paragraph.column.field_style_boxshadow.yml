@@ -1,0 +1,23 @@
+uuid: 7dfab8f6-f173-4fbf-bffa-aae52fce8e38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_boxshadow
+    - paragraphs.paragraphs_type.column
+id: paragraph.column.field_style_boxshadow
+field_name: field_style_boxshadow
+entity_type: paragraph
+bundle: column
+label: 'Box shadow'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: box-shadow--default
+  off_label: box-shadow--none
+field_type: boolean

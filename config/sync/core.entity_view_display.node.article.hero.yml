@@ -19,7 +19,6 @@ third_party_settings:
   field_group:
     group_title_area:
       children:
-        - breadcrumb
         - frost_submitted
         - linked_title
       label: 'Title area'
@@ -28,7 +27,8 @@ third_party_settings:
       weight: 0
       format_type: html_element
       format_settings:
-        classes: 'display--flex flex-direction--column flex--1 justify-content--center padding-horizontal--4 text-align--left'
+        classes: 'flex--2 display--flex flex-direction--column justify-content--center padding-horizontal--4 text-align--left'
+        show_empty_fields: false
         id: ''
         element: div
         show_label: false

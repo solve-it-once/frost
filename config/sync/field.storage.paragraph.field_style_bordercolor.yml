@@ -1,0 +1,66 @@
+uuid: 63a9a95f-020a-4e41-8ec8-06a11f41aba4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_bordercolor
+field_name: field_style_bordercolor
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: border-color--black
+      label: Black
+    -
+      value: border-color--grey-dark
+      label: 'Grey (dark)'
+    -
+      value: border-color--grey
+      label: Grey
+    -
+      value: border-color--grey-light
+      label: 'Grey (light)'
+    -
+      value: border-color--white
+      label: White
+    -
+      value: border-color--main
+      label: Main
+    -
+      value: border-color--main-dark
+      label: 'Main (dark)'
+    -
+      value: border-color--main-light
+      label: 'Main (light)'
+    -
+      value: border-color--second
+      label: Second
+    -
+      value: border-color--second-dark
+      label: 'Second (dark)'
+    -
+      value: border-color--second-light
+      label: 'Second (light)'
+    -
+      value: border-color--third
+      label: Third
+    -
+      value: border-color--third-dark
+      label: 'Third (dark)'
+    -
+      value: border-color--third-light
+      label: 'Third (light)'
+    -
+      value: border-color--accent
+      label: Accent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

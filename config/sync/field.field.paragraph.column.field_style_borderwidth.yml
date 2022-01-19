@@ -1,0 +1,23 @@
+uuid: 0ab26092-e11a-4bc7-8a8a-09c61e204cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_borderwidth
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+id: paragraph.column.field_style_borderwidth
+field_name: field_style_borderwidth
+entity_type: paragraph
+bundle: column
+label: 'Border width'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: border--0-none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

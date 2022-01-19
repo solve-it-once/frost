@@ -7,6 +7,10 @@ dependencies:
     - field.field.paragraph.column.field_data_animation
     - field.field.paragraph.column.field_style_animate
     - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_bordercolor
+    - field.field.paragraph.column.field_style_borderradius
+    - field.field.paragraph.column.field_style_borderwidth
+    - field.field.paragraph.column.field_style_boxshadow
     - field.field.paragraph.column.field_style_color
     - field.field.paragraph.column.field_style_flex
     - field.field.paragraph.column.field_style_justifycontent
@@ -18,6 +22,7 @@ dependencies:
     - paragraphs.paragraphs_type.column
   module:
     - entity_reference_revisions
+    - options
 _core:
   default_config_hash: lHXkD6lk1dpBVaGm71HlDTJPvfAQs9NE3p8uUELPs3M
 id: paragraph.column.default
@@ -33,6 +38,37 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_style_bordercolor:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_style_borderradius:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_style_borderwidth:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_style_boxshadow:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
   field_data_animation: true

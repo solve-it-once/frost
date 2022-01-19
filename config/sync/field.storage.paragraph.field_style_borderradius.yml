@@ -1,0 +1,30 @@
+uuid: 31a9ae3b-3513-4928-bcd8-6ebe3dbfffdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_borderradius
+field_name: field_style_borderradius
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: border-radius--default
+      label: 'Default (slightly round)'
+    -
+      value: border-radius--none
+      label: Square
+    -
+      value: border-radius--round
+      label: Round
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
