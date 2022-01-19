@@ -1,0 +1,74 @@
+uuid: 021c781b-b189-4374-bce1-4898967ec618
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.statistic_percent.field_decimal
+    - field.field.paragraph.statistic_percent.field_link
+    - field.field.paragraph.statistic_percent.field_text
+    - field.field.paragraph.statistic_percent.field_text_prefix
+    - field.field.paragraph.statistic_percent.field_text_suffix
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - field_formatter_class
+    - human_decimal
+    - link
+    - text
+_core:
+  default_config_hash: lB7IhBC7Q8XJFs5CE8QoO4ZfN_4Tk0seoif5FzDd0oA
+id: paragraph.statistic_percent.search_index
+targetEntityType: paragraph
+bundle: statistic_percent
+mode: search_index
+content:
+  field_decimal:
+    type: human_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: '2'
+      prefix_suffix: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text_prefix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_suffix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

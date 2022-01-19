@@ -6,7 +6,6 @@
  */
 
 use Drupal\Component\Utility\Html;
-use Drupal\Core\Template\Attribute;
 use Drupal\Core\Render\Markup;
 
 // Include the helper function for entities.
@@ -16,16 +15,16 @@ require_once 'includes/entity_style_classes.inc';
 require_once 'includes/hook_theme_suggestions_HOOK_alter.inc';
 
 // Include large preprocess functions.
-require_once  'includes/preprocess_field.inc';
-require_once  'includes/preprocess_commerce_product.inc';
-require_once  'includes/preprocess_html.inc';
-require_once  'includes/preprocess_media.inc';
-require_once  'includes/preprocess_node.inc';
-require_once  'includes/preprocess_paragraph.inc';
-require_once  'includes/preprocess_region.inc';
-require_once  'includes/preprocess_taxonomy_term.inc';
-require_once  'includes/preprocess_user.inc';
-require_once  'includes/preprocess_views.inc';
+require_once 'includes/preprocess_field.inc';
+require_once 'includes/preprocess_commerce_product.inc';
+require_once 'includes/preprocess_html.inc';
+require_once 'includes/preprocess_media.inc';
+require_once 'includes/preprocess_node.inc';
+require_once 'includes/preprocess_paragraph.inc';
+require_once 'includes/preprocess_region.inc';
+require_once 'includes/preprocess_taxonomy_term.inc';
+require_once 'includes/preprocess_user.inc';
+require_once 'includes/preprocess_views.inc';
 
 /**
  * Implements hook_preprocess_page() for PAGE document templates.
@@ -64,10 +63,7 @@ function frost_theme_preprocess_facets_item_list(&$vars) {
       $vars['items'][$key]['attributes']->addClass('facet-active-item');
       $has_active_class = 'has-active-items';
     }
-    elseif ($value['value']['#title']['#value'] === 'Reset') {
-      // Do nothing.
-    }
-    else {
+    elseif ($value['value']['#title']['#value'] !== 'Reset') {
       $vars['items'][$key]['attributes']->addClass('facet-inactive-item');
     }
   }
@@ -79,8 +75,8 @@ function frost_theme_preprocess_facets_item_list(&$vars) {
  * Implements hook_preprocess_input().
  */
 function frost_theme_preprocess_input(&$vars) {
+  // Ensure we use the <button> element since input[type=button] is weird on iOS.
   $vars['button'] = FALSE;
-
   if (isset($vars['attributes']['type']) && in_array($vars['attributes']['type'], [
       'button',
       'reset',

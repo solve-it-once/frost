@@ -14,6 +14,7 @@ dependencies:
     - node.type.article
   module:
     - entity_reference_revisions
+    - field_formatter_class
     - link
     - text
     - user
@@ -43,9 +44,11 @@ content:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: search_index
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
   field_link:

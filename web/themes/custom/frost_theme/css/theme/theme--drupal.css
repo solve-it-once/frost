@@ -186,3 +186,12 @@
   background-color: var(--color--second);
   padding: calc(2 * var(--spacing--single)) 0;
 }
+
+/**
+ * Webform datepicker.
+ *
+ * In some versions of webform the image is broken, so better to just not display it.
+ */
+.ui-datepicker-trigger {
+  display: none;
+}

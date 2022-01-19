@@ -1,0 +1,35 @@
+uuid: c3950311-f323-4331-9347-11ab44606faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.link.field_link
+    - field.field.paragraph.link.field_style_button
+    - field.field.paragraph.link.field_style_childbgcolor
+    - paragraphs.paragraphs_type.link
+  module:
+    - link
+_core:
+  default_config_hash: kIyKItxq-rTE5zOTFXMdHOT_w8OqLSdv7a5Ki9_hle0
+id: paragraph.link.search_index
+targetEntityType: paragraph
+bundle: link
+mode: search_index
+content:
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_style_button: true
+  field_style_childbgcolor: true
+  search_api_excerpt: true

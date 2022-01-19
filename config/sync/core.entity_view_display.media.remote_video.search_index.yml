@@ -1,0 +1,28 @@
+uuid: 8097a8cb-63fc-4938-a9a9-ea3ca59b055f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.search_index
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+id: media.remote_video.search_index
+targetEntityType: media
+bundle: remote_video
+mode: search_index
+content:
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_oembed_video: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

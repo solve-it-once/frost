@@ -13,6 +13,7 @@ dependencies:
     - field.field.commerce_product.default.field_tags
   module:
     - entity_reference_revisions
+    - field_formatter_class
     - text
 _core:
   default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
@@ -65,9 +66,11 @@ content:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: search_index
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 7
     region: content
   field_tags:

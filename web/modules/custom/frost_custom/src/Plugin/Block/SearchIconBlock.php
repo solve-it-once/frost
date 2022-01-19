@@ -2,7 +2,6 @@
 
 namespace Drupal\frost_custom\Plugin\Block;
 
-use Drupal;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormState;
 use Drupal\views\Views;
@@ -31,8 +30,8 @@ class SearchIconBlock extends BlockBase {
     $view->setDisplay('block_1');
     $view->initHandlers();
 
+    // Get the search form anew, so things like autocomplete work.
     $form_state = new FormState();
-
     $form_state->setStorage([
       'view' => $view,
       'display' => $view->display_handler->display,
@@ -40,12 +39,12 @@ class SearchIconBlock extends BlockBase {
     ])->setMethod('get')
       ->setAlwaysProcess()
       ->disableRedirect();
-
     $form_state->set('rerender', NULL);
 
-    $form = Drupal::formBuilder()
+    $form = \Drupal::formBuilder()
       ->buildForm('\Drupal\views\Form\ViewsExposedForm', $form_state);
 
+    // Search page must have the /search path alias.
     $form['#action'] = '/search';
 
     // Render search form.
@@ -53,7 +52,12 @@ class SearchIconBlock extends BlockBase {
       '#markup' => '<span class="search-icon icon magnifying-glass"></span>',
       'form_wrapper' => [
         '#type' => 'container',
-        '#attributes' => ['class' => ['search-form-wrapper']],
+        '#attributes' => [
+          'class' => [
+            'search-form-wrapper',
+            'view-search',
+          ],
+        ],
         'form' => $form,
       ],
     ];
@@ -61,5 +65,6 @@ class SearchIconBlock extends BlockBase {
     return $build;
 
   }
+
 
 }

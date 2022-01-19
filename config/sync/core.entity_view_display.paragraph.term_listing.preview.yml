@@ -1,0 +1,29 @@
+uuid: 5288489e-619e-4a2f-bf6a-85a87a3ad925
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.term_listing.field_style_layout
+    - field.field.paragraph.term_listing.field_terms
+    - field.field.paragraph.term_listing.field_viewmode
+    - paragraphs.paragraphs_type.term_listing
+_core:
+  default_config_hash: _Y24ekVkCYHG-RkMxPsVXtsj_kWmxV_RQDoZtRBNUSE
+id: paragraph.term_listing.preview
+targetEntityType: paragraph
+bundle: term_listing
+mode: preview
+content:
+  field_terms:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

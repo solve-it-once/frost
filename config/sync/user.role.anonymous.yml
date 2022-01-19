@@ -6,6 +6,7 @@ dependencies:
     - commerce_checkout
     - commerce_product
     - media
+    - search_api_autocomplete
     - system
 _core:
   default_config_hash: DY2ei1O34_xvudZImYaldL5aZ_KrTURPmagWHmNbH4Y
@@ -17,5 +18,6 @@ permissions:
   - 'access checkout'
   - 'access content'
   - 'access user profiles'
+  - 'use search_api_autocomplete for search'
   - 'view commerce_product'
   - 'view media'

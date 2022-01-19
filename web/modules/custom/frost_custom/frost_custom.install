@@ -4,10 +4,3 @@
  * @file
  * Install file for misc updates.
  */
-
-/**
- * Implements hook_install().
- */
-function frost_custom_install() {
-  frost_custom_add_view_modes();
-}

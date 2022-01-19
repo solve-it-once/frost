@@ -24,10 +24,10 @@ content:
       frameborder: '0'
       scrolling: auto
       transparency: '0'
+      allowfullscreen: '0'
       tokensupport: '0'
       width: ''
       height: ''
-      expose_class: ''
     third_party_settings: {  }
     weight: 0
     region: content

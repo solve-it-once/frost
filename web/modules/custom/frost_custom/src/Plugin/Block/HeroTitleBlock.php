@@ -9,7 +9,6 @@ namespace Drupal\frost_custom\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Block\TitleBlockPluginInterface;
-use Drupal\Core\Entity\EntityDisplayRepository;
 
 /**
  * Provides either the current page's hero or the page title.
@@ -48,9 +47,9 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
         'class' => [
           'entity-bundle-stripe',
           'text-align--center',
-          'background-color--grey-light',
+          'background-color--grey-dark',
           'background-image--default',
-          'color--main-dark',
+          'color--white',
         ],
       ],
       '#type' => 'page_title',
@@ -63,24 +62,19 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
     foreach ($paged_entity_types as $type) {
       if (isset($parameters[$type])) {
         $entity = $parameters[$type];
-        $bundle = 'unknown';
-        if (method_exists($entity, 'bundle')) {
-          $bundle = $entity->bundle();
-        }
-        $id = 0;
-        if (method_exists($entity, 'id')) {
-          $id = $entity->id();
-        }
+        $bundle = (method_exists($entity, 'bundle')) ? $entity->bundle : 'unknown';
 
         // Get the enabled view modes.
-        $view_displays = \Drupal::service('entity_display.repository')->getViewModeOptionsByBundle($type, $bundle);
+        $view_displays = \Drupal::service('entity_display.repository')
+          ->getViewModeOptionsByBundle($type, $bundle);
 
+        // Determine if there is a stripe paragraph in the field_hero to use.
         if (method_exists($entity, 'hasField') && $entity->hasField('field_hero')) {
           $field_hero = $entity->get('field_hero')->getValue();
         }
 
         if (isset($field_hero) && count($field_hero)) {
-          // Set the block content to the hero if appropriate.
+          // Set the block content to the hero paragraph if appropriate.
           $return = [
             '#cache' => [
               'contexts' => ['url'],
@@ -96,6 +90,8 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface {
           ];
         }
         elseif (array_key_exists('hero', $view_displays)) {
+          // If the page does not have a hero paragraph stripe, try using the
+          // content type's 'hero' view mode if set.
           $view_builder = \Drupal::entityTypeManager()->getViewBuilder($type);
           $return = [
             '#cache' => [

@@ -1,0 +1,36 @@
+uuid: 90fcb3ea-17ac-439f-8859-d9af069aa637
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.rich_text.field_style_color_all
+    - field.field.paragraph.rich_text.field_style_fontsize
+    - field.field.paragraph.rich_text.field_style_fontweight
+    - field.field.paragraph.rich_text.field_style_textcolumns
+    - field.field.paragraph.rich_text.field_style_texttransform
+    - field.field.paragraph.rich_text.field_text
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - text
+_core:
+  default_config_hash: 3a5vdnCUv8oAk4C71PfhMFlRkodYY8AevaRlqTx2eQc
+id: paragraph.rich_text.preview
+targetEntityType: paragraph
+bundle: rich_text
+mode: preview
+content:
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_style_color_all: true
+  field_style_fontsize: true
+  field_style_fontweight: true
+  field_style_textcolumns: true
+  field_style_texttransform: true
+  search_api_excerpt: true

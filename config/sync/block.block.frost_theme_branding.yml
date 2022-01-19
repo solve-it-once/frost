@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: text-align--center
 _core:
   default_config_hash: hpFjsDcBwc4nEnze_eK-hZaa5IHk3tvfCW8b6tGDx78
 id: frost_theme_branding
@@ -21,5 +25,5 @@ settings:
   provider: system
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

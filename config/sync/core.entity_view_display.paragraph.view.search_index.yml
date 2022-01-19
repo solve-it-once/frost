@@ -1,0 +1,34 @@
+uuid: 31dd244e-4339-4b0f-90d0-be7b6d2b86c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.view.field_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - field_formatter_class
+    - viewsreference
+_core:
+  default_config_hash: FvXbRS_B-hhLLSBxBtxJ-XwZki3CYCiYfUugT6sVrcE
+id: paragraph.view.search_index
+targetEntityType: paragraph
+bundle: view
+mode: search_index
+content:
+  field_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

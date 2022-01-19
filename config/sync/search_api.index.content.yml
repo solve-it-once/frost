@@ -8,21 +8,14 @@ dependencies:
     - field.storage.node.field_article_type
     - field.storage.node.field_date
     - field.storage.node.field_tags
-    - field.storage.paragraph.field_text
-    - field.storage.paragraph.field_attr_open
-    - field.storage.paragraph.field_title
     - search_api.server.solr
     - core.entity_view_mode.commerce_product.search_index
-    - core.entity_view_mode.media.search_index
     - core.entity_view_mode.node.search_index
-    - core.entity_view_mode.paragraph.search_index
     - core.entity_view_mode.taxonomy_term.search_index
   module:
     - search_api_solr
     - commerce_product
-    - media
     - node
-    - paragraphs
     - taxonomy
     - search_api
 third_party_settings:
@@ -82,22 +75,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.commerce_product.body
-  bundle:
-    label: 'Media type'
-    datasource_id: 'entity:media'
-    property_path: bundle
-    type: string
-    dependencies:
-      module:
-        - media
-  changed:
-    label: Changed
-    datasource_id: 'entity:media'
-    property_path: changed
-    type: date
-    dependencies:
-      module:
-        - media
   changed_1:
     label: Changed
     datasource_id: 'entity:node'
@@ -122,14 +99,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:media'
-    property_path: created
-    type: date
-    dependencies:
-      module:
-        - media
   created_1:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -146,14 +115,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  created_4:
-    label: 'Authored on'
-    datasource_id: 'entity:paragraph'
-    property_path: created
-    type: date
-    dependencies:
-      module:
-        - paragraphs
   description:
     label: Description
     datasource_id: 'entity:taxonomy_term'
@@ -170,14 +131,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_article_type
-  field_attr_open:
-    label: 'Expanded by default'
-    datasource_id: 'entity:paragraph'
-    property_path: field_attr_open
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.paragraph.field_attr_open
   field_date:
     label: Date
     datasource_id: 'entity:node'
@@ -202,30 +155,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.commerce_product.field_tags
-  field_text:
-    label: Body
-    datasource_id: 'entity:paragraph'
-    property_path: field_text
-    type: 'solr_text_custom:edge'
-    dependencies:
-      config:
-        - field.storage.paragraph.field_text
-  field_title:
-    label: 'Label (to toggle)'
-    datasource_id: 'entity:paragraph'
-    property_path: field_title
-    type: 'solr_text_custom:edge'
-    dependencies:
-      config:
-        - field.storage.paragraph.field_title
-  id:
-    label: ID
-    datasource_id: 'entity:paragraph'
-    property_path: id
-    type: integer
-    dependencies:
-      module:
-        - paragraphs
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -250,22 +179,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  mid:
-    label: ID
-    datasource_id: 'entity:media'
-    property_path: mid
-    type: integer
-    dependencies:
-      module:
-        - media
-  name:
-    label: Name
-    datasource_id: 'entity:media'
-    property_path: name
-    type: string
-    dependencies:
-      module:
-        - media
   name_1:
     label: Name
     datasource_id: 'entity:taxonomy_term'
@@ -367,14 +280,6 @@ field_settings:
     dependencies:
       module:
         - node
-  status_1:
-    label: Published
-    datasource_id: 'entity:media'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - media
   status_2:
     label: Published
     datasource_id: 'entity:taxonomy_term'
@@ -391,14 +296,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  status_5:
-    label: Published
-    datasource_id: 'entity:paragraph'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - paragraphs
   sticky:
     label: 'Sticky at top of lists'
     datasource_id: 'entity:node'
@@ -455,14 +352,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  type_3:
-    label: 'Paragraph type'
-    datasource_id: 'entity:paragraph'
-    property_path: type
-    type: string
-    dependencies:
-      module:
-        - paragraphs
   uid:
     label: uid
     datasource_id: 'entity:node'
@@ -471,14 +360,6 @@ field_settings:
     dependencies:
       module:
         - node
-  uid_1:
-    label: 'Authored by'
-    datasource_id: 'entity:media'
-    property_path: uid
-    type: integer
-    dependencies:
-      module:
-        - media
   uid_2:
     label: 'Authored by'
     datasource_id: 'entity:node'
@@ -497,14 +378,6 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  uuid:
-    label: UUID
-    datasource_id: 'entity:media'
-    property_path: uuid
-    type: string
-    dependencies:
-      module:
-        - media
   uuid_1:
     label: UUID
     datasource_id: 'entity:node'
@@ -553,21 +426,7 @@ datasource_settings:
     languages:
       default: true
       selected: {  }
-  'entity:media':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
   'entity:node':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
-  'entity:paragraph':
     bundles:
       default: true
       selected: {  }
@@ -607,22 +466,16 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - bundle
       - description
-      - field_text
-      - field_title
       - langcode
       - langcode_1
       - langcode_2
-      - name
       - name_1
       - rendered_item
       - title
       - title_1
       - type
       - type_1
-      - type_3
-      - uuid
       - uuid_1
       - uuid_2
       - uuid_3
@@ -642,22 +495,16 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - bundle
       - description
-      - field_text
-      - field_title
       - langcode
       - langcode_1
       - langcode_2
-      - name
       - name_1
       - rendered_item
       - title
       - title_1
       - type
       - type_1
-      - type_3
-      - uuid
       - uuid_1
       - uuid_2
       - uuid_3
@@ -678,22 +525,16 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - bundle
       - description
-      - field_text
-      - field_title
       - langcode
       - langcode_1
       - langcode_2
-      - name
       - name_1
       - rendered_item
       - title
       - title_1
       - type
       - type_1
-      - type_3
-      - uuid
       - uuid_1
       - uuid_2
       - uuid_3
@@ -710,8 +551,6 @@ processor_settings:
     fields:
       - body
       - description
-      - field_text
-      - field_title
       - name_1
       - rendered_item
       - title
@@ -726,8 +565,6 @@ processor_settings:
     fields:
       - body
       - description
-      - field_text
-      - field_title
       - name_1
       - rendered_item
       - title

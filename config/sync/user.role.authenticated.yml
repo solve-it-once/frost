@@ -9,6 +9,7 @@ dependencies:
     - commerce_product
     - honeypot
     - media
+    - search_api_autocomplete
     - system
 _core:
   default_config_hash: XeWQBoKQFC7lZln1-PALmSpfWNHdgfxGyvKL88QDuGw
@@ -23,6 +24,7 @@ permissions:
   - 'bypass honeypot protection'
   - 'cancel account'
   - 'manage own commerce_payment_method'
+  - 'use search_api_autocomplete for search'
   - 'view commerce_product'
   - 'view media'
   - 'view own commerce_order'

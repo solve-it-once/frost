@@ -1,0 +1,26 @@
+uuid: 4eac3bc0-6bdf-470b-9d15-4df8546290b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.block.field_block
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+_core:
+  default_config_hash: E0Bv3WdKTvIzUboon7uUn1TCuv_kSeYwPEecmKr3VX8
+id: paragraph.block.search_index
+targetEntityType: paragraph
+bundle: block
+mode: search_index
+content:
+  field_block:
+    type: block_field_label
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

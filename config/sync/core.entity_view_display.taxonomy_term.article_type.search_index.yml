@@ -11,6 +11,7 @@ dependencies:
     - taxonomy.vocabulary.article_type
   module:
     - entity_reference_revisions
+    - field_formatter_class
     - text
 _core:
   default_config_hash: KJhHIB8Fsstq6IOucLYaVCJowANcBjBEiuL1B56Dkg8
@@ -30,18 +31,22 @@ content:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: search_index
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
   field_sections:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: search_index
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 3
     region: content
   linked_title:
