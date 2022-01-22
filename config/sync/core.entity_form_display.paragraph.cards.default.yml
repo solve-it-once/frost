@@ -68,7 +68,7 @@ content:
       title: Card
       title_plural: Cards
       edit_mode: closed_expand_nested
-      closed_mode: summary
+      closed_mode: preview
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: button
@@ -81,8 +81,10 @@ content:
     third_party_settings:
       paragraphs_features:
         add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: true
         split_text: false
+        show_drag_and_drop: true
   field_style_layout:
     type: options_select
     weight: 1

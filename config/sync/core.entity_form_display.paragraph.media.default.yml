@@ -75,7 +75,7 @@ content:
       title: Hotspot
       title_plural: Hotspots
       edit_mode: closed_expand_nested
-      closed_mode: summary
+      closed_mode: preview
       autocollapse: none
       closed_mode_threshold: 1
       add_mode: dropdown
@@ -88,8 +88,10 @@ content:
     third_party_settings:
       paragraphs_features:
         add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: true
         split_text: false
+        show_drag_and_drop: true
   field_link:
     type: link_default
     weight: 3

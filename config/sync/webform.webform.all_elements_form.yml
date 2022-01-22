@@ -14,7 +14,7 @@ id: all_elements_form
 title: 'All elements form'
 description: 'Used for stylistic QA/UAT'
 category: ''
-elements: |
+elements: |-
   single_checkbox:
     '#type': checkbox
     '#title': 'Single checkbox'
@@ -143,8 +143,6 @@ elements: |
   date:
     '#type': date
     '#title': Date
-    '#datepicker': true
-    '#datepicker_button': true
     '#date_date_format': 'l, F j, Y'
   time:
     '#type': webform_time

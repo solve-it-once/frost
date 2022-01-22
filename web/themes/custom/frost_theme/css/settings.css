@@ -68,7 +68,7 @@
   --color--grey: #aaa;
   --color--grey-light: #f7f7f7;
   --color--white: #fff;
-  --color--main: #0081a7;
+  --color--main: #0081A7; /* This should be a 6-char hex with uppercase letters. */
   --color--main-dark: #002733;
   --color--main-light: #ccf4ff;
   --color--second: #f07167;
