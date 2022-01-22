@@ -1,0 +1,10 @@
+uuid: 79ae9200-3fdf-4c2b-9b89-69bfd70969db
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.plan
+label: plan
+targetEntityType: commerce_product
+cache: true

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.commerce_product.ief
     - field.field.paragraph.product_listing.field_products
     - field.field.paragraph.product_listing.field_style_layout
     - field.field.paragraph.product_listing.field_viewmode
@@ -68,14 +69,14 @@ content:
     weight: 2
     region: content
     settings:
-      form_mode: default
+      form_mode: ief
       override_labels: true
       label_singular: Product
       label_plural: Products
-      allow_new: false
+      allow_new: true
       allow_existing: true
       match_operator: CONTAINS
-      allow_duplicate: false
+      allow_duplicate: true
       collapsible: false
       collapsed: false
       revision: false

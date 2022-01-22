@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_hero
     - field.field.node.page.field_image
+    - field.field.node.page.field_notes
+    - field.field.node.page.field_scratch
     - field.field.node.page.field_sections
     - field.field.node.page.field_seo
     - field.field.node.page.field_tags
@@ -25,7 +27,7 @@ third_party_settings:
       label: Tagging
       region: content
       parent_name: ''
-      weight: 5
+      weight: 6
       format_type: fieldset
       format_settings:
         classes: ''
@@ -41,7 +43,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -81,14 +83,14 @@ content:
         show_drag_and_drop: true
   field_image:
     type: media_library_widget
-    weight: 2
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_sections:
     type: paragraphs
-    weight: 4
+    weight: 5
     region: content
     settings:
       title: Stripe
@@ -112,7 +114,7 @@ content:
         show_drag_and_drop: true
   field_seo:
     type: paragraphs
-    weight: 6
+    weight: 7
     region: content
     settings:
       title: SEO
@@ -205,4 +207,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_notes: true
+  field_scratch: true

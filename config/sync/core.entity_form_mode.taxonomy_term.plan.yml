@@ -1,0 +1,10 @@
+uuid: 91fa3c36-90f7-4765-a843-fb322ec3edc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.plan
+label: plan
+targetEntityType: taxonomy_term
+cache: true

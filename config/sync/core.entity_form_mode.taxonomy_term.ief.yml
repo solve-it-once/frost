@@ -1,0 +1,10 @@
+uuid: 0a45cbef-647d-492d-be11-ee9b0db4b13f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.ief
+label: ief
+targetEntityType: taxonomy_term
+cache: true

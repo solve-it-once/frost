@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.teaser
     - field.field.taxonomy_term.tag.field_hero
     - field.field.taxonomy_term.tag.field_image
+    - field.field.taxonomy_term.tag.field_notes
+    - field.field.taxonomy_term.tag.field_scratch
     - field.field.taxonomy_term.tag.field_sections
     - field.field.taxonomy_term.tag.field_seo
     - taxonomy.vocabulary.tag
@@ -38,6 +40,8 @@ hidden:
   breadcrumb: true
   description: true
   field_hero: true
+  field_notes: true
+  field_scratch: true
   field_sections: true
   field_seo: true
   langcode: true

@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.taxonomy_term.article_type.field_hero
     - field.field.taxonomy_term.article_type.field_image
+    - field.field.taxonomy_term.article_type.field_notes
+    - field.field.taxonomy_term.article_type.field_scratch
     - field.field.taxonomy_term.article_type.field_sections
     - field.field.taxonomy_term.article_type.field_seo
     - taxonomy.vocabulary.article_type
@@ -31,7 +33,7 @@ content:
     third_party_settings: {  }
   field_hero:
     type: paragraphs
-    weight: 3
+    weight: 4
     region: content
     settings:
       title: Paragraph
@@ -56,14 +58,14 @@ content:
         show_drag_and_drop: true
   field_image:
     type: media_library_widget
-    weight: 2
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_sections:
     type: paragraphs
-    weight: 4
+    weight: 5
     region: content
     settings:
       title: Paragraph
@@ -88,7 +90,7 @@ content:
         show_drag_and_drop: true
   field_seo:
     type: paragraphs
-    weight: 5
+    weight: 6
     region: content
     settings:
       title: Paragraph
@@ -117,7 +119,7 @@ content:
       include_locked: true
     third_party_settings: {  }
   menu:
-    weight: 10
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -131,15 +133,17 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 100
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_notes: true
+  field_scratch: true

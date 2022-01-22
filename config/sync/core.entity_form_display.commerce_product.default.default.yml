@@ -7,6 +7,8 @@ dependencies:
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_hero
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_notes
+    - field.field.commerce_product.default.field_scratch
     - field.field.commerce_product.default.field_sections
     - field.field.commerce_product.default.field_seo
     - field.field.commerce_product.default.field_tags
@@ -110,7 +112,7 @@ content:
         show_drag_and_drop: true
   field_seo:
     type: paragraphs
-    weight: 8
+    weight: 7
     region: content
     settings:
       title: SEO
@@ -145,13 +147,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -176,6 +178,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_notes: true
+  field_scratch: true
   langcode: true
   uid: true
   variations: true

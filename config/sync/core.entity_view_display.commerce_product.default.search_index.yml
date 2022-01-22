@@ -8,6 +8,8 @@ dependencies:
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_hero
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_notes
+    - field.field.commerce_product.default.field_scratch
     - field.field.commerce_product.default.field_sections
     - field.field.commerce_product.default.field_seo
     - field.field.commerce_product.default.field_tags
@@ -102,6 +104,8 @@ hidden:
   add_to_cart_link: true
   checkoutalt: true
   created: true
+  field_notes: true
+  field_scratch: true
   langcode: true
   readmore: true
   search_api_excerpt: true

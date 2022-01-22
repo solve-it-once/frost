@@ -9,8 +9,9 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_hero
     - field.field.node.event.field_image
-    - field.field.node.event.field_link
     - field.field.node.event.field_location
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_scratch
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
@@ -140,7 +141,8 @@ hidden:
   body: true
   field_components: true
   field_hero: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_sections: true
   field_seo: true
   field_tags: true

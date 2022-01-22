@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.search_index
     - field.field.taxonomy_term.article_type.field_hero
     - field.field.taxonomy_term.article_type.field_image
+    - field.field.taxonomy_term.article_type.field_notes
+    - field.field.taxonomy_term.article_type.field_scratch
     - field.field.taxonomy_term.article_type.field_sections
     - field.field.taxonomy_term.article_type.field_seo
     - taxonomy.vocabulary.article_type
@@ -62,6 +64,8 @@ content:
 hidden:
   breadcrumb: true
   field_image: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   langcode: true
   search_api_excerpt: true

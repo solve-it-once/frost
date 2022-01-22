@@ -1,0 +1,19 @@
+uuid: 41d4812c-9873-4179-a309-20c58329e8a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_notes
+    - taxonomy.vocabulary.tag
+id: taxonomy_term.tag.field_notes
+field_name: field_notes
+entity_type: taxonomy_term
+bundle: tag
+label: 'Notes (internal)'
+description: 'Let your team know what''s important about this content and any other priorities or @todos that may be relevant.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

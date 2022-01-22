@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.content
+    - core.entity_form_mode.user.ief
     - field.field.paragraph.user_listing.field_style_layout
     - field.field.paragraph.user_listing.field_users
     - field.field.paragraph.user_listing.field_viewmode
     - paragraphs.paragraphs_type.user_listing
+  module:
+    - inline_entity_form
 _core:
   default_config_hash: jwfYUZo9TTKrW508mKgbOn05X-7YnIljiZArcU2ti_M
 id: paragraph.user_listing.content
@@ -16,14 +19,21 @@ bundle: user_listing
 mode: content
 content:
   field_users:
-    type: entity_reference_autocomplete_tags
+    type: inline_entity_form_complex
     weight: 1
     region: content
     settings:
+      form_mode: ief
+      override_labels: true
+      label_singular: User
+      label_plural: Users
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
 hidden:
   created: true

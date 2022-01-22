@@ -8,7 +8,8 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_components
     - field.field.node.article.field_image
-    - field.field.node.article.field_link
+    - field.field.node.article.field_notes
+    - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
     - node.type.article
@@ -110,7 +111,8 @@ hidden:
   body: true
   field_article_type: true
   field_components: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
   langcode: true

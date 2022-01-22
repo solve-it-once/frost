@@ -1,0 +1,10 @@
+uuid: fb110bb6-cf4d-4738-bfb4-0434a8667035
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.plan
+label: plan
+targetEntityType: node
+cache: true

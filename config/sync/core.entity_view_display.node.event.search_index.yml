@@ -9,8 +9,9 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_hero
     - field.field.node.event.field_image
-    - field.field.node.event.field_link
     - field.field.node.event.field_location
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_scratch
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
@@ -19,7 +20,6 @@ dependencies:
     - datetime_range
     - entity_reference_revisions
     - field_formatter_class
-    - link
     - text
     - user
 _core:
@@ -68,18 +68,6 @@ content:
         class: ''
     weight: 11
     region: content
-  field_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 7
-    region: content
   field_location:
     type: string
     label: hidden
@@ -115,6 +103,8 @@ content:
 hidden:
   breadcrumb: true
   field_image: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   frost_submitted: true
   langcode: true

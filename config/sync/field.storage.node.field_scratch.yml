@@ -1,18 +1,16 @@
-uuid: c7f17e11-7a8e-4985-9e11-fdbdc296c756
+uuid: 38367d70-3882-4cae-9434-a2a6e6823281
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
-_core:
-  default_config_hash: lqDhhmTov2BlhsT0oBucyyt-o0pvbGopO_CNHybYj7M
-id: node.field_link
-field_name: field_link
+    - text
+id: node.field_scratch
+field_name: field_scratch
 entity_type: node
-type: link
+type: text_long
 settings: {  }
-module: link
+module: text
 locked: false
 cardinality: 1
 translatable: true

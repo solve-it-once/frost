@@ -1,0 +1,19 @@
+uuid: 1e473c98-6ecf-4516-b5ca-e10a9947f4d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.event
+id: node.event.field_notes
+field_name: field_notes
+entity_type: node
+bundle: event
+label: 'Notes (internal)'
+description: 'Let your team know what''s important about this content and any other priorities or @todos that may be relevant.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

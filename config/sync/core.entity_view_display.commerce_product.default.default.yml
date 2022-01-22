@@ -7,6 +7,8 @@ dependencies:
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_hero
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_notes
+    - field.field.commerce_product.default.field_scratch
     - field.field.commerce_product.default.field_sections
     - field.field.commerce_product.default.field_seo
     - field.field.commerce_product.default.field_tags
@@ -35,6 +37,8 @@ hidden:
   created: true
   field_hero: true
   field_image: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
   langcode: true

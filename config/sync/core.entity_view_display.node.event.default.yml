@@ -8,8 +8,9 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_hero
     - field.field.node.event.field_image
-    - field.field.node.event.field_link
     - field.field.node.event.field_location
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_scratch
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
@@ -61,7 +62,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   body: true
@@ -69,8 +70,9 @@ hidden:
   field_date: true
   field_hero: true
   field_image: true
-  field_link: true
   field_location: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
   frost_submitted: true

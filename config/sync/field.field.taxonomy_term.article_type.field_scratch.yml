@@ -1,0 +1,21 @@
+uuid: ade7b1be-ba14-46c3-9817-0f8c3aeeb929
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_scratch
+    - taxonomy.vocabulary.article_type
+  module:
+    - text
+id: taxonomy_term.article_type.field_scratch
+field_name: field_scratch
+entity_type: taxonomy_term
+bundle: article_type
+label: 'Content to place (internal)'
+description: 'HTML from the old version of the site, copy sent from the client in an email, etc. This is stuff that should get put on the page at some point.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

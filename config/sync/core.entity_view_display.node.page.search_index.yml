@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_hero
     - field.field.node.page.field_image
+    - field.field.node.page.field_notes
+    - field.field.node.page.field_scratch
     - field.field.node.page.field_sections
     - field.field.node.page.field_seo
     - field.field.node.page.field_tags
@@ -63,6 +65,8 @@ content:
 hidden:
   breadcrumb: true
   field_image: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   frost_submitted: true
   langcode: true

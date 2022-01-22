@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.node.ief
     - field.field.paragraph.content_listing.field_content
     - field.field.paragraph.content_listing.field_style_layout
     - field.field.paragraph.content_listing.field_viewmode
     - paragraphs.paragraphs_type.content_listing
   module:
     - field_group
+    - inline_entity_form
 third_party_settings:
   field_group:
     group_admin:
@@ -61,14 +63,21 @@ bundle: content_listing
 mode: default
 content:
   field_content:
-    type: entity_reference_autocomplete_tags
+    type: inline_entity_form_complex
     weight: 9
     region: content
     settings:
+      form_mode: ief
+      override_labels: true
+      label_singular: Content
+      label_plural: Content
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
   field_style_layout:
     type: options_select
