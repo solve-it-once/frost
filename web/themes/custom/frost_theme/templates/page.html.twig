@@ -16,10 +16,14 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>
     {{ page.pre_content }}
-    <div class="content-and-sidebar">
-      {{ page.content_top }}
-      {{ page.content }}
-      {{ page.content_bottom }}
+    <div class="content-and-sidebar display--flex layout--flex-row">
+      <div class="middle-column flex--auto">
+        {{ page.content_top }}
+        {{ page.content }}
+        {{ page.content_bottom }}
+      </div>
+      {{ page.sidebar_first }}
+      {{ page.sidebar_second }}
     </div>
     {{ page.post_content }}
   </main>

@@ -57,6 +57,23 @@ function frost_theme_preprocess_html(&$vars) {
     $vars['body_classes'][] = Html::cleanCssIdentifier('node--type-' . $vars['node_type']);
   }
 
+  // Add information about the number of sidebars.
+  // @see bartik_preprocess_html().
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $vars['body_classes'][] = 'layout-two-sidebars';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $vars['body_classes'][] = 'layout-one-sidebar';
+    $vars['body_classes'][] = 'layout-sidebar-first';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $vars['body_classes'][] = 'layout-one-sidebar';
+    $vars['body_classes'][] = 'layout-sidebar-second';
+  }
+  else {
+    $vars['body_classes'][] = 'layout-no-sidebars';
+  }
+
   // Perform operations based on page context (node, term, etc.).
   $parameters = \Drupal::routeMatch()->getParameters()->all();
   $paged_entity_types = ['node', 'taxonomy_term', 'commerce_product'];

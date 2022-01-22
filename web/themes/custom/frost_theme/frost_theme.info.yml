@@ -18,7 +18,9 @@ regions:
   splash: Splash
   pre_content: Pre-content
   content_top: Content top
+  sidebar_first: Sidebar first
   content: Content
+  sidebar_second: Sidebar second
   content_bottom: Content bottom
   post_content: Post-content
   footer: Footer

@@ -41,6 +41,11 @@ function frost_theme_preprocess_region(&$vars) {
     case 'sidebar_first':
     case 'sidebar_second':
       $vars['html_tag'] = 'aside';
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('flex--1');
+
+      if ($vars['region'] === 'sidebar_first') {
+        $vars['attributes']['class'][] = Html::cleanCssIdentifier('order--neg1');
+      }
 
       break;
 

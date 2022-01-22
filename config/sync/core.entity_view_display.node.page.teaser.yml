@@ -23,10 +23,13 @@ bundle: page
 mode: teaser
 content:
   body:
-    type: text_default
+    type: text_summary_or_trimmed
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings:
+      trim_length: 280
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 2
     region: content
   field_image:
