@@ -54,6 +54,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  form_mode_manager: 0
   frost_custom: 0
   hal: 0
   honeypot: 0

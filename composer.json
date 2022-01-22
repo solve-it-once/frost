@@ -90,6 +90,7 @@
         "drupal/facets": "^2.0",
         "drupal/field_formatter_class": "^1.1",
         "drupal/field_group": "3.x-dev",
+        "drupal/form_mode_manager": "^2.0@dev",
         "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.0",
         "drupal/human_decimal": "^3.0",
