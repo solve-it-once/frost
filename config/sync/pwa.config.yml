@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: cP1TZQyv1WdET3iepl2QoyOPK7VeO0xHm0lU_FU1Wmc
+site_name: Frost
+short_name: Frost
+description: 'My favorite website'
+start_url: /
+lang: en
+theme_color: '#ff0000'
+background_color: '#f2f2f2'
+display: minimal-ui
+default_image: '1'
+urls_to_cache: ''
+urls_to_exclude: "admin/.*\r\nuser/.*"
+offline_page: /offline
+cache_version: '1'
+cross_origin: false
+skip_waiting: false

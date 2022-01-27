@@ -11,5 +11,5 @@ _core:
   default_config_hash: tqetwDU_yDMn3sNmAewKnNJnEaAo5yl1Gxca0JqFkLM
 id: footer-main
 label: 'Footer main'
-description: 'The top level of the main menu for the footer'
+description: 'Important pages that should appear in the footer rather than header'
 locked: false

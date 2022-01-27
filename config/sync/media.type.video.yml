@@ -6,7 +6,7 @@ _core:
   default_config_hash: '--3N3MblP52v1oRmdagY1RAjT-sirhKQi4oGubXSK14'
 id: video
 label: Video
-description: ''
+description: 'Upload your own mp4 video files rather than embedding from a third-party service. Should only be used for small videos, especially stripe backgrounds, where size and bandwidth aren''t a concern.'
 source: video_file
 queue_thumbnail_downloads: false
 new_revision: true

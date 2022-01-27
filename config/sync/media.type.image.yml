@@ -6,7 +6,7 @@ _core:
   default_config_hash: De3q9cK8T48of9IRgcsBQf81_mxLSIFJ1b3I7GODkNg
 id: image
 label: Image
-description: ''
+description: 'Images to display on the site, with the option to add alt text and other metadata.'
 source: image
 queue_thumbnail_downloads: false
 new_revision: true

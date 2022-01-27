@@ -15,4 +15,10 @@ effects:
       width: null
       height: 235
       upscale: false
+  fc021b4e-1935-49c5-be87-cfad269e8afb:
+    uuid: fc021b4e-1935-49c5-be87-cfad269e8afb
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
 pipeline: __default__

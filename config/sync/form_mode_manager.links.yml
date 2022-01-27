@@ -1,8 +1,9 @@
 _core:
   default_config_hash: GgQPFR9_W7yU3PXDjhT5ktVYWuoA5S4H-y88-l_5t_g
+langcode: en
 local_tasks:
   node:
-    position: secondary
+    position: primary
   user:
     position: secondary
   block_content:
@@ -14,5 +15,10 @@ local_tasks:
   media:
     position: secondary
   taxonomy_term:
-    position: secondary
-langcode: en
+    position: primary
+  commerce_product:
+    position: primary
+  commerce_shipment:
+    position: primary
+  paragraph:
+    position: primary

@@ -11,5 +11,5 @@ _core:
   default_config_hash: p5CtWCsRfIz2kZLRl4Ks4-KIiyZdgAVNaA004xVRlos
 id: utility
 label: Utility
-description: ''
+description: '''Verb'' links for above the header (nouns belong in the main menu)'
 locked: false

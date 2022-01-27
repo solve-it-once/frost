@@ -25,8 +25,9 @@ function frost_theme_preprocess_html(&$vars) {
   ) {
     $title = $title->render();
   }
+
   // Do the array version, too, if the title is an array by here.
-  if (isset($title['#markup'])) {
+  if (is_array($title) && isset($title['#markup'])) {
     $title = $title['#markup'];
   }
 

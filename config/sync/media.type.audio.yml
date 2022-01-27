@@ -6,7 +6,7 @@ _core:
   default_config_hash: 8tPIlQQl_fKkc4ZIv2k3nyXthhwD-t8UInCuuaKyROY
 id: audio
 label: Audio
-description: ''
+description: 'Upload an mp3, wav, or aac file and display it as an audio player.'
 source: audio_file
 queue_thumbnail_downloads: false
 new_revision: true

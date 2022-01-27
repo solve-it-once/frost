@@ -13,5 +13,5 @@ _core:
   default_config_hash: 6Oe4A85rVu15d-NT2UM_lwdYXTbZR-GX56PKgJfXYhQ
 name: 'Article type'
 vid: article_type
-description: ''
+description: 'Provides the ability to differentiate between blogs, news, and other kinds of articles on the site'
 weight: 0

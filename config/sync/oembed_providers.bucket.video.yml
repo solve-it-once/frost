@@ -1,0 +1,11 @@
+uuid: a8640da0-ce05-4bb6-ad15-a36899b47c43
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: 'Remote video'
+description: 'oEmbed providers for the remote_video media type specifically'
+providers:
+  - TikTok
+  - Vimeo
+  - YouTube

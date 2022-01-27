@@ -6,7 +6,7 @@ _core:
   default_config_hash: rA4yL1GJS1bexdKOLVRhxcXM7YmhAakvHqtDYBKO0YA
 id: document
 label: Document
-description: ''
+description: 'Downloadable document content, such as txt, doc, docx, pdf, or zip.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: true

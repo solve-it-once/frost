@@ -15,4 +15,10 @@ effects:
       width: 45
       height: 45
       anchor: center-center
+  8b34ed30-6096-4018-82e3-3a93b6d62a7b:
+    uuid: 8b34ed30-6096-4018-82e3-3a93b6d62a7b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
 pipeline: __default__

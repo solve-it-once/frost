@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.search_index
     - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_media_provider
     - media.type.remote_video
 id: media.remote_video.search_index
 targetEntityType: media
@@ -22,6 +23,7 @@ content:
 hidden:
   created: true
   field_media_oembed_video: true
+  field_media_provider: true
   langcode: true
   search_api_excerpt: true
   thumbnail: true

@@ -22,7 +22,7 @@ dependencies:
 id: node
 label: Node
 module: views
-description: ''
+description: 'Front-end and administrative displays of node content'
 tag: ''
 base_table: node_field_data
 base_field: nid

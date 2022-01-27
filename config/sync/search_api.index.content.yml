@@ -3,20 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.commerce_product.field_tags
     - field.storage.commerce_product.body
     - field.storage.node.field_article_type
     - field.storage.node.field_date
     - field.storage.node.field_tags
+    - field.storage.commerce_product.field_tags
     - search_api.server.solr
     - core.entity_view_mode.commerce_product.search_index
     - core.entity_view_mode.node.search_index
     - core.entity_view_mode.taxonomy_term.search_index
   module:
     - search_api_solr
-    - commerce_product
     - node
     - taxonomy
+    - commerce_product
     - search_api
 third_party_settings:
   search_api_solr:
@@ -357,6 +357,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -365,8 +367,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -454,7 +454,7 @@ processor_settings:
     prefix: '<strong>'
     suffix: '</strong>'
     excerpt: true
-    excerpt_always: false
+    excerpt_always: true
     excerpt_length: 256
     exclude_fields: {  }
     highlight: always
@@ -519,9 +519,6 @@ processor_settings:
       - Po
       - Ps
   ignorecase:
-    weights:
-      preprocess_index: -46
-      preprocess_query: -46
     all_fields: true
     fields:
       - body
@@ -542,11 +539,10 @@ processor_settings:
   language_with_fallback: {  }
   rendered_item: {  }
   reverse_entity_references: {  }
-  solr_date_range: {  }
-  stemmer:
+  solr_date_range:
     weights:
-      preprocess_index: -38
-      preprocess_query: -36
+      preprocess_index: 0
+  stemmer:
     all_fields: true
     fields:
       - body
@@ -558,9 +554,6 @@ processor_settings:
       mexican: mexic
       texan: texa
   tokenizer:
-    weights:
-      preprocess_index: -44
-      preprocess_query: -42
     all_fields: true
     fields:
       - body
@@ -576,12 +569,21 @@ processor_settings:
     weights:
       preprocess_index: -36
     boosts:
-      'entity:media':
+      'entity:commerce_product':
         datasource_boost: !!float 1
+        bundle_boosts:
+          default: !!float 0
       'entity:node':
-        datasource_boost: !!float 1
+        datasource_boost: !!float 0
+        bundle_boosts:
+          article: !!float 0
+          event: !!float 0
+          page: !!float 0
       'entity:taxonomy_term':
-        datasource_boost: !!float 1
+        datasource_boost: !!float 0
+        bundle_boosts:
+          article_type: !!float 0
+          tag: !!float 0
 tracker_settings:
   default:
     indexing_order: fifo

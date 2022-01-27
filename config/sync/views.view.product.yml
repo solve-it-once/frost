@@ -20,7 +20,7 @@ dependencies:
 id: product
 label: Product
 module: views
-description: ''
+description: 'Custom front-end and administrative displays of product content'
 tag: ''
 base_table: commerce_product_field_data
 base_field: product_id

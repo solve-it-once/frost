@@ -13,5 +13,5 @@ _core:
   default_config_hash: YKcbQNLN7rOw1jhMDmhqoYNs2VdcfiFEYkUuKnQGeec
 name: Tag
 vid: tag
-description: ''
+description: 'Freeform description and relationships between content'
 weight: 0

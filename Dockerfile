@@ -11,6 +11,8 @@ RUN a2enmod rewrite
 # install the PHP extensions we need
 RUN set -ex \
   && buildDeps=' \
+    libmagickwand-dev \
+    imagemagick \
     jpegoptim \
     libjpeg62-turbo-dev \
     libmcrypt-dev \
@@ -24,6 +26,8 @@ RUN set -ex \
     zlib1g-dev \
   ' \
   && apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* \
+  && pecl install imagick \
+  && docker-php-ext-enable imagick \
   && docker-php-ext-configure gd \
     --with-jpeg=/usr \
   && docker-php-ext-install -j "$(nproc)" bcmath gd mbstring opcache pdo pdo_mysql pdo_pgsql zip \
@@ -44,9 +48,11 @@ RUN { \
 
 # x them bugs
 RUN yes | pecl install xdebug \
-    && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
-    && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/xdebug.ini \
-    && echo "xdebug.remote_autostart=off" >> /usr/local/etc/php/conf.d/xdebug.ini
+    && docker-php-ext-enable xdebug \
+    && echo "zend_extension=xdebug" > /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.mode=develop,debug" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/xdebug.ini
 
 WORKDIR /var/www/html
 

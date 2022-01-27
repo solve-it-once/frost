@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: remote_video
 label: 'Remote video'
-description: ''
+description: 'Embedded videos hosted elsewhere, such as TikTok, Vimeo, or YouTube.'
 source: 'oembed:video'
 queue_thumbnail_downloads: false
 new_revision: true
@@ -12,7 +12,9 @@ source_configuration:
   source_field: field_media_oembed_video
   thumbnails_directory: 'public://oembed_thumbnails'
   providers:
-    - YouTube
+    - TikTok
     - Vimeo
+    - YouTube
 field_map:
   title: name
+  provider_name: field_media_provider

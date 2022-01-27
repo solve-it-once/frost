@@ -53,6 +53,7 @@ module:
   field_group: 0
   field_ui: 0
   file: 0
+  file_mdm: 0
   filter: 0
   form_mode_manager: 0
   frost_custom: 0
@@ -63,6 +64,8 @@ module:
   image: 0
   imageapi_optimize: 0
   imageapi_optimize_binaries: 0
+  imageapi_optimize_resmushit: 0
+  imagemagick: 0
   inline_entity_form: 0
   inline_form_errors: 0
   jquery_ui: 0
@@ -82,6 +85,7 @@ module:
   metatag: 0
   metatag_open_graph: 0
   node: 0
+  oembed_providers: 0
   options: 0
   page_cache: 0
   paragraphs_edit: 0
@@ -92,6 +96,7 @@ module:
   path_alias: 0
   physical: 0
   profile: 0
+  pwa: 0
   quickedit: 0
   redirect: 0
   redirect_404: 0
@@ -105,6 +110,7 @@ module:
   settings_tray: 0
   similarterms: 0
   simple_sitemap: 0
+  sophron: 0
   state_machine: 0
   styleguide: 0
   subpathauto: 0

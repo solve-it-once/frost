@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_media_provider
     - media.type.remote_video
   module:
     - field_formatter_class
@@ -26,6 +27,7 @@ content:
     region: content
 hidden:
   created: true
+  field_media_provider: true
   langcode: true
   name: true
   search_api_excerpt: true
