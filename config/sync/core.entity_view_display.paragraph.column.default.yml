@@ -22,7 +22,6 @@ dependencies:
     - paragraphs.paragraphs_type.column
   module:
     - entity_reference_revisions
-    - options
 _core:
   default_config_hash: lHXkD6lk1dpBVaGm71HlDTJPvfAQs9NE3p8uUELPs3M
 id: paragraph.column.default
@@ -39,41 +38,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_style_bordercolor:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_style_borderradius:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_style_borderwidth:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_style_boxshadow:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 4
-    region: content
 hidden:
   field_data_animation: true
   field_style_animate: true
   field_style_bgcolor: true
+  field_style_bordercolor: true
+  field_style_borderradius: true
+  field_style_borderwidth: true
+  field_style_boxshadow: true
   field_style_color: true
   field_style_flex: true
   field_style_justifycontent: true

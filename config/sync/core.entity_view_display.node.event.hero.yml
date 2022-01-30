@@ -20,7 +20,6 @@ dependencies:
     - datetime_range
     - field_formatter_class
     - field_group
-    - linked_field
     - user
 third_party_settings:
   field_group:
@@ -116,12 +115,6 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-      linked_field:
-        linked: '1'
-        type: field
-        destination: field_link
-        advanced: {  }
-        token: ''
     weight: 3
     region: content
   field_location:

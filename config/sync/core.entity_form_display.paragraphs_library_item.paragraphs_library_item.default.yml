@@ -1,0 +1,51 @@
+uuid: e4099fb0-cb86-4dbb-bed6-63a52bc424c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - paragraphs_features
+    - paragraphs_library
+id: paragraphs_library_item.paragraphs_library_item.default
+targetEntityType: paragraphs_library_item
+bundle: paragraphs_library_item
+mode: default
+content:
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  paragraphs:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: false
+        split_text: false
+        show_drag_and_drop: true
+hidden:
+  created: true
+  langcode: true
+  status: true
+  uid: true

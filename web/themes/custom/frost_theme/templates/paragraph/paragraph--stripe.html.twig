@@ -1,3 +1,7 @@
 {% spaceless %}
-  <{{ html_tag }}{{ attributes }}>{{ content.field_video_background }}<div class="inner">{{ content |without('field_video_background') }}</div></{{ html_tag }}>
+  <{{ html_tag }}{{ attributes }}>
+    {{ content.contextual_links }}
+    {{ content.field_video_background }}
+    <div class="inner">{{ content |without('field_video_background','contextual_links') }}</div>
+  </{{ html_tag }}>
 {% endspaceless %}

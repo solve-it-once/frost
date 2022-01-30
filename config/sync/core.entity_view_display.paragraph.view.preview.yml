@@ -6,29 +6,13 @@ dependencies:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.view.field_view
     - paragraphs.paragraphs_type.view
-  module:
-    - field_formatter_class
-    - viewsreference
 _core:
   default_config_hash: FvXbRS_B-hhLLSBxBtxJ-XwZki3CYCiYfUugT6sVrcE
 id: paragraph.view.preview
 targetEntityType: paragraph
 bundle: view
 mode: preview
-content:
-  field_view:
-    type: viewsreference_formatter
-    label: hidden
-    settings:
-      plugin_types:
-        block: block
-        default: 0
-        page: 0
-        feed: 0
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    weight: 0
-    region: content
+content: {  }
 hidden:
+  field_view: true
   search_api_excerpt: true
