@@ -142,7 +142,9 @@ body {
  * depending on the font.
  */
 main,
-.region--splash {}
+.region--splash {
+  font-size: 1.125rem;
+}
 
 /**
  * Links.

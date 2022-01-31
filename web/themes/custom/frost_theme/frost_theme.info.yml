@@ -5,6 +5,7 @@ description: Frost theme
 screenshot: screenshot.png
 core_version_requirement: ^8 || ^9
 ckeditor_stylesheets:
+  - css/settings.css
   - css/theme/theme--base.css
 libraries:
   - frost_theme/frost-globalStyling
