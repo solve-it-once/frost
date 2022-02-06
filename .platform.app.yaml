@@ -15,6 +15,7 @@ relationships:
 
 dependencies:
   php:
+    composer/composer: '^2'
     "drush/drush": "^10.0"
 
 runtime:
