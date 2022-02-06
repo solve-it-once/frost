@@ -14,7 +14,7 @@ phone:
 fax:
   number: ''
 email:
-  emailaddress: ao5357@gmail.com
+  emailaddress: brad@solveitonce.com
 social_seo:
   site_twitter: '@ao5357'
   site_google_plus: ''
@@ -25,10 +25,16 @@ social:
       icon: facebook.svg
       url: 'https://www.facebook.com/solveitonce'
       enable: '1'
-      weight: '-9'
+      weight: '-7'
     2:
       name: Twitter
       icon: twitter.svg
       url: 'https://twitter.com/solveitoncellc'
       enable: '1'
-      weight: '-8'
+      weight: '-6'
+    3:
+      name: LinkedIn
+      icon: linkedin.svg
+      url: 'https://www.linkedin.com/company/solve-it-once/'
+      enable: '1'
+      weight: '-5'

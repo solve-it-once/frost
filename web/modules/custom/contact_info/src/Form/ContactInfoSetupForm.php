@@ -8,8 +8,8 @@ namespace Drupal\contact_info\Form;
  */
 
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\ConfigFormBase;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Configure custom settings for this site.
@@ -27,17 +27,19 @@ class ContactInfoSetupForm extends ConfigFormBase {
   }
 
   /**
+   * Submit function for adding additional social media rows.
+   *
    * {@inheritdoc}
    */
-  public function getFormId() {
-    return 'contact_info_form';
+  public static function socialRows($form, &$form_state) {
+    return $form['contact_info']['social'];
   }
 
   /**
    * {@inheritdoc}
    */
-  protected function getEditableConfigNames() {
-    return ['contact_info.setup'];
+  public function getFormId() {
+    return 'contact_info_form';
   }
 
   /**
@@ -283,12 +285,10 @@ class ContactInfoSetupForm extends ConfigFormBase {
   }
 
   /**
-   * Submit function for adding additional social media rows.
-   *
    * {@inheritdoc}
    */
-  public static function socialRows($form, &$form_state) {
-    return $form['contact_info']['social'];
+  protected function getEditableConfigNames() {
+    return ['contact_info.setup'];
   }
 
 }

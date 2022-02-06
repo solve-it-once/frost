@@ -6,7 +6,6 @@
  */
 
 use Drupal\Core\Config\ImmutableConfig;
-use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Render\Markup;
@@ -172,7 +171,8 @@ function contact_info_create_map(ImmutableConfig $contact_info = NULL, $map_sett
   $output = '';
   // Check to see if an API key exists.
   if (!isset($map_settings['api_key'])) {
-    \Drupal::messenger()->addMessage(t('Please provide a Google API key for the embedded map to work properly'), 'warning');
+    \Drupal::messenger()
+      ->addMessage(t('Please provide a Google API key for the embedded map to work properly'), 'warning');
     return [];
   }
 
@@ -313,18 +313,18 @@ function _contact_info_svg_icon($filename) {
 /**
  * Helper function to sort weights.
  *
- * @param int $first
+ * @param mixed $first
  *   The first value that needs sorting.
- * @param int $second
+ * @param mixed $second
  *   The second value, to compare to the first.
  *
  * @return int
  *   Either returns the weight difference between the two values,
  *   or 0 if equal or not weighted
  */
-function contact_info_sort_weight($first, $second) {
+function contact_info_sort_weight(mixed $first, mixed $second) {
   if (isset($first['weight']) && isset($second['weight'])) {
-    return ($first['weight'] - $second['weight']);
+    return (intval($first['weight']) - intval($second['weight']));
   }
 
   return 0;
@@ -403,6 +403,7 @@ function _contact_info_letter_strip($letter) {
 
 /**
  * Helper function to get a list of SVG icons available.
+ *
  * @return array
  */
 function _contact_info_get_svg_icons() {
@@ -410,9 +411,10 @@ function _contact_info_get_svg_icons() {
   $icons_dir = DRUPAL_ROOT . '/libraries/simple-icons/icons';
   $icons_mask = '/^.*?\.svg$/';
   $icons_options = ['key' => 'filename'];
-  $icons_list = \Drupal::service('file_system')->scanDirectory($icons_dir, $icons_mask, $icons_options);
+  $icons_list = \Drupal::service('file_system')
+    ->scanDirectory($icons_dir, $icons_mask, $icons_options);
 
-  foreach($icons_list as $key => $value) {
+  foreach ($icons_list as $key => $value) {
     $options[$key] = $value->name;
   }
 
@@ -444,8 +446,14 @@ function _contact_info_social_draggable_table($social_table, &$form, FormStateIn
     uasort($social_table, 'contact_info_sort_weight');
     array_unshift($social_table, "phoney");
     unset($social_table[0]);
+
+    // Avoid weird casting issues by having ints for weights.
+    foreach ($social_table as $key => $social) {
+      $social_table[$key]['weight'] = strval($social['weight']);
+    }
   }
-  elseif ($form_state->isRebuilding() && $form_state->getValue('op')->render() == 'Add social media') {
+  elseif ($form_state->isRebuilding() && $form_state->getValue('op')
+      ->render() == 'Add social media') {
     if (!isset($social_table)) {
       $contact_info = \Drupal::config('contact_info.setup');
       $social_table = $contact_info->get('social.table');
@@ -453,7 +461,8 @@ function _contact_info_social_draggable_table($social_table, &$form, FormStateIn
 
     $form_state->setValue('social_rows', count($social_table) + 1);
   }
-  elseif ($form_state->isRebuilding() && $form_state->getValue('op')->render() == 'Remove social media') {
+  elseif ($form_state->isRebuilding() && $form_state->getValue('op')
+      ->render() == 'Remove social media') {
     if (!isset($social_table)) {
       $contact_info = \Drupal::config('contact_info.setup');
       $social_table = $contact_info->get('social.table');
@@ -511,10 +520,10 @@ function _contact_info_social_draggable_table($social_table, &$form, FormStateIn
       '#title' => t('Weight for social row'),
       '#title_display' => 'invisible',
       '#size' => 4,
-      '#default_value' => $social_table[$i]['weight'],
-      '#attributes' => array('class' => array('social-order-weight')),
+      '#default_value' => (isset($social_table[$i]['weight'])) ? strval($social_table[$i]['weight']) : '0',
+      '#attributes' => ['class' => ['social-order-weight']],
     ];
-    $form['contact_info']['social']['table'][$i]['#weight'] = $form['contact_info']['social']['table'][$i]['weight']['#default_value'];
+    $form['contact_info']['social']['table'][$i]['#weight'] = intval($form['contact_info']['social']['table'][$i]['weight']['#default_value']);
   }
 
   $form['contact_info']['social']['add_social_row'] = [
