@@ -1,8 +1,8 @@
 {% spaceless %}
-  <details{{ attributes }}>
+  <details{{ attributes|without('class') }}>
     <summary>{{ content.field_title }}</summary>
-    <div{{ attributes }}>
-      {{ content|without('field_title') }}
+    <div class="{{ attributes.class }}">
+      {{ content|without('field_title', 'contextual_links') }}
     </div>
   </details>
 {% endspaceless %}

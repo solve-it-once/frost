@@ -30,6 +30,8 @@ body,
  */
 h1,
 h2,
+h3,
+h4,
 .font-family--secondary {
   font-family: var(--font-family--secondary);
 }
@@ -352,18 +354,12 @@ figcaption {
  */
 h1,
 .heading--h1 {
-  font-size: 5.5em;
+  font-size: clamp(3rem, 4vw, 5.5rem);
   font-weight: 350;
   line-height: var(--line-height--heading);
   margin: 0;
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-@media all and (max-width: 770px) {
-  h1,
-  .heading--h1 {
-    font-size: 3em;
-  }
 }
 h1 > a:link,
 h1 > a:visited {
@@ -377,18 +373,12 @@ h1 > a:visited {
  */
 h2,
 .heading--h2 {
-  font-size: 3em;
+  font-size: clamp(2.5rem, 3vw, 4rem);
   font-weight: 350;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-@media all and (max-width: 770px) {
-  h2,
-  .heading--h2 {
-    font-size: 2.5em;
-  }
 }
 h2:first-child {
   margin-top: 0;
@@ -401,7 +391,7 @@ h2 > a:visited {
 
 h3,
 .heading--h3 {
-  font-size: 2em;
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
   font-weight: 500;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
@@ -419,7 +409,7 @@ h3 > a:visited {
 
 h4,
 .heading--h4 {
-  font-size: 1.5em;
+  font-size: clamp(1.25rem, 2vw, 2.5rem);
   font-weight: 400;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
@@ -437,7 +427,7 @@ h4 > a:visited {
 
 h5,
 .heading--h5 {
-  font-size: 1.125em;
+  font-size: clamp(1.125rem, 1.75vw, 2rem);
   font-weight: 500;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
@@ -453,7 +443,7 @@ h5 > a:visited {
 
 h6,
 .heading--h6 {
-  font-size: 1em;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: 600;
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;

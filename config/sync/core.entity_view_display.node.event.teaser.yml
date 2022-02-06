@@ -19,8 +19,33 @@ dependencies:
   module:
     - datetime_range
     - field_formatter_class
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_text_contents:
+      children:
+        - linked_title
+        - field_date
+        - field_location
+        - body
+      label: 'Text contents'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'padding-horizontal--2 padding-vertical--2 flex--1'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 _core:
   default_config_hash: KS70Lr0SN8O6qg--OaLaESca4DqBHgIya47K1e2bUvs
 id: node.event.teaser
@@ -33,7 +58,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_date:
     type: daterange_default
@@ -43,7 +68,7 @@ content:
       format_type: medium
       separator: '-'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -62,17 +87,17 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   linked_title:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
 hidden:
   breadcrumb: true

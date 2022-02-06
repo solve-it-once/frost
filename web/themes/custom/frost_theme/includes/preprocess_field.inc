@@ -80,6 +80,28 @@ function frost_theme_preprocess_field(&$vars) {
     }
   }
 
+  // For text fields, class the result depending on how much text is there.
+  if (isset($vars['element'][0]['#text'])) {
+    $vars['classes'][] = Html::cleanCssIdentifier('has--text');
+
+    $strlen = mb_strlen(strip_tags($vars['element'][0]['#text']));
+    if ($strlen >= 1000) {
+      $vars['classes'][] = Html::cleanCssIdentifier('text-length--extra-long');
+    }
+    else if ($strlen >= 600) {
+      $vars['classes'][] = Html::cleanCssIdentifier('text-length--long');
+    }
+    else if ($strlen >= 280) {
+      $vars['classes'][] = Html::cleanCssIdentifier('text-length--medium');
+    }
+    else if ($strlen >= 140) {
+      $vars['classes'][] = Html::cleanCssIdentifier('text-length--short');
+    }
+    else {
+      $vars['classes'][] = Html::cleanCssIdentifier('text-length--extra-short');
+    }
+  }
+
   // By default, set any entity references showing teasers on nodes, etc.
   // to be a carousel.
   if (in_array($vars['entity_type'], ['node', 'taxonomy_term', 'commerce_product'])) {

@@ -337,3 +337,19 @@ function frost_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
     $form['field_seo']['#group'] = 'advanced';
   }
 }
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function frost_custom_local_tasks_alter(&$local_tasks) {
+  if (isset($local_tasks)) {
+    foreach ($local_tasks as $key => $task) {
+      $keys = explode('.', $key);
+
+      // Make tabs say 'Plan' instead of "Edit as Plan".
+      if (in_array('form_mode_manager', $keys) && in_array('plan', $keys)) {
+        $local_tasks[$key]['title'] = t('Plan');
+      }
+    }
+  }
+}

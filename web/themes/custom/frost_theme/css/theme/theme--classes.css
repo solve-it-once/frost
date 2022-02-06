@@ -206,7 +206,10 @@
   }
 
   .js .child-display-mode--tab details {
+    background-color: transparent;
     display: none;
+    margin: 0;
+    padding: 0;
   }
   .js .child-display-mode--tab details[open] {
     display: block;
@@ -651,8 +654,8 @@ ul.tabs {
   display: flex;
   font-weight: 300;
   list-style: none;
-  margin: 0 0 10px;
-  padding: 0 0 0 1em;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 ul.tabs > li {
@@ -709,10 +712,23 @@ ul.tabs > li > a.is-active {
   }
 }
 
+/**
+ * Wrapper for on-page interactive tabs (using child view mode tab for stripes).
+ */
+.tabs--content {
+  border-color: var(--color--grey-light);
+  border-style: solid;
+  border-width: 0 1px 1px;
+}
+
+/**
+ * All teasers can take the same basic styles.
+ */
 .view-mode--teaser {}
 .view-mode--teaser h2 {
   font-family: var(--font-family--primary);
   font-size: 22px;
+  margin: 0 0 calc(1 * var(--spacing--single));
 }
 
 .view-mode--teaser > figure {
@@ -722,6 +738,14 @@ ul.tabs > li > a.is-active {
 }
 .view-mode--teaser > figure img {
   min-width: 100%;
+}
+/* Since we don't truncate teaser text, size down super-long teasers. */
+.view-mode--teaser .text-length--extra-long,
+.view-mode--teaser .text-length--long {
+  font-size: 0.5em;
+}
+.view-mode--teaser .text-length--medium {
+  font-size: 0.75em;
 }
 @media all and (min-width: 1280px) {
   .view-mode--teaser > figure {

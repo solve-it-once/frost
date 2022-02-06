@@ -3,7 +3,7 @@
  * Set up stripe collections as tabs.
  */
 
-var childTabsInitializationFunction = function(initType) {
+var childTabsInitializationFunction = function (initType) {
   const thisId = this.getAttribute('id');
 
   // Vanilla equivalent of $().wrapInner();
@@ -24,7 +24,7 @@ var childTabsInitializationFunction = function(initType) {
 
     // The first tab should have a class and have aria indication.
     let classString = (!i) ? ' class="is-active" aria-selected="true"' : '';
-    let hashString = elem.querySelector('.entity-bundle-stripe').getAttribute('id');
+    let hashString = elem.getAttribute('id');
     let tabTitle = elem.querySelector('summary').textContent;
 
     // Ugly way to construct list items.
@@ -33,7 +33,7 @@ var childTabsInitializationFunction = function(initType) {
       '>' + tabTitle + '</a>';
 
     // Throw a little more aria markup on the tab content.
-    elem.querySelector('.entity-bundle-stripe').setAttribute('aria-labelledby', thisId + '-tab-' + i);
+    elem.setAttribute('aria-labelledby', thisId + '-tab-' + i);
   });
 
   tabsList += '</ul>';
@@ -64,7 +64,8 @@ document.addEventListener('click', function (event) {
     bubbled.setAttribute('aria-selected', true);
     bubbled.classList.add('is-active');
 
-    // We'll need to manipulate all the child tabs, so here's the parent element.
+    // We'll need to manipulate all the child tabs, so here's the parent
+    // element.
     const parentElem = bubbled.closest('.child-display-mode--tab');
 
     // Close all the details below this tabs list.
@@ -73,8 +74,8 @@ document.addEventListener('click', function (event) {
       elem.removeAttribute('open');
     });
 
-    // Find the element with this link's hash. Traverse up to its <details> parent and open it.
-    const clickedDetails = parentElem.querySelector(idSelector)
-      .closest('details').setAttribute('open', true);
+    // Find the element with this link's hash. Traverse up to its <details>
+    // parent and open it.
+    const clickedDetails = parentElem.querySelector(idSelector).setAttribute('open', true);
   }
 }, false);

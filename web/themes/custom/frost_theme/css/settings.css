@@ -50,7 +50,7 @@
   /* Plain defaults. */
   --border--default: 1px solid;
   --border-radius--default: 2px;
-  --box-shadow--default: 0 0 3px rgba(0,0,0,.5);
+  --box-shadow--default: 0 0 3px rgba(0, 0, 0, .5);
   --font-family--input: 'Public Sans', Arial, Helvetica, sans-serif;
   --font-family--monospace: 'courier new', courier, monospace;
   --font-family--primary: 'Public Sans', Arial, Helvetica, sans-serif;
@@ -59,7 +59,7 @@
   --line-height--default: 1.425;
   --line-height--heading: 1;
   --spacing--single: 0.625rem;
-  --text-shadow--default: 0 0 2px rgba(0,0,0,.5);
+  --text-shadow--default: 0 0 2px rgba(0, 0, 0, .5);
   --transition--default: all .3s ease-in;
 
   /* Main theme colors. */
@@ -68,7 +68,7 @@
   --color--grey: #aaa;
   --color--grey-light: #f7f7f7;
   --color--white: #fff;
-  --color--main: #0081A7; /* This should be a 6-char hex with uppercase letters. */
+  --color--main: #0081a7; /* This should be a 6-char hex with uppercase letters. */
   --color--main-dark: #002733;
   --color--main-light: #ccf4ff;
   --color--second: #f07167;
