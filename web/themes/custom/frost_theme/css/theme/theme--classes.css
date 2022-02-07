@@ -722,6 +722,13 @@ ul.tabs > li > a.is-active {
 }
 
 /**
+ * Hotspot and other tooltips using tippyjs.
+ */
+.tippy-popper .tippy-content {
+  min-width: 20ch;
+}
+
+/**
  * All teasers can take the same basic styles.
  */
 .view-mode--teaser {}

@@ -28,7 +28,8 @@ third_party_settings:
       weight: 0
       format_type: html_element
       format_settings:
-        classes: 'display--flex justify-content--center align-items--center brand--brackets min-height--95px'
+        classes: 'display--flex justify-content--center align-items--center font-weight--bold font-size--4em'
+        show_empty_fields: false
         id: ''
         element: div
         show_label: false

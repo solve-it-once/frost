@@ -149,6 +149,13 @@ main,
 }
 
 /**
+ * Article as a semantic element.
+ */
+article {
+  margin: 0 0 calc(4 * var(--spacing--single));
+}
+
+/**
  * Links.
  *
  * Links should have set, at a minimum, :link, :visited, :hover, :active, :focus

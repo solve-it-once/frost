@@ -154,6 +154,7 @@ main {
 @media all and (min-width: 768px) {
   .layout--carousel {
     flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -165,12 +166,12 @@ main {
   .layout--carousel > * {
     flex-basis: calc(33% - (4 * var(--spacing--single)));
     margin: 0 calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single));
-    max-width: 347px;
-    min-width: 205px;
+    max-width: 448px;
+    min-width: 285px;
+    scroll-snap-align: start;
   }
-
   .layout--carousel > * {
-    min-width: 275px;
+    min-width: 330px; /* The carousel works hard to avoid overflow. */
   }
 }
 
