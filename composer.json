@@ -131,7 +131,7 @@
         "drupal/views_block_filter_block": "^1.0@beta",
         "drupal/views_flipped_table": "^1.4",
         "drupal/viewsreference": "^2.0@alpha",
-        "drupal/webform": "^6.2@beta",
+        "drupal/webform": "^6.2@dev",
         "drush/drush": "~10.0",
         "harvesthq/chosen": "1.8.7",
         "laminas/laminas-zendframework-bridge": "^1.4",

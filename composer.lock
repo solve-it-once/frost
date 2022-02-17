@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fac1878fe23adb9aa5fd6c7337d6e61",
+    "content-hash": "f2b1167086ac50059750e7282fffacd4",
     "packages": [
         {
             "name": "algolia/places",
@@ -9062,7 +9062,7 @@
             "version": "1.0.2 ",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip"
+                "url": "https://github.com/dargullin/icheck/archive/refs/tags/1.0.2.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -17858,7 +17858,7 @@
         "drupal/tablefield": 20,
         "drupal/views_block_filter_block": 10,
         "drupal/viewsreference": 15,
-        "drupal/webform": 10,
+        "drupal/webform": 20,
         "behat/mink-selenium2-driver": 20
     },
     "prefer-stable": true,
