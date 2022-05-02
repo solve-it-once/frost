@@ -233,6 +233,15 @@
             "php": "8.0"
         },
         "bin-dir": "vendor/bin/",
-        "vendor-dir": "vendor"
+        "vendor-dir": "vendor",
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "oomphinc/composer-installers-extender": true,
+            "wikimedia/composer-merge-plugin": true
+        }
     }
 }

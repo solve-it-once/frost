@@ -35,6 +35,7 @@ module:
   contact_info: 0
   contextual: 0
   ctools: 0
+  ctools_views: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
