@@ -7,18 +7,6 @@
     "content-hash": "f2b1167086ac50059750e7282fffacd4",
     "packages": [
         {
-            "name": "algolia/places",
-            "version": "1.19.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/places.js/-/places.js-1.19.0.tgz"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "algolia.places"
-            }
-        },
-        {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
             "source": {
@@ -186,90 +174,6 @@
                 "source": "https://github.com/Chi-teck/drupal-code-generator/tree/1.33.1"
             },
             "time": "2020-12-05T05:59:11+00:00"
-        },
-        {
-            "name": "choices/choices",
-            "version": "9.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jshjohnson/Choices/archive/v9.0.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "choices"
-            }
-        },
-        {
-            "name": "ckeditor/autogrow",
-            "version": "4.17.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.17.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor.autogrow"
-            }
-        },
-        {
-            "name": "ckeditor/codemirror",
-            "version": "v1.17.12",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.12/CKEditor-CodeMirror-Plugin.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor.codemirror"
-            }
-        },
-        {
-            "name": "ckeditor/fakeobjects",
-            "version": "4.17.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor.fakeobjects"
-            }
-        },
-        {
-            "name": "ckeditor/image",
-            "version": "4.17.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/image/releases/image_4.17.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor.image"
-            }
-        },
-        {
-            "name": "ckeditor/link",
-            "version": "4.17.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/link/releases/link_4.17.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor.link"
-            }
-        },
-        {
-            "name": "codemirror/codemirror",
-            "version": "5.61.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/components/codemirror/archive/5.61.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "codemirror"
-            }
         },
         {
             "name": "commerceguys/addressing",
@@ -8828,16 +8732,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.5",
+            "version": "6.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
+                "reference": "f092dd734083473658de3ee4bef093ed77d2689c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f092dd734083473658de3ee4bef093ed77d2689c",
+                "reference": "f092dd734083473658de3ee4bef093ed77d2689c",
                 "shasum": ""
             },
             "require": {
@@ -8875,9 +8779,39 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
@@ -8893,9 +8827,23 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+                "source": "https://github.com/guzzle/guzzle/tree/6.5.6"
             },
-            "time": "2020-06-16T21:01:06+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-25T13:19:12+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -9104,150 +9052,6 @@
             "type": "drupal-library",
             "extra": {
                 "installer-name": "chosen"
-            }
-        },
-        {
-            "name": "jquery/chosen",
-            "version": "1.8.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.chosen"
-            }
-        },
-        {
-            "name": "jquery/geocomplete",
-            "version": "1.7.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.geocomplete"
-            }
-        },
-        {
-            "name": "jquery/hotkeys",
-            "version": "0.2.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jeresig/jquery.hotkeys/archive/0.2.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.hotkeys"
-            }
-        },
-        {
-            "name": "jquery/icheck",
-            "version": "1.0.2 ",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/dargullin/icheck/archive/refs/tags/1.0.2.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.icheck"
-            }
-        },
-        {
-            "name": "jquery/image-picker",
-            "version": "0.3.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/rvera/image-picker/archive/0.3.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.image-picker"
-            }
-        },
-        {
-            "name": "jquery/inputmask",
-            "version": "5.0.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/5.0.6.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.inputmask"
-            }
-        },
-        {
-            "name": "jquery/intl-tel-input",
-            "version": "16.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jackocnr/intl-tel-input/archive/v16.1.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.intl-tel-input"
-            }
-        },
-        {
-            "name": "jquery/rateit",
-            "version": "1.1.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/gjunge/rateit.js/archive/1.1.3.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.rateit"
-            }
-        },
-        {
-            "name": "jquery/select2",
-            "version": "4.0.13",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/select2/select2/archive/4.0.13.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.select2"
-            }
-        },
-        {
-            "name": "jquery/textcounter",
-            "version": "0.9.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.9.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.textcounter"
-            }
-        },
-        {
-            "name": "jquery/timepicker",
-            "version": "1.13.18",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.13.18.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.timepicker"
-            }
-        },
-        {
-            "name": "jquery/toggles",
-            "version": "4.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.toggles"
             }
         },
         {
@@ -10385,18 +10189,6 @@
             "time": "2021-12-17T19:44:54+00:00"
         },
         {
-            "name": "progress-tracker/progress-tracker",
-            "version": "2.0.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/NigelOToole/progress-tracker/archive/2.0.7.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "progress-tracker"
-            }
-        },
-        {
             "name": "psr/cache",
             "version": "3.0.0",
             "source": {
@@ -10926,18 +10718,6 @@
             "time": "2022-02-08T10:15:15+00:00"
         },
         {
-            "name": "signature_pad/signature_pad",
-            "version": "2.3.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "signature_pad"
-            }
-        },
-        {
             "name": "simple-icons/simple-icons",
             "version": "4.2.0",
             "dist": {
@@ -11068,18 +10848,6 @@
                 "source": "https://github.com/stackphp/builder/tree/v1.0.6"
             },
             "time": "2020-01-30T12:17:27+00:00"
-        },
-        {
-            "name": "svg-pan-zoom/svg-pan-zoom",
-            "version": "3.6.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ariutta/svg-pan-zoom/archive/3.6.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "svg-pan-zoom"
-            }
         },
         {
             "name": "symfony-cmf/routing",
@@ -13652,18 +13420,6 @@
             "time": "2022-01-24T20:11:01+00:00"
         },
         {
-            "name": "tabby/tabby",
-            "version": "12.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/cferdinandi/tabby/archive/v12.0.3.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "tabby"
-            }
-        },
-        {
             "name": "thinkshout/mailchimp-api-php",
             "version": "2.0.0",
             "source": {
@@ -13703,18 +13459,6 @@
                 "source": "https://github.com/thinkshout/mailchimp-api-php/tree/master"
             },
             "time": "2018-02-27T17:52:03+00:00"
-        },
-        {
-            "name": "tippyjs/6.x",
-            "version": "6.2.6",
-            "dist": {
-                "type": "file",
-                "url": "https://unpkg.com/tippy.js@6.2.6/dist/tippy-bundle.umd.min.js"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "tippyjs/6.x"
-            }
         },
         {
             "name": "twig/twig",
@@ -17958,5 +17702,5 @@
     "platform-overrides": {
         "php": "8.0"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
