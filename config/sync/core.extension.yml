@@ -72,8 +72,10 @@ module:
   jquery_ui: 0
   jquery_ui_accordion: 0
   jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
   jquery_ui_tabs: 0
   jquery_ui_tooltip: 0
+  jquery_ui_touch_punch: 0
   jsonapi: 0
   language: 0
   link: 0
@@ -85,6 +87,7 @@ module:
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
+  mysql: 0
   node: 0
   oembed_providers: 0
   options: 0

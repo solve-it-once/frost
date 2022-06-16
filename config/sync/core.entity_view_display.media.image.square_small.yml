@@ -27,6 +27,8 @@ content:
     settings:
       image_link: ''
       image_style: square_small
+      image_loading:
+        attribute: lazy
     third_party_settings:
       field_formatter_class:
         class: ''
