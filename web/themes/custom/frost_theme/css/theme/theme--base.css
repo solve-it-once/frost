@@ -152,7 +152,7 @@ main,
  * Article as a semantic element.
  */
 article {
-  margin: 0 0 calc(4 * var(--spacing--single));
+  margin: 0;
 }
 
 /**

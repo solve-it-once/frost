@@ -39,10 +39,6 @@ settings:
             - SpecialChar
             - Source
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
     drupallink:
       linkit_enabled: true
       linkit_profile: ''
