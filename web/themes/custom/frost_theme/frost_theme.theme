@@ -30,6 +30,11 @@ require_once 'includes/preprocess_views.inc';
  * Implements hook_preprocess_page() for PAGE document templates.
  */
 function frost_theme_preprocess_page(&$vars) {
+  $request = \Drupal::request();
+
+  // Include the request URL for a crawlable skip link.
+  $vars['url'] = $request->getRequestUri();
+
   // Include the hamburger icon as a renderable.
   $vars['menu_toggle'] = [
     '#allowed_tags' => [
@@ -69,6 +74,18 @@ function frost_theme_preprocess_facets_item_list(&$vars) {
   }
 
   $vars['wrapper_attributes']->addClass($has_active_class);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function frost_theme_preprocess_form_element_label(&$vars) {
+  // Apply visually-hidden class to search query form item.
+  if (!empty($vars['attributes']['for'])
+    && mb_substr($vars['attributes']['for'], 0, 7) === 'edit-sq'
+  ) {
+    $vars['attributes']['class'][] = 'a11y--visually-hidden';
+  }
 }
 
 /**

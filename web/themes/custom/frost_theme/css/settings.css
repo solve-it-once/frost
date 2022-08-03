@@ -68,13 +68,13 @@
   --color--grey: #aaa;
   --color--grey-light: #f7f7f7;
   --color--white: #fff;
-  --color--main: #0081a7; /* This should be a 6-char hex with uppercase letters. */
+  --color--main: #007DA3; /* This should be a 6-char hex with uppercase letters. */
   --color--main-dark: #002733;
   --color--main-light: #ccf4ff;
-  --color--second: #f07167;
+  --color--second: #E32416;
   --color--second-dark: #331716;
   --color--second-light: #ffcfcc;
-  --color--third: #00afb9;
+  --color--third: #007E85;
   --color--third-dark: #003033;
   --color--third-light: #ccfcff;
   --color--accent: #6100a7;

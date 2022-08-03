@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
-         backupGlobals="false"
-         colors="true"
-         bootstrap="vendor/autoload.php"
-         verbose="true"
-        >
+<?xml version="1.0"?>
+<!-- phpunit.xml.dist -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <clover outputFile="build/logs/clover.xml"/>
+        </report>
+    </coverage>
     <testsuites>
-        <testsuite name="drupal-composer-project tests">
-            <directory>./test/</directory>
+        <testsuite name="Example Test Suite">
+            <directory>tests/phpunit</directory>
         </testsuite>
     </testsuites>
+    <logging/>
 </phpunit>

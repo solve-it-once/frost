@@ -160,6 +160,22 @@
 }
 
 /**
+ * Style inline forms to enhance spacing.
+ *
+ * The main inline form as classed is the search form. Put as much styling for that here as makes sense.
+ */
+.form--inline {
+  margin-bottom: calc(2 * var(--spacing--single));
+}
+.form--inline > .form-item,
+.form--inline > .form-actions {
+  margin: 0;
+}
+.form--inline > .form-actions button {
+  margin-bottom: 0;
+}
+
+/**
  * Checkbox and radio styling.
  */
 .input-and-label {}
@@ -194,4 +210,21 @@
  */
 .ui-datepicker-trigger {
   display: none;
+}
+
+/**
+ * Styles specific to the search form, rather than all inline or Views exposed forms.
+ */
+.views-exposed-form-search-block-1 {}
+.views-exposed-form-search-block-1 > .form-actions button {
+  font-size: 0.675rem;
+  padding: calc(1 * var(--spacing--single)) calc(1 * var(--spacing--single));
+}
+.views-exposed-form-search-block-1 .form-text {
+  max-width: 140px; /* Magic number fits search box and button on same line in drawer at 320px viewport with wiggle. */
+}
+@media all and (max-width: 767px) {
+  .views-exposed-form-search-block-1 {
+    flex-direction: row;
+  }
 }

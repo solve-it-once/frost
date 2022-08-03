@@ -1,0 +1,27 @@
+project:
+  machine_name: frost
+  prefix: FRO
+  human_name: 'Frost install profile'
+  profile:
+    name: frost
+  local:
+    protocol: http
+    hostname: localhost
+cm:
+  strategy: core-only
+git:
+  default_branch: master
+deploy:
+  tag_source: true
+sync.files: true
+tests:
+  drupal:
+    sudo-run-tests: false
+    phpunit: [ { path: '${docroot}/core', config: '${docroot}/core/phpunit.xml.dist', directory: '${docroot}/modules/custom' } ]
+  phpunit:
+    - { path: '${repo.root}/tests/phpunit', directory: '${repo.root}/tests/phpunit', config: '${docroot}/core/phpunit.xml.dist' }
+simplesamlphp: true
+validate:
+  twig:
+    filters:
+      - crc32

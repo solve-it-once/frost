@@ -12,6 +12,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - media_library_edit
     - text
 third_party_settings:
   field_group:
@@ -71,7 +72,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_link:
     type: link_default
     weight: 4

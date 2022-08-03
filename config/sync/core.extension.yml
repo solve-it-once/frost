@@ -17,6 +17,7 @@ module:
   chosen: 0
   chosen_lib: 0
   ckeditor: 0
+  ckeditor5: 0
   commerce: 0
   commerce_add_to_cart_link: 0
   commerce_cart: 0
@@ -58,7 +59,6 @@ module:
   filter: 0
   form_mode_manager: 0
   frost_custom: 0
-  hal: 0
   honeypot: 0
   human_decimal: 0
   iframe: 0
@@ -82,6 +82,7 @@ module:
   linkit: 0
   media: 0
   media_library: 0
+  media_library_edit: 0
   menu_link_attributes: 0
   menu_trail_by_path: 0
   menu_ui: 0

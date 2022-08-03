@@ -1,47 +1,64 @@
-uuid: 78dfbb70-43c3-45e3-844d-b1f76e59eb1b
+uuid: c1f65eff-6d68-43d6-905f-0ea6ae7d52f2
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.filtered_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: ue-ej8-SID994AGCxxDWcGKMR7V0ckBoYKy8zsPDkEY
+    - ckeditor5
 format: filtered_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Superscript
-            - Subscript
-            - HorizontalRule
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Tools
-          items:
-            - PasteFromWord
-            - SpecialChar
-            - Source
+    items:
+      - bold
+      - italic
+      - superscript
+      - subscript
+      - horizontalLine
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - specialCharacters
+      - sourceEditing
+      - '|'
+      - blockQuote
+      - code
+      - heading
+      - insertTable
   plugins:
-    drupallink:
-      linkit_enabled: true
-      linkit_profile: ''
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<a hreflang data-entity-type data-entity-uuid data-entity-substitution class>'
+        - '<em class>'
+        - '<strong class>'
+        - '<blockquote cite>'
+        - '<ul type class>'
+        - '<ol type class>'
+        - '<li class>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
 image_upload:
   status: false
   scheme: public

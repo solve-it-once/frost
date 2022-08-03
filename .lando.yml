@@ -20,11 +20,16 @@ services:
         # Support debugging Drush with XDEBUG.
         # @see https://docs.lando.dev/guides/lando-phpstorm.html
         PHP_IDE_CONFIG: "serverName=appserver"
+        DRUSH_OPTIONS_URI: "https://<host_name>/"
 
 tooling:
   behat:
     service: app
     description: Run behat tests
     cmd: /app/vendor/bin/behat
+  blt:
+    service: app
+    description: Quickly run BLT from container context
+    cmd: /app/vendor/bin/blt
   drush:
     cmd: "/app/vendor/bin/drush --root=/app/web --uri=https://www.frost.lndo.site"

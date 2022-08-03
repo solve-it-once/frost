@@ -14,7 +14,9 @@
   </header>
   {{ page.splash }}
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>
+    <a href="{{ url }}#main-content" id="main-content" class="a11y--visually-hidden" tabindex="-1">
+      {{ 'You are at the start of the main content'|t }}
+    </a>
     {{ page.pre_content }}
     <div class="content-and-sidebar display--flex layout--flex-row">
       <div class="middle-column flex--auto">

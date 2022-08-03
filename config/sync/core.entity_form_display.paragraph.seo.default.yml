@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.seo
   module:
     - media_library
+    - media_library_edit
 _core:
   default_config_hash: uUF0c8EUtC6okWN0Qtm3KZjs1ruxCOSlw5r2V1fqsMs
 id: paragraph.seo.default
@@ -33,7 +34,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_seo_keywords:
     type: string_textfield
     weight: 2

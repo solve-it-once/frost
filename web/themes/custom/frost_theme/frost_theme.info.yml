@@ -7,6 +7,9 @@ core_version_requirement: ^8 || ^9
 ckeditor_stylesheets:
   - css/settings.css
   - css/theme/theme--base.css
+ckeditor5-stylesheets:
+  - css/settings.css
+  - css/theme/theme--base.css
 libraries:
   - frost_theme/frost-globalStyling
   - frost_theme/frost-animate

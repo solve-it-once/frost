@@ -12,6 +12,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - media_library_edit
     - paragraphs
     - paragraphs_features
     - text
@@ -105,8 +106,15 @@ content:
     weight: 1
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - audio
+        - document
+        - image
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_text:
     type: text_textarea
     weight: 2

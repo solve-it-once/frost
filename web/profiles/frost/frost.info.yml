@@ -41,7 +41,6 @@ dependencies:
   - field_ui
   - file
   - filter
-  - hal
   - honeypot
   - iframe
   - image

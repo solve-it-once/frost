@@ -118,6 +118,8 @@ function frost_theme_preprocess_views_exposed_form(&$vars) {
     $vars['attributes']['class'][] = 'justify-content--center';
   }
   else {
+    $vars['attributes']['class'][] = 'form--inline';
+    $vars['attributes']['class'][] = 'views-exposed-form--inline';
     $vars['attributes']['class'][] = 'display--flex';
     $vars['attributes']['class'][] = 'layout--flex-row';
     $vars['attributes']['class'][] = 'flex-direction--row';

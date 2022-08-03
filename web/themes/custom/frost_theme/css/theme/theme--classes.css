@@ -637,6 +637,7 @@ ul.inline li:first-child {
   .view--has-table > .view-content,
   .tablefield-wrapper,
   .table--wrapper {
+    max-width: calc(100vw - calc(8 * var(--spacing--single)));
     overflow-x: scroll;
   }
 }
@@ -668,7 +669,7 @@ ul.tabs > li {
   margin: 0 10px -1px;
 }
 ul.tabs > li > a {
-  color: var(--color--grey);
+  color: var(--color--grey-dark);
   display: block;
   font-size: 2rem;
   padding: 0.5em 1em 0;

@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.media
   module:
     - media_library
+    - media_library_edit
 _core:
   default_config_hash: v97Do2EIfLMBouJg8V4Dv7XHtU9ltG4tDCiZ2Cw9ylo
 id: paragraph.media.content
@@ -23,8 +24,15 @@ content:
     weight: 0
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - audio
+        - document
+        - image
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
 hidden:
   created: true
   field_hotspots: true

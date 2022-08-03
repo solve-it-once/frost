@@ -35,7 +35,7 @@ frost-globalStyling:
     - core/drupal
 
 frost-highcharts:
-  version: 6.1.4
+  version: 10.2.0
   license:
     name: CC-BY-NC-3.0
     gpl-compatible: false
@@ -44,10 +44,11 @@ frost-highcharts:
       libraries/frost-highcharts/frost-highcharts.css: {}
   js:
     libraries/frost-highcharts/color-scheme.min.js: {}
-    libraries/frost-highcharts/highcharts/code/highcharts.js: {}
-    libraries/frost-highcharts/highcharts/code/modules/data.js: {}
-    libraries/frost-highcharts/highcharts/code/modules/exporting.js: {}
-    libraries/frost-highcharts/highcharts/code/modules/export-data.js: {}
+    libraries/frost-highcharts/highcharts/highcharts.js: {}
+    libraries/frost-highcharts/highcharts/modules/accessibility.js: {}
+    libraries/frost-highcharts/highcharts/modules/data.js: {}
+    libraries/frost-highcharts/highcharts/modules/exporting.js: {}
+    libraries/frost-highcharts/highcharts/modules/export-data.js: {}
     libraries/frost-highcharts/frost-highcharts.js: {}
 
 frost-iframeResizer:

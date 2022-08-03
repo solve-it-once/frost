@@ -16,6 +16,9 @@ function frost_theme_preprocess_html(&$vars) {
   $request = \Drupal::request();
   $route_match = \Drupal::routeMatch();
 
+  // Include the request URL for a crawlable skip link.
+  $vars['url'] = $request->getRequestUri();
+
   $title = \Drupal::service('title_resolver')
     ->getTitle($request, $route_match->getRouteObject());
 

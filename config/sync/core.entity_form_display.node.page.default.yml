@@ -15,6 +15,7 @@ dependencies:
   module:
     - field_group
     - media_library
+    - media_library_edit
     - paragraphs
     - paragraphs_features
     - path
@@ -87,7 +88,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_sections:
     type: paragraphs
     weight: 5
@@ -169,6 +172,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

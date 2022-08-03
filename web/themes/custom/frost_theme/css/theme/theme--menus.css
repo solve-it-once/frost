@@ -165,12 +165,21 @@
     z-index: 0;
   }
 
+  /* Avoid conflict with floating elements when menu tray open. */
+  .mobile--tray--open .position--fixed {
+    position: relative;
+  }
+
   /* The nav in the header becomes a hidden, toggle-able tray. */
   .mobile--tray {
     background-color: var(--color--main-light);
     bottom: 0;
     box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
     left: calc(-1 * calc(100vw - calc(8 * var(--spacing--single))));
+    max-height: 100vh;
+    overflow-y: auto;
     padding: calc(2 * var(--spacing--single));
     position: fixed;
     top: 0;
@@ -182,6 +191,7 @@
     left: 0;
   }
   .mobile--tray .menu {
+    flex: 0;
     flex-direction: column;
   }
   .mobile--tray .menu a {
