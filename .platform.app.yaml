@@ -40,7 +40,7 @@ hooks:
     drush -y config-import
     drush -y cache-rebuild
 
-docroot:
+web:
   locations:
     '/':
       root: 'docroot'
