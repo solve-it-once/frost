@@ -2,7 +2,7 @@ composer.phar
 composer.lock
 bin
 vendor
-*local.yml
+behat.local.yml
 *.rej
 test_releases
 

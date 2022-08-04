@@ -1,0 +1,19 @@
+.block-back-to-top-block {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 17%;
+  text-align: center;
+}
+.block-back-to-top-block.visible {
+  display: block;
+}
+
+@media all and (max-width: 1175px) {
+  /* Hide the block on smaller screens */
+  .block-back-to-top-block {
+    display: none !important;
+  }
+
+}

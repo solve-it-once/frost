@@ -4,7 +4,7 @@ master:
   host: ssh.us-2.platform.sh
   paths:
     files: sites/default/files
-  root: /app/web
+  root: /app/docroot
   ssh:
     options: '-o PasswordAuthentication=no -i /home/brad/.ssh/bczerniak_platformsh_rsa'
   uri: master-7rqtwti-yobsnu66ohnxy.us-2.platformsh.site

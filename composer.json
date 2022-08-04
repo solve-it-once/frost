@@ -102,11 +102,14 @@
         "simple-icons/simple-icons": "4.2.0",
         "tedivm/jshrink": "^1.4",
         "wikimedia/composer-merge-plugin": "^2.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "ext-simplexml": "*"
     },
     "require-dev": {
         "acquia/blt-phpcs": "^1.0",
         "acquia/coding-standards": "^0.8.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+        "drupal/coder": "^8.3",
         "drupal/core-dev": "^9",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpunit/phpunit": "^9.5",
@@ -135,9 +138,6 @@
         "sort-packages": true,
         "vendor-dir": "vendor"
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
@@ -164,27 +164,27 @@
         "drupal-scaffold": {
             "gitignore": true,
             "locations": {
-                "web-root": "./web"
+                "web-root": "./docroot"
             }
         },
         "enable-patching": true,
         "installer-paths": {
-            "web/core": [
+            "docroot/core": [
                 "type:drupal-core"
             ],
-            "web/libraries/{$name}": [
+            "docroot/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset",
                 "harvesthq/chosen"
             ],
-            "web/modules/contrib/{$name}": [
+            "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/Commands/contrib/{$name}": [
@@ -197,8 +197,8 @@
         ],
         "merge-plugin": {
             "include": [
-                "web/modules/contrib/dropzonejs/composer.libraries.json",
-                "web/modules/contrib/webform/composer.libraries.json"
+                "docroot/modules/contrib/dropzonejs/composer.libraries.json",
+                "docroot/modules/contrib/webform/composer.libraries.json"
             ]
         },
         "patchLevel": {
@@ -223,9 +223,6 @@
                 ]
             }
         }
-    },
-    "replace": {
-        "drupal/drupal": "*"
     },
     "repositories": {
         "drupal": {

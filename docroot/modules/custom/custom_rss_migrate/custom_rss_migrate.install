@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * @file
+ * Handle install / uninstall events for the module.
+ */

@@ -17,3 +17,6 @@ solr:
     endpoints:
       main:
         core: maincore
+
+chrome:
+  type: chrome-headless:95

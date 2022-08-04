@@ -1,6 +1,5 @@
 project:
   machine_name: frost
-  prefix: FRO
   human_name: 'Frost install profile'
   profile:
     name: frost
@@ -11,8 +10,17 @@ cm:
   strategy: core-only
 git:
   default_branch: master
+  remotes:
+    - 'git@github.com:solve-it-once/frost.git'
+    - 'yobsnu66ohnxy@git.us-2.platform.sh:yobsnu66ohnxy.git'
 deploy:
   tag_source: true
+drush:
+  aliases:
+    remote: '${project.machine_name}.master'
+    local: self
+    ci: self
+  default_alias: '${drush.aliases.local}'
 sync.files: true
 tests:
   drupal:
@@ -20,8 +28,3 @@ tests:
     phpunit: [ { path: '${docroot}/core', config: '${docroot}/core/phpunit.xml.dist', directory: '${docroot}/modules/custom' } ]
   phpunit:
     - { path: '${repo.root}/tests/phpunit', directory: '${repo.root}/tests/phpunit', config: '${docroot}/core/phpunit.xml.dist' }
-simplesamlphp: true
-validate:
-  twig:
-    filters:
-      - crc32

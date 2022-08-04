@@ -16,8 +16,8 @@
   <arg name="cache" value=".phpcs-cache"/>
   <arg name="parallel" value="10"/>
 
-  <file>web/modules/custom</file>
-  <file>web/themes/custom</file>
+  <file>docroot/modules/custom</file>
+  <file>docroot/themes/custom</file>
   <file>tests</file>
 
   <exclude-pattern>*/behat</exclude-pattern>
@@ -27,5 +27,11 @@
   <exclude-pattern>vendor/*</exclude-pattern>
 
   <rule ref="AcquiaDrupalStrict"/>
-
+  <rule ref="AcquiaPHP">
+     <exclude name="PHPCompatibility"/>
+   </rule>
+   <config name="testVersion" value="7.4-"/>
+   <rule ref="PHPCompatibility">
+     <exclude name="PHPCompatibility.Extensions.RemovedExtensions.famRemoved"/>
+   </rule>
 </ruleset>

@@ -1,0 +1,57 @@
+<?php
+/**
+ * @file
+ * Platform.sh example settings.php file for Drupal 8.
+ */
+
+use Acquia\Blt\Robo\Common\EnvironmentDetector;
+
+// Default Drupal 8 settings.
+//
+// These are already explained with detailed comments in Drupal's
+// default.settings.php file.
+//
+// See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
+$databases = [];
+$config_directories = [];
+$settings['update_free_access'] = FALSE;
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
+$settings['entity_update_batch_size'] = 50;
+$settings['entity_update_backup'] = TRUE;
+$settings['migrate_node_migrate_type_classic'] = FALSE;
+
+// Use BLT to manage some/all settings.php files.
+require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+
+// The hash_salt should be a unique random value for each application.
+// If left unset, the settings.platformsh.php file will attempt to provide one.
+// You can also provide a specific value here if you prefer and it will be used
+// instead. In most cases it's best to leave this blank on Platform.sh. You
+// can configure a separate hash_salt in your settings.local.php file for
+// local development.
+// $settings['hash_salt'] = 'change_me';
+
+// Set up a config sync directory.
+//
+// This is defined inside the read-only "config" directory, deployed via Git.
+$settings['config_sync_directory']  = '../config/sync';
+
+require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+
+// Automatic Platform.sh settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
+  include $app_root . '/' . $site_path . '/settings.platformsh.php';
+}
+
+/**
+ * IMPORTANT.
+ *
+ * Do not include additional settings here. Instead, add them to settings
+ * included by `blt.settings.php`. See BLT's documentation for more detail.
+ *
+ * @link https://docs.acquia.com/blt/
+ */

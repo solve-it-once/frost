@@ -12,6 +12,7 @@ build:
 relationships:
   database: 'mysqldb:mysql'
   solr: 'solr:main'
+  chrome: 'chrome:http'
 
 dependencies:
   php:
@@ -23,7 +24,7 @@ runtime:
     - xdebug
 
 mounts:
-  '/web/sites/default/files': 'shared:files/files'
+  '/docroot/sites/default/files': 'shared:files/files'
   '/tmp': 'shared:files/tmp'
   '/private': 'shared:files/private'
   '/.drush': 'shared:files/.drush'
@@ -34,7 +35,7 @@ hooks:
   build: |
     curl -sS https://platform.sh/cli/installer | php
   deploy: |
-    cd web
+    cd docroot
     drush -y updatedb
     drush -y config-import
     drush -y cache-rebuild
@@ -42,7 +43,7 @@ hooks:
 web:
   locations:
     '/':
-      root: 'web'
+      root: 'docroot'
       expires: -1
       passthru: '/index.php'
       allow: false
@@ -57,7 +58,7 @@ web:
       allow: true
       expires: 3M
       passthru: '/index.php'
-      root: 'web/sites/default/files'
+      root: 'docroot/sites/default/files'
       scripts: false
       rules:
         '^/sites/default/files/(css|js)':
@@ -67,11 +68,11 @@ crons:
   drupal:
     # Run cron every 20 minutes
     spec: '*/20 * * * *'
-    cmd: 'cd web ; drush core-cron'
+    cmd: 'cd docroot ; drush core-cron'
   drush-cr:
     # Clear caches twice a day
     spec: '0 7/12 * * *'
-    cmd: 'cd web ; drush cr'
+    cmd: 'cd docroot ; drush cr'
   snapshot:
     # Take a snapshot automatically every night at 3 am (UTC).
     spec: '0 3 * * *'

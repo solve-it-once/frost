@@ -1,0 +1,241 @@
+/**
+ * @file
+ * Main layout for the theme.
+ */
+
+/**
+ * Make the content area tall enough by default that desktops never see the
+ * footer super high on the page.
+ */
+main {
+  min-height: 37vh;
+}
+
+/**
+ * Since they're only used for spacing at desktop width, hide empty columns on
+ * tablet/mobile.
+ */
+@media all and (max-width: 1023px) {
+  .column--empty {
+    display: none;
+  }
+}
+
+/**
+ * Ensure columns are not allowed to become too narrow, starting at the wrap
+ * breakpoint.
+ */
+@media all and (max-width: 1023px) {
+  .entity-bundle-column {
+    min-width: 270px;
+  }
+}
+@media all and (max-width: 767px) {
+  .entity-bundle-column {
+    padding-top: calc(2 * var(--spacing--single));
+  }
+  .entity-bundle-column:last-child {
+    padding-bottom: calc(2 * var(--spacing--single));
+  }
+}
+
+/**
+ * Wrap layouts in the content area when they get to a narrow desktop-ish viewport.
+ *
+ * And then switch layouts from side-by-side flexes to top-to-bottom flexes at
+ * narrow viewports.
+ */
+@media all and (max-width: 1023px) {
+  .entity-bundle-layout,
+  .layout--flex-row {
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 767px) {
+  .entity-bundle-layout,
+  .layout--flex-row {
+    flex-direction: column;
+  }
+}
+
+/**
+ * Spacers.
+ *
+ * Hide spacers on mobile if they're just holding place in a horizontal layout.
+ */
+@media all and (max-width: 767px) {
+  .entity-bundle-spacer:only-child {
+    display: none;
+  }
+}
+
+/**
+ * By default, stripes should have generous padding.
+ *
+ * Place the overriding class after it in order for cascade purposes.
+ */
+.entity-bundle-stripe {
+  padding: calc(10 * var(--spacing--single)) calc(2 * var(--spacing--single));
+}
+@media all and (max-width: 767px) {
+  .entity-bundle-stripe {
+    padding: calc(6 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  }
+}
+.entity-bundle-stripe > .inner,
+.view-mode--hero > .inner,
+.node--view-mode-full .node__content > .field,
+.appear-as-stripe {
+  margin: 0 auto;
+  max-width: var(--layout--content-area);
+  position: relative;
+  z-index: 2;
+}
+.child-inner-max-width--inherit > .inner {
+  margin: 0;
+  max-width: inherit;
+}
+.padding--0 {
+  padding: 0;
+}
+@media all and (max-width: 1200px) {
+  .padding--0 {
+    padding: 0 calc(2 * var(--spacing--single));
+  }
+}
+
+/**
+ * Layout classes for hiding (see below for showing) at various viewports.
+ */
+@media all and (max-width: 767px) {
+  .hide--narrow {
+    display: none;
+  }
+}
+@media all and (max-width: 1023px) {
+  .hide--medium {
+    display: none;
+  }
+}
+@media all and (min-width: 1024px) {
+  .hide--wide {
+    display: none;
+  }
+}
+
+/**
+ * Content and term listing layout classes.
+ */
+.layout--horizontal,
+.layout--carousel {
+  display: flex;
+  justify-content: center;
+}
+.layout--horizontal {
+  flex-direction: column;
+}
+.layout--horizontal > * ,
+.layout--carousel > * {
+  margin: 0 0 calc(4 * var(--spacing--single));
+}
+.layout--horizontal > [data-contextual-id],
+.layout--carousel > [data-contextual-id] {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .layout--carousel {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  .layout--horizontal {
+    flex-direction: row;
+  }
+  .layout--horizontal > *,
+  .layout--carousel > * {
+    flex-basis: calc(33% - (4 * var(--spacing--single)));
+    margin: 0 calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single));
+    max-width: 448px;
+    min-width: 285px;
+    scroll-snap-align: start;
+  }
+  .layout--carousel > * {
+    min-width: 330px; /* The carousel works hard to avoid overflow. */
+  }
+}
+
+/**
+ * Styles specific to the lack of field_hero (body stripes) on a page.
+ */
+.page-lacks--field-sections .region--content {
+  font-size: 1.25em;
+}
+
+/**
+ * Regions in general, with specific overrides below.
+ *
+ * The max-width on the inner ensures that a region could, for instance, have a
+ * background color, while the contents will have a reasonable measure. The 20px
+ * horizontal padding ensures there's enough space on either side for a touchscreen
+ * device user to scroll with their thumb along the edge of the page.
+ *
+ * Any region containing stripe sections shouldn't have an inner max-width or
+ * thumb-scroll padding, so those are overridden in one fell swoop collectively.
+ */
+.region > .inner {
+  margin: 0 auto;
+  max-width: var(--layout--content-area);
+  padding-left: calc(2 * var(--spacing--single));
+  padding-right: calc(2 * var(--spacing--single));
+}
+.region--splash > .inner,
+.page-has--field-sections .region--content > .inner {
+  max-width: inherit;
+  padding: 0;
+}
+
+/**
+ * Utility region (usually just utility menu).
+ */
+.region--utility > .inner {
+  justify-content: flex-end;
+}
+
+/**
+ * Content-top override because the tabs are so close to the main menu dropdown.
+ */
+.region--content-top {
+  position: relative;
+  z-index: 3;
+}
+
+/**
+ * Content region.
+ */
+.page-lacks--field-sections .region--content > .inner {
+  /* @see .page-lacks--field-sections */
+  max-width: var(--layout--content-area);
+  padding: calc(4 * var(--spacing--single)) calc(2 * var(--spacing--single)) calc(8 * var(--spacing--single));
+}
+
+/**
+ * Layout classes for showing (see above for hiding) at various viewports.
+ */
+@media all and (max-width: 767px) {
+  .show--narrow {
+    display: inherit;
+  }
+}
+@media all and (max-width: 1023px) {
+  .show--medium {
+    display: inherit;
+  }
+}
+@media all and (min-width: 1024px) {
+  .show--wide {
+    display: inherit;
+  }
+}

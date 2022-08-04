@@ -4,7 +4,7 @@ env_file:
 recipe: platformsh
 
 config:
-  webroot: web
+  webroot: docroot
   xdebug: true
   overrides:
     app:
@@ -32,4 +32,4 @@ tooling:
     description: Quickly run BLT from container context
     cmd: /app/vendor/bin/blt
   drush:
-    cmd: "/app/vendor/bin/drush --root=/app/web --uri=https://www.frost.lndo.site"
+    cmd: "/app/vendor/bin/drush --root=/app/docroot --uri=https://www.frost.lndo.site"

@@ -1,0 +1,752 @@
+/**
+ * @file
+ * Component and class-level styles.
+ */
+
+/**
+ * Skip-to-main-content links for accessibility.
+ */
+.a11y--skip-hide {
+  background: var(--color--main-dark);
+  position: relative;
+  text-align: center;
+}
+.a11y--skip-hide a {
+  color: var(--color--white);
+  display: block;
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+.a11y--skip-hide a:focus {
+  height: auto;
+  outline: 0 none;
+  position: static;
+  width: auto;
+}
+
+/**
+ * Background images and gradients.
+ */
+.background-image--default {
+  background-image: url('../../images/bg_hero_default.jpg');
+}
+.background-image--gradient--main {
+  background-image: linear-gradient(-5deg, transparent 50%, var(--color--main) 200%);
+}
+.background-image--gradient--second {
+  background-image: linear-gradient(-5deg, transparent 50%, var(--color--second) 200%);
+}
+.background-image--gradient--third {
+  background-image: linear-gradient(-5deg, transparent 50%, var(--color--third) 200%);
+}
+.background-image--gradient--accent {
+  background-image: linear-gradient(-5deg, transparent 50%, var(--color--accent) 200%);
+}
+
+/**
+ * Blockquote checkbox classes for adding opening and closing quotes as needed.
+ *
+ * Especially useful if the opening/closing quotes have to look different than
+ * the text in some way.
+ */
+.blockquote--closing-include {
+  min-height: 80px;
+  position: relative;
+}
+.blockquote--closing-include::after {
+  bottom: -0.625em;
+  content: "\201D";
+  display: inline-block;
+  font-size: 6em;
+  line-height: 0;
+  opacity: .25;
+  position: relative;
+  z-index: 0;
+}
+.blockquote--closing-include > * {
+  display: inline;
+}
+.blockquote--opening-include {
+  min-height: 80px;
+  position: relative;
+}
+.blockquote--opening-include::before {
+  content: "\201C";
+  display: inline-block;
+  font-size: 6em;
+  line-height: 0;
+  opacity: .25;
+  position: relative;
+  top: 0.5em;
+  z-index: 0;
+}
+
+/**
+ * Effects based on scroll.
+ */
+@media all and (min-width: 1024px) {
+  .body-scroll--up .sticky--top {
+    box-shadow: 0 2px 6px var(--color--main-dark);
+    position: sticky;
+    top: 0;
+    transition: var(--transition--default);
+    z-index: 8;
+  }
+}
+
+/**
+ * Add stylistic pipes to lists.
+ */
+.border-spaced > li {
+  border-right: 1px solid;
+  border-bottom: 0 none;
+}
+.border-spaced li:last-child {
+  border-right: 0 none;
+}
+
+/**
+ * Styles for breadcrumbs.
+ */
+.breadcrumb {
+  font-size: .875em;
+  padding: calc(2 * var(--spacing--single)) 0;
+}
+.breadcrumb a {
+  color: inherit;
+}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+[dir="rtl"] .breadcrumb ol {
+  /* This is required to win over specificity of [dir="rtl"] ol */
+  margin-right: 0;
+}
+.breadcrumb li {
+  color: var(--color--third);
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb li:before,
+.breadcrumb li a {
+  color: var(--color--grey-dark);
+}
+/* IE8 does not support :not() and :last-child. */
+.breadcrumb li:before {
+  content: ">";
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+.breadcrumb li:first-child:before {
+  content: none;
+}
+
+/**
+ * Browser upgrade prompt for any version of IE.
+ *
+ * Omitting Custom Props here since IE does not support them.
+ */
+.browserupgrade {
+  background-color: #1d3141;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  padding: 20px;
+  text-align: left;
+}
+.browserupgrade a:link,
+.browserupgrade a:visited {
+  color: #fafafa;
+  text-decoration: underline;
+}
+.browserupgrade a:hover,
+.browserupgrade a:hover,
+.browserupgrade a:hover {
+  color: #ffc227;
+}
+.browserupgrade > p {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/**
+ * Hover cards.
+ */
+.card--hover {
+  transition: var(--transition--default);
+}
+.card--hover:hover {
+  background-color: var(--color--grey-light);
+}
+
+/**
+ * Child display mode tabs/accordions.
+ */
+.child-display-mode--tab > .tabs {
+  display: none;
+}
+@media all and (min-width: 1024px) {
+  .child-display-mode--tab > .tabs {
+    display: flex;
+  }
+  .js .child-display-mode--tab summary {
+    display: none;
+  }
+
+  .js .child-display-mode--tab details {
+    background-color: transparent;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .js .child-display-mode--tab details[open] {
+    display: block;
+  }
+}
+
+/**
+ * Ensure vertical spacing from video fields.
+ */
+.field-formatter--file-video {
+  line-height: 0;
+}
+
+/**
+ * Field label styles.
+ */
+.field-label--above {
+  margin-bottom: 20px;
+}
+.field-label--above > .field-label {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+}
+.field-label--inline {
+  margin-bottom: 10px;
+}
+@media all and (min-width: 768px) {
+  .field-label--inline {
+    border-bottom: 1px solid;
+    display: flex;
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+}
+.field-label--inline:last-child {
+  border-bottom: 0 none;
+}
+.field-label--inline > * {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 0;
+  -moz-box-flex: 2;
+  -ms-flex: 2 0;
+  flex: 2 0;
+}
+.field-label--inline > .field-label {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+  -moz-box-flex: 1;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+/* Brad hack to demo model selector. */
+.layout--horizontal .field-label--inline {
+  font-size: .875em;
+  padding: 5px 0;
+  text-align: left;
+}
+
+/**
+ * Formatted text body.
+ */
+.field-name--body,
+.field-name--description {
+  margin-bottom: 10px;
+}
+.view-mode--decorated .field-name--body,
+.view-mode--decorated .field-name--description {
+  margin-bottom: 30px;
+}
+
+/**
+ * Make address fields universally have margin.
+ */
+.field-type--address {
+  margin: 0 0 20px;
+}
+
+/**
+ * Give geofields a little breathing room.
+ */
+.field-type--geofield {
+  margin: 10px 0;
+}
+
+/**
+ * Video backgrounds for stripes/heroes.
+ */
+.has-field-video-background {
+  position: relative;
+}
+.has-field-video-background > .field-name--field-media-video-file {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .has-field-video-background .contextual-region {
+    position: static;
+  }
+  .has-field-video-background .entity-type-component {
+    position: relative;
+    z-index: 3;
+  }
+  .has-field-video-background > .field-name--field-media-video-file {
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .has-field-video-background > .field-name--field-media-video-file > video {
+    left: 50%;
+    margin: 0;
+    min-height: 50vw;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+@media all and (min-width: 1920px) {
+  .has-field-video-background > .field-name--field-media-video-file > video {
+    min-width: 100vw !important;
+  }
+}
+
+/**
+ * Hotspots.
+ */
+.has--hotspots {
+  position: relative;
+}
+.has--hotspots > img {
+  margin-bottom: 0 !important;
+}
+.has--hotspots > .field-name--field-text {
+  background-color: rgba(34,34,34,.9);
+  bottom: 0;
+  color: var(--color--grey);
+  left: 0;
+  padding: calc(0.5 * var(--spacing--single));
+  position: absolute;
+  right: 0;
+}
+.hotspot-anchor,
+.hotspot-anchor:link {
+  background-color: var(--color--main-dark);
+  border-radius: 50%;
+  color: var(--color--white);
+  display: none;
+  font-weight: bold;
+  height: 1em;
+  line-height: 1;
+  padding: calc(0.5 * var(--spacing--single)) calc(0.3 * var(--spacing--single)) calc(0.5 * var(--spacing--single)) calc(0.6 * var(--spacing--single));
+  text-decoration: none;
+  transition: all .3s ease-in;
+  width: 1em;
+}
+.hotspot-anchor:hover,
+.hotspot-anchor:active,
+.hotspot-anchor:focus {
+  background-color: var(--color--main);
+  transform: rotate(45deg);
+}
+.js .hotspot-anchor {
+  display: block;
+}
+.hotspot-content {
+  background-color: var(--color--main-dark);
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--color--grey);
+  color: var(--color-white);
+  padding: 5px 10px;
+}
+.js .hotspot-content {
+  display: none;
+}
+.entity-bundle-hotspot {
+  position: absolute;
+}
+.entity-bundle-hotspot:focus .hotspot-content,
+.entity-bundle-hotspot:focus-within .hotspot-content,
+.entity-bundle-hotspot .hotspot-content:target {
+  display: block;
+}
+.js .entity-bundle-hotspot:focus .hotspot-content,
+.js .entity-bundle-hotspot:focus-within .hotspot-content {
+  display: none;
+}
+
+/**
+ * Override core inline list padding.
+ */
+ul.inline,
+ul.links.inline {
+  margin: 0;
+}
+ul.inline li:first-child {
+  padding: 0 0.5em 0 0;
+}
+
+/**
+ * Dismissible elements.
+ */
+.js--dismissible {
+  min-height: 35px; /* Magic number because of the button height below. */
+  padding-right: 55px !important; /* Magic number because of the button width below. */
+}
+.js--dismissible--close {
+  background-color: transparent;
+  color: currentColor;
+  margin: 0;
+  padding: calc(.75 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  position: absolute;
+  right: calc(1 * var(--spacing--single));
+  top: calc(50% - 17.5px);
+}
+
+/**
+ * Toggle below (Open/Close below) buttons.
+ */
+.js .js--toggle-below--closed {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .js--toggle-below.filter-toggle {
+    display: none;
+  }
+
+  .js .js--toggle-below--closed {
+    display: flex;
+  }
+}
+
+/**
+ * Shame class for single-direction spacing.
+ */
+.margin-bottom--4 {
+  margin-bottom: calc(4 * var(--spacing--single));
+}
+
+/**
+ * Messages and Alerts.
+ */
+.messages {
+  border: 1px solid;
+  border-radius: var(--border-radius--default);
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px;
+}
+.messages a {
+  color: inherit;
+  font-weight: 600;
+}
+.messages p:first-of-type {
+  margin-top: 0;
+}
+.messages--error {
+  background-color: var(--color--error-background);
+  color: var(--color--error);
+}
+.messages--status {
+  background-color: var(--color--status-background);
+  color: var(--color--status);
+}
+.messages--warning {
+  background-color: var(--color--warning-background);
+  color: var(--color--warning);
+}
+
+/**
+ * Core class for the links at the bottom of node teasers.
+ */
+.node__links {
+  margin: 20px 0 0;
+}
+
+/**
+ * Make the "Read more" links more interesting.
+ */
+.node-readmore {
+  font-weight: 500;
+}
+
+/**
+ * Core pagers.
+ */
+.pager {
+  font-weight: 600;
+  margin: 40px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pager ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.pager ul > li {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+}
+.pager li > a,
+.pager li > span {
+  color: var(--color--grey);
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.pager li > a:hover {
+  border-color: var(--color--grey);
+}
+.pager li.pager-current > span,
+.pager li.pager-current > a,
+.pager li.is-active > span,
+.pager li.is-active > a {
+  border-color: var(--color--grey);
+}
+.pager li.pager__item--previous {
+  border-right: 1px solid var(--color--grey);
+  margin-right: 4px;
+  padding-right: 16px;
+}
+.pager li.pager__item--next {
+  border-left: 1px solid var(--color--grey);
+  margin-left: 4px;
+  padding-left: 16px;
+}
+
+/**
+ * Make lazy loaded images transition all for perceived performance.
+ */
+.picture--lazy-load {
+  transform: scale(1, 0);
+  transition: var(--transition--default);
+}
+.picture--lazy-load--loaded {
+  transform: scale(1, 1);
+}
+
+/**
+ * Add stylistic pipes to lists.
+ */
+@media all and (min-width: 768px) {
+  .pipe-spaced > li::after {
+    content: '|';
+    display: inline-block;
+    font-weight: 300;
+    opacity: .9;
+    padding: 0 2px;
+    vertical-align: middle;
+  }
+  .pipe-spaced > li:last-child::after {
+    display: none;
+  }
+}
+
+/**
+ * Social links.
+ */
+.social a {
+  background-color: var(--color--black);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: var(--color-white);
+  display: flex;
+  margin: 0 calc(.5 * var(--spacing--single)) calc(.5 * var(--spacing--single)) 0;
+  min-height: 32px;
+  min-width: 32px;
+  padding: calc(.5 * var(--spacing--single)) calc(.5 * var(--spacing--single));
+}
+.social a > svg {
+  fill: var(--color--white);
+  height: 32px;
+  width: 32px;
+}
+.social a:hover,
+.social a:active,
+.social a:focus-within {
+  color: var(--color--second-light);
+}
+.social a:hover > svg,
+.social a:active > svg,
+.social a:focus-within > svg {
+  fill: var(--color--second-light);
+}
+
+/**
+ * Initial "top" state for the main nav, to allow for transitions via body-scroll--
+ */
+.sticky--top {
+  position: static;
+  top: -300px; /* Need a set negative position taller than the nav but not huge for transition */
+  transition: var(--transition--default);
+}
+
+/**
+ * Byline base class.
+ */
+.submitted {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+/**
+ * Basic responsive tables.
+ */
+@media all and (max-width: 1024px) {
+  .view--has-table > .view-content,
+  .tablefield-wrapper,
+  .table--wrapper {
+    max-width: calc(100vw - calc(8 * var(--spacing--single)));
+    overflow-x: scroll;
+  }
+}
+
+/**
+ * Core tabs.
+ */
+ul.tabs {
+  border-bottom: 1px solid;
+  border-color: var(--color--grey-light);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.tabs > li {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+  -moz-box-flex: 1;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  margin: 0 10px -1px;
+}
+ul.tabs > li > a {
+  color: var(--color--grey-dark);
+  display: block;
+  font-size: 2rem;
+  padding: 0.5em 1em 0;
+  text-decoration: none;
+}
+ul.tabs > li > a:hover {
+  background: var(--color--grey-light);
+  color: var(--color--main);
+}
+ul.tabs > li > a.active,
+ul.tabs > li > a.is-active {
+  background-color: transparent;
+  border-bottom: 1px solid;
+  color: var(--color--second);
+}
+@media all and (max-width: 1024px) {
+  ul.tabs > li > a {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 550px) {
+  ul.tabs {
+    border: 1px solid var(--color--grey);
+    display: block;
+    font-size: 0.8em;
+    padding: 0;
+  }
+  ul.tabs > li {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    float: none;
+    margin: 0;
+  }
+  ul.tabs > li:last-child {
+    border-width: 0;
+  }
+  ul.tabs > li > a {
+    display: block;
+  }
+}
+
+/**
+ * Wrapper for on-page interactive tabs (using child view mode tab for stripes).
+ */
+.tabs--content {
+  border-color: var(--color--grey-light);
+  border-style: solid;
+  border-width: 0 1px 1px;
+}
+
+/**
+ * Hotspot and other tooltips using tippyjs.
+ */
+.tippy-popper .tippy-content {
+  min-width: 20ch;
+}
+
+/**
+ * All teasers can take the same basic styles.
+ */
+.view-mode--teaser h2 {
+  font-family: var(--font-family--primary);
+  font-size: 22px;
+  margin: 0 0 calc(1 * var(--spacing--single));
+}
+
+.view-mode--teaser > figure {
+  border-top-right-radius: var(--border-radius--default);
+  border-top-left-radius: var(--border-radius--default);
+  overflow: hidden;
+}
+.view-mode--teaser > figure img {
+  min-width: 100%;
+}
+/* Since we don't truncate teaser text, size down super-long teasers. */
+.view-mode--teaser .text-length--extra-long,
+.view-mode--teaser .text-length--long {
+  font-size: 0.5em;
+}
+.view-mode--teaser .text-length--medium {
+  font-size: 0.75em;
+}
+@media all and (min-width: 1280px) {
+  .view-mode--teaser > figure {
+    max-height: clamp(165px, 17.5vh, 215px);
+    min-height: 165px;
+  }
+}
+.view-mode--teaser .text-formatted {
+  color: var(--color--grey-dark);
+  font-size: 0.875em;
+}

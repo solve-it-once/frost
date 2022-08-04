@@ -1,0 +1,14 @@
+# Package info
+name: 'Custom RSS Migrate'
+description: Module for performing site-specific migrations from RSS.
+type: module
+core_version_requirement: ^8 || ^9
+package: Migrate
+
+# Dependencies
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools
+  - drupal:node
+  - drupal:taxonomy
