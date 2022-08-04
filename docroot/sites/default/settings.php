@@ -12,7 +12,6 @@ use Acquia\Blt\Robo\Common\EnvironmentDetector;
 // default.settings.php file.
 //
 // See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
-$repo_root = find_repo_root();
 $databases = [];
 $config_directories = [];
 $settings['update_free_access'] = FALSE;
@@ -39,7 +38,7 @@ require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
 // Set up a config sync directory.
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
-$settings['config_sync_directory']  = $repo_root . '/config/sync';
+$settings['config_sync_directory']  = '../config/sync';
 
 // Automatic Platform.sh settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
