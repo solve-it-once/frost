@@ -4,8 +4,8 @@ project:
   profile:
     name: frost
   local:
-    protocol: http
-    hostname: localhost
+    protocol: https
+    hostname: 'www.${project.machine_name}.lndo.site'
 cm:
   strategy: core-only
 git:

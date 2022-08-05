@@ -1,13 +1,34 @@
 # Override any settings as necessary by copying to local.blt.yml.
 # Do not commit local.blt.yml to Git. It is specific to the machine it was created on.
 
-#project:
-#  local:
-#    protocol: http
-#    hostname: mysite.dev
+project:
+  local:
+    protocol: https
+    hostname: www.frost.lndo.site
 
 # You can set custom project aliases in drush/sites/*.site.yml.
 # All local:* targets are run against drush.aliases.local.
 #drush:
 #  aliases:
 #    local: local.mysite.dev
+
+drupal:
+  db:
+    database: main
+    username: user
+    password:
+    host: database.internal
+    port: 3306
+
+tests:
+  drupal:
+    web-driver: anything
+  reports.localDir: '/tmp'
+  reports.remoteDir: '/tmp'
+  run-server: false
+  server.port: 443
+  server.url: 'https://www.frost.lndo.site'
+  chrome.port: 9222
+
+behat:
+  web-driver: anything

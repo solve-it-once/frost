@@ -19,4 +19,4 @@ solr:
         core: maincore
 
 chrome:
-  type: chrome-headless:95
+  type: chrome-headless:86
