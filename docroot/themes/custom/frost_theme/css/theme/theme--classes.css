@@ -49,6 +49,41 @@
 }
 
 /**
+ * Search icon toggle and corresponding block.
+ */
+.block--search-icon-block {
+  position: relative;
+}
+.block--search-icon-block .button--search-widget--toggle {
+  color: var(--color--white);
+  display: none;
+  margin: 0;
+}
+.block--search-icon-block .button--search-widget--toggle > svg {
+  fill: var(--color--white);
+}
+.block--search-icon-block .search-form-wrapper.js--toggle-below--closed {
+  display: block;
+}
+@media all and (min-width: 1024px) {
+  .block--search-icon-block .button--search-widget--toggle {
+    display: inline-block;
+  }
+  .block--search-icon-block .search-form-wrapper {
+    background-color: var(--color--white);
+    bottom: -65px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 80%);
+    min-width: 200px;
+    padding: calc(1 * var(--spacing--single)) calc(1 * var(--spacing--single)) 0;
+    position: absolute;
+    right: 0;
+  }
+  .block--search-icon-block .search-form-wrapper.js--toggle-below--closed {
+    display: none;
+  }
+}
+
+/**
  * Blockquote checkbox classes for adding opening and closing quotes as needed.
  *
  * Especially useful if the opening/closing quotes have to look different than

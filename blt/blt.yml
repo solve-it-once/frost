@@ -1,5 +1,6 @@
 project:
   machine_name: frost
+  prefix: GH
   human_name: 'Frost install profile'
   profile:
     name: frost
@@ -9,6 +10,10 @@ project:
 cm:
   strategy: core-only
 git:
+  commit-msg:
+    pattern: "/^(Adds|Amends|Changes|Closes|Enhances|Fixes|Resolves) .*?\#[0-9]{1,} (by|with) .*?\.$/"
+    help_description: "Starts with Adds|Amends|Changes|Closes|Enhances|Fixes|Resolves, then the GitHub issue number
+      preceded by a #, then a space and either the word by|with, then a spaced and description, and closing with period."
   default_branch: master
   remotes:
     - 'git@github.com:solve-it-once/frost.git'

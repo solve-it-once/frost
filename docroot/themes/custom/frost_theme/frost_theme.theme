@@ -52,6 +52,21 @@ function frost_theme_preprocess_page(&$vars) {
 /**
  * Implements hook_preprocess_element().
  */
+function frost_theme_preprocess_block(&$vars) {
+  // Add the block's plugin id as a class.
+  if (isset($vars['plugin_id']) && mb_strlen($vars['plugin_id'])) {
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('block--' . $vars['plugin_id']);
+  }
+
+  // If block's module is in the vars, class that too.
+  if (isset($vars['configuration']['provider']) && mb_strlen($vars['configuration']['provider'])) {
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('block--' . $vars['configuration']['provider']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_element().
+ */
 function frost_theme_preprocess_facets_item_list(&$vars) {
   $widget = $vars['facet']->get('widget');
 
