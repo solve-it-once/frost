@@ -391,14 +391,15 @@
 }
 .hotspot-anchor,
 .hotspot-anchor:link {
-  background-color: var(--color--main-dark);
+  background-color: var(--color--main);
   border-radius: 50%;
   color: var(--color--white);
   display: none;
   font-weight: bold;
   height: 1em;
+  letter-spacing: 0.25em;
   line-height: 1;
-  padding: calc(0.5 * var(--spacing--single)) calc(0.3 * var(--spacing--single)) calc(0.5 * var(--spacing--single)) calc(0.6 * var(--spacing--single));
+  padding: calc(0.5 * var(--spacing--single));
   text-decoration: none;
   transition: all .3s ease-in;
   width: 1em;
