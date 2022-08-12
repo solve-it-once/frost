@@ -12,16 +12,18 @@ build:
 relationships:
   database: 'mysqldb:mysql'
   solr: 'solr:main'
-  chrome: 'chrome:http'
+# @see .platform/services.yaml for enabling the below.
+#  chrome: 'chrome:http'
 
 dependencies:
   php:
     composer/composer: '^2'
     "drush/drush": "^10.0"
 
-runtime:
-  extensions:
-    - xdebug
+# Remote debugging is possible by uncommenting the runtime config below.
+#runtime:
+#  extensions:
+#    - xdebug
 
 mounts:
   '/docroot/sites/default/files': 'shared:files/files'

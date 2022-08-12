@@ -24,6 +24,11 @@ services:
         SERVER_NAME: "default"
         HTTP_HOST: "default"
   chrome:
+    type: compose
+    services:
+      image: isholgueras/chrome-headless:latest
+      # Lando always overrides the default entrypoint.
+      command: chromedriver --verbose --whitelisted-ips=
     portforward: 9222
 
 tooling:

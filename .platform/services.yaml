@@ -18,5 +18,6 @@ solr:
       main:
         core: maincore
 
-chrome:
-  type: chrome-headless:86
+# If you want to do behat and other testing on the remote, use this chrome service.
+#chrome:
+#  type: chrome-headless:86

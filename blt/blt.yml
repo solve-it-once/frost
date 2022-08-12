@@ -11,7 +11,7 @@ cm:
   strategy: core-only
 git:
   commit-msg:
-    pattern: "/^(Adds|Amends|Changes|Closes|Enhances|Fixes|Resolves) .*?#[0-9]{1,} (by|with) .*?(.)$/"
+    pattern: "/^(Adds|Amends|Augments|Changes|Closes|Enhances|Fixes|Resolves) .*?#[0-9]{1,} (by|with|so) .*?(.)$/"
     help_description: "Starts with Adds|Amends|Changes|Closes|Enhances|Fixes|Resolves, then the GitHub issue number
       preceded by a #, then a space and either the word by|with, then a spaced and description, and closing with period."
     example: "Resolves #7 by making a search toggle for desktop."
