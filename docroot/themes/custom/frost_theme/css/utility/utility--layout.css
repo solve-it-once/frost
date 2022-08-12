@@ -32,6 +32,7 @@ main {
 }
 @media all and (max-width: 767px) {
   .entity-bundle-column {
+    min-width: 200px;
     padding-top: calc(2 * var(--spacing--single));
   }
   .entity-bundle-column:last-child {
@@ -80,6 +81,10 @@ main {
 @media all and (max-width: 767px) {
   .entity-bundle-stripe {
     padding: calc(6 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  }
+  /* Give tab contents more breathing room on mobile. */
+  details > .entity-bundle-stripe {
+    padding: calc(4 * var(--spacing--single)) 0;
   }
 }
 .entity-bundle-stripe > .inner,

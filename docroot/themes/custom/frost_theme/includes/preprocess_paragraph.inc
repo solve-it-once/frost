@@ -207,7 +207,6 @@ function frost_theme_preprocess_paragraph(&$vars) {
       }
 
       if ($child_mode === 'tab') {
-        $vars['attributes']['class'][] = Html::cleanCssIdentifier('padding-horizontal--4');
         $vars['attributes']['class'][] = Html::cleanCssIdentifier('padding-vertical--4');
       }
 

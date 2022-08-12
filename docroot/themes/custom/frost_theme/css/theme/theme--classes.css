@@ -657,9 +657,8 @@ ul.inline li:first-child {
  */
 @media all and (max-width: 1024px) {
   .view--has-table > .view-content,
-  .tablefield-wrapper,
   .table--wrapper {
-    max-width: calc(100vw - calc(8 * var(--spacing--single)));
+    max-width: calc(100vw - calc(6 * var(--spacing--single)));
     overflow-x: scroll;
   }
 }

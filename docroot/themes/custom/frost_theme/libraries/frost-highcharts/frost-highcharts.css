@@ -12,7 +12,7 @@
  * Ensure highcharts are responsive.
  */
 .highcharts-container {
-  max-width: calc(100vw - calc(8 * var(--spacing--single)));
+  max-width: calc(100vw - calc(4 * var(--spacing--single)));
   width: auto !important;
 }
 
