@@ -233,18 +233,18 @@
   .child-display-mode--tab > .tabs {
     display: flex;
   }
-  .js .child-display-mode--tab summary {
-    display: none;
-  }
 
-  .js .child-display-mode--tab details {
+  .js .child-display-mode--tab .tabs--content > details {
     background-color: transparent;
     display: none;
     margin: 0;
     padding: 0;
   }
-  .js .child-display-mode--tab details[open] {
+  .js .child-display-mode--tab .tabs--content > details[open] {
     display: block;
+  }
+  .js .child-display-mode--tab .tabs--content > details > summary {
+    display: none;
   }
 }
 

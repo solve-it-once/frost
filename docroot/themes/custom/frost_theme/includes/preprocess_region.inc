@@ -21,6 +21,12 @@ function frost_theme_preprocess_region(&$vars) {
   $vars['content_attributes']['class'][] = Html::cleanCssIdentifier('inner');
 
   switch ($vars['region']) {
+    case 'alerts':
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('background-color--white');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flow-root');
+
+      break;
+
     case 'footer_menu':
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('padding-horizontal--collapse');
 

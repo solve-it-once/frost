@@ -10,6 +10,7 @@ dependencies:
     - honeypot
     - media
     - search_api_autocomplete
+    - styleguide
     - system
 _core:
   default_config_hash: XeWQBoKQFC7lZln1-PALmSpfWNHdgfxGyvKL88QDuGw
@@ -28,3 +29,4 @@ permissions:
   - 'view commerce_product'
   - 'view media'
   - 'view own commerce_order'
+  - 'view style guides'

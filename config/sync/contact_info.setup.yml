@@ -38,3 +38,9 @@ social:
       url: 'https://www.linkedin.com/company/solve-it-once/'
       enable: '1'
       weight: '-5'
+    4:
+      name: GitHub
+      icon: github.svg
+      url: 'https://github.com/solve-it-once/frost'
+      enable: '1'
+      weight: '0'

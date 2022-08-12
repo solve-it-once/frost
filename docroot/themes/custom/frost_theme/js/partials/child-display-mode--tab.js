@@ -15,7 +15,7 @@ var childTabsInitializationFunction = function (initType) {
 
   // Build a tabs list and then prepend it to the wrapper.
   let tabsList = '<ul role="tablist" class="tabs">';
-  const thisDetails = this.querySelectorAll('details');
+  const thisDetails = this.querySelectorAll('.tabs--content > details');
   Array.prototype.forEach.call(thisDetails, (elem, i) => {
     // Open the first tab by default.
     if (!i) {
