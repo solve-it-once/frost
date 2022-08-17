@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64cbed4248d0c8ff46c465bd3204543e",
+    "content-hash": "940b12f6a024b83bfe8bbe6442c9622a",
     "packages": [
         {
             "name": "acquia/blt",
@@ -3797,17 +3797,17 @@
         },
         {
             "name": "drupal/block_class",
-            "version": "2.0.0",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "2.0.0"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_class-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "05be5c31feaf999f8fd20049d1911d23c28f14b8"
+                "url": "https://ftp.drupal.org/files/projects/block_class-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "ce7f3d925f48270f042bc545eeddde661f78c56c"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -3815,8 +3815,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1656362497",
+                    "version": "2.0.2",
+                    "datestamp": "1660705004",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5427,17 +5427,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "4.0.1",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "4.0.1"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-4.0.1.zip",
-                "reference": "4.0.1",
-                "shasum": "ac2373c13efd7d95da7230bd5a6627f16a6a5b6e"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "67da670df43155d1e15c80c7b0e326b3049ac5a2"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -5445,15 +5445,15 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1660252593",
+                    "version": "8.x-3.11",
+                    "datestamp": "1660167573",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "branch-alias": {
-                    "dev-4.x": "4.x-dev"
+                    "dev-8.x-3.x": "3.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5487,9 +5487,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Joël (joelpittet)",
-                    "homepage": "https://www.drupal.org/u/joelpittet",
-                    "role": "Maintainer"
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -5521,16 +5520,16 @@
         },
         {
             "name": "drupal/ctools_views",
-            "version": "4.0.1",
+            "version": "3.11.0",
             "require": {
                 "drupal/core": "^9.3 || ^10",
-                "drupal/ctools": "^4"
+                "drupal/ctools": "^3"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1660252593",
+                    "version": "8.x-3.11",
+                    "datestamp": "1660167573",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6262,20 +6261,20 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "e1c51bdea495eb3b458130d6f0a00c347f5637df"
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "edd23b91c4a34db65ea22c4db54b7458edc7513b"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "require-dev": {
                 "drupal/diff": "1.x-dev"
@@ -6283,11 +6282,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1614805871",
+                    "version": "8.x-1.10",
+                    "datestamp": "1660664712",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -8396,10 +8400,6 @@
                     "homepage": "https://www.drupal.org/user/514222"
                 },
                 {
-                    "name": "Primsi",
-                    "homepage": "https://www.drupal.org/user/282629"
-                },
-                {
                     "name": "jeroen.b",
                     "homepage": "https://www.drupal.org/user/1853532"
                 },
@@ -8410,6 +8410,10 @@
                 {
                     "name": "miro_dietiker",
                     "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
                 }
             ],
             "description": "Enables the creation of Paragraphs entities.",
@@ -8455,10 +8459,6 @@
                     "homepage": "https://www.drupal.org/user/514222"
                 },
                 {
-                    "name": "Primsi",
-                    "homepage": "https://www.drupal.org/user/282629"
-                },
-                {
                     "name": "jeroen.b",
                     "homepage": "https://www.drupal.org/user/1853532"
                 },
@@ -8469,6 +8469,10 @@
                 {
                     "name": "miro_dietiker",
                     "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
                 }
             ],
             "homepage": "https://www.drupal.org/project/paragraphs",
@@ -9779,26 +9783,26 @@
         },
         {
             "name": "drupal/taxonomy_menu_ui",
-            "version": "2.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/taxonomy_menu_ui.git",
-                "reference": "2.0.1"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/taxonomy_menu_ui-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "5302071a752351d80848b56da8b41ecdc6266945"
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_menu_ui-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "c9b779c94b3bd2f3cd08a9072c852ed319e633e4"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1634217479",
+                    "version": "3.0.0",
+                    "datestamp": "1660494038",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15780,16 +15784,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.5",
+            "version": "v2.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "567221efd5d1ab53260fb76f16c77610454a5d6a"
+                "reference": "ad2b0b57803a48bb3495777bee2a9a13c8e9da53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/567221efd5d1ab53260fb76f16c77610454a5d6a",
-                "reference": "567221efd5d1ab53260fb76f16c77610454a5d6a",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/ad2b0b57803a48bb3495777bee2a9a13c8e9da53",
+                "reference": "ad2b0b57803a48bb3495777bee2a9a13c8e9da53",
                 "shasum": ""
             },
             "require": {
@@ -15830,7 +15834,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2022-08-13T21:40:42+00:00"
+            "time": "2022-08-16T22:19:00+00:00"
         },
         {
             "name": "slevomat/coding-standard",
