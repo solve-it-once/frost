@@ -16,32 +16,36 @@ version: 1
 # Templates are a small amount of information supporting a template URL.
 # Each template is selectable at the project-creation step.
 info:
-    # Unique machine name, prefaced by a vendor or organization identifier.
-    # The vendor should be the lowercase name of your company, organization, or project, and the project name
-    # the lowercase name of the template. This may be the same as the vendor in a single-product case.
-    id: solve-it-once/frost
-    # The human-readable name of the template.  This is how the template will be named in the user interface.
-    name: Frost
-    # Human-readable descriptive text for the template. Supports limited HTML.
-    # This field should be 1-3 sentences describing how the project is setup, assuming the reader already knows what
-    # the application is.
-    description: |
-      Frost is an easy-to-use, low-code, atomic componenet-based distribution of Drupal.
-    # A list of tags associated with the template.  These should be highly generic terms like "CMS", "Framework", and
-    # the language in which the application is written.
-    tags:
-        - PHP
-        - CMS
-    # An image URI (either base64-encoded or a URL) representing the template.  Base64-encoded SVG strongly preferred.
-    image: data:image/svg+xml;...
-    # Additional notes displayed in the template's detail view.
-    # Each note object is displayed as a small section heading with content below. Supports limited HTML.
-    # The most important is a section that lists the "Apps and Services" (container images) that the project uses.
-    # These are the name/version of the Platform.sh containers, not including the Nginx router.
-    notes:
-        - heading: "Apps & Services"
-          content: "PHP 7.2<br/>Postgresql 9.6"
-
+  # Unique machine name, prefaced by a vendor or organization identifier.
+  # The vendor should be the lowercase name of your company, organization, or project, and the project name
+  # the lowercase name of the template. This may be the same as the vendor in a single-product case.
+  id: solve-it-once/frost
+  # The human-readable name of the template.  This is how the template will be named in the user interface.
+  name: Frost
+  # Human-readable descriptive text for the template. Supports limited HTML.
+  # This field should be 1-3 sentences describing how the project is setup, assuming the reader already knows what
+  # the application is.
+  description: |
+    Frost is an easy-to-use, low-code, atomic componenet-based distribution of Drupal.
+  # A list of tags associated with the template.  These should be highly generic terms like "CMS", "Framework", and
+  # the language in which the application is written.
+  tags:
+    - PHP
+    - Drupal
+    - CMS
+  # An image URI (either base64-encoded or a URL) representing the template.  Base64-encoded SVG strongly preferred.
+  image: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTTQyIDE0IDMyIDFjLTEgNC01IDktMTAgMTMtNiA2LTE0IDE0LTE0IDI1YTI0IDI0IDAgMSAwIDQ4IDF2LTFjMC0xMS03LTE5LTE0LTI1WiIvPgogIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Im01NCAzOC0yLTFoLTFsMS0yYTEgMSAwIDEgMC0xLTFsLTQgM2gtMWwxLTJhMSAxIDAgMSAwLTEtMWwtMyAzaC04bDUtNWg1YTEgMSAwIDEgMCAwLTNoLTJsMS0xaDRhMSAxIDAgMSAwIDAtMmgtMmwxLTFhMSAxIDAgMSAwLTEtMmwtMiAxdi0yYTEgMSAwIDEgMC0yIDB2NWwtMSAxdi0zYTEgMSAwIDEgMC0yIDB2NWwtNiA1di03bDQtNGExIDEgMCAxIDAtMi0xbC0yIDJ2LTJsNC0zYTEgMSAwIDEgMC0yLTJsLTIgMnYtMmExIDEgMCAwIDAtMiAwdjJsLTItMmExIDEgMCAxIDAtMSAybDMgM3YybC0yLTJhMSAxIDAgMSAwLTEgMWwzIDR2N2wtNS01di01YTEgMSAwIDEgMC0zIDB2M2wtMS0xdi01YTEgMSAwIDEgMC0yIDB2MmwtMS0xYTEgMSAwIDEgMC0yIDJsMSAxaC0yYTEgMSAwIDEgMCAwIDJoNWwxIDFoLTNhMSAxIDAgMSAwIDAgM2g1bDUgNWgtN2wtNC0zYTEgMSAwIDEgMC0xIDFsMiAyaC0ybC0zLTNhMSAxIDAgMSAwLTIgMWwyIDJoLTJhMSAxIDAgMSAwIDAgMmgybC0yIDJhMSAxIDAgMSAwIDIgMmwzLTRoMmwtMiAyYTEgMSAwIDEgMCAxIDJsNC00aDdsLTUgNmgtNWExIDEgMCAxIDAgMCAyaDNsLTEgMWgtNWExIDEgMCAxIDAgMCAyaDJsLTEgMmExIDEgMCAxIDAgMiAxbDEtMXYyYTEgMSAwIDEgMCAyIDB2LTRsMS0xdjJhMSAxIDAgMSAwIDMgMHYtNWw1LTV2OGwtMyAzYTEgMSAwIDEgMCAxIDFsMi0xdjFsLTMgNGExIDEgMCAxIDAgMSAxbDItMXYxYTEgMSAwIDAgMCAyIDB2LTFsMiAxYTEgMSAwIDEgMCAyLTFsLTQtNHYtMWwyIDFhMSAxIDAgMCAwIDIgMHYtMWwtNC0zdi04bDYgNXY1YTEgMSAwIDEgMCAyIDB2LTJsMSAxdjRhMSAxIDAgMSAwIDIgMHYtMmwyIDFhMSAxIDAgMCAwIDEgMHYtMWwtMS0yaDJhMSAxIDAgMSAwIDAtMmgtNGwtMS0xaDJhMSAxIDAgMSAwIDAtMmgtNWwtNS02aDhsMyA0YTEgMSAwIDAgMCAxIDB2LTJsLTEtMmgxbDQgNGExIDEgMCAwIDAgMSAwdi0ybC0xLTJoMWwyLTF6Ii8+Cjwvc3ZnPgo=
+  # Additional notes displayed in the template's detail view.
+  # Each note object is displayed as a small section heading with content below. Supports limited HTML.
+  # The most important is a section that lists the "Apps and Services" (container images) that the project uses.
+  # These are the name/version of the Platform.sh containers, not including the Nginx router.
+  notes:
+    - heading: "Features"
+      content: |
+        PHP 8+<br />
+        Composer-based build<br />
+        Lando locals<br />
+        Atomic components base on Paragraphs<br />
 
 # This key describes the initialization call made to the master environment at
 # project creation time. This is part of the full v2 UI operation mode, which
@@ -50,7 +54,7 @@ info:
 # this key also gets mapped to the appropriate location in project.settings so
 # that the current UI can have its own workflow overridden as well.
 initialize:
-    repository: https://github.com/solve-it-once/frost.git@master
-    config: null
-    files: []
-    profile: PHP
+  repository: https://github.com/solve-it-once/frost.git@master
+  config: null
+  files: [ ]
+  profile: PHP
