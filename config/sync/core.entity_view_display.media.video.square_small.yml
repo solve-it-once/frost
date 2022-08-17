@@ -1,47 +1,50 @@
-uuid: 0366fff3-8d78-42a7-8491-2dd0f984f406
+uuid: cdfa3ed6-712d-41c5-ab0e-520b8a1cdf86
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.square_small
-    - field.field.media.image.field_media_filesize
-    - field.field.media.image.field_media_height
-    - field.field.media.image.field_media_image
-    - field.field.media.image.field_media_mimetype
-    - field.field.media.image.field_media_width
+    - field.field.media.video.field_media_filesize
+    - field.field.media.video.field_media_mimetype
+    - field.field.media.video.field_media_video_file
     - image.style.square_small
-    - media.type.image
+    - media.type.video
   module:
     - field_formatter_class
     - image
+    - linked_field
 _core:
-  default_config_hash: 0mbSbbtNCji9lwqL7jD2SRPJtaogwbOy68uW0MdRXRk
-id: media.image.square_small
+  default_config_hash: kIaBldS_EeDby-UfPgj5QubngxD5UGIcCQX32NCjRHs
+id: media.video.square_small
 targetEntityType: media
-bundle: image
+bundle: video
 mode: square_small
 content:
-  field_media_image:
+  thumbnail:
     type: image
     label: hidden
     settings:
-      image_link: file
+      image_link: ''
       image_style: square_small
       image_loading:
         attribute: lazy
     third_party_settings:
       field_formatter_class:
         class: ''
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[media:field_media_video_file:entity:url]'
+        advanced: {  }
+        token: ''
     weight: 0
     region: content
 hidden:
   created: true
   field_media_filesize: true
-  field_media_height: true
   field_media_mimetype: true
-  field_media_width: true
+  field_media_video_file: true
   langcode: true
   name: true
   search_api_excerpt: true
-  thumbnail: true
   uid: true

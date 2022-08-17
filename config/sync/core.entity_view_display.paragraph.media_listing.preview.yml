@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.media_listing.field_data_lightbox
     - field.field.paragraph.media_listing.field_multimedia
     - field.field.paragraph.media_listing.field_style_layout
     - paragraphs.paragraphs_type.media_listing
@@ -27,5 +28,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_data_lightbox: true
   field_style_layout: true
   search_api_excerpt: true

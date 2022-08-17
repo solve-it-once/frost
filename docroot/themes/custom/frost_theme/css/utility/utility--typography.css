@@ -62,13 +62,11 @@
  * class, it may be necessary to override those classes similarly (since the
  * specificity is higher that a bare class).
  */
-.text-align--center figure,
 .text-align--center img,
 .text-align--center p,
 .text-align--center picture,
 .text-align--center svg,
 .text-align--center video,
-.text-align--justify figure,
 .text-align--justify img,
 .text-align--justify p,
 .text-align--justify picture,
@@ -85,12 +83,10 @@
 .text-align--justify figure picture {
   margin-bottom: 0;
 }
-.text-align--left figure,
 .text-align--left img,
 .text-align--left picture,
 .text-align--left svg,
 .text-align--left video,
-.text-align--right figure,
 .text-align--right img,
 .text-align--right picture,
 .text-align--right svg,

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.media_listing.field_data_lightbox
     - field.field.paragraph.media_listing.field_multimedia
     - field.field.paragraph.media_listing.field_style_layout
     - paragraphs.paragraphs_type.media_listing
@@ -45,6 +46,7 @@ third_party_settings:
     group_settings:
       children:
         - field_style_layout
+        - field_data_lightbox
       label: Settings
       region: content
       parent_name: group_admin
@@ -62,6 +64,13 @@ targetEntityType: paragraph
 bundle: media_listing
 mode: default
 content:
+  field_data_lightbox:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_multimedia:
     type: paragraphs
     weight: 1

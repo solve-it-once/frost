@@ -1,9 +1,21 @@
+frost-fslightbox:
+  version: 3.3.1
+  license:
+    name: MIT
+  css:
+    component:
+      libraries/frost-fslightbox/frost-fslightbox.css: {}
+  js:
+    libraries/frost-fslightbox/fslightbox/fslightbox.js: {}
+    libraries/frost-fslightbox/frost-fslightbox.js: {}
+
 frost-globalStyling:
   version: 1.x
   css:
     base:
       css/settings.css: {}
       css/theme/theme--base.css: {}
+      css/theme/theme--base-advanced.css: {}
       css/utility/property--value.css: {}
       css/utility/animate.css: {}
       css/utility/utility--animation.css: {}

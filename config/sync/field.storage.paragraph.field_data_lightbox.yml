@@ -1,0 +1,18 @@
+uuid: 585f8e9e-5ccf-4b60-8b52-4c90fac49678
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_data_lightbox
+field_name: field_data_lightbox
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

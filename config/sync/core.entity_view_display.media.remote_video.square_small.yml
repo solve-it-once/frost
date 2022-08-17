@@ -1,0 +1,46 @@
+uuid: 1d4acb47-f3a2-4aa6-9ba6-4470025beaa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.square_small
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_media_provider
+    - image.style.square_small
+    - media.type.remote_video
+  module:
+    - field_formatter_class
+    - image
+    - linked_field
+id: media.remote_video.square_small
+targetEntityType: media
+bundle: remote_video
+mode: square_small
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_small
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_media_oembed_video
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_oembed_video: true
+  field_media_provider: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

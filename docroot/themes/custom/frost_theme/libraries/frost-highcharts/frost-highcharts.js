@@ -8,7 +8,7 @@ var colors = ["#0266c8", "#f90101", "#f2b50f", "#00933b"];
 if (typeof getComputedStyle === 'function') {
   var styles = getComputedStyle(document.documentElement);
   var colorValue = styles.getPropertyValue('--color--main'),
-    cvNoHex = colorValue.trim().substr(1);
+    cvNoHex = colorValue.trim().substr(1).toUpperCase();
   var scheme = new ColorScheme;
   scheme.from_hex(cvNoHex)
     .scheme('tetrade');

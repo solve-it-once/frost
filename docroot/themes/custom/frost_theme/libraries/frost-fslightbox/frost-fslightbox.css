@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Styling specific to lightboxes for the media listing component.
+ */
+
+/**
+ * Allow more grid/gallery items per row than usual horizontal layouts.
+ */
+.entity-bundle-media-listing.layout--horizontal {
+  flex-wrap: wrap;
+}
+.entity-bundle-media-listing.layout--horizontal > figure,
+.entity-bundle-media-listing.layout--carousel > figure {
+  flex-basis: 150px;
+  min-width: 150px;
+}
+.entity-bundle-media-listing.layout--carousel > figure {
+  min-width: 150px; /* The carousel works hard to avoid overflow. */
+}

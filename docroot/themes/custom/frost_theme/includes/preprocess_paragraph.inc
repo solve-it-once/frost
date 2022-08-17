@@ -188,6 +188,18 @@ function frost_theme_preprocess_paragraph(&$vars) {
 
       break;
 
+    case 'media_listing':
+      // Add the lightbox library when toggled.
+      if ($entity->hasField('field_data_lightbox')) {
+        $lightbox_bool = $entity->get('field_data_lightbox')->getValue();
+        if (isset($lightbox_bool[0]['value']) && $lightbox_bool[0]['value']) {
+          $vars['attributes']['class'][] = Html::cleanCssIdentifier('js--frost-fslightbox');
+          $vars['#attached']['library'][] = 'frost_theme/frost-fslightbox';
+        }
+      }
+
+      break;
+
     case 'message':
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('messages');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('js--dismissible');

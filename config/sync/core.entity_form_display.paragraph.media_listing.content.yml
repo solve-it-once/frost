@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.media_listing.field_data_lightbox
     - field.field.paragraph.media_listing.field_multimedia
     - field.field.paragraph.media_listing.field_style_layout
     - paragraphs.paragraphs_type.media_listing
@@ -42,5 +43,6 @@ content:
         show_drag_and_drop: true
 hidden:
   created: true
+  field_data_lightbox: true
   field_style_layout: true
   status: true

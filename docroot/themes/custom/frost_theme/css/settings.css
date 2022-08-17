@@ -31,6 +31,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Emberly';
+  font-stretch: 75% 100%;
   font-style: normal;
   font-weight: 100 900;
   src: url('../fonts/emberly/emberly-variable.woff2') format('woff2');
@@ -38,6 +39,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Emberly';
+  font-stretch: 75% 100%;
   font-style: italic;
   font-weight: 100 900;
   src: url('../fonts/emberly/emberly-variable-italic.woff2') format('woff2');

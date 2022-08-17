@@ -84,6 +84,7 @@ main {
   }
   /* Give tab contents more breathing room on mobile. */
   details > .entity-bundle-stripe {
+    background-color: transparent !important; /* May reconsider this, as it it not in the spirit of components. */
     padding: calc(4 * var(--spacing--single)) 0;
   }
 }
@@ -95,6 +96,11 @@ main {
   max-width: var(--layout--content-area);
   position: relative;
   z-index: 2;
+}
+@media all and (min-width: 767px) {
+  .entity-bundle-stripe > .inner {
+    overflow: hidden; /* Defensive CSS for scroll-snap .layout--carousel only. Remove if not using that. */
+  }
 }
 .child-inner-max-width--inherit > .inner {
   margin: 0;
@@ -152,6 +158,7 @@ main {
   .layout--carousel {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    max-width: calc(100vw - (6 * var(--spacing--single))); /* Explicit, defensive. This feature leads to some shame. */
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -168,6 +175,7 @@ main {
     scroll-snap-align: start;
   }
   .layout--carousel > * {
+    flex-basis: unset;
     min-width: 330px; /* The carousel works hard to avoid overflow. */
   }
 }

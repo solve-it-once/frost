@@ -46,6 +46,7 @@ elements: |-
   color_picker:
     '#type': color
     '#title': 'Color picker'
+    '#format': value
   email:
     '#type': email
     '#title': Email

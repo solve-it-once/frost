@@ -187,8 +187,8 @@ function contact_info_create_map(ImmutableConfig $contact_info = NULL, array|nul
     $address_string .= $address['region'] . ' ';
     $address_string .= $address['postal_code'] . ' ';
 
-    $output = '<iframe width="' . $map_settings['width'] . '" height="' . $map_settings['height'] . '" frameborder="0" ';
-    $output .= 'style="border:0" src="https://www.google.com/maps/embed/v1/place?key=';
+    $output = '<iframe loading="lazy" width="' . $map_settings['width'] . '" height="' . $map_settings['height'] . '" frameborder="0" ';
+    $output .= 'title="A google map of the site location" allowfullscreen referrerpolicy="no-referrer-when-downgrade" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=';
     $output .= $map_settings['api_key'] . '&q=' . urlencode(str_replace(' ', '+', $address_string));
     $output .= '"></iframe>';
   }
@@ -462,7 +462,7 @@ function _contact_info_social_draggable_table(array $social_table, array &$form,
     }
   }
   elseif ($form_state->isRebuilding() && $form_state->getValue('op')
-    ->render() == 'Add social media') {
+      ->render() == 'Add social media') {
     if (!isset($social_table)) {
       $contact_info = \Drupal::config('contact_info.setup');
       $social_table = $contact_info->get('social.table');
@@ -471,7 +471,7 @@ function _contact_info_social_draggable_table(array $social_table, array &$form,
     $form_state->setValue('social_rows', count($social_table) + 1);
   }
   elseif ($form_state->isRebuilding() && $form_state->getValue('op')
-    ->render() == 'Remove social media') {
+      ->render() == 'Remove social media') {
     if (!isset($social_table)) {
       $contact_info = \Drupal::config('contact_info.setup');
       $social_table = $contact_info->get('social.table');
