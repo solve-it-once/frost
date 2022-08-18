@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2e10b056-1a5e-446b-b5f7-0d30f5c79d66
+  bundle: image
+  default_langcode: en
+  depends:
+    8367f7c3-6828-44f2-a0e5-4bfb0ba2864b: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: brad_czerniak_1_0.jpg
+  created:
+    -
+      value: 1570555421
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  field_media_filesize:
+    -
+      value: '557759.00'
+  field_media_height:
+    -
+      value: 1829
+  field_media_image:
+    -
+      entity: 8367f7c3-6828-44f2-a0e5-4bfb0ba2864b
+      alt: 'Brad Czerniak'
+      title: ''
+      width: 1829
+      height: 1829
+  field_media_mimetype:
+    -
+      value: image/jpeg
+  field_media_width:
+    -
+      value: 1829

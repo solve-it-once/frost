@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 54189db9-f7a2-4ad3-bc81-cacde00927fb
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    5426e367-ff50-46a6-988d-6022a47703e5: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Events
+  menu_name:
+    -
+      value: footer-main
+  link:
+    -
+      target_uuid: 5426e367-ff50-46a6-988d-6022a47703e5
+      title: ''
+      options:
+        attributes:
+          class: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

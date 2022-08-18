@@ -1,0 +1,114 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3d84c174-7281-4d6d-8565-121ef35b8ff0
+  bundle: article
+  default_langcode: en
+  depends:
+    cf0ec524-fd02-4d53-beee-5296e089a6f0: taxonomy_term
+    2e10b056-1a5e-446b-b5f7-0d30f5c79d66: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Third test blog'
+  created:
+    -
+      value: 1643577617
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/third-test-blog
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>Disrupt brunch hell of yuccie tumeric gochujang franzen mlkshk try-hard woke DIY helvetica. Cliche poutine godard, readymade affogato kinfolk twee mustache raclette artisan ramps craft beer. Kogi roof party subway tile adaptogen venmo edison bulb. Glossier vape kombucha pour-over flexitarian. Flannel coloring book bitters viral post-ironic. This is excessive teaser text.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_article_type:
+    -
+      entity: cf0ec524-fd02-4d53-beee-5296e089a6f0
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b3d42336-f85e-4b6d-9936-93c4a12502c1
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643577626
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text:
+            -
+              value: "<p>Disrupt brunch hell of yuccie tumeric gochujang franzen mlkshk try-hard woke DIY helvetica. Cliche poutine godard, readymade affogato kinfolk twee mustache raclette artisan ramps craft beer. Kogi roof party subway tile adaptogen venmo edison bulb. Glossier vape kombucha pour-over flexitarian. Flannel coloring book bitters viral post-ironic.</p>\r\n"
+              format: filtered_html
+  field_image:
+    -
+      entity: 2e10b056-1a5e-446b-b5f7-0d30f5c79d66
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4c12b413-7275-4f1e-af77-f6b7181bd181
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643577626
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'Please delete this post before launching your site'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Blog post 3'

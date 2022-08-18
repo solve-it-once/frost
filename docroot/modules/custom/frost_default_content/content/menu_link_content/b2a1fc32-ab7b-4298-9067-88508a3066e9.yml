@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: b2a1fc32-ab7b-4298-9067-88508a3066e9
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    ccf723e0-4584-4326-a873-af21a95456e9: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Press
+  description:
+    -
+      value: 'For inquiries and more'
+  menu_name:
+    -
+      value: footer-main
+  link:
+    -
+      target_uuid: ccf723e0-4584-4326-a873-af21a95456e9
+      title: ''
+      options:
+        attributes:
+          class: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

@@ -3,5 +3,5 @@ description: Site-specific tweaks
 package: Other
 type: module
 dependencies:
-  - contact_ifno:contact_info
+  - contact_info:contact_info
 core_version_requirement: ^8 || ^9

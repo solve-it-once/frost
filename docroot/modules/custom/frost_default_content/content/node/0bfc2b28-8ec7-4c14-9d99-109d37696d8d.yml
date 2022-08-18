@@ -1,0 +1,159 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0bfc2b28-8ec7-4c14-9d99-109d37696d8d
+  bundle: page
+  default_langcode: en
+  depends:
+    a795b5e0-da57-442b-97dd-0b5798c85144: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Thank you'
+  created:
+    -
+      value: 1570825619
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /page/thank-you
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We appreciate you reaching out to us. Expect a reply in the next day or two.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: a795b5e0-da57-442b-97dd-0b5798c85144
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bc70d52f-f0e5-43f8-99c8-8fb4f18fc4c7
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825628
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1ff19651-678f-4899-a818-cdac9bab9f59
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571252068
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We appreciate you reaching out to us. Expect a reply in the next day or two.&nbsp;</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--second-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 38d748c4-d3a7-4268-b68c-5d3332a8971d
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825628
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'We appreciate you reaching out to us. Expect a reply in the next day or two.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: true
+          field_seo_title:
+            -
+              value: 'Thank you!'

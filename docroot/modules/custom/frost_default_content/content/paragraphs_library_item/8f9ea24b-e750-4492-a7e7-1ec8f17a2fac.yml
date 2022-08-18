@@ -1,0 +1,152 @@
+_meta:
+  version: '1.0'
+  entity_type: paragraphs_library_item
+  uuid: 8f9ea24b-e750-4492-a7e7-1ec8f17a2fac
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  label:
+    -
+      value: 'Recent blog posts'
+  paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9e7046b1-ad3d-4852-bde4-823b84b06c2e
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643575958
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c61c8cd7-baeb-43bd-8009-a0d1f64fe972
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575965
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Recently on the blog'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a09f64c6-8099-4eb2-9e23-db3b90f2e640
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575985
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 62cb264b-f297-4284-8e0a-5aac5ce71755
+                  bundle: view
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575992
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_view:
+                    -
+                      target_id: node
+                      display_id: horizontal_2
+                      data: 'a:5:{s:8:"argument";s:7:"article";s:5:"pager";N;s:6:"offset";N;s:5:"title";i:0;s:5:"limit";N;}'
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  created:
+    -
+      value: 1643576522
+  uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

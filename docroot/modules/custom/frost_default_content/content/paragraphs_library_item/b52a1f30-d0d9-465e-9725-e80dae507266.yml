@@ -1,0 +1,28 @@
+_meta:
+  version: '1.0'
+  entity_type: paragraphs_library_item
+  uuid: b52a1f30-d0d9-465e-9725-e80dae507266
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  label:
+    -
+      value: 'Nuclear option: Accordion, Inside text. Let''s edit this here., Thi'
+  paragraphs:
+    -
+      target_id: 439
+      target_revision_id: 1629
+  created:
+    -
+      value: 1587934645
+  uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

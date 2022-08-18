@@ -1,0 +1,654 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: df989847-5a42-4333-b1b7-f811f61d80a0
+  bundle: page
+  default_langcode: en
+  depends:
+    68018f4f-dfaa-477b-9850-2f24ae5858a5: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Accessibility Statement'
+  created:
+    -
+      value: 1571257085
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /page/accessibility-statement
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We are committed to making our website as accessible as possible to people with special needs, including those with visual, hearing, cognitive and motor impairments.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: 68018f4f-dfaa-477b-9850-2f24ae5858a5
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 40735263-82b6-43ef-8d08-18d90a86b316
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257741
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b0f4dba3-08a7-43f3-96f3-7da1cb3af9b3
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257741
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_fontsize:
+                    -
+                      value: font-size--1-25em
+                  field_text:
+                    -
+                      value: "<p>&nbsp;We are committed to ensuring digital accessibility for people with differing abilities. We are continually improving the user experience for everyone, and applying the relevant accessibility standards.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f6190caf-3e4d-47f2-a506-ba28708bd08c
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257817
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 33115c0c-9d1d-4d86-bc4a-3b717c723c2e
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Conformance status'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d9e67ea3-8c92-45e8-a85d-738e79d15e4e
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257839
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e1a05173-58dc-4d7f-9743-c0c94722678a
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257859
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>The <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. This site is partially conformant with WCAG 2.0 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 15ba4f58-41d7-4aa5-83f3-ab26708528e2
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257817
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 94e8a450-d1ea-4ca3-b18d-fe50eb7c5d36
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_heading:
+                    -
+                      value: Feedback
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2878afc3-d5f2-4626-97f9-9a801eea3818
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257839
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3dc22864-8f22-4413-9a94-8aa609562bc6
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257859
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p>We welcome your feedback on the accessibility of this site. Please let us know if you encounter accessibility barriers here:</p><ul><li>E-mail:&nbsp;<a href="mailto:brad@solveitonce.com">brad@solveitonce.com</a></li></ul>'
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5ef976af-c884-4e6b-ac2f-1236b0fb5524
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257817
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 72210148-aa10-4a56-9293-0c8939fcc5bc
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Technical specifications'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 935e015c-8cd8-4d8a-8b0a-2105f703fa22
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257839
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5710bf8d-1b93-4985-aa1a-abbe69cc597c
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257859
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>Accessibility on this site relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:</p>\r\n\r\n<ul>\r\n\t<li>HTML</li>\r\n\t<li>WAI-ARIA</li>\r\n\t<li>CSS</li>\r\n\t<li>JavaScript</li>\r\n</ul>\r\n\r\n<p>These technologies are relied upon for conformance with the accessibility standards used.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ef2c7b91-0af8-44d7-a30f-11fd0af723cc
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257817
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 69c2cf12-dc4c-4297-ad36-9ea126d339cd
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Assessment approach'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 46fde17b-0e7f-4d6e-8343-6488416b47bc
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257839
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eef194c3-55b1-44bb-810c-cc4a835fffa9
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571257859
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We assessed the accessibility of this site by the following approaches:</p>\r\n\r\n<ul>\r\n\t<li>Self-evaluation</li>\r\n\t<li>External evaluation</li>\r\n\t<li>Developer contract organization and its subcontractors evaluation and Quality Assurance</li>\r\n</ul>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fcdac82c-d026-4eba-a375-a1e0d8ce546b
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571257741
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'We are committed to making our website as accessible as possible to people with special needs, including those with visual, hearing, cognitive and motor impairments.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Accessibility Statement'

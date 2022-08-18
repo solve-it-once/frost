@@ -1,0 +1,156 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cf6b507b-0fb5-4b21-872b-d87d2b0d8a14
+  bundle: page
+  default_langcode: en
+  depends:
+    74847825-a908-4e5c-9740-5759b783fd96: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '404 Not Found'
+  created:
+    -
+      value: 1570825201
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /page/404-not-found
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We’re sorry but the page you’re looking for could not be found. Please check our menu options or try our search function at the top of the page.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: 74847825-a908-4e5c-9740-5759b783fd96
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5c185f13-d649-4c11-aa89-4aa7e0764bb4
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825222
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: facae1a3-027a-44e4-8512-0d9bb6e93609
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571251936
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We’re sorry but the page you’re looking for could not be found. Please check our menu options or try our search function at the top of the page.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 978d393b-76c7-4b21-8d57-1bfa63e3e2c8
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825222
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'We’re sorry but the page you’re looking for could not be found. Please check our menu options or try our search function at the top of the page.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: true
+          field_seo_noindex:
+            -
+              value: true
+          field_seo_title:
+            -
+              value: '404 Not Found'

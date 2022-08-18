@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8367f7c3-6828-44f2-a0e5-4bfb0ba2864b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: brad_czerniak_1_0.jpg
+  uri:
+    -
+      value: 'public://brad_czerniak_1_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 557759
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1570555421

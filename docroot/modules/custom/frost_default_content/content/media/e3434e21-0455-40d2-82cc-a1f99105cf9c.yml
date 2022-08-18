@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e3434e21-0455-40d2-82cc-a1f99105cf9c
+  bundle: image
+  default_langcode: en
+  depends:
+    01b3957c-0ea6-41be-bddd-8b5165bc6563: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: frost-breathing-room.jpg
+  created:
+    -
+      value: 1643576311
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_filesize:
+    -
+      value: '155453.00'
+  field_media_height:
+    -
+      value: 1080
+  field_media_image:
+    -
+      entity: 01b3957c-0ea6-41be-bddd-8b5165bc6563
+      alt: 'An outcropping'
+      title: ''
+      width: 1920
+      height: 1080
+  field_media_mimetype:
+    -
+      value: image/jpeg
+  field_media_width:
+    -
+      value: 1920

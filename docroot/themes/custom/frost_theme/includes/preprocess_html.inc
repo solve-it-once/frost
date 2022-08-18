@@ -120,7 +120,7 @@ function frost_theme_preprocess_html(&$vars) {
   $vars['body_classes'][] = $field_sections_class;
 
   // Meta robots noindex for paginated content.
-  if ($query = \Drupal::request()->query->get('page')) {
+  if ($request->query->get('page')) {
     $robotted = FALSE;
     foreach ($vars['page']['#attached']['html_head'] as $key => $tag) {
       if (isset($tag[1]) && $tag[1] === 'robots') {

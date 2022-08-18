@@ -1,0 +1,59 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 740e2c8c-649c-4d7d-9f9d-9fb93dc38fba
+  bundle: tag
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Test
+  description:
+    -
+      value: "<p>Test tag</p>\r\n"
+      format: filtered_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tag/test
+      langcode: en
+      pathauto: 1
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 649d3f89-b539-461b-8e70-5844e03fb3f6
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642887485
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false

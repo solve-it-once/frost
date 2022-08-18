@@ -1,0 +1,159 @@
+_meta:
+  version: '1.0'
+  entity_type: paragraphs_library_item
+  uuid: c4466a24-fbee-4a32-b26e-d84e5185124c
+  default_langcode: en
+  depends:
+    e3434e21-0455-40d2-82cc-a1f99105cf9c: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  label:
+    -
+      value: 'Breathing room'
+  paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 80044c55-c96b-47d0-9324-9081035f1780
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643576064
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 86e37e59-d9d6-4dbb-8fd9-8d73d9b57caa
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643576092
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Reusable breathing room'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1b06f79c-2833-4590-91b4-2568d050bd4c
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643576329
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ba885035-9a28-4bb3-a714-162779cfd65e
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643576336
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p>This section can be dropped on any page, anywhere. It''s part of the "Paragraphs library" so you can place it between two content-heavy sections.</p><p>It works like any content on the site, so you can edit it easily, which you''ll have to do because this is an example that would make no sense on your website.</p>'
+                      format: filtered_html
+          field_image_background:
+            -
+              entity: e3434e21-0455-40d2-82cc-a1f99105cf9c
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  created:
+    -
+      value: 1643576518
+  uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,85 @@
+name: Frost default content
+description: A head-start on content for frost sites
+package: Other
+type: module
+dependencies:
+  - default_content:default_content
+core_version_requirement: ^8 || ^9
+
+# Bring in all the content for a head start.
+default_content:
+  file:
+    - 8367f7c3-6828-44f2-a0e5-4bfb0ba2864b
+    - 4b80880c-d063-4888-8a7f-a3b965eabbe9
+    - 910229f6-5481-46dc-8426-8bd3c7722c0e
+    - bbec4f75-ee8d-4f6c-ba4e-63adb7179fd2
+    - a4bc3232-2927-42d8-84bb-7b5b37f20061
+    - 596ddead-fbc7-4199-b9cc-06830c61c11e
+    - 58e664ba-74a4-48e7-8183-97f92da966ed
+    - dbd3a563-541c-4620-9920-4fde562595f9
+    - 14398edb-35ee-4405-ac73-2e1dc587dec3
+    - 01b3957c-0ea6-41be-bddd-8b5165bc6563
+    - 5c021cd3-2f13-45ed-b4c2-dd230f9091dd
+    - 303d6061-592e-432f-bed5-ff17e511953c
+    - af110830-7535-4cfb-8d57-2c9b726465b7
+  media:
+    - 2e10b056-1a5e-446b-b5f7-0d30f5c79d66
+    - a795b5e0-da57-442b-97dd-0b5798c85144
+    - 74847825-a908-4e5c-9740-5759b783fd96
+    - 68018f4f-dfaa-477b-9850-2f24ae5858a5
+    - cf82f50b-7241-4fd1-b3ec-3950b149d1a6
+    - ade0b63f-2960-474f-890e-3707a3c1cf02
+    - e7cceaca-06d8-422a-94d8-4ce759454075
+    - 85fd7ea2-16e7-488e-9cd8-64784330c83b
+    - e3434e21-0455-40d2-82cc-a1f99105cf9c
+    - 463dc6da-1497-492c-b173-9474203d6bd2
+    - b9fe445d-b375-4435-a945-0cacf4cee000
+  paragraphs_library_item:
+    - b52a1f30-d0d9-465e-9725-e80dae507266
+    - c4466a24-fbee-4a32-b26e-d84e5185124c
+    - 8f9ea24b-e750-4492-a7e7-1ec8f17a2fac
+    - 13727736-73c7-4720-b368-d6c3d861d650
+  taxonomy_term:
+    - 740e2c8c-649c-4d7d-9f9d-9fb93dc38fba
+    - cf0ec524-fd02-4d53-beee-5296e089a6f0
+  block_content:
+    - 6f12931c-87ff-4a14-999f-854599ab183c
+  commerce_store:
+    - 88d62e82-56de-4a5d-8b0a-25e7cb47f210
+  commerce_product:
+    - c4c1d597-36dd-42a8-9ad4-405255d2690a
+  node:
+    - daadc80f-0b47-46cd-a2c1-7dfc98fc4d3c
+    - cf6b507b-0fb5-4b21-872b-d87d2b0d8a14
+    - 247d55de-e5c2-4ea9-81a6-a09d43940473
+    - 12c47dd1-a522-4e62-893a-12b0346ed0fa
+    - 8fb1515d-0746-4979-b7b2-737af8f6520d
+    - d9034131-e96f-4e62-8c3d-5208bb1303ef
+    - 0bfc2b28-8ec7-4c14-9d99-109d37696d8d
+    - f7c72e77-965e-4bd6-8c71-f872c702f5c4
+    - df989847-5a42-4333-b1b7-f811f61d80a0
+    - de3c17d4-f2fa-4b2f-997b-e261fd4cf769
+    - 72f5fc6e-bba6-4f26-923b-c515ab120bb6
+    - 9557cdce-0daa-4b19-bf19-efe13d225034
+    - 7b82df68-cb31-47f6-a446-b6f7df257c47
+    - 377c8182-1daa-4665-ad82-b9c466d6e185
+    - a3822f1f-0aa9-4f12-ac60-00845e5136b9
+    - ec3dc52f-6976-4cea-b113-3d57bd6694ed
+    - 910ae576-314e-4df7-8e22-b4118ac181f3
+    - ccf723e0-4584-4326-a873-af21a95456e9
+    - 5426e367-ff50-46a6-988d-6022a47703e5
+    - 12692b1a-eecc-4e95-8cdb-bbfbff03b448
+    - 54900409-b462-4380-9a83-0ea882dd13ff
+    - 3d84c174-7281-4d6d-8565-121ef35b8ff0
+  menu_link_content:
+    - 79ac8357-e7b2-4b9b-9934-abfb742bb7a3
+    - 734f4b94-b13b-4581-9c39-486927106376
+    - a029128b-b11e-4799-ba05-041747992e12
+    - 0a9721cc-087d-486b-8fe7-667a5f6662e5
+    - 819749f6-3817-4530-b41e-101ec8849ed3
+    - 9a982a2d-f1dd-48cb-9626-97ad09530ae3
+    - 8170910e-96cf-4af7-bbc2-b178782bc1f6
+    - 74d567dc-df78-44c6-9a16-4bc4ab7faa3f
+    - 1eebded0-762b-4506-9652-8715dccbb2d4
+    - b2a1fc32-ab7b-4298-9067-88508a3066e9
+    - 54189db9-f7a2-4ad3-bc81-cacde00927fb

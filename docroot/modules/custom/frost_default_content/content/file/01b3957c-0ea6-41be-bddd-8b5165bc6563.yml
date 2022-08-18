@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 01b3957c-0ea6-41be-bddd-8b5165bc6563
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: frost-breathing-room.jpg
+  uri:
+    -
+      value: 'public://2022-01/frost-breathing-room.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 155453
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643576311

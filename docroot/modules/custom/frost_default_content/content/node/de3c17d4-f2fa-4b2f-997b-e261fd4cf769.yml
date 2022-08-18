@@ -1,0 +1,160 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: de3c17d4-f2fa-4b2f-997b-e261fd4cf769
+  bundle: page
+  default_langcode: en
+  depends:
+    74847825-a908-4e5c-9740-5759b783fd96: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Search
+  created:
+    -
+      value: 1642615955
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /search
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: "<p>Find content on this site via keywords</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: 74847825-a908-4e5c-9740-5759b783fd96
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 60c27a67-5d61-47b7-84ca-dc28bacf02a2
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642615970
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 44dbd048-6e7f-4f1c-9e65-e8518bbf4d09
+                  bundle: view
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1642615982
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_view:
+                    -
+                      target_id: search
+                      display_id: block_1
+                      data: 'a:5:{s:8:"argument";s:0:"";s:5:"pager";N;s:6:"offset";N;s:5:"title";i:0;s:5:"limit";N;}'
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 93f6a8ff-ad27-4ddb-b11b-d93801053966
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642615970
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'Find content on this site via keywords'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: Search

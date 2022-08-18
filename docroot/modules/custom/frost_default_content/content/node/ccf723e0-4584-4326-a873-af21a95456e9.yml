@@ -1,0 +1,408 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ccf723e0-4584-4326-a873-af21a95456e9
+  bundle: page
+  default_langcode: en
+  depends:
+    a795b5e0-da57-442b-97dd-0b5798c85144: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Press
+  created:
+    -
+      value: 1643574248
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /page/press
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We are big believers in the power, necessity, and good of the fourth estate. Below are resources for press inquiries.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: a795b5e0-da57-442b-97dd-0b5798c85144
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 09e6e3cd-3316-428a-9f0f-cc5555728555
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643574251
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b3989f10-46ea-4324-8490-ed280e58698b
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574312
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: Introduction
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3ad75f5d-63a8-4e4f-9b95-f629109f5041
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574322
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--1
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2b8d3133-7d11-4b45-93f0-d081b135808b
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574327
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We are big believers in the power, necessity, and good of the fourth estate. Below are resources for press inquiries.</p>\r\n\r\n<p>Please let us know if you’re working on a deadline, as we’ll work to get you what you need faster.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 121cba89-2c34-4710-82bd-1b32ac1a7434
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643574336
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2c7b07e1-206c-47ca-9133-2683efaae087
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574366
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: Inquiries
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 86f9ac65-76ae-4042-8cec-0f172651d707
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574376
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--1
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8ef964f2-f240-4c6f-99b0-daef00dfb18f
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574383
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>If you are looking for someone to get a hold of directly, here is our primary press contact:</p>\r\n"
+                      format: filtered_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 77183d78-6796-4305-9ba6-ed6241f4e551
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574393
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d89097b8-5ce1-43a6-8b05-64a2f482aebd
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574397
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Brad Czerniak'
+                      wrapper: h3
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1625adf4-61b3-426a-be25-9a946f999f3b
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643574410
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p><strong>Webmaster</strong></p><p>Email: <a href="mailto:brad@solveitonce.com">brad@solveitonce.com</a></p><p>Phone: <a href="tel:+12487210350">(248) 721-0350</a></p>'
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: caf295ef-8094-4205-9529-0aba326ce74c
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643574251
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'We are big believers in the power, necessity, and good of the fourth estate. Below are resources for press inquiries.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: Press

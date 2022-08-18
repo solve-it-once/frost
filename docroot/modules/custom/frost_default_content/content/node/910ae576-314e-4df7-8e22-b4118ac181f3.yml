@@ -1,0 +1,117 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 910ae576-314e-4df7-8e22-b4118ac181f3
+  bundle: event
+  default_langcode: en
+  depends:
+    a795b5e0-da57-442b-97dd-0b5798c85144: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Test Event (past)'
+  created:
+    -
+      value: 1643572669
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /event/test-event-past
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>More strings of text to replace out. Realistically we're deleting this node before launch.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 56231b5a-b0e5-48dc-8c1f-f833d6548aea
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643572818
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text:
+            -
+              value: "<p>A picture of a skeleton of a unicorn</p>\r\n"
+              format: filtered_html
+  field_date:
+    -
+      value: '2020-05-09T13:00:00'
+      end_value: '2020-05-09T14:00:00'
+  field_image:
+    -
+      entity: a795b5e0-da57-442b-97dd-0b5798c85144
+  field_location:
+    -
+      value: '1428 Mark Ave, Lincoln Park, MI 48146'
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9237184f-413c-4288-b43f-65735dcf7997
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643572818
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'More strings of text to replace out. Realistically we''re deleting this node before launch.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Past test event'

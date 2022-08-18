@@ -1,0 +1,154 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7b82df68-cb31-47f6-a446-b6f7df257c47
+  bundle: page
+  default_langcode: en
+  depends:
+    68018f4f-dfaa-477b-9850-2f24ae5858a5: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Blog
+  created:
+    -
+      value: 1642627937
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /article
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: "<p>Timely, relevant articles</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: 68018f4f-dfaa-477b-9850-2f24ae5858a5
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4c9bb8e7-7a24-4f00-9df9-01e8271f24cc
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642627945
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0ae3a437-d2f5-42c5-b4b3-28f55484bb7e
+                  bundle: view
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1642627996
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_view:
+                    -
+                      target_id: node
+                      display_id: horizontal_3
+                      data: 'a:5:{s:8:"argument";s:7:"article";s:5:"pager";N;s:6:"offset";N;s:5:"title";i:0;s:5:"limit";N;}'
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 189d44e0-f911-46c9-a868-d62021c2f6f0
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642627945
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'Timely, relevant articles'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: Blog

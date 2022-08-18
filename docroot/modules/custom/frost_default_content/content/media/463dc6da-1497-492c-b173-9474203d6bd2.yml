@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 463dc6da-1497-492c-b173-9474203d6bd2
+  bundle: video
+  default_langcode: en
+  depends:
+    303d6061-592e-432f-bed5-ff17e511953c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: frost-drone-optimized.mp4
+  created:
+    -
+      value: 1660239080
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_filesize:
+    -
+      value: '917638.00'
+  field_media_mimetype:
+    -
+      value: video/mp4
+  field_media_video_file:
+    -
+      entity: 303d6061-592e-432f-bed5-ff17e511953c
+      display: true
+      description: ''

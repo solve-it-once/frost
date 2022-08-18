@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 74847825-a908-4e5c-9740-5759b783fd96
+  bundle: image
+  default_langcode: en
+  depends:
+    910229f6-5481-46dc-8426-8bd3c7722c0e: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: franck-v-n56WptG3O9M-unsplash_hero-mask.jpg
+  created:
+    -
+      value: 1571254317
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  field_media_filesize:
+    -
+      value: '75697.00'
+  field_media_height:
+    -
+      value: 1014
+  field_media_image:
+    -
+      entity: 910229f6-5481-46dc-8426-8bd3c7722c0e
+      alt: 'A security camera, shaded in darkness'
+      title: ''
+      width: 1920
+      height: 1014
+  field_media_mimetype:
+    -
+      value: image/jpeg
+  field_media_width:
+    -
+      value: 1920

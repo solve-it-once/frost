@@ -1,0 +1,133 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 54900409-b462-4380-9a83-0ea882dd13ff
+  bundle: article
+  default_langcode: en
+  depends:
+    cf0ec524-fd02-4d53-beee-5296e089a6f0: taxonomy_term
+    e3434e21-0455-40d2-82cc-a1f99105cf9c: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 2 for testing. This title is long for wrapping'
+  created:
+    -
+      value: 1643577546
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/blog-2-testing-title-long-wrapping
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>The teaser is short, though.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_article_type:
+    -
+      entity: cf0ec524-fd02-4d53-beee-5296e089a6f0
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ce88fd72-c25d-4cec-adbd-c12e352fd66f
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643577568
+          behavior_settings:
+            -
+              value: {  }
+          field_text:
+            -
+              value: "<p>The teaser is short, though.</p>\r\n"
+              format: filtered_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5926185e-a1eb-4ede-bb7c-b0597e670683
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1660314690
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text:
+            -
+              value: "<h2 id=\"solutis-longo-nostri-usus\">Solutis longo nostri usus</h2><p>Lorem markdownum avita mulcebat virtute. Similemque membra Ismenis ne visa serpentis populis? Cum omnia, et nec aethere aetas cui patria pacisci. Muneris fertur resistit me pariter sanguine: <a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#estdeae\">poteram</a> modo secum, oderat marmoreamque quis; per.</p><p><code>if (packDay(num_cpa_surface, 73, worm_address_dbms) == noc_ivr) {\r\n &nbsp;wheel.nameWhoisUp -= whitelist_controller;\r\n}\r\nvar mirroredGigahertz = 5;\r\nif (5 - ipProxyMenu) {\r\n &nbsp;technology_ics_pda(compatible, troubleshooting_zero_party);\r\n &nbsp;itunes_swipe = zip;\r\n}\r\nmode.upMicrophone += direct_clean_shift(suffix_multi_multi, bitmap(\r\n &nbsp; &nbsp;nic_deprecated_waveform) + 3);\r\n</code></p><h2 id=\"qui-viae-vertuntur-linguae\">Qui viae vertuntur linguae</h2><p>Fruticosa ipsa; qui quae praelate, aderat, Tyria pedibus, et clavam faciem nec adpositi ignibus. Iste que mentis sanguine generis: amittere montibus quidem adlabimur ardua respicit. Cessent funda est arbore revocare et increpor confinia ligamina et siqua extenuat, puppis. Sine deus domos formosa et obicit Proximus Opem digna de, sed. Poscit vultus nares, quo oculis altaria servatae, nostro, iram longis <strong>et iaculo tulerunt</strong>?</p><p>Di <strong>Neptunus</strong> plausis quoque, separat insolida propago hoc linguae dixit solvit. Qui quas animo <strong>quod filius carpat</strong> vindicet illos, matre vehebat sis. Cuncti opprimere ferebam?</p><h2 id=\"enim-ignes-tam-primum\">Enim ignes tam primum</h2><p>Est paelice diversorum iaculum segetis <em>virque has</em> erat, nunc. Et <strong>Macareus illa</strong>, aut cornua quantam manu animasse ignibus reppulit nascentia freti multa. Cum hunc, turpes!</p><p>Servantis <strong>id Procne erat</strong> levi fatetur, apium potes loco canes positus vituli, non sedit et audierit, Phoebus. Iam Iapygis, rutilum Mygdoniusque veniente, aras ab linguae volucrumque nobis proicit algae.</p><p>Ortus citraque horum dis ululasse labor si, membris nec potius pectora sub nemo movit consensu. Per ante, gerit, prospiciunt fortunata per vallibus Osiris commune crines, prius actis <a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#fulgorem-arescere.io\">tellure sed quam</a> neque.</p><h2 id=\"ingens-saecula-habendam-umbrosum-carcere-polydore-devotaque\">Ingens saecula habendam umbrosum carcere Polydore devotaque</h2><p>Lorem markdownum auras. In quaque hoc loqui, si tamen dea additus; perque.</p><h2 id=\"venit-destrinxit-cum\">Venit destrinxit cum</h2><p>Aulidaque nomina fixa oracla Hector <em>et quid</em> quod exhalantem, artus flores magnorum relevasse postquam. Ceperat auribus, tramite iure subita <em>esse nostris</em>, secum et parentem ignis attraxerat pedibusque incola vix.</p><p>Altera tenebrosa tu <a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#per-quod\">flores virginibus</a> frangitur crevit iactatibus hoc silentia! Quod massa fontis faticano, da cum huc sensi tum?</p><h2 id=\"et-nec-iecit\">Et nec iecit</h2><p>Lucifero dici biiugum est <strong>novissimus caret virtus</strong> qui quoque ecce? Quam quid nemorum undis mira <strong>medio ministerio deorum</strong> quoque, pestiferaque nulla me pectora consule vibrata, ab. Illa in vernos, commendat mediocris mors attollite adhuc natusque capillis labens.</p><h2 id=\"capaci-fluit\">Capaci fluit</h2><p>Namque tellus silentia dabat loquerentur, aras deus feremus corpora. Vir salutat Iamque. <a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#ingratasque-timor\">Certa rustica</a> vigilans nisi vestem taurum. Echo in noctis vellera te Pelides aestu; sed ora equorum arbore formamque aethera e tamen Acrisio. Vultus seductas saepe in serta vocat ostentare iaculabile custodemque aquis, aura ope.</p><ul><li>Sic breve sude</li><li>Sua speciem nympha magno</li><li>Lugeat spicula Oleniden fertur</li></ul><h2 id=\"veloque-filia-et-obsisto\">Veloque filia et obsisto</h2><p>Per ter, ante tua. Quoque venientem quae. Flet exstabant <a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#levis-mox-hoc\">Inachus truncum</a> praeferrer magnosque pudici vacca rogat; Oileos sine secantes et.</p><ol><li>Et caede</li><li>Amat et veluti dextris corpore depresso voco</li><li>Transibat prensos suae serta</li><li>Viribus diros</li></ol><p>Habebat nil vosne quod, ait in Pergama arces fessos quidem, erat temerarius appellantque nescio clarus. Aliis nocituraque illa et virgo hoc est virgamque aureus iam iam tanta subsedit proxima nostro gerentes exanimis Haemonio eundo? Et me ineo longius. Nereidum ut murmure infans dolorque disces tamen mariti.</p>"
+              format: filtered_html
+  field_image:
+    -
+      entity: e3434e21-0455-40d2-82cc-a1f99105cf9c
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d8744503-e922-4cb7-8c3e-b598421510d1
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643577568
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'The teaser is short, though.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Blog 2'

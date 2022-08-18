@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 910229f6-5481-46dc-8426-8bd3c7722c0e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: franck-v-n56WptG3O9M-unsplash_hero-mask.jpg
+  uri:
+    -
+      value: 'public://franck-v-n56WptG3O9M-unsplash_hero-mask.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 75697
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1571254317

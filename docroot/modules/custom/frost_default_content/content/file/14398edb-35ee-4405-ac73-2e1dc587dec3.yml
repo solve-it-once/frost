@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 14398edb-35ee-4405-ac73-2e1dc587dec3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: frost-primary-cta.jpg
+  uri:
+    -
+      value: 'public://2022-01/frost-primary-cta.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 243334
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643575583

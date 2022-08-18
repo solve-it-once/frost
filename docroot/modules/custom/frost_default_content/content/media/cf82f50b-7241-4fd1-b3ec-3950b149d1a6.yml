@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cf82f50b-7241-4fd1-b3ec-3950b149d1a6
+  bundle: image
+  default_langcode: en
+  depends:
+    a4bc3232-2927-42d8-84bb-7b5b37f20061: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: dan-meyers-F_DSvG5Fb0A-unsplash.jpg
+  created:
+    -
+      value: 1591332983
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_filesize:
+    -
+      value: '818272.00'
+  field_media_height:
+    -
+      value: 1343
+  field_media_image:
+    -
+      entity: a4bc3232-2927-42d8-84bb-7b5b37f20061
+      alt: 'Radiation meters'
+      title: ''
+      width: 1920
+      height: 1343
+  field_media_mimetype:
+    -
+      value: image/jpeg
+  field_media_width:
+    -
+      value: 1920

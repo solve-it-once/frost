@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 303d6061-592e-432f-bed5-ff17e511953c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: frost-drone-optimized.mp4
+  uri:
+    -
+      value: 'public://2022-08/frost-drone-optimized.mp4'
+  filemime:
+    -
+      value: video/mp4
+  filesize:
+    -
+      value: 917638
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1660239080

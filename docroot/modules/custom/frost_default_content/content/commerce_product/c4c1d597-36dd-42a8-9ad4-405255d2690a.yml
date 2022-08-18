@@ -1,0 +1,206 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: c4c1d597-36dd-42a8-9ad4-405255d2690a
+  bundle: default
+  default_langcode: en
+  depends:
+    88d62e82-56de-4a5d-8b0a-25e7cb47f210: commerce_store
+    cf82f50b-7241-4fd1-b3ec-3950b149d1a6: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 88d62e82-56de-4a5d-8b0a-25e7cb47f210
+  title:
+    -
+      value: 'Test product'
+  path:
+    -
+      alias: /products/default/test-product
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1643309857
+  body:
+    -
+      value: '<p>Commerce requires a bit of configuration, so products are set to have a button for contacting sales instead of a checkout flow for now.</p>'
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: cf82f50b-7241-4fd1-b3ec-3950b149d1a6
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c33eb73b-83f0-4480-842a-de80181b0f68
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1660315062
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d74a5459-4fb1-46cd-9de4-b83e98650562
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660315069
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Use storytelling elements on PDPs'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f797f352-de1a-437a-bb6a-3ff4c22904d5
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660315083
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a1f9a943-a928-4503-8622-b2469e965230
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660315090
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p>All the same components you love from elsewhere on the site, available to convince visitors to buy your products.</p>'
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--main-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 490e7ff1-6a71-4deb-a62f-134a2167c532
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643309857
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'A fake product of the default type, to demonstrate that the storytelling elements are available on PDPs too'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Test product'

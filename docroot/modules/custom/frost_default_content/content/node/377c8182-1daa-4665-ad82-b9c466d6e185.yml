@@ -1,0 +1,111 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 377c8182-1daa-4665-ad82-b9c466d6e185
+  bundle: article
+  default_langcode: en
+  depends:
+    cf0ec524-fd02-4d53-beee-5296e089a6f0: taxonomy_term
+    a795b5e0-da57-442b-97dd-0b5798c85144: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Test post'
+  created:
+    -
+      value: 1642628045
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/test-post
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>It's all Greek to me</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_article_type:
+    -
+      entity: cf0ec524-fd02-4d53-beee-5296e089a6f0
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e4db1798-28b4-466b-8333-2524dbac4fb2
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642628132
+          behavior_settings:
+            -
+              value: {  }
+          field_text:
+            -
+              value: "<h2 id=\"solutis-longo-nostri-usus\">Solutis longo nostri usus</h2>\r\n\r\n<p>Lorem markdownum avita mulcebat virtute. Similemque membra Ismenis ne visa serpentis populis? Cum omnia, et nec aethere aetas cui patria pacisci. Muneris fertur resistit me pariter sanguine:&nbsp;<a href=\"https://lowerbarriers.org/finished-starter/blog/example-post/#estdeae\">poteram</a>&nbsp;modo secum, oderat marmoreamque quis; per.</p>\r\n\r\n<h2 id=\"qui-viae-vertuntur-linguae\">Qui viae vertuntur linguae</h2>\r\n\r\n<p>Fruticosa ipsa; qui quae praelate, aderat, Tyria pedibus, et clavam faciem nec adpositi ignibus. Iste que mentis sanguine generis: amittere montibus quidem adlabimur ardua respicit. Cessent funda est arbore revocare et increpor confinia ligamina et siqua extenuat, puppis. Sine deus domos formosa et obicit Proximus Opem digna de, sed. Poscit vultus nares, quo oculis altaria servatae, nostro, iram longis&nbsp;<strong>et iaculo tulerunt</strong>?</p>\r\n\r\n<p>Di&nbsp;<strong>Neptunus</strong>&nbsp;plausis quoque, separat insolida propago hoc linguae dixit solvit. Qui quas animo&nbsp;<strong>quod filius carpat</strong>&nbsp;vindicet illos, matre vehebat sis. Cuncti opprimere ferebam?</p>\r\n"
+              format: filtered_html
+  field_image:
+    -
+      entity: a795b5e0-da57-442b-97dd-0b5798c85144
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0315aba8-fc87-40bf-a6c0-37f5ff1b5f9b
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642628132
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'It''s all Greek to me'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: true
+          field_seo_title:
+            -
+              value: 'Test post'

@@ -1,0 +1,162 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9557cdce-0daa-4b19-bf19-efe13d225034
+  bundle: page
+  default_langcode: en
+  depends:
+    a795b5e0-da57-442b-97dd-0b5798c85144: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Frequently asked questions'
+  created:
+    -
+      value: 1642626646
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /page/frequently-asked-questions
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We get asked some questions with frequency, and wanted to put them all in one place.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: a795b5e0-da57-442b-97dd-0b5798c85144
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a155dcfe-1f97-4cc2-b745-ee5fac0a23f5
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642626661
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6aa7ae20-dcbc-425d-a1e5-e9871cd1da99
+                  bundle: accordion
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1642626686
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_attr_open:
+                    -
+                      value: false
+                  field_text:
+                    -
+                      value: "<p>When a customer asks a question, then another, then another, it's easier to put the answer here and point them to this page than to keep answering the same thing.</p>\r\n\r\n<p>But if you're asked the same thing over and over, you should probably also change your product to make the answer more obvious.</p>\r\n"
+                      format: filtered_html
+                  field_title:
+                    -
+                      value: 'What kinds of questions go here?'
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fd3a3014-1ec6-418e-913d-014cdcc87445
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1642626661
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: 'We get asked some questions with frequency, and wanted to put them all in one place.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: FAQs

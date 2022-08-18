@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dbd3a563-541c-4620-9920-4fde562595f9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: social_default_1200x630.jpg
+  uri:
+    -
+      value: 'public://2022-01/social_default_1200x630.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 97318
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643572070

@@ -1,0 +1,156 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 247d55de-e5c2-4ea9-81a6-a09d43940473
+  bundle: page
+  default_langcode: en
+  depends:
+    74847825-a908-4e5c-9740-5759b783fd96: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '403 Access Denied'
+  created:
+    -
+      value: 1570825230
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /page/403-access-denied
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>Unfortunately you do not have access to this page. If you believe this is in error, try signing in and then retrying this page path.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_image:
+    -
+      entity: 74847825-a908-4e5c-9740-5759b783fd96
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4e9194ec-dd06-434c-b493-2bdbaaf34f01
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825239
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6b78f9ab-8ae3-41e6-a911-aeb818a9376a
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571252008
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>Unfortunately you do not have access to this page. If you believe this is in error, try signing in and then retrying this page path.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e58c9c0e-418b-42b0-8f78-267f9eb6a282
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825239
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'Unfortunately you do not have access to this page. If you believe this is in error, try signing in and then retrying this page path.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: '403 Access Denied'

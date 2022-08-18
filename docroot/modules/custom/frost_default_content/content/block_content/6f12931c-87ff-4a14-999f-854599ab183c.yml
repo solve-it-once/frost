@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 6f12931c-87ff-4a14-999f-854599ab183c
+  bundle: messages
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: Alerts
+  reusable:
+    -
+      value: true
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7d11dd7d-65cd-4448-97fa-e5675255ed9d
+          bundle: message
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1587618077
+          behavior_settings:
+            -
+              value: {  }
+          field_style_messageseverity:
+            -
+              value: messages--warning
+          field_text:
+            -
+              value: '<p>This example warning-level dismissible message demonstrates frost''s sitewide alerts feature.</p>'
+              format: filtered_html

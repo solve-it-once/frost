@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a4bc3232-2927-42d8-84bb-7b5b37f20061
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dan-meyers-F_DSvG5Fb0A-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/dan-meyers-F_DSvG5Fb0A-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 818272
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1591332983

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4b80880c-d063-4888-8a7f-a3b965eabbe9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: adeolu-eletu-E7RLgUjjazc-unsplash.jpg
+  uri:
+    -
+      value: 'public://adeolu-eletu-E7RLgUjjazc-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 998943
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1570576238

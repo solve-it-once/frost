@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 596ddead-fbc7-4199-b9cc-06830c61c11e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 9ALSVmScQgrxD9nyuIhotIVGEyqZHx1QGDn2dIua9wk.jpg
+  uri:
+    -
+      value: 'public://oembed_thumbnails/9ALSVmScQgrxD9nyuIhotIVGEyqZHx1QGDn2dIua9wk.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 24619
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1591832789

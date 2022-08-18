@@ -1,0 +1,1703 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: daadc80f-0b47-46cd-a2c1-7dfc98fc4d3c
+  bundle: page
+  default_langcode: en
+  depends:
+    cf82f50b-7241-4fd1-b3ec-3950b149d1a6: media
+    b9fe445d-b375-4435-a945-0cacf4cee000: media
+    463dc6da-1497-492c-b173-9474203d6bd2: media
+    c4466a24-fbee-4a32-b26e-d84e5185124c: paragraphs_library_item
+    8f9ea24b-e750-4492-a7e7-1ec8f17a2fac: paragraphs_library_item
+    13727736-73c7-4720-b368-d6c3d861d650: paragraphs_library_item
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Home
+  created:
+    -
+      value: 1570555340
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /page/home
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>Frost lets you develop instead of making endless components.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_hero:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 75c1aac7-a329-467d-9246-85ac25898de1
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1587618938
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7c065ec2-94f1-422a-a40f-8591c98747aa
+                  bundle: layout
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1587618969
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_columns:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 71d343c3-cd84-47a1-927b-3ce94dbb6ba6
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1587618969
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: ceb978f2-c6f6-40fc-a8c8-20c894bbc4fe
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1587619016
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_heading:
+                                    -
+                                      value: 'Low-code, Atomic, Cool Drupal'
+                                      wrapper: h1
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: af617986-7f05-4464-b49e-0ff68f522054
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1587619036
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 3dfbe670-6481-4c18-83a5-8aecf57b7165
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1587619043
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: '<p>If you want professional, free and open source content management for storytelling [and much more] in one click, <em>frost</em> is here to help.</p>'
+                                      format: filtered_html
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: ce467710-efdc-4ab8-bd7a-a4739fcd8652
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1659728347
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--4
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 32e58c80-4631-4240-ab9f-17508b3d2d28
+                                  bundle: link
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1659728247
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_link:
+                                    -
+                                      uri: 'https://console.platform.sh/projects/create-project/?template=https://github.com/solve-it-once/frost.git'
+                                      title: 'Deploy to platform.sh'
+                                      options:
+                                        attributes: {  }
+                                    -
+                                      uri: 'https://github.com/solve-it-once/frost'
+                                      title: 'Code on GitHub'
+                                      options:
+                                        attributes: {  }
+                                  field_style_button:
+                                    -
+                                      value: true
+                                  field_style_childbgcolor:
+                                    -
+                                      value: child-links-background-color--main-dark
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: true
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_bordercolor:
+                            -
+                              value: border-color--main-dark
+                          field_style_borderradius:
+                            -
+                              value: border-radius--default
+                          field_style_borderwidth:
+                            -
+                              value: border--0-none
+                          field_style_boxshadow:
+                            -
+                              value: false
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--2
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--center
+                          field_style_marginxc:
+                            -
+                              value: false
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--8
+                          field_style_paddingxc:
+                            -
+                              value: false
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 41bf8f6a-8b30-4926-8502-d890e29c47e3
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1587619171
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 3bbcd973-d9ec-4a5f-9c1a-3bfd604597cc
+                                  bundle: media
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1591332915
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_hotspots:
+                                    -
+                                      entity:
+                                        _meta:
+                                          version: '1.0'
+                                          entity_type: paragraph
+                                          uuid: 5bb9a134-a001-4d2a-90f6-f65d0fdd1613
+                                          bundle: hotspot
+                                          default_langcode: en
+                                        default:
+                                          status:
+                                            -
+                                              value: true
+                                          created:
+                                            -
+                                              value: 1659726643
+                                          behavior_settings:
+                                            -
+                                              value: {  }
+                                          field_data_xpercent:
+                                            -
+                                              value: '30.00'
+                                          field_data_ypercent:
+                                            -
+                                              value: '43.00'
+                                          field_text:
+                                            -
+                                              value: '<p>Like a nuclear plant, the media component in <em>frost</em> has <strong>hotspots</strong>.</p>'
+                                              format: filtered_html
+                                  field_media:
+                                    -
+                                      entity: cf82f50b-7241-4fd1-b3ec-3950b149d1a6
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_bordercolor:
+                            -
+                              value: border-color--main-dark
+                          field_style_borderradius:
+                            -
+                              value: border-radius--default
+                          field_style_borderwidth:
+                            -
+                              value: border--0-none
+                          field_style_boxshadow:
+                            -
+                              value: false
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--center
+                          field_style_marginxc:
+                            -
+                              value: false
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--1
+                          field_style_paddingxc:
+                            -
+                              value: false
+                          field_style_textalign:
+                            -
+                              value: text-align--center
+                  field_style_flexdirection:
+                    -
+                      value: false
+                  field_style_justifycontent:
+                    -
+                      value: justify-content--center
+          field_style_bgcolor:
+            -
+              value: background-color--main-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_image:
+    -
+      entity: cf82f50b-7241-4fd1-b3ec-3950b149d1a6
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c04adfc0-002a-45af-9d9e-e66c7f0e392d
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1660250916
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9a8a6f24-4380-4631-8096-59648d95c383
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660250964
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--1
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2c4f786c-4722-47d3-8ce7-cd6d5d062dd7
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660576535
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_color_all:
+                    -
+                      value: color--second-dark
+                  field_text:
+                    -
+                      value: '<p>(<strong>frost</strong> is nuclear winter: when <a href="https://www.drupal.org/about/history">drops</a> meet <a href="https://atomicdesign.bradfrost.com/">Atomic Design</a>)</p>'
+                      format: filtered_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 59b9381c-fc2a-4acf-98fc-7f1bddc57de2
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660576781
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--1
+          field_style_bgcolor:
+            -
+              value: background-color--second-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: true
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2dee8c9e-8679-43ef-b5f1-8b963b07547d
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1587969737
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1e283288-4f82-4f1c-9aaf-65020b8f4097
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643581571
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_heading:
+                    -
+                      value: 'Compelling features for your whole team'
+                      wrapper: h2
+                  field_style_color_all:
+                    -
+                      value: color--third
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 044834aa-cd25-4a2b-9b91-617ced4e4dbe
+                  bundle: stripe_collection
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1587969742
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_section:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 5865239b-dae7-4c89-ba04-c76833104906
+                          bundle: stripe
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1587969785
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 2bc02a02-921d-4542-90d5-c814b6d440a9
+                                  bundle: layout
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660242100
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_columns:
+                                    -
+                                      entity:
+                                        _meta:
+                                          version: '1.0'
+                                          entity_type: paragraph
+                                          uuid: daff45b0-ba14-4b25-9ee4-7399e122acd8
+                                          bundle: column
+                                          default_langcode: en
+                                        default:
+                                          status:
+                                            -
+                                              value: true
+                                          created:
+                                            -
+                                              value: 1660242100
+                                          behavior_settings:
+                                            -
+                                              value: {  }
+                                          field_components:
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: a3035497-430e-456b-a03a-9856dd70f876
+                                                  bundle: heading
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1660242115
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  field_heading:
+                                                    -
+                                                      value: 'Plan and design in place on day one'
+                                                      wrapper: h2
+                                                  field_style_texttransform:
+                                                    -
+                                                      value: text-transform--none
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: 130cf4df-7779-4313-9831-971d045de6e5
+                                                  bundle: spacer
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1660242131
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  field_style_vspx:
+                                                    -
+                                                      value: padding-vertical--2
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: 44593b1d-ef06-4b33-b50e-e2df2efc0d26
+                                                  bundle: rich_text
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1660242147
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  field_text:
+                                                    -
+                                                      value: '<p>Website project teams often don''t look much like teams, nor do they work much on the website itself:&nbsp;</p><ul><li>User experience specialists have their own wireframing and site-mapping tools</li><li>Graphic designers draw components and pages in a different tool</li><li>Copywriters and content strategists have their trusty word processors</li><li>Project managers and business folks live in software that makes the rest of us shudder</li><li>...and the developers work on the website</li></ul><p>&nbsp;</p><p>With <strong>frost</strong>, y''all can plan your site''s content and structure <em>in the site itself</em> &nbsp;<strong>together</strong> on day one, refining the appearance of an already-in-place system of commonsense components.</p><hr><p>The <a href="https://solveitonce.com/">Solve it once</a> family of tools includes the <a href="https://chrome.google.com/webstore/detail/page-to-wireframe/djbpbelpckcfamdlkfhipkkadnanmkci">page to wireframe Chrome extension</a>, so you can build a page and then test it as a lower-fidelity wire. Turn your process on its head!</p>'
+                                                      format: filtered_html
+                                          field_data_animation:
+                                            -
+                                              value: slideInUp
+                                          field_style_animate:
+                                            -
+                                              value: false
+                                          field_style_bgcolor:
+                                            -
+                                              value: background-color--transparent
+                                          field_style_bordercolor:
+                                            -
+                                              value: border-color--grey
+                                          field_style_borderradius:
+                                            -
+                                              value: border-radius--default
+                                          field_style_borderwidth:
+                                            -
+                                              value: border--0-none
+                                          field_style_boxshadow:
+                                            -
+                                              value: false
+                                          field_style_color:
+                                            -
+                                              value: color--inherit
+                                          field_style_flex:
+                                            -
+                                              value: flex--2
+                                          field_style_justifycontent:
+                                            -
+                                              value: justify-content--center
+                                          field_style_marginxc:
+                                            -
+                                              value: false
+                                          field_style_paddingh:
+                                            -
+                                              value: padding-horizontal--8
+                                          field_style_paddingxc:
+                                            -
+                                              value: true
+                                          field_style_textalign:
+                                            -
+                                              value: text-align--left
+                                    -
+                                      entity:
+                                        _meta:
+                                          version: '1.0'
+                                          entity_type: paragraph
+                                          uuid: 21e29047-cc80-445b-8630-d5bb93d918f3
+                                          bundle: column
+                                          default_langcode: en
+                                        default:
+                                          status:
+                                            -
+                                              value: true
+                                          created:
+                                            -
+                                              value: 1660242241
+                                          behavior_settings:
+                                            -
+                                              value: {  }
+                                          field_components:
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: 91561be9-b9c0-4f21-85c6-9b6a0176e424
+                                                  bundle: media
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1660242257
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  field_media:
+                                                    -
+                                                      entity: b9fe445d-b375-4435-a945-0cacf4cee000
+                                                  field_text:
+                                                    -
+                                                      value: '<p>Use <a href="https://chrome.google.com/webstore/detail/page-to-wireframe/djbpbelpckcfamdlkfhipkkadnanmkci">Page to wireframe</a> to get rid of the content so evaluators can focus on layout and elements.</p>'
+                                                      format: filtered_html
+                                          field_data_animation:
+                                            -
+                                              value: slideInUp
+                                          field_style_animate:
+                                            -
+                                              value: true
+                                          field_style_bgcolor:
+                                            -
+                                              value: background-color--transparent
+                                          field_style_bordercolor:
+                                            -
+                                              value: border-color--grey
+                                          field_style_borderradius:
+                                            -
+                                              value: border-radius--default
+                                          field_style_borderwidth:
+                                            -
+                                              value: border--0-none
+                                          field_style_boxshadow:
+                                            -
+                                              value: false
+                                          field_style_color:
+                                            -
+                                              value: color--inherit
+                                          field_style_flex:
+                                            -
+                                              value: flex--1
+                                          field_style_justifycontent:
+                                            -
+                                              value: justify-content--center
+                                          field_style_marginxc:
+                                            -
+                                              value: false
+                                          field_style_paddingh:
+                                            -
+                                              value: padding-horizontal--2
+                                          field_style_paddingxc:
+                                            -
+                                              value: false
+                                          field_style_textalign:
+                                            -
+                                              value: text-align--center
+                                  field_style_flexdirection:
+                                    -
+                                      value: false
+                                  field_style_justifycontent:
+                                    -
+                                      value: justify-content--center
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 28fb2141-e6a1-484e-b1e6-b8b68b9f4805
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660242598
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--4
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 5f145628-7212-4de4-802d-b0cb8de88927
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660242608
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_color_all:
+                                    -
+                                      value: color--grey-dark
+                                  field_text:
+                                    -
+                                      value: '<p>Also, <strong>every piece of content has a ''Plan'' tab</strong>, where you can save content strategy and other work/notes.</p>'
+                                      format: filtered_html
+                          field_style_bgcolor:
+                            -
+                              value: background-color--white
+                          field_style_bghide:
+                            -
+                              value: false
+                          field_style_bgpx:
+                            -
+                              value: background-position-x--center
+                          field_style_bgpy:
+                            -
+                              value: background-position-y--center
+                          field_style_bgrepeat:
+                            -
+                              value: background-repeat--no-repeat
+                          field_style_bgsize:
+                            -
+                              value: background-size--cover
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_fullwidth:
+                            -
+                              value: false
+                          field_style_textalign:
+                            -
+                              value: text-align--center
+                          field_style_unpad:
+                            -
+                              value: false
+                          field_title:
+                            -
+                              value: Design/UX
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 566e558e-1ece-4061-a37c-95a84bdc6ba4
+                          bundle: stripe
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1587969752
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 4f6a74c0-8179-438a-892b-99c2a9c9cc61
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1587969767
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_heading:
+                                    -
+                                      value: 'A thoroughly-invented wheel'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 5bb68c7f-9453-4c65-9fa0-9495f9dde7fb
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1644177253
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--1
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 14e64490-44d9-4110-8fab-8a679f287930
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1644177260
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: '<p><strong>frost</strong>&nbsp;comes fresh out of the box with the site you see here, ready to adapt.</p><p>The components and ''stripes'' work together for complex storytelling, while the power of Drupal fields powers semantic and non-storytelling content like articles, products, and events.</p><hr><p>The repo is set up to use <a href="https://docs.lando.dev/drupal/getting-started.html&quot;">lando</a>, <a href="https://docs.acquia.com/blt/">BLT</a> with <a href="https://docs.acquia.com/blt/developer/testing/#unit-and-functional-testing">phpunit</a> and <a href="https://www.specbee.com/blogs/testing-your-drupal-website-just-got-easier-behat-comprehensive-tutorial">behat</a> ready to go, and more:</p><ul><li><a href="https://github.com/solve-it-once/frost/tree/master/docroot/themes/custom/frost_theme/css">Utility-first CSS</a></li><li><a href="https://github.com/solve-it-once/frost/tree/master/.github">GitHub templates</a> and <a href="https://github.com/solve-it-once/frost/blob/master/blt/blt.yml#L14">commit message validation</a></li><li>Hosting configs for <a href="https://docs.platform.sh/create-apps.html">platform.sh</a>, <a href="https://pantheon.io/docs/pantheon-yml/">Pantheon</a>, and <a href="https://docs.acquia.com/pipelines/">Acquia Cloud</a></li><li><strong>Magic fields</strong>: use machine names like field_style_myclasses, field_attr_open, or <a href="https://github.com/solve-it-once/frost/blob/master/config/sync/field.storage.paragraph.field_data_animation.yml">field_data_holder</a> to automatically add styles, attributes, and data- attributes, respectively</li><li>Site-specific <a href="https://github.com/solve-it-once/frost/tree/master/docroot/modules/custom">custom modules</a> with blocks for contact information, cookie disclosure, "back to top", social sharing, and more</li><li>Default content for all the pages you''ve had to manually create a million times</li><li>Migration helpers</li><li>A head start setting up Drupal Commerce</li><li>Solr search with autocomplete already <em>done</em></li></ul>'
+                                      format: filtered_html
+                          field_style_bgcolor:
+                            -
+                              value: background-color--grey-light
+                          field_style_bghide:
+                            -
+                              value: false
+                          field_style_bgpx:
+                            -
+                              value: background-position-x--center
+                          field_style_bgpy:
+                            -
+                              value: background-position-y--center
+                          field_style_bgrepeat:
+                            -
+                              value: background-repeat--no-repeat
+                          field_style_bgsize:
+                            -
+                              value: background-size--cover
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_fullwidth:
+                            -
+                              value: false
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                          field_style_unpad:
+                            -
+                              value: false
+                          field_title:
+                            -
+                              value: Developers
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: f527cfee-411e-46f5-9290-b1ee9e3abde5
+                          bundle: stripe
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1644177639
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 5077a393-335f-463c-be3c-56da88955c20
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1644177691
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_heading:
+                                    -
+                                      value: Authors
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 102b3015-1082-4f24-8f86-000bc4c589ca
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1644177722
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--1
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 9e8429de-eb36-4783-b0bb-5e1baa83caf9
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1644177730
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_text:
+                                    -
+                                      value: '<p>There''s a balance when telling your brand story, between&nbsp;<strong>rigid templates</strong>&nbsp;and&nbsp;<strong>ill-advised creative freedom</strong>. The frost component system lets you use a big toolbox of components,&nbsp;<em>without</em>&nbsp;letting everyone put blinking Comic Sans text wherever they want.</p><p>Best of all, this balance doesn''t require calling an expensive developer when the time comes to try something new.</p>'
+                                      format: filtered_html
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: f8fc8b1d-4b7c-41a9-ac95-fa00375c6f26
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660243021
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 1dd37f77-70a6-4336-9a74-f2da83c3e9da
+                                  bundle: accordion
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660243033
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_attr_open:
+                                    -
+                                      value: false
+                                  field_text:
+                                    -
+                                      value: '<p>You bet! The accordion contents can be rich text, too. That''s a lot of layers, but with component-driven storytelling it''s a walk in the park.</p>'
+                                      format: filtered_html
+                                  field_title:
+                                    -
+                                      value: 'Can I put an accordion in a tab in a stripe?'
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 2a560561-bb54-41ad-9723-8ac732bfb64b
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660575630
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: ffd79c92-65af-445d-834f-b11e47fff311
+                                  bundle: message
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1660575642
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_messageseverity:
+                                    -
+                                      value: messages--status
+                                  field_text:
+                                    -
+                                      value: '<p>Yes, even the alerts/messages can be placed in a tab.</p>'
+                                      format: filtered_html
+                          field_style_bgcolor:
+                            -
+                              value: background-color--second-light
+                          field_style_bghide:
+                            -
+                              value: false
+                          field_style_bgpx:
+                            -
+                              value: background-position-x--center
+                          field_style_bgpy:
+                            -
+                              value: background-position-y--center
+                          field_style_bgrepeat:
+                            -
+                              value: background-repeat--no-repeat
+                          field_style_bgsize:
+                            -
+                              value: background-size--cover
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_fullwidth:
+                            -
+                              value: false
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                          field_style_unpad:
+                            -
+                              value: false
+                          field_title:
+                            -
+                              value: Authors
+                  field_viewmode:
+                    -
+                      value: tab
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8cd6ddfe-37a0-4aa2-8827-80f8447437ab
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660256297
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d7aad554-bafa-4c91-a8fa-bb759c060bb6
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660256305
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p>Want to see what''s included? Check out the <a href="/page/component-guide"><strong>component guide</strong></a> and <a href="/admin/appearance/styleguide">style guide</a>.</p>'
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+          field_video_background:
+            -
+              entity: 463dc6da-1497-492c-b173-9474203d6bd2
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2ad31bf2-0129-4ca2-9805-44f58f798ac9
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1660239161
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ac2396be-0947-4f52-b3e9-4ec71faf1032
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660239217
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_heading:
+                    -
+                      value: 'More Drupal than Drupal'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 67b99dac-95fd-44d2-a4fc-8e89d1b03154
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660239276
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8caf4c0e-a44b-4e7a-8a1f-3406aa581f6a
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660239284
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: '<p>As you can see in the graph and table below, <a href="https://www.drupal.org/docs/umami-drupal-demonstration-installation-profile">umami</a> has lots of dummy content, and Wordpress has a huge, confusing list of components. <strong>frost</strong> seeks to strike a balance.</p><p>(Isn''t is cool that frost lets you create interactive charts using data from easy-to-make tables, all without paying extra?)</p>'
+                      format: filtered_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b54ea4e8-cb1e-495a-8f03-0b430d1e87bf
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660239301
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 618d159b-d3b7-4d46-9821-698f6346fa9c
+                  bundle: table
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1660239309
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_data_charttitle:
+                    -
+                      value: 'Comparison of out-of-the-box installs'
+                  field_data_yaxis:
+                    -
+                      value: Count
+                  field_style_graph:
+                    -
+                      value: js-chart-vertical-bar
+                  field_style_table_replace:
+                    -
+                      value: false
+                  field_table:
+                    -
+                      value:
+                        0:
+                          weight: '0'
+                          0: Software
+                          1: Components
+                          2: Types
+                          3: Tagging
+                          4: Content
+                        1:
+                          weight: '1'
+                          0: frost
+                          1: '28'
+                          2: '3'
+                          3: '2'
+                          4: '22'
+                        2:
+                          weight: '2'
+                          0: Umami
+                          1: '0'
+                          2: '3'
+                          3: '2'
+                          4: '36'
+                        3:
+                          weight: '3'
+                          0: Wordpress
+                          1: '78'
+                          2: '2'
+                          3: '1'
+                          4: '0'
+                        4:
+                          weight: '4'
+                          0: 'Core d9'
+                          1: '0'
+                          2: '2'
+                          3: '1'
+                          4: '0'
+                        caption: 'Features of content management systems'
+                      format: ''
+                      caption: 'Features of content management systems'
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9d723dc0-a36b-4cda-a028-1cc084282a73
+          bundle: from_library
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643576518
+          behavior_settings:
+            -
+              value: {  }
+          field_reusable_paragraph:
+            -
+              entity: c4466a24-fbee-4a32-b26e-d84e5185124c
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 10f3b8d3-1a10-4986-82b3-a227cfe76e86
+          bundle: from_library
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643576522
+          behavior_settings:
+            -
+              value: {  }
+          field_reusable_paragraph:
+            -
+              entity: 8f9ea24b-e750-4492-a7e7-1ec8f17a2fac
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 479f1429-2c23-4a20-87bc-bd364970588f
+          bundle: from_library
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643576526
+          behavior_settings:
+            -
+              value: {  }
+          field_reusable_paragraph:
+            -
+              entity: 13727736-73c7-4720-b368-d6c3d861d650
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4a98ef1b-d891-4545-b7d2-941cd87f7dc1
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570555362
+          behavior_settings:
+            -
+              value: {  }
+          field_seo_description:
+            -
+              value: 'Frost lets you develop instead of making endless components.'
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: Home

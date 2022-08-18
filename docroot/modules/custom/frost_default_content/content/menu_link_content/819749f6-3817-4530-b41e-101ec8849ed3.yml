@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 819749f6-3817-4530-b41e-101ec8849ed3
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: '© 2022 Solve it once LLC. All rights reserved. (Drupal is a registered trademark of Dries Buytaert.)'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      uri: 'route:<nolink>'
+      title: ''
+      options:
+        attributes:
+          class:
+            - 'display--flex margin-horizontal--2'
+            - 'display--flex margin-horizontal--2'
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,213 @@
+_meta:
+  version: '1.0'
+  entity_type: paragraphs_library_item
+  uuid: 13727736-73c7-4720-b368-d6c3d861d650
+  default_langcode: en
+  depends:
+    d9034131-e96f-4e62-8c3d-5208bb1303ef: node
+    85fd7ea2-16e7-488e-9cd8-64784330c83b: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  label:
+    -
+      value: 'Primary CTA'
+  paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f5c7be98-e6c1-430e-b726-efbd7ccc74f7
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643575306
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7bf102eb-0fa4-4413-9484-bb69fa97ff6d
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575614
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'A CTA for your sense of adventure'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4296fe74-caf3-4873-a93f-dab9df9fb573
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575817
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b40f41c4-4087-441f-8059-f988a9330366
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575756
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>Some rich text that&nbsp;<strong>boldly&nbsp;</strong>exclaims your unique selling proposition, to call your visitor to act. In this case, acting means pressing the button below!</p>\r\n"
+                      format: filtered_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 930f3afa-be67-44f6-a310-dc748cc1201f
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 522a5ae5-0c91-4005-89cc-7ab0a93a95f1
+                  bundle: link
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1643575832
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_link:
+                    -
+                      target_uuid: d9034131-e96f-4e62-8c3d-5208bb1303ef
+                      title: 'Haven''t clicked? What are you, chicken?'
+                      options: {  }
+                  field_style_button:
+                    -
+                      value: true
+                  field_style_childbgcolor:
+                    -
+                      value: child-links-background-color--main
+          field_image_background:
+            -
+              entity: 85fd7ea2-16e7-488e-9cd8-64784330c83b
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  created:
+    -
+      value: 1643576526
+  uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

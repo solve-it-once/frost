@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5c021cd3-2f13-45ed-b4c2-dd230f9091dd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: logo.png
+  uri:
+    -
+      value: 'public://pwa/logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 48404
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1659568148

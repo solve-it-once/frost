@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_store
+  uuid: 88d62e82-56de-4a5d-8b0a-25e7cb47f210
+  bundle: online
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Online
+  mail:
+    -
+      value: brad@solveitonce.com
+  default_currency:
+    -
+      target_id: USD
+  timezone:
+    -
+      value: America/Detroit
+  address:
+    -
+      langcode: ''
+      country_code: US
+      administrative_area: MI
+      locality: 'Lincoln Park'
+      dependent_locality: ''
+      postal_code: '48146'
+      sorting_code: ''
+      address_line1: '1428 Mark Ave'
+      address_line2: ''
+  billing_countries:
+    -
+      value: US
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  is_default:
+    -
+      value: true
+  created:
+    -
+      value: 1643309779
+  shipping_countries:
+    -
+      value: US
+  prices_include_tax:
+    -
+      value: false
+  tax_registrations:
+    -
+      value: US

@@ -1,0 +1,2144 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 12c47dd1-a522-4e62-893a-12b0346ed0fa
+  bundle: page
+  default_langcode: en
+  depends:
+    74847825-a908-4e5c-9740-5759b783fd96: media
+    e7cceaca-06d8-422a-94d8-4ce759454075: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Privacy Policy'
+  created:
+    -
+      value: 1570825255
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /page/privacy-policy
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>We are&nbsp;committed to protecting your personal information. The purpose of this Privacy Policy is to outline how we deal with any personal information you provide to us.</p>\r\n"
+      format: filtered_html
+      summary: ''
+  field_hero:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0c744291-702a-41f0-866f-9c1045240deb
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571254299
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a5ce0489-840f-4d69-82c3-f87ac971bcc8
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571254343
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Privacy Policy'
+                      wrapper: h1
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ea398189-fced-4cdf-ae6e-8bca6b14915d
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571254354
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--1
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1cd48a14-1ee1-42a1-9ed8-cdbd345421d0
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571254359
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'and GDPR information notices'
+                      wrapper: span
+                  field_style_headinglevel:
+                    -
+                      value: heading--h4
+                  field_style_texttransform:
+                    -
+                      value: text-transform--uppercase
+          field_image_background:
+            -
+              entity: 74847825-a908-4e5c-9740-5759b783fd96
+          field_style_bgcolor:
+            -
+              value: background-color--grey-dark
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--white
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+  field_image:
+    -
+      entity: 74847825-a908-4e5c-9740-5759b783fd96
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8eb00b85-7ac9-49c2-9c88-9de78b2300a8
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825266
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 53ea4235-7012-46b2-b731-f0202658cbc4
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571255881
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_fontsize:
+                    -
+                      value: font-size--1-25em
+                  field_text:
+                    -
+                      value: "<p>This privacy policy will explain how our organization uses the personal data we collect from you when you use our website.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 235385ec-5b67-4c6f-93ab-fa6fc0088270
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571255895
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1d04ec5e-5234-4883-8bac-8fae85d01cd8
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256033
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Your data'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bd866909-751b-4e0f-a512-5f21759abd3d
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256040
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f35b374b-b226-4ce7-af56-6b095f44586f
+                  bundle: layout
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571255910
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_columns:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 9383471a-1ff7-4efa-bcc5-0666aea17993
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571255910
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 45800d30-c1e1-462f-a972-37095569dc39
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255916
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'What data do we collect?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: e1de2958-baa5-4b5a-8489-e4478d2790a6
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255933
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: eb829fcd-2cea-4c30-8197-17aaaf27dc7f
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255939
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>We collect the following data:</p>\r\n\r\n<ul>\r\n\t<li>Personal identification information (Name, email address, phone number, etc.)</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: d396d4fd-fef9-4ae7-8f53-55d51776b2d3
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256052
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: f64a6b2f-f057-4e9c-a29a-d358167fb837
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256057
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'How do we collect your data?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: d3a06309-f47b-4b98-b3d3-9bd18f0ff7ed
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256073
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 5f696091-4e35-412b-be48-b320ce159624
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256086
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>You directly provide us with most of the data we collect. We collect data and process data when you:</p>\r\n\r\n<ul>\r\n\t<li>Register online or place an order for any of our products or services.</li>\r\n\t<li>Voluntarily complete a customer survey or provide feedback on any of our message boards or via email.</li>\r\n\t<li>Use or view our website via your browser’s cookies.</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                  field_style_flexdirection:
+                    -
+                      value: false
+                  field_style_justifycontent:
+                    -
+                      value: justify-content--center
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9825572a-436c-45f4-909b-53dde01f2866
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256285
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 177d72e1-27df-44c2-81d5-9313e564960f
+                  bundle: layout
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571255910
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_columns:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 98871f72-01cf-4aea-b6f6-5ac27a5466ff
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571255910
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: e70f60c9-00d8-4645-b188-4df95a4b055b
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255916
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'How will we use your data?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 90555ed8-21f7-451a-9ad8-a08cfcd83887
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255933
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 4abf130a-df8c-40d0-8e3c-286d6469a783
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571255939
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>We collect your data so that we can:</p>\r\n\r\n<ul>\r\n\t<li>Process your order and manage your account.</li>\r\n\t<li>Email you with special offers on other products and services we think you might like.</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 4a6a8319-490f-437f-abe1-499e6616b3b3
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256052
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 6b021ad1-57be-43e9-bbd0-6ae40c2340d1
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256057
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'How do we store your data?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: b8213df9-7d18-473f-9677-d42ae8980c07
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256073
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: b96775ff-fd80-4959-93fa-e17d2e3b9d85
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256086
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>We securely store your data within this site's database, only removing it via SSL-enabled means to secure servers.</p>\r\n\r\n<p>We will keep your personal identification information indefinitely.</p>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                  field_style_flexdirection:
+                    -
+                      value: false
+                  field_style_justifycontent:
+                    -
+                      value: justify-content--center
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4db8107b-bd95-4deb-8663-43b02528b473
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571256194
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4bf53146-ea2e-49f1-a2ea-857cca2e0c13
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256207
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: Marketing
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 893cb0fe-e30a-437c-b51a-e50c4f2536cf
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256217
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4689481a-dbef-4f6c-bcdb-16024925d62f
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256224
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We would like to send you information about products and services of ours that we think you might like.</p>\r\n\r\n<p>If you have agreed to receive marketing, you may always opt out at a later date.</p>\r\n\r\n<p>You have the right at any time to stop us from contacting you for marketing purposes.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6aad844b-491b-4d92-8dde-7d27eca9aac2
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571256194
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ef3e24aa-36a9-4161-bb56-549a4c7f2b2a
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256207
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'What are your data protection rights?'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4877f866-3f87-4676-82db-c2037cc9b9ef
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256217
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6a21ff8a-75e3-43bf-a5f1-622f90879d28
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256224
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>\r\n\r\n<p><strong>The right to access</strong> – You have the right to request from us copies of your personal data. We may charge you a small fee for this service.</p>\r\n\r\n<p><strong>The right to rectification</strong> – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request we complete the information you believe is incomplete.</p>\r\n\r\n<p><strong>The right to erasure</strong> – You have the right to request that we erase your personal data, under certain conditions.</p>\r\n\r\n<p><strong>The right to restrict processing</strong> – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>\r\n\r\n<p><strong>The right to object to processing</strong> – You have the right to object to our processing of your personal data, under certain conditions.</p>\r\n\r\n<p><strong>The right to data portability</strong> – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>\r\n\r\n<p>If you make a request, we have one month to respond to you.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 03cb6792-585a-4ce8-b268-6f50de39d5a2
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571256458
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 42bb952e-89af-4711-b9c9-f06cfa2b7768
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256465
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: Cookies
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 62c6dc44-03d6-42e8-afbc-c6dc5839a2f8
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256513
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f588c573-d845-43fc-ad03-c02355996302
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256519
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>Cookies are text files placed on your computer to collect standard Internet log information and visitor behavior information. When you visit our websites, we may collect information from you automatically through cookies or similar technology</p>\r\n\r\n<p>For further information, visit <a href=\"https://www.allaboutcookies.org/\">allaboutcookies.org</a>.</p>\r\n"
+                      format: filtered_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 44dea65d-98e7-41e0-a74a-4e6d358e7639
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256556
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 054528bd-2b29-4069-8218-8a91873c9e0f
+                  bundle: layout
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256560
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_columns:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: eec799f2-6bf5-4dc7-a19d-f3fb69d66573
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256560
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 5eb35803-c7c3-40ca-84a2-75164e433101
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256566
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'How do we use cookies?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 499e704b-57ea-4355-b05f-c607d1ecb268
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256584
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: f8774c6a-4715-4896-b5fa-6a48472c3c22
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256591
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>We use cookies in a range of ways to improve your experience on our website, including:</p>\r\n\r\n<ul>\r\n\t<li>Keeping you signed in</li>\r\n\t<li>Understanding how you use our website</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: aa78aaca-4b1d-47c7-8708-364c523c01fd
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256606
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 129f29ec-d2b6-4687-98de-daa57661b340
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256611
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'What types of cookies do we use?'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: b70413f8-202b-4ade-a0f3-306b852d14d9
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256629
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 755347ec-5a40-487a-afb1-7a7e1b7d062e
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256636
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>There are a number of different types of cookies, however, our website uses:</p>\r\n\r\n<ul>\r\n\t<li>Functionality – We use these cookies so that we recognize you on our website and remember your previously selected preferences. These could include what language you prefer and location you are in. A mix of first-party and third-party cookies are used.</li>\r\n\t<li>Analytics – We use these cookies to collect information about your visit to our website, the content you viewed, the links you followed and information about your browser, device, and your [anonymized] IP address.</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                  field_style_flexdirection:
+                    -
+                      value: false
+                  field_style_justifycontent:
+                    -
+                      value: justify-content--center
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 117fec07-09d5-460e-a73c-9bbfed6df752
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256726
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--4
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b07199d2-29cb-473f-8cf5-cdedb7e7f7ca
+                  bundle: layout
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256560
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_columns:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: c858736f-b14e-4db7-9798-03d2eecc0b9d
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256560
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: e43b69b6-1092-4f65-a9e4-0957f93f4483
+                                  bundle: heading
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256566
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_heading:
+                                    -
+                                      value: 'How to manage cookies'
+                                      wrapper: h3
+                                  field_style_texttransform:
+                                    -
+                                      value: text-transform--none
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: dcfa454e-fa2b-4fd5-8f0a-45edd6bd33bd
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256584
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 49de60f8-147f-4eed-b891-4ca6e9dea2e1
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256591
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>We use cookies in a range of ways to improve your experience on our website, including:</p>\r\n\r\n<ul>\r\n\t<li>Keeping you signed in</li>\r\n\t<li>Understanding how you use our website</li>\r\n</ul>\r\n"
+                                      format: filtered_html
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 9953215a-0008-4f08-bf02-f605dbde0ffc
+                          bundle: column
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1571256606
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 577cb641-f562-4ef2-a5b6-b25cc0e21412
+                                  bundle: spacer
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1571256629
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_style_vspx:
+                                    -
+                                      value: padding-vertical--2
+                          field_data_animation:
+                            -
+                              value: slideInUp
+                          field_style_animate:
+                            -
+                              value: false
+                          field_style_bgcolor:
+                            -
+                              value: background-color--transparent
+                          field_style_color:
+                            -
+                              value: color--inherit
+                          field_style_flex:
+                            -
+                              value: flex--1
+                          field_style_justifycontent:
+                            -
+                              value: justify-content--flex-start
+                          field_style_paddingh:
+                            -
+                              value: padding-horizontal--2
+                          field_style_textalign:
+                            -
+                              value: text-align--left
+                  field_style_flexdirection:
+                    -
+                      value: false
+                  field_style_justifycontent:
+                    -
+                      value: justify-content--center
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--center
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7326bfd1-53f7-4fd2-88f2-e6baa1a3dbff
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571256776
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 714a96de-4d57-4967-a54c-ae3474195b80
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256790
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Privacy policies of other websites'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cbb01f91-efb3-4be9-8db0-6919d9746f10
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256806
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6ed36f7c-bd58-4e9b-8686-630ba92c8944
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256813
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>This website contains links to other websites. Our privacy policy applies only to our website, so if you click on a link to another website, you should read their privacy policy.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--grey-light
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 462a531b-c941-429b-ab98-05a4b67c5152
+          bundle: stripe
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1571256824
+          behavior_settings:
+            -
+              value: {  }
+          field_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6670e374-db25-4dba-8b48-387657a178e7
+                  bundle: heading
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256848
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_heading:
+                    -
+                      value: 'Changes to our privacy policy'
+                      wrapper: h2
+                  field_style_texttransform:
+                    -
+                      value: text-transform--none
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 89de571c-e4b1-482a-93fb-fa134cbc4b40
+                  bundle: spacer
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256855
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_style_vspx:
+                    -
+                      value: padding-vertical--2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b27c7e87-92d1-4bf6-92fc-37f8d1cb168c
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1571256867
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>We keep our privacy policy under regular review and places any updates on this web page.</p>\r\n"
+                      format: filtered_html
+          field_style_bgcolor:
+            -
+              value: background-color--white
+          field_style_bghide:
+            -
+              value: false
+          field_style_bgpx:
+            -
+              value: background-position-x--center
+          field_style_bgpy:
+            -
+              value: background-position-y--center
+          field_style_bgrepeat:
+            -
+              value: background-repeat--no-repeat
+          field_style_bgsize:
+            -
+              value: background-size--cover
+          field_style_color:
+            -
+              value: color--inherit
+          field_style_fullwidth:
+            -
+              value: false
+          field_style_textalign:
+            -
+              value: text-align--left
+          field_style_unpad:
+            -
+              value: false
+  field_seo:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: eb721ceb-e2d0-48ef-b14c-b42acfed1ba6
+          bundle: seo
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1570825266
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_seo_description:
+            -
+              value: "We are\_committed to protecting your personal information. The purpose of this Privacy Policy is to outline how we deal with any personal information you provide to us"
+          field_seo_image:
+            -
+              entity: e7cceaca-06d8-422a-94d8-4ce759454075
+          field_seo_nofollow:
+            -
+              value: false
+          field_seo_noindex:
+            -
+              value: false
+          field_seo_title:
+            -
+              value: 'Privacy Policy'
