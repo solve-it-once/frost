@@ -21,15 +21,6 @@ matchers:
       substitution_type: canonical
       include_unpublished: true
     weight: 0
-  a9744f38-a9ec-448c-9bec-eb366e464ba8:
-    id: 'entity:menu_link_content'
-    uuid: a9744f38-a9ec-448c-9bec-eb366e464ba8
-    settings:
-      metadata: '[menu_link_content:title] (menu: [menu_link_content:menu_name])'
-      bundles: {  }
-      group_by_bundle: false
-      substitution_type: canonical
-    weight: 0
   e7e9d0e8-7ecd-4a58-aa71-06f3936ce765:
     id: 'entity:taxonomy_term'
     uuid: e7e9d0e8-7ecd-4a58-aa71-06f3936ce765

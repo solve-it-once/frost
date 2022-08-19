@@ -10,7 +10,7 @@ dependencies:
     - media.type.video
   module:
     - field_formatter_class
-    - frost_custom
+    - file
 _core:
   default_config_hash: xbdkZFtZJNgqs1J5fRk2toCzJpUJxu_cJ-0_dKY50DE
 id: media.video.search_index
@@ -27,11 +27,9 @@ content:
     weight: 2
     region: content
   field_media_video_file:
-    type: frost_custom_file_link
+    type: file_url_plain
     label: hidden
-    settings:
-      frost_custom_link_title: ''
-      frost_custom_link_class: ''
+    settings: {  }
     third_party_settings:
       field_formatter_class:
         class: ''
