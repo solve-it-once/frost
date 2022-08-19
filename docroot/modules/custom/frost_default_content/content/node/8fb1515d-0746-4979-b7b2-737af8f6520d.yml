@@ -266,7 +266,7 @@ default:
                       value: true
                   field_text:
                     -
-                      value: "<p>We employ the use of cookies. By using this website you consent to the use of cookies in accordance with <a href=\"/privacy-policy\">our privacy policy</a>.</p>\r\n\r\n<p>Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>\r\n"
+                      value: "<p>We employ the use of cookies. By using this website you consent to the use of cookies in accordance with <a href=\"/page/privacy-policy\">our privacy policy</a>.</p>\r\n\r\n<p>Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>\r\n"
                       format: filtered_html
           field_style_bgcolor:
             -

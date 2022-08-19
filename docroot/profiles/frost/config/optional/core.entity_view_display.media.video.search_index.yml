@@ -24,7 +24,7 @@ content:
     weight: 2
     region: content
   field_media_video_file:
-    type: frost_custom_file_link
+    type: file_link
     label: hidden
     settings:
       frost_custom_link_title: ''

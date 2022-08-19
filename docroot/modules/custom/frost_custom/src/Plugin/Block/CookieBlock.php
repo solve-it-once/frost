@@ -42,7 +42,7 @@ class CookieBlock extends BlockBase {
       ],
       'cookie' => [
         '#prefix' => '<div class="layout--stripe--inner"><span id="dialog--cookie-disclosure--description" class="dialog--cookie-disclosure--description">',
-        '#markup' => 'This website uses cookies to ensure you get the best visiting experience. <a href="/privacy-policy">Read our Privacy Policy</a> or '
+        '#markup' => 'This website uses cookies to ensure you get the best visiting experience. <a href="/page/privacy-policy">Read our Privacy Policy</a> or '
         . '<a href="https://www.cookiesandyou.com" rel="external noopener noreferrer" target="_blank">Learn more about cookies</a>',
         '#suffix' => '</span></div>',
       ],

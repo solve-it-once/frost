@@ -5,7 +5,7 @@ slogan: 'Atomic Drupal 9 install profile'
 page:
   403: /node/5
   404: /node/4
-  front: /node/1
+  front: /node/21
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

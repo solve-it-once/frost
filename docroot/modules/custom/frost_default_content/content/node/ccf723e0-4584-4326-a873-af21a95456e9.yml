@@ -340,7 +340,7 @@ default:
                       value: true
                   field_text:
                     -
-                      value: '<p><strong>Webmaster</strong></p><p>Email: <a href="mailto:brad@solveitonce.com">brad@solveitonce.com</a></p><p>Phone: <a href="tel:+12487210350">(248) 721-0350</a></p>'
+                      value: '<p><strong>Webmaster</strong></p><p>Email: <a href="mailto:brad@solveitonce.com">brad@solveitonce.com</a></p><p>Phone: <a href="tel:+13135097214">(313) 509-7214</a></p>'
                       format: filtered_html
           field_style_bgcolor:
             -
