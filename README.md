@@ -130,7 +130,7 @@ what went wrong, so we can fix it and amend the documentation further. Thank you
   4. `vi .git/config` (or use your text editor of choice) and save the file with "filemode = false" under core
   5. `vi .lando.yml` and change the three places where the word 'frost' is to be 'nameofyoursite' instead
   6. `vi blt/example.local.blt.yml` and change the two instances of 'frost' to 'nameofyoursite'
-  7. `lando start` to create and being running the application's containers
+  7. `lando start` to create and begin running the application's containers
   8. `lando composer install` to ensure the dependencies are available. lando start tries to do this but sometimes fails
   9. (optional, potentially frustrating) `lando blt blt:init:git-hooks` to validate your commits (you may be prompted to provide feedback data to the BLT maintainers)
   10. `lando blt source:build` to move the settings files into place, among other automated activities
@@ -139,7 +139,7 @@ what went wrong, so we can fix it and amend the documentation further. Thank you
   13. `lando drush en frost_default_content` to install the pages and examples for a head start
   14. (optional) `lando drush pmu frost_default_content` to keep the installed modules clean
   15. `lando drush uli` to get a URL you can copy and then paste into your browser to log into your new site
-  16. When you paste the URL into your browser, you may get a warning about security. This is due to the local site using a self-signed certificate and is nothing to worry about. Open the advanced options and click the link to proceed (this may take a few seconds)
+  16. When you paste the URL into your browser, you may get a warning about security. This is due to the local site using a self-signed certificate and is nothing to worry about. Open the advanced options accordion and click the link to proceed (this may take a few seconds)
   17. Once you've proceeded and see the first screen of the site as a logged-in admin user, it should be the path `/user/1/edit`. On the User #1 edit screen, be sure to at least enter a name in the name field, and ideally the other profile fields
   18. At the very top left of the User #1 edit screen, click the Drupal drop to go to the home page. You're frost-ing now!
 
