@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+name: linkit_result_thumbnail
+label: 'Linkit result thumbnail'
+effects:
+  2943df29-38ea-459c-ba1d-290489bb1807:
+    uuid: 2943df29-38ea-459c-ba1d-290489bb1807
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center
+  d5cfea71-090e-4c52-abf9-b6828e89ea36:
+    uuid: d5cfea71-090e-4c52-abf9-b6828e89ea36
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

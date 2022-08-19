@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large
+label: 'Large (480×480)'
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+    id: image_scale
+    weight: 0
+    data:
+      width: 480
+      height: 480
+      upscale: false
+  97cec8df-3a9a-439f-acb6-97b884122c69:
+    uuid: 97cec8df-3a9a-439f-acb6-97b884122c69
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

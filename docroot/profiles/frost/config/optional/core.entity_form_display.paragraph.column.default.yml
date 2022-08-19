@@ -6,11 +6,17 @@ dependencies:
     - field.field.paragraph.column.field_data_animation
     - field.field.paragraph.column.field_style_animate
     - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_bordercolor
+    - field.field.paragraph.column.field_style_borderradius
+    - field.field.paragraph.column.field_style_borderwidth
+    - field.field.paragraph.column.field_style_boxshadow
     - field.field.paragraph.column.field_style_color
     - field.field.paragraph.column.field_style_flex
     - field.field.paragraph.column.field_style_justifycontent
     - field.field.paragraph.column.field_style_marginh
+    - field.field.paragraph.column.field_style_marginxc
     - field.field.paragraph.column.field_style_paddingh
+    - field.field.paragraph.column.field_style_paddingxc
     - field.field.paragraph.column.field_style_textalign
     - paragraphs.paragraphs_type.column
   module:
@@ -23,52 +29,57 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_components
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 1
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_style_animate
         - field_data_animation
         - field_style_bgcolor
+        - field_style_bordercolor
+        - field_style_borderradius
+        - field_style_borderwidth
         - field_style_boxshadow
         - field_style_marginh
+        - field_style_marginxc
         - field_style_paddingh
+        - field_style_paddingxc
         - field_style_textalign
         - field_style_color
         - field_style_justifycontent
         - field_style_flex
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 2
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 id: paragraph.column.default
 targetEntityType: paragraph
 bundle: column
@@ -77,81 +88,122 @@ content:
   field_components:
     type: paragraphs
     weight: 3
+    region: content
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed_expand_nested
-      closed_mode: summary
+      closed_mode: preview
       autocollapse: none
       closed_mode_threshold: 0
-      add_mode: modal
+      add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
         delete_confirmation: true
-        add_in_between: true
         split_text: false
-    region: content
+        show_drag_and_drop: true
   field_data_animation:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_animate:
+    type: boolean_checkbox
     weight: 0
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_style_bgcolor:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_style_bordercolor:
     type: options_select
+    weight: 3
     region: content
-  field_style_color:
-    weight: 7
     settings: {  }
     third_party_settings: {  }
+  field_style_borderradius:
     type: options_select
-    region: content
-  field_style_flex:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_style_justifycontent:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_style_marginh:
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_style_borderwidth:
     type: options_select
-    region: content
-  field_style_paddingh:
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
-  field_style_textalign:
+  field_style_boxshadow:
+    type: boolean_checkbox
     weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_color:
+    type: options_select
+    weight: 12
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_style_flex:
     type: options_select
+    weight: 14
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_justifycontent:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_marginh:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_marginxc:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_paddingh:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_paddingxc:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_textalign:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

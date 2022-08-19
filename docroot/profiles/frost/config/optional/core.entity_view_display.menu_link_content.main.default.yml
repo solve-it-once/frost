@@ -1,17 +1,18 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
+  module:
+    - menu_link_content
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
 bundle: main
 mode: default
 content:
   children:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  langcode: true
   search_api_excerpt: true

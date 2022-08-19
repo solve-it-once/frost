@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.product_listing.field_products
+    - field.field.paragraph.product_listing.field_style_layout
+    - field.field.paragraph.product_listing.field_viewmode
+    - paragraphs.paragraphs_type.product_listing
+  module:
+    - field_formatter_class
+id: paragraph.product_listing.search_index
+targetEntityType: paragraph
+bundle: product_listing
+mode: search_index
+content:
+  field_products:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: search_index
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

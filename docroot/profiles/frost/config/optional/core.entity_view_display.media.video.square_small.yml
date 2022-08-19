@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.square_small
+    - field.field.media.video.field_media_filesize
+    - field.field.media.video.field_media_mimetype
+    - field.field.media.video.field_media_video_file
+    - image.style.square_small
+    - media.type.video
+  module:
+    - field_formatter_class
+    - image
+    - linked_field
+id: media.video.square_small
+targetEntityType: media
+bundle: video
+mode: square_small
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_small
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[media:field_media_video_file:entity:url]'
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_filesize: true
+  field_media_mimetype: true
+  field_media_video_file: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

@@ -11,13 +11,13 @@ third_party_settings:
     classes: margin-top--40px
 id: social
 theme: frost_theme
-region: footer
-weight: -2
+region: footer_cta
+weight: -6
 provider: null
 plugin: social
 settings:
   id: social
   label: Social
-  provider: contact_info
   label_display: '0'
+  provider: contact_info
 visibility: {  }

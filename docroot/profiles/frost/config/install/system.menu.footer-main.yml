@@ -8,5 +8,5 @@ third_party_settings:
     trail_source: ''
 id: footer-main
 label: 'Footer main'
-description: 'The top level of the main menu for the footer'
+description: 'Important pages that should appear in the footer rather than header'
 locked: false

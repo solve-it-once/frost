@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - core.entity_form_mode.commerce_product.plan
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_hero
+    - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_notes
+    - field.field.commerce_product.default.field_scratch
+    - field.field.commerce_product.default.field_sections
+    - field.field.commerce_product.default.field_seo
+    - field.field.commerce_product.default.field_tags
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_tagging:
+      children:
+        - field_tags
+      label: Tagging
+      region: hidden
+      parent_name: ''
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: false
+id: commerce_product.default.plan
+targetEntityType: commerce_product
+bundle: default
+mode: plan
+content:
+  field_notes:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_scratch:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_hero: true
+  field_image: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  langcode: true
+  path: true
+  status: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

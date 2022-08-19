@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_sections
+    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.stripe
-    - paragraphs.paragraphs_type.stripe_reference
     - taxonomy.vocabulary.article_type
   module:
     - entity_reference_revisions
@@ -21,10 +21,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
+      from_library: from_library
       stripe: stripe
-      stripe_reference: stripe_reference
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 30
@@ -47,9 +47,9 @@ settings:
       content_listing:
         weight: 36
         enabled: false
-      dropover:
-        weight: 37
-        enabled: false
+      from_library:
+        weight: 36
+        enabled: true
       heading:
         weight: 38
         enabled: false
@@ -71,9 +71,6 @@ settings:
       message:
         weight: 44
         enabled: false
-      product_listing:
-        weight: 45
-        enabled: false
       rich_text:
         weight: 46
         enabled: false
@@ -90,14 +87,14 @@ settings:
         weight: 50
         enabled: false
       stripe:
-        enabled: true
         weight: 51
+        enabled: true
       stripe_collection:
         weight: 52
         enabled: false
-      stripe_reference:
+      stripe_cta:
+        weight: 51
         enabled: true
-        weight: 53
       table:
         weight: 54
         enabled: false

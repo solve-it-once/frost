@@ -19,15 +19,17 @@ mode: default
 content:
   field_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: order--neg1
+    weight: 2
     region: content
   field_link:
-    weight: 3
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -38,17 +40,17 @@ content:
     third_party_settings:
       field_formatter_class:
         class: 'font-weight--500 link--after-arrow'
-    type: link
+    weight: 3
     region: content
   field_text:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
@@ -60,7 +62,7 @@ content:
         type: field
         destination: field_link
         advanced: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

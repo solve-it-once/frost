@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.media_listing.field_data_lightbox
+    - field.field.paragraph.media_listing.field_multimedia
+    - field.field.paragraph.media_listing.field_style_layout
+    - paragraphs.paragraphs_type.media_listing
+  module:
+    - paragraphs
+    - paragraphs_features
+id: paragraph.media_listing.content
+targetEntityType: paragraph
+bundle: media_listing
+mode: content
+content:
+  field_multimedia:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Media
+      title_plural: Media
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: media
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: false
+        split_text: false
+        show_drag_and_drop: true
+hidden:
+  created: true
+  field_data_lightbox: true
+  field_style_layout: true
+  status: true

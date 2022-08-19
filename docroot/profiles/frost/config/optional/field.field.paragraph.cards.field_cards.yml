@@ -5,7 +5,6 @@ dependencies:
     - field.storage.paragraph.field_cards
     - paragraphs.paragraphs_type.card
     - paragraphs.paragraphs_type.cards
-    - paragraphs.paragraphs_type.statistic_figure
     - paragraphs.paragraphs_type.statistic_percent
   module:
     - entity_reference_revisions
@@ -22,11 +21,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       card: card
       statistic_percent: statistic_percent
-      statistic_figure: statistic_figure
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 12
@@ -38,8 +36,8 @@ settings:
         weight: 14
         enabled: false
       card:
-        enabled: true
         weight: 15
+        enabled: true
       cards:
         weight: 16
         enabled: false
@@ -49,20 +47,11 @@ settings:
       content_listing:
         weight: 18
         enabled: false
-      heading:
-        weight: 19
-        enabled: false
-      seo:
-        weight: 20
-        enabled: false
-      stripe:
-        weight: 21
-        enabled: false
-      view:
-        weight: 22
-        enabled: false
       dropover:
         weight: 33
+        enabled: false
+      heading:
+        weight: 19
         enabled: false
       hotspot:
         weight: 35
@@ -82,15 +71,21 @@ settings:
       rich_text:
         weight: 40
         enabled: false
+      seo:
+        weight: 20
+        enabled: false
       spacer:
         weight: 42
         enabled: false
-      statistic_percent:
-        enabled: true
-        weight: 43
       statistic_figure:
-        enabled: true
         weight: 44
+        enabled: true
+      statistic_percent:
+        weight: 43
+        enabled: true
+      stripe:
+        weight: 21
+        enabled: false
       stripe_reference:
         weight: 45
         enabled: false
@@ -102,6 +97,9 @@ settings:
         enabled: false
       user_listing:
         weight: 48
+        enabled: false
+      view:
+        weight: 22
         enabled: false
       webform:
         weight: 50

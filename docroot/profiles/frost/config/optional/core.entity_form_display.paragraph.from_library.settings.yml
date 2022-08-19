@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.from_library.field_reusable_paragraph
+    - paragraphs.paragraphs_type.from_library
+id: paragraph.from_library.settings
+targetEntityType: paragraph
+bundle: from_library
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_reusable_paragraph: true
+  status: true
+  uid: true

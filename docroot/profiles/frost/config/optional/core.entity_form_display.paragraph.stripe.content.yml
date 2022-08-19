@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.stripe.field_components
+    - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_bgcolor
+    - field.field.paragraph.stripe.field_style_bghide
+    - field.field.paragraph.stripe.field_style_bgpx
+    - field.field.paragraph.stripe.field_style_bgpy
+    - field.field.paragraph.stripe.field_style_bgrepeat
+    - field.field.paragraph.stripe.field_style_bgsize
+    - field.field.paragraph.stripe.field_style_color
+    - field.field.paragraph.stripe.field_style_fullwidth
+    - field.field.paragraph.stripe.field_style_textalign
+    - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_title
+    - field.field.paragraph.stripe.field_video_background
+    - paragraphs.paragraphs_type.stripe
+  module:
+    - paragraphs
+    - paragraphs_features
+id: paragraph.stripe.content
+targetEntityType: paragraph
+bundle: stripe
+mode: content
+content:
+  field_components:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: false
+        split_text: false
+        show_drag_and_drop: true
+hidden:
+  created: true
+  field_image_background: true
+  field_style_bgcolor: true
+  field_style_bghide: true
+  field_style_bgpx: true
+  field_style_bgpy: true
+  field_style_bgrepeat: true
+  field_style_bgsize: true
+  field_style_color: true
+  field_style_fullwidth: true
+  field_style_textalign: true
+  field_style_unpad: true
+  field_title: true
+  field_video_background: true
+  status: true

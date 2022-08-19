@@ -12,14 +12,14 @@ bundle: block
 mode: default
 content:
   field_block:
+    type: block_field_default
     weight: 0
+    region: content
     settings:
-      configuration_form: full
       plugin_id: ''
       settings: {  }
+      configuration_form: full
     third_party_settings: {  }
-    type: block_field_default
-    region: content
 hidden:
   created: true
   status: true

@@ -7,35 +7,53 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_components
     - field.field.node.article.field_image
-    - field.field.node.article.field_link
+    - field.field.node.article.field_notes
+    - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - field_formatter_class
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_text_contents:
+      children:
+        - frost_submitted
+        - linked_title
+        - body
+      label: 'Text contents'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'padding-horizontal--2 padding-vertical--2 flex--1'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.article.teaser
 targetEntityType: node
 bundle: article
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
-  frost_submitted:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -43,21 +61,30 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-  linked_title:
+    weight: 0
+    region: content
+  frost_submitted:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  linked_title:
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 4
+    weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 5
+    region: content
 hidden:
   breadcrumb: true
   field_article_type: true
   field_components: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
+  langcode: true
   search_api_excerpt: true

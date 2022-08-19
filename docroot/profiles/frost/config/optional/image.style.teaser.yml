@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+name: teaser
+label: 'Teaser (scale to 235px high)'
+effects:
+  73f19d14-3ad7-4e99-a44f-68784c6fb458:
+    uuid: 73f19d14-3ad7-4e99-a44f-68784c6fb458
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 235
+      upscale: false
+  fc021b4e-1935-49c5-be87-cfad269e8afb:
+    uuid: fc021b4e-1935-49c5-be87-cfad269e8afb
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: image
 label: Image
-description: ''
+description: 'Images to display on the site, with the option to add alt text and other metadata.'
 source: image
 queue_thumbnail_downloads: false
 new_revision: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_data_lightbox
+    - paragraphs.paragraphs_type.media_listing
+id: paragraph.media_listing.field_data_lightbox
+field_name: field_data_lightbox
+entity_type: paragraph
+bundle: media_listing
+label: 'Show items in lightbox'
+description: 'If checked (as it is by default), the items in the listing will open larger into a lightbox when clicked, including both images and YouTube videos (other media formats may or may not work entirely as intended).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: enabled
+  off_label: disabled
+field_type: boolean

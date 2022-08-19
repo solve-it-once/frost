@@ -6,7 +6,8 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_components
     - field.field.node.article.field_image
-    - field.field.node.article.field_link
+    - field.field.node.article.field_notes
+    - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
     - node.type.article
@@ -20,29 +21,31 @@ mode: default
 content:
   field_components:
     type: entity_reference_revisions_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   field_tags:
-    weight: 1
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 1
     region: content
 hidden:
   body: true
   breadcrumb: true
-  frost_submitted: true
   field_article_type: true
   field_image: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
+  frost_submitted: true
+  langcode: true
   linked_title: true
   links: true
   search_api_excerpt: true

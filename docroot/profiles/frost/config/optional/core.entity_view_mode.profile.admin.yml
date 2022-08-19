@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - commerce_order
+id: profile.admin
+label: Admin
+targetEntityType: profile
+cache: true

@@ -14,6 +14,7 @@ dependencies:
     - field.field.paragraph.stripe.field_style_fullwidth
     - field.field.paragraph.stripe.field_style_textalign
     - field.field.paragraph.stripe.field_style_unpad
+    - field.field.paragraph.stripe.field_title
     - field.field.paragraph.stripe.field_video_background
     - paragraphs.paragraphs_type.stripe
   module:
@@ -26,16 +27,15 @@ mode: default
 content:
   field_components:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_image_background:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -43,10 +43,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 1
     region: content
   field_video_background:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: stripe_bg
@@ -54,6 +54,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
     region: content
 hidden:
   field_style_bgcolor: true
@@ -66,4 +67,5 @@ hidden:
   field_style_fullwidth: true
   field_style_textalign: true
   field_style_unpad: true
+  field_title: true
   search_api_excerpt: true

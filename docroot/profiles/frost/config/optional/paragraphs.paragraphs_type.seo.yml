@@ -4,5 +4,6 @@ dependencies: {  }
 id: seo
 label: SEO
 icon_uuid: 80a1a867-5b0c-4ee5-9a45-7a4611cdc71f
+icon_default: null
 description: 'Fields for setting <meta> tags and other SEO-related attributes on the page.'
 behavior_plugins: {  }

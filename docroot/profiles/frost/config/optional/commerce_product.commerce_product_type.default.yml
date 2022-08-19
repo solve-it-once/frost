@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+traits: {  }
+locked: false
+description: 'A standard good or service without variations or attributes/options to handle. '
+variationType: default
+multipleVariations: true
+injectVariationFields: false

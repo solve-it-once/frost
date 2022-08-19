@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.search_index
+    - field.field.paragraph.column.field_components
+    - field.field.paragraph.column.field_data_animation
+    - field.field.paragraph.column.field_style_animate
+    - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_bordercolor
+    - field.field.paragraph.column.field_style_borderradius
+    - field.field.paragraph.column.field_style_borderwidth
+    - field.field.paragraph.column.field_style_boxshadow
+    - field.field.paragraph.column.field_style_color
+    - field.field.paragraph.column.field_style_flex
+    - field.field.paragraph.column.field_style_justifycontent
+    - field.field.paragraph.column.field_style_marginh
+    - field.field.paragraph.column.field_style_marginxc
+    - field.field.paragraph.column.field_style_paddingh
+    - field.field.paragraph.column.field_style_paddingxc
+    - field.field.paragraph.column.field_style_textalign
+    - paragraphs.paragraphs_type.column
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+id: paragraph.column.search_index
+targetEntityType: paragraph
+bundle: column
+mode: search_index
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: search_index
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_data_animation: true
+  field_style_animate: true
+  field_style_bgcolor: true
+  field_style_bordercolor: true
+  field_style_borderradius: true
+  field_style_borderwidth: true
+  field_style_boxshadow: true
+  field_style_color: true
+  field_style_flex: true
+  field_style_justifycontent: true
+  field_style_marginh: true
+  field_style_marginxc: true
+  field_style_paddingh: true
+  field_style_paddingxc: true
+  field_style_textalign: true
+  search_api_excerpt: true

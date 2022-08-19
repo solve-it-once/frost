@@ -1,0 +1,6 @@
+icon_enable: true
+icon_neg: true
+logo:
+  heading: 1
+  title: 'Humanetics ATD home'
+  url: '<front>'

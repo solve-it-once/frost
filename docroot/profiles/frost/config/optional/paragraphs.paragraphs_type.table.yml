@@ -4,5 +4,6 @@ dependencies: {  }
 id: table
 label: Table
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Put data in an organized, easy-to-skim table format. Optionally add dynamic charts based off the table data'
 behavior_plugins: {  }

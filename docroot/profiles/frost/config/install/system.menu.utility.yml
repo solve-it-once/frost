@@ -1,7 +1,12 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
 id: utility
 label: Utility
-description: ''
+description: '''Verb'' links for above the header (nouns belong in the main menu)'
 locked: false

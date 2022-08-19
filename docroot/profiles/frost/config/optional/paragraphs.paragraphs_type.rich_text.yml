@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: rich_text
 label: 'Rich text'
-icon_uuid: ce1e7998-40fc-4f9c-92a6-424b8bce0813
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'A what-you-see-is-what-you-get (WYSIWYG) editor that lets you put in formatted text like Microsoft Word'
 behavior_plugins: {  }

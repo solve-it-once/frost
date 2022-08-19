@@ -4,5 +4,6 @@ dependencies: {  }
 id: user_listing
 label: 'User listing'
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Show teasers of users/people that link to their profile page'
 behavior_plugins: {  }

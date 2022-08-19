@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+name: square_tiny
+label: 'Square Tiny'
+effects:
+  70236778-b675-470b-82d6-8cb7a126e756:
+    uuid: 70236778-b675-470b-82d6-8cb7a126e756
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 45
+      height: 45
+      anchor: center-center
+  8b34ed30-6096-4018-82e3-3a93b6d62a7b:
+    uuid: 8b34ed30-6096-4018-82e3-3a93b6d62a7b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

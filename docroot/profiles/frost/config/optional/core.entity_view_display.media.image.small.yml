@@ -19,15 +19,17 @@ bundle: image
 mode: small
 content:
   field_media_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: square_tiny
       image_link: ''
+      image_style: square_tiny
+      image_loading:
+        attribute: lazy
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: image
+    weight: 0
     region: content
 hidden:
   created: true
@@ -35,6 +37,7 @@ hidden:
   field_media_height: true
   field_media_mimetype: true
   field_media_width: true
+  langcode: true
   name: true
   search_api_excerpt: true
   thumbnail: true

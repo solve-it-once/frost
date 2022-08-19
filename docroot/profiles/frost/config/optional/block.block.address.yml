@@ -2,18 +2,22 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - contact_info
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: margin-vertical--4
 id: address
 theme: frost_theme
 region: footer
-weight: -5
+weight: -8
 provider: null
 plugin: address
 settings:
   id: address
   label: Address
-  provider: contact_info
   label_display: '0'
+  provider: contact_info
 visibility: {  }

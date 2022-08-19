@@ -8,8 +8,9 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_hero
     - field.field.node.event.field_image
-    - field.field.node.event.field_link
     - field.field.node.event.field_location
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_scratch
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
@@ -17,34 +18,57 @@ dependencies:
   module:
     - datetime_range
     - field_formatter_class
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_text_contents:
+      children:
+        - linked_title
+        - field_date
+        - field_location
+        - body
+      label: 'Text contents'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'padding-horizontal--2 padding-vertical--2 flex--1'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.event.teaser
 targetEntityType: node
 bundle: event
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   field_date:
     type: daterange_default
-    weight: 2
-    region: content
     label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: medium
+      separator: '-'
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -52,31 +76,35 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 0
+    region: content
   field_location:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 4
+    region: content
   linked_title:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   links:
-    weight: 5
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   breadcrumb: true
-  frost_submitted: true
   field_components: true
   field_hero: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_sections: true
   field_seo: true
   field_tags: true
+  frost_submitted: true
+  langcode: true
   search_api_excerpt: true

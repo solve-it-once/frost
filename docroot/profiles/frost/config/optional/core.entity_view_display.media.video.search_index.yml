@@ -8,8 +8,8 @@ dependencies:
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
-    - frost_custom
     - field_formatter_class
+    - frost_custom
 id: media.video.search_index
 targetEntityType: media
 bundle: video
@@ -17,15 +17,14 @@ mode: search_index
 content:
   field_media_mimetype:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_media_video_file:
     type: frost_custom_file_link
-    weight: 1
     label: hidden
     settings:
       frost_custom_link_title: ''
@@ -33,18 +32,20 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 1
     region: content
   name:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
   field_media_filesize: true
+  langcode: true
   search_api_excerpt: true
   thumbnail: true
   uid: true

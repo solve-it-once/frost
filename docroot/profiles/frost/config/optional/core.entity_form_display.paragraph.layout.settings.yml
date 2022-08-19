@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.layout.field_columns
+    - field.field.paragraph.layout.field_style_flexdirection
+    - field.field.paragraph.layout.field_style_justifycontent
+    - paragraphs.paragraphs_type.layout
+id: paragraph.layout.settings
+targetEntityType: paragraph
+bundle: layout
+mode: settings
+content:
+  field_style_flexdirection:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_justifycontent:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_columns: true
+  status: true

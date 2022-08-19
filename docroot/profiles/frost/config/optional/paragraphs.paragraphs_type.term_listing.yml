@@ -4,5 +4,6 @@ dependencies: {  }
 id: term_listing
 label: 'Term listing'
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Show teasers of taxonomy terms that link to their detail/listing pages'
 behavior_plugins: {  }

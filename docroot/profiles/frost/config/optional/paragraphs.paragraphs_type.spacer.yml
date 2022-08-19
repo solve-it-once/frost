@@ -4,5 +4,6 @@ dependencies: {  }
 id: spacer
 label: Spacer
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Vertical spacing made configurable! Put just the right amount of space between other components'
 behavior_plugins: {  }

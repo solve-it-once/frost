@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_listing.field_content
+    - field.field.paragraph.content_listing.field_style_layout
+    - field.field.paragraph.content_listing.field_viewmode
+    - paragraphs.paragraphs_type.content_listing
+  module:
+    - field_formatter_class
+id: paragraph.content_listing.preview
+targetEntityType: paragraph
+bundle: content_listing
+mode: preview
+content:
+  field_content:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_style_layout: true
+  field_viewmode: true
+  search_api_excerpt: true

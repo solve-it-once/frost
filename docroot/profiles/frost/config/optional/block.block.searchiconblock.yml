@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - frost_custom
@@ -7,13 +7,13 @@ dependencies:
     - frost_theme
 id: searchiconblock
 theme: frost_theme
-region: utility
-weight: 0
+region: nav
+weight: -7
 provider: null
 plugin: search_icon_block
 settings:
   id: search_icon_block
   label: 'Search Icon Block'
-  provider: frost_custom
   label_display: '0'
+  provider: frost_custom
 visibility: {  }

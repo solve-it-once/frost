@@ -14,14 +14,14 @@ bundle: term_listing
 mode: default
 content:
   field_terms:
-    weight: 0
+    type: entity_reference_display_default
     label: hidden
     settings:
       link: true
       display_field: null
       view_mode: default
     third_party_settings: {  }
-    type: entity_reference_display_default
+    weight: 0
     region: content
 hidden:
   field_style_layout: true

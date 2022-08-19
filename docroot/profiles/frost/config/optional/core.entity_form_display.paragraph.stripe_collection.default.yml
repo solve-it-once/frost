@@ -2,82 +2,92 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.stripe_collection.field_stripes
+    - field.field.paragraph.stripe_collection.field_section
     - field.field.paragraph.stripe_collection.field_viewmode
     - paragraphs.paragraphs_type.stripe_collection
   module:
     - field_group
-    - inline_entity_form
+    - paragraphs
+    - paragraphs_features
 third_party_settings:
   field_group:
     group_admin:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
-        - field_stripes
+        - field_section
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 5
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_viewmode
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 6
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 id: paragraph.stripe_collection.default
 targetEntityType: paragraph
 bundle: stripe_collection
 mode: default
 content:
-  field_stripes:
-    weight: 1
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: stripe
-      label_plural: stripes
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
+  field_section:
+    type: paragraphs
+    weight: 8
     region: content
+    settings:
+      title: Stripe
+      title_plural: Stripes
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: true
+        split_text: false
+        show_drag_and_drop: true
   field_viewmode:
-    weight: 2
+    type: options_select
+    weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

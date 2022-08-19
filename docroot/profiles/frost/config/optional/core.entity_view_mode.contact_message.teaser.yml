@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - contact
-id: contact_message.teaser
-label: Teaser
-targetEntityType: contact_message
-cache: true

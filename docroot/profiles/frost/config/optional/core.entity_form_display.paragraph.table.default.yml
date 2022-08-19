@@ -17,87 +17,87 @@ third_party_settings:
       children:
         - group_content
         - group_settings
+      label: Admin
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Admin
-      region: content
     group_content:
       children:
         - field_table
+      label: Content
+      region: content
       parent_name: group_admin
       weight: 8
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: false
-      label: Content
-      region: content
     group_settings:
       children:
         - field_data_charttitle
         - field_style_graph
         - field_style_table_replace
         - field_data_yaxis
+      label: Settings
+      region: content
       parent_name: group_admin
       weight: 9
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: false
-      label: Settings
-      region: content
 id: paragraph.table.default
 targetEntityType: paragraph
 bundle: table
 mode: default
 content:
   field_data_charttitle:
+    type: string_textfield
     weight: 4
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_data_yaxis:
+    type: string_textfield
     weight: 7
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_style_graph:
+    type: options_select
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_style_table_replace:
+    type: boolean_checkbox
     weight: 6
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_table:
+    type: tablefield
     weight: 1
+    region: content
     settings:
       input_type: textfield
     third_party_settings: {  }
-    type: tablefield
-    region: content
 hidden:
   created: true
   status: true

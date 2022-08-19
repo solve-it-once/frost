@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - core.entity_form_mode.taxonomy_term.ief
+    - field.field.paragraph.term_listing.field_style_layout
+    - field.field.paragraph.term_listing.field_terms
+    - field.field.paragraph.term_listing.field_viewmode
+    - paragraphs.paragraphs_type.term_listing
+  module:
+    - inline_entity_form
+id: paragraph.term_listing.content
+targetEntityType: paragraph
+bundle: term_listing
+mode: content
+content:
+  field_terms:
+    type: inline_entity_form_complex
+    weight: 1
+    region: content
+    settings:
+      form_mode: ief
+      override_labels: true
+      label_singular: Term
+      label_plural: Terms
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_style_layout: true
+  field_viewmode: true
+  status: true

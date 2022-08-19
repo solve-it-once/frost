@@ -1,0 +1,18 @@
+site_name: Frost
+short_name: Frost
+description: 'My favorite website'
+start_url: /
+lang: en
+theme_color: '#007da3'
+background_color: '#ffffff'
+display: minimal-ui
+default_image: '0'
+urls_to_cache: ''
+urls_to_exclude: "admin/.*\r\nuser/.*"
+offline_page: /offline
+cache_version: '1'
+cross_origin: false
+skip_waiting: false
+image: /sites/default/files/pwa/logo.png
+image_small: /sites/default/files/pwa/logo.pngcopy.png
+image_very_small: /sites/default/files/pwa/logo.pngcopy2.png

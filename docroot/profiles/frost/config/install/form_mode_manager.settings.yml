@@ -1,0 +1,26 @@
+langcode: en
+form_modes:
+  node:
+    to_exclude:
+      ief: ief
+  user:
+    to_exclude:
+      ief: ief
+      register: register
+  commerce_order_item:
+    to_exclude:
+      add_to_cart: add_to_cart
+  commerce_product:
+    to_exclude:
+      ief: ief
+  commerce_shipment:
+    to_exclude: {  }
+  media:
+    to_exclude: {  }
+  paragraph:
+    to_exclude: {  }
+  profile:
+    to_exclude: {  }
+  taxonomy_term:
+    to_exclude:
+      ief: ief

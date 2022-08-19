@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.block.field_block
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.settings
+targetEntityType: paragraph
+bundle: block
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_block: true
+  status: true

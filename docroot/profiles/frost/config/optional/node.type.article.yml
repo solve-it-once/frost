@@ -9,7 +9,7 @@ third_party_settings:
     parent: ''
 name: Article
 type: article
-description: ''
+description: 'Serialized storytelling content. Blog posts, news items, even press releases can be articles, differentiated from each other with the "Article type" tagging.'
 help: ''
 new_revision: true
 preview_mode: 0

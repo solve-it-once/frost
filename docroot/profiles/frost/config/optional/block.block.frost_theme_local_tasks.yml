@@ -6,14 +6,14 @@ dependencies:
 id: frost_theme_local_tasks
 theme: frost_theme
 region: pre_content
-weight: -1
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility: {  }

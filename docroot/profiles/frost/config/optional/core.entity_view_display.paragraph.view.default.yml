@@ -13,7 +13,7 @@ bundle: view
 mode: default
 content:
   field_view:
-    weight: 0
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -24,7 +24,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: viewsreference_formatter
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

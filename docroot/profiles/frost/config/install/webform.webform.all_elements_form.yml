@@ -1,9 +1,9 @@
 langcode: en
 status: open
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -11,7 +11,146 @@ id: all_elements_form
 title: 'All elements form'
 description: 'Used for stylistic QA/UAT'
 category: ''
-elements: "single_checkbox:\n  '#type': checkbox\n  '#title': 'Single checkbox'\nhidden_element:\n  '#type': hidden\n  '#title': 'Hidden element'\n  '#default_value': 'If you see either the label or this value, something is wrong.'\ntextarea:\n  '#type': textarea\n  '#title': Textarea\ntext_field:\n  '#type': textfield\n  '#title': 'Text Field'\nautocomplete:\n  '#type': webform_autocomplete\n  '#title': Autocomplete\n  '#description': 'Search a state or province name, and the autocomplete should start triggering around 2 letters'\n  '#autocomplete_items': state_province_names\n  '#autocomplete_match': 2\ncaptcha:\n  '#type': captcha\n  '#captcha_title': 'Is this a captcha?'\n  '#captcha_description': 'Yes, this is a captcha. Currently we don''t have ReCAPTCHA enabled because we''re optimists.'\ncodemirror_code_input:\n  '#type': webform_codemirror\n  '#title': 'CodeMirror code input'\n  '#description': 'This is a code input, set to accept CSS code specifically.'\n  '#mode': css\ncolor_picker:\n  '#type': color\n  '#title': 'Color picker'\nemail:\n  '#type': email\n  '#title': Email\nconfirm_email:\n  '#type': webform_email_confirm\n  '#title': 'Confirm email'\n  '#confirm__title': 'Confirm email'\nmultiple_email:\n  '#type': webform_email_multiple\n  '#title': 'Multiple email'\nmapping:\n  '#type': webform_mapping\n  '#title': Mapping\n  '#source': state_names\n  '#destination__type': textfield\nnumber:\n  '#type': number\n  '#title': Number\nrange:\n  '#type': range\n  '#title': Range\n  '#output': right\nrating:\n  '#type': webform_rating\n  '#title': Rating\nsearch:\n  '#type': search\n  '#title': Search\n  '#description': 'I don&#39;t know what this form element is supposed to accomplish.'\nsignature:\n  '#type': webform_signature\n  '#title': Signature\ntelephone:\n  '#type': tel\n  '#title': Telephone\n  '#international': true\n  '#international_initial_country': US\n  '#international_preferred_countries': {  }\nterms_of_service:\n  '#type': webform_terms_of_service\n  '#terms_title': 'Terms of service'\n  '#terms_content': 'This is an example.'\nurl:\n  '#type': url\n  '#title': URL\nvalue:\n  '#type': value\n  '#title': Value\n  '#value': 'This is the value for the field'\nbasic_address:\n  '#type': webform_address\n  '#title': 'Basic Address'\n  '#title_display': ''\nadvanced_address:\n  '#type': address\n  '#title': 'Advanced Address'\n  '#title_display': ''\ntelephone_advanced:\n  '#type': webform_telephone\n  '#title': 'Telephone Advanced'\nmessage:\n  '#type': webform_message\n  '#message_message': 'This is the message content'\n  '#message_close': true\n  '#message_close_effect': hide\n  '#message_storage': local\nfile:\n  '#type': managed_file\n  '#title': File\nbuttons:\n  '#type': webform_buttons\n  '#title': Buttons\n  '#options':\n    sdfsfsdf: sdfsfsdf\n    werwe: werwe\n    hjkhj: hjkhj\ncheckboxes:\n  '#type': checkboxes\n  '#title': Checkboxes\n  '#options':\n    sfsf: sfsf\n    sdfs: sdfs\n    rwerwe: rwerwe\nradios:\n  '#type': radios\n  '#title': Radios\n  '#options':\n    ghgf: ghgf\n    sdfs: sdfs\n    trytry: trytry\nselect:\n  '#type': select\n  '#title': Select\n  '#options': time_zones\ndate:\n  '#type': date\n  '#title': Date\n  '#datepicker': true\n  '#datepicker_button': true\n  '#date_date_format': 'l, F j, Y'\ntime:\n  '#type': webform_time\n  '#title': Time\n  '#timepicker': true\nterm_select:\n  '#type': webform_term_select\n  '#title': 'Term select'\n  '#vocabulary': solution\n  '#breadcrumb_delimiter': ''\n"
+elements: |-
+  single_checkbox:
+    '#type': checkbox
+    '#title': 'Single checkbox'
+  hidden_element:
+    '#type': hidden
+    '#title': 'Hidden element'
+    '#default_value': 'If you see either the label or this value, something is wrong.'
+  textarea:
+    '#type': textarea
+    '#title': Textarea
+  text_field:
+    '#type': textfield
+    '#title': 'Text Field'
+  autocomplete:
+    '#type': webform_autocomplete
+    '#title': Autocomplete
+    '#description': 'Search a state or province name, and the autocomplete should start triggering around 2 letters'
+    '#autocomplete_items': state_province_names
+    '#autocomplete_match': 2
+  captcha:
+    '#type': captcha
+    '#captcha_title': 'Is this a captcha?'
+    '#captcha_description': 'Yes, this is a captcha. Currently we don''t have ReCAPTCHA enabled because we''re optimists.'
+  codemirror_code_input:
+    '#type': webform_codemirror
+    '#title': 'CodeMirror code input'
+    '#description': 'This is a code input, set to accept CSS code specifically.'
+    '#mode': css
+  color_picker:
+    '#type': color
+    '#title': 'Color picker'
+    '#format': value
+  email:
+    '#type': email
+    '#title': Email
+  confirm_email:
+    '#type': webform_email_confirm
+    '#title': 'Confirm email'
+    '#confirm__title': 'Confirm email'
+  multiple_email:
+    '#type': webform_email_multiple
+    '#title': 'Multiple email'
+  mapping:
+    '#type': webform_mapping
+    '#title': Mapping
+    '#source': state_names
+    '#destination__type': textfield
+  number:
+    '#type': number
+    '#title': Number
+  range:
+    '#type': range
+    '#title': Range
+    '#output': right
+  rating:
+    '#type': webform_rating
+    '#title': Rating
+  search:
+    '#type': search
+    '#title': Search
+    '#description': 'I don&#39;t know what this form element is supposed to accomplish.'
+  signature:
+    '#type': webform_signature
+    '#title': Signature
+  telephone:
+    '#type': tel
+    '#title': Telephone
+    '#international': true
+    '#international_initial_country': US
+    '#international_preferred_countries': {  }
+  terms_of_service:
+    '#type': webform_terms_of_service
+    '#terms_title': 'Terms of service'
+    '#terms_content': 'This is an example.'
+  url:
+    '#type': url
+    '#title': URL
+  value:
+    '#type': value
+    '#title': Value
+    '#value': 'This is the value for the field'
+  basic_address:
+    '#type': webform_address
+    '#title': 'Basic Address'
+    '#title_display': ''
+  advanced_address:
+    '#type': address
+    '#title': 'Advanced Address'
+    '#title_display': ''
+  telephone_advanced:
+    '#type': webform_telephone
+    '#title': 'Telephone Advanced'
+  message:
+    '#type': webform_message
+    '#message_message': 'This is the message content'
+    '#message_close': true
+    '#message_close_effect': hide
+    '#message_storage': local
+  file:
+    '#type': managed_file
+    '#title': File
+  buttons:
+    '#type': webform_buttons
+    '#title': Buttons
+    '#options':
+      sdfsfsdf: sdfsfsdf
+      werwe: werwe
+      hjkhj: hjkhj
+  checkboxes:
+    '#type': checkboxes
+    '#title': Checkboxes
+    '#options':
+      sfsf: sfsf
+      sdfs: sdfs
+      rwerwe: rwerwe
+  radios:
+    '#type': radios
+    '#title': Radios
+    '#options':
+      ghgf: ghgf
+      sdfs: sdfs
+      trytry: trytry
+  select:
+    '#type': select
+    '#title': Select
+    '#options': time_zones
+  date:
+    '#type': date
+    '#title': Date
+    '#date_date_format': 'l, F j, Y'
+  time:
+    '#type': webform_time
+    '#title': Time
+    '#timepicker': true
+  term_select:
+    '#type': webform_term_select
+    '#title': 'Term select'
+    '#vocabulary': solution
+    '#breadcrumb_delimiter': ''
 css: ''
 javascript: ''
 settings:
@@ -23,38 +162,51 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -63,11 +215,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -82,7 +229,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -99,9 +254,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -128,6 +283,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:

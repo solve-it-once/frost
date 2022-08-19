@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraphs_library_item.preview
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - paragraphs_library
+id: paragraphs_library_item.paragraphs_library_item.preview
+targetEntityType: paragraphs_library_item
+bundle: paragraphs_library_item
+mode: preview
+content:
+  paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  label: true
+  langcode: true
+  search_api_excerpt: true

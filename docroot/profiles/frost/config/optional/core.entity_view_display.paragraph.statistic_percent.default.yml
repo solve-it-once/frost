@@ -21,10 +21,15 @@ third_party_settings:
         - field_text_prefix
         - field_decimal
         - field_text_suffix
+      label: Number
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
+        classes: 'display--flex justify-content--center align-items--center font-weight--bold font-size--4em'
+        show_empty_fields: false
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -32,17 +37,13 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'display--flex justify-content--center align-items--center brand--brackets min-height--95px'
-      label: Number
-      region: content
 id: paragraph.statistic_percent.default
 targetEntityType: paragraph
 bundle: statistic_percent
 mode: default
 content:
   field_decimal:
-    weight: 5
+    type: human_decimal
     label: hidden
     settings:
       thousand_separator: ''
@@ -52,10 +53,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: human_decimal
+    weight: 5
     region: content
   field_link:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -64,30 +65,30 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_text:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_text_prefix:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_text_suffix:
-    weight: 6
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
 hidden:
   search_api_excerpt: true

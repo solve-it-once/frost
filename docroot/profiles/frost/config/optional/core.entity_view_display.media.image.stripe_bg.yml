@@ -19,7 +19,7 @@ bundle: image
 mode: stripe_bg
 content:
   field_media_image:
-    weight: 0
+    type: bg_image_formatter
     label: hidden
     settings:
       image_style: viewport
@@ -32,15 +32,15 @@ content:
         bg_image_attachment: '0'
         bg_image_repeat: '0'
         bg_image_background_size: ''
-        bg_image_gradient: ''
         bg_image_media_query: all
-        bg_image_path_format: relative
-        bg_image_background_size_ie8: 0
         bg_image_important: 0
+        bg_image_background_size_ie8: 0
+        bg_image_path_format: relative
+        bg_image_gradient: ''
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: bg_image_formatter
+    weight: 0
     region: content
 hidden:
   created: true
@@ -48,6 +48,7 @@ hidden:
   field_media_height: true
   field_media_mimetype: true
   field_media_width: true
+  langcode: true
   name: true
   search_api_excerpt: true
   thumbnail: true

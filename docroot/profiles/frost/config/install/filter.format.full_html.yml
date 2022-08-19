@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - editor
+    - linkit
+    - media
 name: 'Full HTML'
 format: full_html
 weight: 0
@@ -11,32 +13,75 @@ filters:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: 0
+    weight: -49
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: 10
+    weight: -42
     settings: {  }
   filter_html:
     id: filter_html
     provider: filter
     status: true
-    weight: -10
+    weight: -50
     settings:
-      allowed_html: '<a href hreflang class=""> <abbr> <address> <article> <aside> <audio> <b> <blockquote cite> <br> <caption> <cite> <code> <col> <colgroup> <dd> <del> <details> <dfn> <div> <dl> <dt> <em class=""> <figcaption> <figure> <footer> <i> <img alt src class=""> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <header> <hgroup> <hr> <img src alt data-entity-type data-entity-uuid data-align data-caption> <ins> <li class=""> <mark> <nav> <ol start type class=""> <p> <picture> <pre> <q> <section> <small> <source> <strong class=""> <sub> <summary> <sup> <table> <tbody> <td> <tfoot> <th> <thead> <tr> <track> <ul type class=""> <video>'
+      allowed_html: '<abbr> <address> <article> <aside> <audio> <b> <cite> <col> <colgroup> <dd> <del> <details> <dfn> <div> <dl> <dt> <figcaption> <figure> <footer> <i> <header> <hgroup> <ins> <mark> <nav> <picture> <q> <section> <small> <source> <summary> <track> <video> <a hreflang data-entity-type data-entity-uuid data-entity-substitution class href> <blockquote cite> <em class> <img data-entity-substitution src alt data-entity-uuid data-entity-type height width data-caption data-align> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <li class> <ol type class start> <strong class> <ul type class> <drupal-media data-entity-substitution title data-entity-type data-entity-uuid alt data-caption data-align> <br> <p> <code class="language-*"> <pre> <s> <sub> <sup> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
-    weight: 0
+    weight: -48
     settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: true
-    weight: 0
+    weight: -47
     settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: -43
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -46
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -44
+    settings:
+      filter_url_length: 72
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: -41
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        image: image
+        video: video
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: -51
+    settings:
+      title: false

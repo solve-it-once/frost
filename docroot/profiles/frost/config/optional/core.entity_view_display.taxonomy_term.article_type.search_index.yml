@@ -5,11 +5,14 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.search_index
     - field.field.taxonomy_term.article_type.field_hero
     - field.field.taxonomy_term.article_type.field_image
+    - field.field.taxonomy_term.article_type.field_notes
+    - field.field.taxonomy_term.article_type.field_scratch
     - field.field.taxonomy_term.article_type.field_sections
     - field.field.taxonomy_term.article_type.field_seo
     - taxonomy.vocabulary.article_type
   module:
     - entity_reference_revisions
+    - field_formatter_class
     - text
 id: taxonomy_term.article_type.search_index
 targetEntityType: taxonomy_term
@@ -18,36 +21,48 @@ mode: search_index
 content:
   description:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_hero:
     type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: search_index
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_sections:
-    weight: 3
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: search_index
       link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 3
     region: content
   linked_title:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
+  readmore:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   breadcrumb: true
   field_image: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
+  langcode: true
   search_api_excerpt: true

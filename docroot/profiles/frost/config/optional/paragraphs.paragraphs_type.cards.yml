@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: cards
 label: Cards
-icon_uuid: c15f8d03-e8a8-4487-b368-0f0de29e944c
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'A layout of one or more card components, including stat and infographic cards'
 behavior_plugins: {  }

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.commerce_product.ief
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.product_listing.field_products
+    - field.field.paragraph.product_listing.field_style_layout
+    - field.field.paragraph.product_listing.field_viewmode
+    - paragraphs.paragraphs_type.product_listing
+  module:
+    - inline_entity_form
+id: paragraph.product_listing.content
+targetEntityType: paragraph
+bundle: product_listing
+mode: content
+content:
+  field_products:
+    type: inline_entity_form_complex
+    weight: 1
+    region: content
+    settings:
+      form_mode: ief
+      override_labels: true
+      label_singular: Product
+      label_plural: Products
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_style_layout: true
+  field_viewmode: true
+  status: true

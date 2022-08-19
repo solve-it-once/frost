@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: video
 label: Video
-description: ''
+description: 'Upload your own mp4 video files rather than embedding from a third-party service. Should only be used for small videos, especially stripe backgrounds, where size and bandwidth aren''t a concern.'
 source: video_file
 queue_thumbnail_downloads: false
 new_revision: true

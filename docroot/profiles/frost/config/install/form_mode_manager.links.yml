@@ -1,0 +1,22 @@
+langcode: en
+local_tasks:
+  node:
+    position: primary
+  user:
+    position: secondary
+  block_content:
+    position: secondary
+  comment:
+    position: primary
+  contact_message:
+    position: primary
+  media:
+    position: secondary
+  taxonomy_term:
+    position: primary
+  commerce_product:
+    position: primary
+  commerce_shipment:
+    position: primary
+  paragraph:
+    position: primary

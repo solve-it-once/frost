@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_marginxc
+    - paragraphs.paragraphs_type.column
+id: paragraph.column.field_style_marginxc
+field_name: field_style_marginxc
+entity_type: paragraph
+bundle: column
+label: 'Margin (horizontal) collapse'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: margin-horizontal--collapse
+  off_label: margin-horizontal--default
+field_type: boolean

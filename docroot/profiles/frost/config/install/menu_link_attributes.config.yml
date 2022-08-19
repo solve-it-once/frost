@@ -1,10 +1,61 @@
 attributes:
+  aria-controls:
+    label: ''
+    description: ''
+  aria-describedby:
+    label: ''
+    description: 'The aria-describedby attribute is used to indicate the IDs of the elements that describe the object.'
+  aria-label:
+    label: ''
+    description: ''
   class:
     label: ''
     description: ''
+  data-ajax-focus:
+    label: ''
+    description: 'This accepts a jQuery selector targeting the element that should receive focus.'
+  data-ajax-progress:
+    label: ''
+    description: 'By default the AJAX links used the throbber progress indicator.'
+  data-ajax-wrapper:
+    label: ''
+    description: 'This accepts the ID of the HTML element (without the #) that should be replaced by the content fetched via AJAX.'
+  data-dialog-options:
+    label: ''
+    description: 'A JSON encoded string of options for Drupal.dialog. See http://api.jqueryui.com/dialog/ for all available options.'
+  data-dialog-renderer:
+    label: ''
+    description: 'Allow dialog links to specify a renderer in addition to a dialog type. This is required if you want to display a off canvas dialog.'
+  data-dialog-type:
+    label: ''
+    description: ''
+    options:
+      modal: Modal
+      dialog: Dialog
+  hreflang:
+    label: ''
+    description: 'Hints at the human language of the linked URL.'
+  itemprop:
+    label: ''
+    description: 'Used to add properties to an item.'
+  itemscope:
+    label: ''
+    description: 'itemscope (usually) works along with itemtype to specify that the HTML contained in a block is about a particular item.'
+  itemtype:
+    label: ''
+    description: 'Specifies the URL of the vocabulary that will be used to define itemprops (item properties) in the data structure. '
+  rel:
+    label: ''
+    description: 'The relationship of the linked URL as space-separated link types.'
+  role:
+    label: ''
+    description: 'The WAI-ARIA role associated with the element.'
   target:
     label: ''
     description: ''
     options:
       _blank: 'New window (_blank)'
       _self: 'Same window (_self)'
+  title:
+    label: ''
+    description: ''

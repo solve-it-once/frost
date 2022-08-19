@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:messages:38b91506-a7ae-4d67-98b0-5c13dd612cc1'
+    - 'block_content:messages:6f12931c-87ff-4a14-999f-854599ab183c'
   module:
     - block_content
   theme:
@@ -12,12 +12,12 @@ theme: frost_theme
 region: alerts
 weight: 0
 provider: null
-plugin: 'block_content:38b91506-a7ae-4d67-98b0-5c13dd612cc1'
+plugin: 'block_content:6f12931c-87ff-4a14-999f-854599ab183c'
 settings:
-  id: 'block_content:38b91506-a7ae-4d67-98b0-5c13dd612cc1'
+  id: 'block_content:6f12931c-87ff-4a14-999f-854599ab183c'
   label: Alerts
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

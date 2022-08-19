@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.stripe_collection.field_section
+    - field.field.paragraph.stripe_collection.field_viewmode
+    - paragraphs.paragraphs_type.stripe_collection
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+id: paragraph.stripe_collection.preview
+targetEntityType: paragraph
+bundle: stripe_collection
+mode: preview
+content:
+  field_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_viewmode: true
+  search_api_excerpt: true

@@ -1,42 +1,38 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - media
-    - node
-    - taxonomy
-    - paragraphs
-    - search_api
   config:
+    - field.storage.commerce_product.body
     - field.storage.node.field_article_type
-    - field.storage.paragraph.field_attr_open
     - field.storage.node.field_date
     - field.storage.node.field_tags
-    - field.storage.paragraph.field_text
-    - field.storage.paragraph.field_title
+    - field.storage.commerce_product.field_tags
     - search_api.server.solr
-    - core.entity_view_mode.media.search_index
+    - core.entity_view_mode.commerce_product.search_index
     - core.entity_view_mode.node.search_index
     - core.entity_view_mode.taxonomy_term.search_index
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - commerce_product
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    multilingual:
-      limit_to_content_language: false
-      include_language_independent: true
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -53,31 +49,29 @@ third_party_settings:
       maxntp: 2000
       boost: false
       interestingTerms: none
+    term_modifiers:
+      slop: 10000000
+      fuzzy: 2
     advanced:
       index_prefix: ''
       collection: ''
       timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 id: content
 name: Content
 description: ''
 read_only: false
 field_settings:
-  bundle:
-    label: 'Media type'
-    datasource_id: 'entity:media'
-    property_path: bundle
-    type: string
+  body:
+    label: 'Teaser text'
+    datasource_id: 'entity:commerce_product'
+    property_path: body
+    type: 'solr_text_custom:edgestring'
     dependencies:
-      module:
-        - media
-  changed:
-    label: Changed
-    datasource_id: 'entity:media'
-    property_path: changed
-    type: date
-    dependencies:
-      module:
-        - media
+      config:
+        - field.storage.commerce_product.body
   changed_1:
     label: Changed
     datasource_id: 'entity:node'
@@ -94,14 +88,14 @@ field_settings:
     dependencies:
       module:
         - taxonomy
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:media'
-    property_path: created
+  changed_3:
+    label: Changed
+    datasource_id: 'entity:commerce_product'
+    property_path: changed
     type: date
     dependencies:
       module:
-        - media
+        - commerce_product
   created_1:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -110,14 +104,14 @@ field_settings:
     dependencies:
       module:
         - node
-  created_4:
-    label: 'Authored on'
-    datasource_id: 'entity:paragraph'
+  created_2:
+    label: Created
+    datasource_id: 'entity:commerce_product'
     property_path: created
     type: date
     dependencies:
       module:
-        - paragraphs
+        - commerce_product
   description:
     label: Description
     datasource_id: 'entity:taxonomy_term'
@@ -134,14 +128,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_article_type
-  field_attr_open:
-    label: 'Expanded by default'
-    datasource_id: 'entity:paragraph'
-    property_path: field_attr_open
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.paragraph.field_attr_open
   field_date:
     label: Date
     datasource_id: 'entity:node'
@@ -158,30 +144,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
-  field_text:
-    label: Body
-    datasource_id: 'entity:paragraph'
-    property_path: field_text
-    type: 'solr_text_custom:edge'
-    dependencies:
-      config:
-        - field.storage.paragraph.field_text
-  field_title:
-    label: 'Label (to toggle)'
-    datasource_id: 'entity:paragraph'
-    property_path: field_title
-    type: 'solr_text_custom:edge'
-    dependencies:
-      config:
-        - field.storage.paragraph.field_title
-  id:
-    label: ID
-    datasource_id: 'entity:paragraph'
-    property_path: id
+  field_tags_1:
+    label: Tags
+    datasource_id: 'entity:commerce_product'
+    property_path: field_tags
     type: integer
     dependencies:
-      module:
-        - paragraphs
+      config:
+        - field.storage.commerce_product.field_tags
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -198,22 +168,14 @@ field_settings:
     dependencies:
       module:
         - taxonomy
-  mid:
-    label: ID
-    datasource_id: 'entity:media'
-    property_path: mid
-    type: integer
-    dependencies:
-      module:
-        - media
-  name:
-    label: Name
-    datasource_id: 'entity:media'
-    property_path: name
+  langcode_2:
+    label: Language
+    datasource_id: 'entity:commerce_product'
+    property_path: langcode
     type: string
     dependencies:
       module:
-        - media
+        - commerce_product
   name_1:
     label: Name
     datasource_id: 'entity:taxonomy_term'
@@ -237,6 +199,14 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
+  product_id:
+    label: ID
+    datasource_id: 'entity:commerce_product'
+    property_path: product_id
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
   promote:
     label: 'Promoted to front page'
     datasource_id: 'entity:node'
@@ -253,37 +223,49 @@ field_settings:
       roles:
         anonymous: anonymous
       view_mode:
+        'entity:commerce_product':
+          default: search_index
         'entity:media':
           audio: search_index
           document: search_index
           image: search_index
+          remote_video: search_index
           video: search_index
-          video_embed: search_index
         'entity:node':
           article: search_index
-          case_study: search_index
-          company: search_index
           event: search_index
-          location: search_index
           page: search_index
-          resource: search_index
         'entity:paragraph':
-          accordion: default
+          accordion: search_index
+          block: search_index
+          blockquote: search_index
+          card: search_index
+          cards: search_index
+          column: search_index
+          content_listing: search_index
+          from_library: search_index
+          heading: search_index
+          hotspot: search_index
+          iframe: search_index
+          layout: search_index
+          link: search_index
+          media: search_index
+          media_listing: search_index
+          message: search_index
+          product_listing: search_index
+          rich_text: search_index
+          seo: search_index
+          spacer: search_index
+          statistic_percent: search_index
+          stripe: search_index
+          stripe_collection: search_index
+          table: search_index
+          term_listing: search_index
+          user_listing: search_index
+          view: search_index
+          webform: search_index
         'entity:taxonomy_term':
           article_type: search_index
-          cable: search_index
-          card_frequency: search_index
-          card_technology: search_index
-          company_type: search_index
-          connector: search_index
-          data_output: search_index
-          format: search_index
-          housing_form_factor: search_index
-          industry: search_index
-          product_type: search_index
-          region: search_index
-          resource_type: search_index
-          solution: search_index
           tag: search_index
   status:
     label: status
@@ -295,14 +277,6 @@ field_settings:
     dependencies:
       module:
         - node
-  status_1:
-    label: Published
-    datasource_id: 'entity:media'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - media
   status_2:
     label: Published
     datasource_id: 'entity:taxonomy_term'
@@ -311,14 +285,14 @@ field_settings:
     dependencies:
       module:
         - taxonomy
-  status_5:
+  status_3:
     label: Published
-    datasource_id: 'entity:paragraph'
+    datasource_id: 'entity:commerce_product'
     property_path: status
     type: boolean
     dependencies:
       module:
-        - paragraphs
+        - commerce_product
   sticky:
     label: 'Sticky at top of lists'
     datasource_id: 'entity:node'
@@ -327,6 +301,14 @@ field_settings:
     dependencies:
       module:
         - node
+  stores:
+    label: Stores
+    datasource_id: 'entity:commerce_product'
+    property_path: stores
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
   tid:
     label: 'Term ID'
     datasource_id: 'entity:taxonomy_term'
@@ -343,6 +325,14 @@ field_settings:
     dependencies:
       module:
         - node
+  title_1:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - commerce_product
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -351,14 +341,14 @@ field_settings:
     dependencies:
       module:
         - node
-  type_3:
-    label: 'Paragraph type'
-    datasource_id: 'entity:paragraph'
+  type_1:
+    label: 'Product type'
+    datasource_id: 'entity:commerce_product'
     property_path: type
     type: string
     dependencies:
       module:
-        - paragraphs
+        - commerce_product
   uid:
     label: uid
     datasource_id: 'entity:node'
@@ -369,14 +359,6 @@ field_settings:
     dependencies:
       module:
         - node
-  uid_1:
-    label: 'Authored by'
-    datasource_id: 'entity:media'
-    property_path: uid
-    type: integer
-    dependencies:
-      module:
-        - media
   uid_2:
     label: 'Authored by'
     datasource_id: 'entity:node'
@@ -385,14 +367,14 @@ field_settings:
     dependencies:
       module:
         - node
-  uuid:
-    label: UUID
-    datasource_id: 'entity:media'
-    property_path: uuid
-    type: string
+  uid_3:
+    label: Author
+    datasource_id: 'entity:commerce_product'
+    property_path: uid
+    type: integer
     dependencies:
       module:
-        - media
+        - commerce_product
   uuid_1:
     label: UUID
     datasource_id: 'entity:node'
@@ -409,6 +391,14 @@ field_settings:
     dependencies:
       module:
         - taxonomy
+  uuid_3:
+    label: UUID
+    datasource_id: 'entity:commerce_product'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - commerce_product
   vid:
     label: Vocabulary
     datasource_id: 'entity:taxonomy_term'
@@ -426,7 +416,7 @@ field_settings:
       module:
         - taxonomy
 datasource_settings:
-  'entity:media':
+  'entity:commerce_product':
     bundles:
       default: true
       selected: {  }
@@ -440,14 +430,6 @@ datasource_settings:
     languages:
       default: true
       selected: {  }
-  'entity:paragraph':
-    bundles:
-      default: false
-      selected:
-        - accordion
-    languages:
-      default: true
-      selected: {  }
   'entity:taxonomy_term':
     bundles:
       default: true
@@ -456,56 +438,44 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  tokenizer:
-    all_fields: true
-    fields:
-      - description
-      - field_text
-      - field_title
-      - name_1
-      - rendered_item
-      - title
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '1'
-    weights:
-      preprocess_index: -44
-      preprocess_query: -42
-  entity_status: {  }
   add_url: {  }
-  stemmer:
-    all_fields: true
-    fields:
-      - description
-      - field_text
-      - field_title
-      - name_1
-      - rendered_item
-      - title
-    exceptions:
-      mexican: mexic
-      texan: texa
+  aggregated_field: {  }
+  content_access:
     weights:
-      preprocess_index: -38
-      preprocess_query: -36
+      preprocess_query: -50
+  entity_status: {  }
+  entity_type: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: true
   html_filter:
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
     all_fields: true
     fields:
-      - bundle
+      - body
       - description
-      - field_text
-      - field_title
       - langcode
       - langcode_1
-      - name
+      - langcode_2
       - name_1
       - rendered_item
       - title
+      - title_1
       - type
-      - type_3
-      - uuid
+      - type_1
       - uuid_1
       - uuid_2
+      - uuid_3
       - vid
     title: true
     alt: true
@@ -515,73 +485,26 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-    weights:
-      preprocess_index: -48
-      preprocess_query: -48
-  content_access:
-    weights:
-      preprocess_query: -50
-  type_boost:
-    boosts:
-      'entity:media':
-        datasource_boost: !!float 1
-      'entity:node':
-        datasource_boost: !!float 1
-      'entity:taxonomy_term':
-        datasource_boost: !!float 1
-    weights:
-      preprocess_index: -36
-  ignorecase:
-    all_fields: true
-    fields:
-      - bundle
-      - description
-      - field_text
-      - field_title
-      - langcode
-      - langcode_1
-      - name
-      - name_1
-      - rendered_item
-      - title
-      - type
-      - type_3
-      - uuid
-      - uuid_1
-      - uuid_2
-      - vid
-    weights:
-      preprocess_index: -46
-      preprocess_query: -46
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
-  reverse_entity_references: {  }
   ignore_character:
+    weights:
+      preprocess_index: -42
+      preprocess_query: -40
     all_fields: true
     fields:
-      - bundle
+      - body
       - description
-      - field_text
-      - field_title
       - langcode
       - langcode_1
-      - name
+      - langcode_2
       - name_1
       - rendered_item
       - title
+      - title_1
       - type
-      - type_3
-      - uuid
+      - type_1
       - uuid_1
       - uuid_2
+      - uuid_3
       - vid
     ignorable: '[''¿¡!?,.:;&]'
     ignorable_classes:
@@ -592,17 +515,77 @@ processor_settings:
       - Pi
       - Po
       - Ps
-    weights:
-      preprocess_index: -42
-      preprocess_query: -40
-  rendered_item: {  }
-  aggregated_field: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - langcode
+      - langcode_1
+      - langcode_2
+      - name_1
+      - rendered_item
+      - title
+      - title_1
+      - type
+      - type_1
+      - uuid_1
+      - uuid_2
+      - uuid_3
+      - vid
   language_with_fallback: {  }
-  solr_date_range: {  }
+  rendered_item: {  }
+  reverse_entity_references: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+  stemmer:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - name_1
+      - rendered_item
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+  tokenizer:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - name_1
+      - rendered_item
+      - title
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '1'
+  type_boost:
+    weights:
+      preprocess_index: -36
+    boosts:
+      'entity:commerce_product':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          default: !!float 0
+      'entity:node':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          article: !!float 0
+          event: !!float 0
+          page: !!float 0
+      'entity:taxonomy_term':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          article_type: !!float 0
+          tag: !!float 0
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
 server: solr

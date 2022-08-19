@@ -1,8 +1,14 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: card
 label: Card
-icon_uuid: 064f0768-4e66-46c4-a6f5-cb14bad95ee8
+icon_uuid: null
+icon_default: null
 description: 'A container for an image, title, text, and a link. Most card content is optional.'
 behavior_plugins: {  }

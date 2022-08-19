@@ -6,8 +6,8 @@ dependencies:
     - media.type.audio
     - media.type.document
     - media.type.image
+    - media.type.remote_video
     - media.type.video
-    - media.type.video_embed
     - paragraphs.paragraphs_type.media
 id: paragraph.media.field_media
 field_name: field_media
@@ -26,8 +26,8 @@ settings:
       audio: audio
       document: document
       image: image
+      remote_video: remote_video
       video: video
-      video_embed: video_embed
     sort:
       field: _none
     auto_create: false

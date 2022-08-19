@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: accordion
 label: Accordion
-icon_uuid: e00b20ac-304f-4d2b-b9ab-b87060318554
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'Disclosure element, allowing to show a brief label that toggles a longer description'
 behavior_plugins: {  }

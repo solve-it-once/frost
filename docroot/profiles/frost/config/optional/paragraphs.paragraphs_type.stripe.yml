@@ -1,8 +1,14 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: stripe
-label: Stripe
-icon_uuid: 302013f8-893d-4588-b5ad-8c7680dcf735
-description: ''
+label: 'Stripe: Atomic'
+icon_uuid: null
+icon_default: null
+description: 'Add any atomic-level components in any order or layout desired, with lots of configuration options for custom and one-off sections.'
 behavior_plugins: {  }

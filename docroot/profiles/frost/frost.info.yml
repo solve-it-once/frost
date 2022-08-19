@@ -3,27 +3,54 @@ type: profile
 description: 'Drupal 9 that is atomic.'
 core_version_requirement: ^8 || ^9
 
+# Overkill distribution directives.
+distribution:
+  name: Frost
+  install:
+    theme: frost_theme
+  langcode: en
+
 # Required modules.
 install:
   - frost_custom
   - contact_info
+
 dependencies:
   - address
   - admin_toolbar
   - admin_toolbar_tools
+  - advagg
+  - advagg_css_minify
+  - advagg_js_minify
   - better_exposed_filters
   - bg_image_formatter
   - block
   - block_class
+  - block_content
   - block_field
   - breakpoint
   - chosen
   - chosen_lib
   - ckeditor
+  - ckeditor5
+  - commerce
+  - commerce_add_to_cart_link
+  - commerce_cart
+  - commerce_checkout
+  - commerce_log
+  - commerce_number_pattern
+  - commerce_order
+  - commerce_payment
+  - commerce_price
+  - commerce_product
+  - commerce_shipping
+  - commerce_store
+  - commerce_tax
   - config
   - config_filter
   - contextual
   - ctools
+  - ctools_views
   - datetime
   - datetime_range
   - dblog
@@ -33,63 +60,99 @@ dependencies:
   - easy_breadcrumb
   - editor
   - entity
+  - entity_clone
   - entity_reference_display
   - entity_reference_revisions
+  - entity_usage
   - field
   - field_formatter_class
   - field_group
   - field_ui
   - file
+  - file_mdm
   - filter
+  - form_mode_manager
   - honeypot
+  - human_decimal
   - iframe
   - image
   - imageapi_optimize
   - imageapi_optimize_binaries
+  - imageapi_optimize_resmushit
+  - imagemagick
+  - inline_entity_form
   - inline_form_errors
+  - jquery_ui
+  - jquery_ui_accordion
+  - jquery_ui_datepicker
+  - jquery_ui_slider
+  - jquery_ui_tabs
+  - jquery_ui_tooltip
+  - jquery_ui_touch_punch
   - jsonapi
+  - language
   - link
-  - linked_field
   - linkit
   - media
   - media_library
+  - media_library_edit
   - menu_link_attributes
   - menu_trail_by_path
   - menu_ui
   - metatag
   - metatag_open_graph
+  - mysql
   - node
+  - oembed_providers
   - options
   - page_cache
-  - paragraphs
+  - paragraphs_edit
   - paragraphs_features
+  - paragraphs_frontend_ui
+  - paragraphs_library
   - path
-  - pathauto
+  - path_alias
+  - physical
+  - profile
+  - pwa
+  - quickedit
   - redirect
   - redirect_404
   - redirect_domain
   - rest
   - search_api
+  - search_api_autocomplete
   - search_api_solr
+  - search_api_solr_autocomplete
   - serialization
   - settings_tray
+  - similarterms
+  - simple_sitemap
+  - sophron
+  - state_machine
   - styleguide
   - subpathauto
   - system
   - tablefield
   - taxonomy
+  - taxonomy_menu_ui
   - telephone
   - text
   - token
   - toolbar
   - update
   - user
-  - views
   - views_block_filter_block
   - views_ui
   - viewsreference
   - webform
+  - webform_jqueryui_datepicker
   - webform_ui
+  - menu_link_content
+  - pathauto
+  - views
+  - paragraphs
+  - linked_field
 
 themes:
   - stable

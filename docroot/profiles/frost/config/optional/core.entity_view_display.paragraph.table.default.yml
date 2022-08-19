@@ -17,15 +17,15 @@ bundle: table
 mode: default
 content:
   field_table:
-    weight: 0
+    type: tablefield
     label: hidden
     settings:
-      row_header: '1'
-      column_header: 0
+      row_header: true
+      column_header: false
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: tablefield
+    weight: 0
     region: content
 hidden:
   field_data_charttitle: true

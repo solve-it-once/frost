@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_borderwidth
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+id: paragraph.column.field_style_borderwidth
+field_name: field_style_borderwidth
+entity_type: paragraph
+bundle: column
+label: 'Border width'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: border--0-none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.ief
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.content_listing.field_content
+    - field.field.paragraph.content_listing.field_style_layout
+    - field.field.paragraph.content_listing.field_viewmode
+    - paragraphs.paragraphs_type.content_listing
+  module:
+    - inline_entity_form
+id: paragraph.content_listing.content
+targetEntityType: paragraph
+bundle: content_listing
+mode: content
+content:
+  field_content:
+    type: inline_entity_form_complex
+    weight: 1
+    region: content
+    settings:
+      form_mode: ief
+      override_labels: true
+      label_singular: Content
+      label_plural: Content
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_style_layout: true
+  field_viewmode: true
+  status: true

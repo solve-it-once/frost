@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: content_listing
 label: 'Content Listing'
-icon_uuid: 59c54298-70d2-40d2-82d5-02a7aa7f0c09
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'Articles, events, pages, and other content placed into layouts so users can choose to click into their detail pages'
 behavior_plugins: {  }

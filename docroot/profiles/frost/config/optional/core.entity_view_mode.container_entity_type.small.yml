@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - frost_container
-id: container_entity_type.small
-label: Small
-targetEntityType: container_entity_type
-cache: true

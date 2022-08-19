@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_paddingxc
+    - paragraphs.paragraphs_type.column
+id: paragraph.column.field_style_paddingxc
+field_name: field_style_paddingxc
+entity_type: paragraph
+bundle: column
+label: 'Padding (horizontal) collapse'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: padding-horizontal--collapse
+  off_label: padding-horizontal--default
+field_type: boolean

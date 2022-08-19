@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_notes
+    - taxonomy.vocabulary.article_type
+id: taxonomy_term.article_type.field_notes
+field_name: field_notes
+entity_type: taxonomy_term
+bundle: article_type
+label: 'Notes (internal)'
+description: 'Let your team know what''s important about this content and any other priorities or @todos that may be relevant.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

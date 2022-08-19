@@ -1,8 +1,14 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: statistic_percent
-label: 'Statistic: Percent'
+label: 'Card: Percent'
 icon_uuid: null
-description: 'A percentage in branded vertical brackets, followed by some text for context. The entire card may be linked for additional information.'
+icon_default: null
+description: 'A visually-distinct percentage, followed by some text for context. The entire card may be linked for additional information.'
 behavior_plugins: {  }

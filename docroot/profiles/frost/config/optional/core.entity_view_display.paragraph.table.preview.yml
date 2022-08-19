@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.table.field_data_charttitle
+    - field.field.paragraph.table.field_data_yaxis
+    - field.field.paragraph.table.field_style_graph
+    - field.field.paragraph.table.field_style_table_replace
+    - field.field.paragraph.table.field_table
+    - paragraphs.paragraphs_type.table
+  module:
+    - field_formatter_class
+    - tablefield
+id: paragraph.table.preview
+targetEntityType: paragraph
+bundle: table
+mode: preview
+content:
+  field_table:
+    type: tablefield
+    label: hidden
+    settings:
+      row_header: true
+      column_header: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  field_data_charttitle: true
+  field_data_yaxis: true
+  field_style_graph: true
+  field_style_table_replace: true
+  search_api_excerpt: true

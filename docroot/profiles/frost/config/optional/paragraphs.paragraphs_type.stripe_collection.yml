@@ -4,5 +4,6 @@ dependencies: {  }
 id: stripe_collection
 label: 'Stripe collection'
 icon_uuid: null
-description: 'Put multiple reusable stripes together, making slideshows, tabs, and other complex elements.'
+icon_default: null
+description: 'Put multiple reusable stripes together, making tabs and other useful interfaces'
 behavior_plugins: {  }

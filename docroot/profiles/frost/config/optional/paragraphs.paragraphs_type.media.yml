@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: media
 label: Media
-icon_uuid: 5155b2d7-8e11-4959-97e2-5d5c2abe748d
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'Images, videos, video embeds, even audio and other files. Can have captions and links. Hotspots with tooltips are also included'
 behavior_plugins: {  }

@@ -5,7 +5,6 @@ dependencies:
     - field.storage.node.field_hero
     - node.type.event
     - paragraphs.paragraphs_type.stripe
-    - paragraphs.paragraphs_type.stripe_reference
   module:
     - entity_reference_revisions
 id: node.event.field_hero
@@ -21,10 +20,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       stripe: stripe
-      stripe_reference: stripe_reference
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 30
@@ -90,14 +88,14 @@ settings:
         weight: 50
         enabled: false
       stripe:
-        enabled: true
         weight: 51
+        enabled: true
       stripe_collection:
         weight: 52
         enabled: false
       stripe_reference:
-        enabled: true
         weight: 53
+        enabled: true
       table:
         weight: 54
         enabled: false

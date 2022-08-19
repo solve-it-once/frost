@@ -6,12 +6,12 @@ dependencies:
 id: frost_theme_local_actions
 theme: frost_theme
 region: pre_content
-weight: 0
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
   label: 'Primary admin actions'
-  provider: core
   label_display: '0'
+  provider: core
 visibility: {  }

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.seo.field_seo_description
+    - field.field.paragraph.seo.field_seo_image
+    - field.field.paragraph.seo.field_seo_keywords
+    - field.field.paragraph.seo.field_seo_nofollow
+    - field.field.paragraph.seo.field_seo_noindex
+    - field.field.paragraph.seo.field_seo_title
+    - paragraphs.paragraphs_type.seo
+id: paragraph.seo.settings
+targetEntityType: paragraph
+bundle: seo
+mode: settings
+content:
+  field_seo_nofollow:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_seo_noindex:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_keywords: true
+  field_seo_title: true
+  status: true

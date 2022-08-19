@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - frost_container
-id: container_entity.tab
-label: Tab
-targetEntityType: container_entity
-cache: true

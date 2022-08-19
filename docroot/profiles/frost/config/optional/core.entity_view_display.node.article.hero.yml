@@ -7,7 +7,8 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_components
     - field.field.node.article.field_image
-    - field.field.node.article.field_link
+    - field.field.node.article.field_notes
+    - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
     - node.type.article
@@ -18,16 +19,17 @@ third_party_settings:
   field_group:
     group_title_area:
       children:
-        - breadcrumb
         - frost_submitted
         - linked_title
-      parent_name: ''
-      weight: 0
-      format_type: html_element
+      label: 'Title area'
+      parent_name: group_flex_wrapper
       region: content
+      weight: 1
+      format_type: html_element
       format_settings:
+        classes: 'flex--2 display--flex flex-direction--column justify-content--center padding-horizontal--4 text-align--left'
+        show_empty_fields: false
         id: ''
-        classes: 'display--flex flex-direction--column flex--1 justify-content--center padding-horizontal--4 text-align--left'
         element: div
         show_label: false
         label_element: h3
@@ -35,17 +37,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Title area'
     group_imagery:
       children:
         - field_image
-      parent_name: ''
-      weight: 1
-      format_type: html_element
+      label: Imagery
+      parent_name: group_flex_wrapper
       region: content
+      weight: 2
+      format_type: html_element
       format_settings:
-        id: ''
         classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -53,42 +55,63 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Imagery
+    group_flex_wrapper:
+      children:
+        - group_title_area
+        - group_imagery
+      label: 'Flex wrapper'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'display--flex flex-direction--row layout--flex-row justify-content--center align-items--center'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.article.hero
 targetEntityType: node
 bundle: article
 mode: hero
 content:
   breadcrumb:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  frost_submitted:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_image:
     type: entity_reference_entity_view
-    weight: 2
-    region: content
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-  linked_title:
-    weight: 3
+    weight: 2
     region: content
+  frost_submitted:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
+  linked_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   body: true
   field_article_type: true
   field_components: true
-  field_link: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
+  langcode: true
   links: true
   search_api_excerpt: true

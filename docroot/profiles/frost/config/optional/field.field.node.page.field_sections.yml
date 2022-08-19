@@ -4,8 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_sections
     - node.type.page
+    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.stripe
-    - paragraphs.paragraphs_type.stripe_reference
   module:
     - entity_reference_revisions
 id: node.page.field_sections
@@ -21,78 +21,93 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
+      from_library: from_library
       stripe: stripe
-      stripe_reference: stripe_reference
+    negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: 9
+        weight: -57
         enabled: false
       block:
-        weight: 10
-        enabled: false
-      card:
-        weight: 11
-        enabled: false
-      column:
-        weight: 12
-        enabled: false
-      content_listing:
-        weight: 13
-        enabled: false
-      seo:
-        weight: 14
-        enabled: false
-      stripe:
-        enabled: true
-        weight: 15
-      view:
-        weight: 16
+        weight: -56
         enabled: false
       blockquote:
-        weight: 26
+        weight: -55
+        enabled: false
+      card:
+        weight: -54
         enabled: false
       cards:
-        weight: 28
+        weight: -53
         enabled: false
+      column:
+        weight: -52
+        enabled: false
+      content_listing:
+        weight: -51
+        enabled: false
+      from_library:
+        weight: -50
+        enabled: true
       heading:
-        weight: 31
+        weight: -49
         enabled: false
       hotspot:
-        weight: 32
+        weight: -48
         enabled: false
       iframe:
-        weight: 33
+        weight: -47
         enabled: false
       layout:
-        weight: 34
+        weight: -46
         enabled: false
       link:
-        weight: 35
+        weight: -45
         enabled: false
       media:
-        weight: 36
+        weight: -44
+        enabled: false
+      message:
+        weight: -43
         enabled: false
       rich_text:
-        weight: 37
+        weight: -41
+        enabled: false
+      seo:
+        weight: -39
         enabled: false
       spacer:
-        weight: 39
+        weight: -38
         enabled: false
-      stripe_reference:
+      statistic_figure:
+        weight: -36
+        enabled: false
+      statistic_percent:
+        weight: -37
+        enabled: false
+      stripe:
+        weight: -42
         enabled: true
-        weight: 41
+      stripe_collection:
+        weight: -35
+        enabled: false
+      stripe_cta:
+        weight: -40
+        enabled: true
       table:
-        weight: 42
+        weight: -34
         enabled: false
       term_listing:
-        weight: 43
+        weight: -33
         enabled: false
       user_listing:
-        weight: 44
+        weight: -32
+        enabled: false
+      view:
+        weight: -31
         enabled: false
       webform:
-        weight: 46
+        weight: -30
         enabled: false
 field_type: entity_reference_revisions

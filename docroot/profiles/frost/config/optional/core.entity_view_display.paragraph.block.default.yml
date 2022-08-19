@@ -12,11 +12,11 @@ bundle: block
 mode: default
 content:
   field_block:
-    weight: 0
+    type: block_field
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: block_field
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

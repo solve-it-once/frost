@@ -1,0 +1,125 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.column.field_components
+    - field.field.paragraph.column.field_data_animation
+    - field.field.paragraph.column.field_style_animate
+    - field.field.paragraph.column.field_style_bgcolor
+    - field.field.paragraph.column.field_style_bordercolor
+    - field.field.paragraph.column.field_style_borderradius
+    - field.field.paragraph.column.field_style_borderwidth
+    - field.field.paragraph.column.field_style_boxshadow
+    - field.field.paragraph.column.field_style_color
+    - field.field.paragraph.column.field_style_flex
+    - field.field.paragraph.column.field_style_justifycontent
+    - field.field.paragraph.column.field_style_marginh
+    - field.field.paragraph.column.field_style_marginxc
+    - field.field.paragraph.column.field_style_paddingh
+    - field.field.paragraph.column.field_style_paddingxc
+    - field.field.paragraph.column.field_style_textalign
+    - paragraphs.paragraphs_type.column
+id: paragraph.column.settings
+targetEntityType: paragraph
+bundle: column
+mode: settings
+content:
+  field_data_animation:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_animate:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_bgcolor:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_bordercolor:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_borderradius:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_borderwidth:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_boxshadow:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_color:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_flex:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_justifycontent:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_marginh:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_marginxc:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_paddingh:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style_paddingxc:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_style_textalign:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_components: true
+  status: true

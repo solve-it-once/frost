@@ -4,44 +4,60 @@ dependencies:
   config:
     - filter.format.filtered_html
   module:
-    - ckeditor
+    - ckeditor5
 format: filtered_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Superscript
-            - Subscript
-            - HorizontalRule
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Tools
-          items:
-            - PasteFromWord
-            - SpecialChar
-            - Source
+    items:
+      - bold
+      - italic
+      - superscript
+      - subscript
+      - horizontalLine
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - specialCharacters
+      - sourceEditing
+      - '|'
+      - blockQuote
+      - code
+      - heading
+      - insertTable
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    linkit:
-      linkit_profile: ''
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<a hreflang data-entity-type data-entity-uuid data-entity-substitution class>'
+        - '<em class>'
+        - '<strong class>'
+        - '<blockquote cite>'
+        - '<ul type class>'
+        - '<ol type class>'
+        - '<li class>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
 image_upload:
   status: false
   scheme: public

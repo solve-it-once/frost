@@ -4,5 +4,6 @@ dependencies: {  }
 id: message
 label: Message
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Dismissible system alerts used to show status, warnings, and errors to users'
 behavior_plugins: {  }

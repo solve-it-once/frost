@@ -1,12 +1,12 @@
 langcode: en
 status: false
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - node
       - diff
-  module:
-    - node
 id: node.diff
 label: 'Revision comparison'
 targetEntityType: node

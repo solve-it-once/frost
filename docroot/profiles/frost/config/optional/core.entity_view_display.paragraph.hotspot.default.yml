@@ -14,11 +14,11 @@ bundle: hotspot
 mode: default
 content:
   field_text:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
 hidden:
   field_data_xpercent: true

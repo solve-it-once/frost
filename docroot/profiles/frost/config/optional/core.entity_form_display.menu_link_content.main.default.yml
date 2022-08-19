@@ -1,15 +1,21 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
   module:
     - link
+    - menu_link_content
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
 bundle: main
 mode: default
 content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0

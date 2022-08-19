@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.view.field_view
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.preview
+targetEntityType: paragraph
+bundle: view
+mode: preview
+content: {  }
+hidden:
+  field_view: true
+  search_api_excerpt: true

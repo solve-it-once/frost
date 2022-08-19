@@ -12,7 +12,7 @@ phone:
 fax:
   number: ''
 email:
-  emailaddress: ao5357@gmail.com
+  emailaddress: brad@solveitonce.com
 social_seo:
   site_twitter: '@ao5357'
   site_google_plus: ''
@@ -20,13 +20,25 @@ social:
   table:
     1:
       name: Facebook
-      url: 'https://www.facebook.com/bradczerniak'
-      enable: '1'
-      weight: '-9'
-    2:
-      name: Twitter
-      url: 'https://twitter.com/ao5357'
+      icon: facebook.svg
+      url: 'https://www.facebook.com/solveitonce'
       enable: '1'
       weight: '-7'
-_core:
-  default_config_hash: E1z5nbz0FlT2_RbjS6qGrrN-JqGHF-x7YMaRJHAek-U
+    2:
+      name: Twitter
+      icon: twitter.svg
+      url: 'https://twitter.com/solveitoncellc'
+      enable: '1'
+      weight: '-6'
+    3:
+      name: LinkedIn
+      icon: linkedin.svg
+      url: 'https://www.linkedin.com/company/solve-it-once/'
+      enable: '1'
+      weight: '-5'
+    4:
+      name: GitHub
+      icon: github.svg
+      url: 'https://github.com/solve-it-once/frost'
+      enable: '1'
+      weight: '0'

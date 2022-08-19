@@ -4,57 +4,105 @@ dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Superscript
-            - Subscript
-            - HorizontalRule
-            - Format
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - Table
-            - DrupalImage
-        -
-          name: Tools
-          items:
-            - RemoveFormat
-            - PasteFromWord
-            - SpecialChar
-            - Source
+    items:
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - horizontalLine
+      - heading
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - insertTable
+      - drupalMedia
+      - uploadImage
+      - '|'
+      - removeFormat
+      - specialCharacters
+      - sourceEditing
+      - '|'
+      - code
+      - codeBlock
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    linkit:
-      linkit_profile: ''
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<abbr>'
+        - '<address>'
+        - '<article>'
+        - '<aside>'
+        - '<audio>'
+        - '<b>'
+        - '<cite>'
+        - '<col>'
+        - '<colgroup>'
+        - '<dd>'
+        - '<del>'
+        - '<details>'
+        - '<dfn>'
+        - '<div>'
+        - '<dl>'
+        - '<dt>'
+        - '<figcaption>'
+        - '<figure>'
+        - '<footer>'
+        - '<i>'
+        - '<header>'
+        - '<hgroup>'
+        - '<ins>'
+        - '<mark>'
+        - '<nav>'
+        - '<picture>'
+        - '<q>'
+        - '<section>'
+        - '<small>'
+        - '<source>'
+        - '<summary>'
+        - '<track>'
+        - '<video>'
+        - '<a hreflang data-entity-type data-entity-uuid data-entity-substitution class>'
+        - '<blockquote cite>'
+        - '<em class>'
+        - '<img data-entity-substitution>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<li class>'
+        - '<ol type class>'
+        - '<strong class>'
+        - '<ul type class>'
+        - '<drupal-media data-entity-substitution title>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
-  status: false
+  status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

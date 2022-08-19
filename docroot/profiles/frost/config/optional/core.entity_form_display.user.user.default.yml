@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_biography
     - field.field.user.user.field_email
     - field.field.user.user.field_image
@@ -11,6 +12,7 @@ dependencies:
     - field.field.user.user.field_text_location
   module:
     - media_library
+    - media_library_edit
     - telephone
     - text
     - user
@@ -25,66 +27,71 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_biography:
+    type: text_textarea
     weight: 6
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_email:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     type: email_default
+    weight: 4
     region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_image:
     type: media_library_widget
     weight: 7
+    region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
-    region: content
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_jobtitle:
+    type: string_textfield
     weight: 2
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_name:
+    type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_phone:
+    type: telephone_default
     weight: 5
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: telephone_default
-    region: content
   field_text_location:
+    type: string_textfield
     weight: 3
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   google_analytics:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  commerce_remote_id: true
   contact: true
+  customer_profiles: true
+  langcode: true
   language: true
   path: true
   timezone: true

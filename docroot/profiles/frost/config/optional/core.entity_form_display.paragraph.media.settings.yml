@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.media.field_hotspots
+    - field.field.paragraph.media.field_link
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_text
+    - paragraphs.paragraphs_type.media
+  module:
+    - link
+    - paragraphs
+    - paragraphs_features
+    - text
+id: paragraph.media.settings
+targetEntityType: paragraph
+bundle: media
+mode: settings
+content:
+  field_hotspots:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Hotspot
+      title_plural: Hotspots
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 1
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: true
+        split_text: false
+        show_drag_and_drop: true
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media: true
+  status: true

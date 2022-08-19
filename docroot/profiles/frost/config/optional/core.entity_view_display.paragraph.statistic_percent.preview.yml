@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.statistic_percent.field_decimal
+    - field.field.paragraph.statistic_percent.field_link
+    - field.field.paragraph.statistic_percent.field_text
+    - field.field.paragraph.statistic_percent.field_text_prefix
+    - field.field.paragraph.statistic_percent.field_text_suffix
+    - paragraphs.paragraphs_type.statistic_percent
+  module:
+    - text
+id: paragraph.statistic_percent.preview
+targetEntityType: paragraph
+bundle: statistic_percent
+mode: preview
+content:
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_decimal: true
+  field_link: true
+  field_text_prefix: true
+  field_text_suffix: true
+  search_api_excerpt: true

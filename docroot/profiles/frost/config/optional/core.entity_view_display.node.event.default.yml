@@ -7,8 +7,9 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_hero
     - field.field.node.event.field_image
-    - field.field.node.event.field_link
     - field.field.node.event.field_location
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_scratch
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
@@ -22,13 +23,14 @@ third_party_settings:
     group_fields:
       children:
         - field_components
+      label: Fields
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'appear-as-stripe padding-vertical--8'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -36,41 +38,42 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Fields
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
   field_components:
-    weight: 1
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 1
     region: content
   field_sections:
-    weight: 2
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 1
     region: content
 hidden:
   body: true
   breadcrumb: true
-  frost_submitted: true
   field_date: true
   field_hero: true
   field_image: true
-  field_link: true
   field_location: true
+  field_notes: true
+  field_scratch: true
   field_seo: true
   field_tags: true
+  frost_submitted: true
+  langcode: true
   linked_title: true
   links: true
   search_api_excerpt: true

@@ -4,5 +4,6 @@ dependencies: {  }
 id: hotspot
 label: Hotspot
 icon_uuid: null
+icon_default: null
 description: 'A point at some percentage-based x and y coordinates over another area. The point and the content within it are configurable.'
 behavior_plugins: {  }

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.settings
+    - field.field.paragraph.iframe.field_iframe
+    - paragraphs.paragraphs_type.iframe
+id: paragraph.iframe.settings
+targetEntityType: paragraph
+bundle: iframe
+mode: settings
+content: {  }
+hidden:
+  created: true
+  field_iframe: true
+  status: true

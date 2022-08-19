@@ -38,7 +38,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       accordion: accordion
       block: block
@@ -59,64 +58,65 @@ settings:
       user_listing: user_listing
       view: view
       webform: webform
+    negate: 0
     target_bundles_drag_drop:
       accordion:
-        enabled: true
         weight: 29
+        enabled: true
       block:
-        enabled: true
         weight: 30
-      blockquote:
         enabled: true
+      blockquote:
         weight: 31
+        enabled: true
       card:
         weight: 32
         enabled: false
       cards:
-        enabled: true
         weight: 33
+        enabled: true
       column:
         weight: 34
         enabled: false
       content_listing:
-        enabled: true
         weight: 35
+        enabled: true
       dropover:
         weight: 36
         enabled: false
       heading:
-        enabled: true
         weight: 37
+        enabled: true
       hotspot:
         weight: 38
         enabled: false
       iframe:
-        enabled: true
         weight: 39
+        enabled: true
       layout:
-        enabled: true
         weight: 40
+        enabled: true
       link:
-        enabled: true
         weight: 41
+        enabled: true
       media:
-        enabled: true
         weight: 42
+        enabled: true
       message:
-        enabled: true
         weight: 43
-      rich_text:
         enabled: true
-        weight: 44
       product_listing:
-        enabled: true
         weight: 45
+        enabled: true
+      rich_text:
+        weight: 44
+        enabled: true
       seo:
         weight: 45
         enabled: false
       spacer:
-        enabled: true
         weight: 46
+        enabled: true
       statistic_figure:
         weight: 47
         enabled: false
@@ -127,24 +127,24 @@ settings:
         weight: 49
         enabled: false
       stripe_collection:
-        enabled: true
         weight: 50
+        enabled: true
       stripe_reference:
         weight: 51
         enabled: false
       table:
-        enabled: true
         weight: 52
+        enabled: true
       term_listing:
-        enabled: true
         weight: 53
+        enabled: true
       user_listing:
-        enabled: true
         weight: 54
+        enabled: true
       view:
-        enabled: true
         weight: 55
-      webform:
         enabled: true
+      webform:
         weight: 56
+        enabled: true
 field_type: entity_reference_revisions

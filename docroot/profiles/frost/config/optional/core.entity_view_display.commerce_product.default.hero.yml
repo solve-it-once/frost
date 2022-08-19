@@ -1,0 +1,119 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.hero
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_hero
+    - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_notes
+    - field.field.commerce_product.default.field_scratch
+    - field.field.commerce_product.default.field_sections
+    - field.field.commerce_product.default.field_seo
+    - field.field.commerce_product.default.field_tags
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_flex_wrapper:
+      children:
+        - group_column_1
+        - group_column_2
+      label: 'Flex wrapper'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'display--flex flex-direction--row layout--flex-row justify-content--center align-items--center'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_column_1:
+      children:
+        - title
+        - body
+      label: 'Column 1'
+      parent_name: group_flex_wrapper
+      region: content
+      weight: 17
+      format_type: html_element
+      format_settings:
+        classes: 'flex--1 display--flex flex-direction--column justify-content--center padding-horizontal--8 text-align--left'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_column_2:
+      children:
+        - checkoutalt
+      label: 'Column 2'
+      parent_name: group_flex_wrapper
+      region: content
+      weight: 18
+      format_type: html_element
+      format_settings:
+        classes: 'flex--1 display--flex align-items--center justify-content--center'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: commerce_product.default.hero
+targetEntityType: commerce_product
+bundle: default
+mode: hero
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  checkoutalt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  add_to_cart_link: true
+  created: true
+  field_hero: true
+  field_image: true
+  field_notes: true
+  field_scratch: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
+  langcode: true
+  readmore: true
+  search_api_excerpt: true
+  stores: true
+  uid: true
+  variations: true

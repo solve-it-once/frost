@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - pathauto
   enforced:
     module:
       - user
-  module:
-    - pathauto
 id: pathauto_update_alias_user
 label: 'Update URL alias'
 type: user

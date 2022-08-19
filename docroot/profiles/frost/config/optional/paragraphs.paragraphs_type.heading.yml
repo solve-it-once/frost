@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: heading
 label: Heading
-icon_uuid: 3c34653d-2144-48f0-94f9-290bd4658ff5
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'A bold textual element to outline a section''s content visually and in the markup (for SEO and design)'
 behavior_plugins: {  }

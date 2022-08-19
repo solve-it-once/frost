@@ -17,6 +17,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: revealOnScroll
-  off_label: doNotRevealOnScroll
+  on_label: js--to-animate
+  off_label: js--not-to-animate
 field_type: boolean

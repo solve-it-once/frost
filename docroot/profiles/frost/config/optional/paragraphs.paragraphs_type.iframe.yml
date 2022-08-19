@@ -4,5 +4,6 @@ dependencies: {  }
 id: iframe
 label: iframe
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Embed pages from other sites into your page'
 behavior_plugins: {  }

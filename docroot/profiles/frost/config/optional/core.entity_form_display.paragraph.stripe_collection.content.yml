@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.stripe_collection.field_section
+    - field.field.paragraph.stripe_collection.field_viewmode
+    - paragraphs.paragraphs_type.stripe_collection
+  module:
+    - paragraphs
+    - paragraphs_features
+id: paragraph.stripe_collection.content
+targetEntityType: paragraph
+bundle: stripe_collection
+mode: content
+content:
+  field_section:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Stripe
+      title_plural: Stripes
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: false
+        add_in_between_link_count: 3
+        delete_confirmation: true
+        split_text: false
+        show_drag_and_drop: true
+hidden:
+  created: true
+  field_viewmode: true
+  status: true

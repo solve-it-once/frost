@@ -1,6 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - linkit
 name: 'Filtered HTML'
 format: filtered_html
 weight: 0
@@ -17,6 +19,13 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang class=""> <em class=""> <strong class=""> <cite> <blockquote cite> <code> <ul type class=""> <ol start type class=""> <li class=""> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <sup> <sub> <hr> <p> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <img src alt data-entity-type data-entity-uuid data-align data-caption>'
+      allowed_html: '<cite> <dl> <dt> <dd> <a hreflang data-entity-type data-entity-uuid data-entity-substitution class href> <em class> <strong class> <blockquote cite> <ul type class> <ol type class start> <li class> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption> <br> <p> <code> <sub> <sup> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: -11
+    settings:
+      title: false

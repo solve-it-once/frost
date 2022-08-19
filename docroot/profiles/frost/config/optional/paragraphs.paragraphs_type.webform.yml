@@ -4,5 +4,6 @@ dependencies: {  }
 id: webform
 label: Webform
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Embed system-generated forms into your content, and collect necessary feedback from users.'
 behavior_plugins: {  }

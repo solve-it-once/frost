@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_borderwidth
+field_name: field_style_borderwidth
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: border--0-none
+      label: 'No border'
+    -
+      value: border--1px-solid
+      label: '1px solid'
+    -
+      value: border--2px-solid
+      label: '2px solid'
+    -
+      value: border--4px-solid
+      label: '4px solid'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

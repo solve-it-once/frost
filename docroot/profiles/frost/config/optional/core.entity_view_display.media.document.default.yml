@@ -15,19 +15,20 @@ bundle: document
 mode: default
 content:
   field_media_file:
-    weight: 0
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: file_default
+    weight: 0
     region: content
 hidden:
   created: true
   field_media_filesize: true
   field_media_mimetype: true
+  langcode: true
   name: true
   search_api_excerpt: true
   thumbnail: true

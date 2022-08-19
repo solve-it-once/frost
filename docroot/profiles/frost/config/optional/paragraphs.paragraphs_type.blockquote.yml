@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: blockquote
 label: Blockquote
-icon_uuid: 30404952-e223-4c02-850b-bf4343354430
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'A long textual quote, styled with affectation'
 behavior_plugins: {  }

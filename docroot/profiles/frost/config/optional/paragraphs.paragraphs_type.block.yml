@@ -3,6 +3,7 @@ status: true
 dependencies: {  }
 id: block
 label: Block
-icon_uuid: 78f89308-757d-4cd0-a878-cefac748b24f
-description: ''
+icon_uuid: null
+icon_default: null
+description: 'Display a system or other block of dynamic content'
 behavior_plugins: {  }
