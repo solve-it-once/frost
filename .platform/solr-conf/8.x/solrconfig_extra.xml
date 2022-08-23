@@ -166,7 +166,7 @@
   <lst name="defaults">
     <str name="suggest">true</str>
     <str name="suggest.dictionary">und</str>
-    <str name="suggest.dictionary">10</str>
+    <str name="suggest.count">10</str>
   </lst>
   <arr name="components">
     <str>suggest</str>
