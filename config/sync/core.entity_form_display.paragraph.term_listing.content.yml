@@ -1,4 +1,4 @@
-uuid: 9774d092-a9eb-4e1c-bbfe-d682ddc4b225
+uuid: f2b5222f-d30e-4dce-89ef-af4f1451b71b
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
   module:
     - inline_entity_form
 _core:
-  default_config_hash: x3tMvaZyrssQwVab9OQCS0WGOk3GurFbZbWKaaIXIAQ
+  default_config_hash: A7e-iw0vLooiq_fHHXt-f8ZFBUzb5mC7OnERHY43tWc
 id: paragraph.term_listing.content
 targetEntityType: paragraph
 bundle: term_listing

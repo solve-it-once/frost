@@ -1,4 +1,4 @@
-uuid: 41010f7d-86f6-4baf-bf8e-a2d0e542be97
+uuid: e5dbff34-4a06-4323-bd17-64fbc4e92b3e
 langcode: en
 status: true
 dependencies:
@@ -23,7 +23,7 @@ dependencies:
     - media_library
     - media_library_edit
 _core:
-  default_config_hash: iNUBsn20UUmE0qL7rre30nGWNTGRslfy1Ud63weOQ88
+  default_config_hash: SQ9zZ6UIMPJPp3SHstxyJ087P_n2c8rU3_k0X0SmZFQ
 id: paragraph.stripe.settings
 targetEntityType: paragraph
 bundle: stripe

@@ -1,4 +1,4 @@
-uuid: a2c71a76-1323-4346-b717-4744c131eca8
+uuid: d550a5b0-c525-47a7-92a1-8b0fe8cf5263
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ id: commerce_product.default.body
 field_name: body
 entity_type: commerce_product
 bundle: default
-label: 'Teaser text'
+label: Body
 description: ''
 required: false
 translatable: true

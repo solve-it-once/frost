@@ -1,4 +1,4 @@
-uuid: 90fcb3ea-17ac-439f-8859-d9af069aa637
+uuid: aaff8eda-735a-4f37-bbc0-2174c0fd3fc2
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 3a5vdnCUv8oAk4C71PfhMFlRkodYY8AevaRlqTx2eQc
+  default_config_hash: jsH9SVMsUK6xolQ7ldR2HhQd1INESYsumYuUJkcr9P8
 id: paragraph.rich_text.preview
 targetEntityType: paragraph
 bundle: rich_text

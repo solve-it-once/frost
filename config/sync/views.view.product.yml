@@ -1,4 +1,4 @@
-uuid: 9a3f3ece-7582-4dfe-8b44-77c721e3bd7e
+uuid: a62aa47c-fccd-4abd-854a-4c4ac61b0387
 langcode: en
 status: true
 dependencies:
@@ -17,6 +17,8 @@ dependencies:
     - commerce_product
     - paragraphs
     - user
+_core:
+  default_config_hash: igfSY0kOkW7haJkbUmK9DU5fH5PTfPPv0KBvRzToSXM
 id: product
 label: Product
 module: views

@@ -1,9 +1,9 @@
-uuid: 3c1cdb67-3f7a-4f09-843f-165d82299ebb
+uuid: cf9b1703-69f6-408a-ae4e-d0df7b1094f2
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: De3q9cK8T48of9IRgcsBQf81_mxLSIFJ1b3I7GODkNg
+  default_config_hash: oJRtPtHYGyfQRcttOMs_oINsBmOAUx3DSY2Afechwqg
 id: image
 label: Image
 description: 'Images to display on the site, with the option to add alt text and other metadata.'

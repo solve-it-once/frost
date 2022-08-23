@@ -1,10 +1,12 @@
-uuid: fb84965e-a84e-426c-864c-40d57a08055b
+uuid: 469094fb-62af-4c9d-83bd-747a18eb01fe
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - paragraphs
+_core:
+  default_config_hash: '-Ev8GIKiFy9BtvEuUcd6Lk8c4iO9WiHnWxbYdlwnYzE'
 id: paragraph.field_products
 field_name: field_products
 entity_type: paragraph

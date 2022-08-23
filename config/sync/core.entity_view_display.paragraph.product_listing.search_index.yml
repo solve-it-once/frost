@@ -1,4 +1,4 @@
-uuid: 1b2a6244-d0fa-40ce-a26b-c5a1995983b8
+uuid: b6dde536-9421-4cc0-be51-a7efdf92695a
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.product_listing
   module:
     - field_formatter_class
+_core:
+  default_config_hash: SPdTWCYLasLt-IRjFrSq71egvJ1Z0pLtQgXlNWVzenQ
 id: paragraph.product_listing.search_index
 targetEntityType: paragraph
 bundle: product_listing

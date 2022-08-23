@@ -1,4 +1,4 @@
-uuid: 860a8ecd-be89-429f-a035-5b1fccff4056
+uuid: edce8013-905e-4f03-af58-c04eee181ccc
 langcode: en
 status: true
 dependencies:
@@ -83,7 +83,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: szYDN6n1Z41wUYJKzxa5YKQIV2kTso5QxMOeVsKTTAM
+  default_config_hash: z34vvkLUhaQmzj0z3gHKNwqjEuDzbuOyDDrAPGGyKn4
 id: node.event.hero
 targetEntityType: node
 bundle: event

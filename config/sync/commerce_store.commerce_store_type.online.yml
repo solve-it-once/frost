@@ -1,4 +1,4 @@
-uuid: d4473e3c-efaa-4a7b-8971-b3444f2ddc03
+uuid: 14d16677-b5fe-4e2e-b4df-1b647dc69751
 langcode: en
 status: true
 dependencies: {  }
@@ -6,6 +6,6 @@ _core:
   default_config_hash: FGYrs0ZrjxSzRQMODyYqquV1UW5MN7S5wUG0Dp_OxWU
 id: online
 label: Online
+description: ''
 traits: {  }
 locked: false
-description: ''

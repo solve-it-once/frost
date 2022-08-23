@@ -1,4 +1,4 @@
-uuid: 1d4acb47-f3a2-4aa6-9ba6-4470025beaa2
+uuid: a54af53c-3fc4-4ad4-9373-377e91591e00
 langcode: en
 status: true
 dependencies:
@@ -12,6 +12,8 @@ dependencies:
     - field_formatter_class
     - image
     - linked_field
+_core:
+  default_config_hash: 5BdKKja4NC1lGzbpSOCDXEB6-m5Ely5YgjdN8Pn4B6w
 id: media.remote_video.square_small
 targetEntityType: media
 bundle: remote_video

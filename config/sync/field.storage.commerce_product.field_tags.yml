@@ -1,10 +1,12 @@
-uuid: 1a29f21a-810a-4f37-8ef4-34d15c6cdbc9
+uuid: 89c45d3a-4b9d-4103-9f0f-86513624759d
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - taxonomy
+_core:
+  default_config_hash: Tu6GJ9XdIHe4OaVAelgnxMCBi080cNcBiMkVXcSKkJ0
 id: commerce_product.field_tags
 field_name: field_tags
 entity_type: commerce_product

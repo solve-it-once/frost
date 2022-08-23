@@ -1,4 +1,4 @@
-uuid: d2509635-b0aa-45d2-a807-051d94f32e51
+uuid: dcb96a54-c85b-4032-8010-7e391f44ea3c
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
   module:
     - tablefield
 _core:
-  default_config_hash: CdsQ9YmFdZ6rJBu9XOr1KKzjM8EhnD6-ugUj4_BzY7M
+  default_config_hash: od7zhwIDMV-clx1OVpEdri_ptYIu8QhLPOMDPqxXM7M
 id: paragraph.table.content
 targetEntityType: paragraph
 bundle: table

@@ -1,4 +1,4 @@
-uuid: 4a2b598d-f2b9-4fde-a9b1-854d25e9854d
+uuid: 332106cf-b14b-4b97-92b6-f180b19c6d72
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   module:
     - views
     - search_api_autocomplete
+_core:
+  default_config_hash: YdLZkD9xC_Q_utpwVI7b6ptb2XTKcloHGuJYKmLULNM
 id: search
 label: Search
 index_id: content

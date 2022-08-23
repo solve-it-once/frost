@@ -1,4 +1,4 @@
-uuid: 73bc87c6-7cbd-4560-bb78-8dbf4df58ceb
+uuid: 4be84c4c-c226-4c5e-8dea-e09df57533bc
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - field_formatter_class
+_core:
+  default_config_hash: pR5MQhG-wV6PJosp_fBCYG-hTRxipx220GQ9AnhZHDs
 id: paragraph.media_listing.default
 targetEntityType: paragraph
 bundle: media_listing

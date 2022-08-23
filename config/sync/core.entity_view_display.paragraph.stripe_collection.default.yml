@@ -1,4 +1,4 @@
-uuid: 4489dfb7-a8ca-4386-b42c-d611160e73c2
+uuid: 7790182a-b89a-49df-9533-5e77aab8decb
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_display
 _core:
-  default_config_hash: suZwZsj--_LpAqTktjk-9vOk543emHaGmiaGIlDWe-I
+  default_config_hash: u5dVqKKHw2OHRczClsTneatsFw5kGPLuCah6xfdWUlk
 id: paragraph.stripe_collection.default
 targetEntityType: paragraph
 bundle: stripe_collection

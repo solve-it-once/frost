@@ -1,4 +1,4 @@
-uuid: 2efcee69-66d2-48e5-89f5-77dd9d0d90ec
+uuid: 62b8bd78-f8e9-4429-a0e0-dc5646e089d8
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     module:
       - commerce_store
 _core:
-  default_config_hash: _4Uh3mQA18aGlat_JmyPTEDWXiuiexldraA0zgTTbGY
+  default_config_hash: wKBV5mfhCevyoI6YkXaXeyseMXjFVKpruIupGTubeVo
 id: commerce_store_delete_action
 label: 'Delete store'
 type: commerce_store

@@ -1,4 +1,4 @@
-uuid: fbd13e46-c5c7-4c3d-bf82-ffc1fc6c9bcb
+uuid: df144234-4450-4944-b346-b1a90f9f7348
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - entity_reference_revisions
     - field_formatter_class
     - paragraphs_library
+_core:
+  default_config_hash: IHUpZPdcVeUVSRKFUnlcqCZgqbUiRCPdjj7E74eUPZ8
 id: paragraphs_library_item.paragraphs_library_item.preview
 targetEntityType: paragraphs_library_item
 bundle: paragraphs_library_item

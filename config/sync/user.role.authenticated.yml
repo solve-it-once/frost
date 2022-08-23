@@ -1,4 +1,4 @@
-uuid: cd688759-f750-4266-9ac8-9e14bd85e14f
+uuid: f5f49372-ab78-4b3a-8822-a1b9432206f7
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,10 @@ dependencies:
     - commerce_product
     - honeypot
     - media
-    - search_api_autocomplete
     - styleguide
     - system
 _core:
-  default_config_hash: XeWQBoKQFC7lZln1-PALmSpfWNHdgfxGyvKL88QDuGw
+  default_config_hash: 90Yq61ztMl5orf0HA2qg6WUw_hASygFE7Mt65OHF_dE
 id: authenticated
 label: 'Authenticated user'
 weight: 1

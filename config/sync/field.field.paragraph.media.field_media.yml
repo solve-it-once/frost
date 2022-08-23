@@ -1,4 +1,4 @@
-uuid: 5e9dda33-1db6-4715-b7f4-8cf88a3a613b
+uuid: b6b10ea6-2439-4537-96bf-e6ac7e3c4663
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - media.type.video
     - paragraphs.paragraphs_type.media
 _core:
-  default_config_hash: xiNJlpdV9U6drp-FXHCct4zpn1qkpSH-24HaFyIYhJI
+  default_config_hash: 1BKwQtfja7WCB-7MRq2S84JX9h_nNGkStHFocA4OSX0
 id: paragraph.media.field_media
 field_name: field_media
 entity_type: paragraph

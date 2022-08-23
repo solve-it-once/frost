@@ -1,4 +1,4 @@
-uuid: 2238aa04-b66a-494c-adda-08a50d32e3ff
+uuid: 56d72608-8f9c-4d4b-98bc-05dbffbe6f65
 langcode: en
 status: true
 dependencies:
@@ -59,6 +59,8 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
+_core:
+  default_config_hash: NOV_bxBLqy1XDkFuobT-BfvcH4CKobJjTiQd6u8ppOc
 id: paragraph.product_listing.default
 targetEntityType: paragraph
 bundle: product_listing

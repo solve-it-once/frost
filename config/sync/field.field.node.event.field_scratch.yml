@@ -1,4 +1,4 @@
-uuid: bd50ed65-b01c-4755-b038-f33c30bb6703
+uuid: c6ba64cd-cecd-4b4c-8baa-e887c83510a7
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.event
   module:
     - text
+_core:
+  default_config_hash: SNRmevrGFQQaPSGI304D3Nd5s7UgUnepIqt6G_7nefE
 id: node.event.field_scratch
 field_name: field_scratch
 entity_type: node

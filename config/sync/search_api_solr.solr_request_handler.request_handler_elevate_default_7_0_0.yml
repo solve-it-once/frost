@@ -1,9 +1,9 @@
-uuid: 43061039-d15d-4318-8f89-6d39474c8958
+uuid: 3cfb8a18-646e-4a79-9ae2-352aed4ebf53
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 5vB9qTWN7M5gdiDIK16yJJH0Jcn8bvRFMkK0d1hLsyQ
+  default_config_hash: awRUNLvDsGIt-mG3F50XkazfyvWMPDLB-_cGe8c17pU
 id: request_handler_elevate_default_7_0_0
 label: Elevator
 minimum_solr_version: 7.0.0

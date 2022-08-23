@@ -1,4 +1,4 @@
-uuid: c19daf28-c83e-49b7-a263-1d0306cf11e9
+uuid: 0b019071-26df-4846-b98d-674536cee12a
 langcode: en
 status: true
 dependencies:
@@ -40,7 +40,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: dEC2AMc3rA0M0VIwitJqcwIToOIKoiw6JqO_nCQfdBc
+  default_config_hash: 5kMVAT6chfBolGyxNRgvvhlEakYN3HnUchqZUWyKi4c
 id: node.event.default
 targetEntityType: node
 bundle: event

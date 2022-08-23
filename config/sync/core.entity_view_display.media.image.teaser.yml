@@ -1,4 +1,4 @@
-uuid: e1ea07e6-a8f8-4ae6-915c-a734fc4da12f
+uuid: b7550d4f-81ba-4b29-98d1-0d66da904c8f
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - field_formatter_class
     - image
 _core:
-  default_config_hash: K9WEuLjUcqLR0Iw20l9VR8LMWWtvRlD2nYZccoBIZDI
+  default_config_hash: K0dXKRQDyDPT3MO1idrLKo2_3xcaz7lKST42vpKe8Qg
 id: media.image.teaser
 targetEntityType: media
 bundle: image

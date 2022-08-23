@@ -1,0 +1,26 @@
+uuid: 423daf64-5f37-4166-9924-40f7e0c8dfc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - frost_custom
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: eT3iMHTfZYfrVdhKy5jlyVQTfK5E1iLxci2j8FCJFnA
+id: classy_heroorpagetitle
+theme: classy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: hero_title_block
+settings:
+  id: hero_title_block
+  label: 'Hero or Page Title'
+  label_display: '0'
+  provider: frost_custom
+visibility: {  }

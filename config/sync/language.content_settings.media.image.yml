@@ -1,9 +1,11 @@
-uuid: 7f8672b7-3f03-4355-8222-5e243da483ad
+uuid: 987faa58-d64c-4d7a-b560-6516b7eda88c
 langcode: en
 status: true
 dependencies:
   config:
     - media.type.image
+_core:
+  default_config_hash: YYOPE0CfM7wEJOmrrgFsEA2VjcCejokAwiJLGROUtOc
 id: media.image
 target_entity_type_id: media
 target_bundle: image

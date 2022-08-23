@@ -1,10 +1,12 @@
-uuid: 6cb48498-bf53-4b11-a050-0c198df1e2b4
+uuid: 81b959b7-0d17-4913-96fe-58aa7c072532
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - media
+_core:
+  default_config_hash: salVwSw8pRu3mfry9_LCZIxc7HZ5meb3ONo4oCG1BMM
 id: commerce_product.field_image
 field_name: field_image
 entity_type: commerce_product

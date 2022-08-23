@@ -1,4 +1,4 @@
-uuid: aa91699a-560d-46e2-b120-f743653243df
+uuid: 9d2708e9-d485-463a-8603-f180b9b0dc01
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: 80yVY6enGQyCzhag752D1KZrymzzLHVp7d5ra8Bl468
+  default_config_hash: g_gdkTDYjf4iauIQyNtVZkaYUHi9Xj4Pprc3FJWGM9g
 name: Event
 type: event
 description: 'For in-person, online, or other kinds of events. Events are distinct from other content in that the time and place are the main pieces of information to convey to the reader.'

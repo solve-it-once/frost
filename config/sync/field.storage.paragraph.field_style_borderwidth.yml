@@ -1,10 +1,12 @@
-uuid: 8e9f95a8-d46f-445e-a3d3-acb2f2f4a27f
+uuid: 8fd743df-ca82-4f75-874b-11a449311c33
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: IceQNqOVPFUXwFiZbFjOUxQyMiHNj-BJOdI7hxPjBQk
 id: paragraph.field_style_borderwidth
 field_name: field_style_borderwidth
 entity_type: paragraph

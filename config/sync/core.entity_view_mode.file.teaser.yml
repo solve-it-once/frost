@@ -1,9 +1,11 @@
-uuid: 58245e83-c03a-4c8b-ba97-ff02733a3513
+uuid: b070e7a8-c441-429c-b497-647dbb17effb
 langcode: en
 status: true
 dependencies:
   module:
     - file
+_core:
+  default_config_hash: cDhJiEMxflEi_y2bc47WQs5Vcnsdi6qZBK-SAdrDUZU
 id: file.teaser
 label: Teaser
 targetEntityType: file

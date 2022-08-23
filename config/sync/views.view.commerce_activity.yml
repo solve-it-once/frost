@@ -1,4 +1,4 @@
-uuid: 31732309-ed19-4757-ac8b-d55d7704e457
+uuid: c8fb8ca0-18f9-484d-b903-6574c862ef49
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - commerce_log
     - user
 _core:
-  default_config_hash: jJ4NNc5t-c-56hFksfpfsQT2cogX9G-1rcG96sEMjVI
+  default_config_hash: rexva-ocUUC-bNVnZKZyHIEHwLhT_g4Wp5IgEQGW5RQ
 id: commerce_activity
 label: Activity
 module: views

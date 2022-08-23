@@ -1,9 +1,9 @@
-uuid: 2bd58516-3d58-424d-8aae-06d19b81813c
+uuid: 291bf7e2-d836-4086-b4e9-90495d71cf34
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: T578Y34c2xZnAVJuKOLUHRS-dqG2QcLKNkFK9hYzyIU
+  default_config_hash: ktEH0JUC6TmwLpHcftbBlrNEkkvYnGv3isNstEvV47g
 name: square_small
 label: 'Square Small'
 effects:

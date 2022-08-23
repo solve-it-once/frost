@@ -1,4 +1,4 @@
-uuid: c0624fc4-ab4f-43e3-bb99-2373c2e5eb33
+uuid: c5173cf8-9004-4e4b-bb9e-e8d15248cee9
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - media_library
     - media_library_edit
 _core:
-  default_config_hash: UvKs8hOGU_fx3Yuu8HHfowWCXq_d7nz1GRPPhpAL7CA
+  default_config_hash: AGRHZmPfzDwriYxqcxn75qfc2kdE8eitBHd1BZ6fLvg
 id: paragraph.heading.settings
 targetEntityType: paragraph
 bundle: heading

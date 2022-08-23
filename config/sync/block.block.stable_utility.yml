@@ -1,0 +1,31 @@
+uuid: 2195fe36-279c-4a11-bc06-0b4b0928796e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility
+  module:
+    - block_class
+    - system
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: C0c6e3gcZ9ttUpxrlpmBdb3slhrNiJmF2C3J8DMu3fM
+id: stable_utility
+theme: stable
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:utility'
+settings:
+  id: 'system_menu_block:utility'
+  label: Utility
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

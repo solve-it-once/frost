@@ -1,4 +1,4 @@
-uuid: 28225f13-9519-41be-b8e6-f207e0292dee
+uuid: 73790162-96af-4ccf-96ed-5d5c1eaa1477
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.blockquote.field_text
     - paragraphs.paragraphs_type.blockquote
 _core:
-  default_config_hash: fDlZ8IS2CfPg5jczPzjCsxPS4PhnQxx12q3s9FgU068
+  default_config_hash: yISF1mIkDjFcxVeUK1-RTsYY-X1dj0d_SJNQvhFgxoU
 id: paragraph.blockquote.settings
 targetEntityType: paragraph
 bundle: blockquote

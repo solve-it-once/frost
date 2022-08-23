@@ -1,10 +1,12 @@
-uuid: 31a9ae3b-3513-4928-bcd8-6ebe3dbfffdb
+uuid: dfa5865e-21fe-436d-abd2-e9abb91fdd1d
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: l5UoEtUQSfTixwboKOXWQKAISyG-6-w4n5mSR7wi57s
 id: paragraph.field_style_borderradius
 field_name: field_style_borderradius
 entity_type: paragraph

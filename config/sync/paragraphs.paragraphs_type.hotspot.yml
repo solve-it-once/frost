@@ -1,9 +1,9 @@
-uuid: 1eb42c22-046d-4e7e-a6f7-08be348f58ed
+uuid: e60e9db5-e5b2-489a-92a1-ec19366a1a53
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: lDdXKZ_3JJP0qW7wZWWIkwXClfdRYf0rNifDScvhtM8
+  default_config_hash: LoHs7WG50lAOjpyu06sxy3H20g5xOoHn77anB98JKi8
 id: hotspot
 label: Hotspot
 icon_uuid: null

@@ -1,9 +1,9 @@
-uuid: 91bcce21-63e4-4061-ab9b-ecd1f1ed9930
+uuid: 95530226-fbe6-4a2f-aae6-bb0f68c2a87f
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: U_yMJ3Phv48hwH5i4N1jPFSFfULDII0zLaOfbV2yzr4
+  default_config_hash: bxAjXM_xls--jwh5HZqTat__y2_4nQJCFFLD69Wvr8A
 id: request_dispatcher_httpcaching_default_7_0_0
 label: 'HTTP Cache'
 minimum_solr_version: 7.0.0

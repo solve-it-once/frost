@@ -1,9 +1,9 @@
-uuid: 49f9d8ab-87f6-4d66-a99e-95fd48c5dafa
+uuid: d70c50f6-b8fe-4178-bdb3-de8472186337
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: '-ywJXvhjoF4YJVYgH4NKhw6ESt22GHUnUCmTQfQvYVU'
+  default_config_hash: zXTGmyaNd8Zjr5oedCVieSVtBkJazXM8irixav3JpOU
 name: teaser
 label: 'Teaser (scale to 235px high)'
 effects:

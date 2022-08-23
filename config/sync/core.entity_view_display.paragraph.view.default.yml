@@ -1,4 +1,4 @@
-uuid: 86845396-a1c4-4699-8288-9b81c8e28524
+uuid: a2157057-18af-4f83-8453-a8703af10eca
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field_formatter_class
     - viewsreference
 _core:
-  default_config_hash: FvXbRS_B-hhLLSBxBtxJ-XwZki3CYCiYfUugT6sVrcE
+  default_config_hash: lfhjUUE71mUuvVUmIFYW5CVm5_UmVlmehpTnrFflLDU
 id: paragraph.view.default
 targetEntityType: paragraph
 bundle: view

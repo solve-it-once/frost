@@ -1,4 +1,4 @@
-uuid: dae6f518-18f9-4661-9c79-ccfb93174a8f
+uuid: 45526ce6-b8a4-4608-bbd3-1710971c571f
 langcode: en
 status: true
 dependencies:
@@ -54,7 +54,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: FocLhMdSKq0tLY5UXTfH3wK0pgy45hTF4pPaMF78eUc
+  default_config_hash: ZtjZPm-IL9eM_4C-jsW8pNkE9J8jOEfC--dAsaxy4K4
 id: paragraph.cards.default
 targetEntityType: paragraph
 bundle: cards

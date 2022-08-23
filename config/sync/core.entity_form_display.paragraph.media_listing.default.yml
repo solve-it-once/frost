@@ -1,4 +1,4 @@
-uuid: 5f6058c2-4ceb-48fe-a8f9-21f4423d6d1c
+uuid: 78febc83-a442-43ef-9dca-5c19240eb9ff
 langcode: en
 status: true
 dependencies:
@@ -59,6 +59,8 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
+_core:
+  default_config_hash: tneT88LQFESR89kJEKztSCMp6yAmLnWaNixmBx8Qa1s
 id: paragraph.media_listing.default
 targetEntityType: paragraph
 bundle: media_listing

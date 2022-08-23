@@ -1,4 +1,4 @@
-uuid: 86be7ad0-410a-463d-91d2-023da8f5a545
+uuid: 94de4aa9-f5b2-42c6-a4b5-2b4f74e5490e
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,11 @@ dependencies:
     - frost_custom
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: qONTqbCSvf6opycCTWPa-gWCJhGROqIYV5A9GXCROi4
 id: cookienotice
 theme: frost_theme
 region: post_footer

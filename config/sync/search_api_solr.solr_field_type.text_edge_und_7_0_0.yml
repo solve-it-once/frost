@@ -1,9 +1,9 @@
-uuid: 4d39add0-9759-40ec-b725-787d95337527
+uuid: f2d0a34a-e701-4b64-a297-fe64bbb25dc5
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 5scHX0-Aa3U0MshSRNM3BEs7N574OwIPD-UMT0nBY6Y
+  default_config_hash: edn4g9huIbBonsmj_ZVT_ASjxhb-m9P7qL4zSNgQ_t8
 id: text_edge_und_7_0_0
 label: 'Edge NGram Text Field'
 minimum_solr_version: 7.0.0

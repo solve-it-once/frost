@@ -1,9 +1,9 @@
-uuid: 95cf11fb-e74a-49af-8971-2b107ba94eb1
+uuid: fe861155-272a-4c96-8609-202a0ecde7fb
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: PkodovCi-8F7bDBp6KEjNKPhzrUrLuJmXkVeTwK2Byk
+  default_config_hash: xGkCoF01RsdbAIxMnxrehcSBza9Zmc1NNr2T8Spq58g
 id: user_listing
 label: 'User listing'
 icon_uuid: null

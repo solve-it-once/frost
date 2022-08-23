@@ -1,4 +1,4 @@
-uuid: 00eba6b6-4d72-4da7-b799-d595f6ea4538
+uuid: 41af5e4f-03ef-4aad-ae86-89f4911ae571
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.link.field_style_childbgcolor
     - paragraphs.paragraphs_type.link
 _core:
-  default_config_hash: Kfxmc66rRE7gjgUAMw9B3w0-iPmNJxVsK9YMOOmsrlc
+  default_config_hash: 62_rQP5X6QzM2zZbcNUY8BTRsGB77GDczoehlIknl0E
 id: paragraph.link.settings
 targetEntityType: paragraph
 bundle: link

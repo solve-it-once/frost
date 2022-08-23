@@ -1,4 +1,4 @@
-uuid: 15a3df13-a1ab-4bcf-b833-2b35b06e49c3
+uuid: 0165a930-c0c7-48d2-8c43-24a88de390c7
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - field_formatter_class
     - tablefield
 _core:
-  default_config_hash: 0feS_mUQfj8WhlJp5xkxerEbk6J59HGlDJfzAPCY_ys
+  default_config_hash: ktjjdxEiL1_SddxrlEyg0oMNKICtzXYpORjtEW2ItbU
 id: paragraph.table.search_index
 targetEntityType: paragraph
 bundle: table

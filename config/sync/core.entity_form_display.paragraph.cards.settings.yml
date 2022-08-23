@@ -1,4 +1,4 @@
-uuid: 6f7cd9b1-a742-4419-93fc-7c0b07fb9085
+uuid: a2963a0d-4c56-4a9f-ad43-59348c7799e0
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.cards.field_style_layout
     - paragraphs.paragraphs_type.cards
 _core:
-  default_config_hash: FocLhMdSKq0tLY5UXTfH3wK0pgy45hTF4pPaMF78eUc
+  default_config_hash: RNG8PxDFhsr0-iwWG-HoPubgHb1qY04scV3ybu-FDSY
 id: paragraph.cards.settings
 targetEntityType: paragraph
 bundle: cards

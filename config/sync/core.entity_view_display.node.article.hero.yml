@@ -1,4 +1,4 @@
-uuid: 1b5bdae5-d026-499c-9702-d33af4692086
+uuid: de27d91b-9e5c-434a-a765-2a3c2cf6b688
 langcode: en
 status: true
 dependencies:
@@ -77,7 +77,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: yysB4Irfl0ilL9e-To3RVH2MR0iPbuJaOjfNHTbzNOw
+  default_config_hash: 7sbBJnXoP4MDwoImIOo0bB32G6e-_UwCxsoH9qMaLJY
 id: node.article.hero
 targetEntityType: node
 bundle: article

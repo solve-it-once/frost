@@ -1,4 +1,4 @@
-uuid: 2437679e-2745-4a4c-97f9-4c0575898961
+uuid: 4fbe8f15-03d9-488d-88a8-26d5f1fd8918
 langcode: en
 status: true
 dependencies:
@@ -18,7 +18,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: 92m00AdmfLgF_t6tDMjNY7T5v_ngf02sSOTzXy4b9vY
+  default_config_hash: 4NsN_FxLn4j3w6uG-LhL5bRTbj9EXtIv2ZrUz964kIU
 id: taxonomy_term.tag.default
 targetEntityType: taxonomy_term
 bundle: tag

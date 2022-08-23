@@ -1,9 +1,11 @@
-uuid: 15d9b926-05a7-479a-9415-5ad094e6d365
+uuid: 9a978090-831a-44d2-986b-053ca634dda1
 langcode: en
 status: true
 dependencies:
   config:
     - media.type.video
+_core:
+  default_config_hash: gwrgxbnfyy23Yc_h7vXASLyKp4b1KPCP1h83sje15iM
 id: media.video
 target_entity_type_id: media
 target_bundle: video

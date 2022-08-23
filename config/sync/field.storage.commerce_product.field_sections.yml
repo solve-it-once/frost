@@ -1,4 +1,4 @@
-uuid: 6fa7209d-3cc7-48a9-9ec4-5020299abe10
+uuid: 41766d53-71ca-42dc-9afa-36a32041d502
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - commerce_product
     - entity_reference_revisions
     - paragraphs
+_core:
+  default_config_hash: JrwDcvfUES-HM5NiQZa9jU9R4-S1TX7-b2CDY6ll0eo
 id: commerce_product.field_sections
 field_name: field_sections
 entity_type: commerce_product

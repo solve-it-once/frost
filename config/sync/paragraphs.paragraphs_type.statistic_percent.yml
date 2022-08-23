@@ -1,4 +1,4 @@
-uuid: c6fab9f0-a1e7-4dd3-ada6-0aeaef60526a
+uuid: 3ee87566-132c-47a1-ac8f-5047a3958958
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 _core:
-  default_config_hash: IiX3oFunSMG-uaf9F1t7HAME6YjHLdhBgYnogRB_Ga0
+  default_config_hash: MUbITvRAPMlvYeJDgNsQKdMEPald2Hrq_MB3CVBosX4
 id: statistic_percent
 label: 'Card: Percent'
 icon_uuid: null

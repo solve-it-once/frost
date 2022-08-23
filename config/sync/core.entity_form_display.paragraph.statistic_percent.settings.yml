@@ -1,4 +1,4 @@
-uuid: a6b4f1cd-9aa6-44b7-a63e-abea72242b18
+uuid: d979f66e-8c08-43cd-b912-df9afa269441
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.statistic_percent.field_text_suffix
     - paragraphs.paragraphs_type.statistic_percent
 _core:
-  default_config_hash: z_fR0cJ_wiS_Nl-WeMOur2TIogo4mhKtzNSDsPVKcRk
+  default_config_hash: zqbPjYKLNOLtiXjRumL0F3EBcXcjX-RuUM1djwnOTNE
 id: paragraph.statistic_percent.settings
 targetEntityType: paragraph
 bundle: statistic_percent

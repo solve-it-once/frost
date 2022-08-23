@@ -1,4 +1,4 @@
-uuid: 36541e38-9507-40d7-81f7-269cb4e64e24
+uuid: f0f19036-fd2c-4c3b-a691-d3875e5896eb
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - field_formatter_class
 _core:
-  default_config_hash: yHchiCQjFmsIYkRFT3ZYCNq9V1KI0RT1o6p8f-jCosU
+  default_config_hash: lRkgHzrlQNiNB3jUFrBaMAu8rd6Isuys0kxTbU3PDr0
 id: paragraph.seo.preview
 targetEntityType: paragraph
 bundle: seo

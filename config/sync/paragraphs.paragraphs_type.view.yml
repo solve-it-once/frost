@@ -1,9 +1,9 @@
-uuid: 9cb7f40a-7338-41a1-bac1-03a25a2ae2e6
+uuid: a0c1f25d-45e9-42f7-b136-f9da3506bde0
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 8_dQt7PrlbU46GXy3PeE7D2cvcHVOy_vgUNxVUIZdZU
+  default_config_hash: QjT1PRBcALHovg35mna_ycyXTU90ZsuJdQW4kMISTWk
 id: view
 label: View
 icon_uuid: null

@@ -1,9 +1,11 @@
-uuid: 642716ed-66e9-42db-8306-bbda0ee70dd2
+uuid: 5b802fb2-e6da-4d62-b30b-003b2b850855
 langcode: en
 status: true
 dependencies:
   module:
     - block
+_core:
+  default_config_hash: wxUuA7AI7fCcJlhyb2ty7HII4v2j0Gb3ND-WeZ_G2so
 id: block.small
 label: Small
 targetEntityType: block

@@ -1,4 +1,4 @@
-uuid: cdfa3ed6-712d-41c5-ab0e-520b8a1cdf86
+uuid: c4d47595-ffa9-4e14-9916-46a354ddd9e3
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - image
     - linked_field
 _core:
-  default_config_hash: kIaBldS_EeDby-UfPgj5QubngxD5UGIcCQX32NCjRHs
+  default_config_hash: wi4w5UxJk0drz3CjMvwoIGeKtTfANe-FXez7EpBfZQs
 id: media.video.square_small
 targetEntityType: media
 bundle: video

@@ -1,4 +1,4 @@
-uuid: 9920a10d-1e51-480d-bb69-b8725e1e333c
+uuid: 28d5a50d-e124-43e2-8418-23ec21554ba9
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - field_formatter_class
     - image
 _core:
-  default_config_hash: nc8V3PJqpgeybxBSXj8xZdvuKbEKZh0tjeliKEC0aDk
+  default_config_hash: iHiPYJhTa-UjIlR8Sp5DagcBp-68nv-sePEQvb_JIr0
 id: media.image.square_thumbnail
 targetEntityType: media
 bundle: image

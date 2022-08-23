@@ -1,4 +1,4 @@
-uuid: 6e650576-3783-4556-82fa-c4be75f2fa87
+uuid: 98f73214-6c56-4c8f-8965-1486f3dc4f0b
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
   module:
     - search_api
     - user
+_core:
+  default_config_hash: jr-ae1nOS0X193OAWvI4oFFVgYGyLspmTgOJFwTedyY
 id: search
 label: Search
 module: views

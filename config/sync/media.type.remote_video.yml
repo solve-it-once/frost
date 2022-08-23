@@ -1,4 +1,4 @@
-uuid: 5bff7248-a33f-4b4e-97c4-8f10e8e76e10
+uuid: 0d8f9546-d447-49fc-97a4-f83d6cb64f26
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - oembed_providers.bucket.video
   module:
     - oembed_providers
+_core:
+  default_config_hash: fwX_z7wEB-9qfnFVYLIbYSAAdwjAAmrBfv4W2sf4VQI
 id: remote_video
 label: 'Remote video'
 description: 'Embedded videos hosted elsewhere, such as TikTok, Vimeo, or YouTube.'

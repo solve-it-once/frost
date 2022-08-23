@@ -1,9 +1,11 @@
-uuid: 821edfe1-97f5-4e91-b96a-313afbdd9cbf
+uuid: 64f6e116-b603-4bdc-8c15-c262817b5bba
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.article
+_core:
+  default_config_hash: 7H_yEuegjFXIPcgU5yLOZkLO7dwPkwxWmj6pMIXCVp0
 id: node.article
 target_entity_type_id: node
 target_bundle: article

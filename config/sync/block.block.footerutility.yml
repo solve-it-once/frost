@@ -1,4 +1,4 @@
-uuid: 1d6f0f1b-f85f-4fca-a243-a47d697e3e84
+uuid: 9f97c29a-3055-45d1-abad-f484e5e3a8b9
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ third_party_settings:
   block_class:
     classes: pipe-spaced
 _core:
-  default_config_hash: a2avC3PmUWyrzKW0jqUKHGOw-eObdeYDbTx0mmnfbIk
+  default_config_hash: ZL-8_-ngr78A0lVuXJ-OP5rFen-nATYafQQOhBLiEI8
 id: footerutility
 theme: frost_theme
 region: footer_utility

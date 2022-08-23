@@ -1,4 +1,4 @@
-uuid: 3b768514-7081-45f5-a6ad-3a27dc4e5e4d
+uuid: 3ae5d102-9d20-4bb2-aaff-f64b55315f4c
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 0gjFT9-WlXjsyLhP9EQqrz24Dn-UlyDoNePK29OAVuM
+  default_config_hash: 0G9YLrU4vjJCf3Jz09cpJE-iHRS9FRYA4btulwCdfpg
 id: paragraph.blockquote.search_index
 targetEntityType: paragraph
 bundle: blockquote

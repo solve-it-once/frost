@@ -1,9 +1,11 @@
-uuid: 585f8e9e-5ccf-4b60-8b52-4c90fac49678
+uuid: c0992e33-a80f-4435-83fb-859c97c1007e
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: lE_uI_HWKoybE3Jo5e7uGBIawqgfQeKb1LBnIZ1RFoc
 id: paragraph.field_data_lightbox
 field_name: field_data_lightbox
 entity_type: paragraph

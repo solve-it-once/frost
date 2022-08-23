@@ -1,9 +1,9 @@
-uuid: 8fb2b49c-eb66-4cab-8ce9-2db54f94e85c
+uuid: d7652ef6-89b4-4de0-88e7-f5dd52feae92
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ToPzxvTXmQsiC47LNY1yYM6LPtsJMYoAHZXOapKkEXA
+  default_config_hash: wNUwiMFz0-6kNDTijd_QvGLUmSfe3zV7iGP8gcYuD8c
 id: term_listing
 label: 'Term listing'
 icon_uuid: null

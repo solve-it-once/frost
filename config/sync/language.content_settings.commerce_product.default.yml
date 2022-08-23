@@ -1,9 +1,11 @@
-uuid: 99b53b84-41c9-4be8-9619-6eaf783b9e6a
+uuid: ab69003f-7ba1-4988-801f-611bfad17d14
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.default
+_core:
+  default_config_hash: zraZY0E7z8dOcYhBAHi26VtPDSVWBT3Z-Aha84LAkCI
 id: commerce_product.default
 target_entity_type_id: commerce_product
 target_bundle: default

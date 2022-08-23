@@ -1,4 +1,4 @@
-uuid: d98f11d4-66ae-42fa-961b-050ce1079a21
+uuid: 3bd876e2-7b45-49eb-8d14-b464ea9f433d
 langcode: en
 status: true
 dependencies:
@@ -27,7 +27,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: NPP86XHTzJBFdhjTraRDDryyJJMLEjv_7AkARgdqww0
+  default_config_hash: izQaPjpvhUfIfxTwABkPjNIRifCmSzsEuZkzyz5WHG8
 id: node.event.field_components
 field_name: field_components
 entity_type: node

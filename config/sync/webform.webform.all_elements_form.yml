@@ -1,12 +1,12 @@
-uuid: fbf99184-9458-414a-adaa-2960cb36cf97
+uuid: 0703e820-d723-494b-959f-8f3ac1a15e47
 langcode: en
 status: open
 dependencies: {  }
 _core:
-  default_config_hash: ul_gwvqpny9lUrgkJQpzqQBclAapr3-3dlZ3G8N71pc
-weight: 0
+  default_config_hash: YMAja99i0POF3GJ1LH_Z9c04uXfuTRC-W4A09BM-K1E
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false

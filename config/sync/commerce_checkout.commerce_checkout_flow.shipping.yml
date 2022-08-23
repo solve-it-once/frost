@@ -1,4 +1,4 @@
-uuid: 28a46398-4a01-47a5-9c70-c0fafa6ef363
+uuid: eb853394-03cf-4e12-a030-e7c8c5435460
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - commerce_payment
     - commerce_shipping
 _core:
-  default_config_hash: eGgj-Vay13MNDxbtb1YAjNZuUUgbp92Tr9hDQcR7ogo
-label: Shipping
+  default_config_hash: qIytWtCykmCdcPkPIvTfS7jz2mveXcgLIebyvzzDesw
 id: shipping
+label: Shipping
 plugin: multistep_default
 configuration:
   display_checkout_progress: true

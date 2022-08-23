@@ -1,4 +1,4 @@
-uuid: 6fe8adb8-4a50-440b-9ae9-8d97117df8ec
+uuid: abd2bfa4-1d85-4e15-8f4e-190a32824adf
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,11 @@ dependencies:
     - frost_custom
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: HAePoWVFX7zPoRhyOOHeQfZf6J2GFZOtPKHx35crgnM
 id: searchiconblock
 theme: frost_theme
 region: nav

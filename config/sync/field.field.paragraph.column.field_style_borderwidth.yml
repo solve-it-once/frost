@@ -1,4 +1,4 @@
-uuid: 0ab26092-e11a-4bc7-8a8a-09c61e204cc8
+uuid: 5bca1733-9b83-4e64-b004-e8ccb49fdd87
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.column
   module:
     - options
+_core:
+  default_config_hash: 5tFUuHD5GrCEdU70QJysvcMlJTpm5ZfL4DI0FqKPFDA
 id: paragraph.column.field_style_borderwidth
 field_name: field_style_borderwidth
 entity_type: paragraph

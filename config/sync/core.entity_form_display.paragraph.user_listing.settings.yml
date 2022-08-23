@@ -1,4 +1,4 @@
-uuid: e4d6bb0f-e1e2-4d2e-b680-f0749c0c7ee2
+uuid: ea501b91-e3c7-4f33-8ada-98bdcff41689
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.user_listing.field_viewmode
     - paragraphs.paragraphs_type.user_listing
 _core:
-  default_config_hash: jwfYUZo9TTKrW508mKgbOn05X-7YnIljiZArcU2ti_M
+  default_config_hash: SBjw7i8OwWCeyLRdvCEHb7-fCb1U80ntY1f3LYn4WYc
 id: paragraph.user_listing.settings
 targetEntityType: paragraph
 bundle: user_listing

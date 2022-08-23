@@ -1,9 +1,11 @@
-uuid: 3c9160ec-dddd-41e9-a6be-9df00dc96b5c
+uuid: d7815304-6e4c-46e7-9eaf-9bb66c63951a
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: f639YH19Z0qkxgNtzRIbIbEfnvCeyRwii5e6GsFHZJM
 id: paragraph.field_style_marginxc
 field_name: field_style_marginxc
 entity_type: paragraph

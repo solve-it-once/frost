@@ -1,4 +1,4 @@
-uuid: 27c21492-9974-4d40-aa7f-6a782ba06ce6
+uuid: 75da1272-918c-4638-9264-af6dfd315f6b
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: 3wv-AXtQZjxcmXYF6oK_Wc3vqESNotWruWwgkaWLnBE
+  default_config_hash: IX2MbH2mgGCX65dBBpMGp8FR33qA8PImlZPoVmbOH4E
 id: taxonomy_term.article_type.default
 targetEntityType: taxonomy_term
 bundle: article_type

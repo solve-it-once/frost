@@ -1,9 +1,9 @@
-uuid: e78fa370-5f68-4faa-b729-7267f3bc07a2
+uuid: 84e45e4e-b356-4e1e-961f-4d3f15ff70d1
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: xLWpESO5c8FLhxiP_hZ7dvSDBi2qclABSb6Dvmi3xgs
+  default_config_hash: UsbcohiVp1G1PxGKEsWYW8RTPn7wOKculAhZFVSBMxo
 id: column
 label: Column
 icon_uuid: 08a8bcff-ef10-4796-959f-436a9a111726

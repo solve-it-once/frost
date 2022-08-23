@@ -1,4 +1,4 @@
-uuid: 171f908a-e1ec-488e-8a46-3fb3f78c295e
+uuid: 264f158c-8d44-4066-a595-d37064436037
 langcode: en
 status: true
 dependencies: {  }
@@ -8,5 +8,5 @@ id: from_library
 label: 'From library'
 icon_uuid: null
 icon_default: null
-description: 'Stripes and other content that can potentially be reused across pages'
+description: null
 behavior_plugins: {  }

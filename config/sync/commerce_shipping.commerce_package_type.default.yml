@@ -1,7 +1,9 @@
-uuid: a101f673-942d-465d-a2e1-3d9cd4e66e89
+uuid: 0faadeea-5641-4589-a1e0-e2146c65a809
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: o8wTNDQbqHUpmW_ertL-voyeJRH_UhB3sMDUnQ3Hmx8
 id: default
 label: 'Standard Fedex 13x9x11'
 dimensions:

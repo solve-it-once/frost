@@ -1,4 +1,4 @@
-uuid: 3eda0f52-e34c-43ed-b540-61bac99ff98a
+uuid: cb98e587-dfc9-466b-9eed-a626883abbb7
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - field_formatter_class
 _core:
-  default_config_hash: wtIdbw72God1M0tN6HVU-LlIX5RhYqXV-R6QxgPYdnE
+  default_config_hash: jHandQ7SdspPe5B-gM9K13QwUDjX2Kw9hZJzewe2Bj8
 id: taxonomy_term.article_type.teaser
 targetEntityType: taxonomy_term
 bundle: article_type

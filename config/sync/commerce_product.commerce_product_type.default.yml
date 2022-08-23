@@ -1,14 +1,16 @@
-uuid: 943e1933-b225-4447-8aed-fa91270b053e
+uuid: d4b3bc02-ce42-420d-8930-d8f4b6865686
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: igdv1CXBTq9vh-ONhQ2SFkVhr3bdfRC6nP1Uubdx-L0
+  default_config_hash: hwJoqnxqBS0fPM3s6FccZ2bWaq9LneRYLzFk-wlJWjs
 id: default
 label: Default
+description: ''
+variationType: default
+variationTypes:
+  - default
+multipleVariations: true
+injectVariationFields: true
 traits: {  }
 locked: false
-description: 'A standard good or service without variations or attributes/options to handle. '
-variationType: default
-multipleVariations: true
-injectVariationFields: false

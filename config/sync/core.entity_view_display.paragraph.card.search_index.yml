@@ -1,4 +1,4 @@
-uuid: 4550b1ff-7082-45cb-a919-7646b3ed23bc
+uuid: 1d56cecc-ac07-4ce5-9799-47c16a611261
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - linked_field
     - text
 _core:
-  default_config_hash: AtAeb2Dk9tI5EUbVJz9pyrpQduiZaB7z372gCzaUAUg
+  default_config_hash: H5Ao-USXeuZBSnl3lq1vpj3rrzIhm8wn1pYT0pKy_54
 id: paragraph.card.search_index
 targetEntityType: paragraph
 bundle: card

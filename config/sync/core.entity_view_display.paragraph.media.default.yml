@@ -1,4 +1,4 @@
-uuid: 89370a28-57cc-4931-b393-574da7229949
+uuid: 0ded1306-2c25-4076-b7fd-817453e459bf
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - linked_field
     - text
 _core:
-  default_config_hash: h0RMGP4k1aKH0KHK29k5Q8gBzxf7XpRhVSqcCHzd3do
+  default_config_hash: gKrX-PPxvyPJFsoLOlTlZD6F5n36jxaQHuJvykBE8l0
 id: paragraph.media.default
 targetEntityType: paragraph
 bundle: media

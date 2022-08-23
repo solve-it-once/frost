@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: AXUBMTvVtpcNp0jKjDaWjSHqMy6HjuUf7j4yVbXgazI
+  default_config_hash: B8EpY9LKNRRgfPK_2NA3PL6UAS03x0LCVZ15XAU-giY
 local_task_enabled_entity_types:
   - paragraphs_library_item
 track_enabled_base_fields: false

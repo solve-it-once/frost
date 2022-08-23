@@ -1,4 +1,4 @@
-uuid: 58f835b4-9e6d-4e65-a678-570139c7cad0
+uuid: bc4b2fb1-a6a5-4185-9ec9-a48c8ab659cd
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - viewsreference
 _core:
-  default_config_hash: uzAluUWZ72Gn1Xgw7qs2GAITZPwldRW07LLWLGNPTRw
+  default_config_hash: 6j5061YzmysqZB_qNuUMGjMhYBdkQ0lgVhyEUQ1DJs0
 id: paragraph.view.content
 targetEntityType: paragraph
 bundle: view

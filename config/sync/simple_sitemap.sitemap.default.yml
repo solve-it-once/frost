@@ -1,9 +1,11 @@
-uuid: a9b89290-ef9b-4679-8474-427c235fd540
+uuid: 56141488-0be5-4a42-9146-be3b6c5acd36
 langcode: en
 status: true
 dependencies:
   config:
     - simple_sitemap.type.default_hreflang
+_core:
+  default_config_hash: TeJa227jvODyUwZQKbku5lMRSudPPVRwTww-g_PvWIo
 id: default
 label: Default
 description: null

@@ -1,11 +1,11 @@
-uuid: 1443e820-30b3-4f5a-a316-3d0aa04c1ba5
+uuid: f856d2e3-fb7b-46ae-a3a9-18f635d894c4
 langcode: en
 status: true
 dependencies:
   module:
     - menu_link_content
 _core:
-  default_config_hash: QkYBMhvIEEIEWU8eI0tZV73xpzfoTqIWOKUGej1odX4
+  default_config_hash: t0wMmxGpTOlVEBtirxR3o0V92dgV4RFhAn0DlkbsuNo
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
 bundle: main

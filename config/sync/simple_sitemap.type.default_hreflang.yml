@@ -1,7 +1,9 @@
-uuid: fa697011-40b1-43a0-a15f-a798e36ff48d
+uuid: 816b6b1c-40fc-4624-8804-acdf1b2d5bfa
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: '-m5OAANiK0arQsRhlWTOBNJDnzQn_z4D1r-m0thnRmg'
 id: default_hreflang
 label: 'Default hreflang'
 description: 'The default hreflang sitemap type.'

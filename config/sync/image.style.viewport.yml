@@ -1,9 +1,9 @@
-uuid: 2888316a-837e-407d-a129-3f2f2d3b61cf
+uuid: 693b0fbe-3428-4a40-b0c0-3fca7cb08059
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: jGuDXxJCUXHzU8kJJ7ysH5g0xyIAQItVzbilTpH5BWc
+  default_config_hash: YjL5-5hyIIR8ysucqk8s5qqS5iNaMBccPXJJFz3sPRY
 name: viewport
 label: Viewport
 effects:

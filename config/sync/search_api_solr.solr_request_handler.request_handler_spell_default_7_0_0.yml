@@ -1,9 +1,9 @@
-uuid: dc8c8e75-a761-4ab8-8e6f-4164b0fe2d7f
+uuid: 81df36c4-1856-4fbc-9a5d-c49a6d2d57cc
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 7HfPJApsXcnG4-rzzgcbtybt9gJ2xzQx3llqVtXKIbw
+  default_config_hash: K8FL_GAJEdbxEnnmGUmM69c7O38bwz66axaebjmsb4U
 id: request_handler_spell_default_7_0_0
 label: Spellcheck
 minimum_solr_version: 7.0.0

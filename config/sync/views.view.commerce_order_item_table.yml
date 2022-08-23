@@ -1,4 +1,4 @@
-uuid: 58655637-9eaf-44d5-a734-13b3411b382c
+uuid: f2a0ff19-bb0e-49ea-8990-568572bf0f10
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - commerce_order
     - commerce_price
 _core:
-  default_config_hash: EZYKCbgxvY_dDDwK9piZCx6wll1ArPTjellGybiFv10
+  default_config_hash: z3FJg1n5V2Jd2RIHdzOtjPEzmAqm9JHvwNATBqKgOlU
 id: commerce_order_item_table
 label: 'Order items'
 module: views

@@ -1,9 +1,9 @@
-uuid: 7b42ff33-c931-4798-a87d-a5d9ed4b26c4
+uuid: a0df06c0-2f6f-4950-a4c9-0c015c82a9a1
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: rA4yL1GJS1bexdKOLVRhxcXM7YmhAakvHqtDYBKO0YA
+  default_config_hash: UrWTakTOhEmXowcyMHkEETOgyRF8-wfbZa8Lfk1MJnc
 id: document
 label: Document
 description: 'Downloadable document content, such as txt, doc, docx, pdf, or zip.'

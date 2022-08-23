@@ -1,4 +1,4 @@
-uuid: e1e263fb-2c51-4d42-8078-5879825fa3b9
+uuid: 18d6bc4c-1953-43fd-ac07-5dfea748f2b3
 langcode: en
 status: true
 dependencies:
@@ -33,7 +33,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: bVqhDE0CBvUi4RPHqKu4sBhUOUwOTgcHVhn5PkfngLU
+  default_config_hash: 39vNljK53ScdMottKCTkbZpN_n17prMJoo4jmSmEAlE
 id: commerce_product.default.ief
 targetEntityType: commerce_product
 bundle: default
@@ -49,6 +49,11 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 0

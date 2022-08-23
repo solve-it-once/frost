@@ -1,4 +1,4 @@
-uuid: 859cfa64-3576-4ad1-8f52-991815415e4d
+uuid: e6af79b3-20ae-4e12-9afd-29b6baa2c070
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     module:
       - commerce_order
 _core:
-  default_config_hash: Wfu6EDwNNNV0FZiMAndYyWpKCyCZ2TfdZ2QkPUFOINY
+  default_config_hash: ZcWjf1JNMsrVVcEu_wL_I1_8AoR7F2LQaANPt7QycEE
 id: commerce_order_delete_action
 label: 'Delete order'
 type: commerce_order

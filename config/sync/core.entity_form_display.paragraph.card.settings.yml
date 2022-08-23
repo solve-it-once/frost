@@ -1,4 +1,4 @@
-uuid: 15baf8c7-0889-440e-a5d7-06d84cafac30
+uuid: fbcf473a-68fd-46cc-b0de-8cc7f05d52d9
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - field.field.paragraph.card.field_title
     - paragraphs.paragraphs_type.card
 _core:
-  default_config_hash: BtBlIhgCVm493RGo4dHCdI2K9gqFNmr3YoWSsqXqY88
+  default_config_hash: 9XaZA9-qrw3vpziFHYBXQ_F7O82mwa8IpAIuXdE5yvs
 id: paragraph.card.settings
 targetEntityType: paragraph
 bundle: card

@@ -1,9 +1,9 @@
-uuid: 7dd76212-acfc-4451-9788-f48564d4a71c
+uuid: 21ab77c1-6478-4ed7-b7ca-beda365df09e
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: tcF6ogRY-ygkjk3FG8l2GwbSWdawgDEHxrI8iUEWaBI
+  default_config_hash: Lg2PdnvVN0dfnsUgO7_47czerBJRguGbc9aSEl0niBU
 id: table
 label: Table
 icon_uuid: null

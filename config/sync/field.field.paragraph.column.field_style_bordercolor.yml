@@ -1,4 +1,4 @@
-uuid: b2b56d0f-5fe7-4889-9b92-c7d4cd9a99ac
+uuid: 35b6a1f1-2e28-466e-b7a2-dc1d8f231404
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.column
   module:
     - options
+_core:
+  default_config_hash: 4emVeqia2WU4MW8TuqoS6m-0jKPn7vNuA_1Peh_IJLc
 id: paragraph.column.field_style_bordercolor
 field_name: field_style_bordercolor
 entity_type: paragraph

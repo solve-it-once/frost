@@ -1,4 +1,4 @@
-uuid: 9e8ce2d4-59c1-486a-9690-bc35dba07f0c
+uuid: 19c58fcf-26dd-4087-9354-af6516671307
 langcode: en
 status: true
 dependencies:
@@ -18,7 +18,7 @@ dependencies:
     - field_formatter_class
     - text
 _core:
-  default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
+  default_config_hash: Af6rrv_G5MGrTjdOIAdgtHuhDRwJkui4FOb6hljfNNM
 id: commerce_product.default.search_index
 targetEntityType: commerce_product
 bundle: default

@@ -1,4 +1,4 @@
-uuid: 9796ee7c-cac2-4acf-b6bc-56c5507eca89
+uuid: 5e4ca2d5-81cf-4f8d-993e-a9834dd4ffb5
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - commerce_shipping
     - state_machine
 _core:
-  default_config_hash: lIA42DcKW4kJPKVTGe3ZPTNevNWX36jWroTaakcD-0E
+  default_config_hash: zt8kYjZUq-5Fc50EjBaY0CkW-b0gXc4a9hIhNChWWWA
 id: order_shipments
 label: 'Order shipments'
 module: views

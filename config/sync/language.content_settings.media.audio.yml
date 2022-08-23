@@ -1,9 +1,11 @@
-uuid: dc0689d1-d9a9-4b61-af67-a8fc8274ed00
+uuid: d1dc2a1c-3dd0-46cf-a7ea-212fdb77a628
 langcode: en
 status: true
 dependencies:
   config:
     - media.type.audio
+_core:
+  default_config_hash: O_ZDwU1L9CM3IqHjWvgSqhB5zXbS8D0K9kZG4nRgpXY
 id: media.audio
 target_entity_type_id: media
 target_bundle: audio

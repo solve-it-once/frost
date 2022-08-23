@@ -1,4 +1,4 @@
-uuid: 8111eaef-d726-4062-bdcf-2e99d03bf9e2
+uuid: a609a8a4-78df-44a1-89c2-391df510b7af
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - field_formatter_class
     - file
 _core:
-  default_config_hash: bMWFsT7usYldqC2GenJ1Ahs7lpDuGNP1TQE2n1eULkk
+  default_config_hash: 7Jh3c28as5EFEY0h5NPyaG-8OZWb7pbyXV-4Uy-OWmI
 id: media.video.stripe_bg
 targetEntityType: media
 bundle: video

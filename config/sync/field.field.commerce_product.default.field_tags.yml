@@ -1,4 +1,4 @@
-uuid: 30728fad-4d87-42de-9cf4-e4d6a03ecc45
+uuid: 772fde5b-7320-4091-8f31-b26c344fc8d0
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.storage.commerce_product.field_tags
     - taxonomy.vocabulary.tag
+_core:
+  default_config_hash: e6GG8XFrHLZYN8II3sV_ku1J4qBEYz5N2SDGvhaiG6U
 id: commerce_product.default.field_tags
 field_name: field_tags
 entity_type: commerce_product

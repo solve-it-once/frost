@@ -1,15 +1,17 @@
-uuid: 896763bf-81e9-4cc3-bc37-1d904326d81a
+uuid: f335cd80-9fa9-4ac9-bd00-a12b3b940205
 langcode: en
 status: true
 dependencies:
   module:
     - imageapi_optimize_resmushit
+_core:
+  default_config_hash: MbOk_U-4BM9Hss9NCmQDppLxG__LiSHc3LntndH3kBk
 name: resmushit
 label: Resmush.it
 processors:
   2023ebb3-ba2f-43b1-9cc1-f20e3defd2c5:
+    uuid: 2023ebb3-ba2f-43b1-9cc1-f20e3defd2c5
     id: resmushit
+    weight: 1
     data:
       quality: 80
-    weight: 1
-    uuid: 2023ebb3-ba2f-43b1-9cc1-f20e3defd2c5

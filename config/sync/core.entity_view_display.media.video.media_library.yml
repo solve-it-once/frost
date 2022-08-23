@@ -1,4 +1,4 @@
-uuid: ea3656f8-0372-44e5-873a-cb4f23e7d075
+uuid: 69859cfb-2644-4f37-8391-55022ad7392c
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: IFl6qEGRaOkBeY-q--BNTsnbvyLnnrO_SnII6TTWo2U
+  default_config_hash: uaC937Ot_73HJ-YMJ6pQ6paCyfF0n_bNbxBtpWd-JEA
 id: media.video.media_library
 targetEntityType: media
 bundle: video

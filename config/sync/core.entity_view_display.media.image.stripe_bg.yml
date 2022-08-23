@@ -1,4 +1,4 @@
-uuid: 134dda5e-c4b1-4961-8ce7-81b49f4e2bbc
+uuid: 97aa9290-ddda-4f69-b1aa-5cd7ac7f9f06
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - bg_image_formatter
     - field_formatter_class
 _core:
-  default_config_hash: uK0tJPzvV-FoYaW59EI2k2prqVYYlx2WtHP5Imu6vG8
+  default_config_hash: tBhFDWwKPPDNVRHpQvPmeBzts3TXVzTtgy6YsBQgtH0
 id: media.image.stripe_bg
 targetEntityType: media
 bundle: image

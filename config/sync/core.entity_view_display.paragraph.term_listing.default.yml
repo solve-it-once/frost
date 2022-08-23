@@ -1,4 +1,4 @@
-uuid: ed44f7b5-3419-48bc-b67b-f6609565bfd1
+uuid: 2191355d-3df4-4500-bcdc-98ed52fb2915
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - entity_reference_display
 _core:
-  default_config_hash: _Y24ekVkCYHG-RkMxPsVXtsj_kWmxV_RQDoZtRBNUSE
+  default_config_hash: nubgmHpHMhRb2e8sNKC4BCz3FfpTP1tXQpxpK9MjM3k
 id: paragraph.term_listing.default
 targetEntityType: paragraph
 bundle: term_listing

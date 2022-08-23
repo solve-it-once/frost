@@ -1,4 +1,4 @@
-uuid: 6bd309ec-648c-40e6-a6b2-cd3177cb6fd6
+uuid: 40eadc72-1eb3-4d8c-90af-f62194e39d55
 langcode: en
 status: true
 dependencies:
@@ -18,7 +18,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: ZuJW8jiS7jOw5tRCsWzrPJtaY3CZkEVy46d5RK3SiZY
+  default_config_hash: d2_0GBZL_2D6HGw-BsMR-rd2aHJlZoKhJTFGduyZPJg
 id: taxonomy_term.article_type.default
 targetEntityType: taxonomy_term
 bundle: article_type

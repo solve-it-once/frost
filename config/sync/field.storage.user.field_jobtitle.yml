@@ -1,11 +1,11 @@
-uuid: 24315b46-ac11-42da-b691-301cbe916313
+uuid: f7be18fa-2c2f-4651-bde8-092e5d1ca3d8
 langcode: en
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: wIZVbvhar-_frrg33SyQGeZ3BnO6Rmy0Kz_sNUbCFKk
+  default_config_hash: orrDJ6oZHm1cQ8RulJAFML34-uOd3ycT1bLW7k_vsD0
 id: user.field_jobtitle
 field_name: field_jobtitle
 entity_type: user

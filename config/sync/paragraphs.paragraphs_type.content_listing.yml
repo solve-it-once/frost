@@ -1,9 +1,9 @@
-uuid: 98272b06-b8da-4ba1-b6e5-c2cef22b65b6
+uuid: 5ed939c0-06b4-4f80-85aa-c6502282b202
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: xozLI_psm26LV2D1ttt1QpSPPO2TrbUOmoBHzTcXZMc
+  default_config_hash: xwc17ZMq3KwvQaWEm5i1mjn5dO7TRLXbTYegyfFuLik
 id: content_listing
 label: 'Content Listing'
 icon_uuid: null

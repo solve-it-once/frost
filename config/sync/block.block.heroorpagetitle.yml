@@ -1,4 +1,4 @@
-uuid: 053aabea-9786-4e58-91d8-bb19d6dc0d55
+uuid: dbe5a083-d770-43e7-ac77-adda1c56fd11
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,11 @@ dependencies:
     - frost_custom
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: Lx0QooL6Ggjb-yDQJGOaZ4NPxye8cVe5DUjdll4wlxY
+  default_config_hash: eT3iMHTfZYfrVdhKy5jlyVQTfK5E1iLxci2j8FCJFnA
 id: heroorpagetitle
 theme: frost_theme
 region: splash

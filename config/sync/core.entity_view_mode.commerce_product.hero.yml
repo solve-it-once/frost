@@ -1,9 +1,11 @@
-uuid: ae6a8d21-e438-4fc2-af06-42a06e45320c
+uuid: 18130b1b-875c-4532-8e23-f5cf81382a39
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: hCovynHzEVjUjaxIJPHmg7g3x2YFeky47zsOnY23kug
 id: commerce_product.hero
 label: Hero
 targetEntityType: commerce_product

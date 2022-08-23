@@ -1,4 +1,4 @@
-uuid: 5957ab73-0c21-4242-8cae-caad78fc25b7
+uuid: b77c4276-3033-444b-a544-02f0c8f3e648
 langcode: en
 status: true
 dependencies:
@@ -56,7 +56,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: EtcqOS7YSk1eWBubkLVhveQmlLHWE5Yq4Eexk71VTrk
+  default_config_hash: O6e78U9ZqMxq5lHrh8J_ErkpeZhPwu-WtjKotkZKan8
 id: paragraph.content_listing.default
 targetEntityType: paragraph
 bundle: content_listing

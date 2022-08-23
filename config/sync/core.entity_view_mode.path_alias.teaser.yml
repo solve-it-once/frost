@@ -1,9 +1,11 @@
-uuid: aa3407c9-7f15-48d5-b7b9-e82ae19e59d3
+uuid: c4c723e6-ed4e-4f14-9a4b-14b53f36e290
 langcode: en
 status: true
 dependencies:
   module:
     - path_alias
+_core:
+  default_config_hash: Xpg1PKWYlKvIha-i9VfogygFDGCD0tS3BtqbsM-rh4M
 id: path_alias.teaser
 label: Teaser
 targetEntityType: path_alias

@@ -1,9 +1,11 @@
-uuid: 79ae9200-3fdf-4c2b-9b89-69bfd70969db
+uuid: 64c2d35f-5486-4a8c-ad27-4a0e5d2aa5da
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: yeCTSXPdMrb8UBSJQQa0lIy4jRHgTYcLOaeumpD10jM
 id: commerce_product.plan
 label: plan
 targetEntityType: commerce_product

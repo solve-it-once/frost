@@ -1,4 +1,4 @@
-uuid: 79184130-898c-40ad-bd35-00c7dd3b1479
+uuid: 80febcc0-65ec-4e30-a24a-081c33703f37
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - link
     - text
 _core:
-  default_config_hash: h0RMGP4k1aKH0KHK29k5Q8gBzxf7XpRhVSqcCHzd3do
+  default_config_hash: lw6vQCZ3ZkF3iIEHn0dY1Al-Y3d67FzBYVR095GsikY
 id: paragraph.media.search_index
 targetEntityType: paragraph
 bundle: media

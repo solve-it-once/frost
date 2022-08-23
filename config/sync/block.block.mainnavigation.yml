@@ -1,4 +1,4 @@
-uuid: 363eb568-22e2-4a37-aacb-26cd9cdbcc27
+uuid: 95440f22-f419-4c1e-8771-3437d476c06a
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,11 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: PWJThn6VxQ3gRMED2TtfDmVvB13CZA1S7lSYrWrYnBU
+  default_config_hash: fMSdk8J2R_tldjSt-58q-Lr4vWbAVHejB3dIk3cZ33w
 id: mainnavigation
 theme: frost_theme
 region: nav

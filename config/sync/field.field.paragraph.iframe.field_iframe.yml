@@ -1,4 +1,4 @@
-uuid: e763f5da-981f-4563-975c-96a681859da1
+uuid: 5e901c56-7a16-4313-b2a0-d1a216f33e27
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - iframe
 _core:
-  default_config_hash: k0KraOZaEUPLc09GoJwGKzxTADvKVKf_hW95jRkvYcw
+  default_config_hash: q4Gqoq90OMqcLwgMnvpAlCloiFczNJsmB9-Ry8LYoqI
 id: paragraph.iframe.field_iframe
 field_name: field_iframe
 entity_type: paragraph
@@ -29,4 +29,5 @@ settings:
   tokensupport: '0'
   width: ''
   height: ''
+  headerlevel: null
 field_type: iframe

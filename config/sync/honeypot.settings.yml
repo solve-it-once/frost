@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: 6zNuIwUhnWzIML55dpQYYd1DBXLwuyx1dMmtGgtccr0
+  default_config_hash: IYjlaoMgUVjJtgUDhPJumN05I4XPWs5i1vnyI7b6ql4
 protect_all_forms: true
 unprotected_forms:
   - user_login_form

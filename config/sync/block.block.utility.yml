@@ -1,4 +1,4 @@
-uuid: 770e027b-70d1-4f4c-9ee5-01ba91df28e2
+uuid: 4fc8bb4e-0d34-4959-87b3-2f641daa74ea
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,11 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: jgiY6U7fZl_x7PqeRk7fPoiYq9U_rueYBZKB501H-FA
+  default_config_hash: C0c6e3gcZ9ttUpxrlpmBdb3slhrNiJmF2C3J8DMu3fM
 id: utility
 theme: frost_theme
 region: utility

@@ -1,4 +1,4 @@
-uuid: d596a380-8f87-410d-8fc1-9a712fe97aad
+uuid: 065adf18-820d-4e31-8ada-01a0af790caa
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ dependencies:
     - entity_reference_revisions
     - user
 _core:
-  default_config_hash: BKXX95GJqz0VkANsNc8xud8op69qNHG-NBLwbttN8ls
+  default_config_hash: q0ix0kCoaIDZj1AsvkmZUhl4jQSDhnlpLd60aCVw_jo
 id: node.page.default
 targetEntityType: node
 bundle: page

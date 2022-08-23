@@ -1,4 +1,4 @@
-uuid: 71883b17-0f5a-402f-a65a-07ca50b94da1
+uuid: fe8ea6ad-7938-4ce7-ad2b-c6a8fc0c17a2
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,11 @@ dependencies:
     - contact_info
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: to9a3uraRuVZ5ymzHX5W1e9dauvuG_NlHmgHMJ6ZUVM
 id: phone
 theme: frost_theme
 region: footer

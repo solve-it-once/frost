@@ -1,29 +1,11 @@
-uuid: f312709d-8f27-4068-ab3f-a184b67b2a51
+uuid: 69818ac4-75dd-4a45-9f41-8b86fde1d5f6
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: BAI1A8jx_nUYALwXzMG9iH4OBfAuQCMl1_-NQA8S2T0
+  default_config_hash: puBstSLDz8mbaWU357zaqQDBGMGsJzG0j-TQNQkjg20
 id: '404'
 label: '404 page not found'
 tags:
-  image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
-  robots: noindex
-  description: '[node:field_seo:entity:field_seo_description]'
-  news_keywords: '[node:field_seo:entity:field_seo_news_keywords]'
-  title: '[node:field_seo:entity:field_seo_title] | [site:name]'
-  shortlink: '[site:url]'
   canonical_url: '[site:url]'
-  og_phone_number: '[contact_info:phone]'
-  og_url: '[current-page:url:absolute]'
-  og_email: '[contact_info:email]'
-  og_postal_code: '[contact_info:address:postal_code]'
-  og_locality: '[contact_info:address:locality]'
-  og_street_address: '[contact_info:address:street_address]'
-  og_site_name: '[site:name]'
-  og_title: '[node:field_seo:entity:field_seo_title]'
-  og_region: '[contact_info:address:region]'
-  og_image: '[node:field_seo:entity:field_seo_image:entity:url]'
-  og_fax_number: '[contact_info:fax]'
-  og_country_name: '[contact_info:address:country_name]'
-  og_description: '[node:field_seo:entity:field_seo_description]'
+  shortlink: '[site:url]'

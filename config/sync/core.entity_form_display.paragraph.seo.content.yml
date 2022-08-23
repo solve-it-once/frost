@@ -1,4 +1,4 @@
-uuid: d830e2b0-ea8d-4726-a413-7ea37f0f0a71
+uuid: be719221-e3d5-4f97-9c94-d183ad3b2c3f
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - media_library
     - media_library_edit
 _core:
-  default_config_hash: uUF0c8EUtC6okWN0Qtm3KZjs1ruxCOSlw5r2V1fqsMs
+  default_config_hash: NtOFEQbgFb3COGYbi5K8KNNko8WUthgQ3i1e_Tco_2c
 id: paragraph.seo.content
 targetEntityType: paragraph
 bundle: seo

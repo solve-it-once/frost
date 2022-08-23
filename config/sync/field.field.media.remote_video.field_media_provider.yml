@@ -1,10 +1,12 @@
-uuid: c16ccc00-cad6-4541-b13b-323aad20ca26
+uuid: 4ae34462-f53b-45c1-829d-65e960062fa0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_media_provider
     - media.type.remote_video
+_core:
+  default_config_hash: bSCor_xAbfib4yTGMet6_XfqWw_tr-nL5Br1AdDLxaI
 id: media.remote_video.field_media_provider
 field_name: field_media_provider
 entity_type: media

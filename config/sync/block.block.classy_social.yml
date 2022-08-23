@@ -1,0 +1,26 @@
+uuid: 787b1028-1f8a-4938-bc95-033d30e223f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - contact_info
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: margin-top--40px
+_core:
+  default_config_hash: Of29ptvQ2EoVa_pM6H9Y5VyhgitV_Uui-89FOYQL73I
+id: classy_social
+theme: classy
+region: sidebar_first
+weight: -6
+provider: null
+plugin: social
+settings:
+  id: social
+  label: Social
+  label_display: '0'
+  provider: contact_info
+visibility: {  }

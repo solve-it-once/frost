@@ -1,4 +1,4 @@
-uuid: bd69c1d6-70a4-4f29-aa15-7589d1fbd86f
+uuid: 55bacda1-5a61-4088-8a82-b73366cfe94d
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.stripe
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: fm0dK3aKHku2GoCDYmYOx8zKsiO7KoRGV8K4_xOIpeI
 id: commerce_product.default.field_hero
 field_name: field_hero
 entity_type: commerce_product

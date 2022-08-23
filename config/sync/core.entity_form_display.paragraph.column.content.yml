@@ -1,4 +1,4 @@
-uuid: 91503ec9-bc8b-4039-87bc-3ee80eac0285
+uuid: 5a26a6ab-4ca7-4c77-963b-89a4d3b3a042
 langcode: en
 status: true
 dependencies:
@@ -25,7 +25,7 @@ dependencies:
     - paragraphs
     - paragraphs_features
 _core:
-  default_config_hash: _1ZPJgrnaitRiqXVdG9U3VxkS-bTUZhOqy1HWTQqZsY
+  default_config_hash: CKoqkKTUELfJaDIapg-YFXhWiZM_6hO6l-Hh4AlUjUM
 id: paragraph.column.content
 targetEntityType: paragraph
 bundle: column

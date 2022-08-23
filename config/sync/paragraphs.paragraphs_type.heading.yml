@@ -1,9 +1,9 @@
-uuid: f4655b16-294f-4cee-b91e-54ff97d01a74
+uuid: 947fa232-60a8-4063-ad7d-70fb7c3683bd
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: vmMA10s0aObMC2sF2L__XWSpfiO8jTL6raLNM-DhO3Q
+  default_config_hash: CrsFmmLIdg2yvj9FuKVPlJoz1tT7BmGMYmuz8nqmExA
 id: heading
 label: Heading
 icon_uuid: null

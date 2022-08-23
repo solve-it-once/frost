@@ -1,9 +1,11 @@
-uuid: 0e0d1700-fa69-476f-a026-be8cbbb0714d
+uuid: f8ae6f89-454f-43ac-8738-e06b0b16c2db
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: 7MW7pOMNbx3M2f-JQ-fsIypnsaC5WZein0KgjiNTu0o
 id: commerce_product.ief
 label: ief
 targetEntityType: commerce_product

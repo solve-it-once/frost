@@ -1,4 +1,4 @@
-uuid: f908c286-81d7-4530-9284-30be5209fc3b
+uuid: e242fd81-2051-4821-98ea-08ab50a2c126
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: YKcbQNLN7rOw1jhMDmhqoYNs2VdcfiFEYkUuKnQGeec
+  default_config_hash: HQQ4vQixBMZVVvA7lrRcnYtnPc255gqomnPBXZulN6A
 name: Tag
 vid: tag
 description: 'Freeform description and relationships between content'

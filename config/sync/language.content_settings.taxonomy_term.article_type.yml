@@ -1,9 +1,11 @@
-uuid: 2bec99b2-82be-4e2d-a23f-5604bc13d8ea
+uuid: 11265c41-f1d0-4a63-bf58-51666590c8ad
 langcode: en
 status: true
 dependencies:
   config:
     - taxonomy.vocabulary.article_type
+_core:
+  default_config_hash: RuSfar1tuOVj8H1CRgLLPR0FP75uFG2pZzT-nxjc1p0
 id: taxonomy_term.article_type
 target_entity_type_id: taxonomy_term
 target_bundle: article_type

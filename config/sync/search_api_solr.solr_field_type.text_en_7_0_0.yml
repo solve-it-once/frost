@@ -1,12 +1,9 @@
-uuid: b45a1b48-5d40-40f9-b93c-6aabb5c4601b
+uuid: 7e1978a3-dbcb-4b73-adaf-b5d33a20e88f
 langcode: en
 status: true
-dependencies:
-  config:
-    - language.entity.en
-  module:
-    - search_api_solr
-    - language
+dependencies: {  }
+_core:
+  default_config_hash: J4VBi6Hc1N9al8XdPZgGYVnRTfW4k2-_NG35_4bCp58
 id: text_en_7_0_0
 label: 'English Text Field'
 minimum_solr_version: 7.0.0

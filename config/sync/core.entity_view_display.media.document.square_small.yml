@@ -1,4 +1,4 @@
-uuid: 30fb4bc2-3332-4bd8-8363-dd3af897dbca
+uuid: 9fd0b8e3-2dc0-408b-99e5-6acbc0d16824
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - image
     - linked_field
 _core:
-  default_config_hash: MkHCpc5hNfgD6gz_xod8m3fGaRUjw_nhNuLOEAmxnog
+  default_config_hash: K79RoqZTZJaRIrLEDwW2JHjEbGdfDJx19RyQ8hRP5HY
 id: media.document.square_small
 targetEntityType: media
 bundle: document

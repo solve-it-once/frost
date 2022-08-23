@@ -1,4 +1,4 @@
-uuid: 483b7021-6acd-4977-8abc-e2c2b80e77e6
+uuid: 7e47dbf4-a350-4ede-8fc8-d6fa7d3aa112
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
+_core:
+  default_config_hash: d4lFIP_FHKnf-DbPK_YPm6v7WvUxLnfUb9UXN47KW30
 id: media_listing
 label: 'Media listing'
 icon_uuid: null

@@ -1,9 +1,11 @@
-uuid: bb4d486d-5808-4c4d-8374-08a5bb3c8c2b
+uuid: 1aefe81a-7765-4767-abb1-d09de3e82031
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: bTcRNkwoR6_r3db7EkIdd2LAnuUTrskYHoure2QXb9I
 id: paragraph.tab
 label: Tab
 targetEntityType: paragraph

@@ -1,4 +1,4 @@
-uuid: 724720fd-a5c6-445f-9376-1486f0b47e03
+uuid: e2ba04d9-6415-4050-bc05-1656d9547ccc
 langcode: en
 status: true
 dependencies:
@@ -32,7 +32,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: sgRuCt2qyIygCaqTl3hghZjV80swr_FdFZYz2kdS6dc
+  default_config_hash: dE4qaYrRnUk7cw_rAVVxBk84X6gIpVpNlRv5OODK_UY
 id: node.article.ief
 targetEntityType: node
 bundle: article
@@ -66,6 +66,11 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 1

@@ -1,4 +1,4 @@
-uuid: cea5e519-4e2e-495f-9ec7-e8f040bbdb1b
+uuid: f96c52fc-9503-46ab-b4a1-e04b82bf1bde
 langcode: en
 status: true
 dependencies:
@@ -27,7 +27,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: CTNO83okcZHEkrqArBTNfPoHAeX56MMkrenVQDsYRUU
+  default_config_hash: 2GpJRZ1RnwmFJAiaXe67nQpy61z7hiw2OGiuapJxBJ4
 id: node.article.field_components
 field_name: field_components
 entity_type: node

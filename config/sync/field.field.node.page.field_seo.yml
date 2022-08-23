@@ -1,4 +1,4 @@
-uuid: 34db3ece-8408-4b43-9c58-254f949c682c
+uuid: f283837c-7ff8-4012-8140-bc2691e4b584
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: jEAHF0OXIbzBSYTxAynnU7UAhukEjNbzPLhpOi88A_I
+  default_config_hash: j5YQjXzzEG3DOO_9aPGHZ3g0i6IGHP36_ViRkppCfJg
 id: node.page.field_seo
 field_name: field_seo
 entity_type: node

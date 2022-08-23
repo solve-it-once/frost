@@ -1,0 +1,31 @@
+uuid: b2f022fe-2af7-4223-8734-b18aa787058a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: fMSdk8J2R_tldjSt-58q-Lr4vWbAVHejB3dIk3cZ33w
+id: classy_mainnavigation
+theme: classy
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

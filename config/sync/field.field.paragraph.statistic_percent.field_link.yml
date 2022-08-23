@@ -1,4 +1,4 @@
-uuid: 7f1f58f9-2792-4729-b3bc-1270c345d519
+uuid: 6abb4251-51b3-44a3-b2d7-1acc92935a81
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: 9LOqsMPYPee3FnrL7TWm2ee3UI33cfYg7rdhEwHzdw8
+  default_config_hash: v0NedPqOLO41Q5ePKtftv8I3jI04DcG0kMTPUROop1I
 id: paragraph.statistic_percent.field_link
 field_name: field_link
 entity_type: paragraph

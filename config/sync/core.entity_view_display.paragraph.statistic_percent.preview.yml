@@ -1,4 +1,4 @@
-uuid: 1cb0418e-833c-4940-9ec6-aea4a6ad7fbd
+uuid: 797187e6-434f-4c3d-92e3-a1c3e389f9dc
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: lB7IhBC7Q8XJFs5CE8QoO4ZfN_4Tk0seoif5FzDd0oA
+  default_config_hash: nJqt6Jq2TF3tVJLgvjhleJGttE18Aqm0Z6JNZUAcYFc
 id: paragraph.statistic_percent.preview
 targetEntityType: paragraph
 bundle: statistic_percent

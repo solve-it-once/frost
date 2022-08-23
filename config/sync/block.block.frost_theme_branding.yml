@@ -1,4 +1,4 @@
-uuid: 127c7dad-3f41-4f0d-8bde-9bec38868096
+uuid: 8fc88463-0e50-4faa-af1a-f3667ec944f8
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ third_party_settings:
   block_class:
     classes: text-align--center
 _core:
-  default_config_hash: hpFjsDcBwc4nEnze_eK-hZaa5IHk3tvfCW8b6tGDx78
+  default_config_hash: 3pglTDIH_lvd34tBl2MA5Wf43YLbSzyy7FkagggixsU
 id: frost_theme_branding
 theme: frost_theme
 region: header

@@ -1,4 +1,4 @@
-uuid: 9f2a063a-98aa-4453-89ca-9731808d7843
+uuid: 9927a340-38f4-4c01-95dd-6a1999a344d7
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: tDrGiM-n2Pth7hBJSeIWxx-HWuXT14b0D_MXveqB8ZE
+  default_config_hash: gz-wVPEqE6DOAqup8YaVnYEI3D-LdCQSUZUSdNHetVo
 id: taxonomy_term.article_type.field_hero
 field_name: field_hero
 entity_type: taxonomy_term

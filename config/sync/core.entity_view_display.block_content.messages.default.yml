@@ -1,4 +1,4 @@
-uuid: 361ccfbd-7c14-4379-8161-ebccc063a65e
+uuid: e2a19617-1d45-406e-b23b-eba4c34c4db8
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: 5Cd5X_ls_EdTouqqxTjn6ue7Zfu_okUI89AdlMDxFUU
+  default_config_hash: q0aVlShEgiP3YkGVodkzSpxJL8RfcdnT-xhYh5w1fY4
 id: block_content.messages.default
 targetEntityType: block_content
 bundle: messages

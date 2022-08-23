@@ -1,4 +1,4 @@
-uuid: fb815750-15eb-4d8a-9bd1-10fb9b647651
+uuid: bdaa0d00-ae56-4c07-a69a-70efdbf6376b
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: 6Oe4A85rVu15d-NT2UM_lwdYXTbZR-GX56PKgJfXYhQ
+  default_config_hash: F1IttV_gRzAfiw8aiLSlihYfXCa-gnnAuJG0EePBRwM
 name: 'Article type'
 vid: article_type
 description: 'Provides the ability to differentiate between blogs, news, and other kinds of articles on the site'

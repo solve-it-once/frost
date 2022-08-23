@@ -1,4 +1,4 @@
-uuid: 3d39a777-c124-4b11-9d44-40e94e5e166f
+uuid: 20fc5141-2cf8-48e0-8b60-cefdc41520df
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.spacer.field_style_vspx
     - paragraphs.paragraphs_type.spacer
 _core:
-  default_config_hash: 7N5OiyxmslycTNlV4tHx9RjRavK1ZgA7SgPKPM6GLOY
+  default_config_hash: eBQ-F3kE1j0qQNtiEf1ejO7HLKjkb2BZlPGVz2KWXKI
 id: paragraph.spacer.default
 targetEntityType: paragraph
 bundle: spacer

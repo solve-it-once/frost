@@ -1,9 +1,9 @@
-uuid: 57219bd2-06a1-40a1-9855-fc7ca4e838a2
+uuid: 2cf7016f-5bda-420a-867e-3c7b2dfa665e
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: Adc0s48JHI-jNEDAeyGFbcjgEKabNYC1BGpd2mJzap4
+  default_config_hash: 6ororzvqUrd5qhFU6GOowf-d5VyVWDIiUUbpzfqPePE
 name: content_area
 label: 'Content Area'
 effects:

@@ -1,4 +1,4 @@
-uuid: 0e1cec24-f29e-4bf1-aae3-5f5159a43fff
+uuid: 098a5aae-0ca3-4422-a3d6-d11a2b2e8a0c
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - field.field.paragraph.seo.field_seo_title
     - paragraphs.paragraphs_type.seo
 _core:
-  default_config_hash: uUF0c8EUtC6okWN0Qtm3KZjs1ruxCOSlw5r2V1fqsMs
+  default_config_hash: lrAx7-5PmR2KhCYBxwmB5rkDepBS34MgMpNAtsnbofY
 id: paragraph.seo.settings
 targetEntityType: paragraph
 bundle: seo

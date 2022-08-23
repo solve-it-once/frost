@@ -1,0 +1,25 @@
+uuid: 6a840862-f06e-4396-b575-ee5c1dc7bbfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: Qsb7masrzji4kDrH8-zUCtBIQnK0hsrlrvFihpItgYA
+id: stable_local_actions
+theme: stable
+region: sidebar_first
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

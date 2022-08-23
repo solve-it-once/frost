@@ -1,11 +1,14 @@
-uuid: 7939b5dc-14fb-4322-956d-af3f9b0a5c35
+uuid: a03f9941-8103-44b1-9364-858cce0184d0
 langcode: en
 status: true
 dependencies:
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: XgpBrCgCNv_inJHjCFwvIth0EJpAkM2QgtO1EMt58Sk
+  default_config_hash: 5srEs1m6O4paft_AIUfhJ2_DlWb5vrsqFeAetTgxyfU
 id: frost_theme_local_tasks
 theme: frost_theme
 region: pre_content

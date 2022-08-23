@@ -1,4 +1,4 @@
-uuid: 0390fa61-35a0-4630-a303-0a18c15d0791
+uuid: 8312f541-9501-4155-a48e-2d4cd07b2740
 langcode: en
 status: true
 dependencies:
@@ -35,7 +35,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: sgRuCt2qyIygCaqTl3hghZjV80swr_FdFZYz2kdS6dc
+  default_config_hash: BPu96B9O9_Ujb53Lmu93yetNWzYgGdRrxt45Dfi5OD0
 id: node.article.default
 targetEntityType: node
 bundle: article

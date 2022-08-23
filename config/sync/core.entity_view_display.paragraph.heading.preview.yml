@@ -1,4 +1,4 @@
-uuid: 29a022ec-8f5e-4607-9834-11c847fa157b
+uuid: b6b64d6a-c85f-4d30-955e-0228385de185
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - frost_custom
 _core:
-  default_config_hash: RteCBbDBLf_ikC2gYKalGo_KJdqRrk2ABi87rq_uwIg
+  default_config_hash: gHpzAeGbFANg5t7TtdgU78fWnGxRcwWLkX2XgciOcLs
 id: paragraph.heading.preview
 targetEntityType: paragraph
 bundle: heading

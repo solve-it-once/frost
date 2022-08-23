@@ -1,4 +1,4 @@
-uuid: 5083603d-381b-48ee-ae33-c08bb0dd184e
+uuid: 8e3120ec-81e9-420a-9697-ab7fb0940252
 langcode: en
 status: true
 dependencies:
@@ -40,7 +40,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
+  default_config_hash: g0y21rRg7-8nD-wl5wLffXAVBE1o4sduxrTztU7c_EY
 id: commerce_product.default.teaser
 targetEntityType: commerce_product
 bundle: default

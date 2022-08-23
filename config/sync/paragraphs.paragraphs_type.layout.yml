@@ -1,9 +1,9 @@
-uuid: ea9250c6-3585-4007-aedb-6cdca429a68b
+uuid: 48fdb877-b17a-4f42-8e5e-75ad214ac186
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: kN4xBTSmWCuKQB0hBrJTbaoWrfU0YUXSaQk_ePCVO80
+  default_config_hash: 8jNNTndzV3uyHoBz4mP51GuIESoR8Ewm5xwDFDb_mcA
 id: layout
 label: Layout
 icon_uuid: null

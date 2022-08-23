@@ -1,9 +1,11 @@
-uuid: f0fa33b4-2624-400c-b9d6-63d6463fb793
+uuid: 91f9284e-3b4b-4397-90df-9326756952c3
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: L7an7mjnAs-4y-5QQMTdJAc2eCCdDGQwB-WFJ0Up9KM
 id: commerce_product.search_index
 label: 'Search index'
 targetEntityType: commerce_product

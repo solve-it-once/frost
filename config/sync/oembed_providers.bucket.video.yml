@@ -1,11 +1,13 @@
-uuid: a8640da0-ce05-4bb6-ad15-a36899b47c43
+uuid: 3c7fcdee-b995-4ae4-8359-94848c09dc72
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 96QBs29w24JHakk_9dsn2sWumVEmXfC5wAK2rJ9P3z4
 id: video
 label: 'Remote video'
-description: 'oEmbed providers for the remote_video media type specifically'
 providers:
   - TikTok
   - Vimeo
   - YouTube
+description: 'oEmbed providers for the remote_video media type specifically'

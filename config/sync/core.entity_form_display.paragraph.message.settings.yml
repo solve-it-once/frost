@@ -1,4 +1,4 @@
-uuid: 5841e072-cb8f-4805-9aa5-3986eb5adab9
+uuid: a8449be0-78d5-4307-b5ae-3ae1bf360f5a
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.message.field_text
     - paragraphs.paragraphs_type.message
 _core:
-  default_config_hash: vMbkRy_PnE78iqqo5USyaqX6h8TvTwsr8HewEFF_R8k
+  default_config_hash: BqytIoJXeb1dQOejP8N9avx7hL9Rmro1Q7SQL4B5KDc
 id: paragraph.message.settings
 targetEntityType: paragraph
 bundle: message

@@ -1,4 +1,4 @@
-uuid: f0b0974d-6a04-43bd-9fa7-1324b8875b7e
+uuid: d406e553-cb05-431d-a7de-af44a810566c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.hotspot.field_text
     - paragraphs.paragraphs_type.hotspot
 _core:
-  default_config_hash: ZnK_gSvj6KnBwqp1V0PyUcKh9euQ8y9mYir9R1wQGJE
+  default_config_hash: kqjVrCuJA-7jwZMY-LK7otHU3wx6ziQ_QXeeFjnUurY
 id: paragraph.hotspot.settings
 targetEntityType: paragraph
 bundle: hotspot

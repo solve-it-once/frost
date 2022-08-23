@@ -1,4 +1,4 @@
-uuid: f75be8aa-2bc8-4007-9bf0-22c3fc56ef28
+uuid: 7d888466-cb4c-4c8f-9928-c346c88b74d9
 langcode: en
 status: true
 dependencies:
@@ -29,7 +29,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: bDB2Gjvytst760HmQo80BOqI7rMlKnlJd-3tokMF_NU
+  default_config_hash: BnAYdDDKsfRiTzlkT61GLmwq5qrH_RN_OooKklNs0QY
 id: paragraph.stripe.field_components
 field_name: field_components
 entity_type: paragraph

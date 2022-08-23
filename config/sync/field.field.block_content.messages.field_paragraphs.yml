@@ -1,4 +1,4 @@
-uuid: 97d071bc-af52-49a1-a4ab-9abeb63e52ab
+uuid: 2ba3d4d7-3906-4af3-ae37-e7dac48892a4
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: Nrug25n3n3EkR4T3XVLOynBzreaaw5WyEtO-wg1L1Ko
+  default_config_hash: jCswrIP_a6SGPK0bKVqYf7TribW3NE56Sj4NJdcSt7Q
 id: block_content.messages.field_paragraphs
 field_name: field_paragraphs
 entity_type: block_content

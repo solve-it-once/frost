@@ -1,4 +1,4 @@
-uuid: 9af37d29-f8aa-4545-bacb-5ea0711e95a5
+uuid: fb15a779-2462-4c11-aa67-d2a864ecb4c9
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 92m00AdmfLgF_t6tDMjNY7T5v_ngf02sSOTzXy4b9vY
+  default_config_hash: c_NN1rsyR9kWvCn5WDuleIkF_eYo01XWYEh0L4vvQ10
 id: taxonomy_term.tag.plan
 targetEntityType: taxonomy_term
 bundle: tag

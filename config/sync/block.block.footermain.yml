@@ -1,4 +1,4 @@
-uuid: 5742e944-a018-47f3-8d46-5372e4afd55c
+uuid: e57226c1-8274-40d0-b329-0145f0e5aef2
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,11 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: v-tzcRHF1i-HqwJVY0DgfM5LX6s1lAXhza1OyqN33ZE
+  default_config_hash: r_SgCEOmUTMH7X1kNZpGOIg64yqIqnRlJgKRMN6-atU
 id: footermain
 theme: frost_theme
 region: footer_menu

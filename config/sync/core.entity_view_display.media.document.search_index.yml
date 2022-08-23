@@ -1,4 +1,4 @@
-uuid: 7fe6f454-ef55-46a3-9330-8e9756d2fe96
+uuid: 3f10e345-c65e-42e2-9b25-f0b5b9da2268
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - field_formatter_class
     - file
 _core:
-  default_config_hash: SMXDXPgdKoRDz6FrUgh2bdkhjWGv3NEdOJfhdh2lFk8
+  default_config_hash: oIoUiOObKtuUO0G9aFVSdCt9ExRaFP4Dkem6ujEQBfc
 id: media.document.search_index
 targetEntityType: media
 bundle: document

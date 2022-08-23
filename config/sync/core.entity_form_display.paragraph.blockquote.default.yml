@@ -1,4 +1,4 @@
-uuid: 7b4dc8b9-e5c6-414b-a33c-cb540d83e53e
+uuid: 623f2d0b-a9c9-47ae-bc85-71a7fdef3d34
 langcode: en
 status: true
 dependencies:
@@ -55,7 +55,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: fDlZ8IS2CfPg5jczPzjCsxPS4PhnQxx12q3s9FgU068
+  default_config_hash: GcK_VeH-Ubq4T_Vfh8PCeGH1Dpg18vknYMlrdxn3H4c
 id: paragraph.blockquote.default
 targetEntityType: paragraph
 bundle: blockquote

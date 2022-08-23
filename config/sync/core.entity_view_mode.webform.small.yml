@@ -1,9 +1,11 @@
-uuid: 8c12f933-4a6e-4e39-858a-2e4a3d2e374e
+uuid: 64ecad71-90b9-4a58-b43e-ac2a3ba54096
 langcode: en
 status: true
 dependencies:
   module:
     - webform
+_core:
+  default_config_hash: WP3xNuZ5wLLpxH5DT_QB06v6rhTheIxfYteFJGMEoIc
 id: webform.small
 label: Small
 targetEntityType: webform

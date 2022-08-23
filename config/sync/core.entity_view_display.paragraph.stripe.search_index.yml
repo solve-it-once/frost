@@ -1,4 +1,4 @@
-uuid: dcc1e598-59ac-4f37-b73e-8e3f23b18bcc
+uuid: 7566000c-485d-4428-a55e-0c800cd6152c
 langcode: en
 status: true
 dependencies:
@@ -23,7 +23,7 @@ dependencies:
     - entity_reference_revisions
     - field_formatter_class
 _core:
-  default_config_hash: O8PrhOi-E17W_zTyvxxYGzbuiL2WGHCwLY9pR-ZOgBo
+  default_config_hash: 0ON9WhwQ250S_2hEhiKq3jNQ5acD_MNxdRrbTVGyiAY
 id: paragraph.stripe.search_index
 targetEntityType: paragraph
 bundle: stripe

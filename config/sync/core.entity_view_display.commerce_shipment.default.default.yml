@@ -1,4 +1,4 @@
-uuid: c978be45-a27e-4f61-861c-a6ad8c7bae6d
+uuid: 15a25c00-71ab-4b68-b443-467c9b9c6c49
 langcode: en
 status: true
 dependencies:
@@ -18,70 +18,69 @@ mode: default
 content:
   amount:
     type: commerce_price_default
+    weight: 5
+    region: content
     label: above
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-    weight: 5
-    region: content
   items:
     type: commerce_shipment_item_table
+    weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: content
   package_type:
     type: string
+    weight: 2
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
-    region: content
   shipping_method:
-    type: commerce_shipping_method
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    type: commerce_shipping_method
     weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   shipping_profile:
     type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
-    region: content
   state:
-    type: state_transition_form
     label: hidden
+    type: state_transition_form
+    weight: 7
+    region: content
     settings:
       require_confirmation: true
       use_modal: true
     third_party_settings: {  }
-    weight: 7
-    region: content
   title:
     type: string
+    weight: 0
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
   tracking_code:
     type: string
+    weight: 6
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
-    region: content
 hidden:
   original_amount: true
-  search_api_excerpt: true
   weight: true

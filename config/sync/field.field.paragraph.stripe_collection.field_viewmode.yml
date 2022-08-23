@@ -1,4 +1,4 @@
-uuid: f509d99b-96bc-4c05-a1ce-4712684b2007
+uuid: aa6cc6d7-7ba1-4f7b-8ed4-9621961995eb
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.stripe_collection
   module:
     - entity_reference_display
+_core:
+  default_config_hash: P6ky60p4R_VRj0e5NstoAT0AGjndeWowMhSxGPlvi20
 id: paragraph.stripe_collection.field_viewmode
 field_name: field_viewmode
 entity_type: paragraph

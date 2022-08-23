@@ -1,4 +1,4 @@
-uuid: c65e5e53-56b4-46aa-83b1-57f3a3d60934
+uuid: c1e129a0-bfd6-4e1b-910e-e8009991a07a
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: a9V9YsC8LncYlP-7Ie0cRhYd_y0O76Ivgn6i7erJj0U
+  default_config_hash: yBRn4ztiL4zKdUBLqgHrA2D5gXUAuCJj7dpXI0VWCeo
 name: Page
 type: page
 description: 'Generic and catch-all content type that can be used for storytelling, housekeeping, or functional purposes. If a piece of content doesn''t feel like an article or event, it may very well be a page.'

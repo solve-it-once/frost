@@ -1,4 +1,4 @@
-uuid: 1d61a38c-4ad5-4e0f-b47a-a66d53fcd59f
+uuid: 957b73c0-08e0-463c-a03e-193a4183f060
 langcode: en
 status: true
 dependencies:
@@ -13,13 +13,13 @@ bundle: from_library
 mode: default
 content:
   field_reusable_paragraph:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: true
-    third_party_settings: {  }
     weight: 0
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden:
   search_api_excerpt: true

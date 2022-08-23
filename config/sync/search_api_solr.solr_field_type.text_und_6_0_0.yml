@@ -1,9 +1,9 @@
-uuid: ab17eec4-f852-4ed2-93db-48357adbdb22
+uuid: 34d6dc3a-6c85-487b-ab07-7394397290f0
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: yHnX_bKRuFYVVE_my-zV78haY6R85eSmdzh6OZK2wxA
+  default_config_hash: dpN5nQ9TYAnj96GAoBDjFmac2S7IovDn_VG-py4iflk
 id: text_und_6_0_0
 label: 'Language Undefined Text Field'
 minimum_solr_version: 6.0.0

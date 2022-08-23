@@ -1,9 +1,9 @@
-uuid: 90db534e-88dd-42a8-acc9-9ca33faca8c7
+uuid: 8cf3469e-cc73-4774-84f1-b6da42f618a1
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 8tPIlQQl_fKkc4ZIv2k3nyXthhwD-t8UInCuuaKyROY
+  default_config_hash: sJwTVShLl9jhoMZ_cAyk2zo15yD6Np0nS-5k4Vse3q8
 id: audio
 label: Audio
 description: 'Upload an mp3, wav, or aac file and display it as an audio player.'

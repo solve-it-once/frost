@@ -1,4 +1,4 @@
-uuid: b5452356-75c5-4000-a0db-cd942a881dc7
+uuid: 6a3b4f6e-5a72-4228-85ae-4f7b5f9b4e36
 langcode: en
 status: true
 dependencies:
@@ -33,7 +33,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: bVqhDE0CBvUi4RPHqKu4sBhUOUwOTgcHVhn5PkfngLU
+  default_config_hash: bvZISXUkCqIcLwuFy3l7bF6q_zifc4JASiGp6gfVxe0
 id: commerce_product.default.plan
 targetEntityType: commerce_product
 bundle: default
@@ -55,6 +55,11 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   created: true

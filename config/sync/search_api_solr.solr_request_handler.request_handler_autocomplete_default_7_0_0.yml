@@ -1,9 +1,9 @@
-uuid: 906ac3b1-1385-4d40-a787-27f0a3784ab8
+uuid: 2d647d94-553c-4656-be6d-848a0bbe0a8e
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: rtnDdavL1ZWVTxGi4n-zDM9bVyEmhv7QTQgyFY3RMO8
+  default_config_hash: pYuahO9bLm6CkxAFR4fieJZxTfosiKyxUCMLG2rApeE
 id: request_handler_autocomplete_default_7_0_0
 label: Autocomplete
 minimum_solr_version: 7.0.0

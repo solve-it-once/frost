@@ -1,4 +1,4 @@
-uuid: 6acb802d-c9c3-47d0-9462-94f940a470f6
+uuid: bd00b776-7214-495d-a781-f062c04c81e7
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
     - paragraphs.paragraphs_type.product_listing
   module:
     - inline_entity_form
+_core:
+  default_config_hash: o9BRTsN6Ggd0T5KQysIaV_jtHOYvTdHPiwSEsPlrOiI
 id: paragraph.product_listing.content
 targetEntityType: paragraph
 bundle: product_listing

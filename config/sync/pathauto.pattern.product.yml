@@ -1,9 +1,11 @@
-uuid: 4fc7bfce-cd49-45bd-87e2-5749756ea539
+uuid: 7c1332a6-e0a9-434a-9114-86d6a5aac862
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: JVf5hxiyNajE8jgqzZzmJOdRMBKh7LDBrAeR_u8ir-A
 id: product
 label: Product
 type: 'canonical_entities:commerce_product'

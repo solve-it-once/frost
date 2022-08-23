@@ -1,4 +1,4 @@
-uuid: 385c7a8b-fa3f-404f-a3a7-da1d30767a3d
+uuid: 8bdea438-0caf-40f2-8cdf-ede41db7acfa
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     module:
       - profile
 _core:
-  default_config_hash: jjClImKlBhvh__KZnX6YkW_Kc1yZvqXODbUHt30A8z4
+  default_config_hash: _VOPIG99IVPSFTbk58KmobSs8K0i-25l306cqlATcgs
 id: profile_publish_action
 label: 'Publish selected profile'
 type: profile

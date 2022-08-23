@@ -1,10 +1,12 @@
-uuid: bba8526a-d6a1-4b2d-a911-eec9fefa2bee
+uuid: 1876aa4f-8756-4738-814b-3cfe928848e0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_notes
     - taxonomy.vocabulary.article_type
+_core:
+  default_config_hash: VcobSMfleYUhkPb8nX0mMEby8UmfxHK4O5ACii-DiOg
 id: taxonomy_term.article_type.field_notes
 field_name: field_notes
 entity_type: taxonomy_term

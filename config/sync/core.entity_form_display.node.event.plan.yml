@@ -1,4 +1,4 @@
-uuid: 8f25a870-f10f-4ed1-a502-1fb558070ee5
+uuid: e3513be1-a268-4f81-bf67-8b119afd429d
 langcode: en
 status: true
 dependencies:
@@ -35,7 +35,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: trxS8HqwiSxWpV3482mgav88i9EaCifdqKMMCorh9Og
+  default_config_hash: eW-XUcJFG5gFoNrY8cEXsPluGhkPK_bznzcxf0SYAno
 id: node.event.plan
 targetEntityType: node
 bundle: event
@@ -62,6 +62,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   created: true

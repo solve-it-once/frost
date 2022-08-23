@@ -1,4 +1,4 @@
-uuid: bf8590cf-f643-431e-8faf-c647c710fad8
+uuid: e0757439-6633-41d8-95d3-e8a416c4e859
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: d0qlPkXUgfmHz23hrgO79AKs5-2TjC995EpYDxnK7YQ
+  default_config_hash: z6TCdvtd-yZE-keYD6GrIIverNCTUOlQzOMgBwJ2Mf0
 id: paragraph.hotspot.search_index
 targetEntityType: paragraph
 bundle: hotspot

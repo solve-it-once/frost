@@ -1,10 +1,12 @@
-uuid: 0cf5ced5-7b21-47fb-9408-3c58e3a5b926
+uuid: ab3a0a7e-ae3f-47c8-8b82-9c85229ddc12
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - text
+_core:
+  default_config_hash: 4o07YFxbX0D94wU92MFbKaI5qeUpPyhjvWZeV_DqS44
 id: commerce_product.field_scratch
 field_name: field_scratch
 entity_type: commerce_product

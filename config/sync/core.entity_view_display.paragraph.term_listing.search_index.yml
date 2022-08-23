@@ -1,4 +1,4 @@
-uuid: 5682c893-4b6d-4e8a-85a1-0163401a2cd4
+uuid: b27dd667-a569-4010-b423-87d24b00fbaa
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   module:
     - field_formatter_class
 _core:
-  default_config_hash: _Y24ekVkCYHG-RkMxPsVXtsj_kWmxV_RQDoZtRBNUSE
+  default_config_hash: o2M-EaoV9jq8GGh-Cb7HASiTf6yigqYVZt3XTy559Yc
 id: paragraph.term_listing.search_index
 targetEntityType: paragraph
 bundle: term_listing

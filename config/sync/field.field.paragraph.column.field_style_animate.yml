@@ -1,4 +1,4 @@
-uuid: ebfad324-3a4f-422e-ba93-1aa25ac4b112
+uuid: d9643dee-3d51-4673-be52-eeda938feec6
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_style_animate
     - paragraphs.paragraphs_type.column
 _core:
-  default_config_hash: '-HDB8AN7eA2xISRfew9RG3PegCuKmpINoFkWdPbQmkk'
+  default_config_hash: B0Gzz-GYviiKOaFdpXbbi2ZRb-JGX7D3vrAvujixqfc
 id: paragraph.column.field_style_animate
 field_name: field_style_animate
 entity_type: paragraph

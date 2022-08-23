@@ -1,0 +1,31 @@
+uuid: cc2e9d3a-e70a-4878-aebc-c445875bf6d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: pipe-spaced
+_core:
+  default_config_hash: ZL-8_-ngr78A0lVuXJ-OP5rFen-nATYafQQOhBLiEI8
+id: classy_footerutility
+theme: classy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer utility'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

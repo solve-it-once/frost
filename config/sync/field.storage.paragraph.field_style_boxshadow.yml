@@ -1,9 +1,11 @@
-uuid: d60dd207-9a75-4e43-a3e3-4f4e45ac3713
+uuid: a38cad98-48ef-4db4-8109-3ca2138218cd
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: FzowAfokKf1Fckhu_p5A8brGDu5O9R8Vi5x2HYNMxb8
 id: paragraph.field_style_boxshadow
 field_name: field_style_boxshadow
 entity_type: paragraph

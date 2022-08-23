@@ -1,9 +1,11 @@
-uuid: 118604a4-f28d-4b1d-b8e2-1f8fe2473a53
+uuid: f6c136c4-5a18-4ffa-86a9-9a1df638c6ec
 langcode: en
 status: true
 dependencies:
   module:
     - file
+_core:
+  default_config_hash: BYdMSrpx_NfrTrvbM_FKMA3ycxQ-xuHzoZTRL85XyBg
 id: file.small
 label: Small
 targetEntityType: file

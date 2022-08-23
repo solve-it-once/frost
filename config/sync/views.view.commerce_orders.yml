@@ -1,4 +1,4 @@
-uuid: 043bb0bd-8605-4be7-9a16-68bea205d227
+uuid: cbd67fa5-764c-4775-9c1f-e4031ab4d69c
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - state_machine
     - user
 _core:
-  default_config_hash: HFX6ZqjZ-Ph27nJoRvTzBtYCqiDzUaPdz-yRGWiQJtE
+  default_config_hash: CVLosQvYFYZwhBgUjGyWFA85DOh6Ge00tVXyN3pIOoU
 id: commerce_orders
 label: Orders
 module: views

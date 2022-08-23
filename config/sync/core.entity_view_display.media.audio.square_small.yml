@@ -1,4 +1,4 @@
-uuid: 95bd51d9-127f-4a48-9146-fe8dd16074f7
+uuid: e5631342-2c9a-483f-b041-99195d746347
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - image
     - linked_field
 _core:
-  default_config_hash: KnA5EU3n_S3fHwCfP_pRHKrIPnxDNe0ajSoaMLn6_Fk
+  default_config_hash: ln8blGmojAQjuomm8GW_uu-y9hcLg48t4M8rqEXLkOY
 id: media.audio.square_small
 targetEntityType: media
 bundle: audio

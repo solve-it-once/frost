@@ -1,4 +1,4 @@
-uuid: 647438c0-3904-4e5b-b872-cc4c66b91606
+uuid: f4cb417a-51d0-444a-8b04-dcbe225500a5
 langcode: en
 status: true
 dependencies:
@@ -29,32 +29,24 @@ content:
   price:
     type: commerce_price_default
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   sku:
     type: string_textfield
     weight: -4
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     weight: 10
-    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: -5
     region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
   uid: true

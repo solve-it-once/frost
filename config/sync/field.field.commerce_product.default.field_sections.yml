@@ -1,4 +1,4 @@
-uuid: 6e891c2e-3d30-42b2-a05e-eeb46ad2b53e
+uuid: 4d362518-eebc-4fb7-9537-c79e9b0d765a
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.stripe
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: LOKI2M7Y8kkzOGZKpzp0Db7gtXVr5bImEdKgZQ5_6a8
 id: commerce_product.default.field_sections
 field_name: field_sections
 entity_type: commerce_product

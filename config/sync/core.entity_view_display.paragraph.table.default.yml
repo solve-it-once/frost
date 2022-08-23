@@ -1,4 +1,4 @@
-uuid: 16b3db71-54b7-4ae4-8c64-65e224da69c9
+uuid: d6faa6eb-edf3-4b71-b68b-2534929b4814
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - field_formatter_class
     - tablefield
 _core:
-  default_config_hash: 0feS_mUQfj8WhlJp5xkxerEbk6J59HGlDJfzAPCY_ys
+  default_config_hash: cgrUJCGQEzHi2WvLvAHVbOvl7a2rDi-Pm_9jDHmAd5s
 id: paragraph.table.default
 targetEntityType: paragraph
 bundle: table

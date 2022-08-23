@@ -1,4 +1,4 @@
-uuid: b7aede09-df58-48bc-a065-c73aac16770b
+uuid: 2ea3d9cd-b813-4019-83bd-7770a97b6f50
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: OtbQFv-NxWUUuhU6XA-4LO5SmFhvWwTnVCI6ehBEeGs
+  default_config_hash: SVM5t5pobDI5gf85thttWdUHtAfsHU-kdxemxn8K_Nw
 id: taxonomy_term.tag.field_sections
 field_name: field_sections
 entity_type: taxonomy_term

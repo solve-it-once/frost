@@ -1,14 +1,14 @@
 _core:
-  default_config_hash: C1TkFz1ZBx0Khp11l4HZ_TKBYhIICzWsY6GmNkWFyiY
+  default_config_hash: MTd8aG6rfsbJcpk48uT36H3Eljj3YIFXgcnVsorMkxA
 langcode: en
-uuid: b2401ceb-2530-4b23-b1a8-44aaeefcc4fe
+uuid: ddf7deb3-4296-49da-8c99-ecf1a37b41e5
 name: Frost
-mail: ao5357@gmail.com
+mail: brad@solveitonce.com
 slogan: 'Atomic Drupal 9 install profile'
 page:
   403: /node/5
   404: /node/4
-  front: /node/1
+  front: /node/21
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

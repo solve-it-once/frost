@@ -1,4 +1,4 @@
-uuid: d1f32b3b-97e1-413b-b622-fe03f5c34cd4
+uuid: 51243faf-a8fe-40d7-8deb-9db6c1da8bd6
 langcode: en
 status: true
 dependencies:
@@ -25,7 +25,7 @@ dependencies:
     - entity_reference_revisions
     - field_formatter_class
 _core:
-  default_config_hash: lHXkD6lk1dpBVaGm71HlDTJPvfAQs9NE3p8uUELPs3M
+  default_config_hash: ng6ofQkB0t2knw_IlPWjtKqbS-_779UHNKyhd4THqUc
 id: paragraph.column.preview
 targetEntityType: paragraph
 bundle: column

@@ -1,4 +1,4 @@
-uuid: 541a8891-66fa-4954-bd12-602e2b8f729f
+uuid: 30bef877-041a-46ff-84d9-7b651fc08bac
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.from_library.field_reusable_paragraph
     - paragraphs.paragraphs_type.from_library
 _core:
-  default_config_hash: r4TZydyh5ONZnEbmIQMgY2PeiciP9cSAwBGrDLmxvd8
+  default_config_hash: Tl7Cb9GrUZaNTgRvkU1RDEbgq5wvpnhUbEu712JiU_Y
 id: paragraph.from_library.content
 targetEntityType: paragraph
 bundle: from_library

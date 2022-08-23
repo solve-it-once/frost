@@ -1,0 +1,26 @@
+uuid: 1cf543db-e4b6-448a-b4fa-7efe8bbcf6f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - contact_info
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: margin-vertical--4
+_core:
+  default_config_hash: q7QXOGftN7oXOF60zmWPXUGCdkyIRwiY8unSqmXgZlI
+id: stable_address
+theme: stable
+region: footer
+weight: -8
+provider: null
+plugin: address
+settings:
+  id: address
+  label: Address
+  label_display: '0'
+  provider: contact_info
+visibility: {  }

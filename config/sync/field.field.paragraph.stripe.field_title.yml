@@ -1,10 +1,12 @@
-uuid: 49dc475c-0836-4f2a-b0db-ee7a8c7f9eb7
+uuid: 651f01b7-93a2-49c3-a650-12bc2a42514e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
     - paragraphs.paragraphs_type.stripe
+_core:
+  default_config_hash: 88oEP-PGhjZfuE4QrLLaXzH52BjALsMK3XOljWKo0hc
 id: paragraph.stripe.field_title
 field_name: field_title
 entity_type: paragraph

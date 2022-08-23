@@ -1,4 +1,4 @@
-uuid: fb1c2096-ed58-4210-97da-5f0303d20011
+uuid: 3385635a-3aa2-4d70-9a3f-1f74bfcd32fb
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - field.field.paragraph.product_listing.field_style_layout
     - field.field.paragraph.product_listing.field_viewmode
     - paragraphs.paragraphs_type.product_listing
+_core:
+  default_config_hash: iw3uR5qoZ0672zJsAht8O0PSE-wNQe615fOZdawW4WY
 id: paragraph.product_listing.settings
 targetEntityType: paragraph
 bundle: product_listing

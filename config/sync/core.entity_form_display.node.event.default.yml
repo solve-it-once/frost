@@ -1,4 +1,4 @@
-uuid: a4ba20e7-31d2-439b-a20a-7a04a658e80d
+uuid: 54b846c3-3ad8-4554-a78e-b8302fd8507a
 langcode: en
 status: true
 dependencies:
@@ -40,7 +40,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: trxS8HqwiSxWpV3482mgav88i9EaCifdqKMMCorh9Og
+  default_config_hash: yT-TNVq_IQ6QiM9GU8Y7s802nzsLR0EMUeYBgOzAfp4
 id: node.event.default
 targetEntityType: node
 bundle: event

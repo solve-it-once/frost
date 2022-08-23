@@ -1,4 +1,4 @@
-uuid: 2df90ebf-32fd-409b-9db9-93722d6f97f5
+uuid: ff72ac84-5de2-4a7e-b93a-81ab78544d73
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.page
   module:
     - text
+_core:
+  default_config_hash: nd2PSZsr0-6gxc2amWRIl_h5g_IUeJuFaR-Paru-M8g
 id: node.page.field_scratch
 field_name: field_scratch
 entity_type: node

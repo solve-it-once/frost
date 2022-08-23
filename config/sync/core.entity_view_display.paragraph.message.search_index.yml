@@ -1,4 +1,4 @@
-uuid: 13507b7b-1e28-49cd-b45b-f2331b2cd5ef
+uuid: 26002d9d-c0d3-44f9-8573-06f5ae2a21a1
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: N5xIgDiDdajWlxWa5ph4UYTYGNZOryMNh9Izy0Z9PZM
+  default_config_hash: YNNYR-q9cVlkAy9ojBszNUQqOmcHDBsb6c7CkOKZAjE
 id: paragraph.message.search_index
 targetEntityType: paragraph
 bundle: message

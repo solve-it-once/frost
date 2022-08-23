@@ -1,4 +1,4 @@
-uuid: 36fac847-eca5-4146-b3d5-8f9d61bad840
+uuid: 896e4693-b326-405b-9bb6-8bf41a4c4bac
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - field_formatter_class
     - linked_field
 _core:
-  default_config_hash: AtAeb2Dk9tI5EUbVJz9pyrpQduiZaB7z372gCzaUAUg
+  default_config_hash: qPp-Ix7liF_8Q3VZ6M9IWTN4YoX-GDaIZ_s6ZkkYdcA
 id: paragraph.card.preview
 targetEntityType: paragraph
 bundle: card

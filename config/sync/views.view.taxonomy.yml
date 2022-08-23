@@ -1,4 +1,4 @@
-uuid: ae9fac08-c004-46c8-bd33-4e2de4e06098
+uuid: ba914ec2-fef3-46ec-a443-416adde2b3d5
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,12 @@ dependencies:
     - field.storage.paragraph.field_seo_nofollow
     - field.storage.paragraph.field_seo_noindex
     - field.storage.paragraph.field_seo_title
-    - field.storage.taxonomy_term.field_image
     - system.menu.admin
   module:
-    - paragraphs
     - taxonomy
     - user
+_core:
+  default_config_hash: IySPugebYplKeDX8qMavOHfCBXR1M1j8qNXS1kQrd8c
 id: taxonomy
 label: Taxonomy
 module: views

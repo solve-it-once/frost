@@ -1,10 +1,12 @@
-uuid: 9677a5a4-e64f-4cd7-9a12-2cc324ae26fd
+uuid: 01ff30c2-5d70-4a74-b9a2-3388b9431a68
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_data_lightbox
     - paragraphs.paragraphs_type.media_listing
+_core:
+  default_config_hash: G6sJQwlgCsVUf4Pcjw6QXr7LbQ5ubwTQp-6GSTXzB_s
 id: paragraph.media_listing.field_data_lightbox
 field_name: field_data_lightbox
 entity_type: paragraph

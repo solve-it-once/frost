@@ -1,9 +1,9 @@
-uuid: 2c880248-1a2d-4447-b282-ef4ebf2e53c5
+uuid: 950f9189-ab8a-4608-9260-b56fd727ea05
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: pr6-C9meT4I5vGQFHlfuZ3mgPUQQjWWt0-mjJ8JGrxY
+  default_config_hash: j1QmdLLQCajQVX37K0S4ltTyyL6Y7k77gGTwZhlII-E
 name: square_thumbnail
 label: 'Square thumbnail'
 effects:

@@ -1,7 +1,9 @@
-uuid: 554c2348-19ba-487e-add1-909cf54e22f0
+uuid: 723a29d5-fd68-47d8-b327-07bd50334c12
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: nOkSyORF9IOl-tW_oYQY-MCAoyukXyCAWEhZv9tDeFM
 id: commerce_product
 label: Product
 tags:

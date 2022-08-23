@@ -1,4 +1,4 @@
-uuid: 4758e707-6b5a-4d23-89ce-52b3132786f9
+uuid: 06974514-5067-4c73-b821-d4c6d73d09aa
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,11 @@ dependencies:
     - frost_custom
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 _core:
-  default_config_hash: JlLOK52mUpK7WOZB7IQIDGjyomzfab5-IUHSMsJ066g
+  default_config_hash: 6Y_S_bITYSToTGQH5Xwz3UWYAtqNDxkMleGanNTA9R4
 id: invertedlogo
 theme: frost_theme
 region: footer

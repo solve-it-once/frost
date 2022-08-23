@@ -1,4 +1,4 @@
-uuid: 44c73978-e288-4fcc-a969-b98be8c5d762
+uuid: ca63da5e-dd31-4822-be50-03719018dc7d
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: ZuJW8jiS7jOw5tRCsWzrPJtaY3CZkEVy46d5RK3SiZY
+  default_config_hash: mX7yMu2bCltCi4nOt2HJ3KIqhdewvcXB-ee2Uo-XCN0
 id: taxonomy_term.article_type.plan
 targetEntityType: taxonomy_term
 bundle: article_type

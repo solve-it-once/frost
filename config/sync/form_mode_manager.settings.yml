@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: oS5Qfo4ThgQoDFRG6QjffXGPQFwPKc3CAj6tzbNEN4Q
+  default_config_hash: G8nNZr7prJosuqcVVgnabX5IKs3JbXGDLZnpbTeX1J4
 langcode: en
 form_modes:
   node:
@@ -7,7 +7,6 @@ form_modes:
       ief: ief
   user:
     to_exclude:
-      ief: ief
       register: register
   commerce_order_item:
     to_exclude:

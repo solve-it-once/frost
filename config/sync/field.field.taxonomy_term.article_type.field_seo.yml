@@ -1,4 +1,4 @@
-uuid: d40ab5c9-2d08-4ceb-a949-0757d7d453c6
+uuid: 15199bcd-285a-4f1e-a5c4-477f118d0196
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: po-78BoNr0I91XPkbzoVuygQcFwOmRnpg4bGIOIhppo
+  default_config_hash: voD1x36JfOTvAe8wGzk8uvCPgfugzK_SlCkDdlD3NAY
 id: taxonomy_term.article_type.field_seo
 field_name: field_seo
 entity_type: taxonomy_term

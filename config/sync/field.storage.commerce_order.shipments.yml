@@ -1,10 +1,12 @@
-uuid: 34a8d93d-1d06-45d9-893f-8a68559365a5
+uuid: 70d9810c-430d-455a-8a38-a46b2f0d1a9b
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_order
     - commerce_shipping
+_core:
+  default_config_hash: gm25x7ZmGot7nPelXUXF6zDmyYfWuC0h9gNmTkkszVg
 id: commerce_order.shipments
 field_name: shipments
 entity_type: commerce_order

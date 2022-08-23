@@ -1,4 +1,4 @@
-uuid: 762d6082-1b6f-4f6d-a14e-f9efd2b569fc
+uuid: 47a57445-840e-4242-beb8-03e7025cfbf7
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ third_party_settings:
   block_class:
     classes: margin-top--40px
 _core:
-  default_config_hash: hXAz_AKzjDhoTlKGlfwyEsR3Ce19AcSqRwh6gd13QbA
+  default_config_hash: Of29ptvQ2EoVa_pM6H9Y5VyhgitV_Uui-89FOYQL73I
 id: social
 theme: frost_theme
 region: footer_cta

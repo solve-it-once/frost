@@ -1,9 +1,9 @@
-uuid: fce90dbc-2b22-4636-ad59-0f3ad1d07ecf
+uuid: 043f16e2-0ebb-4bd9-bd74-8724cc518304
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: LrjQeYez9SYMbKzky3SyIYBnkoo6dN3cMoTW2pKCkYk
+  default_config_hash: 8R6XL44GbSQS5XpCadUThWKYRY5H6qF7Hf5NB7ejIOA
 id: seo
 label: SEO
 icon_uuid: 80a1a867-5b0c-4ee5-9a45-7a4611cdc71f

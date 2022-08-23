@@ -1,9 +1,11 @@
-uuid: dc17fc8c-b55d-4417-ae5c-c5c1cad9526d
+uuid: 353740f1-3442-4d20-81db-c4a2b39e2d7b
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
+_core:
+  default_config_hash: 2a93zAev23FWD-__uYCfauykRmOmUrjQsbwwydyvZx8
 id: commerce_product.field_notes
 field_name: field_notes
 entity_type: commerce_product

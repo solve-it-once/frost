@@ -1,4 +1,4 @@
-uuid: 339da41f-721b-4a85-b541-e0740ff06b34
+uuid: a61e7b6d-96ce-4394-b175-b1f43f1c7394
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - field_formatter_class
     - webform
 _core:
-  default_config_hash: m8W5UWEXCSXAslDbOm200oB1IjBDrXaphexadDEaF1M
+  default_config_hash: oaIjTX--38CSFmUJua9T3CXzsEFUH4RevtNaYhwqI3I
 id: paragraph.webform.search_index
 targetEntityType: paragraph
 bundle: webform

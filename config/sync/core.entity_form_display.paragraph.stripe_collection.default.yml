@@ -1,4 +1,4 @@
-uuid: 84283152-3566-470b-81e9-934d417cb6f0
+uuid: fc5af081-fb3f-4f4b-ba0b-64695f5c1026
 langcode: en
 status: true
 dependencies:
@@ -54,7 +54,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: yRh9ySHUlmyP6mhR3z8EwO0hkqg-e8E-sh6alnAMEqc
+  default_config_hash: VUvW--Q0bdQlMq0pnvQ1f04hTvB2w5CdU-SBPjDqtzU
 id: paragraph.stripe_collection.default
 targetEntityType: paragraph
 bundle: stripe_collection

@@ -1,4 +1,4 @@
-uuid: 0c9d21e6-bf94-44c7-a874-52ceeb49e76c
+uuid: 745ea1aa-c1fc-456c-a9cb-143fd9c7e219
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - paragraphs
     - paragraphs_features
 _core:
-  default_config_hash: Hgj0Yxg-si7l8NGQqO_ItWVxmhuUh96m_N6Jk6FeHG0
+  default_config_hash: 7Xr4xhA4vdX1VJkHyc67eJlWOTqPQWUuUg04fsVpTnQ
 id: block_content.messages.default
 targetEntityType: block_content
 bundle: messages

@@ -1,4 +1,4 @@
-uuid: f2244c2e-a7dc-4b2b-aa78-5448fd8ef2d6
+uuid: 1053c2d9-bf7c-4643-9405-409d14408844
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - entity_reference_revisions
     - field_formatter_class
 _core:
-  default_config_hash: 1aovfw3b4vxtUPvyOazFBGnIAa14pea9zH98FjcIhpY
+  default_config_hash: f5R_3bHMJM4o27bWHEIZmYV6SHTmSZEScHmtBBTqHO0
 id: paragraph.layout.preview
 targetEntityType: paragraph
 bundle: layout

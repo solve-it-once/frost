@@ -1,4 +1,4 @@
-uuid: 6d870f45-cffc-441b-b4cd-7f6723a38ab3
+uuid: 33a21e89-93c9-4505-9c4f-18fdf770aa25
 langcode: en
 status: true
 dependencies:
@@ -60,7 +60,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: JsPyX_Htaweffr7JK0l_iBWuQFV3pmsL11EQ3D6gaxE
+  default_config_hash: p-vonmyLM9WpQ0_DzSJr-qLVPbU_jcpe1vgCOBZrdJY
 id: paragraph.statistic_percent.default
 targetEntityType: paragraph
 bundle: statistic_percent

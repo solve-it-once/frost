@@ -1,4 +1,4 @@
-uuid: 5e2d4098-4d40-4b3c-b423-2fb9dbba384e
+uuid: 157e4f41-4fa4-45b9-91e4-e521eaccb165
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - webform
 _core:
-  default_config_hash: zx62BdqzazoVhXHQ-OBNt_hwdswrxetp9cMPJCa0xyA
+  default_config_hash: uRYP26RvfJ0Uba8ej_xsT8LPP2Rh5we4XfW9yhAWndk
 id: paragraph.webform.content
 targetEntityType: paragraph
 bundle: webform

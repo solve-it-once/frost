@@ -1,4 +1,4 @@
-uuid: 2835be43-95a8-4992-a032-1866e36e1d54
+uuid: 6a49cd72-53cf-4597-b5fb-fef9d59c3b6c
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - viewsreference
 _core:
-  default_config_hash: h_aShNE7R5geJp8cBXqJWCJwp1Jb9OgbihMr6uptmH8
+  default_config_hash: K6mAs2OJjpkEF5csgT3JL-RRya1Zq5T0a7eCnCCv-bI
 id: paragraph.view.field_view
 field_name: field_view
 entity_type: paragraph

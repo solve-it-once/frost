@@ -1,10 +1,12 @@
-uuid: 6b2620e3-a1be-405a-9a02-eb281d983bb2
+uuid: 0a7dd963-69f0-4050-80cd-015196833559
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_notes
     - node.type.article
+_core:
+  default_config_hash: NlNDjR48y_MJYrEq1_CHH27a5oRBC-4o2hq57lnJRd4
 id: node.article.field_notes
 field_name: field_notes
 entity_type: node

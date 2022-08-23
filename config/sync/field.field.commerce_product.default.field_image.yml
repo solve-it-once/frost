@@ -1,4 +1,4 @@
-uuid: 58a6ace2-cb1c-478e-893c-2fac28511ce6
+uuid: f1a06965-274f-412f-bdd8-a2d751e6a9cd
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.storage.commerce_product.field_image
     - media.type.image
+_core:
+  default_config_hash: AxWZJTc801eptLr4Vh9PJZRfc3Y2FWUQ7Dvct8035Qo
 id: commerce_product.default.field_image
 field_name: field_image
 entity_type: commerce_product

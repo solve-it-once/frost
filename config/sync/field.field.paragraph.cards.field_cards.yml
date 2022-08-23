@@ -1,4 +1,4 @@
-uuid: 5ba9a66c-eec1-4ad7-9c01-4dc343d6bfde
+uuid: 68f5f5b7-5f79-497e-99ad-7d622d91c193
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: BkrUbPb8Sj4KFPwyNhClCAGE5Bad_20Kwj-LB-uFgjg
+  default_config_hash: yyyNLMxEkyXUdytwQmJcLEsiRBvijZeEls66TJIrP5c
 id: paragraph.cards.field_cards
 field_name: field_cards
 entity_type: paragraph

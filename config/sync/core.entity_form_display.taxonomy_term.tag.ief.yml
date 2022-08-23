@@ -1,4 +1,4 @@
-uuid: 2e0f271b-e807-422b-b3cb-214a2edc0858
+uuid: 99b86590-553b-4ef2-b35b-ba39fb5d7144
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 92m00AdmfLgF_t6tDMjNY7T5v_ngf02sSOTzXy4b9vY
+  default_config_hash: ur_Gq_XXTyzmbIlxq6Vy3pILw4EtICZw209PIOVD_Hc
 id: taxonomy_term.tag.ief
 targetEntityType: taxonomy_term
 bundle: tag

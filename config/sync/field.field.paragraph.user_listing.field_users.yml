@@ -1,4 +1,4 @@
-uuid: c20e89e3-1286-4f77-bb97-487381e7b5c1
+uuid: 53f014cd-4f71-4540-9632-f066d332e95e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_users
     - paragraphs.paragraphs_type.user_listing
 _core:
-  default_config_hash: V0P0z0P5r_KO81cfWY2l4veJsA0GqUpis8A_DF24MwM
+  default_config_hash: iT8R6Jcca39L_nhINjAiyg4UfQHw_XxGSxdWTbngM9Q
 id: paragraph.user_listing.field_users
 field_name: field_users
 entity_type: paragraph

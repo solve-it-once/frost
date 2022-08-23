@@ -1,4 +1,4 @@
-uuid: 684c026d-6d39-4ec1-88cf-6a36bd323145
+uuid: fe670c5c-231d-4f06-b6ed-a7d28b8319f4
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.storage.paragraph.field_products
     - paragraphs.paragraphs_type.product_listing
+_core:
+  default_config_hash: nG3j7OUPwxf72Q0jOFe8gC2ZESzkQA_KhGj5hsqi8A4
 id: paragraph.product_listing.field_products
 field_name: field_products
 entity_type: paragraph

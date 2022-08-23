@@ -1,4 +1,4 @@
-uuid: 8aae6d1a-78b3-4d3f-bf03-f41e38e0c70d
+uuid: 25e470dd-fb86-429f-9798-947ac7a699d2
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: pPaVTR0keA7zDsI7k8DiZFXQ2kCYpcqupXEpb0JJwXs
+  default_config_hash: wYdU_HAHdOg2uJtEkvx3-bFzUQh18YN3tceuagJadRk
 id: paragraph.accordion.search_index
 targetEntityType: paragraph
 bundle: accordion

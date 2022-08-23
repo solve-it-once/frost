@@ -1,4 +1,4 @@
-uuid: c4e0aae0-4195-4536-bd6a-9009f7657af0
+uuid: 28dc61b0-8fb8-4c0a-bd2d-24973ffefc97
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     module:
       - media_library
 _core:
-  default_config_hash: pkq0uj-IoqEQRBOP_ddUDV0ZJ-dKQ_fLcppsEDF2UO8
+  default_config_hash: Tdhz-aDHfDoV1Ul9umtItxGTrjkFzoNAkDw8FWXjYA0
 id: media.media_library
 label: 'Media library'
 targetEntityType: media

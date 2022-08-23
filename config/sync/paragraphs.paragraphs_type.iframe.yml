@@ -1,9 +1,9 @@
-uuid: b3a30eed-7e4a-4831-8455-4f8c1b504af2
+uuid: 22c0f133-83ff-4670-be3f-73bf8d9595d1
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: O2Ti5kZQl-DprExjhhLafRNNByGe-aNGinBQQBrAxYY
+  default_config_hash: QWHlYUiPLcIUXGwjJAq3OREDaOyvL940e0NDi3LiwdY
 id: iframe
 label: iframe
 icon_uuid: null

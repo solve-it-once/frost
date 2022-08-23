@@ -1,4 +1,4 @@
-uuid: dfc9a079-6a29-46f2-a0be-6db3f29e54c2
+uuid: a6e2534a-3e7e-4d93-9f5c-5ad3e2ba336c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     module:
       - commerce_cart
 _core:
-  default_config_hash: sTKMNZJ4DVegYkx0Lake4yfkpxD7y_g2bQO28xTs5co
+  default_config_hash: 8_sL-hsbsDrv0N_MtsNu3Sewj7u9Dp_JcXDyDdP8CRE
 id: commerce_cart_block
 label: 'Cart block'
 module: views

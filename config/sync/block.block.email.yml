@@ -1,4 +1,4 @@
-uuid: c4b46a8a-7d4a-4187-bcd7-6183275c64cd
+uuid: 23fbb013-7966-4e45-b79e-497a1435d53c
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
 third_party_settings:
   block_class:
     classes: margin-vertical--2
+_core:
+  default_config_hash: nr91-9FqnMIyEHR83HoK5q5kf34Y5AM1s89IDMyOKH0
 id: email
 theme: frost_theme
 region: footer

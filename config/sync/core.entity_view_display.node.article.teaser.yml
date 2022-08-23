@@ -1,4 +1,4 @@
-uuid: b1988ea8-75d0-4ef6-89ac-3ceb317cbb19
+uuid: 988de838-93b8-4c0f-8349-39c47d4b3882
 langcode: en
 status: true
 dependencies:
@@ -42,7 +42,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: BNbk_VMyf-NcqhbLyjCWl7oatu11YngUrEetf53wjXQ
+  default_config_hash: VcKG71SpBbp1xzQR39dEOXS8HrM35YETICkRHfwtegg
 id: node.article.teaser
 targetEntityType: node
 bundle: article

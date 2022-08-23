@@ -1,4 +1,4 @@
-uuid: 8ed3c66e-f042-43bc-a269-526fe8850fbb
+uuid: 4d085167-b507-4078-bab6-9155d1a43c93
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.block.field_block
     - paragraphs.paragraphs_type.block
 _core:
-  default_config_hash: Quzbt7e4KzdGjr0YwOt9DyAswPaUPlJBvJSRxgbuFNE
+  default_config_hash: T1ZCE4LnOlMah6RXvIJlDiRfTqws58nGjqsYlD4UVog
 id: paragraph.block.settings
 targetEntityType: paragraph
 bundle: block

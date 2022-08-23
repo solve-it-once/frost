@@ -1,9 +1,9 @@
-uuid: 632aeb80-855c-4084-b025-ef3224e5e1b6
+uuid: f65f275c-480c-427a-ab18-95088407a3cb
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 6Br9LlXAaFUY5ZcPRh9dTv7Tg2qHmIyB6TdmiHVuTCE
+  default_config_hash: Ncmr6p0QH_ByflZ37HJ_BZciTNvOMrVcO5Q9zZnY3J8
 id: cards
 label: Cards
 icon_uuid: null

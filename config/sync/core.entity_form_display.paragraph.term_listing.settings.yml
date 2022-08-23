@@ -1,4 +1,4 @@
-uuid: 4ce0cf38-a905-48ae-a2fe-2fc1af980470
+uuid: 4bb4317e-e6f9-48f6-9d6e-cd7e7e52f4db
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.term_listing.field_viewmode
     - paragraphs.paragraphs_type.term_listing
 _core:
-  default_config_hash: x3tMvaZyrssQwVab9OQCS0WGOk3GurFbZbWKaaIXIAQ
+  default_config_hash: wrkRWsX_CKiJHh4fMH8Q3MNQefkJwJmsEOlpGxidY6M
 id: paragraph.term_listing.settings
 targetEntityType: paragraph
 bundle: term_listing

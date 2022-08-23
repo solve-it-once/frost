@@ -1,4 +1,4 @@
-uuid: 0e34005d-330b-4e9c-b3cc-9a845f63a961
+uuid: 550af689-af79-4b0a-9b1f-edc97e707b7a
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: PzCCCdguXroWTPnW5C9fVgyRdlWDA_6juUf4Z4v7BZI
+  default_config_hash: TVYZ3u0SieyHIecVnzFnf47_-tmJxn5O6HM9WDctoKY
 id: paragraph.layout.field_columns
 field_name: field_columns
 entity_type: paragraph

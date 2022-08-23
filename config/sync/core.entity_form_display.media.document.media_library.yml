@@ -1,4 +1,4 @@
-uuid: 53a7fe92-3fab-42ba-b34d-550c952eab1c
+uuid: a773df36-478f-45a2-a5d9-a23a266c7736
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   module:
     - file
 _core:
-  default_config_hash: FmClPGNL2_Jvvh-46ROdL65_ZjPViGDu74TLoC3NnV0
+  default_config_hash: QaAgkWG0chguDXfcn_Q1P5qGL2GLZL7lPOHsOtFwVSQ
 id: media.document.media_library
 targetEntityType: media
 bundle: document

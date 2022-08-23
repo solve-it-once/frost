@@ -1,10 +1,12 @@
-uuid: c8360a93-e05a-4ed5-bf3a-2e6906f50367
+uuid: c60263fe-0bf1-438c-9296-98d068847142
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
+_core:
+  default_config_hash: epr76_3oamtXtqAbroaAsxlso6u4o6uBwrX-CdEHqik
 id: paragraph.field_multimedia
 field_name: field_multimedia
 entity_type: paragraph

@@ -1,9 +1,11 @@
-uuid: 06b31b75-11fb-484d-b43c-bdc0013fa874
+uuid: 7861d187-237e-49dd-a8b1-9b2425c6fac4
 langcode: en
 status: true
 dependencies:
   module:
     - path_alias
+_core:
+  default_config_hash: 2O2SF35-Bk_LMZHJmVtzM6rlJqGF-Ai7692oZvc_zGs
 id: path_alias.small
 label: Small
 targetEntityType: path_alias

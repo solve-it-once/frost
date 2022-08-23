@@ -1,4 +1,4 @@
-uuid: fe552ffc-1f13-4d97-a249-e5f54337f209
+uuid: b3417c43-577b-4821-8827-16472a5c4e8a
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - webform
 _core:
-  default_config_hash: mTWI8f8viRQUTJX5OxQKa7yJoLr_4noB03DMqenH5Og
+  default_config_hash: IzyLqZ6BXxptCt_DV4V9ANCJCxG-SqUEo3bQiSNMiKI
 id: paragraph.webform.field_webform
 field_name: field_webform
 entity_type: paragraph

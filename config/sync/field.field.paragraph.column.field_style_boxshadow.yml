@@ -1,10 +1,12 @@
-uuid: 7dfab8f6-f173-4fbf-bffa-aae52fce8e38
+uuid: 69c004b2-a0f6-4c95-8676-26ba7b52b094
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_style_boxshadow
     - paragraphs.paragraphs_type.column
+_core:
+  default_config_hash: w-d7E-Zmv8HJH_nAx_gvFI_lq6yDVGodokKta8J9ozA
 id: paragraph.column.field_style_boxshadow
 field_name: field_style_boxshadow
 entity_type: paragraph

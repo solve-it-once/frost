@@ -1,29 +1,16 @@
-uuid: d05c4d1d-968b-4ee3-bf51-d838ea0c5dce
+uuid: cf4e1085-b159-4a39-8b67-44176e9ee6b6
 langcode: en
 status: true
-dependencies:
-  module:
-    - commerce_cart
-    - commerce_checkout
-    - commerce_shipping
-third_party_settings:
-  commerce_cart:
-    cart_block_view: commerce_cart_block
-    cart_form_view: commerce_cart_form
-    cart_expiration: {  }
-  commerce_checkout:
-    checkout_flow: default
-  commerce_shipping:
-    shipment_type: default
+dependencies: {  }
 _core:
   default_config_hash: bROz7kd1J83kDf06qdZztYFSezi6UrfwftyJo53rNt4
-id: default
 label: Default
-traits: {  }
-locked: false
+id: default
 workflow: order_default
 numberPattern: order_default
-refresh_mode: always
+refresh_mode: customer
 refresh_frequency: 300
 sendReceipt: true
-receiptBcc: brad@solveitonce.com
+receiptBcc: ''
+traits: {  }
+locked: false

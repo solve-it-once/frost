@@ -1,4 +1,4 @@
-uuid: 224c7772-fad0-4359-8965-a4fc5c38ac64
+uuid: 9518b6ff-645b-49db-b5a4-6ac95c13acec
 langcode: en
 status: true
 dependencies:
@@ -21,8 +21,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   available_countries: {  }
-  langcode_override: ''
-  field_overrides: {  }
   fields:
     administrativeArea: administrativeArea
     locality: locality
@@ -35,4 +33,6 @@ settings:
     givenName: givenName
     additionalName: additionalName
     familyName: familyName
+  langcode_override: ''
+  field_overrides: {  }
 field_type: address

@@ -1,4 +1,4 @@
-uuid: ddfd380c-415f-4820-92b5-93c216f68fec
+uuid: 3cad4bf8-4b02-4752-a254-df8af14f4371
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.media_listing
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: zVlHQPkx6qg1vR3XPohqavesk1pkBqx3XSGorO_nzdY
 id: paragraph.media_listing.field_multimedia
 field_name: field_multimedia
 entity_type: paragraph

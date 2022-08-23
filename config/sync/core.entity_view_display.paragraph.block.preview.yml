@@ -1,4 +1,4 @@
-uuid: 254a1c47-c2af-45d1-85cf-70cb723efa58
+uuid: 18cfeaa3-62fa-4b47-a18c-a936a0055e21
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - block_field
 _core:
-  default_config_hash: E0Bv3WdKTvIzUboon7uUn1TCuv_kSeYwPEecmKr3VX8
+  default_config_hash: _YPA3QfLU2U0aoBkjDdQwFQuRlTayWM9JTfPpiphnFI
 id: paragraph.block.preview
 targetEntityType: paragraph
 bundle: block

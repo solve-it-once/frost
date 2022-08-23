@@ -1,4 +1,4 @@
-uuid: 8c5cca8c-a103-4e7e-b31d-1b7eabd1e461
+uuid: e9b1e53c-762d-45be-8de0-6ccdbaa2cb7a
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - media_library_edit
     - text
 _core:
-  default_config_hash: BtBlIhgCVm493RGo4dHCdI2K9gqFNmr3YoWSsqXqY88
+  default_config_hash: CsLxB77aNfH82pzpW0mpjB3mm1zwQzCu2vWstmhu8jY
 id: paragraph.card.content
 targetEntityType: paragraph
 bundle: card

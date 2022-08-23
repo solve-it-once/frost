@@ -1,4 +1,4 @@
-uuid: c3de093c-9a5d-42b8-b909-5766562438f6
+uuid: 3de88824-0006-4640-b2fa-ae400b006350
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - commerce_store
     - user
 _core:
-  default_config_hash: oBipN4Qg4xQvLoLKewOAOir49xYtzB-5ylzXaRtfAjg
+  default_config_hash: mU2-JhXba8_uhLtrsjcVsFSRJS-gCID9cSpNH6aIOb8
 id: commerce_stores
 label: Stores
 module: views

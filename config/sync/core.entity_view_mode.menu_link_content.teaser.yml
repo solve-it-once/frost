@@ -1,9 +1,11 @@
-uuid: 91302ad6-5c62-436e-9df9-5d6de179723c
+uuid: 92c698cd-1844-4ae4-a3a0-621cd4c2ce76
 langcode: en
 status: true
 dependencies:
   module:
     - menu_link_content
+_core:
+  default_config_hash: N4wraHEDnM8nBhozEI_05d1UZ309FRlJ3WgwgPBqvA0
 id: menu_link_content.teaser
 label: Teaser
 targetEntityType: menu_link_content

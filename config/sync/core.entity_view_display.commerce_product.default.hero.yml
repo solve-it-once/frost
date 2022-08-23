@@ -1,4 +1,4 @@
-uuid: dc32a556-ddec-480a-a693-630831e50df4
+uuid: 966ae1b0-8bff-47c1-adfc-e06c29e3e096
 langcode: en
 status: true
 dependencies:
@@ -78,7 +78,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
+  default_config_hash: 66k91RPv5yfmVfMBSR2y1Z4E4tN2z7qrcAEuBvIF40E
 id: commerce_product.default.hero
 targetEntityType: commerce_product
 bundle: default

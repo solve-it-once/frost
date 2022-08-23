@@ -1,4 +1,4 @@
-uuid: d17a7f07-cbb9-4190-b2e5-1be218f6feb8
+uuid: fbd6ae1b-d6b1-4f2f-9515-46fdc2d8bece
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.table.field_table
     - paragraphs.paragraphs_type.table
 _core:
-  default_config_hash: CdsQ9YmFdZ6rJBu9XOr1KKzjM8EhnD6-ugUj4_BzY7M
+  default_config_hash: ckJMSU1yWKQ3RZel2DAJd-coxQpOmvedJXAdNEXnuNM
 id: paragraph.table.settings
 targetEntityType: paragraph
 bundle: table

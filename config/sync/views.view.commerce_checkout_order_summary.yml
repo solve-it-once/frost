@@ -1,4 +1,4 @@
-uuid: 4d7078e9-e1aa-46a4-b77c-802ba41db9ce
+uuid: 10ae4d87-3002-4088-8ab7-d332922f6007
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
       - commerce_checkout
       - commerce_order
 _core:
-  default_config_hash: IO68Tn5kmZ9jXgm6I21JFTU4ppw63HJIndPEOtg-9rw
+  default_config_hash: OjOKw8mjDir80orxEJlL3lWJyk7Jo9jKHtkq_MYXm_8
 id: commerce_checkout_order_summary
 label: 'Checkout Order Summary'
 module: views

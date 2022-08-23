@@ -1,9 +1,11 @@
-uuid: c80a85d3-90e5-4eb2-b4bd-82e1975ada44
+uuid: bb4bbd35-7e45-4cfa-95d6-7a9f36afe0ef
 langcode: en
 status: true
 dependencies:
   module:
     - webform
+_core:
+  default_config_hash: lOGpRTTSg-s0w4Q9KguUcRmuRP9rB_ik7iPwfH31uOQ
 id: webform.teaser
 label: Teaser
 targetEntityType: webform

@@ -1,4 +1,4 @@
-uuid: 3b54dce7-131d-4c18-a6f5-bf11d8e67e9f
+uuid: 413cc66c-2cad-4b3c-8264-4f433b434373
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: 1eXRmExtxdsuSsdUi91YHcFpRXXkV_tLXKS-psNKrA8
+  default_config_hash: agXhjQPyem3kWV_vhRqrHsJn3NHRXdTFfG4MmBcCWr8
 id: node.event.field_hero
 field_name: field_hero
 entity_type: node

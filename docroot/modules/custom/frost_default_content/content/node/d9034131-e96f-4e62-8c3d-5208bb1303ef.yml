@@ -1628,7 +1628,7 @@ default:
                       value: {  }
                   field_link:
                     -
-                      uri: 'https://console.platform.sh/projects/create-project/?template=https%3A//github.com/solve-it-once/frost.git'
+                      uri: 'https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/solve-it-once/frost/master/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/solve-it-once/frost/master/template-definition.yaml'
                       title: 'Deploy to platform.sh'
                       options:
                         attributes: {  }

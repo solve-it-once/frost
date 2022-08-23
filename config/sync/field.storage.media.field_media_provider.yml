@@ -1,9 +1,11 @@
-uuid: acc52201-2571-4c7f-8acf-9484110047f2
+uuid: bd9c36fe-41e7-4a6d-a32b-cbe4966cf037
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: XZ6rYKzxtr4Z__1ztiGkFzPslXv13VxmjmHIvKnj3vk
 id: media.field_media_provider
 field_name: field_media_provider
 entity_type: media

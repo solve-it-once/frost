@@ -1,4 +1,4 @@
-uuid: 4f8ffe00-39c1-41f2-a7a3-43b2584836fa
+uuid: e224f6bf-c026-488c-80aa-218fcc2f2398
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - field_formatter_class
     - file
 _core:
-  default_config_hash: xbdkZFtZJNgqs1J5fRk2toCzJpUJxu_cJ-0_dKY50DE
+  default_config_hash: lZuslIwK1vl8Rs2BgpKlQYPpA_fckFix-lPIywGxWe0
 id: media.video.search_index
 targetEntityType: media
 bundle: video
@@ -27,9 +27,11 @@ content:
     weight: 2
     region: content
   field_media_video_file:
-    type: file_url_plain
+    type: file_link
     label: hidden
-    settings: {  }
+    settings:
+      frost_custom_link_title: ''
+      frost_custom_link_class: ''
     third_party_settings:
       field_formatter_class:
         class: ''

@@ -1,4 +1,4 @@
-uuid: d3354332-0252-42d5-ab06-fee26d30e0b8
+uuid: af345d79-087f-4caa-ace7-5a0054f98246
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 0gjFT9-WlXjsyLhP9EQqrz24Dn-UlyDoNePK29OAVuM
+  default_config_hash: B7bOJDL8tdlpHUYMIADs_9RGz-s8X7u0-BVVPNoQDE8
 id: paragraph.blockquote.default
 targetEntityType: paragraph
 bundle: blockquote

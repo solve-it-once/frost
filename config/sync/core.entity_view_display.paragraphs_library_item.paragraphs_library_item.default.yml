@@ -1,10 +1,12 @@
-uuid: 2f57af25-ac3d-4034-9d3c-48e1d1e2bb97
+uuid: 3f08cfcc-35bc-4636-8745-3106591f7f8a
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs_library
+_core:
+  default_config_hash: 4g_VgqzIJSpsdf7WQALDl4inbTpUHajgCMgJQotdsUo
 id: paragraphs_library_item.paragraphs_library_item.default
 targetEntityType: paragraphs_library_item
 bundle: paragraphs_library_item

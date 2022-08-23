@@ -1,4 +1,4 @@
-uuid: 8a130003-a7a5-47e7-99d4-4508f35e3927
+uuid: bd4a9dc3-4c49-4e51-9eb2-bfb32b02dd45
 langcode: en
 status: true
 dependencies:
@@ -12,16 +12,18 @@ dependencies:
     - field_formatter_class
     - file
 _core:
-  default_config_hash: P2YHuv6_niipYINVpOzRZyw_tM-hM_wC7kVk4aDh6cU
+  default_config_hash: tDnmdnd9E0UUuPUoEZAv0jkZz2OPPii6b_vQIRiVgoo
 id: media.audio.search_index
 targetEntityType: media
 bundle: audio
 mode: search_index
 content:
   field_media_audio_file:
-    type: file_url_plain
+    type: file_link
     label: hidden
-    settings: {  }
+    settings:
+      frost_custom_link_title: ''
+      frost_custom_link_class: ''
     third_party_settings:
       field_formatter_class:
         class: ''

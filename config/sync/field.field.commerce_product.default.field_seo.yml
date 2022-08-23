@@ -1,4 +1,4 @@
-uuid: a217b091-c131-44c7-81d3-ec0452ddbdef
+uuid: a5d5419b-1390-4a5a-a27b-aea1d16ce74f
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.seo
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: y_T9LrRCawOXFKg9qagh--jLrCBkOCsvhZWEP5S4fyQ
 id: commerce_product.default.field_seo
 field_name: field_seo
 entity_type: commerce_product

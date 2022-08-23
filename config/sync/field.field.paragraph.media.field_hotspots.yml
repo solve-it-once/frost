@@ -1,4 +1,4 @@
-uuid: 0756c3ec-209c-4f86-a4eb-e5102f2d8acf
+uuid: a4a3ee41-bbdf-4dd5-9eb2-9cf8716ffcb1
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: sUSRVquPuTkuaThEWDuJQIYPhnr66gfLzqOkfyZq_ic
+  default_config_hash: 7J9thc3Io_KzLvnwuD7X7SxoLUTxeYm9X56JaYxJc5I
 id: paragraph.media.field_hotspots
 field_name: field_hotspots
 entity_type: paragraph

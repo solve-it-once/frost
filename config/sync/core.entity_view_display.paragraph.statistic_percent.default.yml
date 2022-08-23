@@ -1,4 +1,4 @@
-uuid: be40a85a-25ed-4b5a-84f9-c8209d809e11
+uuid: 428123b8-64fc-4366-9a87-013c8a15190f
 langcode: en
 status: true
 dependencies:
@@ -39,7 +39,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: lB7IhBC7Q8XJFs5CE8QoO4ZfN_4Tk0seoif5FzDd0oA
+  default_config_hash: v7Y8t51gi4WdmYJklYvAGMtLvEwtoa-djwOoZvHLDEs
 id: paragraph.statistic_percent.default
 targetEntityType: paragraph
 bundle: statistic_percent

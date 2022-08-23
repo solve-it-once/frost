@@ -1,4 +1,4 @@
-uuid: 4c2a64a3-1db1-4385-b28d-c933d7913072
+uuid: fc58d701-a91b-4359-a5bb-328b0a759aaa
 langcode: en
 status: true
 dependencies:
@@ -61,7 +61,7 @@ third_party_settings:
       limit_to_content_language: false
       include_language_independent: true
 _core:
-  default_config_hash: 9J-sRo5JBtBi7mpqubfYD6SjbyU3wcFBu-gQwgGvUmI
+  default_config_hash: ayGn59cAYVSLRem552djpqyCfAM0FWzhM0Vva_U1hiI
 id: content
 name: Content
 description: ''

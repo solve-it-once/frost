@@ -1,4 +1,4 @@
-uuid: 798d48a8-ebd3-4e2b-bc40-2e6b4343696a
+uuid: 5ced0551-9f9a-4824-819d-064f83cf1fbb
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
   module:
     - paragraphs
     - paragraphs_features
+_core:
+  default_config_hash: iZs77xJSXzb1S3oqR7MfctOfhPzdH7pD6eIBEh2D6UI
 id: paragraph.media_listing.content
 targetEntityType: paragraph
 bundle: media_listing

@@ -1,4 +1,4 @@
-uuid: 6df9d1f4-b982-4e75-bb7b-798a54cd3c93
+uuid: 3074d7ee-ba11-41c2-b29e-19ec351e4d25
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,11 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: zPWwUl3oWneAU0CQbFj5U0lLGRcDlSBQVh2M_yvZvr8
 id: breadcrumbs
 theme: frost_theme
 region: pre_content

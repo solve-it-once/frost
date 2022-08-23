@@ -1,10 +1,12 @@
-uuid: 38367d70-3882-4cae-9434-a2a6e6823281
+uuid: 484401c7-74d4-4c89-b5b2-4cc28d18aabb
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: _uuqR1TlPt1XM09LcvSbgVJdugvjjS2togd5AFCLcCU
 id: node.field_scratch
 field_name: field_scratch
 entity_type: node

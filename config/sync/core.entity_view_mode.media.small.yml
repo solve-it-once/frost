@@ -1,9 +1,11 @@
-uuid: c98ae4c1-a37e-4b19-9326-814ab43f3363
+uuid: e7a0694c-b6c0-4a5e-bfa7-b61da65455ac
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: h1W1PFyavZj5OIsZbSvIou2leA4VqczHE74cgLaEQuw
 id: media.small
 label: Small
 targetEntityType: media

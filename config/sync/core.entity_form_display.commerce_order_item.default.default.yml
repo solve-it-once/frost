@@ -1,4 +1,4 @@
-uuid: 1aab436b-a9eb-4372-b5c9-68bbcca10e7b
+uuid: 9a08305d-c65a-4375-ae13-36f616bbbf25
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     module:
       - commerce_product
 _core:
-  default_config_hash: OLyelsZyDDqQPIGVz4oz8VpJvddm6C0heZtFpIHjEcI
+  default_config_hash: QkIIahOYVQLOufBOrpkZYP1XcWtotHz8eOJqR_DQ2DY
 id: commerce_order_item.default.default
 targetEntityType: commerce_order_item
 bundle: default
@@ -36,4 +36,5 @@ hidden:
   created: true
   purchased_entity: true
   status: true
+  total_price: true
   uid: true

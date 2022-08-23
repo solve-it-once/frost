@@ -1,4 +1,4 @@
-uuid: 0d6a92d5-f895-454f-bf74-8f09ae26f984
+uuid: c6c464c7-2ba4-4d56-bbcb-96230f8db991
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - taxonomy.vocabulary.tag
   module:
     - text
+_core:
+  default_config_hash: S5fN2fWcWFpdymUBUWnzjGV6aiWbitqLQLQr0mg3GIo
 id: taxonomy_term.tag.field_scratch
 field_name: field_scratch
 entity_type: taxonomy_term

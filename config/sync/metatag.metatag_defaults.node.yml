@@ -1,19 +1,12 @@
-uuid: d91d7505-4632-4f11-ac98-6074b207ae21
+uuid: 60c6b4b0-e205-435f-899d-8ac01efec37b
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 4mWT6pwlqwCaZ2aoAgc4xaRAL8xdwjyNhUH0Q_-E-s4
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
 id: node
 label: Content
 tags:
-  image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
-  description: '[node:field_seo:entity:field_seo_description]'
-  news_keywords: '[node:field_seo:entity:field_seo_keywords]'
-  title: '[node:field_seo:entity:field_seo_title] | [site:name]'
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
   canonical_url: '[node:url]'
-  og_url: '[current-page:url:absolute]'
-  og_site_name: '[site:name]'
-  og_title: '[node:field_seo:entity:field_seo_title]'
-  og_image: '[node:field_seo:entity:field_seo_image:entity:url]'
-  og_description: '[node:field_seo:entity:field_seo_description]'

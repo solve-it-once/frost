@@ -1,9 +1,11 @@
-uuid: f3929639-d77a-4b69-ad63-1021bbd6e675
+uuid: cc85b5e8-7cd6-4ebe-ab18-4a7297c0eccd
 langcode: en
 status: true
 dependencies:
   module:
     - block
+_core:
+  default_config_hash: _LkfeTVN3b7zv0rH3pPFyasbGTfRd9E3eh8jczBACa8
 id: block.teaser
 label: Teaser
 targetEntityType: block

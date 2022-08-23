@@ -1,4 +1,4 @@
-uuid: b6e8918c-a4a6-40e3-867f-ab3479e73f1e
+uuid: 20f2cb0c-0378-4c4b-9891-92f52dcc7656
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: 1aovfw3b4vxtUPvyOazFBGnIAa14pea9zH98FjcIhpY
+  default_config_hash: mt-MRAsc2lmY371GHzVA4ub5LFOOZluuX88VqBuJ7oY
 id: paragraph.layout.default
 targetEntityType: paragraph
 bundle: layout

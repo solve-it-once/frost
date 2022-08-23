@@ -1,4 +1,4 @@
-uuid: e9b41987-e871-48bb-ae85-e46255f7c222
+uuid: f60e70ee-7a11-4707-bb95-aed1d2e89aa1
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ third_party_settings:
   commerce_order:
     customer_profile_type: true
 _core:
-  default_config_hash: I3_fH4tUQVejPgxvJzH1-mGg9A9OaY4Hm5iN2G2Fz20
+  default_config_hash: ZovFkwFOJx4NWknwN5EQC_dFKeBjjc3aR6KRFU5jIWI
 id: customer
 label: Customer
 display_label: 'Customer information'

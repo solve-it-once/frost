@@ -1,9 +1,11 @@
-uuid: 0a45cbef-647d-492d-be11-ee9b0db4b13f
+uuid: 3d5016c2-d9ea-4725-8634-ad8fa69603dd
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
+_core:
+  default_config_hash: KPOKpbJUAZIHMJoOjhyd6J0bI9xU9zzcaRYMTyLEI2c
 id: taxonomy_term.ief
 label: ief
 targetEntityType: taxonomy_term

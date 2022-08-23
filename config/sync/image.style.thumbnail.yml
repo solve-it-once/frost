@@ -1,4 +1,4 @@
-uuid: 64be51b3-3d03-4e1f-991f-a5ba84e47241
+uuid: 3f6b6d2f-ddf4-4031-9cae-85b8b4a23333
 langcode: en
 status: true
 dependencies: {  }
@@ -15,10 +15,3 @@ effects:
       width: 100
       height: 100
       upscale: false
-  c4c60e07-6130-49c0-a8e3-991bd72d6431:
-    uuid: c4c60e07-6130-49c0-a8e3-991bd72d6431
-    id: image_convert
-    weight: 2
-    data:
-      extension: webp
-pipeline: __default__

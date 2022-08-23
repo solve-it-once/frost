@@ -1,4 +1,4 @@
-uuid: e063b0f5-52fe-4745-ab31-206778bed527
+uuid: 409a5b4b-7122-49c3-928e-926b1aea53bd
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.product_listing
   module:
     - entity_reference_display
+_core:
+  default_config_hash: PJwSsEOExppCGdJHnX9B_GAoKJEC3I2QG1ieaLlqdTo
 id: paragraph.product_listing.field_viewmode
 field_name: field_viewmode
 entity_type: paragraph

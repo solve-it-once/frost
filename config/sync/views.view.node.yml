@@ -1,4 +1,4 @@
-uuid: 35a45537-3018-443d-b6d2-6778b91cb62e
+uuid: 5a3c3452-4db1-44fd-9049-43ed9b09ac92
 langcode: en
 status: true
 dependencies:
@@ -19,6 +19,8 @@ dependencies:
     - similarterms
     - taxonomy
     - user
+_core:
+  default_config_hash: NdloGHpKgj9OpqDnIIMMAtfET9-2sJ6lVtH__Mn1swU
 id: node
 label: Node
 module: views

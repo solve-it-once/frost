@@ -1,9 +1,9 @@
-uuid: c08fd2a5-334e-4ef7-8958-2a1105921aa3
+uuid: 678d0ae2-6bf6-472f-937d-fb1df597dcc3
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 7FRKApnzwKKAs0uVVMfJPGAP-W_wc2sGTjjt7c6vS3A
+  default_config_hash: Gc9rErmqotSEn_6nPSgpHBknjxA8MkIGlS31fX3CqSM
 id: link
 label: Link
 icon_uuid: null

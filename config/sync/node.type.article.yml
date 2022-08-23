@@ -1,4 +1,4 @@
-uuid: 775bb32a-2480-4de0-a1f9-d85edbb4317d
+uuid: b22cf864-c43c-43e4-be0d-ae207b703929
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: BFSDSsca4BiUA0jFLGFOkTRY3eYnpqGhzIv3lt8d2fY
+  default_config_hash: Tx6m6jHAQukT4nvAEtKMw-XCH705oFTchT06OSXHSGc
 name: Article
 type: article
 description: 'Serialized storytelling content. Blog posts, news items, even press releases can be articles, differentiated from each other with the "Article type" tagging.'

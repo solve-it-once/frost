@@ -1,4 +1,4 @@
-uuid: f5b0be9a-36ea-48e5-b9c4-cab408d28f58
+uuid: 23895927-f842-492c-ae46-609250dd217f
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - field_formatter_class
     - text
 _core:
-  default_config_hash: h0RMGP4k1aKH0KHK29k5Q8gBzxf7XpRhVSqcCHzd3do
+  default_config_hash: 1UVOgHpudFmoXRohh55BGO669stOxnLTzW-QDKSRp30
 id: paragraph.media.preview
 targetEntityType: paragraph
 bundle: media

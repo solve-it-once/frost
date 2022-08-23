@@ -1,4 +1,4 @@
-uuid: 69d82391-dd0d-404d-9789-71fb380b1fa2
+uuid: 545bf813-7841-49c9-b99c-35a3d59b1e4c
 langcode: en
 status: true
 dependencies:
@@ -28,7 +28,7 @@ dependencies:
     - toolbar
     - webform
 _core:
-  default_config_hash: Xn_WMbnQSN_0nT6pploWWKBHhP7_evX5ojz4ViKvgSw
+  default_config_hash: UPF2W9FIch8dQiw8APNHolLYRanN7HFcjXqbmbur09o
 id: editor
 label: Editor
 weight: 4

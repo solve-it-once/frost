@@ -1,4 +1,4 @@
-uuid: f5265724-180c-4b39-9052-a6ce049c875f
+uuid: 03994c7d-1c7c-48ae-b423-d92a31b8149e
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: zGXGXaMJPSQTzar9JTNE9P-ktQbntE7lru-JHHksE6M
+  default_config_hash: msnpLRV5HR9AAfpw4A7o_J2Vkv9x4KhMtG-P9kLcjlQ
 id: node.page.field_sections
 field_name: field_sections
 entity_type: node

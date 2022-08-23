@@ -1,4 +1,4 @@
-uuid: 82d51890-ff0c-4738-85df-cff9f749221b
+uuid: 1267ce0e-3d97-484b-96d8-d9af4b70d871
 langcode: en
 status: true
 dependencies:
@@ -36,7 +36,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: trxS8HqwiSxWpV3482mgav88i9EaCifdqKMMCorh9Og
+  default_config_hash: vsxCLhfSFFq4jgpQL-N4qMsoMEILUIFPzCZKPPIKVkg
 id: node.event.ief
 targetEntityType: node
 bundle: event
@@ -78,6 +78,11 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 0

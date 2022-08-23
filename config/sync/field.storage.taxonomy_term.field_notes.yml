@@ -1,9 +1,11 @@
-uuid: 0952c150-9636-4c44-8d39-49ef27caf6b7
+uuid: 454bde62-f30b-4164-bf4c-e2d07ba1de19
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
+_core:
+  default_config_hash: gRgsnC210-VnAUpavCH4F6CKS1shK8O30WjsEyOpcP4
 id: taxonomy_term.field_notes
 field_name: field_notes
 entity_type: taxonomy_term

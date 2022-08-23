@@ -1,4 +1,4 @@
-uuid: e7a8d247-890a-4d26-9a56-c7f15d4689d2
+uuid: 1c6671a8-a1d3-4a03-ad83-2705e4970440
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - commerce_product.commerce_product_variation_type.default
   module:
     - commerce_price
+_core:
+  default_config_hash: 0ijueSsB1Qxf1pHHtI6ZmJbcBEbjgH9IwbqjcfKPjRs
 id: commerce_product_variation.default.default
 targetEntityType: commerce_product_variation
 bundle: default

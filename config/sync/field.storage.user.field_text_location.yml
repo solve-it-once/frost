@@ -1,11 +1,11 @@
-uuid: 2231f6eb-4806-43f2-837e-70acfa4e4483
+uuid: d365113d-bff2-4e47-84f8-adf14684a191
 langcode: en
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: mY0zErA6gpwkP2xcE2jghBEqBbfNFyG-h7O9olqE1-Q
+  default_config_hash: gZI0IxONI9Og95vk3-jna5Q1FqWAD_5JvOUcHggmHSg
 id: user.field_text_location
 field_name: field_text_location
 entity_type: user

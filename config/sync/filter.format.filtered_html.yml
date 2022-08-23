@@ -1,11 +1,11 @@
-uuid: d3f3666a-2f4a-44fd-9772-a0d5f8c13dce
+uuid: 41dafa46-7324-4a0f-aa53-9a16c44d6014
 langcode: en
 status: true
 dependencies:
   module:
     - linkit
 _core:
-  default_config_hash: KPx_DHxds4NEK2n6BYu-Rs1eDAjOXPTti_6wgQ_aCSc
+  default_config_hash: 8HN57iI9TDIvm0N-mC3V8dqaskzScGw6LDK6wam6t_E
 name: 'Filtered HTML'
 format: filtered_html
 weight: 0

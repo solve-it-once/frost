@@ -1,4 +1,4 @@
-uuid: 774a3ed1-94c0-4fbd-ab2d-b3b81fc8c9e1
+uuid: 530a46f5-2ce2-4ad7-be35-50973199ef59
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,10 @@ dependencies:
     - commerce_checkout
     - commerce_product
     - media
-    - search_api_autocomplete
     - styleguide
     - system
 _core:
-  default_config_hash: DY2ei1O34_xvudZImYaldL5aZ_KrTURPmagWHmNbH4Y
+  default_config_hash: 0YWAboXJuQx0xw0xKbO5RuNf0V1P3HNfOK5YKCBkx-0
 id: anonymous
 label: 'Anonymous user'
 weight: 0

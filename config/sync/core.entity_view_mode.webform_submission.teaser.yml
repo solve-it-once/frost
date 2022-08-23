@@ -1,9 +1,11 @@
-uuid: bb01c27b-887d-4295-bc2b-d41ecc832ce7
+uuid: 74cee9d6-0e02-42db-b8d9-225fff8596e0
 langcode: en
 status: true
 dependencies:
   module:
     - webform
+_core:
+  default_config_hash: 99-2jJLENm0XUJBoUFXRWBpvBXEhLYLdjdxk3YGRGkI
 id: webform_submission.teaser
 label: Teaser
 targetEntityType: webform_submission

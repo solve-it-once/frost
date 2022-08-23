@@ -1,9 +1,11 @@
-uuid: 91fa3c36-90f7-4765-a843-fb322ec3edc6
+uuid: 8b002622-b167-45a4-a1ce-1c3dae3f43b3
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
+_core:
+  default_config_hash: 0XPyKLwNWECdk4_wC66kDW9sqi30RR5edvRbD-0cYds
 id: taxonomy_term.plan
 label: plan
 targetEntityType: taxonomy_term

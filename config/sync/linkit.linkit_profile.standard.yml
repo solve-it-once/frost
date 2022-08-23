@@ -1,4 +1,4 @@
-uuid: dae5a541-1202-4ca0-a10e-5b8b1ef65d4e
+uuid: ddc16a99-d835-4d1c-b6fb-92c1479fb8fe
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - node
     - taxonomy
 _core:
-  default_config_hash: Ks4eHlu5xGj4SMEFXFoUMiuZxUktTi0GV9p3GjdXzTQ
+  default_config_hash: Ry3DrDG1mIx2P1ft_O3d8FAsT7MIVSOUTTLnqVmJync
 label: Standard
 id: standard
 description: 'The most common settings for most users on most sites most of the time.'
@@ -20,6 +20,7 @@ matchers:
       group_by_bundle: true
       substitution_type: canonical
       include_unpublished: true
+      limit: 100
     weight: 0
   e7e9d0e8-7ecd-4a58-aa71-06f3936ce765:
     id: 'entity:taxonomy_term'
@@ -29,4 +30,5 @@ matchers:
       bundles: {  }
       group_by_bundle: false
       substitution_type: canonical
+      limit: 100
     weight: 0

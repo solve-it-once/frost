@@ -1,4 +1,4 @@
-uuid: 77ec81d0-c7f7-4a84-9239-9818714555b7
+uuid: 1d50dac6-d246-4e59-8318-fa1e453762fb
 langcode: en
 status: true
 dependencies:
@@ -32,7 +32,7 @@ third_party_settings:
         description: ''
         required_fields: false
 _core:
-  default_config_hash: tMK0Oauzc2yIHgtvc5m2G26UN-TUJT25R2HAhwytmp0
+  default_config_hash: MkocOEgwBpxqt2lIDB_NBAhcnMtVwF_y9VUvLhPkDO0
 id: node.page.plan
 targetEntityType: node
 bundle: page
@@ -59,6 +59,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   created: true

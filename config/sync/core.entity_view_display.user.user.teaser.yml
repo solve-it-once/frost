@@ -1,4 +1,4 @@
-uuid: a84dfefe-6157-4770-a1c6-a9b2e401793d
+uuid: 2d15ea05-0177-4920-8d5f-5d3d25ec4ec6
 langcode: en
 status: true
 dependencies:
@@ -17,7 +17,7 @@ dependencies:
     - telephone
     - user
 _core:
-  default_config_hash: at6FvHGyRr9uREIh7GB_G1ccwyzr7Xz7GW76wbNyWvA
+  default_config_hash: gSZFqjbEqu_la0gc-h4278AKta-_EWbJaoUxaTsaqHg
 id: user.user.teaser
 targetEntityType: user
 bundle: user

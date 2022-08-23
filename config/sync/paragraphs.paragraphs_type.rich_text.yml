@@ -1,9 +1,9 @@
-uuid: 856afce1-5d49-4b0f-b725-34d024c5381c
+uuid: 2bda9c5a-d999-45b3-88c0-03da9735e260
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 6aVX_KHtlcHX89QqsoAwofTRTvUJb0Fv8kl-yIn9bq0
+  default_config_hash: tbNDcEFT9gVIhrHmJuC2kc0rR1PjowRwswmij8kfjRE
 id: rich_text
 label: 'Rich text'
 icon_uuid: null

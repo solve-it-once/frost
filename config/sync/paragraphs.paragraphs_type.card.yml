@@ -1,4 +1,4 @@
-uuid: 4ff081d9-850f-40fb-aaee-412f2aa97b89
+uuid: 6ad1ea22-eefe-4617-a1e4-e1bc3c2e3d87
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 _core:
-  default_config_hash: yp_SMwnUMNY9wWB-puCaTx-xLp31c5vWSv8mZzBXHlQ
+  default_config_hash: mWX1hYycrxavh8aXl3DJg3coHXp_2EsNelcqEo92M4M
 id: card
 label: Card
 icon_uuid: null

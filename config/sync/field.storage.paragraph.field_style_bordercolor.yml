@@ -1,10 +1,12 @@
-uuid: 63a9a95f-020a-4e41-8ec8-06a11f41aba4
+uuid: cb16edc4-06d1-448b-ae7c-32db560680c2
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: gEtXM_Q65eSfiL2dyP5OTrkfEq8lWBru4euqMt-HhQg
 id: paragraph.field_style_bordercolor
 field_name: field_style_bordercolor
 entity_type: paragraph

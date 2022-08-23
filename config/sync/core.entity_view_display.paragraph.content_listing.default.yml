@@ -1,4 +1,4 @@
-uuid: a04460c1-77c0-40a9-86ee-7ca7630d312f
+uuid: af2d9779-1818-4652-8b2a-9b0fff6eb460
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - entity_reference_display
     - field_formatter_class
 _core:
-  default_config_hash: X4zOQv5NtLei11TF4ZVi-5vVf2hU4yfbU2XASR1IZ5Q
+  default_config_hash: t6WIOijRT2TgsY963ZCKiXZXEGrqrTAM2e-OhxCDLR0
 id: paragraph.content_listing.default
 targetEntityType: paragraph
 bundle: content_listing

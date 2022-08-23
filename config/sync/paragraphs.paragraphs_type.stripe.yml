@@ -1,4 +1,4 @@
-uuid: 8d36c706-4b50-40f7-ba08-c86520246fe0
+uuid: 1e89c44c-bc08-4758-8f2b-0d8b9dee6768
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 _core:
-  default_config_hash: kCFppKajj7vAXBj6PgKWEgm4DOGUyeXQJWg0U8npzug
+  default_config_hash: yAET_-cC_JMwMsFXunXkefyUjqrer-1GRxU6vTqyswo
 id: stripe
 label: 'Stripe: Atomic'
 icon_uuid: null
