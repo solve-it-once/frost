@@ -3,6 +3,7 @@ _core:
 langcode: en
 settings:
   default_status: open
+  default_page: true
   default_page_base_path: /form
   default_ajax: false
   default_ajax_progress_type: throbber

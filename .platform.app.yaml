@@ -18,7 +18,7 @@ relationships:
 dependencies:
   php:
     composer/composer: '^2'
-    "drush/drush": "^10.0"
+    "drush/drush": "^11.0"
 
 # Remote debugging is possible by uncommenting the runtime config below.
 #runtime:
