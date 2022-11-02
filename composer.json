@@ -22,7 +22,7 @@
         "drupal/advagg": "^5.0",
         "drupal/antibot": "^2.0",
         "drupal/auditfiles": "^3.0@beta",
-        "drupal/better_exposed_filters": "~5.0",
+        "drupal/better_exposed_filters": "^6.0",
         "drupal/bg_image_formatter": "^1.1",
         "drupal/block_class": "^2.0",
         "drupal/block_field": "^1.0@alpha",

@@ -884,7 +884,7 @@ display:
     display_options:
       enabled: true
       display_extenders: {  }
-      path: admin/commerce/orders/%/payments
+      path: admin/commerce/orders/%commerce_order/payments
       menu:
         type: tab
         title: Payments

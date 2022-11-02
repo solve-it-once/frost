@@ -60,6 +60,7 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
+      specific_languages: {  }
 _core:
   default_config_hash: ayGn59cAYVSLRem552djpqyCfAM0FWzhM0Vva_U1hiI
 id: content

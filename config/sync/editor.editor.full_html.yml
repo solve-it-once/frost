@@ -29,7 +29,7 @@ settings:
       - blockQuote
       - insertTable
       - drupalMedia
-      - uploadImage
+      - drupalInsertImage
       - '|'
       - removeFormat
       - specialCharacters
