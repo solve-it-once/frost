@@ -61,6 +61,8 @@ third_party_settings:
       limit_to_content_language: false
       include_language_independent: true
       specific_languages: {  }
+      use_language_undefined_as_fallback_language: false
+      use_universal_collation: false
 _core:
   default_config_hash: ayGn59cAYVSLRem552djpqyCfAM0FWzhM0Vva_U1hiI
 id: content

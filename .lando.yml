@@ -6,11 +6,6 @@ recipe: platformsh
 config:
   webroot: docroot
   xdebug: true
-  overrides:
-    app:
-      runtime:
-        extensions:
-          - xdebug
 
 services:
   app:

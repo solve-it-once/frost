@@ -5,7 +5,7 @@ namespace Drupal\frost_custom\Form;
 use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
 use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -32,20 +32,20 @@ class FrostCustomSubmittedForm extends ConfigFormBase {
   protected TreeBuilderInterface $treeBuilder;
 
   /**
-   * The entity type manager service, invoked in the constructor.
+   * The entity type bundle info service, invoked in the constructor.
    *
-   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   * @var \Drupal\Core\Entity\EntityTypeBundleInfoInterface
    */
-  protected EntityTypeManagerInterface $entityTypeManager;
+  protected EntityTypeBundleInfoInterface $entityTypeBundleInfo;
 
   /**
    * {@inheritdoc}
    */
-  public function __construct(ConfigFactoryInterface $config_factory, ModuleHandlerInterface $moduleHandler, TreeBuilderInterface $treeBuilder, EntityTypeManagerInterface $entityTypeManager) {
+  public function __construct(ConfigFactoryInterface $config_factory, ModuleHandlerInterface $moduleHandler, TreeBuilderInterface $treeBuilder, EntityTypeBundleInfoInterface $entityTypeBundleInfo) {
     parent::__construct($config_factory);
     $this->moduleHandler = $moduleHandler;
     $this->treeBuilder = $treeBuilder;
-    $this->entityTypeManager = $entityTypeManager;
+    $this->entityTypeBundleInfo = $entityTypeBundleInfo;
   }
 
   /**
@@ -56,7 +56,7 @@ class FrostCustomSubmittedForm extends ConfigFormBase {
       $container->get('config.factory'),
       $container->get('module_handler'),
       $container->get('token.tree_builder'),
-      $container->get('entity_type.manager')
+      $container->get('entity_type.bundle.info')
     );
   }
 
@@ -80,10 +80,8 @@ class FrostCustomSubmittedForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $sub = $this->config('frost_custom.frost_submitted');
     try {
-      $content_types = $this->entityTypeManager->getStorage('node')
-        ->loadMultiple();
-    }
-    catch (InvalidPluginDefinitionException | PluginNotFoundException $e) {
+      $content_types = $this->entityTypeBundleInfo->getBundleInfo('node');
+    } catch (InvalidPluginDefinitionException|PluginNotFoundException $e) {
     }
 
     // Make form a tree.

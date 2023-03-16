@@ -84,5 +84,6 @@ hidden:
   commerce_remote_id: true
   customer_profiles: true
   langcode: true
+  linked_title: true
   member_for: true
   search_api_excerpt: true

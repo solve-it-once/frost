@@ -56,6 +56,26 @@ function frost_custom_entity_extra_field_info() {
   $entity_type_manager = \Drupal::service('entity_type.manager');
   $entity_definitions = $entity_type_manager->getDefinitions();
 
+  // Go through all the product types and add extra fields for display.
+  if (isset($entity_definitions['commerce_product'])) {
+    foreach (ProductType::loadMultiple() as $bundle) {
+      $extra['commerce_product'][$bundle->Id()] = [
+        'display' => [
+          'readmore' => [
+            'label' => t('Read more link'),
+            'description' => t('A link back to the entity that says read more.'),
+            'weight' => 0,
+          ],
+          'checkoutalt' => [
+            'label' => t('Checkout alternative'),
+            'description' => t('A contact-us link for when we want commerce disabled.'),
+            'weight' => 0,
+          ],
+        ],
+      ];
+    }
+  }
+
   // Go through all the node types and add extra fields for display.
   if (isset($entity_definitions['node'])) {
     foreach (NodeType::loadMultiple() as $bundle) {
@@ -96,24 +116,17 @@ function frost_custom_entity_extra_field_info() {
     }
   }
 
-  // Go through all the product types and add extra fields for display.
-  if (isset($entity_definitions['commerce_product'])) {
-    foreach (ProductType::loadMultiple() as $bundle) {
-      $extra['commerce_product'][$bundle->Id()] = [
-        'display' => [
-          'readmore' => [
-            'label' => t('Read more link'),
-            'description' => t('A link back to the entity that says read more.'),
-            'weight' => 0,
-          ],
-          'checkoutalt' => [
-            'label' => t('Checkout alternative'),
-            'description' => t('A contact-us link for when we want commerce disabled.'),
-            'weight' => 0,
-          ],
+  // Set pseudo-fields on users, which typically have the one bundle.
+  if (isset($entity_definitions['user'])) {
+    $extra['user']['user'] = [
+      'display' => [
+        'linked_title' => [
+          'label' => t('Username (contextually linked)'),
+          'description' => t('The title linked to the detail page.'),
+          'weight' => 0,
         ],
-      ];
-    }
+      ],
+    ];
   }
 
   return $extra;
@@ -288,6 +301,45 @@ function frost_custom_commerce_product_view(array &$build, EntityInterface $enti
           'button',
         ],
       ],
+    ];
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ *
+ * Applies the pseudo-fields from frost_custom_entity_extra_field_info().
+ */
+function frost_custom_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // Linked title.
+  if ($display->getComponent('linked_title')) {
+    $title = $entity->getDisplayName();
+    $prefix = '<h2>';
+    $suffix = '</h2>';
+
+    // Replace username with first and last name, if present.
+    if (method_exists($entity, 'hasField')
+      && $entity->hasField('field_name_first')
+      && $entity->hasField('field_name_last')
+    ) {
+      $first_name = $entity->get('field_name_first')->value;
+      $last_name = $entity->get('field_name_last')->value;
+      $full_name = $first_name . ' ' . $last_name;
+      if (mb_strlen($full_name) >= 3) {
+        $title = $full_name;
+      }
+    }
+
+    // We'll keep the 'linked' part out of users for now.
+    if (in_array($view_mode, ['default', 'full', 'hero'])) {
+      $prefix = '<h1 class="frost-custom-module--linked-title">';
+      $suffix = '</h1>';
+    }
+
+    $build['linked_title'] = [
+      '#prefix' => $prefix,
+      '#markup' => $title,
+      '#suffix' => $suffix,
     ];
   }
 }

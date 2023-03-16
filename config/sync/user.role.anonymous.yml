@@ -6,6 +6,7 @@ dependencies:
     - commerce_checkout
     - commerce_product
     - media
+    - search_api_autocomplete
     - styleguide
     - system
 _core:
@@ -15,11 +16,10 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access checkout'
-  - 'access content'
-  - 'access pwa'
-  - 'access user profiles'
-  - 'use search_api_autocomplete for search'
-  - 'view commerce_product'
-  - 'view media'
-  - 'view style guides'
+  0: 'access checkout'
+  1: 'access content'
+  3: 'access user profiles'
+  4: 'use search_api_autocomplete for search'
+  5: 'view commerce_product'
+  6: 'view media'
+  7: 'view style guides'

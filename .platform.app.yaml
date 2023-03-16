@@ -4,7 +4,7 @@
 # See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
 
 name: 'app'
-type: 'php:8.0'
+type: 'php:8.1'
 disk: 2048
 build:
   flavor: composer
