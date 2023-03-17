@@ -13,7 +13,7 @@ _core:
   default_config_hash: yBRn4ztiL4zKdUBLqgHrA2D5gXUAuCJj7dpXI0VWCeo
 name: Page
 type: page
-description: 'Generic and catch-all content type that can be used for storytelling, housekeeping, or functional purposes. If a piece of content doesn''t feel like an article or event, it may very well be a page.'
+description: "Generic and catch-all content type that can be used for storytelling, housekeeping, or functional purposes. If a piece of content doesn't feel like an article or event, it may very well be a page."
 help: ''
 new_revision: true
 preview_mode: 0

@@ -55,7 +55,6 @@ content:
         add_in_between: false
         add_in_between_link_count: 3
         delete_confirmation: true
-        split_text: false
         show_drag_and_drop: true
   field_image:
     type: media_library_widget
@@ -89,7 +88,6 @@ content:
         add_in_between: false
         add_in_between_link_count: 3
         delete_confirmation: true
-        split_text: false
         show_drag_and_drop: true
   field_seo:
     type: paragraphs
@@ -113,7 +111,6 @@ content:
       paragraphs_features:
         add_in_between: false
         delete_confirmation: true
-        split_text: false
   langcode:
     type: language_select
     weight: 2

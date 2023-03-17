@@ -2,7 +2,7 @@
 name: 'Custom RSS Migrate'
 description: Module for performing site-specific migrations from RSS.
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 package: Migrate
 
 # Dependencies

@@ -5,12 +5,12 @@ namespace Drupal\frost_custom\Plugin\Block;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Controller\TitleResolverInterface;
-use Drupal\Core\Http\RequestStack;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Provides current page social share links.
@@ -25,7 +25,7 @@ class SocialShareBlock extends BlockBase implements ContainerFactoryPluginInterf
   /**
    * The request stack.
    *
-   * @var \Drupal\Core\Http\RequestStack
+   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
   protected RequestStack $requestStack;
 

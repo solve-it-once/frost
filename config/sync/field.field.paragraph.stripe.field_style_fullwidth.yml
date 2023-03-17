@@ -12,7 +12,7 @@ field_name: field_style_fullwidth
 entity_type: paragraph
 bundle: stripe
 label: 'Full width'
-description: 'If checked, the stripe''s contents will be the full width of the browser rather than constrained to the page''s default content width. <strong>Use with caution</strong>.'
+description: "If checked, the stripe's contents will be the full width of the browser rather than constrained to the page's default content width. <strong>Use with caution</strong>."
 required: false
 translatable: false
 default_value:

@@ -3,7 +3,7 @@ type: theme
 base theme: false
 description: Frost theme
 screenshot: screenshot.png
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 ckeditor_stylesheets:
   - css/settings.css
   - css/theme/theme--base.css
@@ -11,8 +11,52 @@ ckeditor5-stylesheets:
   - css/settings.css
   - css/theme/theme--base.css
 libraries:
-  - frost_theme/frost-globalStyling
+  - frost_theme/frost-global
   - frost_theme/frost-animate
+libraries-override:
+  classy/node:
+    css:
+      component:
+        css/components/node.css: false
+  commerce_cart/cart_block:
+    css:
+      layout:
+        css/commerce_cart.layout.css: false
+      theme:
+        css/commerce_cart.theme.css: false
+  core/normalize:
+    css:
+      base:
+        assets/vendor/normalize-css/normalize.css: false
+  paragraphs/drupal.paragraphs.unpublished:
+    css:
+      theme:
+        css/paragraphs.unpublished.css: false
+  system/base:
+    css:
+      component:
+        css/components/ajax-progress.module.css: false
+        css/components/align.module.css: false
+        css/components/autocomplete-loading.module.css: false
+        css/components/clearfix.module.css: false
+        css/components/container-inline.module.css: false
+        css/components/details.module.css: false
+        css/components/fieldgroup.module.css: false
+        css/components/hidden.module.css: false
+        css/components/item-list.module.css: false
+        css/components/js.module.css: false
+        css/components/nowrap.module.css: false
+        css/components/position-container.module.css: false
+        css/components/progress.module.css: false
+        css/components/reset-appearance.module.css: false
+        css/components/resize.module.css: false
+        css/components/sticky-header.module.css: false
+        css/components/system-status-counter.css: false
+        css/components/system-status-report-counters.css: false
+        css/components/system-status-report-general-info.css: false
+        css/components/tabledrag.module.css: false
+        css/components/tablesort.module.css: false
+        css/components/tree-child.module.css: false
 regions:
   page_top: Page top
   alerts: Alerts
@@ -38,31 +82,3 @@ features:
   - favicon
 settings:
   frost_theme_disable_core_css: 0
-stylesheets-remove:
-  - 'core/assets/vendor/normalize-css/normalize.css'
-  - 'core/themes/classy/css/components/node.css'
-  - 'core/modules/system/css/components/ajax-progress.module.css'
-  - 'core/modules/system/css/components/align.module.css'
-  - 'core/modules/system/css/components/autocomplete-loading.module.css'
-  - 'core/modules/system/css/components/clearfix.module.css'
-  - 'core/modules/system/css/components/container-inline.module.css'
-  - 'core/modules/system/css/components/details.module.css'
-  - 'core/modules/system/css/components/fieldgroup.module.css'
-  - 'core/modules/system/css/components/hidden.module.css'
-  - 'core/modules/system/css/components/item-list.module.css'
-  - 'core/modules/system/css/components/js.module.css'
-  - 'core/modules/system/css/components/nowrap.module.css'
-  - 'core/modules/system/css/components/position-container.module.css'
-  - 'core/modules/system/css/components/progress.module.css'
-  - 'core/modules/system/css/components/reset-appearance.module.css'
-  - 'core/modules/system/css/components/resize.module.css'
-  - 'core/modules/system/css/components/sticky-header.module.css'
-  - 'core/modules/system/css/components/system-status-counter.css'
-  - 'core/modules/system/css/components/system-status-report-counters.css'
-  - 'core/modules/system/css/components/system-status-report-general-info.css'
-  - 'core/modules/system/css/components/tabledrag.module.css'
-  - 'core/modules/system/css/components/tablesort.module.css'
-  - 'core/modules/system/css/components/tree-child.module.css'
-  - 'modules/contrib/paragraphs/css/paragraphs.unpublished.css'
-  - 'modules/contrib/commerce/modules/cart/css/commerce_cart.layout.css'
-  - 'modules/contrib/commerce/modules/cart/css/commerce_cart.theme.css'

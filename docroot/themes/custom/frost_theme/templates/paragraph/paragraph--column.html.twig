@@ -1,5 +1,5 @@
-{% spaceless %}
+{% apply spaceless %}
   <{{ html_tag }}{{ attributes }}>
     {{ content |without('contextual_links') }}
   </{{ html_tag }}>
-{% endspaceless %}
+{% endapply %}

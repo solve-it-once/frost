@@ -1,7 +1,7 @@
 name: Frost
 type: profile
-description: 'Drupal 9 that is atomic.'
-core_version_requirement: ^8 || ^9
+description: 'Drupal 10 that is atomic.'
+core_version_requirement: ^9 || ^10
 
 # Overkill distribution directives.
 distribution:

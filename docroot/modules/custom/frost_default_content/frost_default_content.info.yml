@@ -4,7 +4,7 @@ package: Other
 type: module
 dependencies:
   - default_content:default_content
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 
 # Bring in all the content for a head start.
 default_content:

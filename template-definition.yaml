@@ -57,4 +57,4 @@ initialize:
   repository: https://github.com/solve-it-once/frost.git@master
   config: null
   files: [ ]
-  profile: Drupal 9
+  profile: Drupal 10

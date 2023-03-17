@@ -12,7 +12,7 @@ field_name: field_notes
 entity_type: node
 bundle: article
 label: 'Notes (internal)'
-description: 'Let your team know what''s important about this content and any other priorities or @todos that may be relevant.'
+description: "Let your team know what's important about this content and any other priorities or @todos that may be relevant."
 required: false
 translatable: true
 default_value: {  }

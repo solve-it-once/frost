@@ -13,5 +13,5 @@ id: product_listing
 label: 'Product listing'
 icon_uuid: null
 icon_default: null
-description: 'Choose whichever products you''d like and display them as teasers'
+description: "Choose whichever products you'd like and display them as teasers"
 behavior_plugins: {  }

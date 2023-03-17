@@ -39,6 +39,9 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
@@ -58,9 +61,6 @@ settings:
         - '<h5 id>'
         - '<h6 id>'
         - '<img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption>'
-    ckeditor5_list:
-      reversed: false
-      startIndex: true
 image_upload:
   status: false
   scheme: public

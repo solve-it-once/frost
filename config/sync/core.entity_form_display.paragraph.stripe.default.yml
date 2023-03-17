@@ -109,7 +109,6 @@ content:
         add_in_between: false
         add_in_between_link_count: 3
         delete_confirmation: false
-        split_text: false
         show_drag_and_drop: true
   field_image_background:
     type: media_library_widget

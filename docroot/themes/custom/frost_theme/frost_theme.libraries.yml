@@ -9,7 +9,7 @@ frost-fslightbox:
     libraries/frost-fslightbox/fslightbox/fslightbox.js: {}
     libraries/frost-fslightbox/frost-fslightbox.js: {}
 
-frost-globalStyling:
+frost-global:
   version: 1.x
   css:
     base:
