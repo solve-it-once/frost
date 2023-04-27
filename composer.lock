@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd7e779795c95b34eb1fb2dc1a6c5bc3",
+    "content-hash": "39d466a5064561ddc47930cf210ba24e",
     "packages": [
         {
             "name": "acquia/blt",
@@ -6664,6 +6664,98 @@
             "homepage": "https://www.drupal.org/project/quickedit",
             "support": {
                 "source": "https://git.drupalcode.org/project/quickedit"
+            }
+        },
+        {
+            "name": "drupal/r4032login",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/r4032login.git",
+                "reference": "2.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/r4032login-2.2.1.zip",
+                "reference": "2.2.1",
+                "shasum": "b1ee040ec84a1feee28ed9ac6c8576f6e9edfd3a"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.1",
+                    "datestamp": "1680284411",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bdone",
+                    "homepage": "https://www.drupal.org/user/687670"
+                },
+                {
+                    "name": "Bevan",
+                    "homepage": "https://www.drupal.org/user/49989"
+                },
+                {
+                    "name": "deekayen",
+                    "homepage": "https://www.drupal.org/user/972"
+                },
+                {
+                    "name": "Grayle",
+                    "homepage": "https://www.drupal.org/user/3145497"
+                },
+                {
+                    "name": "lotyrin",
+                    "homepage": "https://www.drupal.org/user/216580"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
+                },
+                {
+                    "name": "ms2011",
+                    "homepage": "https://www.drupal.org/user/108440"
+                },
+                {
+                    "name": "Nixou",
+                    "homepage": "https://www.drupal.org/user/2304734"
+                },
+                {
+                    "name": "pwolanin",
+                    "homepage": "https://www.drupal.org/user/49851"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "shrop",
+                    "homepage": "https://www.drupal.org/user/14767"
+                },
+                {
+                    "name": "Sk8erPeter",
+                    "homepage": "https://www.drupal.org/user/1441344"
+                }
+            ],
+            "description": "Redirect anonymous users from 403 Access Denied pages to the /user/login page.",
+            "homepage": "https://www.drupal.org/project/r4032login",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/r4032login",
+                "issues": "https://www.drupal.org/project/issues/r4032login"
             }
         },
         {
@@ -18313,6 +18405,8 @@
         "drupal/entity_usage": 10,
         "drupal/field_group": 20,
         "drupal/form_mode_manager": 20,
+        "drupal/gin": 5,
+        "drupal/gin_toolbar": 5,
         "drupal/imageapi_optimize": 10,
         "drupal/imageapi_optimize_binaries": 15,
         "drupal/imageapi_optimize_resmushit": 10,

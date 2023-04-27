@@ -1,0 +1,124 @@
+uuid: 328eabde-d373-48f9-98ca-86712738941b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.hero
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_email
+    - field.field.user.user.field_image
+    - field.field.user.user.field_jobtitle
+    - field.field.user.user.field_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_text_location
+  module:
+    - field_formatter_class
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_f:
+      children:
+        - group_title_area
+        - group_imagery
+      label: 'Flex wrapper'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'display--flex flex-direction--row layout--flex-row justify-content--center align-items--center'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_title_area:
+      children:
+        - field_name
+        - field_jobtitle
+      label: 'Title area'
+      parent_name: group_f
+      region: content
+      weight: 14
+      format_type: html_element
+      format_settings:
+        classes: 'flex--2 display--flex flex-direction--column justify-content--center padding-horizontal--4 text-align--left'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_imagery:
+      children:
+        - field_image
+      label: Imagery
+      parent_name: group_f
+      region: content
+      weight: 16
+      format_type: html_element
+      format_settings:
+        classes: 'display--flex flex-direction--column flex--1 justify-content--center text-align--center'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+_core:
+  default_config_hash: OCO0s0Udd8kKXWpVcW0MLZx9APWff2k3cD-ZuMfrhd0
+id: user.user.hero
+targetEntityType: user
+bundle: user
+mode: hero
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 8
+    region: content
+  field_jobtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden:
+  commerce_remote_id: true
+  customer_profiles: true
+  field_biography: true
+  field_email: true
+  field_phone: true
+  field_text_location: true
+  langcode: true
+  linked_title: true
+  member_for: true
+  search_api_excerpt: true

@@ -129,9 +129,13 @@ fieldset {
 legend {
   font-size: .625em;
   font-weight: 900;
-  line-height: 1;
+  line-height: var(--line-height--heading);
   padding: 0 calc(2 * var(--spacing--single));
   text-align: center;
+}
+/* Drupal sometimes renders legends containing visually-hidden text. */
+legend:has(.visually-hidden) {
+  padding: 0;
 }
 
 /**
@@ -204,9 +208,14 @@ textarea {
     width: 100%;
   }
 }
+input[type="date"],
+input[type="number"],
+input[type="tel"] {
+  max-width: 15ch;
+}
 button,
 input {
-  line-height: 1;
+  line-height: var(--line-height--heading);
 }
 textarea {
   max-height: inherit;
@@ -227,7 +236,7 @@ input[type="submit"] {
   display: inline-block;
   font-size: 1em;
   font-weight: 650;
-  line-height: 1;
+  line-height: var(--line-height--heading);
   margin: 0 calc(2 * var(--spacing--single)) calc(2 * var(--spacing--single));
   padding: calc(1 * var(--spacing--single)) calc(2 * var(--spacing--single));
   text-align: center;

@@ -18,7 +18,8 @@
   -ms-flex-line-pack: center;
   align-content: center;
 }
-.align-content--space-between {
+.align-content--space-between,
+.align-content--dave-matthews {
   -webkit-align-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between;
@@ -481,7 +482,8 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
-.justify-content--space-between {
+.justify-content--space-between,
+.justify-content--dave-matthews {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -moz-box-pack: justify;

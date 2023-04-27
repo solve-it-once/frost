@@ -91,6 +91,7 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface, Con
       '#attributes' => [
         'class' => [
           'entity-bundle-stripe',
+          'hero-title--page-title',
           'text-align--center',
           'background-color--grey-dark',
           'background-image--default',
@@ -103,7 +104,7 @@ class HeroTitleBlock extends BlockBase implements TitleBlockPluginInterface, Con
 
     // If page entity has a hero, make block contents that instead.
     $parameters = $this->routeMatch->getParameters()->all();
-    $paged_entity_types = ['node', 'taxonomy_term', 'commerce_product'];
+    $paged_entity_types = ['commerce_product', 'node', 'taxonomy_term', 'user'];
     foreach ($paged_entity_types as $type) {
       if (isset($parameters[$type])) {
         $entity = $parameters[$type];

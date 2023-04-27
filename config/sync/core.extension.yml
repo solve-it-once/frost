@@ -106,6 +106,7 @@ module:
   profile: 0
   pwa: 0
   quickedit: 0
+  r4032login: 0
   redirect: 0
   redirect_404: 0
   redirect_domain: 0

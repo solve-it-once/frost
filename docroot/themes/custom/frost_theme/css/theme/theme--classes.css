@@ -140,6 +140,7 @@
 .border-spaced > li {
   border-right: 1px solid;
   border-bottom: 0 none;
+  padding: 0 2px;
 }
 .border-spaced li:last-child {
   border-right: 0 none;
@@ -356,10 +357,11 @@
     z-index: 1;
   }
   .has-field-video-background > .field-name--field-media-video-file > video {
+    aspect-ratio: 16 / 9;
+    height: 100%;
     left: 50%;
     margin: 0;
-    min-height: 50vw;
-    min-width: 100vw;
+    min-width: calc((16/9) * 100%);
     position: absolute;
     top: 0;
     transform: translateX(-50%);
@@ -381,7 +383,7 @@
   margin-bottom: 0 !important;
 }
 .has--hotspots > .field-name--field-text {
-  background-color: rgba(34,34,34,.9);
+  background-color: rgba(34, 34, 34, .9);
   bottom: 0;
   color: var(--color--grey);
   left: 0;
@@ -398,7 +400,7 @@
   font-weight: bold;
   height: 1em;
   letter-spacing: 0.25em;
-  line-height: 1;
+  line-height: var(--line-height--heading);
   padding: calc(0.5 * var(--spacing--single));
   text-decoration: none;
   transition: all .3s ease-in;
@@ -547,7 +549,7 @@ ul.inline li:first-child {
 }
 .pager ul > li {
   display: inline-block;
-  line-height: 1;
+  line-height: var(--line-height--heading);
   margin: 0;
 }
 .pager li > a,
@@ -669,10 +671,6 @@ ul.inline li:first-child {
 ul.tabs {
   border-bottom: 1px solid;
   border-color: var(--color--grey-light);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   font-weight: 300;
   list-style: none;
@@ -682,10 +680,6 @@ ul.tabs {
 }
 ul.tabs > li {
   display: block;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0;
-  -moz-box-flex: 1;
-  -ms-flex: 1 0;
   flex: 1 0;
   margin: 0 10px -1px;
 }
@@ -731,6 +725,12 @@ ul.tabs > li > a.is-active {
   }
   ul.tabs > li > a {
     display: block;
+  }
+}
+@media all and (min-width: 550px) {
+  ul.tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 

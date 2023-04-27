@@ -23,7 +23,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt doc docx pdf zip'
+  file_extensions: 'doc docx fodg fodp fods fodt key numbers odf odg odp ods odt pages pdf ppt pptx rtf txt xls xlsx xml'
   max_filesize: ''
   description_field: false
 field_type: file

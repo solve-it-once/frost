@@ -183,6 +183,13 @@
 }
 
 /**
+ * Core classes for JS.
+ */
+.js .js-hide {
+  display: none;
+}
+
+/**
  * Drupal password strength indicator.
  */
 .password-strength {

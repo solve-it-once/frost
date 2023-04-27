@@ -23,6 +23,14 @@ function frost_theme_preprocess_user(&$vars) {
   $vars['attributes']['id'] = Html::cleanCssIdentifier('user--' . $entity->id());
 
   switch ($view_mode) {
+    case 'hero':
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flex');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('layout--flex-row');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('justify-content--center');
+      $vars['attributes']['class'][] = Html::cleanCssIdentifier('appear-as-stripe');
+
+      break;
+
     case 'teaser':
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('flex--1');
       $vars['attributes']['class'][] = Html::cleanCssIdentifier('display--flex');

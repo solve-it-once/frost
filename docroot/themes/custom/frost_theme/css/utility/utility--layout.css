@@ -116,6 +116,24 @@ main {
 }
 
 /**
+ * Gaps.
+ */
+@supports (gap: 10px) {
+  .gap--1 {
+    gap: calc(1 * var(--spacing--single));
+  }
+  .gap--2 {
+    gap: calc(2 * var(--spacing--single));
+  }
+  .gap--4 {
+    gap: calc(4 * var(--spacing--single));
+  }
+  .gap--8 {
+    gap: calc(8 * var(--spacing--single));
+  }
+}
+
+/**
  * Layout classes for hiding (see below for showing) at various viewports.
  */
 @media all and (max-width: 767px) {
@@ -145,7 +163,7 @@ main {
 .layout--horizontal {
   flex-direction: column;
 }
-.layout--horizontal > * ,
+.layout--horizontal > *,
 .layout--carousel > * {
   margin: 0 0 calc(4 * var(--spacing--single));
 }
@@ -171,7 +189,7 @@ main {
     flex-basis: calc(33% - (4 * var(--spacing--single)));
     margin: 0 calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single));
     max-width: 448px;
-    min-width: 285px;
+    min-width: 170px;
     scroll-snap-align: start;
   }
   .layout--carousel > * {

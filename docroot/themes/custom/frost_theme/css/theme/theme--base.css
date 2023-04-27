@@ -299,9 +299,11 @@ h1,
 .heading--h1 {
   font-size: clamp(3rem, 4vw, 5.5rem);
   font-weight: 350;
+  hyphens: auto;
   line-height: var(--line-height--heading);
   margin: 0;
   overflow-wrap: break-word;
+  word-break: break-word;
   word-wrap: break-word;
 }
 h1 > a:link,
@@ -321,6 +323,7 @@ h2,
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
+  word-break: break-word;
   word-wrap: break-word;
 }
 h2:first-child {
@@ -339,6 +342,7 @@ h3,
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
+  word-break: break-word;
   word-wrap: break-word;
 }
 h3:first-child {
@@ -357,6 +361,7 @@ h4,
   line-height: var(--line-height--heading);
   margin: 1.5em 0 .25em;
   overflow-wrap: break-word;
+  word-break: break-word;
   word-wrap: break-word;
 }
 h4:first-child {
@@ -424,6 +429,17 @@ hr {
  */
 iframe {
   border: 1px solid var(--color--grey-light);
+}
+
+/**
+ * Make YouTube and vimeo iframes play nice.
+ */
+@supports (aspect-ratio: auto) {
+  iframe[src*="yout"],
+  iframe[src*="vimeo"] {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
 }
 
 /**

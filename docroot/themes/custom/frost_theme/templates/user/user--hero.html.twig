@@ -1,0 +1,9 @@
+<article{{ attributes }}>
+  <div class="inner">
+    {{ title_prefix }}
+    {{ title_suffix }}
+    {% if content %}
+      {{- content -}}
+    {% endif %}
+  </div>
+</article>

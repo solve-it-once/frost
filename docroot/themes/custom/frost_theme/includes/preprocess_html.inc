@@ -61,14 +61,14 @@ function frost_theme_preprocess_html(&$vars) {
 
   // Add information about the number of sidebars.
   // @see bartik_preprocess_html().
-  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+  if (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
     $vars['body_classes'][] = 'layout-two-sidebars';
   }
-  elseif (!empty($variables['page']['sidebar_first'])) {
+  elseif (!empty($vars['page']['sidebar_first'])) {
     $vars['body_classes'][] = 'layout-one-sidebar';
     $vars['body_classes'][] = 'layout-sidebar-first';
   }
-  elseif (!empty($variables['page']['sidebar_second'])) {
+  elseif (!empty($vars['page']['sidebar_second'])) {
     $vars['body_classes'][] = 'layout-one-sidebar';
     $vars['body_classes'][] = 'layout-sidebar-second';
   }

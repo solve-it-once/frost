@@ -12,7 +12,6 @@ dependencies:
     - field.field.user.user.field_phone
     - field.field.user.user.field_text_location
   module:
-    - field_formatter_class
     - telephone
     - text
     - user
@@ -28,41 +27,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
   field_email:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: square_small
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    weight: 0
-    region: content
-  field_jobtitle:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 2
-    region: content
-  field_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_phone:
     type: telephone_link
@@ -70,7 +42,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 1
     region: content
   field_text_location:
     type: string
@@ -78,11 +50,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
 hidden:
   commerce_remote_id: true
   customer_profiles: true
+  field_image: true
+  field_jobtitle: true
+  field_name: true
   langcode: true
   linked_title: true
   member_for: true

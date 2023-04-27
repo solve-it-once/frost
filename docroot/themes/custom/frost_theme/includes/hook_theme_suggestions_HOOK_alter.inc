@@ -68,6 +68,20 @@ function frost_theme_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars)
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
+function frost_theme_theme_suggestions_user_alter(&$suggestions, $vars) {
+  $user = $vars['elements']['#user'];
+  $sanitized_view_mode = strtr($vars['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'user__' . $sanitized_view_mode;
+  $suggestions[] = 'user__' . $user->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'user__' . $user->id() . '__' . $sanitized_view_mode;
+
+  return $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
 function frost_theme_theme_suggestions_views_exposed_form_alter(array &$suggestions, array $vars) {
   $suggestions[] = 'views-exposed-form__' . $vars['form']['#id'];
 }
