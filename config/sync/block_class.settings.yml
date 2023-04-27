@@ -15,3 +15,6 @@ enable_id_replacement: true
 weight_attributes: null
 weight_class: null
 weight_id: null
+attribute_keys_stored: '[]'
+attribute_value_stored: '[]'
+attributes_inline: '[]'

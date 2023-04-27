@@ -45,6 +45,7 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  editoria11y: 0
   entity: 0
   entity_clone: 0
   entity_reference_display: 0
@@ -59,6 +60,7 @@ module:
   filter: 0
   form_mode_manager: 0
   frost_custom: 0
+  gin_toolbar: 0
   honeypot: 0
   human_decimal: 0
   iframe: 0
@@ -146,4 +148,5 @@ theme:
   claro: 0
   frost_theme: 0
   classy: 0
+  gin: 0
 profile: frost

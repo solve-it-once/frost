@@ -26,7 +26,7 @@
         "drupal/block_class": "^2.0",
         "drupal/block_field": "^1.0@alpha",
         "drupal/captcha": "^1.0@beta",
-        "drupal/chosen": "^3.0",
+        "drupal/chosen": "^4.0",
         "drupal/ckeditor": "^1.0",
         "drupal/classy": "^1.0",
         "drupal/commerce": "^2.33",
@@ -40,6 +40,7 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/diff": "^1.0@RC",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/editoria11y": "^2.0",
         "drupal/entity": "^1.4",
         "drupal/entity_clone": "^2.0@beta",
         "drupal/entity_reference_display": "1.x-dev",
@@ -47,6 +48,8 @@
         "drupal/field_formatter_class": "^1.6",
         "drupal/field_group": "3.x-dev",
         "drupal/form_mode_manager": "dev-3297262-automated-drupal-10",
+        "drupal/gin": "^3.0@RC",
+        "drupal/gin_toolbar": "^1.0@RC",
         "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.1",
         "drupal/human_decimal": "^3.0",
@@ -90,7 +93,7 @@
         "drupal/viewsreference": "^2.0@alpha",
         "drupal/webform": "^6.2@dev",
         "drush/drush": "^11.5",
-        "harvesthq/chosen": "1.8.7",
+        "jjj/chosen": "2.2.1",
         "laminas/laminas-zendframework-bridge": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0",
         "simple-icons/simple-icons": "4.2.0",
@@ -162,7 +165,7 @@
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset",
-                "harvesthq/chosen"
+                "jjj/chosen"
             ],
             "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -237,17 +240,17 @@
             "type": "git",
             "url": "https://git.drupalcode.org/issue/similarterms-3265550.git"
         },
-        "harvesthq/chosen": {
+        "jjj/chosen": {
             "type": "package",
             "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.8.7",
+                "name": "jjj/chosen",
+                "version": "2.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "chosen"
                 },
                 "dist": {
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                    "url": "https://github.com/JJJ/chosen/archive/refs/tags/2.2.1.zip",
                     "type": "zip"
                 },
                 "require": {

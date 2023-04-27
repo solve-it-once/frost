@@ -46,6 +46,7 @@ content:
       allow_new: true
       allow_existing: false
       match_operator: CONTAINS
+      removed_reference: delete
     third_party_settings: {  }
 hidden:
   created: true
