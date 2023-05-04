@@ -6,13 +6,13 @@ label: Manual
 weight: null
 plugin: manual
 configuration:
+  instructions:
+    value: 'Contact store to tender a purchase order, check, or other means of payment'
+    format: plain_text
   display_label: Manual
   mode: n/a
   payment_method_types:
     - credit_card
   collect_billing_information: true
-  instructions:
-    value: 'Contact store to tender a purchase order, check, or other means of payment'
-    format: plain_text
 conditions: {  }
 conditionOperator: AND

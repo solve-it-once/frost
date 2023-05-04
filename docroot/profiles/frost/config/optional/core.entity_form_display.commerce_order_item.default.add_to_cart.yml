@@ -34,5 +34,6 @@ hidden:
   adjustments: true
   created: true
   status: true
+  total_price: true
   uid: true
   unit_price: true

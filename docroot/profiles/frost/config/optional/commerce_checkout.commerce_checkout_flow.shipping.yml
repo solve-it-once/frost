@@ -4,8 +4,8 @@ dependencies:
   module:
     - commerce_payment
     - commerce_shipping
-label: Shipping
 id: shipping
+label: Shipping
 plugin: multistep_default
 configuration:
   display_checkout_progress: true

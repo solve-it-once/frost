@@ -10,7 +10,7 @@ id: commerce_product.default.body
 field_name: body
 entity_type: commerce_product
 bundle: default
-label: 'Teaser text'
+label: Body
 description: ''
 required: false
 translatable: true

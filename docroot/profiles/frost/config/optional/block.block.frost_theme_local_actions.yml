@@ -3,6 +3,9 @@ status: true
 dependencies:
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: frost_theme_local_actions
 theme: frost_theme
 region: pre_content

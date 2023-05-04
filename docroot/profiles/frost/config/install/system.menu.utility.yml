@@ -8,5 +8,5 @@ third_party_settings:
     trail_source: ''
 id: utility
 label: Utility
-description: '''Verb'' links for above the header (nouns belong in the main menu)'
+description: "'Verb' links for above the header (nouns belong in the main menu)"
 locked: false

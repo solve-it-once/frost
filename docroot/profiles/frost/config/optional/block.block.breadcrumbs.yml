@@ -5,6 +5,9 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: breadcrumbs
 theme: frost_theme
 region: pre_content

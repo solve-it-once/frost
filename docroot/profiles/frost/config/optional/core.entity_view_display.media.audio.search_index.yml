@@ -9,7 +9,7 @@ dependencies:
     - media.type.audio
   module:
     - field_formatter_class
-    - frost_custom
+    - file
 id: media.audio.search_index
 targetEntityType: media
 bundle: audio

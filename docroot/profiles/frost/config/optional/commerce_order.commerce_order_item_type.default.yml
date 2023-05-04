@@ -9,9 +9,9 @@ dependencies:
 third_party_settings:
   commerce_tax:
     taxable_type: digital_goods
-id: default
 label: Default
-traits: {  }
-locked: false
+id: default
 purchasableEntityType: commerce_product_variation
 orderType: default
+traits: {  }
+locked: false

@@ -33,4 +33,5 @@ hidden:
   created: true
   purchased_entity: true
   status: true
+  total_price: true
   uid: true

@@ -9,7 +9,7 @@ dependencies:
     - media.type.video
   module:
     - field_formatter_class
-    - frost_custom
+    - file
 id: media.video.search_index
 targetEntityType: media
 bundle: video

@@ -12,18 +12,17 @@ bundle: default
 mode: checkout
 content:
   shipping_method:
-    type: commerce_shipping_method
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    type: commerce_shipping_method
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   amount: true
   items: true
   original_amount: true
   package_type: true
-  search_api_excerpt: true
   shipping_profile: true
   state: true
   title: true

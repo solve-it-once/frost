@@ -12,6 +12,7 @@ dependencies:
     - taxonomy.vocabulary.tag
   module:
     - contextual
+    - editoria11y
     - file
     - filter
     - media
@@ -57,11 +58,13 @@ permissions:
   - 'edit own video media'
   - 'edit terms in tag'
   - 'import tablefield'
+  - 'mark as hidden in editoria11y'
   - 'rebuild tablefield'
   - 'use text format filtered_html'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view article revisions'
+  - 'view editoria11y checker'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'

@@ -8,10 +8,8 @@ dependencies:
     - field.storage.paragraph.field_seo_nofollow
     - field.storage.paragraph.field_seo_noindex
     - field.storage.paragraph.field_seo_title
-    - field.storage.taxonomy_term.field_image
     - system.menu.admin
   module:
-    - paragraphs
     - taxonomy
     - user
 id: taxonomy

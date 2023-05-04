@@ -82,7 +82,6 @@ content:
         add_in_between: false
         add_in_between_link_count: 3
         delete_confirmation: true
-        split_text: false
         show_drag_and_drop: true
   field_style_flexdirection:
     type: boolean_checkbox

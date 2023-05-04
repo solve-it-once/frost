@@ -77,7 +77,6 @@ content:
       paragraphs_features:
         add_in_between: false
         delete_confirmation: true
-        split_text: false
         show_drag_and_drop: true
   field_image:
     type: media_library_widget
@@ -110,7 +109,6 @@ content:
       paragraphs_features:
         add_in_between: false
         delete_confirmation: true
-        split_text: false
         show_drag_and_drop: true
   field_seo:
     type: paragraphs
@@ -134,7 +132,6 @@ content:
       paragraphs_features:
         add_in_between: false
         delete_confirmation: false
-        split_text: false
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 19

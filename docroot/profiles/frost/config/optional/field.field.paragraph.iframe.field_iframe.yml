@@ -26,4 +26,5 @@ settings:
   tokensupport: '0'
   width: ''
   height: ''
+  headerlevel: null
 field_type: iframe

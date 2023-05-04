@@ -5,7 +5,6 @@ form_modes:
       ief: ief
   user:
     to_exclude:
-      ief: ief
       register: register
   commerce_order_item:
     to_exclude:

@@ -7,6 +7,9 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: utility
 theme: frost_theme
 region: utility

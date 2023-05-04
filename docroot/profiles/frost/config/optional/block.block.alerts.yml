@@ -1,12 +1,11 @@
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:messages:6f12931c-87ff-4a14-999f-854599ab183c'
-  module:
-    - block_content
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: alerts
 theme: frost_theme
 region: alerts

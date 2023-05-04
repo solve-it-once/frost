@@ -16,3 +16,4 @@ skip_waiting: false
 image: /sites/default/files/pwa/logo.png
 image_small: /sites/default/files/pwa/logo.pngcopy.png
 image_very_small: /sites/default/files/pwa/logo.pngcopy2.png
+scope: /

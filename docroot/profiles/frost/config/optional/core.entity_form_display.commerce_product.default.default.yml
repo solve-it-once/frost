@@ -13,29 +13,8 @@ dependencies:
     - field.field.commerce_product.default.field_tags
   module:
     - commerce
-    - field_group
-    - media_library
-    - media_library_edit
-    - paragraphs
-    - paragraphs_features
     - path
     - text
-third_party_settings:
-  field_group:
-    group_tagging:
-      children:
-        - field_tags
-      label: Tagging
-      region: content
-      parent_name: ''
-      weight: 6
-      format_type: fieldset
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        description: ''
-        required_fields: false
 id: commerce_product.default.default
 targetEntityType: commerce_product
 bundle: default
@@ -43,111 +22,29 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 2
     region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
-  field_hero:
-    type: paragraphs
-    weight: 4
+  created:
+    type: datetime_timestamp
+    weight: 5
     region: content
-    settings:
-      title: Hero
-      title_plural: Heroes
-      edit_mode: closed
-      closed_mode: preview
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-      features:
-        add_above: '0'
-        collapse_edit_all: collapse_edit_all
-        duplicate: '0'
-    third_party_settings:
-      paragraphs_features:
-        add_in_between: false
-        add_in_between_link_count: 3
-        delete_confirmation: false
-        split_text: false
-        show_drag_and_drop: false
-  field_image:
-    type: media_library_widget
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
     weight: 2
     region: content
     settings:
-      media_types: {  }
-    third_party_settings:
-      media_library_edit:
-        show_edit: '1'
-  field_sections:
-    type: paragraphs
-    weight: 5
-    region: content
-    settings:
-      title: Stripe
-      title_plural: Stripes
-      edit_mode: closed
-      closed_mode: preview
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-      features:
-        add_above: add_above
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings:
-      paragraphs_features:
-        add_in_between: false
-        add_in_between_link_count: 3
-        delete_confirmation: false
-        split_text: false
-        show_drag_and_drop: true
-  field_seo:
-    type: paragraphs
-    weight: 7
-    region: content
-    settings:
-      title: SEO
-      title_plural: SEOs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: button
-      form_display_mode: default
-      default_paragraph_type: seo
-      features:
-        add_above: '0'
-        collapse_edit_all: collapse_edit_all
-        duplicate: '0'
-    third_party_settings:
-      paragraphs_features:
-        add_in_between: false
-        add_in_between_link_count: 3
-        delete_confirmation: false
-        split_text: false
-        show_drag_and_drop: false
-  field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 7
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -158,7 +55,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -181,10 +78,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
-  created: true
+  field_hero: true
+  field_image: true
   field_notes: true
   field_scratch: true
-  langcode: true
-  uid: true
+  field_sections: true
+  field_seo: true
+  field_tags: true
   variations: true

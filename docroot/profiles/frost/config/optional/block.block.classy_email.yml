@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - contact_info
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: margin-vertical--2
+id: classy_email
+theme: classy
+region: footer
+weight: -6
+provider: null
+plugin: email
+settings:
+  id: email
+  label: Email
+  label_display: '0'
+  provider: contact_info
+visibility: {  }

@@ -5,5 +5,5 @@ id: from_library
 label: 'From library'
 icon_uuid: null
 icon_default: null
-description: 'Stripes and other content that can potentially be reused across pages'
+description: null
 behavior_plugins: {  }

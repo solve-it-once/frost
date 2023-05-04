@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+id: stable_local_tasks
+theme: stable
+region: sidebar_first
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

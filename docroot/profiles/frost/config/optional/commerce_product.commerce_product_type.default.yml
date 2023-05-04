@@ -3,9 +3,11 @@ status: true
 dependencies: {  }
 id: default
 label: Default
+description: ''
+variationType: default
+variationTypes:
+  - default
+multipleVariations: true
+injectVariationFields: true
 traits: {  }
 locked: false
-description: 'A standard good or service without variations or attributes/options to handle. '
-variationType: default
-multipleVariations: true
-injectVariationFields: false

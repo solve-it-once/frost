@@ -59,6 +59,9 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
+      specific_languages: {  }
+      use_language_undefined_as_fallback_language: false
+      use_universal_collation: false
 id: content
 name: Content
 description: ''
@@ -506,7 +509,7 @@ processor_settings:
       - uuid_2
       - uuid_3
       - vid
-    ignorable: '[''¿¡!?,.:;&]'
+    ignorable: "['¿¡!?,.:;&]"
     ignorable_classes:
       - Pc
       - Pd
@@ -567,20 +570,20 @@ processor_settings:
       preprocess_index: -36
     boosts:
       'entity:commerce_product':
-        datasource_boost: !!float 1
+        datasource_boost: 1.0
         bundle_boosts:
-          default: !!float 0
+          default: 0.0
       'entity:node':
-        datasource_boost: !!float 0
+        datasource_boost: 0.0
         bundle_boosts:
-          article: !!float 0
-          event: !!float 0
-          page: !!float 0
+          article: 0.0
+          event: 0.0
+          page: 0.0
       'entity:taxonomy_term':
-        datasource_boost: !!float 0
+        datasource_boost: 0.0
         bundle_boosts:
-          article_type: !!float 0
-          tag: !!float 0
+          article_type: 0.0
+          tag: 0.0
 tracker_settings:
   default:
     indexing_order: fifo

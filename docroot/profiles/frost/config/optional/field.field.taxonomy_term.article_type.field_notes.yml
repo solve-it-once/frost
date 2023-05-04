@@ -9,7 +9,7 @@ field_name: field_notes
 entity_type: taxonomy_term
 bundle: article_type
 label: 'Notes (internal)'
-description: 'Let your team know what''s important about this content and any other priorities or @todos that may be relevant.'
+description: "Let your team know what's important about this content and any other priorities or @todos that may be relevant."
 required: false
 translatable: false
 default_value: {  }

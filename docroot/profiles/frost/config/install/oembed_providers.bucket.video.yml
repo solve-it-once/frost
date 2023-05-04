@@ -3,8 +3,8 @@ status: true
 dependencies: {  }
 id: video
 label: 'Remote video'
-description: 'oEmbed providers for the remote_video media type specifically'
 providers:
   - TikTok
   - Vimeo
   - YouTube
+description: 'oEmbed providers for the remote_video media type specifically'

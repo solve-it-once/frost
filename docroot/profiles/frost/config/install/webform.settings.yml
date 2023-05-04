@@ -1,6 +1,7 @@
 langcode: en
 settings:
   default_status: open
+  default_page: true
   default_page_base_path: /form
   default_ajax: false
   default_ajax_progress_type: throbber
@@ -158,8 +159,8 @@ element:
   default_google_maps_api_key: ''
 html_editor:
   disabled: false
-  element_format: ''
-  mail_format: ''
+  element_format: webform_default
+  mail_format: webform_default
   tidy: true
   make_unused_managed_files_temporary: true
 file:

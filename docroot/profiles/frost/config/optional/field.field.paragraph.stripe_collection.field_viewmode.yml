@@ -11,7 +11,7 @@ field_name: field_viewmode
 entity_type: paragraph
 bundle: stripe_collection
 label: 'Show stripes as'
-description: 'Select the "display mode" of the stripes in this collection. Defaults to ''Tab'', which makes the whole collection appear as tabs. Be sure to set the tab title for each stripe within the stripe''s settings form.'
+description: "Select the \"display mode\" of the stripes in this collection. Defaults to 'Tab', which makes the whole collection appear as tabs. Be sure to set the tab title for each stripe within the stripe's settings form."
 required: false
 translatable: true
 default_value:

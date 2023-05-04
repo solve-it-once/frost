@@ -358,10 +358,10 @@
   }
   .has-field-video-background > .field-name--field-media-video-file > video {
     aspect-ratio: 16 / 9;
-    height: 100%;
     left: 50%;
     margin: 0;
-    min-width: calc((16/9) * 100%);
+    min-height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
     transform: translateX(-50%);

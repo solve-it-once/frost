@@ -52,6 +52,11 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   created: true

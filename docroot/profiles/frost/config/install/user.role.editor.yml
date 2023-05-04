@@ -13,6 +13,7 @@ dependencies:
     - taxonomy.vocabulary.tag
   module:
     - contextual
+    - editoria11y
     - file
     - filter
     - media
@@ -70,6 +71,7 @@ permissions:
   - 'edit own webform'
   - 'edit terms in tag'
   - 'import tablefield'
+  - 'mark as hidden in editoria11y'
   - 'rebuild tablefield'
   - 'revert all revisions'
   - 'revert article revisions'
@@ -81,6 +83,7 @@ permissions:
   - 'view all revisions'
   - 'view any webform submission'
   - 'view article revisions'
+  - 'view editoria11y checker'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'

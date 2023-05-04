@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+id: stable_local_actions
+theme: stable
+region: sidebar_first
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

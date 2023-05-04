@@ -1,7 +1,7 @@
 langcode: en
 name: Frost
 mail: brad@solveitonce.com
-slogan: 'Atomic Drupal 10 install profile'
+slogan: 'Atomic Drupal 9 install profile'
 page:
   403: /node/5
   404: /node/4

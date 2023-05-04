@@ -3,6 +3,6 @@ status: true
 dependencies: {  }
 id: online
 label: Online
+description: ''
 traits: {  }
 locked: false
-description: ''

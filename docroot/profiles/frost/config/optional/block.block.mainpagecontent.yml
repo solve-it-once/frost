@@ -5,6 +5,9 @@ dependencies:
     - system
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: mainpagecontent
 theme: frost_theme
 region: content

@@ -5,6 +5,9 @@ dependencies:
     - frost_custom
   theme:
     - frost_theme
+third_party_settings:
+  block_class:
+    classes: null
 id: searchiconblock
 theme: frost_theme
 region: nav

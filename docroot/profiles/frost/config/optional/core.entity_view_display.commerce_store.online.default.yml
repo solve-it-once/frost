@@ -12,10 +12,10 @@ mode: default
 content:
   address:
     type: address_default
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   billing_countries: true
@@ -25,9 +25,5 @@ hidden:
   langcode: true
   mail: true
   name: true
-  prices_include_tax: true
-  search_api_excerpt: true
-  shipping_countries: true
-  tax_registrations: true
   timezone: true
   uid: true

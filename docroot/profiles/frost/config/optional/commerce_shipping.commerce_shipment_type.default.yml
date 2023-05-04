@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: default
 label: Default
-traits: {  }
 profileType: customer
+traits: {  }
 sendConfirmation: null
 confirmationBcc: null
