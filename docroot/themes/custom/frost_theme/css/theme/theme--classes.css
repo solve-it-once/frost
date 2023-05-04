@@ -361,6 +361,7 @@
     left: 50%;
     margin: 0;
     min-height: 100%;
+    min-width: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -696,7 +697,7 @@ ul.tabs > li > a:hover {
 }
 ul.tabs > li > a.active,
 ul.tabs > li > a.is-active {
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.75);
   border-bottom: 1px solid;
   color: var(--color--second);
 }
