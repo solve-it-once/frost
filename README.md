@@ -4,9 +4,9 @@
 
 # Frost: Low-code Drupal for your whole team
 
-[Frost](https://frostdrupal.com/) is a component-forward Drupal install profile. It's made for teams and agencies that
-want to launch quickly, build Drupal-based functionality on top, and maintain the codebase in the long term with less
-frustration.
+[Frost](https://frostdrupal.com/) (even more info [on drupal.org](https://www.drupal.org/project/frost)) is a component-forward 
+Drupal install profile. It's made for teams and agencies that want to launch quickly, build Drupal-based functionality on top, 
+and maintain the codebase in the long term with less frustration.
 
 [![Inline editing right out of the  box](https://i.imgur.com/ZRTjVma.png)](https://github.com/solve-it-once/frost)
 
