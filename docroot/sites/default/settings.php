@@ -53,3 +53,16 @@ if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
  *
  * @link https://docs.acquia.com/blt/
  */
+
+// Automatically generated include for settings managed by ddev.
+$ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
+  // First, set some solr overrides to make the local work like magic.
+  $config['search_api.server.solr']['backend_config']['connector_config']['core'] = 'dev';
+  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = '';
+  $config['search_api.server.solr']['backend_config']['connector_config']['host'] = 'ddev-frost-solr';
+  $config['search_api.server.solr']['backend_config']['connector_config']['port'] = '8983';
+
+  // Then, include the ddev settings file  that was auto-generated.
+  require $ddev_settings;
+}
