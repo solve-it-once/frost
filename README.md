@@ -61,8 +61,8 @@ required.
 * **Stripe collection** — Reuses the stripe concept to allow content creators to make tabs and slideshows
 
 The "Stripe: Atomic" sectioning container gives you a lot of flexibility to build out experiences, but could be a ton of
-work if every section on the site is different. For designs with consistent-or-alternating sections you can easily *
-*take a "balanced breakfast" approach** and create other 'Stripe' sections like "Stripe: Image + text" or similar.
+work if every section on the site is different. For designs with consistent-or-alternating sections you can easily 
+**take a "balanced breakfast" approach** and create other 'Stripe' sections like "Stripe: Image + text" or similar.
 
 ##### Storytelling
 
@@ -123,6 +123,9 @@ You'll probably have luck cloning the repo in step 2 of the local steps below, b
 
 In the future we may automate more of these steps, but for now it's useful to walk through them all to ensure
 success, and to drill down into points where the process could tentatively fail for you.
+
+Note: if you're one of _those_ people and wish to use ddev, your mileage may vary, but mostly you can ignore (or do the 
+ddev equivalent) step 5 below and replace 'lando' with 'ddev' for all the steps below.
 
 If you follow these steps and run into difficulty, please add an issue to this repository with a detailed explanation of
 what went wrong, so we can fix it and amend the documentation further. Thank you.

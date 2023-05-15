@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Description: run blt in the web container
+## Usage: blt [flags] [args]
+## Example: "ddev blt setup" or "ddev blt tests"
+## `ddev blt source:build`
+
+/var/www/html/vendor/acquia/blt/bin/blt "$@"
