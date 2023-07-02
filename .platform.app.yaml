@@ -36,7 +36,6 @@ mounts:
 hooks:
   build: |
     curl -sS https://platform.sh/cli/installer | php
-    ./vendor/bin/blt source:build
   deploy: |
     cd docroot
     drush -y updatedb

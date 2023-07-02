@@ -23,9 +23,7 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 // Use BLT to manage some/all settings.php files.
-if (!isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
-  require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
-}
+require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
 
 // The hash_salt should be a unique random value for each application.
 // If left unset, the settings.platformsh.php file will attempt to provide one.
