@@ -4,8 +4,6 @@
  * Platform.sh example settings.php file for Drupal 8.
  */
 
-use Acquia\Blt\Robo\Common\EnvironmentDetector;
-
 // Default Drupal 8 settings.
 //
 // These are already explained with detailed comments in Drupal's
@@ -25,7 +23,9 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 // Use BLT to manage some/all settings.php files.
-require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+if (!isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
+  require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+}
 
 // The hash_salt should be a unique random value for each application.
 // If left unset, the settings.platformsh.php file will attempt to provide one.
