@@ -7,16 +7,16 @@ dependencies:
       - webform
 _core:
   default_config_hash: 24qfVbzNjoQj7hNWytdzHK1F8Xvujf-OvI-Rt4kgJQk
+weight: 0
 open: null
 close: null
-weight: 0
 uid: null
 template: false
 archive: false
 id: contact
 title: Contact
 description: 'Basic email contact webform.'
-category: ''
+categories: {  }
 elements: |-
   name:
     '#type': textfield
@@ -143,6 +143,8 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -240,9 +242,9 @@ access:
 handlers:
   email_notification:
     id: email
+    handler_id: email_notification
     label: 'Email notification'
     notes: ''
-    handler_id: email_notification
     status: true
     conditions: {  }
     weight: 2

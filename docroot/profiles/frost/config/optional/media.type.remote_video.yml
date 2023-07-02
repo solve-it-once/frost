@@ -1,10 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  config:
-    - oembed_providers.bucket.video
-  module:
-    - oembed_providers
+dependencies: {  }
 id: remote_video
 label: 'Remote video'
 description: 'Embedded videos hosted elsewhere, such as TikTok, Vimeo, or YouTube.'

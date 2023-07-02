@@ -46,6 +46,7 @@ permissions:
   - 'create terms in tag'
   - 'create url aliases'
   - 'create video media'
+  - 'delete own files'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any image media'

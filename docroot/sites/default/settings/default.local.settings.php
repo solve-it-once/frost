@@ -5,8 +5,6 @@
  * Only do these things locally on lando, even if this file is included.
  */
 
-use Drupal\Component\Assertion\Handle;
-
 if (isset($_ENV['LANDO_INFO'])) {
   // Local error reporting.
   error_reporting(E_ALL);
@@ -38,7 +36,4 @@ if (isset($_ENV['LANDO_INFO'])) {
   if (isset($lando_info->app->urls[0])) {
     $config['media.settings']['iframe_domain'] = $lando_info->app->urls[0];
   }
-
-  assert_options(ASSERT_ACTIVE, TRUE);
-  Handle::register();
 }
