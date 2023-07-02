@@ -11,7 +11,7 @@ id: commerce_order_item_table
 label: 'Order items'
 module: views
 description: 'Display a set of order items in a table.'
-tag: ''
+tag: commerce_order_item_table
 base_table: commerce_order_item
 base_field: order_item_id
 display:

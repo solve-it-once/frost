@@ -69,7 +69,6 @@ $RECYCLE.BIN/
 /docroot/sites/simpletest
 /docroot/themes/contrib
 /docroot/themes/custom/*/assets/
-/docroot/themes/custom/usdoj_uswds/node_modules/
 \#*\#
 
 # Files and directories

@@ -7,8 +7,10 @@ dependencies:
     - commerce_order
     - commerce_payment
     - commerce_product
+    - file
     - honeypot
     - media
+    - search_api_autocomplete
     - styleguide
     - system
 _core:
@@ -23,6 +25,7 @@ permissions:
   - 'access user profiles'
   - 'bypass honeypot protection'
   - 'cancel account'
+  - 'delete own files'
   - 'manage own commerce_payment_method'
   - 'use search_api_autocomplete for search'
   - 'view commerce_product'

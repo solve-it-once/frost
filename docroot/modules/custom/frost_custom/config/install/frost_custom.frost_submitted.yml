@@ -1,1 +1,3 @@
-page: 'Submitted by [node:author:name] on [node:created:month_d_yyyy]'
+page: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
+article: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
+event: '[node:author:field_name] | [node:created:mm_dd_yyyy]'

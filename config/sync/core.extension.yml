@@ -65,9 +65,6 @@ module:
   human_decimal: 0
   iframe: 0
   image: 0
-  imageapi_optimize: 0
-  imageapi_optimize_binaries: 0
-  imageapi_optimize_resmushit: 0
   imagemagick: 0
   inline_entity_form: 0
   inline_form_errors: 0
@@ -102,6 +99,7 @@ module:
   paragraphs_library: 0
   path: 0
   path_alias: 0
+  phpass: 0
   physical: 0
   profile: 0
   pwa: 0

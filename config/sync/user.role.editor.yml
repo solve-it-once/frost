@@ -58,6 +58,7 @@ permissions:
   - 'create url aliases'
   - 'create video media'
   - 'create webform'
+  - 'delete own files'
   - 'edit any article content'
   - 'edit any audio media'
   - 'edit any document media'

@@ -25,9 +25,9 @@ social:
       enable: '1'
       weight: '-7'
     2:
-      name: Twitter
-      icon: twitter.svg
-      url: 'https://twitter.com/solveitoncellc'
+      name: Drupal.org
+      icon: drupal.svg
+      url: 'https://www.drupal.org/project/frost'
       enable: '1'
       weight: '-6'
     3:

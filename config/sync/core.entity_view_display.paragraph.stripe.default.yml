@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.stripe.field_components
     - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_backgroundattachment
     - field.field.paragraph.stripe.field_style_bgcolor
     - field.field.paragraph.stripe.field_style_bghide
     - field.field.paragraph.stripe.field_style_bgpx
@@ -60,6 +61,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_style_backgroundattachment: true
   field_style_bgcolor: true
   field_style_bghide: true
   field_style_bgpx: true

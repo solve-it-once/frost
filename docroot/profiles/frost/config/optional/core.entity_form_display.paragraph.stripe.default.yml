@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.stripe.field_components
     - field.field.paragraph.stripe.field_image_background
+    - field.field.paragraph.stripe.field_style_backgroundattachment
     - field.field.paragraph.stripe.field_style_bgcolor
     - field.field.paragraph.stripe.field_style_bghide
     - field.field.paragraph.stripe.field_style_bgpx
@@ -59,6 +60,7 @@ third_party_settings:
         - field_style_bgpx
         - field_style_bgpy
         - field_style_bgrepeat
+        - field_style_backgroundattachment
         - field_style_bgsize
         - field_video_background
         - field_style_fullwidth
@@ -116,6 +118,12 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
+  field_style_backgroundattachment:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_style_bgcolor:
     type: options_select
     weight: 12
@@ -124,7 +132,7 @@ content:
     third_party_settings: {  }
   field_style_bghide:
     type: boolean_checkbox
-    weight: 20
+    weight: 21
     region: content
     settings:
       display_label: true
@@ -149,39 +157,39 @@ content:
     third_party_settings: {  }
   field_style_bgsize:
     type: options_select
-    weight: 17
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_style_color:
     type: options_select
-    weight: 23
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_style_fullwidth:
     type: boolean_checkbox
-    weight: 19
+    weight: 20
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_style_textalign:
     type: options_select
-    weight: 22
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_style_unpad:
     type: boolean_checkbox
-    weight: 24
+    weight: 25
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_title:
     type: string_textfield
-    weight: 21
+    weight: 22
     region: content
     settings:
       size: 60
@@ -189,7 +197,7 @@ content:
     third_party_settings: {  }
   field_video_background:
     type: media_library_widget
-    weight: 18
+    weight: 19
     region: content
     settings:
       media_types: {  }

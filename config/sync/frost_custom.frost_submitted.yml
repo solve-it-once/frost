@@ -2,6 +2,4 @@ _core:
   default_config_hash: NZCgbURNMk5KvCqC99LhK1eUhDSAvZ8ThD2aXbVmtiA
 page: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
 article: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
-company: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
-location: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
-resource: '[node:author:field_name] | [node:created:mm_dd_yyyy]'
+event: '[node:author:field_name] | [node:created:mm_dd_yyyy]'

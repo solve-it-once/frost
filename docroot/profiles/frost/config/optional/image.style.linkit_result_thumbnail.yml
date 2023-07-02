@@ -18,4 +18,3 @@ effects:
     weight: 2
     data:
       extension: webp
-pipeline: __default__
