@@ -78,9 +78,6 @@ dependencies:
   - human_decimal
   - iframe
   - image
-  - imageapi_optimize
-  - imageapi_optimize_binaries
-  - imageapi_optimize_resmushit
   - imagemagick
   - inline_entity_form
   - inline_form_errors
