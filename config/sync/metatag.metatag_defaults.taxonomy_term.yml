@@ -9,7 +9,6 @@ label: 'Taxonomy term'
 tags:
   image_src: '[term:field_seo:entity:field_seo_image:entity:url]'
   description: '[term:field_seo:entity:field_seo_description]'
-  news_keywords: '[term:field_seo:entity:field_seo_keywords]'
   title: '[term:field_seo:entity:field_seo_title] | [site:name]'
   canonical_url: '[term:url]'
   og_phone_number: '[contact_info:phone]'

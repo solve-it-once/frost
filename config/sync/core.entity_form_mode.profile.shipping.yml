@@ -11,5 +11,6 @@ _core:
   default_config_hash: JPUL4eD5T2YoK0l8mg_Ey9_HY9vGRwqr4BM_GqaAgmw
 id: profile.shipping
 label: Shipping
+description: ''
 targetEntityType: profile
 cache: true

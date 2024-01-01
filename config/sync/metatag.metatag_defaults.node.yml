@@ -9,7 +9,6 @@ label: Content
 tags:
   image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
   description: '[node:field_seo:entity:field_seo_description]'
-  news_keywords: '[node:field_seo:entity:field_seo_keywords]'
   title: '[node:field_seo:entity:field_seo_title] | [site:name]'
   canonical_url: '[node:url]'
   og_url: '[current-page:url:absolute]'

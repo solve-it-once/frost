@@ -8,5 +8,6 @@ _core:
   default_config_hash: 9uWjxz2FtVcBAJC5E8c6itU0nyRRHl0EcZiLP17tokY
 id: paragraph.settings
 label: Settings
+description: ''
 targetEntityType: paragraph
 cache: true

@@ -9,5 +9,6 @@ dependencies:
       - commerce_product
 id: commerce_product_variation.cart
 label: Cart
+description: ''
 targetEntityType: commerce_product_variation
 cache: true

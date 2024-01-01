@@ -2,12 +2,15 @@ uuid: f5f49372-ab78-4b3a-8822-a1b9432206f7
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - commerce_checkout
     - commerce_order
     - commerce_payment
     - commerce_product
     - file
+    - filter
     - honeypot
     - media
     - search_api_autocomplete
@@ -28,6 +31,7 @@ permissions:
   - 'delete own files'
   - 'manage own commerce_payment_method'
   - 'use search_api_autocomplete for search'
+  - 'use text format webform_default'
   - 'view commerce_product'
   - 'view media'
   - 'view own commerce_order'

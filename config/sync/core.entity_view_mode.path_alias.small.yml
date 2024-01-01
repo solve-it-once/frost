@@ -8,5 +8,6 @@ _core:
   default_config_hash: 2O2SF35-Bk_LMZHJmVtzM6rlJqGF-Ai7692oZvc_zGs
 id: path_alias.small
 label: Small
+description: ''
 targetEntityType: path_alias
 cache: true

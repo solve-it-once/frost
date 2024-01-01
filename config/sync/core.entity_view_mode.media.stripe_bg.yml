@@ -8,5 +8,6 @@ _core:
   default_config_hash: 4j2lrdGuyRZKn1rrcUgF42CQzfoa9GgHdW0Z0405kmo
 id: media.stripe_bg
 label: 'Stripe background'
+description: ''
 targetEntityType: media
 cache: true

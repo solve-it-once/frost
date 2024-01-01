@@ -9,5 +9,6 @@ dependencies:
       - diff
 id: node.diff
 label: 'Revision comparison'
+description: ''
 targetEntityType: node
 cache: true

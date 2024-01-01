@@ -8,5 +8,6 @@ _core:
   default_config_hash: BYdMSrpx_NfrTrvbM_FKMA3ycxQ-xuHzoZTRL85XyBg
 id: file.small
 label: Small
+description: ''
 targetEntityType: file
 cache: true

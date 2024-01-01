@@ -8,5 +8,6 @@ _core:
   default_config_hash: OeXIUUluzNqm_VVGChto1j86BaXzCk9m63rvOwYRMqI
 id: paragraphs_library_item.preview
 label: Preview
+description: ''
 targetEntityType: paragraphs_library_item
 cache: true

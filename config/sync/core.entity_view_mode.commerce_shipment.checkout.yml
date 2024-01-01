@@ -8,5 +8,6 @@ _core:
   default_config_hash: SOM4LMI0fFeahHJLPEPoVldiWGePCGwhTERi0cTjb0U
 id: commerce_shipment.checkout
 label: Checkout
+description: ''
 targetEntityType: commerce_shipment
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: bTcRNkwoR6_r3db7EkIdd2LAnuUTrskYHoure2QXb9I
 id: paragraph.tab
 label: Tab
+description: ''
 targetEntityType: paragraph
 cache: true

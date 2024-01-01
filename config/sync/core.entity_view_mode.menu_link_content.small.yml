@@ -8,5 +8,6 @@ _core:
   default_config_hash: GmzxYBZ5tP-rnrr0JFxcI1hYWD5bhxwdhW91scGyQDw
 id: menu_link_content.small
 label: Small
+description: ''
 targetEntityType: menu_link_content
 cache: true

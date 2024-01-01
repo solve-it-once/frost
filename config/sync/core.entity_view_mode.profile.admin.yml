@@ -11,5 +11,6 @@ _core:
   default_config_hash: rNBHCP7hJFMjP_iDe9-0AsSfkGC98V6Lh_oeOwmLos8
 id: profile.admin
 label: Admin
+description: ''
 targetEntityType: profile
 cache: true

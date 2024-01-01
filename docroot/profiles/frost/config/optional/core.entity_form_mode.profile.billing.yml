@@ -8,5 +8,6 @@ dependencies:
       - commerce_order
 id: profile.billing
 label: Billing
+description: ''
 targetEntityType: profile
 cache: true

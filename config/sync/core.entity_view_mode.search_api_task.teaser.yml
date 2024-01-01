@@ -8,5 +8,6 @@ _core:
   default_config_hash: Wcv3jCGCeFnP_6afkG1e6LS6p7aJkHmjzVxLArasTQ4
 id: search_api_task.teaser
 label: Teaser
+description: ''
 targetEntityType: search_api_task
 cache: true

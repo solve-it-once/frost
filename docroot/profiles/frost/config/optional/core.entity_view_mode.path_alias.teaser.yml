@@ -5,5 +5,6 @@ dependencies:
     - path_alias
 id: path_alias.teaser
 label: Teaser
+description: ''
 targetEntityType: path_alias
 cache: true

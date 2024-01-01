@@ -8,5 +8,6 @@ _core:
   default_config_hash: yykQmg2MGFnnoIhcqjGSfz6PbvHBb8JDYM05MsjDTtI
 id: paragraph.teaser
 label: Teaser
+description: ''
 targetEntityType: paragraph
 cache: true

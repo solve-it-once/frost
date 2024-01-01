@@ -8,5 +8,6 @@ _core:
   default_config_hash: xB6dtNq7P-OjyjJbUeUEyNSzNBO7AaaXUrRgUn8RUPk
 id: paragraph.search_index
 label: 'Search index'
+description: ''
 targetEntityType: paragraph
 cache: true

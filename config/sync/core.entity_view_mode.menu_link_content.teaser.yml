@@ -8,5 +8,6 @@ _core:
   default_config_hash: N4wraHEDnM8nBhozEI_05d1UZ309FRlJ3WgwgPBqvA0
 id: menu_link_content.teaser
 label: Teaser
+description: ''
 targetEntityType: menu_link_content
 cache: true

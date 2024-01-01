@@ -8,5 +8,6 @@ _core:
   default_config_hash: hpVzdmxIQzL1q6NjpLf8zg1XoZtOurcCruFvf7fGbHo
 id: media.square_small
 label: 'Square Small'
+description: ''
 targetEntityType: media
 cache: true

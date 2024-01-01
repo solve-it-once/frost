@@ -8,5 +8,6 @@ _core:
   default_config_hash: guZO0bxvMfaohAFg0tPsWi83elemLugbpohvNXK2p90
 id: redirect.teaser
 label: Teaser
+description: ''
 targetEntityType: redirect
 cache: true

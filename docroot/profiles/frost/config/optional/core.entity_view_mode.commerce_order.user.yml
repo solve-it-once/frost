@@ -5,5 +5,6 @@ dependencies:
     - commerce_order
 id: commerce_order.user
 label: User
+description: ''
 targetEntityType: commerce_order
 cache: true

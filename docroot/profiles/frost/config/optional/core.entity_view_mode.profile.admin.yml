@@ -8,5 +8,6 @@ dependencies:
       - commerce_order
 id: profile.admin
 label: Admin
+description: ''
 targetEntityType: profile
 cache: true

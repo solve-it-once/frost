@@ -8,5 +8,6 @@ _core:
   default_config_hash: 7p-jrHpci4RZTR0Lm6a7ybMPlXpShff6OxRqwQJRraA
 id: webform_submission.small
 label: Small
+description: ''
 targetEntityType: webform_submission
 cache: true

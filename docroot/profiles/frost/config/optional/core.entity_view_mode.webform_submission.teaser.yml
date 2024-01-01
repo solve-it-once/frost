@@ -5,5 +5,6 @@ dependencies:
     - webform
 id: webform_submission.teaser
 label: Teaser
+description: ''
 targetEntityType: webform_submission
 cache: true

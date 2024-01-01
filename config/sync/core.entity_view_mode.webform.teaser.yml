@@ -8,5 +8,6 @@ _core:
   default_config_hash: lOGpRTTSg-s0w4Q9KguUcRmuRP9rB_ik7iPwfH31uOQ
 id: webform.teaser
 label: Teaser
+description: ''
 targetEntityType: webform
 cache: true

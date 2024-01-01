@@ -8,5 +8,6 @@ dependencies:
       - commerce_checkout
 id: commerce_product_variation.summary
 label: Summary
+description: ''
 targetEntityType: commerce_product_variation
 cache: true

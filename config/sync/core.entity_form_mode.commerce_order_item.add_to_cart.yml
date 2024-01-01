@@ -11,5 +11,6 @@ _core:
   default_config_hash: BeqBf6Mm59Nebv4SsV0yvK5EspkCegPqvwnqwEBvEp0
 id: commerce_order_item.add_to_cart
 label: 'Add to cart'
+description: ''
 targetEntityType: commerce_order_item
 cache: true

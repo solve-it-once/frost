@@ -8,5 +8,6 @@ _core:
   default_config_hash: 7cG8CAgbrng9rGviGtBp-JuCEyDSyNfBsWxmIQhYe7s
 id: paragraph.content
 label: Content
+description: ''
 targetEntityType: paragraph
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: L7an7mjnAs-4y-5QQMTdJAc2eCCdDGQwB-WFJ0Up9KM
 id: commerce_product.search_index
 label: 'Search index'
+description: ''
 targetEntityType: commerce_product
 cache: true

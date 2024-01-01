@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: messages
+label: Messages
+revision: 1
+description: 'Containers for the message paragraph type.'

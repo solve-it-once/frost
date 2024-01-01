@@ -8,5 +8,6 @@ _core:
   default_config_hash: 99-2jJLENm0XUJBoUFXRWBpvBXEhLYLdjdxk3YGRGkI
 id: webform_submission.teaser
 label: Teaser
+description: ''
 targetEntityType: webform_submission
 cache: true

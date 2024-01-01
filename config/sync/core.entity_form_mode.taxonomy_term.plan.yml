@@ -8,5 +8,6 @@ _core:
   default_config_hash: 0XPyKLwNWECdk4_wC66kDW9sqi30RR5edvRbD-0cYds
 id: taxonomy_term.plan
 label: plan
+description: ''
 targetEntityType: taxonomy_term
 cache: true

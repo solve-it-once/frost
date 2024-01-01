@@ -8,5 +8,6 @@ _core:
   default_config_hash: hCovynHzEVjUjaxIJPHmg7g3x2YFeky47zsOnY23kug
 id: commerce_product.hero
 label: Hero
+description: ''
 targetEntityType: commerce_product
 cache: true

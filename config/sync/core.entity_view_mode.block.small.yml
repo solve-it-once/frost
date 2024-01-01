@@ -8,5 +8,6 @@ _core:
   default_config_hash: wxUuA7AI7fCcJlhyb2ty7HII4v2j0Gb3ND-WeZ_G2so
 id: block.small
 label: Small
+description: ''
 targetEntityType: block
 cache: true

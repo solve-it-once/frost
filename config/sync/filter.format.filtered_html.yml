@@ -10,12 +10,6 @@ name: 'Filtered HTML'
 format: filtered_html
 weight: 0
 filters:
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: true
-    weight: 10
-    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
@@ -25,6 +19,12 @@ filters:
       allowed_html: '<cite> <dl> <dt> <dd> <a hreflang data-entity-type data-entity-uuid data-entity-substitution class href> <em class> <strong class> <blockquote cite> <ul type class> <ol type class start> <li class> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-entity-substitution data-align data-caption> <br> <p> <code> <sub> <sup> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
   linkit:
     id: linkit
     provider: linkit

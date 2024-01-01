@@ -8,5 +8,6 @@ _core:
   default_config_hash: h1W1PFyavZj5OIsZbSvIou2leA4VqczHE74cgLaEQuw
 id: media.small
 label: Small
+description: ''
 targetEntityType: media
 cache: true

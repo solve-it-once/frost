@@ -8,5 +8,6 @@ _core:
   default_config_hash: 16t6vYECSoSLSp7_7DNrC8KeoXMwJxRIrHagb63KLCY
 id: user.teaser
 label: Teaser
+description: ''
 targetEntityType: user
 cache: true

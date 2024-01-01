@@ -8,5 +8,6 @@ _core:
   default_config_hash: z6H4X4o0JcASpvgtGXa4ITSlNbepsJU5yAoo7xPMzlU
 id: redirect.small
 label: Small
+description: ''
 targetEntityType: redirect
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: CL3ytB5rsI4VCUxCofmdvDfJfJYqiOqIzkFoDRR9oCI
 id: media.square_thumbnail
 label: 'Square thumbnail'
+description: ''
 targetEntityType: media
 cache: true

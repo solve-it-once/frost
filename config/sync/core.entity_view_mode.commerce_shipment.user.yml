@@ -8,5 +8,6 @@ _core:
   default_config_hash: G40vv9Xuc6Jt1V5H0UcORDW-EUbERkckHwBYkH7mG_Y
 id: commerce_shipment.user
 label: User
+description: ''
 targetEntityType: commerce_shipment
 cache: true

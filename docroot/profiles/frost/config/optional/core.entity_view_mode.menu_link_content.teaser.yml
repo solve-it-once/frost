@@ -5,5 +5,6 @@ dependencies:
     - menu_link_content
 id: menu_link_content.teaser
 label: Teaser
+description: ''
 targetEntityType: menu_link_content
 cache: true

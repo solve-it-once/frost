@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: WpLFwsk7duNa2sQ1G_KO16bKL06d1JVveVjbkG9u5DI
+  default_config_hash: R5f0b9NzAVNJzrT7fLub-E82mqOGu1T-Ze7t9Db0KlY
 id: text_phonetic_und_7_0_0
 label: 'Fulltext Phonetic'
 minimum_solr_version: 7.0.0

@@ -16,7 +16,8 @@ mode: default
 content:
   address:
     type: address_default
-    settings: {  }
+    settings:
+      wrapper_type: details
     weight: 4
     region: content
     third_party_settings: {  }
@@ -74,6 +75,12 @@ content:
       display_label: true
     weight: 6
     region: content
+    third_party_settings: {  }
+  shipping_countries:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
   tax_registrations:
     type: options_select

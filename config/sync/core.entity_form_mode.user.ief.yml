@@ -8,5 +8,6 @@ _core:
   default_config_hash: rMJ3ayfeNNYzN8vqQhn1jHUeUaFhFSImt8XggPXIUvs
 id: user.ief
 label: ief
+description: ''
 targetEntityType: user
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: 7MW7pOMNbx3M2f-JQ-fsIypnsaC5WZein0KgjiNTu0o
 id: commerce_product.ief
 label: ief
+description: ''
 targetEntityType: commerce_product
 cache: true

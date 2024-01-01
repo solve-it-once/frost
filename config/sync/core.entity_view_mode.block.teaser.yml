@@ -8,5 +8,6 @@ _core:
   default_config_hash: _LkfeTVN3b7zv0rH3pPFyasbGTfRd9E3eh8jczBACa8
 id: block.teaser
 label: Teaser
+description: ''
 targetEntityType: block
 cache: true

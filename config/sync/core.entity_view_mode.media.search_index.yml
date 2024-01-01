@@ -8,5 +8,6 @@ _core:
   default_config_hash: VCDpQ4BJcCOawDTw3OgOeEL81ZS4RDl_keFXVjgyp_s
 id: media.search_index
 label: 'Search index'
+description: ''
 targetEntityType: media
 cache: true

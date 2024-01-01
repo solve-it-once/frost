@@ -8,5 +8,6 @@ _core:
   default_config_hash: yeCTSXPdMrb8UBSJQQa0lIy4jRHgTYcLOaeumpD10jM
 id: commerce_product.plan
 label: plan
+description: ''
 targetEntityType: commerce_product
 cache: true

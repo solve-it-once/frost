@@ -8,5 +8,6 @@ _core:
   default_config_hash: WP3xNuZ5wLLpxH5DT_QB06v6rhTheIxfYteFJGMEoIc
 id: webform.small
 label: Small
+description: ''
 targetEntityType: webform
 cache: true

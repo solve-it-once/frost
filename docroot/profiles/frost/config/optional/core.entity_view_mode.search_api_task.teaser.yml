@@ -5,5 +5,6 @@ dependencies:
     - search_api
 id: search_api_task.teaser
 label: Teaser
+description: ''
 targetEntityType: search_api_task
 cache: true

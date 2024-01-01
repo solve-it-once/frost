@@ -8,5 +8,6 @@ _core:
   default_config_hash: arLH0YvvIHTtptvK6-VWh3r7GZKmTqlhYenCxyem0c0
 id: node.plan
 label: plan
+description: ''
 targetEntityType: node
 cache: true

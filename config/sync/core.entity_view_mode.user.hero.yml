@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.hero
 label: Hero
+description: ''
 targetEntityType: user
 cache: true

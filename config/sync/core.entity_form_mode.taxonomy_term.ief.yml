@@ -8,5 +8,6 @@ _core:
   default_config_hash: KPOKpbJUAZIHMJoOjhyd6J0bI9xU9zzcaRYMTyLEI2c
 id: taxonomy_term.ief
 label: ief
+description: ''
 targetEntityType: taxonomy_term
 cache: true

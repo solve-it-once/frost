@@ -8,5 +8,6 @@ _core:
   default_config_hash: MczuSI9wRaeJToucDUrS2JHRk98FaYiMn492rM2utpE
 id: search_api_task.small
 label: Small
+description: ''
 targetEntityType: search_api_task
 cache: true

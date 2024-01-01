@@ -8,5 +8,6 @@ dependencies:
       - commerce_shipping
 id: profile.shipping
 label: Shipping
+description: ''
 targetEntityType: profile
 cache: true
