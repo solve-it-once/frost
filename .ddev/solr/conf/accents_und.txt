@@ -1,4 +1,3 @@
-#ddev-generated
 # À => A
 "\u00C0" => "A"
 # Á => A

@@ -1,4 +1,3 @@
-<!-- #ddev-generated -->
 <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
     <lst name="spellchecker">
       <str name="name">en</str>
@@ -38,8 +37,9 @@
       <str name="field">twm_suggest</str>
       <str name="suggestAnalyzerFieldType">text_en</str>
       <str name="contextField">sm_context_tags</str>
-      <str name="buildOnCommit">true</str>
+      <str name="buildOnCommit">false</str>
       <str name="buildOnStartup">false</str>
+      <str name="indexPath">./en</str>
     </lst>
   
     <lst name="suggester">
@@ -51,6 +51,7 @@
       <str name="contextField">sm_context_tags</str>
       <str name="buildOnCommit">true</str>
       <str name="buildOnStartup">false</str>
+      <str name="indexPath">./und</str>
     </lst>
   </searchComponent>
 <!--
@@ -72,6 +73,20 @@
     <str>terms</str>
     <str>spellcheck</str>
     <str>suggest</str>
+  </arr>
+</requestHandler>
+
+<!--
+  Elevator
+  7.0.0
+-->
+<requestHandler name="/elevate" class="solr.SearchHandler" startup="lazy">
+  <lst name="defaults">
+    <str name="echoParams">explicit</str>
+    <str name="df">id</str>
+  </lst>
+  <arr name="last-components">
+    <str>elevator</str>
   </arr>
 </requestHandler>
 
@@ -153,7 +168,7 @@
   <lst name="defaults">
     <str name="suggest">true</str>
     <str name="suggest.dictionary">und</str>
-    <str name="suggest.dictionary">10</str>
+    <str name="suggest.count">10</str>
   </lst>
   <arr name="components">
     <str>suggest</str>

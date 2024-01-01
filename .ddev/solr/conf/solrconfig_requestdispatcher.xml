@@ -1,7 +1,8 @@
-<!-- #ddev-generated -->
 <!--
-  HTTP Cache Never
+  HTTP Cache
   7.0.0
 -->
-<httpCaching never304="true"/>
+<httpCaching lastModFrom="openTime" etagSeed="Solr">
+  <cacheControl>max-age=30, public</cacheControl>
+</httpCaching>
 
