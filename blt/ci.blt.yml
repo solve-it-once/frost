@@ -11,5 +11,3 @@ tests.drupal.sudo-run-tests: false
 #project.local.hostname: 127.0.0.1:8888
 #project.local.protocol: http
 drush.debug: false
-lando:
-  enable: ''

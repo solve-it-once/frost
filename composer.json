@@ -13,10 +13,10 @@
     "require": {
         "php": ">=8.1",
         "ext-simplexml": "*",
-        "acquia/blt": "^13.7",
-        "composer/installers": "^1.12",
+        "acquia/blt": "^13.7.4",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "drupal/address": "^1.11",
+        "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.3",
         "drupal/advagg": "^6.0@alpha",
         "drupal/antibot": "^2.0",
@@ -29,12 +29,12 @@
         "drupal/chosen": "^4.0",
         "drupal/ckeditor": "^1.0",
         "drupal/classy": "^1.0",
-        "drupal/commerce": "^2.33",
+        "drupal/commerce": "^2.37",
         "drupal/commerce_add_to_cart_link": "^2.0",
         "drupal/commerce_shipping": "^2.0@RC",
         "drupal/config_filter": "^2.4",
         "drupal/config_ignore": "^3.0@beta",
-        "drupal/core": "^10.0",
+        "drupal/core": "^10.2",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/ctools": "^4.0",
         "drupal/default_content": "^2.0@alpha",
@@ -67,7 +67,7 @@
         "drupal/media_library_edit": "^3.0",
         "drupal/menu_link_attributes": "1.x-dev",
         "drupal/menu_trail_by_path": "^2.0",
-        "drupal/metatag": "^1.22",
+        "drupal/metatag": "^2.0",
         "drupal/migrate_tools": "^6.0",
         "drupal/oembed_providers": "^2.1",
         "drupal/paragraphs": "^1.15",
@@ -93,7 +93,7 @@
         "drupal/views_block_filter_block": "^2.0",
         "drupal/viewsreference": "^2.0@alpha",
         "drupal/webform": "^6.2@dev",
-        "drush/drush": "^11.5",
+        "drush/drush": "^12.4",
         "jjj/chosen": "2.2.1",
         "laminas/laminas-zendframework-bridge": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -117,12 +117,13 @@
             "wikimedia/composer-merge-plugin": true,
             "zaporylie/composer-drupal-optimizations": true,
             "acquia/blt-phpcs": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         },
         "bin-dir": "vendor/bin/",
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.1"
+            "php": "8.2"
         },
         "preferred-install": "dist",
         "sort-packages": true,
@@ -200,6 +201,9 @@
             },
             "drupal/bg_image_formatter": {
                 "Using the same bg image on a page causes hash collision https://www.drupal.org/project/bg_image_formatter/issues/3086642": "https://www.drupal.org/files/issues/2019-10-08/hash-collision-3086642-2.patch"
+            },
+            "drupal/tablefield": {
+                "PHP 8.2 has deprecated the creation of dynamic properties https://www.drupal.org/project/tablefield/issues/3397688": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
             }
         },
         "violinist": {
@@ -255,7 +259,7 @@
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "^2.0"
                 }
             }
         },
@@ -273,7 +277,7 @@
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "^2.0"
                 }
             }
         }

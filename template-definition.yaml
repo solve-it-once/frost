@@ -44,7 +44,7 @@ info:
       content: |
         PHP 8+<br />
         Composer-based build<br />
-        Lando locals<br />
+        ddev locals<br />
         Atomic components base on Paragraphs<br />
 
 # This key describes the initialization call made to the master environment at

@@ -4,8 +4,8 @@
 
 # Frost: Low-code Drupal for your whole team
 
-[Frost](https://frostdrupal.com/) (even more info [on drupal.org](https://www.drupal.org/project/frost)) is a component-forward 
-Drupal install profile. It's made for teams and agencies that want to launch quickly, build Drupal-based functionality on top, 
+[Frost](https://frostdrupal.com/) (even more info [on drupal.org](https://www.drupal.org/project/frost)) is a component-forward
+Drupal install profile. It's made for teams and agencies that want to launch quickly, build Drupal-based functionality on top,
 and maintain the codebase in the long term with less frustration.
 
 [![Inline editing right out of the  box](https://i.imgur.com/ZRTjVma.png)](https://github.com/solve-it-once/frost)
@@ -61,7 +61,7 @@ required.
 * **Stripe collection** — Reuses the stripe concept to allow content creators to make tabs and slideshows
 
 The "Stripe: Atomic" sectioning container gives you a lot of flexibility to build out experiences, but could be a ton of
-work if every section on the site is different. For designs with consistent-or-alternating sections you can easily 
+work if every section on the site is different. For designs with consistent-or-alternating sections you can easily
 **take a "balanced breakfast" approach** and create other 'Stripe' sections like "Stripe: Image + text" or similar.
 
 ##### Storytelling
@@ -111,7 +111,7 @@ as the ability to install dependencies using a nix-style package manager.
 ### Prerequisites:
 
 1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-2. [lando](https://docs.lando.dev/getting-started/installation.html) (and docker, among lando's dependencies)
+2. [ddev](https://ddev.com/get-started/) (and docker, among ddev's dependencies)
 3. A text editor or IDE such as vscode, PHPStorm, etc.
 4. For additional advanced functions, a PHP CLI, composer, and other tools locally rather than in the containers
 
@@ -124,9 +124,6 @@ You'll probably have luck cloning the repo in step 2 of the local steps below, b
 In the future we may automate more of these steps, but for now it's useful to walk through them all to ensure
 success, and to drill down into points where the process could tentatively fail for you.
 
-Note: if you're one of _those_ people and wish to use ddev, your mileage may vary, but mostly you can ignore (or do the 
-ddev equivalent) step 5 below and replace 'lando' with 'ddev' for all the steps below.
-
 If you follow these steps and run into difficulty, please add an issue to this repository with a detailed explanation of
 what went wrong, so we can fix it and amend the documentation further. Thank you.
 
@@ -136,20 +133,20 @@ what went wrong, so we can fix it and amend the documentation further. Thank you
    letters/numbers/underscores)
 3. `cd nameofyoursite` to enter the repository
 4. `vi .git/config` (or use your text editor of choice) and save the file with "filemode = false" under core
-5. `vi .lando.yml` and change the three places where the word 'frost' is to be 'nameofyoursite' instead
+5. `vi .ddev/config.yaml` and change the 'name' (where the word 'frost' is) to be 'nameofyoursite' instead
 6. `vi blt/example.local.blt.yml` and change the two instances of 'frost' to 'nameofyoursite'
-7. `lando start` to create and begin running the application's containers
-8. `lando composer install` to ensure the dependencies are available. lando start tries to do this but sometimes fails
-9. (optional, potentially frustrating) `lando blt blt:init:git-hooks` to validate your commits (you may be prompted to
+7. `ddev start` to create and begin running the application's containers
+8. `ddev composer install` to ensure the dependencies are available. ddev start tries to do this but sometimes fails
+9. (optional, potentially frustrating) `ddev blt blt:init:git-hooks` to validate your commits (you may be prompted to
    provide feedback data to the BLT maintainers)
-10. `lando blt source:build` to move the settings files into place, among other automated activities
-11. `lando drush sql-connect` to confirm the mysql command has plausible looking database, user, and password values
-12. `lando drush si` to install Drupal using the frost install profile/distribution. Say yes to delete the database, and
+10. `ddev blt source:build` to move the settings files into place, among other automated activities
+11. `ddev drush sql:connect` to confirm the mysql command has plausible looking database, user, and password values
+12. `ddev drush si` to install Drupal using the frost install profile/distribution. Say yes to delete the database, and
     ignore errors and warnings. **This command will tell you the admin usernsmae and password. Copy these and retain them
     for your records**
-13. `lando drush en frost_default_content` to install the pages and examples for a head start
-14. (optional) `lando drush pmu frost_default_content` to keep the installed modules clean
-15. `lando drush uli` to get a URL you can copy and then paste into your browser to log into your new site. If this doesn't
+13. `ddev drush en frost_default_content` to install the pages and examples for a head start
+14. (optional) `ddev drush pmu frost_default_content` to keep the installed modules clean
+15. `ddev drush uli` to get a URL you can copy and then paste into your browser to log into your new site. If this doesn't
     work, use the admin username and password from step 12
 16. When you paste the URL into your browser, you may get a warning about security. This is due to the local site using
     a self-signed certificate and is nothing to worry about. Open the advanced options accordion and click the link to
@@ -166,11 +163,11 @@ hosting service provider you choose, but the following rough guidelines could he
 
 * Create a 'nameofyoursite' git remote repository on GitHub, bitbucket, gitlab, or another service
 * Follow the service-provided instructions to add/replace the remote in your `.git/config` file for the repo
-* Use `lando drush cex -y` to export your site's configuration. **This is important to do early** as the repo contains
+* Use `ddev drush cex -y` to export your site's configuration. **This is important to do early** as the repo contains
   configurations that may not be importable. Exporting early can save some heartache
-* Try `lando blt validate` to confirm all the twig, yaml, PHP, and other files are formatted correctly
+* Try `ddev blt validate` to confirm all the twig, yaml, PHP, and other files are formatted correctly
 * Do the usual git stuff to add and commit the changes, then push to your site-specific remote
-* `lando drush sql-dump --result-file=nameofyoursite_local_YYYYMMDD_0.sql` will save the file in `docroot/`. I usually
+* `ddev drush sql-dump --result-file=nameofyoursite_local_YYYYMMDD_0.sql` will save the file in `docroot/`. I usually
   move it to the repo root to make it easy to restore
 * Set up a remote host and then sync the database and files to it (you will want to swap the `frost.site.yml`
   in `drush/sites` for a yml file containing your new host's correct drush aliases)
@@ -190,7 +187,7 @@ frost intends to support:
 If you're done evaluating frost and want to delete the nameofyoursite instance off your laptop, you can do the
 following:
 
-1. `lando destroy -y` (this kills the crab)
+1. `ddev delete -y` (this kills the crab)
 2. `cd ..` to leave the nameofyoursite folder
 3. `rm -rf nameofyoursite/`
 

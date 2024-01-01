@@ -4,7 +4,7 @@
 # See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
 
 name: 'app'
-type: 'php:8.1'
+type: 'php:8.2'
 disk: 2048
 build:
   flavor: composer
@@ -18,7 +18,7 @@ relationships:
 dependencies:
   php:
     composer/composer: '^2'
-    "drush/drush": "^11.0"
+    "drush/drush": "^12.4"
 
 # Remote debugging is possible by uncommenting the runtime config below.
 #runtime:

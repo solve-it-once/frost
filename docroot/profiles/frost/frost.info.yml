@@ -31,7 +31,6 @@ dependencies:
   - breakpoint
   - chosen
   - chosen_lib
-  - ckeditor
   - ckeditor5
   - commerce
   - commerce_add_to_cart_link

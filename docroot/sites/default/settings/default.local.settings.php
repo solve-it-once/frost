@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Only do these things locally on lando, even if this file is included.
+ * Only do these things locally, even if this file is included.
  */
 
-if (isset($_ENV['LANDO_INFO'])) {
+if (getenv('IS_DDEV_PROJECT') == 'true') {
   // Local error reporting.
   error_reporting(E_ALL);
   ini_set('display_errors', TRUE);
@@ -24,16 +24,10 @@ if (isset($_ENV['LANDO_INFO'])) {
   $settings['skip_permissions_hardening'] = TRUE;
   $settings['trusted_host_patterns'][] = '^localhost.*$';
   $settings['trusted_host_patterns'][] = '^127\.0.*$';
-  $settings['trusted_host_patterns'][] = '^.*\.lndo\.site$';
+  $settings['trusted_host_patterns'][] = '^.*\.ddev\.site$';
 
   // Configure private and temporary file paths.
   if (!isset($settings['file_private_path'])) {
     $settings['file_private_path'] = '../private';
-  }
-
-  // Set up oembed iframe domain if lando provides info in _ENV.
-  $lando_info = json_decode($_ENV['LANDO_INFO']);
-  if (isset($lando_info->app->urls[0])) {
-    $config['media.settings']['iframe_domain'] = $lando_info->app->urls[0];
   }
 }
