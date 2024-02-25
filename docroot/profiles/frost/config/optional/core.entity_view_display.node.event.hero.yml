@@ -14,6 +14,9 @@ dependencies:
     - field.field.node.event.field_sections
     - field.field.node.event.field_seo
     - field.field.node.event.field_tags
+    - field.field.node.event.field_user_accountable
+    - field.field.node.event.field_users_consulted
+    - field.field.node.event.field_users_informed
     - node.type.event
   module:
     - datetime_range
@@ -136,6 +139,9 @@ hidden:
   field_sections: true
   field_seo: true
   field_tags: true
+  field_user_accountable: true
+  field_users_consulted: true
+  field_users_informed: true
   frost_submitted: true
   langcode: true
   links: true

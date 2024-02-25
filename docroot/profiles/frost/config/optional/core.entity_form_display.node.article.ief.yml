@@ -11,6 +11,9 @@ dependencies:
     - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
+    - field.field.node.article.field_user_accountable
+    - field.field.node.article.field_users_consulted
+    - field.field.node.article.field_users_informed
     - node.type.article
   module:
     - field_group
@@ -65,9 +68,9 @@ content:
     third_party_settings: {  }
   simple_sitemap:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 1
@@ -84,6 +87,9 @@ hidden:
   field_scratch: true
   field_seo: true
   field_tags: true
+  field_user_accountable: true
+  field_users_consulted: true
+  field_users_informed: true
   path: true
   promote: true
   status: true

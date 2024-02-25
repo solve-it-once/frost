@@ -12,6 +12,9 @@ dependencies:
     - field.field.node.article.field_scratch
     - field.field.node.article.field_seo
     - field.field.node.article.field_tags
+    - field.field.node.article.field_user_accountable
+    - field.field.node.article.field_users_consulted
+    - field.field.node.article.field_users_informed
     - node.type.article
   module:
     - field_group
@@ -24,12 +27,30 @@ third_party_settings:
       label: Tagging
       region: hidden
       parent_name: ''
-      weight: 9
+      weight: 21
       format_type: fieldset
       format_settings:
         classes: ''
         id: ''
         description: ''
+        required_fields: false
+    group_responsibility_assignment:
+      children:
+        - uid
+        - field_user_accountable
+        - field_users_consulted
+        - field_users_informed
+      label: 'Responsibility assignment'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: 'For content strategy and governance purposes, use the fields to define the <strong>Responsible</strong> user (Authored by), <strong>Accountable</strong> person, <strong>Consulted</strong> and <strong>Informed</strong> parties. These settings will be available in a RACI matrix under the Content admin menu, and can be used in publishing workflows and other action-triggered events to ensure content is timely and comports with organizational standards.'
         required_fields: false
 _core:
   default_config_hash: w8mjYNleWqYJS9FsMLB40fpSplVMTT6393RR2VmSMuw
@@ -54,16 +75,51 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_user_accountable:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_users_consulted:
+    type: entity_reference_autocomplete_tags
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_users_informed:
+    type: entity_reference_autocomplete_tags
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   frost_submitted:
     weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
-  simple_sitemap:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
     region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   body: true
   created: true
@@ -75,8 +131,8 @@ hidden:
   langcode: true
   path: true
   promote: true
+  simple_sitemap: true
   status: true
   sticky: true
   title: true
-  uid: true
   url_redirects: true

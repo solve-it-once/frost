@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_users_consulted
+    - node.type.article
+id: node.article.field_users_consulted
+field_name: field_users_consulted
+entity_type: node
+bundle: article
+label: Consulted
+description: 'Those whose opinions are sought, typically subject-matter experts, and with whom there is two-way communication.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

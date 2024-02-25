@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_users_informed
+    - node.type.event
+id: node.event.field_users_informed
+field_name: field_users_informed
+entity_type: node
+bundle: event
+label: Informed
+description: 'Those who are kept up-to-date on progress, often only on completion of the task or deliverable, and with whom there is just one-way communication.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference
