@@ -11,3 +11,4 @@ ed11y_theme: sleekTheme
 shadow_components: ''
 disable_sync: false
 preserve_params: 'search,keys,page,language,language_content_entity'
+link_ignore_selector: 'svg.ext, svg.mailto, .link-purpose-text'
