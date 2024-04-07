@@ -4,7 +4,7 @@
 project:
   local:
     protocol: https
-    hostname: www.frost.lndo.site
+    hostname: frost.ddev.site
 
 # You can set custom project aliases in drush/sites/*.site.yml.
 # All local:* targets are run against drush.aliases.local.
@@ -27,7 +27,7 @@ tests:
   reports.remoteDir: '/tmp'
   run-server: false
   server.port: 443
-  server.url: 'https://www.frost.lndo.site'
+  server.url: 'https://frost.ddev.site'
   chrome.port: 9222
 
 behat:
