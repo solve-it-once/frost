@@ -6,7 +6,7 @@ project:
     name: frost
   local:
     protocol: https
-    hostname: 'www.${project.machine_name}.lndo.site'
+    hostname: '${project.machine_name}.ddev.site'
 cm:
   strategy: core-only
 git:
