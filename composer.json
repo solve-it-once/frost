@@ -27,7 +27,6 @@
         "drupal/block_field": "^1.0@alpha",
         "drupal/captcha": "^2.0",
         "drupal/chosen": "^4.0",
-        "drupal/ckeditor": "^1.0",
         "drupal/classy": "^1.0",
         "drupal/commerce": "^2.37",
         "drupal/commerce_add_to_cart_link": "^2.0",
@@ -54,9 +53,6 @@
         "drupal/honeypot": "^2.1",
         "drupal/human_decimal": "^3.0",
         "drupal/iframe": "^2.21",
-        "drupal/imageapi_optimize": "^4.0@beta",
-        "drupal/imageapi_optimize_binaries": "^1.0@alpha",
-        "drupal/imageapi_optimize_resmushit": "^2.0@beta",
         "drupal/imagemagick": "^3.4",
         "drupal/jquery_ui_accordion": "^2.0",
         "drupal/jquery_ui_slider": "^2.0",
@@ -201,9 +197,6 @@
             },
             "drupal/bg_image_formatter": {
                 "Using the same bg image on a page causes hash collision https://www.drupal.org/project/bg_image_formatter/issues/3086642": "https://www.drupal.org/files/issues/2019-10-08/hash-collision-3086642-2.patch"
-            },
-            "drupal/tablefield": {
-                "PHP 8.2 has deprecated the creation of dynamic properties https://www.drupal.org/project/tablefield/issues/3397688": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
             }
         },
         "violinist": {
