@@ -14,10 +14,6 @@ libraries:
   - frost_theme/frost-global
   - frost_theme/frost-animate
 libraries-override:
-  classy/node:
-    css:
-      component:
-        css/components/node.css: false
   commerce_cart/cart_block:
     css:
       layout:

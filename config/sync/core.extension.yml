@@ -142,9 +142,7 @@ module:
   linked_field: 100
   frost: 1000
 theme:
-  stable: 0
   claro: 0
   frost_theme: 0
-  classy: 0
   gin: 0
 profile: frost

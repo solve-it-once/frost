@@ -154,8 +154,6 @@ dependencies:
   - linked_field
 
 themes:
-  - stable
-  - classy
   - claro
   - frost_theme
   - gin
