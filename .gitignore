@@ -72,6 +72,7 @@ $RECYCLE.BIN/
 \#*\#
 
 # Files and directories
+.platform/local/project.yaml
 atlassian-ide-plugin.xml
 auto-save-list
 deployment_identifier
@@ -91,6 +92,7 @@ node_modules/
 npm-debug.log
 private
 private_files
+salt.txt
 tests/behat/local.yml
 tests/output
 Thumbs.db
