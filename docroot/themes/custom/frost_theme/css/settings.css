@@ -1,6 +1,10 @@
 /**
  * @file
  * @font-face and CSS custom properties in the global scope.
+ *
+ * In many cases you can customize the theme to match your brand entirely by
+ * tweaking the variables in this file. Definitely start here before tweaking
+ * the other theme CSS files.
  */
 
 /**
@@ -50,44 +54,116 @@
  */
 :root {
   /* Plain defaults. */
-  --border--default: 1px solid;
+  --border--default: 1px solid; /* Omit the color. Just width and style. */
   --border-radius--default: 2px;
   --box-shadow--default: 0 0 3px rgba(0, 0, 0, .5);
   --font-family--input: 'Public Sans', Arial, Helvetica, sans-serif;
   --font-family--monospace: 'courier new', courier, monospace;
   --font-family--primary: 'Public Sans', Arial, Helvetica, sans-serif;
   --font-family--secondary: 'Emberly', Times New Roman, serif;
-  --layout--content-area: 1280px;
+  --layout--content-area: 1280px; /* 1280px is good for the overall system. */
   --line-height--default: 1.425;
   --line-height--heading: 1;
-  --spacing--single: 0.625rem;
+  --spacing--single: 0.625rem; /* 0.625rem is 10px, which is a useful baseline. */
   --spacing--margin-x: calc(1 * var(--spacing--single));
   --spacing--margin-y: calc(1 * var(--spacing--single));
-  --spacing--padding-x: calc(1 * var(--spacing--single));
-  --spacing--padding-y: calc(1 * var(--spacing--single));
+  --spacing--padding-x: calc(1 * var(--spacing--single)); /* Also used for widths. */
+  --spacing--padding-y: calc(1 * var(--spacing--single)); /* Also used for heights. */
   --text-shadow--default: 0 0 2px rgba(0, 0, 0, .5);
-  --transition--default: all .3s ease-in;
-  /* Main theme colors. */
+  --transition--default: all .3s ease-in; /* 'all' isn't great for performance but is versatile. */
+
+  /*
+   * Declared colors.
+   *
+   * The dark and light variants can easily be calculated below, so this
+   * section is for directly-declared colors.
+   *
+   * Black, greys, and white don't really need any calculated fanciness,
+   * and rarely need to be changed from the original values.
+   *
+   * If you have an existing brand you can declare all the "Palette colors"
+   * in hex at the bottom of this section. There's cut/paste items in
+   * the bottom comment.
+   *
+   * If you're making a new brand palette from scratch, setting --color--main
+   * to the bluest color in your head and then tweaking the percentages will
+   * make you a lot happier in the long run.
+   */
   --color--black: #222;
   --color--grey-dark: #555;
   --color--grey: #aaa;
   --color--grey-light: #f7f7f7;
   --color--white: #fff;
-  --color--main: #007da3; /* This should be a 6-char hex. */
-  --color--main-dark: #002733;
-  --color--main-light: #ccf4ff;
-  --color--second: #e32416;
-  --color--second-dark: #331716;
-  --color--second-light: #ffcfcc;
-  --color--third: #007e85;
-  --color--third-dark: #003033;
-  --color--third-light: #ccfcff;
-  --color--accent: #6100a7;
+
+  --color--main: #007da3; /* This should be a 6-char hex (for the charts to work). */
+
+  /*
+   * Color-mix percentages.
+   *
+   * The palette is based on the --color--main (blue), which should be about
+   * 50% light so the darkening and lightening apply nicely.
+   *
+   * The second, third, accent, and warning percentages all rotate around the
+   * color wheel. By default second is a red, third is teal, accent is purple,
+   * and warning is yellow-ish. These are pretty solid colors for a palette!
+   *
+   * If you deviate from those colors too much, keep in mind that links should
+   * be blue-ish, visited links purple, and that status+warning+error should be
+   * set to culturally-appropriate colors for each indicator level.
+   */
+  --color-mix--dark-percent: 90%; /* Should be pretty high for WCAG AA contrast. */
+  --color-mix--light-percent: 90%; /* Should be pretty high for WCAG AA contrast. */
+  --color-mix--second-percent: 50%;
+  --color-mix--third-percent: 95%;
+  --color-mix--accent-percent: 25%; /* Color of visited links. */
+  --color-mix--warning-percent: 60%;
+
+  /* Palette colors, computed by above percentages by default. */
+  --color--main-dark: color-mix(in srgb, var(--color--main), var(--color--black) var(--color-mix--dark-percent));
+  --color--main-light: color-mix(in srgb, var(--color--main), var(--color--white) var(--color-mix--light-percent));
+
+  --color--second: color-mix(in hsl longer hue, var(--color--main), var(--color--main) var(--color-mix--second-percent));
+  --color--second-dark: color-mix(in srgb, var(--color--second), var(--color--black) var(--color-mix--dark-percent));
+  --color--second-light: color-mix(in srgb, var(--color--second), var(--color--white) var(--color-mix--light-percent));
+
+  --color--third: color-mix(in hsl longer hue, var(--color--main), var(--color--main) var(--color-mix--third-percent));
+  --color--third-dark: color-mix(in srgb, var(--color--third), var(--color--black) var(--color-mix--dark-percent));
+  --color--third-light: color-mix(in srgb, var(--color--third), var(--color--white) var(--color-mix--light-percent));
+
+  --color--accent: color-mix(in hsl longer hue, var(--color--main), var(--color--main) var(--color-mix--accent-percent));;
+
   /* Message colors. Can be customized to be site-appropriate. */
   --color--status: var(--color--main-dark);
   --color--status-background: var(--color--main-light);
-  --color--warning: #860;
-  --color--warning-background: #ffc;
+
+  --color--warning-mid: color-mix(in hsl longer hue, var(--color--main), var(--color--main) var(--color-mix--warning-percent));
+  --color--warning: color-mix(in srgb, var(--color--warning-mid), var(--color--black) var(--color-mix--dark-percent));
+  --color--warning-background: color-mix(in srgb, var(--color--warning), var(--color--white) var(--color-mix--light-percent));
+
   --color--error: var(--color--second-dark);
   --color--error-background: var(--color--second-light);
+
+  /*
+   * Direct overrides.
+   *
+   * Cut the items and paste them below this comment to override the automatic
+   * color scheme generated above.
+   *
+  --color--accent: #007da3;
+  --color--error-background: #007da3;
+  --color--error: #007da3;
+  --color--main-dark: #007da3;
+  --color--main-light: #007da3;
+  --color--second-dark: #007da3;
+  --color--second-light: #007da3;
+  --color--second: #007da3;
+  --color--status-background: #007da3;
+  --color--status: #007da3;
+  --color--third-dark: #007da3;
+  --color--third-light: #007da3;
+  --color--third: #007da3;
+  --color--warning-background: #007da3;
+  --color--warning-mid: #007da3;
+  --color--warning: #007da3;
+   */
 }

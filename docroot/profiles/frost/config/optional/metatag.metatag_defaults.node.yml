@@ -4,12 +4,13 @@ dependencies: {  }
 id: node
 label: Content
 tags:
-  image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
-  description: '[node:field_seo:entity:field_seo_description]'
-  title: '[node:field_seo:entity:field_seo_title] | [site:name]'
   canonical_url: '[node:url]'
-  og_url: '[current-page:url:absolute]'
+  description: '[node:field_seo:entity:field_seo_description]'
+  image_src: '[node:field_seo:entity:field_seo_image:entity:url]'
+  og_description: '[node:field_seo:entity:field_seo_description]'
+  og_image: '[node:field_seo:entity:field_seo_image:entity:url]'
   og_site_name: '[site:name]'
   og_title: '[node:field_seo:entity:field_seo_title]'
-  og_image: '[node:field_seo:entity:field_seo_image:entity:url]'
-  og_description: '[node:field_seo:entity:field_seo_description]'
+  og_url: '[current-page:url:absolute]'
+  title: '[node:field_seo:entity:field_seo_title] | [site:name]'
+  view_transition: same-origin

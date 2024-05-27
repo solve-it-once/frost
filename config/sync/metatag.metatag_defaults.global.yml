@@ -7,16 +7,17 @@ _core:
 id: global
 label: Global
 tags:
-  title: '[current-page:title] | [site:name]'
   canonical_url: '[current-page:url]'
-  og_phone_number: '[contact_info:phone:number]'
-  og_url: '[current-page:url]'
-  og_email: '[contact_info:email:emailaddress]'
-  og_postal_code: '[contact_info:address:postal_code]'
-  og_locality: '[contact_info:address:locality]'
-  og_street_address: '[contact_info:address:street_address]'
-  og_site_name: '[site:name]'
-  og_title: '[current-page:title]'
-  og_region: '[contact_info:address:region]'
-  og_fax_number: '[contact_info:fax:number]'
   og_country_name: '[contact_info:address:country_name]'
+  og_email: '[contact_info:email:emailaddress]'
+  og_fax_number: '[contact_info:fax:number]'
+  og_locality: '[contact_info:address:locality]'
+  og_phone_number: '[contact_info:phone:number]'
+  og_postal_code: '[contact_info:address:postal_code]'
+  og_region: '[contact_info:address:region]'
+  og_site_name: '[site:name]'
+  og_street_address: '[contact_info:address:street_address]'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
+  view_transition: same-origin

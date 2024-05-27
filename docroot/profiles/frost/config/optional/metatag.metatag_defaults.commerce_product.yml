@@ -4,12 +4,13 @@ dependencies: {  }
 id: commerce_product
 label: Product
 tags:
-  image_src: '[commerce_product:field_seo:entity:field_seo_image:entity:field_media_image:entity:url]'
-  description: '[commerce_product:field_seo:entity:field_seo_description]'
-  title: '[commerce_product:field_seo:entity:field_seo_title] | [site:name]'
   canonical_url: '[current-page:url:absolute]'
-  og_url: '[current-page:url:absolute]'
+  description: '[commerce_product:field_seo:entity:field_seo_description]'
+  image_src: '[commerce_product:field_seo:entity:field_seo_image:entity:field_media_image:entity:url]'
+  og_description: '[commerce_product:field_seo:entity:field_seo_description]'
+  og_image: '[commerce_product:field_seo:entity:field_seo_image:entity:field_media_image:entity:url]'
   og_site_name: '[site:name]'
   og_title: '[commerce_product:field_seo:entity:field_seo_title]'
-  og_image: '[commerce_product:field_seo:entity:field_seo_image:entity:field_media_image:entity:url]'
-  og_description: '[commerce_product:field_seo:entity:field_seo_description]'
+  og_url: '[current-page:url:absolute]'
+  title: '[commerce_product:field_seo:entity:field_seo_title] | [site:name]'
+  view_transition: same-origin

@@ -4,4 +4,5 @@ package: Other
 type: module
 dependencies:
   - contact_info:contact_info
+  - metatag:metatag
 core_version_requirement: ^9 || ^10
