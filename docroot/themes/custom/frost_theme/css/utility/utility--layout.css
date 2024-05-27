@@ -27,16 +27,16 @@ main {
  */
 @media all and (max-width: 1023px) {
   .entity-bundle-column {
-    min-width: 270px;
+    min-width: calc(27 * var(--spacing--padding-x));
   }
 }
 @media all and (max-width: 767px) {
   .entity-bundle-column {
-    min-width: 200px;
-    padding-top: calc(2 * var(--spacing--single));
+    min-width: calc(20 * var(--spacing--padding-x));
+    padding-top: calc(2 * var(--spacing--padding-y));
   }
   .entity-bundle-column:last-child {
-    padding-bottom: calc(2 * var(--spacing--single));
+    padding-bottom: calc(2 * var(--spacing--padding-y));
   }
 }
 
@@ -76,16 +76,16 @@ main {
  * Place the overriding class after it in order for cascade purposes.
  */
 .entity-bundle-stripe {
-  padding: calc(10 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  padding: calc(10 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
 }
 @media all and (max-width: 767px) {
   .entity-bundle-stripe {
-    padding: calc(6 * var(--spacing--single)) calc(2 * var(--spacing--single));
+    padding: calc(6 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
   }
   /* Give tab contents more breathing room on mobile. */
   details > .entity-bundle-stripe {
     background-color: transparent !important; /* May reconsider this, as it it not in the spirit of components. */
-    padding: calc(4 * var(--spacing--single)) 0;
+    padding: calc(4 * var(--spacing--padding-y)) 0;
   }
 }
 .entity-bundle-stripe > .inner,
@@ -111,7 +111,7 @@ main {
 }
 @media all and (max-width: 1200px) {
   .padding--0 {
-    padding: 0 calc(2 * var(--spacing--single));
+    padding: 0 calc(2 * var(--spacing--padding-x));
   }
 }
 
@@ -120,16 +120,16 @@ main {
  */
 @supports (gap: 10px) {
   .gap--1 {
-    gap: calc(1 * var(--spacing--single));
+    gap: calc(1 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   }
   .gap--2 {
-    gap: calc(2 * var(--spacing--single));
+    gap: calc(2 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
   }
   .gap--4 {
-    gap: calc(4 * var(--spacing--single));
+    gap: calc(4 * var(--spacing--padding-y)) calc(4 * var(--spacing--padding-x));
   }
   .gap--8 {
-    gap: calc(8 * var(--spacing--single));
+    gap: calc(8 * var(--spacing--padding-y)) calc(8 * var(--spacing--padding-x));
   }
 }
 
@@ -165,7 +165,7 @@ main {
 }
 .layout--horizontal > *,
 .layout--carousel > * {
-  margin: 0 0 calc(4 * var(--spacing--single));
+  margin: 0 0 calc(4 * var(--spacing--margin-y));
 }
 .layout--horizontal > [data-contextual-id],
 .layout--carousel > [data-contextual-id] {
@@ -176,7 +176,7 @@ main {
   .layout--carousel {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    max-width: calc(100vw - (6 * var(--spacing--single))); /* Explicit, defensive. This feature leads to some shame. */
+    max-width: calc(100vw - (6 * var(--spacing--padding-x))); /* Explicit, defensive. This feature leads to some shame. */
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -186,15 +186,15 @@ main {
   }
   .layout--horizontal > *,
   .layout--carousel > * {
-    flex-basis: calc(33% - (4 * var(--spacing--single)));
-    margin: 0 calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single));
-    max-width: 448px;
-    min-width: 170px;
+    flex-basis: calc(33% - (4 * var(--spacing--padding-x)));
+    margin: 0 calc(2 * var(--spacing--margin-x)) calc(4 * var(--spacing--margin-y));
+    max-width: calc(44.8 * var(--spacing--padding-x));
+    min-width: calc(17 * var(--spacing--padding-x));
     scroll-snap-align: start;
   }
   .layout--carousel > * {
     flex-basis: unset;
-    min-width: 330px; /* The carousel works hard to avoid overflow. */
+    min-width: calc(33 * var(--spacing--padding-x)); /* The carousel works hard to avoid overflow. */
   }
 }
 
@@ -219,8 +219,8 @@ main {
 .region > .inner {
   margin: 0 auto;
   max-width: var(--layout--content-area);
-  padding-left: calc(2 * var(--spacing--single));
-  padding-right: calc(2 * var(--spacing--single));
+  padding-left: calc(2 * var(--spacing--padding-x));
+  padding-right: calc(2 * var(--spacing--padding-x));
 }
 .region--splash > .inner,
 .page-has--field-sections .region--content > .inner {
@@ -249,7 +249,7 @@ main {
 .page-lacks--field-sections .region--content > .inner {
   /* @see .page-lacks--field-sections */
   max-width: var(--layout--content-area);
-  padding: calc(4 * var(--spacing--single)) calc(2 * var(--spacing--single)) calc(8 * var(--spacing--single));
+  padding: calc(4 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x)) calc(8 * var(--spacing--padding-y));
 }
 
 /**

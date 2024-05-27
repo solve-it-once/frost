@@ -17,7 +17,7 @@
   height: 1px;
   left: -10000px;
   overflow: hidden;
-  padding: 10px;
+  padding: calc(1 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   position: absolute;
   top: auto;
   width: 1px;
@@ -71,10 +71,10 @@
   }
   .block--search-icon-block .search-form-wrapper {
     background-color: var(--color--white);
-    bottom: -65px;
+    bottom: calc(-6.5 * var(--spacing--padding-y));
     box-shadow: 0 0 5px rgb(0 0 0 / 80%);
-    min-width: 200px;
-    padding: calc(1 * var(--spacing--single)) calc(1 * var(--spacing--single)) 0;
+    min-width: calc(20 * var(--spacing--padding-x));
+    padding: calc(1 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x)) 0;
     position: absolute;
     right: 0;
   }
@@ -90,7 +90,7 @@
  * the text in some way.
  */
 .blockquote--closing-include {
-  min-height: 80px;
+  min-height: calc(8 * var(--spacing--padding-y));
   position: relative;
 }
 .blockquote--closing-include::after {
@@ -107,7 +107,7 @@
   display: inline;
 }
 .blockquote--opening-include {
-  min-height: 80px;
+  min-height: calc(8 * var(--spacing--padding-y));
   position: relative;
 }
 .blockquote--opening-include::before {
@@ -140,7 +140,7 @@
 .border-spaced > li {
   border-right: 1px solid;
   border-bottom: 0 none;
-  padding: 0 2px;
+  padding: 0 calc(0.2 * var(--spacing--padding-x));
 }
 .border-spaced li:last-child {
   border-right: 0 none;
@@ -151,7 +151,7 @@
  */
 .breadcrumb {
   font-size: .875em;
-  padding: calc(2 * var(--spacing--single)) 0;
+  padding: calc(2 * var(--spacing--padding-y)) 0;
 }
 .breadcrumb a {
   color: inherit;
@@ -179,7 +179,7 @@
 .breadcrumb li:before {
   content: ">";
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 calc(0.5 * var(--spacing--padding-x));
   vertical-align: middle;
 }
 .breadcrumb li:first-child:before {
@@ -260,22 +260,22 @@
  * Field label styles.
  */
 .field-label--above {
-  margin-bottom: 20px;
+  margin-bottom: calc(2 * var(--spacing--margin-y));
 }
 .field-label--above > .field-label {
   display: block;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 400;
 }
 .field-label--inline {
-  margin-bottom: 10px;
+  margin-bottom: calc(1 * var(--spacing--margin-y));
 }
 @media all and (min-width: 768px) {
   .field-label--inline {
     border-bottom: 1px solid;
     display: flex;
     margin-bottom: 0;
-    padding: 10px 20px;
+    padding: calc(1 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
   }
 }
 .field-label--inline:last-child {
@@ -299,7 +299,7 @@
 /* Brad hack to demo model selector. */
 .layout--horizontal .field-label--inline {
   font-size: .875em;
-  padding: 5px 0;
+  padding: calc(0.5 * var(--spacing--padding-y)) 0;
   text-align: left;
 }
 
@@ -308,25 +308,25 @@
  */
 .field-name--body,
 .field-name--description {
-  margin-bottom: 10px;
+  margin-bottom: calc(1 * var(--spacing--margin-y));
 }
 .view-mode--decorated .field-name--body,
 .view-mode--decorated .field-name--description {
-  margin-bottom: 30px;
+  margin-bottom: calc(3 * var(--spacing--margin-y));
 }
 
 /**
  * Make address fields universally have margin.
  */
 .field-type--address {
-  margin: 0 0 20px;
+  margin: 0 0 calc(2 * var(--spacing--margin-y));
 }
 
 /**
  * Give geofields a little breathing room.
  */
 .field-type--geofield {
-  margin: 10px 0;
+  margin: calc(1 * var(--spacing--margin-y)) 0;
 }
 
 /**
@@ -388,7 +388,7 @@
   bottom: 0;
   color: var(--color--grey);
   left: 0;
-  padding: calc(0.5 * var(--spacing--single));
+  padding: calc(0.5 * var(--spacing--padding-y)) calc(0.5 * var(--spacing--padding-x));
   position: absolute;
   right: 0;
 }
@@ -402,7 +402,7 @@
   height: 1em;
   letter-spacing: 0.25em;
   line-height: var(--line-height--heading);
-  padding: calc(0.5 * var(--spacing--single));
+  padding: calc(0.5 * var(--spacing--padding-y)) calc(0.5 * var(--spacing--padding-x));
   text-decoration: none;
   transition: all .3s ease-in;
   width: 1em;
@@ -421,7 +421,7 @@
   border-radius: 3px;
   box-shadow: 0 0 5px var(--color--grey);
   color: var(--color-white);
-  padding: 5px 10px;
+  padding: calc(0.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
 }
 .js .hotspot-content {
   display: none;
@@ -461,9 +461,9 @@ ul.inline li:first-child {
   background-color: transparent;
   color: currentColor;
   margin: 0;
-  padding: calc(.75 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  padding: calc(.75 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   position: absolute;
-  right: calc(1 * var(--spacing--single));
+  right: calc(1 * var(--spacing--padding-x));
   top: calc(50% - 17.5px);
 }
 
@@ -487,7 +487,7 @@ ul.inline li:first-child {
  * Shame class for single-direction spacing.
  */
 .margin-bottom--4 {
-  margin-bottom: calc(4 * var(--spacing--single));
+  margin-bottom: calc(4 * var(--spacing--margin-y));
 }
 
 /**
@@ -497,8 +497,8 @@ ul.inline li:first-child {
   border: 1px solid;
   border-radius: var(--border-radius--default);
   font-style: italic;
-  margin: 10px 0;
-  padding: 10px;
+  margin: calc(1 * var(--spacing--margin-y)) 0;
+  padding: calc(1 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
 }
 .messages a {
   color: inherit;
@@ -524,7 +524,7 @@ ul.inline li:first-child {
  * Core class for the links at the bottom of node teasers.
  */
 .node__links {
-  margin: 20px 0 0;
+  margin: calc(2 * var(--spacing--margin-y)) 0 0;
 }
 
 /**
@@ -539,7 +539,7 @@ ul.inline li:first-child {
  */
 .pager {
   font-weight: 600;
-  margin: 40px auto;
+  margin: calc(4 * var(--spacing--margin-y)) auto;
   text-align: center;
   text-transform: uppercase;
 }
@@ -557,7 +557,7 @@ ul.inline li:first-child {
 .pager li > span {
   color: var(--color--grey);
   display: inline-block;
-  padding: 5px 10px;
+  padding: calc(0.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   text-decoration: none;
 }
 .pager li > a:hover {
@@ -571,13 +571,13 @@ ul.inline li:first-child {
 }
 .pager li.pager__item--previous {
   border-right: 1px solid var(--color--grey);
-  margin-right: 4px;
-  padding-right: 16px;
+  margin-right: calc(0.4 * var(--spacing--margin-x));
+  padding-right: calc(1.6 * var(--spacing--padding-x));
 }
 .pager li.pager__item--next {
   border-left: 1px solid var(--color--grey);
-  margin-left: 4px;
-  padding-left: 16px;
+  margin-left: calc(0.4 * var(--spacing--margin-x));
+  padding-left: calc(1.6 * var(--spacing--padding-x));
 }
 
 /**
@@ -600,7 +600,7 @@ ul.inline li:first-child {
     display: inline-block;
     font-weight: 300;
     opacity: .9;
-    padding: 0 2px;
+    padding: 0 calc(0.2 * var(--spacing--padding-x));
     vertical-align: middle;
   }
   .pipe-spaced > li:last-child::after {
@@ -617,10 +617,10 @@ ul.inline li:first-child {
   box-sizing: border-box;
   color: var(--color-white);
   display: flex;
-  margin: 0 calc(.5 * var(--spacing--single)) calc(.5 * var(--spacing--single)) 0;
+  margin: 0 calc(.5 * var(--spacing--margin-x)) calc(.5 * var(--spacing--margin-y)) 0;
   min-height: 32px;
   min-width: 32px;
-  padding: calc(.5 * var(--spacing--single)) calc(.5 * var(--spacing--single));
+  padding: calc(.5 * var(--spacing--padding-y)) calc(.5 * var(--spacing--padding-x));
 }
 .social a > svg {
   fill: var(--color--white);
@@ -651,8 +651,8 @@ ul.inline li:first-child {
  * Byline base class.
  */
 .submitted {
-  font-size: 14px;
-  margin: 0 0 10px;
+  font-size: 0.875em;
+  margin: 0 0 calc(1 * var(--spacing--margin-y));
 }
 
 /**
@@ -661,7 +661,7 @@ ul.inline li:first-child {
 @media all and (max-width: 1024px) {
   .view--has-table > .view-content,
   .table--wrapper {
-    max-width: calc(100vw - calc(6 * var(--spacing--single)));
+    max-width: calc(100vw - calc(6 * var(--spacing--padding-x)));
     overflow-x: scroll;
   }
 }
@@ -682,7 +682,7 @@ ul.tabs {
 ul.tabs > li {
   display: block;
   flex: 1 0;
-  margin: 0 10px -1px;
+  margin: 0 calc(1 * var(--spacing--margin-x)) -1px;
 }
 ul.tabs > li > a {
   color: var(--color--grey-dark);
@@ -757,7 +757,7 @@ ul.tabs > li > a.is-active {
 .view-mode--teaser h2 {
   font-family: var(--font-family--primary);
   font-size: 22px;
-  margin: 0 0 calc(1 * var(--spacing--single));
+  margin: 0 0 calc(1 * var(--spacing--margin-y));
 }
 
 .view-mode--teaser > figure {
@@ -779,7 +779,7 @@ ul.tabs > li > a.is-active {
 @media all and (min-width: 1280px) {
   .view-mode--teaser > figure {
     max-height: clamp(165px, 17.5vh, 215px);
-    min-height: 165px;
+    min-height: calc(16.5 * var(--spacing--padding-y));
   }
 }
 .view-mode--teaser .text-formatted {

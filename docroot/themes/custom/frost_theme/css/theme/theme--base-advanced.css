@@ -13,8 +13,8 @@
 details {
   background-color: rgba(240, 240, 240, 0.5);
   border-radius: var(--border-radius--default);
-  margin: calc(2 * var(--spacing--single)) 0;
-  padding: calc(.5 * var(--spacing--single)) calc(1.5 * var(--spacing--single));
+  margin: calc(2 * var(--spacing--margin-y)) 0;
+  padding: calc(.5 * var(--spacing--padding-y)) calc(1.5 * var(--spacing--padding-x));
 }
 details > summary {
   border-radius: var(--border-radius--default);
@@ -22,7 +22,7 @@ details > summary {
   cursor: pointer;
   font-weight: 500;
   line-height: var(--line-height--heading);
-  padding: calc(2 * var(--spacing--single)) calc(4 * var(--spacing--single)) calc(2 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  padding: calc(2 * var(--spacing--padding-y)) calc(4 * var(--spacing--padding-x)) calc(2 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   position: relative;
 }
 details > summary::-webkit-details-marker {
@@ -46,11 +46,11 @@ details > summary::after {
   border-radius: 50%;
   color: var(--color--third);
   content: '+';
-  padding: calc(.5 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  padding: calc(.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   position: absolute;
-  right: calc(.5 * var(--spacing--single));
+  right: calc(.5 * var(--spacing--padding-x));
   text-align: center;
-  top: calc(1.5 * var(--spacing--single));
+  top: calc(1.5 * var(--spacing--padding-y));
 }
 details > summary:hover::after,
 details > summary:active::after,
@@ -60,10 +60,10 @@ details[open] > summary::after {
   color: var(--color--white);
 }
 details[open] {
-  padding-bottom: calc(2 * var(--spacing--single));
+  padding-bottom: calc(2 * var(--spacing--padding-y));
 }
 details[open] > summary {
-  margin-bottom: calc(1 * var(--spacing--single));
+  margin-bottom: calc(1 * var(--spacing--margin-y));
 }
 details[open] > summary:after {
   content: '-';
@@ -75,20 +75,20 @@ details[open] > summary:after {
 table {
   background-color: transparent;
   border-spacing: 0;
-  margin: 0 0 1.5em;
+  margin: 0 0 calc(1.5 * var(--spacing--margin-y));
   text-align: left;
   border: 0 none;
 }
 td,
 th {
-  padding: calc(.5 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  padding: calc(.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   border: 0 none;
 }
 th {
   font-weight: 500;
 }
 [colspan] {
-  padding: calc(1 * var(--spacing--single));
+  padding: calc(1 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   text-align: center;
 }
 thead {
@@ -102,7 +102,7 @@ tbody th {
   background-color: var(--color--grey-light);
   border-bottom: 1px solid var(--color--grey);
   color: var(--color--grey-dark);
-  padding: calc(.5 * var(--spacing--single)) calc(1 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  padding: calc(.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x)) calc(2 * var(--spacing--padding-y));
   vertical-align: top;
 }
 tbody td {
@@ -123,14 +123,14 @@ fieldset {
   background-color: rgba(255,255,255,.5);
   border: 1px solid var(--color--grey);
   border-radius: var(--border-radius--default);
-  margin: calc(2 * var(--spacing--single)) 0;
-  padding: calc(1 * var(--spacing--single)) calc(2 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  margin: calc(2 * var(--spacing--margin-y)) 0;
+  padding: calc(1 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x)) calc(2 * var(--spacing--padding-y));
 }
 legend {
   font-size: .625em;
   font-weight: 900;
   line-height: var(--line-height--heading);
-  padding: 0 calc(2 * var(--spacing--single));
+  padding: 0 calc(2 * var(--spacing--padding-x));
   text-align: center;
 }
 /* Drupal sometimes renders legends containing visually-hidden text. */
@@ -176,7 +176,7 @@ textarea {
   font-weight: 400;
   margin: 0;
   max-width: 100%;
-  padding: calc(.5 * var(--spacing--single)) calc(1 * var(--spacing--single));
+  padding: calc(.5 * var(--spacing--padding-y)) calc(1 * var(--spacing--padding-x));
   transition: var(--transition--default);
   vertical-align: middle;
 }
@@ -185,7 +185,7 @@ textarea {
   input,
   select,
   textarea {
-    max-width: 280px;
+    max-width: 280px; /* 320px smallest viewport supported minus padding. */
   }
 }
 @media all and (min-width: 671px) {
@@ -199,7 +199,7 @@ textarea {
   input[type="url"],
   input[size],
   select {
-    max-width: 415px;
+    max-width: calc(41.5 * var(--spacing--padding-x));
     width: 100%;
   }
 
@@ -237,8 +237,8 @@ input[type="submit"] {
   font-size: 1em;
   font-weight: 650;
   line-height: var(--line-height--heading);
-  margin: 0 calc(2 * var(--spacing--single)) calc(2 * var(--spacing--single));
-  padding: calc(1 * var(--spacing--single)) calc(2 * var(--spacing--single));
+  margin: 0 calc(2 * var(--spacing--margin-x)) calc(2 * var(--spacing--margin-y));
+  padding: calc(1 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
   text-align: center;
   text-decoration: none;
   transition: var(--transition--default);
@@ -331,7 +331,7 @@ input:checked + label {
 }
 
 input[type="file"] {
-  padding: 2px;
+  padding: calc(0.25 * var(--spacing--padding-y)) calc(0.25 * var(--spacing--padding-x));
 }
 
 input[type="file"]::-webkit-file-upload-button {

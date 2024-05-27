@@ -15,7 +15,7 @@
   margin-bottom: 0;
   margin-top: 0;
   overflow: visible;
-  padding: calc(1.5 * var(--spacing-single)) calc(1.5 * var(--spacing-single));
+  padding: calc(1.5 * var(--spacing--padding-y)) calc(1.5 * var(--spacing--padding-x));
   text-transform: none;
   transition-duration: 0.15s;
   transition-property: opacity, filter;
@@ -39,7 +39,7 @@
 
 .hamburger-inner {
   display: block;
-  margin-top: -2px;
+  margin-top: calc(-0.2 * var(--spacing--margin-y));
   top: 50%;
 }
 .hamburger-inner,
@@ -60,23 +60,23 @@
   display: block;
 }
 .hamburger-inner::before {
-  top: -10px;
+  top: calc(-1 * var(--spacing--padding-y));
 }
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: calc(-1 * var(--spacing--padding-y));
 }
 
 
 .hamburger--spring .hamburger-inner {
-  top: 2px;
+  top: calc(0.2 * var(--spacing--padding-y));
   transition: background-color 0s 0.13s linear;
 }
 .hamburger--spring .hamburger-inner::before {
-  top: 10px;
+  top: calc(1 * var(--spacing--padding-y));
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--spring .hamburger-inner::after {
-  top: 20px;
+  top: calc(2 * var(--spacing--padding-y));
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
@@ -104,12 +104,12 @@
 .menu a {
   border-radius: var(--border-radius--default);
   display: block;
-  padding: calc(1 * var(--spacing--single)) calc(1.5 * var(--spacing--single));
+  padding: calc(1 * var(--spacing--padding-y)) calc(1.5 * var(--spacing--padding-x));
   text-decoration: none;
 }
 .menu--main a {
   color: var(--color--main);
-  padding: calc(2.25 * var(--spacing--single)) calc(1.5 * var(--spacing--single));
+  padding: calc(2.25 * var(--spacing--padding-y)) calc(1.5 * var(--spacing--padding-x));
 }
 .menu a:hover,
 .menu a:active,
@@ -134,7 +134,7 @@
   .menu-item--mobile--full-row {
     align-items: center;
     flex-basis: 100%;
-    margin-bottom: calc(0.5 * var(--spacing--single));
+    margin-bottom: calc(0.5 * var(--spacing--margin-y));
   }
   .border-spaced > .menu-item--mobile--full-row {
     border-right: 0 none;
@@ -165,14 +165,14 @@
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    left: calc(-1 * calc(100vw - calc(8 * var(--spacing--single))));
+    left: calc(-1 * calc(100vw - calc(8 * var(--spacing--padding-x))));
     max-height: 100vh;
     overflow-y: auto;
-    padding: calc(2 * var(--spacing--single));
+    padding: calc(2 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
     position: fixed;
     top: 0;
     transition: left 0.3s ease-in;
-    width: calc(100vw - calc(8 * var(--spacing--single)));
+    width: calc(100vw - calc(8 * var(--spacing--padding-x)));
   }
   .mobile--tray.open {
     box-shadow: 0 0 20px var(--color--main);
@@ -183,7 +183,7 @@
     flex-direction: column;
   }
   .mobile--tray .menu a {
-    margin-bottom: calc(0.5 * var(--spacing--single));
-    padding: calc(1.5 * var(--spacing--single)) calc(1.5 * var(--spacing--single));
+    margin-bottom: calc(0.5 * var(--spacing--margin-y));
+    padding: calc(1.5 * var(--spacing--padding-y)) calc(1.5 * var(--spacing--padding-x));
   }
 }

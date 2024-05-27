@@ -74,8 +74,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 audio:not([controls]),
 [hidden] {
@@ -246,7 +244,7 @@ samp {
   font-size: 1em;
 }
 pre {
-  padding: calc(2 * var(--spacing--single));
+  padding: calc(2 * var(--spacing--padding-y)) calc(2 * var(--spacing--padding-x));
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -255,7 +253,7 @@ pre {
  * Definition lists. They're a big waste of time usually.
  */
 dd {
-  margin: 0 0 0 calc(4 * var(--spacing--single));
+  margin: 0 0 0 calc(4 * var(--spacing--margin-x));
 }
 dfn {
   font-style: italic;
@@ -419,7 +417,7 @@ hr {
   color: var(--color--grey-dark);
   height: 1px;
   line-height: 0;
-  margin: calc(1 * var(--spacing--single)) 0;
+  margin: calc(1 * var(--spacing--margin-y)) 0;
 }
 
 /**
@@ -466,11 +464,11 @@ mark,
   font-size: 0.75em;
   font-weight: 700;
   display: inline-block;
-  padding: calc(0.25 * var(--spacing--single)) calc(0.5 * var(--spacing--single));
+  padding: calc(0.25 * var(--spacing--padding-y)) calc(0.5 * var(--spacing--padding-x));
 }
 
 p {
-  margin: calc(1 * var(--spacing--single)) 0;
+  margin: calc(1 * var(--spacing--margin-y)) 0;
   max-width: 75ch;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -532,12 +530,12 @@ svg:not(:root) {
  */
 ul,
 ol {
-  margin: 0 0 0 1.2em;
+  margin: 0 0 0 calc(1.25 * var(--spacing--margin-x));
   padding: 0;
 }
 ul ul,
 ol ul {
-  padding: 0 0 0 1.2em;
+  padding: 0 0 0 calc(1.25 * var(--spacing--padding-x));
 }
 ol ol {
   list-style-type: lower-alpha;

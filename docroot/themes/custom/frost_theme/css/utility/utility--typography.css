@@ -75,7 +75,7 @@
 .text-align--justify video,
 [class*="text-align--"] .text-align--center img,
 [class*="text-align--"] .text-align--center picture {
-  margin: 0 auto var(--spacing--single);
+  margin: 0 auto var(--spacing--margin-y);
 }
 .text-align--center figure img,
 .text-align--center figure picture,
@@ -96,7 +96,7 @@
 }
 .text-align--left p,
 .text-align--right p {
-  margin: 0 0 var(--spacing--single);
+  margin: 0 0 var(--spacing--margin-y);
 }
 .text-align--center p:last-child,
 .text-align--justify p:last-child,
