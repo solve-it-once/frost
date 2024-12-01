@@ -25,11 +25,11 @@ default:
       langcode: ''
       country_code: US
       administrative_area: MI
-      locality: 'Lincoln Park'
+      locality: 'Swartz Creek'
       dependent_locality: ''
-      postal_code: '48146'
+      postal_code: '48473'
       sorting_code: ''
-      address_line1: '1428 Mark Ave'
+      address_line1: '5168 Walden Dr'
       address_line2: ''
   billing_countries:
     -
