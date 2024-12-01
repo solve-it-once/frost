@@ -1,11 +1,11 @@
 address:
   country_name: US
   legal_name: 'Solve it once, LLC'
-  street_address: '1428 Mark Ave'
+  street_address: '5168 Walden Dr'
   street_address_2: ''
-  locality: 'Lincoln Park'
+  locality: 'Swartz Creek'
   region: MI
-  postal_code: '48146'
+  postal_code: '48473'
 phone:
   country_code: '1'
   number: '(313) 509-7214'
